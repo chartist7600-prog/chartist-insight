@@ -214,5 +214,59 @@
     "time": "2026-05-23 09:00",
     "price": 0.0672,
     "sig_type": "rsi"
+  },
+  {
+    "key": "빗썸_ACH",
+    "time": "2026-05-23 12:00",
+    "price": 10.11,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "빗썸_ILV",
+    "time": "2026-05-23 12:00",
+    "price": 6490.0,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "빗썸_AUDIO",
+    "time": "2026-05-23 12:00",
+    "price": 29.0,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "빗썸_FLUX",
+    "time": "2026-05-23 12:00",
+    "price": 102.0,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "빗썸_SHELL",
+    "time": "2026-05-23 12:00",
+    "price": 49.45,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "빗썸_HAEDAL",
+    "time": "2026-05-23 12:00",
+    "price": 42.4,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "빗썸_RESOLV",
+    "time": "2026-05-23 12:00",
+    "price": 54.21,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "빗썸_CAMP",
+    "time": "2026-05-23 12:00",
+    "price": 2.362,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "빗썸_BASED",
+    "time": "2026-05-23 12:00",
+    "price": 108.0,
+    "sig_type": "rsi"
   }
 ]
