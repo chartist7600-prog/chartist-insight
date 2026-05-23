@@ -268,5 +268,47 @@
     "time": "2026-05-23 12:00",
     "price": 108.0,
     "sig_type": "rsi"
+  },
+  {
+    "key": "빗썸_CHR",
+    "time": "2026-05-23 12:30",
+    "price": 32.24,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "빗썸_MEV",
+    "time": "2026-05-23 12:30",
+    "price": 4.005,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "빗썸_BFC",
+    "time": "2026-05-23 12:30",
+    "price": 21.92,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "빗썸_COTI",
+    "time": "2026-05-23 12:30",
+    "price": 18.71,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "빗썸_IOTX",
+    "time": "2026-05-23 12:30",
+    "price": 6.326,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "빗썸_PCI",
+    "time": "2026-05-23 12:30",
+    "price": 73.47,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "빗썸_PUMPBTC",
+    "time": "2026-05-23 12:30",
+    "price": 22.61,
+    "sig_type": "rsi"
   }
 ]
