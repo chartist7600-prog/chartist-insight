@@ -1,50 +1,218 @@
 [
   {
-    "key": "빗썸_COS",
-    "time": "2026-05-23 00:00",
-    "price": 1.676,
+    "key": "바이낸스_ONE",
+    "time": "2026-05-23 09:00",
+    "price": 0.00195,
     "sig_type": "rsi"
   },
   {
-    "key": "빗썸_FITFI",
-    "time": "2026-05-23 00:00",
-    "price": 0.824,
+    "key": "바이낸스_WIN",
+    "time": "2026-05-23 09:00",
+    "price": 1.901e-05,
     "sig_type": "rsi"
   },
   {
-    "key": "빗썸_LM",
-    "time": "2026-05-23 00:00",
-    "price": 1.324,
+    "key": "바이낸스_DGB",
+    "time": "2026-05-23 09:00",
+    "price": 0.00352,
     "sig_type": "rsi"
   },
   {
-    "key": "빗썸_XYO",
-    "time": "2026-05-23 00:00",
-    "price": 6.899,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_ALLO",
-    "time": "2026-05-23 00:00",
-    "price": 142.0,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_BIOT",
-    "time": "2026-05-23 00:30",
-    "price": 0.5328,
+    "key": "바이낸스_DCR",
+    "time": "2026-05-23 09:00",
+    "price": 16.59,
     "sig_type": "rsi"
   },
   {
-    "key": "빗썸_ALICE",
-    "time": "2026-05-23 00:30",
-    "price": 191.0,
+    "key": "바이낸스_TRB",
+    "time": "2026-05-23 09:00",
+    "price": 17.27,
     "sig_type": "rsi"
   },
   {
-    "key": "빗썸_TEMCO",
-    "time": "2026-05-23 00:30",
-    "price": 0.9439,
+    "key": "바이낸스_JUV",
+    "time": "2026-05-23 09:00",
+    "price": 0.423,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_ASR",
+    "time": "2026-05-23 09:00",
+    "price": 1.104,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_TKO",
+    "time": "2026-05-23 09:00",
+    "price": 0.0527,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_BAR",
+    "time": "2026-05-23 09:00",
+    "price": 0.386,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_SLP",
+    "time": "2026-05-23 09:00",
+    "price": 0.000619,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_ATA",
+    "time": "2026-05-23 09:00",
+    "price": 0.0039,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_SYS",
+    "time": "2026-05-23 09:00",
+    "price": 0.00405,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_CITY",
+    "time": "2026-05-23 09:00",
+    "price": 0.46,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_PORTO",
+    "time": "2026-05-23 09:00",
+    "price": 0.731,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_SPELL",
+    "time": "2026-05-23 09:00",
+    "price": 0.0001557,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_GLMR",
+    "time": "2026-05-23 09:00",
+    "price": 0.014,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_SCRT",
+    "time": "2026-05-23 09:00",
+    "price": 0.0804,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_STG",
+    "time": "2026-05-23 09:00",
+    "price": 0.164,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_PHB",
+    "time": "2026-05-23 09:00",
+    "price": 0.066,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_GNS",
+    "time": "2026-05-23 09:00",
+    "price": 0.459,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_LQTY",
+    "time": "2026-05-23 09:00",
+    "price": 0.255,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_MEME",
+    "time": "2026-05-23 09:00",
+    "price": 0.000499,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_NFP",
+    "time": "2026-05-23 09:00",
+    "price": 0.01041,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_AEVO",
+    "time": "2026-05-23 09:00",
+    "price": 0.0247,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_1MBABYDOGE",
+    "time": "2026-05-23 09:00",
+    "price": 0.0003897,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_CATI",
+    "time": "2026-05-23 09:00",
+    "price": 0.049,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_HMSTR",
+    "time": "2026-05-23 09:00",
+    "price": 0.0001452,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_BNSOL",
+    "time": "2026-05-23 09:00",
+    "price": 93.9,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_CETUS",
+    "time": "2026-05-23 09:00",
+    "price": 0.02557,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_ACT",
+    "time": "2026-05-23 09:00",
+    "price": 0.01275,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_USUAL",
+    "time": "2026-05-23 09:00",
+    "price": 0.01382,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_HEI",
+    "time": "2026-05-23 09:00",
+    "price": 0.0671,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_FORM",
+    "time": "2026-05-23 09:00",
+    "price": 0.2252,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_TUT",
+    "time": "2026-05-23 09:00",
+    "price": 0.01087,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_BROCCOLI714",
+    "time": "2026-05-23 09:00",
+    "price": 0.01449,
+    "sig_type": "rsi"
+  },
+  {
+    "key": "바이낸스_STO",
+    "time": "2026-05-23 09:00",
+    "price": 0.0672,
     "sig_type": "rsi"
   }
 ]
