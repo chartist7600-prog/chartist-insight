@@ -4,5 +4,11 @@
     "time": "2026-05-25 09:00",
     "price": 6.307,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_ASTER",
+    "time": "2026-05-25 09:00",
+    "price": 1046.0,
+    "sig_type": "trend"
   }
 ]
