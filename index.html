@@ -1449,7 +1449,7 @@ function renderAltcoin(){if(!altcoinData){loadAltcoinData();return;}var items=bu
   // RSI 항목 분리해서 rsi-content에 렌더링
   var rsiEl=document.getElementById('rsi-content');
   if(rsiEl){
-    var rsiItems=items.filter(function(item){return item.sig==='rsi'||item.sig==='rsi-bull'||item.sig==='rsi-bear'||item.sig==='rsi_bull'||item.sig==='rsi_bear'||(sigMap[item.sig]&&sigMap[item.sig].label&&sigMap[item.sig].label.indexOf('RSI')>=0);});
+    var rsiItems=items.filter(function(item){return item.sig==='rsi';});
     if(rsiItems.length>0){
       var rsiHtml='<div class="ticker-list">';
       rsiItems.forEach(function(item){var sm=sigMap[item.sig]||{label:item.sig,cls:''};var lp=liveprices[item.ticker];var dispPrice=lp?fmtPrice(lp.price,item.exchange):fmtPrice(item.sigPrice,item.exchange);var chg24=lp?lp.change24h:null;var chgCls=(chg24>0)?'up':(chg24<0?'dn':'flat');var chgSign=chg24>0?'+':'';var chgTxt=(chg24!==null&&chg24!==undefined)?chgSign+chg24.toFixed(2)+'%':'—';rsiHtml+='<div class="ticker-item"><div class="ticker-left"><div class="ticker-name">'+item.ticker+'<span class="sig-badge '+sm.cls+'">'+sm.label+'</span></div><div class="ticker-meta">'+item.exchange+' · '+item.tf+' · '+item.date+'</div></div><div class="ticker-right"><div class="ticker-price">'+dispPrice+'</div><div class="ticker-change '+chgCls+'">'+chgTxt+'</div></div></div>';});
