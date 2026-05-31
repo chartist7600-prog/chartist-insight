@@ -1413,8 +1413,10 @@ function filterAltcoin(f){
     else{if(content)content.classList.remove('blurred');if(paywall)paywall.classList.remove('show');}
   }else if(f==='all'){
     if(wrap)wrap.style.display='block';
-    if(!rsiUnlocked){lockRsi();}
-    else{if(content)content.classList.remove('blurred');if(paywall)paywall.classList.remove('show');}
+    if(!rsiUnlocked){
+      if(content)content.classList.add('blurred');
+      if(paywall)paywall.classList.remove('show');
+    }else{if(content)content.classList.remove('blurred');if(paywall)paywall.classList.remove('show');}
   }else{
     if(wrap)wrap.style.display='none';
     if(content)content.classList.remove('blurred');
