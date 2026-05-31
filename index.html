@@ -355,6 +355,8 @@
 
   /* ══ RSI 블러 페이월 ══ */
   .rsi-blur-wrap{position:relative;}
+  .alt-list-wrap{display:flex;flex-direction:column;}
+  .rsi-blur-wrap{order:99;}
   .rsi-blur-content{transition:filter 0.3s;}
   .rsi-blur-content.blurred{filter:blur(6px);pointer-events:none;user-select:none;}
   .rsi-paywall{display:none;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:10;width:300px;}
@@ -1401,8 +1403,13 @@ function filterAltcoin(f){
   });
   var activeBtn=document.getElementById('af-'+f);
   if(activeBtn)activeBtn.classList.add('active');
-  if((f==='rsi'||f==='all')&&!rsiUnlocked){
+  if(f==='rsi'&&!rsiUnlocked){
     lockRsi();
+  }else if(f==='all'){
+    var content=document.getElementById('rsi-blur-content');
+    var paywall=document.getElementById('rsi-paywall');
+    if(content)content.classList.remove('blurred');
+    if(paywall)paywall.classList.remove('show');
   }else if(f!=='rsi'&&f!=='all'){
     var content=document.getElementById('rsi-blur-content');
     var paywall=document.getElementById('rsi-paywall');
