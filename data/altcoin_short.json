@@ -28,5 +28,29 @@
     "time": "2026-06-01 09:00",
     "price": 34.17,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SUSHI",
+    "time": "2026-06-01 21:00",
+    "price": 307.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_INIT",
+    "time": "2026-06-01 21:00",
+    "price": 119.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_SYN",
+    "time": "2026-06-01 21:00",
+    "price": 0.0473,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_VIC",
+    "time": "2026-06-01 21:00",
+    "price": 0.0662,
+    "sig_type": "trend"
   }
 ]
