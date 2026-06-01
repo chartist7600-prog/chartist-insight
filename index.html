@@ -358,7 +358,7 @@
   .alt-list-wrap{display:flex;flex-direction:column;}
   .rsi-blur-wrap{order:99;}
   .rsi-blur-content{transition:filter 0.3s;}
-  .rsi-blur-content.blurred{filter:none;color:transparent;text-shadow:0 0 8px rgba(255,255,255,0.5);pointer-events:none;user-select:none;}
+  .rsi-blur-content.blurred{filter:none !important;color:transparent !important;text-shadow:0 0 8px rgba(255,255,255,0.5) !important;pointer-events:none;user-select:none;}
   .rsi-paywall{display:none;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:10;width:300px;}
   .rsi-paywall.show{display:block;}
 
@@ -429,7 +429,7 @@
   /* ══ BTC 탭 블러 ══ */
   .btc-blur-wrap{position:relative;}
   .btc-blur-content{transition:filter 0.3s;}
-  .btc-blur-content.blurred{filter:none;color:transparent;text-shadow:0 0 8px rgba(255,255,255,0.5);pointer-events:none;user-select:none;}
+  .btc-blur-content.blurred{filter:none !important;color:transparent !important;text-shadow:0 0 8px rgba(255,255,255,0.5) !important;pointer-events:none;user-select:none;}
   .btc-paywall-inline{display:none;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:10;width:300px;}
   .btc-paywall-inline.show{display:block;}
 
@@ -750,8 +750,8 @@
 
 <!-- ★ 수정③: tab-btn CSS에 white-space:normal 적용 완료 -->
 <div class="tab-nav">
-  <button class="tab-btn active" id="tab-btn-btc" onclick="switchTab('btc',this)">₿ 비트코인</button>
-  <button class="tab-btn" id="tab-btn-altcoin" onclick="switchTab('altcoin',this)">📊 알트코인</button>
+  <button class="tab-btn active" id="tab-btn-btc" onclick="switchTab('btc',this)">₿ 비트</button>
+  <button class="tab-btn" id="tab-btn-altcoin" onclick="switchTab('altcoin',this)">📊 알트</button>
   <button class="tab-btn" id="tab-btn-stock" onclick="switchTab('stock',this)">📈 주식</button>
   <button class="tab-btn" id="tab-btn-macro" onclick="switchTab('macro',this)">🌐 매크로</button>
   <button class="tab-btn" id="tab-btn-calc" onclick="switchTab('calc',this)">🧮 계산기</button>
@@ -1041,7 +1041,7 @@
 <!-- ══ 매매일지 탭 ══ -->
 <div class="tab-content" id="tab-journal">
   <div id="j-auth-screen" style="display:block;">
-    <div style="max-width:360px;margin:60px auto;background:#1a1a1a;border:1px solid #242424;border-top:2px solid #C9A84C;border-radius:10px;padding:36px 32px;position:relative;">
+    <div style="max-width:360px;margin:60px auto;background:#1a1a1a;border:1px solid #242424;border-top:2px solid #C9A84C;border-radius:10px;padding:36px 32px;position:relative;"><button onclick="switchTab('btc',document.getElementById('tab-btn-btc'))" style="position:absolute;top:12px;right:14px;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,0.05);border:0.5px solid rgba(255,255,255,0.12);color:#666;font-size:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;">✕</button>
       <h2 style="font-size:18px;font-weight:700;color:#C9A84C;margin-bottom:8px;">📒 매매일지</h2>
       <p style="font-size:13px;color:#777;margin-bottom:20px;line-height:1.6;">차티스트 인사이트 멤버 전용<br>내 매매를 기록하고 분석하세요</p>
       <div style="display:flex;margin-bottom:20px;border-bottom:1px solid #242424;">
@@ -1407,20 +1407,16 @@ function filterAltcoin(f){
   var wrap=document.getElementById('rsi-blur-wrap');
   var content=document.getElementById('rsi-blur-content');
   var paywall=document.getElementById('rsi-paywall');
-  if(f==='rsi'||f==='all'){
-    if(wrap)wrap.style.display='block';
-    if(!rsiUnlocked){
-      if(content){content.classList.add('blurred');content.style.filter='';content.style.color='';}
-      if(paywall)paywall.classList.remove('show');
-      if(content)content.onclick=function(){lockRsi();};
-    }else{
-      if(content)content.classList.remove('blurred');
-      if(paywall)paywall.classList.remove('show');
-    }
+  if(wrap)wrap.style.display='block';
+  if(content){content.style.filter='';content.style.color='';content.style.textShadow='';}
+  if(!rsiUnlocked){
+    if(content)content.classList.add('blurred');
+    if(paywall)paywall.classList.remove('show');
+    if(content)content.onclick=function(){lockRsi();};
   }else{
-    if(wrap)wrap.style.display='block';
     if(content)content.classList.remove('blurred');
     if(paywall)paywall.classList.remove('show');
+    if(content)content.onclick=null;
   }
   renderAltcoin();
 }
@@ -1445,7 +1441,7 @@ function buildAltcoinItems(){if(!altcoinData)return[];var items=[];var seenKeys=
 function sortAltcoinItems(items){var s=currentAltSort;var d=currentAltSortDir==='asc'?1:-1;items.sort(function(a,b){if(s==='name')return d*(a.ticker||'').localeCompare(b.ticker||'');if(s==='price'){var ap=(liveprices[a.ticker]?liveprices[a.ticker].price:null)||a.sigPrice||0;var bp=(liveprices[b.ticker]?liveprices[b.ticker].price:null)||b.sigPrice||0;return d*(ap-bp);}if(s==='change'){var ac=liveprices[a.ticker]?liveprices[a.ticker].change24h:null;var bc=liveprices[b.ticker]?liveprices[b.ticker].change24h:null;return d*((ac||-999)-(bc||-999));}var at=(a.time||'').length===10?a.time+' 00:00':(a.time||'');var bt=(b.time||'').length===10?b.time+' 00:00':(b.time||'');return bt.localeCompare(at);});}
 function setSortAlt(col){if(currentAltSort===col){currentAltSortDir=currentAltSortDir==='desc'?'asc':'desc';}else{currentAltSort=col;currentAltSortDir='desc';}updateSortHeaders();renderAltcoin();}
 function updateSortHeaders(){var headerEl=document.getElementById('altcoin-list-header');if(!headerEl)return;var cols=headerEl.querySelectorAll('.lh-col.sortable');var colNames=['name','price','change'];cols.forEach(function(el,i){el.classList.remove('sort-asc','sort-desc');if(colNames[i]===currentAltSort){el.classList.add(currentAltSortDir==='asc'?'sort-asc':'sort-desc');}});}
-function renderAltcoin(){if(!altcoinData){loadAltcoinData();return;}var items=buildAltcoinItems();sortAltcoinItems(items);checkNewAltcoinSignal(items.length);var updatedEl=document.getElementById('altcoin-updated');var contentEl=document.getElementById('altcoin-content');var headerEl=document.getElementById('altcoin-list-header');var totalCount=items.length;updatedEl.textContent='총 '+totalCount+'개'+(totalCount>200?' (최대 200개 표시)':'')+'· 5분마다 자동 갱신';var _now=new Date();var _h=String(_now.getHours()).padStart(2,'0');var _m=String(_now.getMinutes()).padStart(2,'0');var _lastEl=document.getElementById('altcoin-last-updated');if(_lastEl)_lastEl.textContent='마지막 업데이트 '+_h+':'+_m;if(items.length===0){if(headerEl)headerEl.style.display='none';contentEl.innerHTML='<div class="empty-box">해당 기간에 신호가 없습니다.</div>';return;}if(headerEl)headerEl.style.display='grid';updateSortHeaders();connectLivePrices(items);if(!rsiUnlocked&&(currentAltcoinFilter==='all'||currentAltcoinFilter==='rsi')){var _rc=document.getElementById('rsi-blur-content');if(_rc){_rc.classList.add('blurred');_rc.classList.add('blurred');}}var visibleItems=items.slice(0,200);var html='<div class="ticker-list">';visibleItems.forEach(function(item){var sm=sigMap[item.sig]||{label:item.sig,cls:''};var lp=liveprices[item.ticker];var dispPrice=lp?fmtPrice(lp.price,item.exchange):fmtPrice(item.sigPrice,item.exchange);var chg24=lp?lp.change24h:null;var chgCls=(chg24>0)?'up':(chg24<0?'dn':'flat');var chgSign=chg24>0?'+':'';var chgTxt=(chg24!==null&&chg24!==undefined)?chgSign+chg24.toFixed(2)+'%':'—';html+='<div class="ticker-item" id="tr-'+item.ticker+'"><div class="ticker-left"><div class="ticker-name">'+(item.ticker||'—')+'<span class="sig-badge '+sm.cls+'">'+sm.label+'</span></div><div class="ticker-meta">'+(item.exchange||'')+' · '+item.source+' · '+fmtDate(item.time)+'</div></div><div class="ticker-right"><div class="ticker-price" id="lp-'+item.ticker+'">'+dispPrice+'</div><div class="ticker-change '+chgCls+'" id="lc-'+item.ticker+'">'+chgTxt+'</div></div></div>';});html+='</div>';
+function renderAltcoin(){if(!altcoinData){loadAltcoinData();return;}var items=buildAltcoinItems();sortAltcoinItems(items);checkNewAltcoinSignal(items.length);var updatedEl=document.getElementById('altcoin-updated');var contentEl=document.getElementById('altcoin-content');var headerEl=document.getElementById('altcoin-list-header');var totalCount=items.length;updatedEl.textContent='총 '+totalCount+'개'+(totalCount>200?' (최대 200개 표시)':'')+'· 5분마다 자동 갱신';var _now=new Date();var _h=String(_now.getHours()).padStart(2,'0');var _m=String(_now.getMinutes()).padStart(2,'0');var _lastEl=document.getElementById('altcoin-last-updated');if(_lastEl)_lastEl.textContent='마지막 업데이트 '+_h+':'+_m;if(items.length===0){if(headerEl)headerEl.style.display='none';contentEl.innerHTML='<div class="empty-box">해당 기간에 신호가 없습니다.</div>';return;}if(headerEl)headerEl.style.display='grid';updateSortHeaders();connectLivePrices(items);if(!rsiUnlocked&&(currentAltcoinFilter==='all'||currentAltcoinFilter==='rsi')){var _rc=document.getElementById('rsi-blur-content');if(_rc){_rc.classList.add('blurred');_rc.style.filter='';_rc.style.color='';_rc.style.textShadow='';}}var visibleItems=items.slice(0,200);var html='<div class="ticker-list">';visibleItems.forEach(function(item){var sm=sigMap[item.sig]||{label:item.sig,cls:''};var lp=liveprices[item.ticker];var dispPrice=lp?fmtPrice(lp.price,item.exchange):fmtPrice(item.sigPrice,item.exchange);var chg24=lp?lp.change24h:null;var chgCls=(chg24>0)?'up':(chg24<0?'dn':'flat');var chgSign=chg24>0?'+':'';var chgTxt=(chg24!==null&&chg24!==undefined)?chgSign+chg24.toFixed(2)+'%':'—';html+='<div class="ticker-item" id="tr-'+item.ticker+'"><div class="ticker-left"><div class="ticker-name">'+(item.ticker||'—')+'<span class="sig-badge '+sm.cls+'">'+sm.label+'</span></div><div class="ticker-meta">'+(item.exchange||'')+' · '+item.source+' · '+fmtDate(item.time)+'</div></div><div class="ticker-right"><div class="ticker-price" id="lp-'+item.ticker+'">'+dispPrice+'</div><div class="ticker-change '+chgCls+'" id="lc-'+item.ticker+'">'+chgTxt+'</div></div></div>';});html+='</div>';
   if(currentAltcoinFilter==='rsi'){contentEl.style.display='none';} else {contentEl.style.display='';contentEl.innerHTML=html;}
   // RSI 항목 분리해서 rsi-content에 렌더링
   var rsiEl=document.getElementById('rsi-content');
@@ -1792,9 +1788,22 @@ initSoundBtn();
 // ══════════════════════════════════════════════
 function initBtcBlur(){
   var unlocked=localStorage.getItem('rsi_unlocked')==='1';
+  var content=document.getElementById('btc-blur-content');
+  if(!content)return;
+  content.style.filter='';content.style.color='';content.style.textShadow='';
   if(!unlocked){
-    var content=document.getElementById('btc-blur-content');
-    if(content)content.classList.add('blurred');
+    content.classList.add('blurred');
+    var paywall=document.getElementById('btc-paywall-inline');
+    if(paywall)paywall.classList.remove('show');
+    content.onclick=function(){
+      var pw=document.getElementById('btc-paywall-inline');
+      if(pw)pw.classList.add('show');
+      var inp=document.getElementById('btc-pw-input2');
+      if(inp){inp.value='';setTimeout(function(){inp.focus();},100);}
+    };
+  }else{
+    content.classList.remove('blurred');
+    content.onclick=null;
   }
 }
 function checkBtcPasswordInline(){
