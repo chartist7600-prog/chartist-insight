@@ -1285,7 +1285,7 @@ function renderBtcSignals(signals){
     contentEl.innerHTML='<div class="signal-empty">오늘 신호가 없습니다.<br><span style="font-size:10px;color:var(--text3);">09:00 KST 기준 일봉 마감 후 리셋</span></div>';
     return;
   }
-  var isUnlocked=localStorage.getItem('rsi_unlocked')==='1';
+  var isUnlocked=true;
   var html='<div class="signal-list">';
   signals.forEach(function(s){
     var isLong=s.type==='LONG';
@@ -1328,26 +1328,12 @@ setInterval(function(){
 
 function filterAltcoin(f){
   currentAltcoinFilter=f;
-  ['all','trend','ma','rsi','kiz','wyc'].forEach(function(v){
+  ['all','trend','ma','kiz','wyc'].forEach(function(v){
     var btn=document.getElementById('af-'+v);
     if(btn)btn.classList.remove('active');
   });
   var activeBtn=document.getElementById('af-'+f);
   if(activeBtn)activeBtn.classList.add('active');
-  var wrap=document.getElementById('rsi-blur-wrap');
-  var content=document.getElementById('rsi-blur-content');
-  var paywall=document.getElementById('rsi-paywall');
-  if(wrap)wrap.style.display='block';
-  if(content){content.style.filter='';content.style.color='';content.style.textShadow='';}
-  if(!rsiUnlocked){
-    if(content){content.classList.add('blurred');content.style.color='transparent';content.style.textShadow='0 0 8px rgba(255,255,255,0.5)';}
-    if(paywall)paywall.classList.remove('show');
-    if(content)content.onclick=function(){lockRsi();};
-  }else{
-    if(content)content.classList.remove('blurred');
-    if(paywall)paywall.classList.remove('show');
-    if(content)content.onclick=null;
-  }
   renderAltcoin();
 }
 
