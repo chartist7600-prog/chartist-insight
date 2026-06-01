@@ -25,7 +25,7 @@
   :root {
     --bg:#0e0e0e;--bg2:#161616;--bg3:#1e1e1e;
     --border:rgba(255,255,255,0.08);--border2:rgba(255,255,255,0.14);
-    --gold:#C9A84C;--text:#f0f0f0;--text2:#999;--text3:#555;
+    --gold:#C9A84C;--text:#f0f0f0;--text2:#bbb;--text3:#888;
     --red:#e05555;--red2:#ff6b6b;--green:#4caf7d;--blue:#4a9eff;
     --orange:#FF8C00;--sky:#29B6F6;
     --warn-bg:rgba(224,85,85,0.12);--warn-border:rgba(224,85,85,0.4);
@@ -980,7 +980,7 @@
 <div class="tab-content" id="tab-calc">
 <div class="container">
   <div class="top-header" style="margin-top:16px;">
-    <h1>[차티스트] 트레이딩 계산기</h1>
+    <h1>트레이딩 계산기</h1>
     <p><span style="color:var(--red);font-size:10px;">●</span> 빨간 점 + 골드 음영 = 필수 입력 &nbsp;|&nbsp; 나머지 = 선택 또는 자동 계산</p>
   </div>
   <div class="section"><div class="sec-header"><div class="badge">1</div><span class="sec-title">기본 설정</span></div><div class="grid3"><div class="field"><label><span class="req-dot"></span>종목</label><input type="text" id="symbol" class="required" placeholder="BTCUSDT" value="BTCUSDT"></div><div class="field" id="direction-field"><label><span class="req-dot"></span><span id="direction-label">방향</span></label><select id="direction" class="required" onchange="calc()"><option value="long">LONG</option><option value="short">SHORT</option></select></div><div class="field"><label><span class="req-dot"></span><span id="lev-label">배율</span><span class="tooltip-wrap" id="lev-tooltip"><span class="tooltip-icon">?</span><span class="tooltip-box">레버리지 배율. 10x면 증거금의 10배 포지션을 잡음.</span></span></label><input type="number" id="leverage" class="required" placeholder="10" value="10" min="1" max="125" oninput="calc()" onblur="validateLeverage()"></div></div></div>
@@ -1015,10 +1015,10 @@
       <p style="font-size:13px;color:#777;margin-bottom:20px;line-height:1.6;">차티스트 인사이트 멤버 전용<br>내 매매를 기록하고 분석하세요</p>
       <div style="display:flex;margin-bottom:20px;border-bottom:1px solid #242424;">
         <button id="j-tab-login-btn" onclick="jSwitchAuthTab('login')" style="flex:1;padding:10px;background:none;border:none;border-bottom:2px solid #C9A84C;color:#C9A84C;font-size:13px;cursor:pointer;margin-bottom:-1px;">로그인</button>
-        <button id="j-tab-reg-btn" onclick="jSwitchAuthTab('register')" style="flex:1;padding:10px;background:none;border:none;border-bottom:2px solid transparent;color:#777;font-size:13px;cursor:pointer;margin-bottom:-1px;">회원가입</button>
+        <button id="j-tab-reg-btn" onclick="window.open('https://fanding.kr/@bzcLu6QCTdMe/membership/','_blank')" style="flex:1;padding:10px;background:none;border:none;border-bottom:2px solid transparent;color:#777;font-size:13px;cursor:pointer;margin-bottom:-1px;">회원가입</button>
       </div>
       <div id="j-login-section">
-        <div style="margin-bottom:14px;"><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">아이디</label><input id="j-username" type="text" placeholder="아이디 입력" autocomplete="username" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
+        <div style="margin-bottom:14px;"><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">아이디</label><input id="j-username" type="text" placeholder="팬딩 아이디 입력" autocomplete="username" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
         <div style="margin-bottom:14px;"><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">비밀번호</label><input id="j-password" type="password" placeholder="비밀번호 입력" autocomplete="current-password" onkeydown="if(event.key==='Enter')journalLogin()" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
         <div id="j-login-err" style="background:rgba(226,83,74,0.12);border:1px solid rgba(226,83,74,0.3);border-radius:6px;color:#e2534a;font-size:12px;padding:8px 12px;margin-bottom:10px;display:none;"></div>
         <button onclick="journalLogin()" style="width:100%;background:#C9A84C;color:#000;border:none;border-radius:6px;padding:10px;font-size:14px;font-weight:700;cursor:pointer;">로그인</button>
