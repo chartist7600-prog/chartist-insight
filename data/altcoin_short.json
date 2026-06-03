@@ -1,20 +1,8 @@
 [
   {
-    "key": "빗썸_MERL",
-    "time": "2026-06-02 09:00",
-    "price": 41.89,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_GNO",
-    "time": "2026-06-02 09:00",
-    "price": 472800.0,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_TON",
-    "time": "2026-06-02 21:00",
-    "price": 3048.0,
+    "key": "빗썸_GPS",
+    "time": "2026-06-03 09:00",
+    "price": 11.96,
     "sig_type": "trend"
   }
 ]
