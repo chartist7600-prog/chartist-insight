@@ -4,5 +4,17 @@
     "time": "2026-06-03 09:00",
     "price": 11.96,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_APE",
+    "time": "2026-06-03 21:00",
+    "price": 214.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_LIT",
+    "time": "2026-06-03 21:00",
+    "price": 2351.0,
+    "sig_type": "trend"
   }
 ]
