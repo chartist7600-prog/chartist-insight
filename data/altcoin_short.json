@@ -1,26 +1,8 @@
 [
   {
-    "key": "빗썸_HFT",
-    "time": "2026-06-04 09:00",
-    "price": 18.08,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_GNS",
-    "time": "2026-06-04 09:00",
-    "price": 0.53,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_STO",
-    "time": "2026-06-04 09:00",
-    "price": 0.0722,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_OPN",
-    "time": "2026-06-04 09:00",
-    "price": 0.2282,
+    "key": "빗썸_BFC",
+    "time": "2026-06-05 09:00",
+    "price": 21.3,
     "sig_type": "trend"
   }
 ]
