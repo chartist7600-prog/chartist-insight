@@ -16,5 +16,29 @@
     "time": "2026-06-07 09:00",
     "price": 177.0,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_ROBO",
+    "time": "2026-06-07 21:00",
+    "price": 31.43,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_FIDA",
+    "time": "2026-06-07 21:00",
+    "price": 0.02984,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_HMSTR",
+    "time": "2026-06-07 21:00",
+    "price": 0.0001833,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_BANK",
+    "time": "2026-06-07 21:00",
+    "price": 0.036,
+    "sig_type": "trend"
   }
 ]
