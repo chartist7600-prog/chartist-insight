@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "key": "빗썸_PARTI",
+    "time": "2026-06-07 09:00",
+    "price": 85.12,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_ALLO",
+    "time": "2026-06-07 09:00",
+    "price": 614.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_GWEI",
+    "time": "2026-06-07 09:00",
+    "price": 177.0,
+    "sig_type": "trend"
+  }
+]
