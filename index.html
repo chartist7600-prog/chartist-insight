@@ -679,6 +679,48 @@
   /* 천단위 구분 힌트 */
   .amount-hint { font-size:11px;color:var(--gold);margin-top:3px;font-family:'JetBrains Mono',monospace; }
 
+
+  /* ══ UI 개선 ══ */
+  /* 탭 활성 하단 선 두껍게 */
+  .tab-btn.active{color:var(--gold);border-bottom:3px solid var(--gold);font-weight:700;}
+
+  /* 카드 호버 효과 강화 */
+  .ticker-item{transition:background 0.15s;}
+  .ticker-item:hover{background:rgba(201,168,76,0.04);}
+
+  /* 시그널 카드 좌측 바 */
+  .signal-item::before{width:4px;}
+
+  /* 섹션 타이틀 강화 */
+  .screen-title{font-size:16px;font-weight:700;letter-spacing:0.3px;}
+
+  /* 매크로 카드 호버 */
+  .macro-card{transition:border-color 0.2s,transform 0.15s;}
+  .macro-card:hover{border-color:rgba(201,168,76,0.3);transform:translateY(-1px);}
+
+  /* 필터 버튼 활성화 강화 */
+  .filter-btn.active{font-weight:700;box-shadow:0 0 0 1px var(--gold);}
+
+  /* BTC 신호 카드 강화 */
+  .signal-item{box-shadow:0 2px 12px rgba(0,0,0,0.3);}
+  .signal-item:hover{box-shadow:0 4px 20px rgba(0,0,0,0.4);}
+
+  /* 페이월 박스 개선 */
+  .paywall-title{font-size:16px;}
+
+  /* 매매일지 통계 카드 상단 바 */
+  #j-main-screen > div:nth-child(2) > div{position:relative;overflow:hidden;}
+
+  /* 탭 네비 하단 선 */
+  .tab-nav{border-bottom:1px solid var(--border2);}
+
+  /* 스크린 헤더 구분선 */
+  .screen-header{padding-bottom:12px;border-bottom:0.5px solid var(--border);margin-bottom:16px;}
+
+  /* 히어로 설명 반응형 */
+  @media(max-width:520px){
+    .hero-desc{display:none;}
+  }
 </style>
 </head>
 <body id="body">
@@ -711,6 +753,14 @@
 </header>
 
 <div class="site-header">
+  <div class="hero-desc" style="text-align:center;padding:8px 16px 4px;max-width:700px;margin:0 auto;">
+    <div style="font-size:11px;color:var(--text3);letter-spacing:0.5px;line-height:1.8;">
+      실시간 <span style="color:var(--gold);font-weight:700;">비트코인 신호</span> &nbsp;·&nbsp; 
+      <span style="color:var(--gold);font-weight:700;">알트코인 네비게이션</span> &nbsp;·&nbsp; 
+      <span style="color:var(--gold);font-weight:700;">매크로 지표</span> &nbsp;·&nbsp; 
+      <span style="color:var(--gold);font-weight:700;">매매일지</span>
+    </div>
+  </div>
   <div class="font-size-bar">
     <span class="font-size-label">글자크기</span>
     <div class="fs-toggle">
@@ -734,6 +784,7 @@
       <div class="fg-right">
         <div class="fg-value" id="fg-value">—</div>
         <div class="fg-label" id="fg-label">로딩 중...</div>
+        <div style="font-size:9px;color:var(--text3);margin-top:4px;border-top:0.5px solid var(--border);padding-top:4px;">0-24 극단 공포 · 75-100 극단 탐욕</div>
       </div>
     </div>
   </div>
