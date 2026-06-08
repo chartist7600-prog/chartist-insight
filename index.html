@@ -1025,7 +1025,7 @@
       </div>
       <div id="j-register-section" style="display:none;">
         <div style="margin-bottom:14px;"><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">아이디</label><input id="j-reg-username" type="text" placeholder="영문+숫자 4자 이상" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"><div id="j-ticker-ac" style="display:none;position:absolute;top:100%;left:0;right:0;z-index:100;background:#1a1a1a;border:1px solid #333;border-radius:0 0 6px 6px;max-height:200px;overflow-y:auto;"></div></div>
-        <div style="margin-bottom:14px;"><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">팬딩 아이디</label><input id="j-reg-fanding" type="text" placeholder="팬딩 회원 아이디" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
+        <div style="margin-bottom:14px;"><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">팬딩 아이디</label><input id="j-reg-fanding" type="text" placeholder="팬딩 회원 아이디" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"><div id="j-ticker-ac" class="ticker-autocomplete" style="display:none;position:absolute;top:100%;left:0;right:0;z-index:100;background:#1a1a1a;border:1px solid #333;border-radius:0 0 6px 6px;max-height:200px;overflow-y:auto;"></div></div>
         <div style="margin-bottom:14px;"><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">비밀번호</label><input id="j-reg-pw" type="password" placeholder="8자 이상" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
         <div style="margin-bottom:14px;"><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">비밀번호 확인</label><input id="j-reg-pw2" type="password" placeholder="비밀번호 재입력" onkeydown="if(event.key==='Enter')journalRegister()" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
         <div id="j-reg-err" style="background:rgba(226,83,74,0.12);border:1px solid rgba(226,83,74,0.3);border-radius:6px;color:#e2534a;font-size:12px;padding:8px 12px;margin-bottom:10px;display:none;"></div>
@@ -1047,15 +1047,15 @@
     <div style="background:#1a1a1a;border:1px solid #242424;border-left:3px solid #C9A84C;border-radius:10px;padding:20px;margin-bottom:20px;">
       <div style="font-size:12px;font-weight:700;color:#C9A84C;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:16px;">신규 매매 기록</div>
       <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:10px;margin-bottom:10px;">
-        <div style="position:relative;"><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">종목</label><input id="j-ticker" type="text" placeholder="BTCUSDT" oninput="searchTicker(this.value)" autocomplete="off" oninput="searchTicker(this.value)" autocomplete="off" oninput="searchTicker(this.value)" autocomplete="off" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
+        <div style="position:relative;"><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">종목</label><input id="j-ticker" type="text" placeholder="BTCUSDT" oninput="searchTicker(this.value)" autocomplete="off" oninput="searchTicker(this.value)" autocomplete="off" oninput="searchTicker(this.value)" autocomplete="off" oninput="searchTicker(this.value)" autocomplete="off" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
         <div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">방향</label><select id="j-dir" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;"><option value="LONG">LONG</option><option value="SHORT">SHORT</option></select></div>
         <div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">배율</label><input id="j-lev" type="text" placeholder="10x" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
         <div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">진입일</label><input id="j-date" type="date" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;"></div>
       </div>
       <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:14px;">
-        <div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">진입가</label><input id="j-entry" type="text" placeholder="103,450" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
-        <div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">청산가</label><input id="j-exit" type="text" placeholder="—" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
-        <div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">투자금($)</label><input id="j-size" type="text" placeholder="1,000" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
+        <div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">진입가</label><input id="j-entry" type="text" placeholder="103,450" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
+        <div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">청산가</label><input id="j-exit" type="text" placeholder="—" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
+        <div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">투자금($)</label><input id="j-size" type="text" placeholder="1,000" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
         <div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">손절가</label><input id="j-sl" type="text" placeholder="—" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
         <div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">목표가</label><input id="j-tp" type="text" placeholder="—" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
       </div>
@@ -1689,28 +1689,24 @@ initSoundBtn();
 var RSI_PW="7777";
 var BINANCE_FUTURES=["BTC", "ETH", "NEAR", "SOL", "WLD", "XRP", "SUI", "TRX", "DOGE", "TAO", "SPK", "RENDER", "ONDO", "ADA", "LINK", "FIL", "VIRTUAL", "INJ", "ENA", "SEI", "AVAX", "ICP", "ALT", "XAUT", "WLFI", "TIA", "PENGU", "DOT", "AAVE", "SAHARA", "XPL", "UNI", "APT", "HBAR", "PUMP", "ATOM", "PENDLE", "FF", "ARKM", "CHZ", "TRUMP", "BCH", "CHIP", "JTO", "KITE", "ARB", "XLM", "GRT", "ETHFI", "VET", "OP", "MMT", "ETC", "ZAMA", "LPT", "ZBT", "ZRO", "MEGA", "POL", "CFG", "0G", "ERA", "BIO", "VANA", "PLUME", "MIRA", "WIF", "ORCA", "JUP", "ALGO", "ZK", "SYRUP", "SENT", "OPEN", "W", "JST", "KAITO", "IOTA", "SAND", "BERA", "STORJ", "HOLO", "COMP", "GMT", "PYTH", "AVNT", "KAT", "NXPC", "LAYER", "MANTRA", "SUN", "PROVE", "SKY", "RED", "SUPER", "THETA", "AXS", "IMX", "RVN", "SOMI", "WCT", "2Z", "HYPER", "AWE", "YGG", "LINEA", "STX", "MOVE", "ONT", "ME", "WAL", "ENS", "NEWT", "ESP", "HIVE", "POLYX", "NEO", "KAVA", "ANKR", "TREE", "ID", "API3", "CELO", "BARD", "A", "MASK", "ENSO", "BIGTIME", "AGLD", "CYBER", "SIGN", "STEEM", "ZKC", "LA", "ZIL", "MANA", "QTUM", "AUCTION", "EGLD", "CKB", "XTZ", "BLUR", "MINA", "MTL", "1INCH", "T", "BREV", "ASTR", "BAT", "GAS"];
 function searchTicker(val){
-  var ac=document.getElementById("j-ticker-ac");
-  if(!ac)return;
-  val=(val||"").toUpperCase().trim();
-  if(!val){ac.innerHTML="";ac.style.display="none";return;}
+  var wrap=document.getElementById('j-ticker-wrap');
+  var ac=document.getElementById('j-ticker-ac');
+  val=(val||'').toUpperCase().trim();
   var matches=BINANCE_FUTURES.filter(function(t){return t.startsWith(val);}).slice(0,8);
-  if(!matches.length){ac.style.display="none";return;}
   ac.innerHTML=matches.map(function(t){
-    return '<div class="ticker-autocomplete-item" onclick="selectTicker("'+t+'")" style="padding:8px 12px;cursor:pointer;font-size:12px;color:#e2e2e2;border-bottom:1px solid #242424;" onmouseover="this.style.background='#222'" onmouseout="this.style.background=''">'+t+'USDT</div>';
-  }).join("");
-  ac.style.display="block";
+    return '<div class="ticker-autocomplete-item" onclick="selectTicker(''+t+'')"><span class="tac-symbol">'+t+'USDT</span></div>';
+  }).join('');
+  ac.style.display='block';
 }
 function selectTicker(t){
-  var inp=document.getElementById("j-ticker");
-  if(inp){inp.value=t+"USDT";inp.style.borderColor="#C9A84C";}
-  var ac=document.getElementById("j-ticker-ac");
-  if(ac){ac.innerHTML="";ac.style.display="none";}
+  var inp=document.getElementById('j-ticker');
+  if(inp)inp.value=t+'USDT';
+  var ac=document.getElementById('j-ticker-ac');
+  if(ac){ac.innerHTML='';ac.style.display='none';}
 }
-document.addEventListener("click",function(e){
-  var ac=document.getElementById("j-ticker-ac");
-  if(ac&&e.target.id!=="j-ticker"){ac.innerHTML="";ac.style.display="none";}
+document.addEventListener('click',function(e){
+  var ac=document.getElementById('j-ticker-ac');
 });
-
 var BINANCE_FUTURES=["BTC", "ETH", "NEAR", "SOL", "WLD", "XRP", "SUI", "TRX", "DOGE", "TAO", "SPK", "RENDER", "ONDO", "ADA", "LINK", "FIL", "VIRTUAL", "INJ", "ENA", "SEI", "AVAX", "ICP", "ALT", "XAUT", "WLFI", "TIA", "PENGU", "DOT", "AAVE", "SAHARA", "XPL", "UNI", "APT", "HBAR", "PUMP", "ATOM", "PENDLE", "FF", "ARKM", "CHZ", "TRUMP", "BCH", "CHIP", "JTO", "KITE", "ARB", "XLM", "GRT", "ETHFI", "VET", "OP", "MMT", "ETC", "ZAMA", "LPT", "ZBT", "ZRO", "MEGA", "POL", "CFG", "0G", "ERA", "BIO", "VANA", "PLUME", "MIRA", "WIF", "ORCA", "JUP", "ALGO", "ZK", "SYRUP", "SENT", "OPEN", "W", "JST", "KAITO", "IOTA", "SAND", "BERA", "STORJ", "HOLO", "COMP", "GMT", "PYTH", "AVNT", "KAT", "NXPC", "LAYER", "MANTRA", "SUN", "PROVE", "SKY", "RED", "SUPER", "THETA", "AXS", "IMX", "RVN", "SOMI", "WCT", "2Z", "HYPER", "AWE", "YGG", "LINEA", "STX", "MOVE", "ONT", "ME", "WAL", "ENS", "NEWT", "ESP", "HIVE", "POLYX", "NEO", "KAVA", "ANKR", "TREE", "ID", "API3", "CELO", "BARD", "A", "MASK", "ENSO", "BIGTIME", "AGLD", "CYBER", "SIGN", "STEEM", "ZKC", "LA", "ZIL", "MANA", "QTUM", "AUCTION", "EGLD", "CKB", "XTZ", "BLUR", "MINA", "MTL", "1INCH", "T", "BREV", "ASTR", "BAT", "GAS"];
 function searchTicker(val){
   var ac=document.getElementById("j-ticker-ac");
@@ -1759,6 +1755,32 @@ document.addEventListener("click",function(e){
   if(ac&&e.target.id!=="j-ticker"){ac.innerHTML="";ac.style.display="none";}
 });
 
+var BINANCE_FUTURES=["BTC", "ETH", "NEAR", "SOL", "WLD", "XRP", "SUI", "TRX", "DOGE", "TAO", "SPK", "RENDER", "ONDO", "ADA", "LINK", "FIL", "VIRTUAL", "INJ", "ENA", "SEI", "AVAX", "ICP", "ALT", "XAUT", "WLFI", "TIA", "PENGU", "DOT", "AAVE", "SAHARA", "XPL", "UNI", "APT", "HBAR", "PUMP", "ATOM", "PENDLE", "FF", "ARKM", "CHZ", "TRUMP", "BCH", "CHIP", "JTO", "KITE", "ARB", "XLM", "GRT", "ETHFI", "VET", "OP", "MMT", "ETC", "ZAMA", "LPT", "ZBT", "ZRO", "MEGA", "POL", "CFG", "0G", "ERA", "BIO", "VANA", "PLUME", "MIRA", "WIF", "ORCA", "JUP", "ALGO", "ZK", "SYRUP", "SENT", "OPEN", "W", "JST", "KAITO", "IOTA", "SAND", "BERA", "STORJ", "HOLO", "COMP", "GMT", "PYTH", "AVNT", "KAT", "NXPC", "LAYER", "MANTRA", "SUN", "PROVE", "SKY", "RED", "SUPER", "THETA", "AXS", "IMX", "RVN", "SOMI", "WCT", "2Z", "HYPER", "AWE", "YGG", "LINEA", "STX", "MOVE", "ONT", "ME", "WAL", "ENS", "NEWT", "ESP", "HIVE", "POLYX", "NEO", "KAVA", "ANKR", "TREE", "ID", "API3", "CELO", "BARD", "A", "MASK", "ENSO", "BIGTIME", "AGLD", "CYBER", "SIGN", "STEEM", "ZKC", "LA", "ZIL", "MANA", "QTUM", "AUCTION", "EGLD", "CKB", "XTZ", "BLUR", "MINA", "MTL", "1INCH", "T", "BREV", "ASTR", "BAT", "GAS"];
+function searchTicker(val){
+  var ac=document.getElementById("j-ticker-ac");
+  if(!ac)return;
+  val=(val||"").toUpperCase().trim();
+  if(!val){ac.innerHTML="";ac.style.display="none";return;}
+  var matches=BINANCE_FUTURES.filter(function(t){return t.startsWith(val);}).slice(0,8);
+  if(!matches.length){ac.style.display="none";return;}
+  ac.innerHTML=matches.map(function(t){
+    return '<div class="ticker-autocomplete-item" onclick="selectTicker("'+t+'")" style="padding:8px 12px;cursor:pointer;font-size:12px;color:#e2e2e2;border-bottom:1px solid #242424;" onmouseover="this.style.background='#222'" onmouseout="this.style.background=''">'+t+'USDT</div>';
+  }).join("");
+  ac.style.display="block";
+}
+function selectTicker(t){
+  var inp=document.getElementById("j-ticker");
+  if(inp){inp.value=t+"USDT";inp.style.borderColor="#C9A84C";}
+  var ac=document.getElementById("j-ticker-ac");
+  if(ac){ac.innerHTML="";ac.style.display="none";}
+}
+document.addEventListener("click",function(e){
+  var ac=document.getElementById("j-ticker-ac");
+  if(ac&&e.target.id!=="j-ticker"){ac.innerHTML="";ac.style.display="none";}
+});
+
+var RSI_PW="7777";
+var RSI_PW="7777";
 var RSI_PW="7777";
 function initBtcBlur(){
   var unlocked=localStorage.getItem('rsi_unlocked')==='1';
