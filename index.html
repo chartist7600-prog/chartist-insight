@@ -797,7 +797,7 @@
   <button class="tab-btn" id="tab-btn-stock" onclick="switchTab('stock',this)">📈 주식</button>
   <button class="tab-btn" id="tab-btn-macro" onclick="switchTab('macro',this)">🌐 매크로</button>
   <button class="tab-btn" id="tab-btn-calc" onclick="switchTab('calc',this)">🧮 계산기</button>
-  <button class="tab-btn" id="tab-btn-journal" onclick="switchTab('journal',this)">📒 매매일지</button>
+  <button class="tab-btn" id="tab-btn-journal" onclick="switchTab('journal',this)" style="letter-spacing:-0.5px;">📒 매매일지</button>
 </div>
 
 <!-- ══ 비트코인 탭 ══ -->
@@ -1932,7 +1932,7 @@ var _origSwitchTab=switchTab;
 switchTab=function(tab,btn){
   _origSwitchTab(tab,btn);
   if(tab==='btc'){initBtcBlur();}
-  if(tab==='journal'){document.getElementById('j-auth-screen').style.display='block';}
+  if(tab==='journal'){var tok=localStorage.getItem('j_token');if(tok){document.getElementById('j-auth-screen').style.display='none';document.getElementById('j-main-screen').style.display='';}else{document.getElementById('j-auth-screen').style.display='block';}}
 };
 
 // ══════════════════════════════════════════════
