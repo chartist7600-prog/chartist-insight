@@ -1,44 +1,20 @@
 [
   {
-    "key": "빗썸_PARTI",
-    "time": "2026-06-07 09:00",
-    "price": 85.12,
+    "key": "빗썸_CTSI",
+    "time": "2026-06-08 09:00",
+    "price": 39.05,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_ALLO",
-    "time": "2026-06-07 09:00",
-    "price": 614.0,
+    "key": "빗썸_ACX",
+    "time": "2026-06-08 09:00",
+    "price": 63.58,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_GWEI",
-    "time": "2026-06-07 09:00",
-    "price": 177.0,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_ROBO",
-    "time": "2026-06-07 21:00",
-    "price": 31.43,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_FIDA",
-    "time": "2026-06-07 21:00",
-    "price": 0.02984,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_HMSTR",
-    "time": "2026-06-07 21:00",
-    "price": 0.0001833,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_BANK",
-    "time": "2026-06-07 21:00",
-    "price": 0.036,
+    "key": "바이낸스_OG",
+    "time": "2026-06-08 09:00",
+    "price": 2.822,
     "sig_type": "trend"
   }
 ]
