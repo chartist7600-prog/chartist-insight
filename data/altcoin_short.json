@@ -16,5 +16,11 @@
     "time": "2026-06-08 09:00",
     "price": 2.822,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_DAO",
+    "time": "2026-06-08 21:00",
+    "price": 62.92,
+    "sig_type": "trend"
   }
 ]
