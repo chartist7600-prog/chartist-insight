@@ -10,5 +10,23 @@
     "time": "2026-06-11 09:00",
     "price": 3113.0,
     "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_RUNE",
+    "time": "2026-06-11 21:00",
+    "price": 0.41,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_CATI",
+    "time": "2026-06-11 21:00",
+    "price": 0.056,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_BROCCOLI714",
+    "time": "2026-06-11 21:00",
+    "price": 0.01375,
+    "sig_type": "trend"
   }
 ]
