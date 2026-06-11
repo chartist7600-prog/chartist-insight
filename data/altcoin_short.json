@@ -1,8 +1,14 @@
 [
   {
-    "key": "바이낸스_STG",
-    "time": "2026-06-10 09:00",
-    "price": 0.3422,
+    "key": "빗썸_CRV",
+    "time": "2026-06-11 09:00",
+    "price": 317.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_MORPHO",
+    "time": "2026-06-11 09:00",
+    "price": 3113.0,
     "sig_type": "trend"
   }
 ]
