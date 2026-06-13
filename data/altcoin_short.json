@@ -52,5 +52,23 @@
     "time": "2026-06-13 09:00",
     "price": 0.1558,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_WNCG",
+    "time": "2026-06-13 21:00",
+    "price": 10.31,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_XTER",
+    "time": "2026-06-13 21:00",
+    "price": 25.36,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_DOLO",
+    "time": "2026-06-13 21:00",
+    "price": 0.02599,
+    "sig_type": "trend"
   }
 ]
