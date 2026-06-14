@@ -1,74 +1,8 @@
 [
   {
-    "key": "빗썸_ENJ",
-    "time": "2026-06-13 09:00",
-    "price": 50.27,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_FLR",
-    "time": "2026-06-13 09:00",
-    "price": 11.37,
-    "sig_type": "trend_strong"
-  },
-  {
-    "key": "빗썸_LWA",
-    "time": "2026-06-13 09:00",
-    "price": 5.448,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_KMNO",
-    "time": "2026-06-13 09:00",
-    "price": 27.15,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_RIF",
-    "time": "2026-06-13 09:00",
-    "price": 0.0797,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_LUNC",
-    "time": "2026-06-13 09:00",
-    "price": 7.442e-05,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_NOT",
-    "time": "2026-06-13 09:00",
-    "price": 0.000471,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_1000CHEEMS",
-    "time": "2026-06-13 09:00",
-    "price": 0.00062,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_AT",
-    "time": "2026-06-13 09:00",
-    "price": 0.1558,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_WNCG",
-    "time": "2026-06-13 21:00",
-    "price": 10.31,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_XTER",
-    "time": "2026-06-13 21:00",
-    "price": 25.36,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_DOLO",
-    "time": "2026-06-13 21:00",
-    "price": 0.02599,
+    "key": "빗썸_HEMI",
+    "time": "2026-06-14 09:00",
+    "price": 9.316,
     "sig_type": "trend"
   }
 ]
