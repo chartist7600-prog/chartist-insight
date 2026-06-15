@@ -10,5 +10,65 @@
     "time": "2026-06-15 09:00",
     "price": 1.1605,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_CAKE",
+    "time": "2026-06-15 21:00",
+    "price": 2081.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_METIS",
+    "time": "2026-06-15 21:00",
+    "price": 4389.0,
+    "sig_type": "trend_strong"
+  },
+  {
+    "key": "빗썸_PUFFER",
+    "time": "2026-06-15 21:00",
+    "price": 27.49,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_GRASS",
+    "time": "2026-06-15 21:00",
+    "price": 682.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_DASH",
+    "time": "2026-06-15 21:00",
+    "price": 40.06,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_ADX",
+    "time": "2026-06-15 21:00",
+    "price": 0.0734,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_SYN",
+    "time": "2026-06-15 21:00",
+    "price": 0.0448,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_SSV",
+    "time": "2026-06-15 21:00",
+    "price": 2.43,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_BNSOL",
+    "time": "2026-06-15 21:00",
+    "price": 81.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_VELODROME",
+    "time": "2026-06-15 21:00",
+    "price": 0.01545,
+    "sig_type": "trend"
   }
 ]
