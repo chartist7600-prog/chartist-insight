@@ -1,50 +1,14 @@
 [
   {
-    "key": "빗썸_EIGEN",
-    "time": "2026-06-16 09:00",
-    "price": 336.0,
+    "key": "빗썸_XVS",
+    "time": "2026-06-17 09:00",
+    "price": 3879.0,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_EUL",
-    "time": "2026-06-16 09:00",
-    "price": 1582.0,
+    "key": "바이낸스_AVA",
+    "time": "2026-06-17 09:00",
+    "price": 0.2002,
     "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_MET",
-    "time": "2026-06-16 09:00",
-    "price": 177.0,
-    "sig_type": "trend_strong"
-  },
-  {
-    "key": "바이낸스_PROM",
-    "time": "2026-06-16 09:00",
-    "price": 1.161,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_WBETH",
-    "time": "2026-06-16 09:00",
-    "price": 1972.1,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_BANANAS31",
-    "time": "2026-06-16 09:00",
-    "price": 0.010346,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_UMA",
-    "time": "2026-06-16 21:00",
-    "price": 650.0,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_ROSE",
-    "time": "2026-06-16 21:00",
-    "price": 0.0074,
-    "sig_type": "trend_strong"
   }
 ]
