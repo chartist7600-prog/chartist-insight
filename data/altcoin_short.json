@@ -10,5 +10,11 @@
     "time": "2026-06-17 09:00",
     "price": 0.2002,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_XION",
+    "time": "2026-06-17 21:00",
+    "price": 208.0,
+    "sig_type": "trend_strong"
   }
 ]
