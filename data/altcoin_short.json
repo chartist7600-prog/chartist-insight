@@ -34,5 +34,29 @@
     "time": "2026-06-18 09:00",
     "price": 0.02888,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_NMR",
+    "time": "2026-06-18 21:00",
+    "price": 13070.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_BEL",
+    "time": "2026-06-18 21:00",
+    "price": 142.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_ES",
+    "time": "2026-06-18 21:00",
+    "price": 122.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_XAN",
+    "time": "2026-06-18 21:00",
+    "price": 15.76,
+    "sig_type": "trend"
   }
 ]
