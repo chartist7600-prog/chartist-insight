@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "key": "빗썸_EDEN",
+    "time": "2026-06-19 21:00",
+    "price": 83.19,
+    "sig_type": "trend_strong"
+  },
+  {
+    "key": "바이낸스_HEI",
+    "time": "2026-06-19 21:00",
+    "price": 0.1267,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_TUT",
+    "time": "2026-06-19 21:00",
+    "price": 0.0115,
+    "sig_type": "trend"
+  }
+]
