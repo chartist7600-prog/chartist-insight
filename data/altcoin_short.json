@@ -10,5 +10,11 @@
     "time": "2026-06-20 09:00",
     "price": 36.48,
     "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_RARE",
+    "time": "2026-06-20 21:00",
+    "price": 0.015,
+    "sig_type": "trend"
   }
 ]
