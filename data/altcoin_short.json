@@ -1,20 +1,20 @@
 [
   {
-    "key": "빗썸_MAPO",
-    "time": "2026-06-20 09:00",
-    "price": 2.43,
+    "key": "빗썸_ALICE",
+    "time": "2026-06-21 09:00",
+    "price": 196.0,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_BICO",
-    "time": "2026-06-20 09:00",
-    "price": 36.48,
+    "key": "빗썸_GMX",
+    "time": "2026-06-21 09:00",
+    "price": 9180.0,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_RARE",
-    "time": "2026-06-20 21:00",
-    "price": 0.015,
+    "key": "바이낸스_RESOLV",
+    "time": "2026-06-21 09:00",
+    "price": 0.0206,
     "sig_type": "trend"
   }
 ]
