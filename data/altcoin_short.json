@@ -16,5 +16,53 @@
     "time": "2026-06-21 09:00",
     "price": 0.0206,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_ARPA",
+    "time": "2026-06-21 21:00",
+    "price": 13.43,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_HFT",
+    "time": "2026-06-21 21:00",
+    "price": 16.85,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_ACE",
+    "time": "2026-06-21 21:00",
+    "price": 149.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_LISTA",
+    "time": "2026-06-21 21:00",
+    "price": 85.4,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_BTR",
+    "time": "2026-06-21 21:00",
+    "price": 34.92,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_POPCAT",
+    "time": "2026-06-21 21:00",
+    "price": 71.0,
+    "sig_type": "trend_strong"
+  },
+  {
+    "key": "바이낸스_DYM",
+    "time": "2026-06-21 21:00",
+    "price": 0.019,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_TNSR",
+    "time": "2026-06-21 21:00",
+    "price": 0.0524,
+    "sig_type": "trend"
   }
 ]
