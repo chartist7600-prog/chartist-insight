@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "key": "빗썸_APE",
+    "time": "2026-06-23 21:00",
+    "price": 211.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_HOOK",
+    "time": "2026-06-23 21:00",
+    "price": 11.24,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_VERONA",
+    "time": "2026-06-23 21:00",
+    "price": 324.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_DEXE",
+    "time": "2026-06-23 21:00",
+    "price": 33740.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SD",
+    "time": "2026-06-23 21:00",
+    "price": 239.0,
+    "sig_type": "trend"
+  }
+]
