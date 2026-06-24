@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "key": "빗썸_XPR",
+    "time": "2026-06-24 21:00",
+    "price": 3.636,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_DYDX",
+    "time": "2026-06-24 21:00",
+    "price": 225.0,
+    "sig_type": "trend_strong"
+  },
+  {
+    "key": "빗썸_XPLA",
+    "time": "2026-06-24 21:00",
+    "price": 15.42,
+    "sig_type": "trend"
+  }
+]
