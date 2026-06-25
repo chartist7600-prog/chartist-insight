@@ -4,5 +4,17 @@
     "time": "2026-06-25 09:00",
     "price": 0.0184,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_DBR",
+    "time": "2026-06-25 21:00",
+    "price": 23.26,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_BAR",
+    "time": "2026-06-25 21:00",
+    "price": 0.294,
+    "sig_type": "trend"
   }
 ]
