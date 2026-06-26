@@ -721,6 +721,36 @@
   @media(max-width:520px){
     .hero-desc{display:none;}
   }
+
+  .hero-section{background:#0e0e0e;padding:48px 20px 36px;text-align:center;border-bottom:0.5px solid rgba(201,168,76,0.15);}
+  .hero-inner{max-width:600px;margin:0 auto;}
+  .hero-badge{display:inline-block;background:rgba(201,168,76,0.1);border:0.5px solid rgba(201,168,76,0.35);color:#C9A84C;font-size:11px;padding:4px 14px;border-radius:20px;margin-bottom:20px;letter-spacing:0.5px;}
+  .hero-title{font-size:36px;font-weight:700;line-height:1.2;color:#f0f0f0;margin-bottom:14px;}
+  .hero-gold{color:#C9A84C;}
+  .hero-desc-text{font-size:13px;color:#888;line-height:1.8;margin-bottom:24px;}
+  .hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+  .hero-btn-primary{background:#C9A84C;color:#0e0e0e;border:none;padding:11px 28px;border-radius:8px;font-size:14px;font-weight:700;cursor:pointer;text-decoration:none;transition:opacity 0.15s;}
+  .hero-btn-primary:hover{opacity:0.85;}
+  .hero-btn-secondary{background:transparent;color:#C9A84C;border:0.5px solid #C9A84C;padding:11px 28px;border-radius:8px;font-size:14px;cursor:pointer;text-decoration:none;transition:all 0.15s;}
+  .hero-btn-secondary:hover{background:rgba(201,168,76,0.08);}
+  .service-section{background:#0e0e0e;padding:32px 20px;border-bottom:0.5px solid rgba(255,255,255,0.06);}
+  .service-container{max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:24px;}
+  .service-group-label{font-size:11px;color:#888;letter-spacing:0.8px;margin-bottom:12px;font-weight:500;}
+  .service-cards{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .service-card{background:#161616;border:0.5px solid rgba(255,255,255,0.08);border-radius:12px;padding:16px;display:flex;align-items:center;gap:12px;cursor:pointer;transition:border-color 0.2s,transform 0.15s;}
+  .service-card:hover{transform:translateY(-2px);}
+  .free-card:hover{border-color:rgba(255,255,255,0.2);}
+  .paid-card:hover{border-color:rgba(201,168,76,0.4);}
+  .paid-card{border-color:rgba(201,168,76,0.15);}
+  .service-card-icon{font-size:22px;flex-shrink:0;width:36px;text-align:center;}
+  .service-card-body{flex:1;}
+  .service-card-title{font-size:14px;font-weight:700;color:#f0f0f0;margin-bottom:4px;}
+  .service-card-desc{font-size:11px;color:#666;line-height:1.6;display:flex;flex-wrap:wrap;gap:4px;}
+  .service-tag{background:rgba(255,255,255,0.06);border:0.5px solid rgba(255,255,255,0.1);color:#888;font-size:10px;padding:2px 7px;border-radius:4px;}
+  .service-card-badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px;flex-shrink:0;align-self:flex-start;}
+  .service-card-badge.free{background:rgba(76,175,125,0.12);color:#4caf7d;border:0.5px solid rgba(76,175,125,0.3);}
+  .service-card-badge.paid{background:rgba(201,168,76,0.1);color:#C9A84C;border:0.5px solid rgba(201,168,76,0.3);}
+  @media(max-width:520px){.service-cards{grid-template-columns:1fr;}.hero-title{font-size:28px;}}
 </style>
 </head>
 <body id="body">
@@ -751,7 +781,70 @@
     <button class="sth-btn sth-btn-icon" onclick="showManual()" title="사용 매뉴얼">📖</button>
   </div>
 </header>
-
+<section class="hero-section">
+  <div class="hero-inner">
+    <div class="hero-badge">살아남는 매매 · 10년 금융권 경력</div>
+    <h1 class="hero-title">데이터 기반<br><span class="hero-gold">크립토 인사이트</span></h1>
+    <p class="hero-desc-text">추세전환 · RSI 다이버전스 · 고래 감지 신호를<br>실시간으로 제공합니다</p>
+    <div class="hero-btns">
+      <a href="https://fanding.kr/@bzcLu6QCTdMe/membership/" target="_blank" class="hero-btn-primary">멤버십 가입하기</a>
+      <a href="https://t.me/chartistlab" target="_blank" class="hero-btn-secondary">채널 구경하기</a>
+    </div>
+  </div>
+</section>
+<section class="service-section">
+  <div class="service-container">
+    <div class="service-group">
+      <div class="service-group-label">🆓 무료 제공</div>
+      <div class="service-cards">
+        <div class="service-card free-card" onclick="switchTab('calc',document.getElementById('tab-btn-calc'))">
+          <div class="service-card-icon">🧮</div>
+          <div class="service-card-body">
+            <div class="service-card-title">매매계산기</div>
+            <div class="service-card-desc">진입가·손절가·목표가 기반 손익비 자동 계산</div>
+          </div>
+          <div class="service-card-badge free">무료</div>
+        </div>
+        <div class="service-card free-card" onclick="switchTab('journal',document.getElementById('tab-btn-journal'))">
+          <div class="service-card-icon">📒</div>
+          <div class="service-card-body">
+            <div class="service-card-title">매매일지</div>
+            <div class="service-card-desc">내 매매 기록 · 텔레그램 로그인 시 영구 저장</div>
+          </div>
+          <div class="service-card-badge free">무료</div>
+        </div>
+      </div>
+    </div>
+    <div class="service-group">
+      <div class="service-group-label">🔒 멤버십 전용</div>
+      <div class="service-cards">
+        <div class="service-card paid-card" onclick="switchTab('btc',document.getElementById('tab-btn-btc'))">
+          <div class="service-card-icon">₿</div>
+          <div class="service-card-body">
+            <div class="service-card-title">비트코인</div>
+            <div class="service-card-desc">
+              <span class="service-tag">롱/숏 신호</span>
+              <span class="service-tag">고래봇</span>
+            </div>
+          </div>
+          <div class="service-card-badge paid">멤버십</div>
+        </div>
+        <div class="service-card paid-card" onclick="switchTab('altcoin',document.getElementById('tab-btn-altcoin'))">
+          <div class="service-card-icon">📊</div>
+          <div class="service-card-body">
+            <div class="service-card-title">알트코인</div>
+            <div class="service-card-desc">
+              <span class="service-tag">추세전환</span>
+              <span class="service-tag">다이버전스</span>
+              <span class="service-tag">고래봇</span>
+            </div>
+          </div>
+          <div class="service-card-badge paid">멤버십</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <div class="site-header">
   <div class="hero-desc" style="text-align:center;padding:8px 16px 4px;max-width:700px;margin:0 auto;">
     <div style="font-size:11px;color:var(--text3);letter-spacing:0.5px;line-height:1.8;">
