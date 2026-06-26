@@ -794,8 +794,6 @@
 <div class="tab-nav">
   <button class="tab-btn active" id="tab-btn-btc" onclick="switchTab('btc',this)">₿ 비트</button>
   <button class="tab-btn" id="tab-btn-altcoin" onclick="switchTab('altcoin',this)">📊 알트</button>
-  <button class="tab-btn" id="tab-btn-stock" onclick="switchTab('stock',this)">📈 주식</button>
-  <button class="tab-btn" id="tab-btn-macro" onclick="switchTab('macro',this)">🌐 매크로</button>
   <button class="tab-btn" id="tab-btn-calc" onclick="switchTab('calc',this)">🧮 계산기</button>
   <button class="tab-btn" id="tab-btn-journal" onclick="switchTab('journal',this)" style="letter-spacing:-0.5px;">📒 매매일지</button>
 </div>
@@ -879,155 +877,6 @@
 </div>
 </div>
 
-<!-- ══ 주식 탭 ══ -->
-<div class="tab-content" id="tab-stock">
-<div class="container">
-  <div class="screen-header" style="margin-top:4px;">
-    <div class="screen-title">주식 네비게이션</div>
-    <div class="screen-updated" id="stock-updated">데이터 로딩 중...</div>
-  </div>
-  <div class="filter-row" id="stock-market-row">
-    <button class="filter-btn active" id="sm-korea" onclick="filterStock('korea')">🇰🇷 국내주식</button>
-    <button class="filter-btn" id="sm-us" onclick="filterStock('us')">🇺🇸 해외주식</button>
-  </div>
-  <div class="filter-row" id="stock-sig-row">
-    <button class="filter-btn active" id="ss-all" onclick="filterStockSig('all')">전체</button>
-    <button class="filter-btn" id="ss-trend" onclick="filterStockSig('trend')">🚀 추세전환</button>
-    <button class="filter-btn" id="ss-ma" onclick="filterStockSig('ma')">🔀 이평선 수렴</button>
-    <button class="filter-btn" id="ss-rsi" onclick="filterStockSig('rsi')">📈 RSI 다이버전스</button>
-  </div>
-  <div id="stock-content"><div class="loading-box">데이터를 불러오는 중입니다...</div></div>
-</div>
-</div>
-
-<!-- ══ 매크로 탭 ══ -->
-<div class="tab-content" id="tab-macro">
-<div class="container" style="padding-top:16px;">
-
-  <!-- ★ 수정②: 경제캘린더 ForexFactory XML 자체 렌더링으로 교체 -->
-  <div class="macro-section">
-    <div class="macro-section-title">📅 경제 캘린더</div>
-    <div class="eco-cal-wrap">
-      <div class="eco-cal-header">
-        <div class="eco-cal-title">
-          🇺🇸 미국 USD &nbsp;·&nbsp; <span>높음(★★★)</span> &nbsp;·&nbsp; KST 기준 &nbsp;·&nbsp; ForexFactory
-        </div>
-        <button class="eco-cal-refresh" onclick="loadEcoCalendar(true)" title="새로고침">↺ 새로고침</button>
-      </div>
-      <!-- 컬럼 헤더 -->
-      <div class="eco-col-header">
-        <div class="eco-col-lbl">시간(KST)</div>
-        <div class="eco-col-lbl" style="text-align:left;padding:0 8px;">이벤트</div>
-        <div class="eco-col-lbl">발표</div>
-        <div class="eco-col-lbl">예측</div>
-        <div class="eco-col-lbl">이전</div>
-      </div>
-      <!-- 캘린더 데이터 영역 -->
-      <div id="eco-cal-body">
-        <div class="eco-cal-loading">📅 경제 캘린더 로딩 중...</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="macro-section">
-    <div class="macro-section-title">📊 시장 심리</div>
-    <div class="macro-grid">
-      <div class="macro-card">
-        <div class="mc-lbl">공포탐욕지수</div>
-        <div class="mc-val mc-dn" id="m-fg-val">—</div>
-        <div class="mc-sub mc-dn" id="m-fg-cls">로딩 중</div>
-        <canvas class="mc-chart" id="m-fg-chart"></canvas><div class="mc-desc">CNN Fear &amp; Greed</div>
-      </div>
-      <div class="macro-card">
-        <div class="mc-lbl">VIX 변동성</div>
-        <div class="mc-val" id="m-vix-val">—</div>
-        <div class="mc-sub mc-neu" id="m-vix-sub">20↓ 안정 · 30↑ 경계</div>
-        <canvas class="mc-chart" id="m-vix-chart"></canvas><div class="mc-desc">CBOE 변동성 지수</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="macro-section">
-    <div class="macro-section-title">📈 글로벌 지수</div>
-    <div class="macro-grid">
-      <div class="macro-card">
-        <div class="mc-lbl">S&amp;P500 낙폭</div>
-        <div class="mc-val" id="m-sp-val">—</div>
-        <div class="mc-sub mc-neu">전고점 대비</div>
-        <canvas class="mc-chart" id="m-sp-chart"></canvas><div class="mc-desc">미국 증시 바로미터</div>
-      </div>
-      <div class="macro-card">
-        <div class="mc-lbl">나스닥 낙폭</div>
-        <div class="mc-val" id="m-nas-val">—</div>
-        <div class="mc-sub mc-neu">전고점 대비</div>
-        <canvas class="mc-chart" id="m-nas-chart"></canvas><div class="mc-desc">기술주 지수</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="macro-section">
-    <div class="macro-section-title">🌐 매크로 지표</div>
-    <div class="macro-grid-2">
-      <div class="macro-card">
-        <div class="mc-lbl">달러인덱스</div>
-        <div class="mc-val" id="m-dxy-val">—</div>
-        <div class="mc-sub mc-neu" id="m-dxy-sub">DXY</div>
-        <canvas class="mc-chart" id="m-dxy-chart"></canvas><div class="mc-desc">달러 강약세 기준</div>
-      </div>
-      <div class="macro-card">
-        <div class="mc-lbl">10년물 금리</div>
-        <div class="mc-val" id="m-t10-val">—</div>
-        <div class="mc-sub mc-neu">미국 장기금리</div>
-        <canvas class="mc-chart" id="m-t10-chart"></canvas><div class="mc-desc">자산 할인율 기준</div>
-      </div>
-      <div class="macro-card">
-        <div class="mc-lbl">원달러 환율</div>
-        <div class="mc-val" id="m-krw-val">—</div>
-        <div class="mc-sub mc-neu" id="m-krw-sub">KRW/USD</div>
-        <canvas class="mc-chart" id="m-krw-chart"></canvas><div class="mc-desc">한국 투자자 필수</div>
-      </div>
-      <div class="macro-card">
-        <div class="mc-lbl">장단기 금리차</div>
-        <div class="mc-val" id="m-spread-val">—</div>
-        <div class="mc-sub mc-neu" id="m-spread-sub">10Y - 2Y</div>
-        <canvas class="mc-chart" id="m-spread-chart"></canvas><div class="mc-desc">경기침체 선행지표</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="macro-section">
-    <div class="macro-section-title">📊 S&amp;P500 섹터 히트맵</div>
-    <div class="macro-tv-wrap">
-      <div class="macro-tv-label">시가총액 가중 · 색상 = 등락률 · TradingView</div>
-      <div class="tradingview-widget-container" style="height:500px;">
-        <div class="tradingview-widget-container__widget" style="height:100%;width:100%;"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-stock-heatmap.js" async>
-        {
-          "exchanges": [],
-          "dataSource": "SPX500",
-          "grouping": "sector",
-          "blockSize": "market_cap_basic",
-          "blockColor": "change",
-          "locale": "kr",
-          "symbolUrl": "",
-          "colorTheme": "dark",
-          "hasTopBar": false,
-          "isDataSetEnabled": false,
-          "isZoomEnabled": true,
-          "hasSymbolTooltip": true,
-          "isMonoSize": false,
-          "width": "100%",
-          "height": "500"
-        }
-        </script>
-      </div>
-    </div>
-  </div>
-
-</div>
-</div>
-
-<!-- ══ 계산기 탭 ══ -->
 <div class="tab-content" id="tab-calc">
 <div class="container">
   <div class="top-header" style="margin-top:16px;">
@@ -1487,7 +1336,7 @@ function fetchWithCache(url, cacheKey){
     .then(function(d){cSet(cacheKey,d);return d;});
 }
 
-function autoRefresh(){loadFearGreed();altcoinData=null;if(document.getElementById('tab-altcoin').classList.contains('active')){loadAltcoinData();}if(document.getElementById('tab-stock').classList.contains('active')){stockData={korea:null,us:null};loadStockData();}else{stockData={korea:null,us:null};}macroLoaded=false;}
+function autoRefresh(){loadFearGreed();altcoinData=null;if(document.getElementById('tab-altcoin').classList.contains('active')){loadAltcoinData();}}
 setInterval(autoRefresh,5*60*1000);
 
 // ══════════════════════════════════════════════
