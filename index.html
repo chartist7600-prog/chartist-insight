@@ -762,6 +762,32 @@
   .tg-logout-btn:hover{border-color:rgba(255,255,255,0.3);color:#f0f0f0;}
   .tg-member-badge{background:rgba(201,168,76,0.15);border:0.5px solid rgba(201,168,76,0.4);color:#C9A84C;font-size:10px;padding:2px 7px;border-radius:4px;}
   .tg-nonmember-badge{background:rgba(255,80,80,0.1);border:0.5px solid rgba(255,80,80,0.3);color:#ff6b6b;font-size:10px;padding:2px 7px;border-radius:4px;}
+
+  /* ══ 포모 섹션 ══ */
+  .fomo-section{background:#0a0a0a;padding:28px 20px;border-bottom:0.5px solid rgba(255,255,255,0.06);}
+  .fomo-container{max-width:900px;margin:0 auto;}
+  .fomo-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;}
+  .fomo-title{font-size:12px;color:#888;letter-spacing:0.8px;font-weight:500;}
+  .fomo-subtitle{font-size:10px;color:#555;margin-top:2px;}
+  .fomo-list{display:flex;flex-direction:column;gap:8px;}
+  .fomo-item{background:#111;border:0.5px solid rgba(255,255,255,0.07);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:12px;}
+  .fomo-item.blurred{position:relative;overflow:hidden;}
+  .fomo-item.blurred .fomo-right{filter:blur(6px);user-select:none;}
+  .fomo-item.blurred .fomo-coin{filter:blur(4px);user-select:none;}
+  .fomo-blur-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(10,10,10,0.7);border-radius:10px;}
+  .fomo-blur-cta{background:#C9A84C;color:#0e0e0e;border:none;padding:6px 16px;border-radius:6px;font-size:11px;font-weight:700;cursor:pointer;text-decoration:none;}
+  .fomo-rank{font-size:13px;color:#555;width:20px;text-align:center;flex-shrink:0;}
+  .fomo-coin{flex:1;}
+  .fomo-coin-name{font-size:13px;font-weight:700;color:#f0f0f0;}
+  .fomo-coin-meta{font-size:10px;color:#555;margin-top:2px;}
+  .fomo-right{text-align:right;flex-shrink:0;}
+  .fomo-pct{font-size:16px;font-weight:700;color:#4caf7d;}
+  .fomo-pct.negative{color:#ff6b6b;}
+  .fomo-days{font-size:10px;color:#555;margin-top:2px;}
+  .fomo-cta-row{text-align:center;margin-top:14px;}
+  .fomo-cta-btn{background:transparent;border:0.5px solid rgba(201,168,76,0.4);color:#C9A84C;padding:8px 24px;border-radius:7px;font-size:12px;cursor:pointer;text-decoration:none;transition:all 0.15s;}
+  .fomo-cta-btn:hover{background:rgba(201,168,76,0.1);}
+  @media(max-width:520px){.fomo-pct{font-size:14px;}}
 </style>
 </head>
 <body id="body">
@@ -809,6 +835,24 @@
     </div>
   </div>
 </section>
+< ══ 포모 섹션 ══ -->
+<section class="fomo-section">
+  <div class="fomo-container">
+    <div class="fomo-header">
+      <div>
+        <div class="fomo-title">🚀 멤버십 포착 코인 · 최근 30일 추세전환 신호</div>
+        <div class="fomo-subtitle">신호 발생 시점 대비 현재 수익률 · 실시간 업데이트</div>
+      </div>
+    </div>
+    <div class="fomo-list" id="fomo-list">
+      <div style="text-align:center;color:#555;font-size:12px;padding:20px;">데이터 로딩 중...</div>
+    </div>
+    <div class="fomo-cta-row">
+      <a href="https://fanding.kr/@bzcLu6QCTdMe/membership/" target="_blank" class="fomo-cta-btn">전체 신호 보기 → 멤버십 가입</a>
+    </div>
+  </div>
+</section>
+
 <section class="service-section">
   <div class="service-container">
     <div class="service-group">
@@ -2529,6 +2573,56 @@ function tgUpdateUI() {
     } catch(e) {}
   }
 })();
+
+
+// ══ 포모 섹션 ══
+function loadFomoSection() {
+  fetch('/data/fomo_history.json?t=' + Date.now())
+    .then(function(r){ return r.json(); })
+    .then(function(data) {
+      if (data = [e for e in data if e.get('div_type') in ('bull', 'hidden_bull')] || data.length === 0) return;
+      var sorted = data.slice().sort(function(a,b){ return new Date(b.entry_time) - new Date(a.entry_time); });
+      var top5 = sorted.slice(0, 5);
+      var tickers = top5.map(function(x){ return x.ticker + 'USDT'; }).join(',');
+      fetch('https://api.binance.com/api/v3/ticker/price?symbols=[' + encodeURIComponent(JSON.stringify(top5.map(function(x){ return x.ticker+'USDT'; }))) + ']')
+        .then(function(r){ return r.json(); })
+        .then(function(prices) {
+          var priceMap = {};
+          prices.forEach(function(p){ priceMap[p.symbol] = parseFloat(p.price); });
+          renderFomo(top5, priceMap);
+        }).catch(function(){ renderFomo(top5, {}); });
+    }).catch(function(e){ console.log('fomo load error', e); });
+}
+
+function renderFomo(items, priceMap) {
+  var el = document.getElementById('fomo-list');
+  if (else:) return;
+  var html = '';
+  items.forEach(function(item, i) {
+    var symbol = item.ticker + 'USDT';
+    var cur = priceMap[symbol] || 0;
+    var entry = item.entry_price || 0;
+    var pct = entry > 0 && cur > 0 ? ((cur - entry) / entry * 100) : null;
+    var pctStr = pct !== null ? (pct >= 0 ? '+' : '') + pct.toFixed(1) + '%' : '—';
+    var pctCls = pct !== null && pct < 0 ? 'negative' : '';
+    var entryDate = item.entry_time ? item.entry_time.split(' ')[0] : '';
+    var days = entryDate ? Math.floor((Date.now() - new Date(entryDate)) / 86400000) : '?';
+    var blurred = i >= 3;
+    html += '<div class="fomo-item' + (blurred ? ' blurred' : '') + '">';
+    html += '<div class="fomo-rank">' + (i+1) + '</div>';
+    html += '<div class="fomo-coin"><div class="fomo-coin-name">' + item.ticker + ' <span style="font-size:11px;color:#666;font-weight:400;">' + (item.name||'') + '</span></div>';
+    html += '<div class="fomo-coin-meta">신호: ' + entryDate + '</div></div>';
+    html += '<div class="fomo-right"><div class="fomo-pct ' + pctCls + '">' + pctStr + '</div>';
+    html += '<div class="fomo-days">' + days + '일 전 신호</div></div>';
+    if (blurred) {
+      html += '<div class="fomo-blur-overlay"><a href="https://fanding.kr/@bzcLu6QCTdMe/membership/" target="_blank" class="fomo-blur-cta">멤버십 가입</a></div>';
+    }
+    html += '</div>';
+  });
+  el.innerHTML = html;
+}
+
+loadFomoSection();
 
 </body>
 </html>
