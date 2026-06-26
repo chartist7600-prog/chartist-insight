@@ -998,16 +998,12 @@
 <script>
 var BASE_URL='https://chartist-insight.com/data/';
 var altcoinData=null;
-var stockData={korea:null,us:null};
 var currentAltcoinFilter='all';
-var currentStockMarket='korea';
-var currentStockSig='all';
 var dateRange=null;
 var currentAltSort='time';
 var currentAltSortDir='desc';
 var liveprices={};
 var upbitPollTimer=null;
-var macroLoaded=false;
 
 // ══════════════════════════════════════════════
 // 글자크기
@@ -1058,8 +1054,6 @@ function switchTab(tab,btn){
   }
   if(tab==='btc')loadBtcSignals();
   if(tab==='altcoin'){if(!altcoinData)loadAltcoinData();else renderAltcoin();}
-  if(tab==='stock')loadStockData();
-  if(tab==='macro'){loadMacroData();loadEcoCalendar(false);}
 }
 
 // ══════════════════════════════════════════════
@@ -1266,15 +1260,10 @@ function updateTickerRow(sym){var lp=liveprices[sym];if(!lp)return;var priceEl=d
 // ══════════════════════════════════════════════
 // 주식
 // ══════════════════════════════════════════════
-function loadStockData(){var markets=['korea','us'];markets.forEach(function(m){if(stockData[m])return;fetch(BASE_URL+m+'_stock.json').then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}).then(function(d){stockData[m]=d;if(currentStockMarket===m)renderStock();}).catch(function(e){stockData[m]={error:true,trend:[],ma:[],rsi:[]};if(currentStockMarket===m)renderStock();});});if(stockData[currentStockMarket]){renderStock();}}
-function renderStock(){var data=stockData[currentStockMarket];var contentEl=document.getElementById('stock-content');var updatedEl=document.getElementById('stock-updated');if(!data){contentEl.innerHTML='<div class="loading-box">데이터를 불러오는 중입니다...</div>';return;}if(data.error){contentEl.innerHTML='<div class="empty-box">데이터 로드에 실패했습니다. 잠시 후 다시 시도해주세요.</div>';return;}var f=currentStockSig;var items=[];var market=currentStockMarket==='korea'?'코스피':'S&P500';function addItems(arr,sig){if(!Array.isArray(arr))return;arr.forEach(function(e){if(f!=='all'&&f!==sig)return;items.push({ticker:e.ticker,name:e.name,price:e.price,sig:sig,timeframe:e.timeframe||'daily'});});}addItems(data.trend,'trend');addItems(data.ma,'ma');addItems(data.rsi,'rsi');if(data.updated)updatedEl.textContent='기준: '+data.updated+' · 장마감 후 갱신';else updatedEl.textContent='데이터 준비 중';if(items.length===0){contentEl.innerHTML='<div class="empty-box">현재 해당하는 신호가 없습니다.</div>';return;}var html='<div class="ticker-list">';items.forEach(function(item){var sm=sigMap[item.sig]||{label:item.sig,cls:''};var priceStr;if(currentStockMarket==='korea'){priceStr=item.price?item.price.toLocaleString('ko-KR',{maximumFractionDigits:0})+'원':'—';}else{priceStr=item.price?'$'+item.price.toFixed(2):'—';}html+='<div class="ticker-item"><div class="ticker-left"><div class="ticker-name">'+(item.name||item.ticker)+'<span class="sig-badge '+sm.cls+'">'+sm.label+'</span></div><div class="ticker-meta">'+item.ticker+' · '+market+(item.timeframe==='weekly'?' · 주봉':'')+'</div></div><div class="ticker-right"><div class="ticker-price">'+priceStr+'</div></div></div>';});html+='</div>';contentEl.innerHTML=html;}
-function filterStock(market){currentStockMarket=market;document.getElementById('sm-korea').classList.remove('active');document.getElementById('sm-us').classList.remove('active');document.getElementById('sm-'+market).classList.add('active');if(!stockData[market]){loadStockData();}else{renderStock();}}
-function filterStockSig(sig){currentStockSig=sig;['all','trend','ma','rsi'].forEach(function(v){var btn=document.getElementById('ss-'+v);if(btn)btn.classList.remove('active');});document.getElementById('ss-'+sig).classList.add('active');renderStock();}
 
 // ══════════════════════════════════════════════
 // 매크로
 // ══════════════════════════════════════════════
-function loadMacroData(){if(macroLoaded)return;fetch('/data/macro.json?t='+Math.floor(Date.now()/60000)).then(function(r){return r.json();}).then(function(d){if(d.fear_greed&&d.fear_greed.value!==null){var v=d.fear_greed.value;var cls=d.fear_greed.label||'';var el=document.getElementById('m-fg-val');var cl=document.getElementById('m-fg-cls');if(el){el.textContent=v;el.className='mc-val '+(v<=40?'mc-dn':v>=60?'mc-up':'mc-neu');}if(cl){cl.textContent=cls;cl.className='mc-sub '+(v<=40?'mc-dn':v>=60?'mc-up':'mc-neu');}}if(d.vix){var v=d.vix.value;var st=d.vix.status;var el=document.getElementById('m-vix-val');var sb=document.getElementById('m-vix-sub');if(el){el.textContent=v;el.className='mc-val '+(st==='경계'?'mc-dn':st==='주의'?'mc-neu':'mc-up');}if(sb){sb.textContent=(st==='경계'?'⚠️ 경계 구간':st==='주의'?'⚠️ 주의 구간':'✅ 안정 구간');sb.className='mc-sub '+(st==='경계'?'mc-dn':st==='주의'?'mc-neu':'mc-up');}}if(d.sp500){var dd=d.sp500.drawdown;var el=document.getElementById('m-sp-val');if(el){el.textContent=dd+'%';el.className='mc-val '+(dd<-20?'mc-dn':dd<-5?'mc-neu':'mc-up');}}if(d.nasdaq){var dd=d.nasdaq.drawdown;var el=document.getElementById('m-nas-val');if(el){el.textContent=dd+'%';el.className='mc-val '+(dd<-20?'mc-dn':dd<-5?'mc-neu':'mc-up');}}if(d.dxy){var v=d.dxy.value;var chg=d.dxy.change;var el=document.getElementById('m-dxy-val');var sb=document.getElementById('m-dxy-sub');if(el)el.textContent=v;if(sb){sb.textContent=(chg>=0?'+':'')+chg+'% (전일)';sb.className='mc-sub '+(chg>=0?'mc-dn':'mc-up');}}if(d.t10y){var el=document.getElementById('m-t10-val');if(el)el.textContent=d.t10y.value+'%';}if(d.krw){var v=d.krw.value;var chg=d.krw.change;var el=document.getElementById('m-krw-val');var sb=document.getElementById('m-krw-sub');if(el)el.textContent=v.toLocaleString()+'원';if(sb){sb.textContent=(chg>=0?'+':'')+chg+'원 (전일)';sb.className='mc-sub '+(chg>=0?'mc-dn':'mc-up');}}if(d.spread){var v=d.spread.value;var st=d.spread.status;var el=document.getElementById('m-spread-val');var sb=document.getElementById('m-spread-sub');if(el){el.textContent=(v>=0?'+':'')+v+'%';el.className='mc-val '+(v<0?'mc-dn':'mc-up');}if(sb){sb.textContent=st==='역전'?'⚠️ 역전 (경기침체 신호)':'✅ 정상';sb.className='mc-sub '+(v<0?'mc-dn':'mc-up');}}setTimeout(function(){if(d.fear_greed&&d.fear_greed.history)drawMiniChart('m-fg-chart',d.fear_greed.history,'rgba(229,57,53,1)');if(d.vix&&d.vix.history)drawMiniChart('m-vix-chart',d.vix.history,'rgba(74,158,255,1)');if(d.sp500&&d.sp500.history)drawMiniChart('m-sp-chart',d.sp500.history,'rgba(76,175,125,1)');if(d.nasdaq&&d.nasdaq.history)drawMiniChart('m-nas-chart',d.nasdaq.history,'rgba(76,175,125,1)');if(d.dxy&&d.dxy.history)drawMiniChart('m-dxy-chart',d.dxy.history,'rgba(201,168,76,1)');if(d.t10y&&d.t10y.history)drawMiniChart('m-t10-chart',d.t10y.history,'rgba(201,168,76,1)');if(d.krw&&d.krw.history)drawMiniChart('m-krw-chart',d.krw.history,'rgba(255,140,0,1)');if(d.spread&&d.spread.history)drawMiniChart('m-spread-chart',d.spread.history,'rgba(76,175,125,1)');},100);}).catch(function(e){console.log('매크로 로드 실패:',e);});macroLoaded=true;}
 function drawMiniChart(canvasId,data,color){var canvas=document.getElementById(canvasId);if(!canvas||!data||data.length<2)return;var ctx=canvas.getContext('2d');var w=canvas.offsetWidth||260;var h=48;canvas.width=w;canvas.height=h;ctx.clearRect(0,0,w,h);var mn=Math.min.apply(null,data);var mx=Math.max.apply(null,data);var range=mx-mn||1;var pts=data.map(function(v,i){return{x:i/(data.length-1)*w,y:h-(v-mn)/range*(h-6)-3};});ctx.beginPath();ctx.moveTo(pts[0].x,h);pts.forEach(function(p){ctx.lineTo(p.x,p.y);});ctx.lineTo(pts[pts.length-1].x,h);ctx.closePath();ctx.fillStyle=color.replace('1)','0.12)');ctx.fill();ctx.beginPath();ctx.moveTo(pts[0].x,pts[0].y);pts.forEach(function(p){ctx.lineTo(p.x,p.y);});ctx.strokeStyle=color;ctx.lineWidth=1.5;ctx.stroke();}
 
 // ══════════════════════════════════════════════
