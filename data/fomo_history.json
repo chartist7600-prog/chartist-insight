@@ -1,7 +1,7 @@
 [
-  {"ticker": "SUI", "name": "수이", "exchange": "binance", "entry_price": 3.21, "currency": "USDT", "entry_time": "2026-06-23 09:00"},
-  {"ticker": "HBAR", "name": "헤데라", "exchange": "binance", "entry_price": 0.185, "currency": "USDT", "entry_time": "2026-06-21 09:00"},
-  {"ticker": "ONDO", "name": "온도파이낸스", "exchange": "binance", "entry_price": 1.12, "currency": "USDT", "entry_time": "2026-06-24 09:00"},
-  {"ticker": "TON", "name": "톤코인", "exchange": "binance", "entry_price": 4.80, "currency": "USDT", "entry_time": "2026-06-20 09:00"},
-  {"ticker": "PEPE", "name": "페페", "exchange": "binance", "entry_price": 0.00001120, "currency": "USDT", "entry_time": "2026-06-22 09:00"}
+  {"ticker": "BNB", "name": "바이낸스코인", "exchange": "binance", "entry_price": 580.0, "currency": "USDT", "entry_time": "2026-06-24 09:00"},
+  {"ticker": "XRP", "name": "리플", "exchange": "binance", "entry_price": 2.10, "currency": "USDT", "entry_time": "2026-06-25 09:00"},
+  {"ticker": "ADA", "name": "에이다", "exchange": "binance", "entry_price": 0.68, "currency": "USDT", "entry_time": "2026-06-24 09:00"},
+  {"ticker": "DOGE", "name": "도지코인", "exchange": "binance", "entry_price": 0.155, "currency": "USDT", "entry_time": "2026-06-23 09:00"},
+  {"ticker": "SOL", "name": "솔라나", "exchange": "binance", "entry_price": 148.0, "currency": "USDT", "entry_time": "2026-06-25 09:00"}
 ]

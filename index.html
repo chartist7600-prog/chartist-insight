@@ -908,7 +908,7 @@
 </section>
 <section class="fomo-section">
   <div class="fomo-container">
-    <div class="fomo-title">🚀 멤버십 포착 코인 · 최근 30일 추세전환 신호</div>
+    <div class="fomo-title">🚀 멤버십 포착 코인 · 최근 3일 추세전환 신호</div>
     <div class="fomo-subtitle">신호 발생 시점 대비 현재 수익률 · 실시간 업데이트</div>
     <div class="fomo-list" id="fomo-list"><div style="text-align:center;color:#555;padding:20px;font-size:12px;">로딩 중...</div></div>
     <div class="fomo-cta-row">
@@ -2652,6 +2652,10 @@ function tgUpdateUI() {
 function loadFomoSection(){
   fetch("/data/fomo_history.json?t="+Date.now()).then(function(r){return r.json();}).then(function(data){
     if(!data||!data.length){document.getElementById("fomo-list").innerHTML='<div style="text-align:center;color:#555;padding:20px;font-size:12px;">신호 데이터 준비 중...</div>';return;}
+    // 3일 이내 신호만 필터
+    var now=Date.now();
+    data=data.filter(function(x){return x.entry_time&&(now-new Date(x.entry_time))<3*86400000;});
+    if(!data.length){document.getElementById("fomo-list").innerHTML='<div style="text-align:center;color:#555;padding:20px;font-size:12px;">최근 3일 신호 없음</div>';return;}
     var top5=data.slice(0,5);
     var syms=JSON.stringify(top5.map(function(x){return x.ticker+"USDT";}));
     fetch("https://api.binance.com/api/v3/ticker/price?symbols="+encodeURIComponent(syms)).then(function(r){return r.json();}).then(function(prices){
@@ -2662,6 +2666,13 @@ function loadFomoSection(){
   }).catch(function(){});
 }
 function renderFomo(items,pm){
+  // 수익률 높은 순 정렬
+  items=items.slice().sort(function(a,b){
+    var ca=pm[a.ticker+"USDT"]||0,cb=pm[b.ticker+"USDT"]||0;
+    var pa=a.entry_price>0&&ca>0?(ca-a.entry_price)/a.entry_price:0;
+    var pb=b.entry_price>0&&cb>0?(cb-b.entry_price)/b.entry_price:0;
+    return pb-pa;
+  });
   var el=document.getElementById("fomo-list");
   if(!el)return;
   var html="";
