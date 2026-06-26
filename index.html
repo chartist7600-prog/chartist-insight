@@ -846,6 +846,21 @@
   .fomo-days{font-size:10px;color:#555;margin-top:2px;}
   .fomo-cta-row{text-align:center;margin-top:14px;}
   .fomo-cta-btn{background:transparent;border:0.5px solid rgba(201,168,76,0.4);color:#C9A84C;padding:8px 24px;border-radius:7px;font-size:12px;text-decoration:none;display:inline-block;}
+  .tab-nav{display:none;}
+  .tab-content{display:none !important;}
+  .tab-content.active{display:none !important;}
+  body.tg-logged .tab-nav{display:flex;}
+  body.tg-logged .tab-content.active{display:block !important;}
+  .tab-nav{display:none;}
+  .tab-content{display:none !important;}
+  .tab-content.active{display:none !important;}
+  body.tg-logged .tab-nav{display:flex;}
+  body.tg-logged .tab-content.active{display:block !important;}
+  .tab-nav{display:none;}
+  .tab-content{display:none !important;}
+  .tab-content.active{display:none !important;}
+  body.tg-logged .tab-nav{display:flex;}
+  body.tg-logged .tab-content.active{display:block !important;}
 </style>
 </head>
 <body id="body">
@@ -1881,7 +1896,7 @@ var RSI_PW="7777";
 var RSI_PW="7777";
 var RSI_PW="7777";
 function initBtcBlur(){
-  var unlocked=localStorage.getItem('rsi_unlocked')==='1';
+  var unlocked=(tgUser&&tgUser.is_member)||localStorage.getItem('rsi_unlocked')==='1';
   var content=document.getElementById('btc-blur-content');
   if(!content)return;
   content.style.filter='';content.style.color='';content.style.textShadow='';
@@ -2603,6 +2618,7 @@ function tgOnAuth(user) {
 function tgLogout() {
   tgUser = null;
   localStorage.removeItem('tg_user');
+  document.body.classList.remove('tg-logged');
   tgUpdateUI();
 }
 
@@ -2610,6 +2626,12 @@ function tgUpdateUI() {
   var area = document.getElementById('tg-auth-area');
   if (!area) return;
   if (tgUser) {
+    document.body.classList.add('tg-logged');
+    initBtcBlur();
+    document.body.classList.add('tg-logged');
+    initBtcBlur();
+    document.body.classList.add('tg-logged');
+    initBtcBlur();
     var badge = tgUser.is_member
       ? '<span class="tg-member-badge">멤버</span>'
       : '<span class="tg-nonmember-badge">비멤버</span>';
@@ -2802,6 +2824,7 @@ function tgOnAuth(user) {
 function tgLogout() {
   tgUser = null;
   localStorage.removeItem('tg_user');
+  document.body.classList.remove('tg-logged');
   tgUpdateUI();
 }
 
