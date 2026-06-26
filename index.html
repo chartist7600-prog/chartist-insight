@@ -2625,7 +2625,7 @@ function loadFomoSection(){
     // 3일 이내 신호만 필터
     var now=Date.now();
     data=data.filter(function(x){return x.entry_time&&(now-new Date(x.entry_time))<3*86400000;});
-    if(!data.length){document.getElementById("fomo-list").innerHTML='<div style="text-align:center;color:#555;padding:20px;font-size:12px;">최근 3일 신호 없음</div>';return;}
+    if(!data.length){document.getElementById("fomo-list").innerHTML='';return;}
     var top5=data.slice(0,5);
     var syms=JSON.stringify(top5.map(function(x){return x.ticker+"USDT";}));
     fetch("https://api.binance.com/api/v3/ticker/price?symbols="+encodeURIComponent(syms)).then(function(r){return r.json();}).then(function(prices){
@@ -2636,6 +2636,9 @@ function loadFomoSection(){
   }).catch(function(){});
 }
 function renderFomo(items,pm){
+  // 수익률 플러스만 필터
+  items=items.filter(function(x){var c=pm[x.ticker+'USDT']||0;return x.entry_price>0&&c>0&&c>x.entry_price;});
+  if(!items.length){document.getElementById('fomo-list').innerHTML='';return;}
   // 수익률 높은 순 정렬
   items=items.slice().sort(function(a,b){
     var ca=pm[a.ticker+"USDT"]||0,cb=pm[b.ticker+"USDT"]||0;
