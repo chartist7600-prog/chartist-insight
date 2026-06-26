@@ -2204,6 +2204,8 @@ if("serviceWorker" in navigator){navigator.serviceWorker.register("/sw.js")}
 var __origST = window.switchTab;
 window.switchTab = function(tab, btn) {
   if(__origST) __origST(tab, btn);
+  var tabNav = document.querySelector('.tab-nav');
+  if(tabNav) tabNav.scrollIntoView({behavior:'smooth', block:'start'});
   if(tab==='btc'){try{initBtcBlur();}catch(e){}}
   if(tab==='journal'){
     var auth=document.getElementById('j-auth-screen');
