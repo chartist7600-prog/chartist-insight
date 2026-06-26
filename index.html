@@ -2794,18 +2794,6 @@ loadFomoSection();
 // ══ 텔레그램 OAuth ══
 var tgUser = null;
 
-function tgLogin() {
-  var loginUrl = 'https://oauth.telegram.org/auth?bot_id=8458968839&origin=' + encodeURIComponent('https://chartist-insight.com') + '&embed=1&request_access=write&return_to=' + encodeURIComponent('https://chartist-insight.com/');
-  window.open(loginUrl, 'tg_login', 'width=550,height=470,scrollbars=no');
-}
-
-window.addEventListener('message', function(event) {
-  if (event.origin !== 'https://oauth.telegram.org') return;
-  var data = event.data;
-  if (data && data.event === 'auth_result' && data.result) {
-    tgOnAuth(data.result);
-  }
-});
 
 function tgOnAuth(user) {
   fetch('/tg/auth', {
