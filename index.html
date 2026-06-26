@@ -2583,14 +2583,10 @@ var TG_BOT_NAME = 'ChartMasterBot';
 var tgUser = null;
 
 function tgLogin() {
-  // 텔레그램 로그인 팝업
-  var loginUrl = 'https://oauth.telegram.org/auth?bot_id=8458968839&origin=' + encodeURIComponent('https://chartist-insight.com') + '&embed=1&request_access=write&return_to=' + encodeURIComponent('https://chartist-insight.com/');
-  var popup = window.open(loginUrl, 'tg_login', 'width=550,height=470,scrollbars=no');
-  var timer = setInterval(function() {
-    if (popup && popup.closed) {
-      clearInterval(timer);
-    }
-  }, 500);
+  // 텔레그램 공식 위젯 팝업
+  var loginUrl = 'https://oauth.telegram.org/auth?bot_id=8458968839&origin=https%3A%2F%2Fchartist-insight.com&embed=1&request_access=write';
+  var popup = window.open(loginUrl, 'tg_login', 'width=550,height=470,scrollbars=no,resizable=no');
+  window._tgPopup = popup;
 }
 
 window.addEventListener('message', function(event) {
