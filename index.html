@@ -870,6 +870,27 @@
   .service-nav-btn.active{color:#C9A84C;border-bottom-color:#C9A84C;}
   .service-nav-btn .nav-lock{font-size:9px;opacity:0.6;}
   @media(max-width:520px){.service-nav-btn{font-size:11px;padding:12px 4px;}}
+
+  .fomo-section{background:#0a0a0a;padding:28px 20px;border-bottom:0.5px solid rgba(255,255,255,0.06);}
+  .fomo-container{max-width:900px;margin:0 auto;}
+  .fomo-title{font-size:12px;color:#888;letter-spacing:0.8px;font-weight:500;margin-bottom:4px;}
+  .fomo-subtitle{font-size:10px;color:#555;margin-bottom:16px;}
+  .fomo-list{display:flex;flex-direction:column;gap:8px;}
+  .fomo-item{background:#111;border:0.5px solid rgba(255,255,255,0.07);border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:12px;position:relative;overflow:hidden;}
+  .fomo-item.blurred .fomo-right{filter:blur(6px);user-select:none;}
+  .fomo-item.blurred .fomo-coin{filter:blur(4px);user-select:none;}
+  .fomo-blur-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(10,10,10,0.6);border-radius:10px;}
+  .fomo-blur-cta{background:#C9A84C;color:#0e0e0e;padding:6px 16px;border-radius:6px;font-size:11px;font-weight:700;text-decoration:none;}
+  .fomo-rank{font-size:13px;color:#555;width:20px;text-align:center;flex-shrink:0;}
+  .fomo-coin{flex:1;}
+  .fomo-coin-name{font-size:13px;font-weight:700;color:#f0f0f0;}
+  .fomo-coin-meta{font-size:10px;color:#555;margin-top:2px;}
+  .fomo-right{text-align:right;flex-shrink:0;}
+  .fomo-pct{font-size:16px;font-weight:700;color:#4caf7d;}
+  .fomo-pct.neg{color:#ff6b6b;}
+  .fomo-days{font-size:10px;color:#555;margin-top:2px;}
+  .fomo-cta-row{text-align:center;margin-top:14px;}
+  .fomo-cta-btn{background:transparent;border:0.5px solid rgba(201,168,76,0.4);color:#C9A84C;padding:8px 24px;border-radius:7px;font-size:12px;text-decoration:none;display:inline-block;}
 </style>
 </head>
 <body id="body">
@@ -940,6 +961,16 @@
 
 
 
+<section class="fomo-section">
+  <div class="fomo-container">
+    <div class="fomo-title">🚀 멤버십 포착 코인 · 최근 30일 추세전환 신호</div>
+    <div class="fomo-subtitle">신호 발생 시점 대비 현재 수익률 · 실시간 업데이트</div>
+    <div class="fomo-list" id="fomo-list"><div style="text-align:center;color:#555;padding:20px;font-size:12px;">로딩 중...</div></div>
+    <div class="fomo-cta-row">
+      <a href="https://fanding.kr/@bzcLu6QCTdMe/membership/" target="_blank" class="fomo-cta-btn">전체 신호 보기 → 멤버십 가입</a>
+    </div>
+  </div>
+</section>
 <section class="service-section">
   <div class="service-container">
     <div class="service-group">
@@ -2805,6 +2836,48 @@ function serviceNavClick(tab) {
   if (btn) switchTab(tab, btn);
   if (tabNav) tabNav.scrollIntoView({behavior: 'smooth', block: 'start'});
 }
+<script>
+function loadFomoSection(){
+  fetch("/data/fomo_history.json?t="+Date.now())
+    .then(function(r){return r.json();})
+    .then(function(data){
+      if(!data||!data.length){document.getElementById("fomo-list").innerHTML='<div style="text-align:center;color:#555;padding:20px;font-size:12px;">신호 데이터 준비 중...</div>';return;}
+      var top5=data.slice(0,5);
+      var syms=JSON.stringify(top5.map(function(x){return x.ticker+"USDT";}));
+      fetch("https://api.binance.com/api/v3/ticker/price?symbols="+encodeURIComponent(syms))
+        .then(function(r){return r.json();})
+        .then(function(prices){
+          var pm={};
+          prices.forEach(function(p){pm[p.symbol]=parseFloat(p.price);});
+          renderFomo(top5,pm);
+        }).catch(function(){renderFomo(top5,{});});
+    }).catch(function(){});
+}
+function renderFomo(items,pm){
+  var el=document.getElementById("fomo-list");
+  if(!el)return;
+  var html="";
+  items.forEach(function(item,i){
+    var cur=pm[item.ticker+"USDT"]||0;
+    var entry=item.entry_price||0;
+    var pct=entry>0&&cur>0?((cur-entry)/entry*100):null;
+    var pctStr=pct!==null?(pct>=0?"+":"")+pct.toFixed(1)+"%":"—";
+    var neg=pct!==null&&pct<0?" neg":"";
+    var dt=item.entry_time?item.entry_time.split(" ")[0]:"";
+    var days=dt?Math.floor((Date.now()-new Date(dt))/86400000):"?";
+    var blur=i>=3;
+    html+='<div class="fomo-item'+(blur?' blurred':'')+'">'
+         +'<div class="fomo-rank">'+(i+1)+'</div>'
+         +'<div class="fomo-coin"><div class="fomo-coin-name">'+item.ticker+'<span style="font-size:11px;color:#666;font-weight:400;margin-left:6px;">'+(item.name||"")+'</span></div>'
+         +'<div class="fomo-coin-meta">신호일: '+dt+'</div></div>'
+         +'<div class="fomo-right"><div class="fomo-pct'+neg+'">'+pctStr+'</div><div class="fomo-days">'+days+'일 전</div></div>';
+    if(blur)html+='<div class="fomo-blur-overlay"><a href="https://fanding.kr/@bzcLu6QCTdMe/membership/" target="_blank" class="fomo-blur-cta">멤버십 가입</a></div>';
+    html+='</div>';
+  });
+  el.innerHTML=html;
+}
+loadFomoSection();
+</script>
 </body>
 </html>
 <script>
