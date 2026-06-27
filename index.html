@@ -1807,7 +1807,7 @@ function searchTicker(val){
   val=(val||'').toUpperCase().trim();
   var matches=BINANCE_FUTURES.filter(function(t){return t.startsWith(val);}).slice(0,8);
   ac.innerHTML=matches.map(function(t){
-    return '<div class="ticker-autocomplete-item" onclick="selectTicker(''+t+'')"><span class="tac-symbol">'+t+'USDT</span></div>';
+    return '<div class="ticker-autocomplete-item" onclick="selectTicker(\''+t+'\')"><span class="tac-symbol">'+t+'USDT</span></div>';
   }).join('');
   ac.style.display='block';
 }
@@ -2649,6 +2649,7 @@ function tgUpdateUI() {
   }
 })();
 
+</script>
 <script>
 function loadFomoSection(){
   fetch("/data/fomo_history.json?t="+Date.now()).then(function(r){return r.json();}).then(function(data){
