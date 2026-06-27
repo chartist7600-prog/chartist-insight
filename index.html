@@ -2045,7 +2045,7 @@ switchTab=function(tab,btn){
   _origSwitchTab(tab,btn);
   var _tc=document.getElementById('tab-'+tab);if(_tc){var _y=_tc.getBoundingClientRect().top+window.scrollY-120;window.scrollTo({top:_y,behavior:'smooth'});}
   if(tab==='btc'){initBtcBlur();}
-  if(tab==='journal'){var tok=localStorage.getItem('j_token');if(tok){document.getElementById('j-auth-screen').style.display='none';document.getElementById('j-main-screen').style.display='';}else{document.getElementById('j-auth-screen').style.display='block';}}
+  if(tab==='journal'){document.getElementById('j-auth-screen').style.display='none';document.getElementById('j-main-screen').style.display='';}
 };
 
 // ══════════════════════════════════════════════
