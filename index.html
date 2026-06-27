@@ -952,8 +952,8 @@
 <div class="tab-nav">
   <button class="tab-btn" id="tab-btn-btc" onclick="if(!document.body.classList.contains('tg-logged')){tgLogin();}else if(typeof tgUser!=='undefined'&&tgUser&&!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{switchTab('btc',this);}">₿ 비트</button>
   <button class="tab-btn" id="tab-btn-altcoin" onclick="if(!document.body.classList.contains('tg-logged')){tgLogin();}else if(typeof tgUser!=='undefined'&&tgUser&&!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{switchTab('altcoin',this);}">📊 알트</button>
-  <button class="tab-btn" id="tab-btn-calc" onclick="switchTab('calc',this)">🧮 계산기</button>
-  <button class="tab-btn" id="tab-btn-journal" onclick="switchTab('journal',this)" style="letter-spacing:-0.5px;">📒 매매일지</button>
+  <button class="tab-btn" id="tab-btn-calc" onclick="switchTab('calc',this);setTimeout(function(){var el=document.getElementById('tab-calc');if(el)window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-60,behavior:'smooth'});},100)">🧮 계산기</button>
+  <button class="tab-btn" id="tab-btn-journal" onclick="switchTab('journal',this);setTimeout(function(){var el=document.getElementById('tab-journal');if(el)window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-60,behavior:'smooth'});},100)" style="letter-spacing:-0.5px;">📒 매매일지</button>
 </div>
 
 <section class="fomo-section">
