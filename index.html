@@ -2679,6 +2679,7 @@ function tgUpdateUI() {
     } catch(e) {}
   }
 })();
+(function(){var saved=localStorage.getItem("tg_user");if(!saved)return;try{var u=JSON.parse(saved);if(!u||!u.id)return;fetch("/tg/check",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({user_id:u.id})}).then(function(r){return r.json();}).then(function(d){if(d.ok){u.is_member=d.is_member;localStorage.setItem("tg_user",JSON.stringify(u));tgUser=u;tgUpdateUI();}}).catch(function(){});}catch(e){}})();
 
 // ══ 페이지 로드 시 멤버십 자동 재체크 ══
 (function(){
