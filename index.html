@@ -1032,66 +1032,64 @@
   </div>
 </section>
   <!-- 코인 랭킹 섹션 -->
-  <div style="background:#0a0a0a;border-top:0.5px solid rgba(201,168,76,0.15);border-bottom:0.5px solid rgba(201,168,76,0.15);padding:24px 20px;">
+  <div style="background:#080808;border-top:0.5px solid rgba(201,168,76,0.2);border-bottom:0.5px solid rgba(201,168,76,0.2);padding:28px 20px;">
     <div style="max-width:900px;margin:0 auto;">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
-        <div style="display:flex;align-items:center;gap:8px;">
-          <span style="font-size:13px;color:#C9A84C;font-weight:700;letter-spacing:0.5px;">🏆 24H 상승률 TOP 10</span>
-          <span style="font-size:10px;color:#555;background:#1a1a1a;border:0.5px solid #333;padding:2px 8px;border-radius:20px;">BINANCE FUTURES</span>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span style="font-size:14px;color:#C9A84C;font-weight:700;letter-spacing:1px;">🏆 24H 상승률 TOP 10</span>
+          <span style="font-size:9px;color:#C9A84C;background:rgba(201,168,76,0.1);border:0.5px solid rgba(201,168,76,0.3);padding:3px 10px;border-radius:20px;letter-spacing:0.5px;">BINANCE FUTURES</span>
         </div>
-        <span style="font-size:10px;color:#444;" id="coin-rank-updated">업데이트 중...</span>
+        <span style="font-size:10px;color:#444;" id="coin-rank-updated">로딩중...</span>
       </div>
-      <div id="coin-rank-grid" style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;">
-        <div style="text-align:center;color:#333;padding:20px;font-size:12px;grid-column:1/-1;">로딩 중...</div>
+      <div id="coin-rank-grid" style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px;">
+        <div style="text-align:center;color:#333;padding:30px;font-size:12px;grid-column:1/-1;">로딩 중...</div>
       </div>
     </div>
   </div>
   <style>
-  .coin-rank-card{background:#111;border:0.5px solid #222;border-radius:10px;padding:12px 8px;text-align:center;transition:all 0.2s;cursor:default;}
-  .coin-rank-card:hover{border-color:rgba(201,168,76,0.4);background:#161616;transform:translateY(-2px);}
-  .coin-rank-num{font-size:10px;color:#444;margin-bottom:6px;}
-  .coin-rank-icon{width:36px;height:36px;border-radius:50%;margin:0 auto 6px;object-fit:contain;background:#1a1a1a;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#fff;}
-  .coin-rank-symbol{font-size:12px;font-weight:700;color:#e0e0e0;margin-bottom:4px;}
-  .coin-rank-price{font-size:10px;color:#666;margin-bottom:4px;}
-  .coin-rank-change.up{font-size:13px;font-weight:700;color:#26a69a;}
-  .coin-rank-change.down{font-size:13px;font-weight:700;color:#ef5350;}
-  @media(max-width:520px){#coin-rank-grid{grid-template-columns:repeat(2,1fr);}}
+  .crk{background:linear-gradient(145deg,#111,#0d0d0d);border:0.5px solid #1e1e1e;border-radius:12px;padding:14px 8px;text-align:center;transition:all 0.25s;position:relative;overflow:hidden;}
+  .crk:hover{border-color:rgba(201,168,76,0.35);transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.4);}
+  .crk-num{font-size:9px;color:#333;margin-bottom:8px;font-weight:600;letter-spacing:1px;}
+  .crk-icon{width:40px;height:40px;border-radius:50%;margin:0 auto 8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#fff;}
+  .crk-sym{font-size:11px;font-weight:700;color:#ccc;margin-bottom:3px;letter-spacing:0.5px;}
+  .crk-price{font-size:10px;color:#444;margin-bottom:6px;}
+  .crk-chg{font-size:15px;font-weight:800;}
+  .crk-chg.up{color:#00e5a0;}
+  .crk-chg.dn{color:#ff4d6d;}
+  @media(max-width:600px){#coin-rank-grid{grid-template-columns:repeat(2,1fr);}}
   </style>
   <script>
   (function(){
+    var COLORS=['#FF6B35','#E9C46A','#90E0EF','#06D6A0','#F4A261','#A8DADC','#FFB703','#8338EC','#FB5607','#3A86FF'];
+    function getColor(sym){var h=0;for(var i=0;i<sym.length;i++){h=(h*31+sym.charCodeAt(i))%COLORS.length;}return COLORS[h];}
     function loadCoinRank(){
-      fetch('https://fapi.binance.com/fapi/v1/ticker/24hr')
-        .then(function(r){return r.json();})
-        .then(function(data){
-          var usdt = data.filter(function(d){return d.symbol.endsWith('USDT');});
-          usdt.sort(function(a,b){return parseFloat(b.priceChangePercent)-parseFloat(a.priceChangePercent);});
-          var top10 = usdt.slice(0,10);
-          var grid = document.getElementById('coin-rank-grid');
-          if(!grid)return;
-          grid.innerHTML = top10.map(function(d,i){
-            var sym = d.symbol.replace('USDT','');
-            var chg = parseFloat(d.priceChangePercent);
-            var chgStr = (chg>=0?'+':'')+chg.toFixed(2)+'%';
-            var cls = chg>=0?'up':'down';
-            var price = parseFloat(d.lastPrice);
-            var priceStr = price>=1000?'$'+price.toLocaleString('en',{maximumFractionDigits:0}):price>=1?'$'+price.toFixed(2):'$'+price.toFixed(4);
-            var icon = 'https://bin.bnbstatic.com/image/admin_mgs_image_upload/20201110/87496d50-2408-43e1-ad4c-78b47b448a6a.png';
-            return '<div class="coin-rank-card">'+
-              '<div class="coin-rank-num">#'+(i+1)+'</div>'+
-              '<div class="coin-rank-icon">'+sym.substring(0,3)+'</div>'+
-              '<div class="coin-rank-symbol">'+sym+'</div>'+
-              '<div class="coin-rank-price">'+priceStr+'</div>'+
-              '<div class="coin-rank-change '+cls+'">'+chgStr+'</div>'+
-            '</div>';
-          }).join('');
-          var el=document.getElementById('coin-rank-updated');
-          if(el){var n=new Date();el.textContent=n.getHours()+':'+String(n.getMinutes()).padStart(2,'0')+' 업데이트';}
-        }).catch(function(){});
+      fetch('https://fapi.binance.com/fapi/v1/ticker/24hr').then(function(r){return r.json();}).then(function(data){
+        var usdt=data.filter(function(d){return d.symbol.endsWith('USDT')&&d.symbol.indexOf('1000')<0;});
+        usdt.sort(function(a,b){return parseFloat(b.priceChangePercent)-parseFloat(a.priceChangePercent);});
+        var top10=usdt.slice(0,10);
+        var grid=document.getElementById('coin-rank-grid');
+        if(!grid)return;
+        grid.innerHTML=top10.map(function(d,i){
+          var sym=d.symbol.replace('USDT','');
+          var chg=parseFloat(d.priceChangePercent);
+          var chgStr=(chg>=0?'+':'')+chg.toFixed(2)+'%';
+          var cls=chg>=0?'up':'dn';
+          var price=parseFloat(d.lastPrice);
+          var priceStr=price>=1000?'$'+Math.round(price).toLocaleString():price>=1?'$'+price.toFixed(3):'$'+price.toFixed(4);
+          var col=getColor(sym);
+          var ini=sym.length>=4?sym.substring(0,3):sym;
+          var rnkCol=i===0?'#C9A84C':i===1?'#aaa':i===2?'#cd7f32':'#555';
+          return '<div class="crk"><div class="crk-num" style="color:'+rnkCol+';">#'+(i+1)+'</div><div class="crk-icon" style="background:linear-gradient(135deg,'+col+'cc,'+col+'44);border:1.5px solid '+col+'66;">'+ini+'</div><div class="crk-sym">'+sym+'</div><div class="crk-price">'+priceStr+'</div><div class="crk-chg '+cls+'">'+chgStr+'</div></div>';
+        }).join('');
+        var el=document.getElementById('coin-rank-updated');
+        if(el){var n=new Date();el.textContent=n.getHours()+':'+String(n.getMinutes()).padStart(2,'0')+' 업데이트';}
+      }).catch(function(){});
     }
     loadCoinRank();
     setInterval(loadCoinRank,30000);
   })();
   </script>
+
 
 
 
