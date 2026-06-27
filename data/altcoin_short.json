@@ -10,5 +10,11 @@
     "time": "2026-06-27 09:00",
     "price": 0.431,
     "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_PIVX",
+    "time": "2026-06-27 21:00",
+    "price": 0.0755,
+    "sig_type": "trend"
   }
 ]
