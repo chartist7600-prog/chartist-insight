@@ -94,7 +94,7 @@
   .fs-btn{padding:4px 12px;border-radius:6px;border:0.5px solid var(--border2);background:var(--bg3);color:var(--text2);font-size:11px;font-family:'Noto Sans KR',sans-serif;cursor:pointer;transition:all 0.15s;}
   .fs-btn.active{background:rgba(201,168,76,0.12);border-color:var(--gold);color:var(--gold);font-weight:500;}
   .market-bar{display:grid;grid-template-columns:1fr 1fr;gap:8px;max-width:var(--max-w);margin:0 auto;padding:0 20px 12px;}
-  .market-card{background:var(--bg2);border:0.5px solid var(--border);border-radius:12px;padding:12px 16px;}
+  .market-card{background:var(--bg2);border:0.5px solid var(--border);border-radius:12px;padding:12px 16px;border-top:1px solid rgba(201,168,76,0.35);}
   .mc-label{font-size:10px;color:var(--text3);margin-bottom:4px;}
   .mc-price{font-size:20px;font-weight:700;font-family:'JetBrains Mono',monospace;color:var(--text);margin-bottom:2px;}
   .mc-change{font-size:11px;font-family:'JetBrains Mono',monospace;}
@@ -754,7 +754,7 @@
   .service-card-icon{font-size:22px;flex-shrink:0;width:36px;text-align:center;}
   .service-card-body{flex:1;}
   .service-card-title{font-size:14px;font-weight:700;color:#f0f0f0;margin-bottom:4px;}
-  .service-card-desc{font-size:11px;color:#666;line-height:1.6;display:flex;flex-wrap:wrap;gap:4px;}
+  .service-card-desc{font-size:11px;color:#666;line-height:1.6;display:flex;flex-wrap:wrap;gap:4px;}.service-tag{background:rgba(255,255,255,0.05);border:0.5px solid rgba(255,255,255,0.1);color:#666;font-size:10px;padding:2px 7px;border-radius:4px;}
   .service-tag{background:rgba(255,255,255,0.06);border:0.5px solid rgba(255,255,255,0.1);color:#888;font-size:10px;padding:2px 7px;border-radius:4px;}
   .service-card-badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px;flex-shrink:0;align-self:flex-start;}
   .service-card-badge.free{background:rgba(76,175,125,0.12);color:#4caf7d;border:0.5px solid rgba(76,175,125,0.3);}
@@ -782,7 +782,7 @@
   .fomo-item.blurred .fomo-coin{filter:blur(4px);user-select:none;}
   .fomo-blur-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(10,10,10,0.6);border-radius:10px;}
   .fomo-blur-cta{background:#C9A84C;color:#0e0e0e;padding:6px 16px;border-radius:6px;font-size:11px;font-weight:700;text-decoration:none;}
-  .fomo-rank{font-size:13px;color:#555;width:20px;text-align:center;flex-shrink:0;}
+  .fomo-rank{font-size:13px;color:#555;width:20px;text-align:center;flex-shrink:0;}.fomo-rank.gold{color:#C9A84C;font-weight:700;}.fomo-rank.silver{color:#aaaaaa;font-weight:700;}.fomo-rank.bronze{color:#cd7f32;font-weight:700;}
   .fomo-coin{flex:1;}
   .fomo-coin-name{font-size:13px;font-weight:700;color:#f0f0f0;}
   .fomo-coin-meta{font-size:10px;color:#555;margin-top:2px;}
@@ -980,7 +980,7 @@
           <div class="service-card-icon">🧮</div>
           <div class="service-card-body">
             <div class="service-card-title">매매계산기</div>
-            <div class="service-card-desc">진입가·손절가·목표가 기반 손익비 자동 계산</div>
+            <div class="service-card-desc"><span class="service-tag">손익비 계산</span><span class="service-tag">분할매수</span><span class="service-tag">스케일오더</span></div>
           </div>
           <div class="service-card-badge free">무료</div>
         </div>
@@ -988,7 +988,7 @@
           <div class="service-card-icon">📒</div>
           <div class="service-card-body">
             <div class="service-card-title">매매일지</div>
-            <div class="service-card-desc">내 매매 기록 · 텔레그램 로그인 시 영구 저장</div>
+            <div class="service-card-desc"><span class="service-tag">승률 통계</span><span class="service-tag">영구 저장</span><span class="service-tag">TG 연동</span></div>
           </div>
           <div class="service-card-badge free">무료</div>
         </div>
