@@ -409,6 +409,15 @@
   .sf-note{font-size:11px;color:rgba(255,255,255,0.75);line-height:1.8;max-width:560px;margin:0 auto 6px;}
   .sf-source{font-size:10px;color:rgba(255,255,255,0.45);}
 
+
+  .member-modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:5000;align-items:center;justify-content:center;}
+  .member-modal-overlay.show{display:flex;}
+  .member-modal-box{background:#111;border:1px solid rgba(201,168,76,0.3);border-radius:20px;padding:36px 28px;max-width:340px;width:90%;text-align:center;}
+  .member-modal-icon{font-size:40px;margin-bottom:16px;}
+  .member-modal-title{font-size:16px;font-weight:700;color:#C9A84C;margin-bottom:10px;}
+  .member-modal-desc{font-size:13px;color:#888;line-height:1.8;margin-bottom:24px;}
+  .member-modal-btn{display:block;width:100%;background:#C9A84C;color:#0e0e0e;border:none;border-radius:10px;padding:13px;font-size:14px;font-weight:700;cursor:pointer;text-decoration:none;margin-bottom:10px;}
+  .member-modal-close{background:transparent;border:0.5px solid #333;border-radius:10px;padding:10px;color:#666;font-size:13px;cursor:pointer;width:100%;}
   @media(max-width:520px){.grid4{grid-template-columns:1fr 1fr;}.grid3{grid-template-columns:1fr 1fr;}.tooltip-box{left:0;transform:none;}.sth-sub{display:none;}.macro-grid{grid-template-columns:1fr 1fr;}}
   @keyframes flashUp{0%{background:rgba(76,175,125,0.25);}100%{background:transparent;}}
   @keyframes flashDn{0%{background:rgba(224,85,85,0.25);}100%{background:transparent;}}
@@ -941,8 +950,8 @@
 </div>
 
 <div class="tab-nav">
-  <button class="tab-btn" id="tab-btn-btc" onclick="if(!document.body.classList.contains('tg-logged')){tgLogin();}else{switchTab('btc',this);}">₿ 비트</button>
-  <button class="tab-btn" id="tab-btn-altcoin" onclick="if(!document.body.classList.contains('tg-logged')){tgLogin();}else{switchTab('altcoin',this);}">📊 알트</button>
+  <button class="tab-btn" id="tab-btn-btc" onclick="if(!document.body.classList.contains('tg-logged')){tgLogin();}else if(typeof tgUser!=='undefined'&&tgUser&&!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{switchTab('btc',this);}">₿ 비트</button>
+  <button class="tab-btn" id="tab-btn-altcoin" onclick="if(!document.body.classList.contains('tg-logged')){tgLogin();}else if(typeof tgUser!=='undefined'&&tgUser&&!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{switchTab('altcoin',this);}">📊 알트</button>
   <button class="tab-btn" id="tab-btn-calc" onclick="switchTab('calc',this)">🧮 계산기</button>
   <button class="tab-btn" id="tab-btn-journal" onclick="switchTab('journal',this)" style="letter-spacing:-0.5px;">📒 매매일지</button>
 </div>
@@ -2740,4 +2749,14 @@ function serviceNavClick(tab) {
 
 
 
+
+<div class="member-modal-overlay" id="member-modal" onclick="if(event.target===this)document.getElementById('member-modal').classList.remove('show')">
+  <div class="member-modal-box">
+    <div class="member-modal-icon">🔒</div>
+    <div class="member-modal-title">멤버십 전용 서비스</div>
+    <div class="member-modal-desc">차티스트 인사이트 멤버십 구독자만<br>이용할 수 있는 서비스입니다.<br><br>팬딩에서 멤버십 가입 후<br>텔레그램 채널에 입장하면<br>자동으로 접근이 허용됩니다.</div>
+    <a href="https://fanding.kr/@bzcLu6QCTdMe/membership/" target="_blank" class="member-modal-btn">멤버십 가입하기</a>
+    <button class="member-modal-close" onclick="document.getElementById('member-modal').classList.remove('show')">닫기</button>
+  </div>
+</div>
 </body>
