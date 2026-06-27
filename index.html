@@ -2394,34 +2394,6 @@ initBtcBlur();
 
 if("serviceWorker" in navigator){navigator.serviceWorker.register("/sw.js")}
 // ════════════════════════════════════
-// 매매일지 v4
-// ════════════════════════════════════
-(function(){
-var __origST = window.switchTab;
-window.switchTab = function(tab, btn) {
-  if(__origST) __origST(tab, btn);
-  var tabNav = document.querySelector('.tab-nav');
-  if(tabNav) tabNav.scrollIntoView({behavior:'smooth', block:'start'});
-  if(tab==='btc'){try{initBtcBlur();}catch(e){}}
-  if(tab==='journal'){
-    var auth=document.getElementById('j-auth-screen');
-    var main=document.getElementById('j-main-screen');
-    if(!auth||!main)return;
-    var tok=localStorage.getItem('j_token');
-    var usr=localStorage.getItem('j_user');
-    if(tok&&usr){
-      auth.style.display='none';
-      main.style.display='';
-      var ul=document.getElementById('j-user-label');
-      if(ul)ul.textContent=usr+' 님의 매매일지';
-      jLoadTrades();
-    }else{
-      auth.style.display='block';
-      main.style.display='none';
-    }
-  }
-};
-})();
 
 function jSwitchAuthTab(tab){
   var l=document.getElementById('j-login-section');
