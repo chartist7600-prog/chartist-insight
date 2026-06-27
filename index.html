@@ -1031,13 +1031,67 @@
     </div>
   </div>
 </section>
-  <!-- 크립토 버블맵 -->
-  <div class="bubble-wrap">
-    <div class="bubble-label">🫧 크립토 버블맵 &nbsp;·&nbsp; 시총 기준 · 색상 = 등락률 · CryptoBubbles</div>
-    <div style="height:320px;overflow:hidden;border-radius:10px;position:relative;">
-      <iframe src="https://cryptobubbles.net" style="width:100%;height:900px;border:none;display:block;margin-top:-200px;" loading="lazy" title="크립토 버블맵"></iframe>
+  <!-- 코인 랭킹 섹션 -->
+  <div style="background:#0a0a0a;border-top:0.5px solid rgba(201,168,76,0.15);border-bottom:0.5px solid rgba(201,168,76,0.15);padding:24px 20px;">
+    <div style="max-width:900px;margin:0 auto;">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span style="font-size:13px;color:#C9A84C;font-weight:700;letter-spacing:0.5px;">🏆 24H 상승률 TOP 10</span>
+          <span style="font-size:10px;color:#555;background:#1a1a1a;border:0.5px solid #333;padding:2px 8px;border-radius:20px;">BINANCE FUTURES</span>
+        </div>
+        <span style="font-size:10px;color:#444;" id="coin-rank-updated">업데이트 중...</span>
+      </div>
+      <div id="coin-rank-grid" style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;">
+        <div style="text-align:center;color:#333;padding:20px;font-size:12px;grid-column:1/-1;">로딩 중...</div>
+      </div>
     </div>
   </div>
+  <style>
+  .coin-rank-card{background:#111;border:0.5px solid #222;border-radius:10px;padding:12px 8px;text-align:center;transition:all 0.2s;cursor:default;}
+  .coin-rank-card:hover{border-color:rgba(201,168,76,0.4);background:#161616;transform:translateY(-2px);}
+  .coin-rank-num{font-size:10px;color:#444;margin-bottom:6px;}
+  .coin-rank-icon{width:36px;height:36px;border-radius:50%;margin:0 auto 6px;object-fit:contain;background:#1a1a1a;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#fff;}
+  .coin-rank-symbol{font-size:12px;font-weight:700;color:#e0e0e0;margin-bottom:4px;}
+  .coin-rank-price{font-size:10px;color:#666;margin-bottom:4px;}
+  .coin-rank-change.up{font-size:13px;font-weight:700;color:#26a69a;}
+  .coin-rank-change.down{font-size:13px;font-weight:700;color:#ef5350;}
+  @media(max-width:520px){#coin-rank-grid{grid-template-columns:repeat(2,1fr);}}
+  </style>
+  <script>
+  (function(){
+    function loadCoinRank(){
+      fetch('https://fapi.binance.com/fapi/v1/ticker/24hr')
+        .then(function(r){return r.json();})
+        .then(function(data){
+          var usdt = data.filter(function(d){return d.symbol.endsWith('USDT');});
+          usdt.sort(function(a,b){return parseFloat(b.priceChangePercent)-parseFloat(a.priceChangePercent);});
+          var top10 = usdt.slice(0,10);
+          var grid = document.getElementById('coin-rank-grid');
+          if(!grid)return;
+          grid.innerHTML = top10.map(function(d,i){
+            var sym = d.symbol.replace('USDT','');
+            var chg = parseFloat(d.priceChangePercent);
+            var chgStr = (chg>=0?'+':'')+chg.toFixed(2)+'%';
+            var cls = chg>=0?'up':'down';
+            var price = parseFloat(d.lastPrice);
+            var priceStr = price>=1000?'$'+price.toLocaleString('en',{maximumFractionDigits:0}):price>=1?'$'+price.toFixed(2):'$'+price.toFixed(4);
+            var icon = 'https://bin.bnbstatic.com/image/admin_mgs_image_upload/20201110/87496d50-2408-43e1-ad4c-78b47b448a6a.png';
+            return '<div class="coin-rank-card">'+
+              '<div class="coin-rank-num">#'+(i+1)+'</div>'+
+              '<div class="coin-rank-icon">'+sym.substring(0,3)+'</div>'+
+              '<div class="coin-rank-symbol">'+sym+'</div>'+
+              '<div class="coin-rank-price">'+priceStr+'</div>'+
+              '<div class="coin-rank-change '+cls+'">'+chgStr+'</div>'+
+            '</div>';
+          }).join('');
+          var el=document.getElementById('coin-rank-updated');
+          if(el){var n=new Date();el.textContent=n.getHours()+':'+String(n.getMinutes()).padStart(2,'0')+' 업데이트';}
+        }).catch(function(){});
+    }
+    loadCoinRank();
+    setInterval(loadCoinRank,30000);
+  })();
+  </script>
 
 
 
