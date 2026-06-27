@@ -1,32 +1,14 @@
 [
   {
-    "key": "빗썸_STABLE",
-    "time": "2026-06-26 09:00",
-    "price": 55.66,
-    "sig_type": "trend_strong"
-  },
-  {
-    "key": "바이낸스_FOGO",
-    "time": "2026-06-26 09:00",
-    "price": 0.01336,
+    "key": "빗썸_ACX",
+    "time": "2026-06-27 09:00",
+    "price": 62.0,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_OXT",
-    "time": "2026-06-26 21:00",
-    "price": 16.37,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_RPL",
-    "time": "2026-06-26 21:00",
-    "price": 2160.0,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_HUMA",
-    "time": "2026-06-26 21:00",
-    "price": 37.46,
+    "key": "바이낸스_CITY",
+    "time": "2026-06-27 09:00",
+    "price": 0.431,
     "sig_type": "trend"
   }
 ]
