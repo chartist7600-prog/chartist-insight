@@ -1960,7 +1960,7 @@ var RSI_PW="7777";
 var RSI_PW="7777";
 var RSI_PW="7777";
 function initBtcBlur(){
-  var unlocked=(tgUser&&tgUser.is_member)||localStorage.getItem('rsi_unlocked')==='1';
+  var unlocked=(typeof tgUser!=="undefined"&&tgUser&&tgUser.is_member)||localStorage.getItem('rsi_unlocked')==='1';
   var content=document.getElementById('btc-blur-content');
   if(!content)return;
   content.style.filter='';content.style.color='';content.style.textShadow='';
