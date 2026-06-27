@@ -25,7 +25,7 @@
   :root {
     --bg:#0e0e0e;--bg2:#161616;--bg3:#1e1e1e;
     --border:rgba(255,255,255,0.08);--border2:rgba(255,255,255,0.14);
-    --gold:#C9A84C;--text:#f0f0f0;--text2:#bbb;--text3:#888;
+    --gold:#C9A84C;--text:#ffffff;--text2:#e0e0e0;--text3:#888;
     --red:#e05555;--red2:#ff6b6b;--green:#4caf7d;--blue:#4a9eff;
     --orange:#FF8C00;--sky:#29B6F6;
     --warn-bg:rgba(224,85,85,0.12);--warn-border:rgba(224,85,85,0.4);
@@ -933,6 +933,26 @@
     </div>
   </div>
 </section>
+
+<div class="market-bar">
+  <div class="market-card">
+    <div class="mc-label">BTC / USDT</div>
+    <div class="mc-price" id="btc-price">—</div>
+    <div class="mc-change" id="btc-change">연결 중...</div>
+    <div class="mc-desc">바이낸스 실시간 · USDT 기준</div>
+  </div>
+  <div class="market-card">
+    <div class="mc-label">공포 &amp; 탐욕 지수</div>
+    <div class="fg-wrap">
+      <div class="fg-gauge"><canvas id="fg-canvas" width="64" height="34"></canvas></div>
+      <div class="fg-right">
+        <div class="fg-value" id="fg-value">—</div>
+        <div class="fg-label" id="fg-label">로딩 중...</div>
+        <div style="font-size:9px;color:var(--text3);margin-top:4px;border-top:0.5px solid var(--border);padding-top:4px;">0-24 극단 공포 · 75-100 극단 탐욕</div>
+      </div>
+    </div>
+  </div>
+</div>
 <nav class="service-nav">
   <div class="service-nav-inner">
     <button class="service-nav-btn" onclick="serviceNavClick('btc')">₿ 비트코인<span class="nav-lock">🔒</span></button>
@@ -955,16 +975,6 @@
 
 
 
-<section class="fomo-section">
-  <div class="fomo-container">
-    <div class="fomo-title">🚀 멤버십 포착 코인 · 최근 30일 추세전환 신호</div>
-    <div class="fomo-subtitle">신호 발생 시점 대비 현재 수익률 · 실시간 업데이트</div>
-    <div class="fomo-list" id="fomo-list"><div style="text-align:center;color:#555;padding:20px;font-size:12px;">로딩 중...</div></div>
-    <div class="fomo-cta-row">
-      <a href="https://fanding.kr/@bzcLu6QCTdMe/membership/" target="_blank" class="fomo-cta-btn">전체 신호 보기 → 멤버십 가입</a>
-    </div>
-  </div>
-</section>
 <section class="service-section">
   <div class="service-container">
     <div class="service-group">
@@ -1025,42 +1035,6 @@
     <iframe src="https://cryptobubbles.net" style="width:100%;height:420px;border:none;display:block;border-radius:10px;" loading="lazy" title="크립토 버블맵"></iframe>
   </div>
 </section>
-<div class="site-header">
-  <div class="hero-desc" style="text-align:center;padding:8px 16px 4px;max-width:700px;margin:0 auto;">
-    <div style="font-size:11px;color:var(--text3);letter-spacing:0.5px;line-height:1.8;">
-      실시간 <span style="color:var(--gold);font-weight:700;">비트코인 신호</span> &nbsp;·&nbsp; 
-      <span style="color:var(--gold);font-weight:700;">알트코인 네비게이션</span> &nbsp;·&nbsp; 
-      <span style="color:var(--gold);font-weight:700;">매매일지</span>
-    </div>
-  </div>
-  <div class="font-size-bar">
-    <span class="font-size-label">글자크기</span>
-    <div class="fs-toggle">
-      <button class="fs-btn active" id="fs-btn-normal" onclick="setFontSize('normal')">보통</button>
-      <button class="fs-btn" id="fs-btn-large" onclick="setFontSize('large')">크게</button>
-    </div>
-  </div>
-</div>
-
-<div class="market-bar">
-  <div class="market-card">
-    <div class="mc-label">BTC / USDT</div>
-    <div class="mc-price" id="btc-price">—</div>
-    <div class="mc-change" id="btc-change">연결 중...</div>
-    <div class="mc-desc">바이낸스 실시간 · USDT 기준</div>
-  </div>
-  <div class="market-card">
-    <div class="mc-label">공포 &amp; 탐욕 지수</div>
-    <div class="fg-wrap">
-      <div class="fg-gauge"><canvas id="fg-canvas" width="64" height="34"></canvas></div>
-      <div class="fg-right">
-        <div class="fg-value" id="fg-value">—</div>
-        <div class="fg-label" id="fg-label">로딩 중...</div>
-        <div style="font-size:9px;color:var(--text3);margin-top:4px;border-top:0.5px solid var(--border);padding-top:4px;">0-24 극단 공포 · 75-100 극단 탐욕</div>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- ★ 수정③: tab-btn CSS에 white-space:normal 적용 완료 -->
 <div class="tab-nav">
