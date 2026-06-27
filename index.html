@@ -967,7 +967,7 @@
     <div class="service-group">
       <div class="service-group-label">🆓 무료 제공</div>
       <div class="service-cards">
-        <div class="service-card free-card" onclick="switchTab('calc',document.getElementById('tab-btn-calc'));window.scrollTo({top:document.querySelector('.tab-nav').getBoundingClientRect().top+window.scrollY-56,behavior:'smooth'})">
+        <div class="service-card free-card" onclick="switchTab('calc',document.getElementById('tab-btn-calc'));setTimeout(function(){var el=document.getElementById('tab-calc');if(el)window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-60,behavior:'smooth'});},50)">
           <div class="service-card-icon">🧮</div>
           <div class="service-card-body">
             <div class="service-card-title">매매계산기</div>
@@ -975,7 +975,7 @@
           </div>
           <div class="service-card-badge free">무료</div>
         </div>
-        <div class="service-card free-card" onclick="switchTab('journal',document.getElementById('tab-btn-journal'));window.scrollTo({top:document.querySelector('.tab-nav').getBoundingClientRect().top+window.scrollY-56,behavior:'smooth'})">
+        <div class="service-card free-card" onclick="switchTab('journal',document.getElementById('tab-btn-journal'));setTimeout(function(){var el=document.getElementById('tab-journal');if(el)window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-60,behavior:'smooth'});},50)">
           <div class="service-card-icon">📒</div>
           <div class="service-card-body">
             <div class="service-card-title">매매일지</div>
