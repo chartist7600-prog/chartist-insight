@@ -941,8 +941,8 @@
 </div>
 
 <div class="tab-nav">
-  <button class="tab-btn active" id="tab-btn-btc" onclick="switchTab('btc',this)">₿ 비트</button>
-  <button class="tab-btn" id="tab-btn-altcoin" onclick="switchTab('altcoin',this)">📊 알트</button>
+  <button class="tab-btn active" id="tab-btn-btc" onclick="if(!document.body.classList.contains('tg-logged')){tgLogin();}else{switchTab('btc',this);}">₿ 비트</button>
+  <button class="tab-btn" id="tab-btn-altcoin" onclick="if(!document.body.classList.contains('tg-logged')){tgLogin();}else{switchTab('altcoin',this);}">📊 알트</button>
   <button class="tab-btn" id="tab-btn-calc" onclick="switchTab('calc',this)">🧮 계산기</button>
   <button class="tab-btn" id="tab-btn-journal" onclick="switchTab('journal',this)" style="letter-spacing:-0.5px;">📒 매매일지</button>
 </div>
