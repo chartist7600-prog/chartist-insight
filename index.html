@@ -2044,7 +2044,7 @@ sigMap['rsi_hidden_bear'] = {label:'숨은 하락 다이버전스', cls:'sig-rsi
 var _origSwitchTab=switchTab;
 switchTab=function(tab,btn){
   _origSwitchTab(tab,btn);
-  var _tn=document.querySelector('.tab-nav');if(_tn){var _y=_tn.getBoundingClientRect().top+window.scrollY-60;window.scrollTo({top:_y,behavior:'smooth'});}
+  var _tc=document.getElementById('tab-'+tab);if(_tc){var _y=_tc.getBoundingClientRect().top+window.scrollY-120;window.scrollTo({top:_y,behavior:'smooth'});}
   if(tab==='btc'){initBtcBlur();}
   if(tab==='journal'){var tok=localStorage.getItem('j_token');if(tok){document.getElementById('j-auth-screen').style.display='none';document.getElementById('j-main-screen').style.display='';}else{document.getElementById('j-auth-screen').style.display='block';}}
 };
