@@ -2758,7 +2758,7 @@ function renderFomo(items,pm){
     var days=dt?Math.floor((Date.now()-new Date(dt))/86400000):"?";
     var blur=i>=3;
     html+='<div class="fomo-item'+(blur?' blurred':'')+'">'+'<div class="fomo-rank">'+(i+1)+'</div>'+'<div class="fomo-coin"><div class="fomo-coin-name">'+item.ticker+'<span style="font-size:11px;color:#666;font-weight:400;margin-left:6px;">'+(item.name||"")+'</span></div><div class="fomo-coin-meta">신호일: '+dt+'</div></div>'+'<div class="fomo-right"><div class="fomo-pct'+neg+'">'+pctStr+'</div><div class="fomo-days">'+days+'일 전</div></div>';
-    if(blur)html+='<div class="fomo-blur-overlay"><a href="https://fanding.kr/@bzcLu6QCTdMe/membership/" target="_blank" class="fomo-blur-cta">멤버십 가입</a></div>';
+    
     html+='</div>';
   });
   el.innerHTML=html;
