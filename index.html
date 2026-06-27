@@ -1031,7 +1031,7 @@
     </div>
   </div>
 </section>
-  <!-- 코인 랭킹 섹션 -->
+  <- GitHub 신규 계정: chartist7600-prog / 코인 랭킹 섹션 -->
   <div style="background:#080808;border-top:0.5px solid rgba(201,168,76,0.2);border-bottom:0.5px solid rgba(201,168,76,0.2);padding:28px 20px;">
     <div style="max-width:900px;margin:0 auto;">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;">
@@ -1068,7 +1068,6 @@
         usdt.sort(function(a,b){return parseFloat(b.priceChangePercent)-parseFloat(a.priceChangePercent);});
         var top10=usdt.slice(0,10);
         var grid=document.getElementById('coin-rank-grid');
-        if(!grid)return;
         grid.innerHTML=top10.map(function(d,i){
           var sym=d.symbol.replace('USDT','');
           var chg=parseFloat(d.priceChangePercent);
@@ -1089,6 +1088,7 @@
     setInterval(loadCoinRank,30000);
   })();
   </script>
+
 
 
 
