@@ -1829,7 +1829,7 @@ function searchTicker(val){
   var matches=BINANCE_FUTURES.filter(function(t){return t.startsWith(val);}).slice(0,8);
   if(!matches.length){ac.style.display="none";return;}
   ac.innerHTML=matches.map(function(t){
-    return '<div class="ticker-autocomplete-item" onclick="selectTicker("'+t+'")" style="padding:8px 12px;cursor:pointer;font-size:12px;color:#e2e2e2;border-bottom:1px solid #242424;" onmouseover="this.style.background='#222'" onmouseout="this.style.background=''">'+t+'USDT</div>';
+    return '<div class="ticker-autocomplete-item" onclick="selectTicker(\''+t+'\')" style="padding:8px 12px;cursor:pointer;font-size:12px;color:#e2e2e2;border-bottom:1px solid #242424;">'+t+'USDT</div>';
   }).join("");
   ac.style.display="block";
 }
