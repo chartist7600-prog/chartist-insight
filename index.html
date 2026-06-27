@@ -1224,7 +1224,7 @@
 <div class="tab-content" id="tab-journal">
   <div id="j-auth-screen" style="display:none;"><div style="max-width:360px;margin:60px auto;background:#1a1a1a;border:1px solid #242424;border-top:2px solid #C9A84C;border-radius:10px;padding:36px 32px;text-align:center;"><h2 style="font-size:18px;font-weight:700;color:#C9A84C;margin-bottom:8px;">📒 매매일지</h2><p style="font-size:13px;color:#777;margin-bottom:24px;line-height:1.6;">텔레그램으로 로그인하면<br>매매 기록이 영구 저장됩니다</p><button onclick="tgLogin()" style="width:100%;background:#229ED9;color:#fff;border:none;border-radius:8px;padding:12px;font-size:14px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm5.9 8.2l-2 9.4c-.1.6-.5.8-1 .5l-2.8-2.1-1.3 1.3c-.2.2-.3.3-.6.3l.2-2.9 5.1-4.6c.2-.2 0-.3-.3-.1L6.1 14.7 3.4 14c-.6-.2-.6-.6.1-.8l11.6-4.5c.5-.2 1 .1.8.8z"/></svg>텔레그램으로 로그인</button></div>
   </div>
-  <div id="j-main-screen" style="display:block;padding:20px 16px;"><div style="background:rgba(34,158,217,0.08);border:0.5px solid rgba(34,158,217,0.3);border-radius:8px;padding:10px 16px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;gap:12px;"><span style="font-size:12px;color:#aaa;">📌 텔레그램 로그인 시 매매 기록이 <strong style="color:#C9A84C;">영구 저장</strong>됩니다</span><button onclick="tgLogin()" style="background:#229ED9;color:#fff;border:none;border-radius:6px;padding:6px 14px;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;">로그인</button></div>
+  <div id="j-main-screen" style="display:block;padding:20px 16px;"><div style="background:rgba(34,158,217,0.15);border:1.5px solid rgba(34,158,217,0.5);border-radius:10px;padding:14px 20px;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;gap:12px;"><span style="font-size:13px;color:#ddd;font-weight:500;">📌 텔레그램 로그인 시 매매 기록이 <strong style="color:#C9A84C;">영구 저장</strong>됩니다</span><button onclick="tgLogin()" style="background:#229ED9;color:#fff;border:none;border-radius:6px;padding:6px 14px;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;">로그인</button></div>
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
       <div><div style="font-size:16px;font-weight:700;color:#C9A84C;">📒 매매일지</div><div style="font-size:12px;color:#666;margin-top:2px;" id="j-user-label"></div></div>
       <button onclick="journalLogout()" style="background:transparent;color:#777;border:1px solid #242424;border-radius:6px;padding:6px 14px;font-size:12px;cursor:pointer;">로그아웃</button>
@@ -2060,7 +2060,7 @@ sigMap['rsi_hidden_bear'] = {label:'숨은 하락 다이버전스', cls:'sig-rsi
 var _origSwitchTab=switchTab;
 switchTab=function(tab,btn){
   _origSwitchTab(tab,btn);
-  var _tn=document.querySelector('.tab-nav');if(_tn){_tn.scrollIntoView({behavior:'smooth',block:'start'});}
+  var _tn=document.querySelector('.tab-nav');if(_tn){var _y=_tn.getBoundingClientRect().top+window.scrollY-60;window.scrollTo({top:_y,behavior:'smooth'});}
   if(tab==='btc'){initBtcBlur();}
   if(tab==='journal'){var tok=localStorage.getItem('j_token');if(tok){document.getElementById('j-auth-screen').style.display='none';document.getElementById('j-main-screen').style.display='';}else{document.getElementById('j-auth-screen').style.display='block';}}
 };
