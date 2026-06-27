@@ -1067,8 +1067,11 @@
       if(iconCache[sym]!==undefined){cb(iconCache[sym]);return;}
       var img=new Image();
       img.onload=function(){iconCache[sym]=img.src;cb(img.src);};
-      img.onerror=function(){iconCache[sym]='';cb('');};
-      img.src='https://assets.coincap.io/assets/icons/'+sym.toLowerCase()+'@2x.png';
+      var sources=['https://assets.coincap.io/assets/icons/'+sym.toLowerCase()+'@2x.png','https://cdn.jsdelivr.net/gh/spothq/cryptocurrency-icons@master/32/color/'+sym.toLowerCase()+'.png'];
+      var si=0;
+      function tryNext(){if(si>=sources.length){iconCache[sym]="";cb("");return;}img.src=sources[si++];}
+      img.onerror=function(){tryNext();};
+      tryNext();
     }
     function renderCard(d,i,imgSrc){
       var sym=d.symbol.replace('USDT','');
