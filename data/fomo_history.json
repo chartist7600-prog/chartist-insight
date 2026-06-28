@@ -1,7 +1,35 @@
 [
-  {"ticker": "BNB", "name": "바이낸스코인", "exchange": "binance", "entry_price": 520.0, "currency": "USDT", "entry_time": "2026-06-26 09:00"},
-  {"ticker": "XRP", "name": "리플", "exchange": "binance", "entry_price": 0.95, "currency": "USDT", "entry_time": "2026-06-26 09:00"},
-  {"ticker": "ADA", "name": "에이다", "exchange": "binance", "entry_price": 0.12, "currency": "USDT", "entry_time": "2026-06-25 09:00"},
-  {"ticker": "DOGE", "name": "도지코인", "exchange": "binance", "entry_price": 0.065, "currency": "USDT", "entry_time": "2026-06-25 09:00"},
-  {"ticker": "SOL", "name": "솔라나", "exchange": "binance", "entry_price": 65.0, "currency": "USDT", "entry_time": "2026-06-27 09:00"}
+  {
+    "ticker": "SNX",
+    "name": "SNX",
+    "exchange": "빗썸",
+    "entry_price": 348.0,
+    "currency": "KRW",
+    "entry_time": "2026-06-28 13:25",
+    "signal": "trend"
+  },
+  {
+    "ticker": "SOL",
+    "name": "솔라나",
+    "exchange": "binance",
+    "entry_price": 65.0,
+    "currency": "USDT",
+    "entry_time": "2026-06-27 09:00"
+  },
+  {
+    "ticker": "BNB",
+    "name": "바이낸스코인",
+    "exchange": "binance",
+    "entry_price": 520.0,
+    "currency": "USDT",
+    "entry_time": "2026-06-26 09:00"
+  },
+  {
+    "ticker": "XRP",
+    "name": "리플",
+    "exchange": "binance",
+    "entry_price": 0.95,
+    "currency": "USDT",
+    "entry_time": "2026-06-26 09:00"
+  }
 ]
