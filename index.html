@@ -1023,7 +1023,7 @@
     <div class="fomo-subtitle">신호 발생 시점 대비 현재 수익률 · 실시간 업데이트</div>
     <div class="fomo-list" id="fomo-list"><div style="text-align:center;color:#555;padding:20px;font-size:12px;">로딩 중...</div></div>
     <div class="fomo-cta-row">
-      <a href="https://fanding.kr/@bzcLu6QCTdMe/membership/" target="_blank" class="fomo-cta-btn">전체 신호 보기</a>
+      <button class="fomo-cta-btn" onclick="(function(){if(typeof tgUser!=='undefined'&&tgUser&&tgUser.is_member){window.scrollTo({top:document.querySelector('.tab-nav').getBoundingClientRect().top+window.scrollY-56,behavior:'smooth'});setTimeout(function(){switchTab('altcoin',document.getElementById('tab-btn-altcoin'));},300);}else if(typeof tgUser!=='undefined'&&tgUser&&!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{window.open('https://fanding.kr/@bzcLu6QCTdMe/membership/','_blank');}})()">전체 신호 보기</button>
     </div>
   </div>
 </section>
@@ -2706,18 +2706,31 @@ var TG_BOT_NAME = 'ChartMasterBot';
 var tgUser = null;
 
 function tgLogin() {
-  var loginUrl = 'https://oauth.telegram.org/auth?bot_id=8458968839&origin=https%3A%2F%2Fchartist-insight.com&embed=1&request_access=write';
-  var popup = window.open(loginUrl, 'tg_login', 'width=550,height=470,scrollbars=no,resizable=no');
-  window._tgPopup = popup;
+  var returnUrl = encodeURIComponent(location.href.split('?')[0]);
+  var loginUrl = 'https://oauth.telegram.org/auth?bot_id=8458968839&origin=https%3A%2F%2Fchartist-insight.com&embed=1&request_access=write&return_to=' + returnUrl;
+  location.href = loginUrl;
 }
 
-window.addEventListener('message', function(event) {
-  if (event.origin !== 'https://oauth.telegram.org') return;
-  var data = event.data;
-  if (data && data.event === 'auth_result' && data.result) {
-    tgOnAuth(data.result);
+// redirect 콜백 처리 (hash 방식)
+(function() {
+  var hash = location.hash;
+  if (hash && hash.indexOf('tgAuthResult=') !== -1) {
+    try {
+      var raw = hash.replace(/^#tgAuthResult=/, '');
+      // URL 디코딩 후 base64 패딩 보정
+      var b64 = decodeURIComponent(raw).replace(/-/g, '+').replace(/_/g, '/');
+      var pad = b64.length % 4;
+      if (pad) b64 += '===='.slice(pad);
+      var user = JSON.parse(atob(b64));
+      history.replaceState({}, '', location.pathname);
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() { tgOnAuth(user); });
+      } else {
+        tgOnAuth(user);
+      }
+    } catch(e) { console.log('tg callback parse error', e); }
   }
-});
+})();
 
 function tgOnAuth(user) {
   fetch('/tg/auth', {
