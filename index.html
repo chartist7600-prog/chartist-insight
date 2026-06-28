@@ -1858,7 +1858,6 @@ function showSignalPopup(tabType){
   var isBtc = tabType==='btc';
   document.getElementById('signal-box-icon').textContent = isBtc ? '⚡' : '📡';
   document.getElementById('signal-box-title').textContent = isBtc ? '비트코인 신호 감지' : '알트코인 신호 감지';
-  document.getElementById('signal-box-sub').textContent = '지금 바로 확인하세요';
   document.getElementById('signal-box-tab').setAttribute('data-tab', tabType);
   var el=document.getElementById('signal-overlay');
   if(el)el.classList.add('show');
