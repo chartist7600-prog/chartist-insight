@@ -423,8 +423,8 @@
   .fade-up{opacity:0;transform:translateY(24px);transition:opacity 0.6s ease,transform 0.6s ease;}
   .fade-up.visible{opacity:1;transform:translateY(0);}
   /* ══ 네비바 blur ══ */
-  .site-header{transition:background 0.3s,backdrop-filter 0.3s,box-shadow 0.3s;}
-  .site-header.scrolled{background:rgba(14,14,14,0.85);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(255,255,255,0.06);}
+  .site-top-header{transition:background 0.3s,backdrop-filter 0.3s,box-shadow 0.3s;}
+  .site-top-header.scrolled{background:rgba(14,14,14,0.85);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(255,255,255,0.06);}
   /* ══ 서비스카드 골드 글로우 ══ */
   .service-card:hover{border-color:rgba(201,168,76,0.45);box-shadow:0 0 20px rgba(201,168,76,0.08);transform:translateY(-2px);}
   @media(max-width:520px){.grid4{grid-template-columns:1fr 1fr;}.grid3{grid-template-columns:1fr 1fr;}.tooltip-box{left:0;transform:none;}.sth-sub{display:none;}.macro-grid{grid-template-columns:1fr 1fr;}}
@@ -2831,7 +2831,7 @@ var observer = new IntersectionObserver(function(entries){
 fadeEls.forEach(function(el){observer.observe(el);});
 
 // 네비바 blur
-var header = document.querySelector('.site-header');
+var header = document.querySelector('.site-top-header');
 window.addEventListener('scroll',function(){
   if(window.scrollY>40){header.classList.add('scrolled');}
   else{header.classList.remove('scrolled');}
