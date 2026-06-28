@@ -2832,6 +2832,7 @@ function serviceNavClick(tab) {
   </div>
 </div>
 
+<button id="scroll-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 <footer class="site-footer">
   <div style="display:flex;justify-content:center;gap:10px;margin-bottom:20px;flex-wrap:wrap;">
     <a class="sth-btn sth-btn-youtube" href="https://www.youtube.com/@CHARTISTLAB" target="_blank"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg><span class="sth-btn-text">유튜브</span></a>
@@ -2853,6 +2854,12 @@ var observer = new IntersectionObserver(function(entries){
 },{threshold:0.08});
 fadeEls.forEach(function(el){observer.observe(el);});
 
+// 스크롤 탑 버튼
+var scrollBtn = document.getElementById('scroll-top-btn');
+window.addEventListener('scroll', function(){
+  if(window.scrollY > 300){scrollBtn.classList.add('show');}
+  else{scrollBtn.classList.remove('show');}
+},{passive:true});
 // 네비바 blur
 var header = document.querySelector('.site-top-header');
 window.addEventListener('scroll',function(){
