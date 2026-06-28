@@ -2810,6 +2810,17 @@ function renderFomo(items,pm){
 }
 loadFomoSection();
 
+// FOMO 커서 순서 깜박임
+(function(){
+  var cur=0;
+  setInterval(function(){
+    var cursors=document.querySelectorAll('.fomo-cursor');
+    cursors.forEach(function(el){el.classList.remove('active');});
+    if(cursors[cur])cursors[cur].classList.add('active');
+    cur=(cur+1)%3;
+  },1000);
+})();
+
 // FOMO 30초마다 자동 갱신
 setInterval(function(){
   var top5=window._fomoItems;
