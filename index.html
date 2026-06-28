@@ -2813,7 +2813,16 @@ loadFomoSection();
 // FOMO 커서 순서 깜박임
 (function(){
   var cur=0;
+  // 커서 width를 부모 퍼센트 텍스트에 맞게
+  function syncCursorWidth(){
+    document.querySelectorAll('.fomo-pct').forEach(function(el){
+      var cursor=el.querySelector('.fomo-cursor');
+      if(cursor){cursor.style.width=el.offsetWidth+'px';}
+    });
+  }
+  setTimeout(syncCursorWidth,500);
   setInterval(function(){
+    syncCursorWidth();
     var cursors=document.querySelectorAll('.fomo-cursor');
     cursors.forEach(function(el){el.classList.remove('active');});
     if(cursors[cur])cursors[cur].classList.add('active');
@@ -2856,7 +2865,7 @@ setInterval(function(){
       });
     });
   }).catch(function(){});
-},30000);
+},5000);
 </script>
 <script>
 
