@@ -2706,9 +2706,9 @@ var TG_BOT_NAME = 'ChartMasterBot';
 var tgUser = null;
 
 function tgLogin() {
-  var returnUrl = encodeURIComponent(location.href.split('?')[0]);
+  var returnUrl = encodeURIComponent('https://chartist-insight.com/');
   var loginUrl = 'https://oauth.telegram.org/auth?bot_id=8458968839&origin=https%3A%2F%2Fchartist-insight.com&embed=1&request_access=write&return_to=' + returnUrl;
-  location.href = loginUrl;
+  window.location.replace(loginUrl);
 }
 
 // redirect 콜백 처리 (hash 방식)
@@ -2750,6 +2750,9 @@ function tgLogout() {
   tgUser = null;
   localStorage.removeItem('tg_user');
   document.body.classList.remove('tg-logged');
+  if (location.hash && location.hash.indexOf('tgAuthResult') !== -1) {
+    history.replaceState({}, '', location.pathname);
+  }
   tgUpdateUI();
 }
 
