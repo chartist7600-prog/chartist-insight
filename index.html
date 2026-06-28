@@ -450,6 +450,18 @@
     50%{box-shadow:0 0 30px rgba(201,168,76,0.25),0 0 60px rgba(201,168,76,0.1);}
   }
 
+
+  /* ══ 신호 알림 팝업 ══ */
+  .signal-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.75);backdrop-filter:blur(4px);z-index:3000;align-items:center;justify-content:center;padding:16px;}
+  .signal-overlay.show{display:flex;}
+  .signal-box{background:#111;border:1px solid rgba(201,168,76,0.4);border-radius:20px;width:100%;max-width:320px;padding:28px 24px;box-shadow:0 20px 60px rgba(0,0,0,0.8),0 0 40px rgba(201,168,76,0.08);animation:signalPop 0.3s ease;}
+  @keyframes signalPop{0%{transform:scale(0.85);opacity:0;}100%{transform:scale(1);opacity:1;}}
+  .signal-box-icon{font-size:36px;text-align:center;margin-bottom:14px;}
+  .signal-box-title{font-size:18px;font-weight:700;color:#fff;text-align:center;margin-bottom:6px;}
+  .signal-box-sub{font-size:12px;color:#888;text-align:center;margin-bottom:22px;}
+  .signal-box-btn{width:100%;padding:13px;background:#C9A84C;color:#0e0e0e;border:none;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;font-family:'Noto Sans KR',sans-serif;margin-bottom:8px;}
+  .signal-box-close{width:100%;padding:8px;background:transparent;color:#555;border:none;font-size:12px;cursor:pointer;font-family:'Noto Sans KR',sans-serif;}
+
   /* ══ 히어로 배경 ══ */
   .hero-section{position:relative;overflow:hidden;}
   .hero-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(201,168,76,0.08) 0%,transparent 70%);pointer-events:none;z-index:0;}
@@ -1841,6 +1853,29 @@ var lastBtcSignalKey=null;
 var lastAltcoinCount=0;
 var lastStockCount=0;
 
+
+function showSignalPopup(tabType){
+  var isBtc = tabType==='btc';
+  document.getElementById('signal-box-icon').textContent = isBtc ? '⚡' : '📡';
+  document.getElementById('signal-box-title').textContent = isBtc ? '비트코인 신호 감지' : '알트코인 신호 감지';
+  document.getElementById('signal-box-sub').textContent = '지금 바로 확인하세요';
+  document.getElementById('signal-box-tab').setAttribute('data-tab', tabType);
+  var el=document.getElementById('signal-overlay');
+  if(el)el.classList.add('show');
+}
+function hideSignalPopup(){
+  var el=document.getElementById('signal-overlay');
+  if(el)el.classList.remove('show');
+}
+function goSignalTab(){
+  hideSignalPopup();
+  var tab=document.getElementById('signal-box-tab').getAttribute('data-tab');
+  var btn=document.getElementById('tab-btn-'+tab);
+  if(!document.body.classList.contains('tg-logged')){tgLogin();}
+  else if(typeof tgUser!=='undefined'&&tgUser&&!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}
+  else{switchTab(tab,btn);setTimeout(function(){var el=document.querySelector('.tab-nav');if(el)window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-56,behavior:'smooth'});},100);}
+}
+
 function checkNewBtcSignal(signals){
   if(!signals||signals.length===0)return;
   var s=signals[0];
@@ -1849,13 +1884,14 @@ function checkNewBtcSignal(signals){
   if(key!==lastBtcSignalKey){
     if(s.type==='LONG')playSound('btcLong');
     else if(s.type==='SHORT')playSound('btcShort');
+    showSignalPopup('btc');
     lastBtcSignalKey=key;
   }
 }
 
 function checkNewAltcoinSignal(count){
   if(lastAltcoinCount===0){lastAltcoinCount=count;return;}
-  if(count>lastAltcoinCount)playSound('newSignal');
+  if(count>lastAltcoinCount){playSound('newSignal');showSignalPopup('altcoin');}
   lastAltcoinCount=count;
 }
 
@@ -2084,6 +2120,7 @@ checkNewBtcSignal=function(signals){
   if(key!==lastBtcSignalKey){
     if(s.type==='LONG')playSound('btcLong');
     else if(s.type==='SHORT')playSound('btcShort');
+    showSignalPopup('btc');
     showBtcSlidePopup(s);
     lastBtcSignalKey=key;
   }
@@ -3036,6 +3073,17 @@ window.addEventListener('scroll',function(){
         <button class="sound-type-btn" id="stype-elec" onclick="setSoundType('elec',this);previewSound('elec')">전자음</button>
       </div>
     </div>
+  </div>
+</div>
+
+
+<div class="signal-overlay" id="signal-overlay">
+  <div class="signal-box">
+    <div class="signal-box-icon" id="signal-box-icon">⚡</div>
+    <div class="signal-box-title" id="signal-box-title">비트코인 신호 감지</div>
+    <div class="signal-box-sub" id="signal-box-sub">지금 바로 확인하세요</div>
+    <button class="signal-box-btn" id="signal-box-tab" data-tab="btc" onclick="goSignalTab()">지금 바로 확인하세요 →</button>
+    <button class="signal-box-close" onclick="hideSignalPopup()">닫기</button>
   </div>
 </div>
 
