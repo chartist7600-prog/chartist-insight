@@ -3004,4 +3004,34 @@ window.addEventListener('scroll',function(){
   }
 })();
 </script>
+
+<!-- 알림음 설정 팝업 -->
+<div class="sound-overlay" id="sound-overlay" onclick="hideSoundPopup(event)">
+  <div class="sound-box">
+    <div class="sound-box-title">
+      🔔 알림음 설정
+      <span onclick="hideSoundPopup({target:document.getElementById('sound-overlay')})" style="cursor:pointer;font-size:18px;color:#666;">✕</span>
+    </div>
+    <div class="sound-toggle-row">
+      <span class="sound-toggle-label">알림음 활성화</span>
+      <label class="sound-switch">
+        <input type="checkbox" id="sound-switch-cb" onchange="onSoundToggle(this.checked)">
+        <span class="sound-slider"></span>
+      </label>
+    </div>
+    <div class="sound-vol-row">
+      <div class="sound-vol-label"><span>볼륨</span><span id="sound-vol-display">50%</span></div>
+      <input class="sound-vol-slider" type="range" id="sound-vol-range" min="0" max="100" value="50" oninput="onVolumeChange(this.value)">
+    </div>
+    <div class="sound-type-row">
+      <div class="sound-type-label">소리 유형</div>
+      <div class="sound-type-btns">
+        <button class="sound-type-btn" id="stype-chime" onclick="setSoundType('chime',this);previewSound('chime')">차임</button>
+        <button class="sound-type-btn" id="stype-piano" onclick="setSoundType('piano',this);previewSound('piano')">피아노</button>
+        <button class="sound-type-btn" id="stype-elec" onclick="setSoundType('elec',this);previewSound('elec')">전자음</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
