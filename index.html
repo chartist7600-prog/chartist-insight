@@ -1732,20 +1732,25 @@ var soundEnabled=localStorage.getItem('sound_enabled')!=='0';
 var audioCtx=null;
 function getAudioCtx(){if(!audioCtx)audioCtx=new(window.AudioContext||window.webkitAudioContext)();return audioCtx;}
 
+var SOUND_PRESETS={
+  chime:{newSignal:{notes:[2093,2637],duration:0.1,gap:0.04,volume:0.2},btcLong:{notes:[1568,2093,2637],duration:0.1,gap:0.04,volume:0.25},btcShort:{notes:[2637,2093,1568],duration:0.1,gap:0.04,volume:0.25},oscType:'sine'},
+  piano:{newSignal:{notes:[523,659],duration:0.25,gap:0.08,volume:0.35},btcLong:{notes:[392,523,659],duration:0.25,gap:0.08,volume:0.4},btcShort:{notes:[659,523,392],duration:0.25,gap:0.08,volume:0.4},oscType:'triangle'},
+  elec:{newSignal:{notes:[880,1200],duration:0.05,gap:0.02,volume:0.2},btcLong:{notes:[600,880,1200],duration:0.05,gap:0.02,volume:0.25},btcShort:{notes:[1200,880,600],duration:0.05,gap:0.02,volume:0.25},oscType:'square'}
+};
 var SOUND_CONFIG={
-  newSignal:{notes:[1318,1760],duration:0.08,gap:0.03,volume:0.25,type:'sine'},
-  btcLong:{notes:[1046,1318,1760],duration:0.08,gap:0.03,volume:0.3,type:'sine'},
-  btcShort:{notes:[1760,1318,1046],duration:0.08,gap:0.03,volume:0.3,type:'sine'}
+  newSignal:{notes:[2093,2637],duration:0.1,gap:0.04,volume:0.2,type:'sine'},
+  btcLong:{notes:[1568,2093,2637],duration:0.1,gap:0.04,volume:0.25,type:'sine'},
+  btcShort:{notes:[2637,2093,1568],duration:0.1,gap:0.04,volume:0.25,type:'sine'}
 };
 
 function playSound(key){
   if(!soundEnabled)return;
   try{
     var ctx=getAudioCtx();
-    var cfg=SOUND_CONFIG[key];
+    var preset=SOUND_PRESETS[currentSoundType]||SOUND_PRESETS['chime'];
+    var cfg=preset[key];
     if(!cfg)return;
-    // 타입별 오실레이터 설정
-    var oscType = currentSoundType==='elec'?'square':(currentSoundType==='piano'?'triangle':'sine');
+    var oscType=preset.oscType||'sine';
     var vol = (soundVolume!==undefined?soundVolume:0.5)*cfg.volume;
     var t=ctx.currentTime;
     cfg.notes.forEach(function(freq,i){
