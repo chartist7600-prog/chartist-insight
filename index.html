@@ -55,7 +55,7 @@
   .container{max-width:var(--max-w);margin:0 auto;padding:0 20px;}
 
   /* ══ 헤더 ══ */
-  .site-top-header{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:0.5px solid var(--border);background:var(--bg);}
+  .site-top-header{position:fixed;top:0;left:0;right:0;z-index:9000;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:0.5px solid var(--border);background:var(--bg);}
   .sth-left{display:flex;align-items:center;gap:8px;}
   .sth-logo-box{width:34px;height:34px;border-radius:8px;background:var(--gold);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#0e0e0e;flex-shrink:0;cursor:pointer;transition:opacity 0.15s;}
   .sth-logo-box:hover{opacity:0.85;}
@@ -82,7 +82,7 @@
     .sth-title{font-size:13px;}
     .sth-sub{display:none;}
     .sth-live{display:none;}
-    .site-top-header{padding:10px 12px;}
+    .site-top-header{position:fixed;top:0;left:0;right:0;z-index:9000;padding:10px 12px;}
   }
 
   /* ══ 글자크기/공포탐욕 상단 바 ══ */
@@ -462,7 +462,7 @@
   .fade-up{opacity:0;transform:translateY(24px);transition:opacity 0.6s ease,transform 0.6s ease;}
   .fade-up.visible{opacity:1;transform:translateY(0);}
   /* ══ 네비바 blur ══ */
-  .site-top-header{transition:background 0.3s,backdrop-filter 0.3s,box-shadow 0.3s;}
+  .site-top-header{position:fixed;top:0;left:0;right:0;z-index:9000;transition:background 0.3s,backdrop-filter 0.3s,box-shadow 0.3s;}
   .site-top-header.scrolled{background:rgba(14,14,14,0.85);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(255,255,255,0.06);}
   /* ══ 서비스카드 골드 글로우 ══ */
   .service-card:hover{border-color:rgba(201,168,76,0.45);box-shadow:0 0 20px rgba(201,168,76,0.08);transform:translateY(-2px);}
