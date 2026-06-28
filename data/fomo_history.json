@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "ACT",
+    "name": "ACT",
+    "exchange": "바이낸스",
+    "entry_price": 0.01454,
+    "currency": "USDT",
+    "entry_time": "2026-06-28 21:05",
+    "signal": "trend"
+  },
+  {
     "ticker": "SNX",
     "name": "SNX",
     "exchange": "빗썸",
