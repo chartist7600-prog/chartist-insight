@@ -7,21 +7,14 @@
 <style>
   *{margin:0;padding:0;box-sizing:border-box;}
   body{background:#0e0e0e;color:#ccc;font-family:'Noto Sans KR',sans-serif;font-size:14px;line-height:1.8;}
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
-  .wrap{max-width:760px;margin:0 auto;padding:60px 24px 100px;}
+  .wrap{max-width:720px;margin:0 auto;padding:60px 24px 100px;}
   .top-bar{display:flex;align-items:center;gap:12px;margin-bottom:48px;}
   .top-bar a{color:#C9A84C;text-decoration:none;font-size:13px;}
   .top-bar span{color:#444;}
-  h1{font-size:26px;font-weight:700;color:#f0f0f0;margin-bottom:8px;}
+  h1{font-size:24px;font-weight:700;color:#f0f0f0;margin-bottom:8px;}
   .date{font-size:12px;color:#555;margin-bottom:40px;}
-  .toc{background:#161616;border:0.5px solid #222;border-radius:10px;padding:20px 24px;margin-bottom:40px;}
-  .toc p{font-size:12px;color:#666;margin-bottom:10px;font-weight:700;letter-spacing:0.5px;}
-  .toc ol{padding-left:18px;}
-  .toc li{margin-bottom:6px;}
-  .toc a{color:#888;text-decoration:none;font-size:13px;}
-  .toc a:hover{color:#C9A84C;}
-  section{margin-bottom:40px;}
-  h2{font-size:16px;font-weight:700;color:#e0e0e0;margin-bottom:14px;padding-bottom:8px;border-bottom:0.5px solid #222;}
+  section{margin-bottom:36px;}
+  h2{font-size:15px;font-weight:700;color:#e0e0e0;margin-bottom:12px;padding-bottom:8px;border-bottom:0.5px solid #222;}
   p{color:#999;margin-bottom:10px;}
   ul{padding-left:20px;margin-bottom:10px;}
   li{color:#999;margin-bottom:6px;}
@@ -43,107 +36,52 @@
     <span style="color:#666;">개인정보처리방침</span>
   </div>
   <h1>개인정보처리방침</h1>
-  <p class="date">시행일: 2026년 6월 28일 &nbsp;|&nbsp; 최종 수정: 2026년 6월 28일</p>
+  <p class="date">시행일: 2026년 6월 28일</p>
   <div class="highlight">
-    <p>차티스트 인사이트는 이용자의 개인정보를 최소한으로 수집하며, 서비스 제공 목적 외에는 사용하지 않습니다.</p>
+    <p>차티스트 인사이트는 서비스 제공에 필요한 최소한의 개인정보만 수집합니다.</p>
   </div>
-  <div class="toc">
-    <p>목 차</p>
-    <ol>
-      <li><a href="#s1">수집하는 개인정보</a></li>
-      <li><a href="#s2">개인정보 수집 방법</a></li>
-      <li><a href="#s3">개인정보 이용 목적</a></li>
-      <li><a href="#s4">개인정보 보유 및 파기</a></li>
-      <li><a href="#s5">개인정보 제3자 제공</a></li>
-      <li><a href="#s6">개인정보 처리 위탁</a></li>
-      <li><a href="#s7">이용자의 권리</a></li>
-      <li><a href="#s8">쿠키 및 로컬스토리지</a></li>
-      <li><a href="#s9">개인정보 보호 조치</a></li>
-      <li><a href="#s10">문의 및 개인정보 보호책임자</a></li>
-    </ol>
-  </div>
-  <section id="s1">
+  <section>
     <h2>제1조 수집하는 개인정보</h2>
-    <p>텔레그램 로그인 연동 시 아래의 정보만을 수집합니다.</p>
+    <p>텔레그램 로그인 시 아래 정보만 수집합니다.</p>
     <table>
-      <tr><th>항목</th><th>수집 여부</th><th>비고</th></tr>
-      <tr><td>텔레그램 사용자 ID</td><td>수집</td><td>멤버십 확인 및 서비스 접근 제어</td></tr>
-      <tr><td>텔레그램 사용자명 (username)</td><td>수집</td><td>로그인 상태 표시</td></tr>
-      <tr><td>텔레그램 닉네임</td><td>수집</td><td>로그인 상태 표시</td></tr>
-      <tr><td>텔레그램 프로필 사진 URL</td><td>수집</td><td>UI 표시 목적</td></tr>
-      <tr><td>이메일, 전화번호, 주소</td><td>미수집</td><td>—</td></tr>
-      <tr><td>결제 정보</td><td>미수집</td><td>팬딩(fanding.kr)에서 직접 처리</td></tr>
+      <tr><th>항목</th><th>목적</th></tr>
+      <tr><td>텔레그램 사용자 ID</td><td>멤버십 확인 및 서비스 접근 제어</td></tr>
+      <tr><td>사용자명·닉네임</td><td>로그인 상태 표시</td></tr>
+      <tr><td>프로필 사진 URL</td><td>UI 표시</td></tr>
     </table>
-    <p>매매일지 기능 이용 시 이용자가 직접 입력한 매매 기록이 서버에 저장되며, 이용자 본인만 조회할 수 있습니다.</p>
+    <p>이메일, 전화번호, 결제 정보는 수집하지 않습니다. 결제는 팬딩(fanding.kr)에서 직접 처리됩니다.</p>
   </section>
-  <section id="s2">
-    <h2>제2조 개인정보 수집 방법</h2>
-    <p>텔레그램 OAuth 인증을 통해 이용자가 직접 로그인 버튼을 클릭할 때만 수집됩니다. 이용자의 동의 없이는 어떠한 정보도 수집되지 않습니다.</p>
-  </section>
-  <section id="s3">
-    <h2>제3조 개인정보 이용 목적</h2>
+  <section>
+    <h2>제2조 이용 목적</h2>
     <ul>
-      <li>텔레그램 채널 멤버십 여부 확인 및 서비스 접근 제어</li>
-      <li>로그인 상태 유지 및 UI 표시</li>
-      <li>매매일지 데이터 저장 및 조회</li>
-    </ul>
-    <p>수집된 개인정보는 위의 목적 외에는 사용되지 않습니다.</p>
-  </section>
-  <section id="s4">
-    <h2>제4조 개인정보 보유 및 파기</h2>
-    <p>수집된 개인정보는 서비스 이용 기간 동안 보유하며, 이용자 요청 시 지체 없이 파기합니다.</p>
-    <div class="highlight">
-      <p>브라우저 로컬스토리지에 저장된 로그인 정보는 브라우저 설정에서 이용자가 직접 삭제할 수 있습니다.</p>
-    </div>
-  </section>
-  <section id="s5">
-    <h2>제5조 개인정보 제3자 제공</h2>
-    <p>차티스트 인사이트는 수집한 개인정보를 제3자에게 제공하지 않습니다. 단, 법령에 의거하거나 수사기관의 적법한 요청이 있는 경우는 예외로 합니다.</p>
-  </section>
-  <section id="s6">
-    <h2>제6조 개인정보 처리 위탁</h2>
-    <table>
-      <tr><th>수탁업체</th><th>위탁 내용</th></tr>
-      <tr><td>Oracle Cloud</td><td>서버 인프라 운영 및 데이터 저장</td></tr>
-      <tr><td>Telegram</td><td>OAuth 로그인 인증 처리</td></tr>
-      <tr><td>fanding.kr (팬딩)</td><td>멤버십 결제 및 구독 관리</td></tr>
-    </table>
-  </section>
-  <section id="s7">
-    <h2>제7조 이용자의 권리</h2>
-    <ul>
-      <li>개인정보 조회 및 열람 요청</li>
-      <li>개인정보 수정 요청</li>
-      <li>개인정보 삭제 및 처리 정지 요청</li>
-      <li>동의 철회 (로그아웃 및 데이터 삭제)</li>
-    </ul>
-    <p>권리 행사는 아래 문의처를 통해 요청하시면 지체 없이 처리해 드립니다.</p>
-  </section>
-  <section id="s8">
-    <h2>제8조 쿠키 및 로컬스토리지</h2>
-    <p>로그인 상태 유지를 위해 브라우저 로컬스토리지를 사용합니다. 저장 정보는 텔레그램 사용자 ID, 사용자명, 닉네임이며 이용자가 직접 삭제할 수 있습니다.</p>
-    <p>별도의 광고 쿠키나 추적 쿠키는 사용하지 않습니다.</p>
-  </section>
-  <section id="s9">
-    <h2>제9조 개인정보 보호 조치</h2>
-    <ul>
-      <li>HTTPS 암호화 통신 적용</li>
-      <li>서버 접근 권한 최소화</li>
-      <li>불필요한 개인정보 미수집 원칙 준수</li>
+      <li>멤버십 여부 확인 및 서비스 접근 제어</li>
+      <li>로그인 상태 유지</li>
+      <li>매매일지 데이터 저장 (이용자 직접 입력 시)</li>
     </ul>
   </section>
-  <section id="s10">
-    <h2>제10조 문의 및 개인정보 보호책임자</h2>
+  <section>
+    <h2>제3조 보유 및 파기</h2>
+    <p>수집된 정보는 서비스 이용 기간 동안 보유하며, 삭제 요청 시 지체 없이 파기합니다. 브라우저 로컬스토리지의 로그인 정보는 이용자가 직접 삭제할 수 있습니다.</p>
+  </section>
+  <section>
+    <h2>제4조 제3자 제공</h2>
+    <p>수집한 개인정보를 제3자에게 제공하지 않습니다. 단, 법령에 따른 수사기관의 적법한 요청은 예외입니다.</p>
+  </section>
+  <section>
+    <h2>제5조 이용자의 권리</h2>
+    <p>이용자는 언제든지 개인정보 열람·수정·삭제를 요청할 수 있습니다. 텔레그램 <a href="https://t.me/chartistlab" style="color:#C9A84C;">@chartistlab</a>으로 문의하시면 처리해 드립니다.</p>
+  </section>
+  <section>
+    <h2>제6조 개인정보 보호책임자</h2>
     <table>
       <tr><th>항목</th><th>내용</th></tr>
-      <tr><td>성명</td><td>염승호</td></tr>
       <tr><td>서비스명</td><td>차티스트 인사이트</td></tr>
-      <tr><td>텔레그램</td><td><a href="https://t.me/chartistlab" style="color:#C9A84C;">@chartistlab</a></td></tr>
+      <tr><td>문의</td><td><a href="https://t.me/chartistlab" style="color:#C9A84C;">@chartistlab</a></td></tr>
     </table>
-    <p>개인정보 관련 불만은 한국인터넷진흥원(KISA) 개인정보침해신고센터(privacy.kisa.or.kr)에 문의하실 수 있습니다.</p>
+    <p style="margin-top:12px;">개인정보 관련 불만은 한국인터넷진흥원(KISA) 개인정보침해신고센터(privacy.kisa.or.kr)에 문의하실 수 있습니다.</p>
   </section>
   <footer>
-    <p>© 2026 chartist-insight.com · All rights reserved.</p>
+    <p>2026 chartist-insight.com · All rights reserved.</p>
     <p style="margin-top:8px;"><a href="/terms.html" style="color:#555;text-decoration:none;">이용약관</a></p>
   </footer>
 </div>
