@@ -1,20 +1,8 @@
 [
   {
-    "key": "빗썸_ACX",
-    "time": "2026-06-27 09:00",
-    "price": 62.0,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_CITY",
-    "time": "2026-06-27 09:00",
-    "price": 0.431,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_PIVX",
-    "time": "2026-06-27 21:00",
-    "price": 0.0755,
+    "key": "바이낸스_HOT",
+    "time": "2026-06-28 09:00",
+    "price": 0.000341,
     "sig_type": "trend"
   }
 ]
