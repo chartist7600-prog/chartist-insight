@@ -420,6 +420,19 @@
   .member-modal-close{background:transparent;border:0.5px solid #333;border-radius:10px;padding:10px;color:#666;font-size:13px;cursor:pointer;width:100%;}
 
 
+
+  /* ══ market-card 호버 ══ */
+  .market-card:hover{border-color:rgba(201,168,76,0.35);box-shadow:0 0 20px rgba(201,168,76,0.07);transition:all 0.2s;}
+  /* ══ 스크롤탑 골드 ══ */
+  #scroll-top-btn:hover{border-color:rgba(201,168,76,0.5);box-shadow:0 0 16px rgba(201,168,76,0.2);color:#C9A84C;}
+  /* ══ 탭 fade 전환 ══ */
+  .tab-content{animation:none;}
+  .tab-content.active{animation:tabFadeIn 0.3s ease;}
+  @keyframes tabFadeIn{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+  /* ══ FOMO 카드 딜레이 ══ */
+  .fomo-item{opacity:0;transform:translateX(-10px);transition:opacity 0.4s ease,transform 0.4s ease;}
+  .fomo-item.show{opacity:1;transform:translateX(0);}
+
   /* ══ 히어로 배경 ══ */
   .hero-section{position:relative;overflow:hidden;}
   .hero-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(201,168,76,0.08) 0%,transparent 70%);pointer-events:none;z-index:0;}
@@ -2885,6 +2898,26 @@ window.addEventListener('scroll',function(){
     requestAnimationFrame(draw);
   }
   draw();
+})();
+</script>
+
+<script>
+// FOMO 카드 순차 등장
+(function(){
+  function showFomoItems(){
+    var items = document.querySelectorAll('.fomo-item');
+    items.forEach(function(el, i){
+      setTimeout(function(){ el.classList.add('show'); }, i * 80);
+    });
+  }
+  // 초기 로드
+  setTimeout(showFomoItems, 300);
+  // MutationObserver로 동적 렌더링도 감지
+  var fomoContainer = document.getElementById('fomo-list');
+  if(fomoContainer){
+    var mo = new MutationObserver(function(){ setTimeout(showFomoItems, 100); });
+    mo.observe(fomoContainer, {childList:true, subtree:true});
+  }
 })();
 </script>
 </body>
