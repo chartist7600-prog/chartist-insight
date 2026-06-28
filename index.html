@@ -1733,9 +1733,9 @@ var audioCtx=null;
 function getAudioCtx(){if(!audioCtx)audioCtx=new(window.AudioContext||window.webkitAudioContext)();return audioCtx;}
 
 var SOUND_CONFIG={
-  newSignal:{notes:[523,659],duration:0.12,gap:0.05,volume:0.3,type:'sine'},
-  btcLong:{notes:[392,523,659],duration:0.15,gap:0.05,volume:0.4,type:'sine'},
-  btcShort:{notes:[659,494,392],duration:0.15,gap:0.05,volume:0.4,type:'sine'}
+  newSignal:{notes:[1318,1760],duration:0.08,gap:0.03,volume:0.25,type:'sine'},
+  btcLong:{notes:[1046,1318,1760],duration:0.08,gap:0.03,volume:0.3,type:'sine'},
+  btcShort:{notes:[1760,1318,1046],duration:0.08,gap:0.03,volume:0.3,type:'sine'}
 };
 
 function playSound(key){
