@@ -440,6 +440,16 @@
   @keyframes cursorBlink{0%,100%{opacity:1;}50%{opacity:0;}}
   .fomo-pct{transition:color 0.2s;}
 
+
+  /* ══ FOMO 섹션 골드 글로우 ══ */
+  .fomo-section{border:1px solid rgba(201,168,76,0.3);border-radius:16px;padding:24px 20px;position:relative;animation:fomoGlow 2.5s ease-in-out infinite;}
+  .fomo-section::before{content:'';position:absolute;inset:-1px;border-radius:16px;background:linear-gradient(135deg,rgba(201,168,76,0.15),transparent,rgba(201,168,76,0.1));pointer-events:none;z-index:0;}
+  .fomo-container{position:relative;z-index:1;}
+  @keyframes fomoGlow{
+    0%,100%{box-shadow:0 0 15px rgba(201,168,76,0.1),0 0 30px rgba(201,168,76,0.05);}
+    50%{box-shadow:0 0 30px rgba(201,168,76,0.25),0 0 60px rgba(201,168,76,0.1);}
+  }
+
   /* ══ 히어로 배경 ══ */
   .hero-section{position:relative;overflow:hidden;}
   .hero-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(201,168,76,0.08) 0%,transparent 70%);pointer-events:none;z-index:0;}
