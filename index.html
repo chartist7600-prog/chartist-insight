@@ -2859,14 +2859,14 @@ window.addEventListener('scroll',function(){
   resize();
   window.addEventListener('resize', resize);
   var particles = [];
-  for(var i=0;i<40;i++){
+  for(var i=0;i<80;i++){
     particles.push({
       x: Math.random()*canvas.width,
       y: Math.random()*canvas.height,
-      r: Math.random()*1.5+0.3,
+      r: Math.random()*2.5+0.5,
       dx: (Math.random()-0.5)*0.3,
-      dy: -Math.random()*0.4-0.1,
-      o: Math.random()*0.5+0.1
+      dy: -Math.random()*0.8-0.2,
+      o: Math.random()*0.7+0.2
     });
   }
   function draw(){
