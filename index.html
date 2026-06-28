@@ -2913,7 +2913,7 @@ window.addEventListener('scroll',function(){
   // 초기 로드
   setTimeout(showFomoItems, 300);
   // MutationObserver로 동적 렌더링도 감지
-  var fomoContainer = document.getElementById('fomo-list');
+  var fomoContainer = document.querySelector('.fomo-list');
   if(fomoContainer){
     var mo = new MutationObserver(function(){ setTimeout(showFomoItems, 100); });
     mo.observe(fomoContainer, {childList:true, subtree:true});
