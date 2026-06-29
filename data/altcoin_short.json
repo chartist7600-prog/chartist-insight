@@ -1,20 +1,26 @@
 [
   {
-    "key": "바이낸스_HOT",
-    "time": "2026-06-28 09:00",
-    "price": 0.000341,
+    "key": "빗썸_S",
+    "time": "2026-06-29 09:00",
+    "price": 39.98,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_SNX",
-    "time": "2026-06-28 13:20",
-    "price": 348.0,
+    "key": "빗썸_COOKIE",
+    "time": "2026-06-29 09:00",
+    "price": 14.71,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_ACT",
-    "time": "2026-06-28 21:00",
-    "price": 0.01454,
+    "key": "빗썸_GWEI",
+    "time": "2026-06-29 09:00",
+    "price": 217.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_MEME",
+    "time": "2026-06-29 09:00",
+    "price": 0.000587,
     "sig_type": "trend"
   }
 ]

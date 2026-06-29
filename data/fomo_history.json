@@ -1,5 +1,41 @@
 [
   {
+    "ticker": "S",
+    "name": "S",
+    "exchange": "빗썸",
+    "entry_price": 39.98,
+    "currency": "KRW",
+    "entry_time": "2026-06-29 09:09",
+    "signal": "trend"
+  },
+  {
+    "ticker": "COOKIE",
+    "name": "COOKIE",
+    "exchange": "빗썸",
+    "entry_price": 14.71,
+    "currency": "KRW",
+    "entry_time": "2026-06-29 09:09",
+    "signal": "trend"
+  },
+  {
+    "ticker": "GWEI",
+    "name": "GWEI",
+    "exchange": "빗썸",
+    "entry_price": 217.0,
+    "currency": "KRW",
+    "entry_time": "2026-06-29 09:09",
+    "signal": "trend"
+  },
+  {
+    "ticker": "MEME",
+    "name": "MEME",
+    "exchange": "바이낸스",
+    "entry_price": 0.000587,
+    "currency": "USDT",
+    "entry_time": "2026-06-29 09:09",
+    "signal": "trend"
+  },
+  {
     "ticker": "ACT",
     "name": "ACT",
     "exchange": "바이낸스",
