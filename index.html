@@ -2832,31 +2832,87 @@ function tgUpdateUI() {
 
 </script>
 <script>
+// FOMO 실시간 가격 저장소
+var _fomoPrices = {};
+var _fomoUpbitWs = null;
+var _fomoBinanceWs = null;
+
+function startFomoPriceWs(items){
+  var krwTickers = items.filter(function(x){return x.currency==='KRW';}).map(function(x){return 'KRW-'+x.ticker;});
+  var usdtTickers = items.filter(function(x){return x.currency==='USDT';}).map(function(x){return x.ticker.toLowerCase()+'usdt';});
+
+  // 업비트 WebSocket (KRW)
+  if(_fomoUpbitWs){try{_fomoUpbitWs.close();}catch(e){}}
+  if(krwTickers.length){
+    _fomoUpbitWs = new WebSocket('wss://api.upbit.com/websocket/v1');
+    _fomoUpbitWs.onopen = function(){
+      _fomoUpbitWs.send(JSON.stringify([{ticket:'fomo'},{type:'ticker',codes:krwTickers}]));
+    };
+    _fomoUpbitWs.onmessage = function(e){
+      var reader = new FileReader();
+      reader.onload = function(){
+        try{
+          var d = JSON.parse(reader.result);
+          if(d.code && d.trade_price){
+            var ticker = d.code.replace('KRW-','');
+            _fomoPrices[ticker+'_KRW'] = d.trade_price;
+            renderFomoFromPrices();
+          }
+        }catch(err){}
+      };
+      reader.readAsText(e.data);
+    };
+  }
+
+  // 바이낸스 WebSocket (USDT)
+  if(_fomoBinanceWs){try{_fomoBinanceWs.close();}catch(e){}}
+  if(usdtTickers.length){
+    var stream = usdtTickers.map(function(t){return t+'@ticker';}).join('/');
+    _fomoBinanceWs = new WebSocket('wss://stream.binance.com:9443/stream?streams='+stream);
+    _fomoBinanceWs.onmessage = function(e){
+      try{
+        var d = JSON.parse(e.data);
+        if(d.data && d.data.s && d.data.c){
+          var ticker = d.data.s.replace('USDT','');
+          _fomoPrices[ticker+'_USDT'] = parseFloat(d.data.c);
+          renderFomoFromPrices();
+        }
+      }catch(err){}
+    };
+  }
+}
+
+function renderFomoFromPrices(){
+  var items = window._fomoItems;
+  if(!items||!items.length) return;
+  var pm = {};
+  items.forEach(function(x){
+    var key = x.currency==='KRW' ? x.ticker+'_KRW' : x.ticker+'_USDT';
+    if(_fomoPrices[key]) pm[x.ticker+'_'+x.currency] = _fomoPrices[key];
+  });
+  renderFomo(items, pm);
+}
+
 function loadFomoSection(){
   fetch("/data/fomo_history.json?t="+Date.now()).then(function(r){return r.json();}).then(function(data){
     if(!data||!data.length){document.getElementById("fomo-list").innerHTML='<div style="text-align:center;color:#555;padding:20px;font-size:12px;">신호 데이터 준비 중...</div>';return;}
-    // 3일 이내 신호만 필터
     var now=Date.now();
     data=data.filter(function(x){return x.entry_time&&(now-new Date(x.entry_time))<3*86400000;});
     if(!data.length){document.getElementById("fomo-list").innerHTML='';return;}
     var top5=data.slice(0,5);
-  window._fomoItems=top5;
-  window._fomoItems=top5;
-    var syms=JSON.stringify(top5.map(function(x){return x.ticker+"USDT";}));
-    fetch("https://api.binance.com/api/v3/ticker/price?symbols="+encodeURIComponent(syms)).then(function(r){return r.json();}).then(function(prices){
-      var pm={};
-      prices.forEach(function(p){pm[p.symbol]=parseFloat(p.price);});
-      renderFomo(top5,pm);
-    }).catch(function(){renderFomo(top5,{});});
+    window._fomoItems=top5;
+    startFomoPriceWs(top5);
   }).catch(function(){});
 }
 function renderFomo(items,pm){
+  // 수익률 계산 (currency별 key 사용)
+  function getPrice(item){return pm[item.ticker+'_'+(item.currency||'USDT')]||0;}
   // 수익률 플러스만 필터
-  items=items.filter(function(x){var c=pm[x.ticker+'USDT']||0;return x.entry_price>0&&c>0&&c>x.entry_price;});
+  items=items.filter(function(x){var c=getPrice(x);return x.entry_price>0&&c>0&&c>x.entry_price;});
   if(!items.length){document.getElementById('fomo-list').innerHTML='';return;}
   // 수익률 높은 순 정렬
   items=items.slice().sort(function(a,b){
-    var ca=pm[a.ticker+"USDT"]||0,cb=pm[b.ticker+"USDT"]||0;
+    var ca=getPrice(a),cb=getPrice(b);
     var pa=a.entry_price>0&&ca>0?(ca-a.entry_price)/a.entry_price:0;
     var pb=b.entry_price>0&&cb>0?(cb-b.entry_price)/b.entry_price:0;
     return pb-pa;
@@ -2865,7 +2921,7 @@ function renderFomo(items,pm){
   if(!el)return;
   var html="";
   items.forEach(function(item,i){
-    var cur=pm[item.ticker+"USDT"]||0;
+    var cur=getPrice(item);
     var entry=item.entry_price||0;
     var pct=entry>0&&cur>0?((cur-entry)/entry*100):null;
     var pctStr=pct!==null?(pct>=0?"+":"")+pct.toFixed(1)+"%":"—";
@@ -2902,42 +2958,7 @@ loadFomoSection();
   },1000);
 })();
 
-// FOMO 30초마다 자동 갱신
-setInterval(function(){
-  var top5=window._fomoItems;
-  if(!top5||!top5.length)return;
-  var syms=JSON.stringify(top5.map(function(x){return x.ticker+"USDT";}));
-  fetch("https://api.binance.com/api/v3/ticker/price?symbols="+encodeURIComponent(syms)).then(function(r){return r.json();}).then(function(prices){
-    var pm={};
-    prices.forEach(function(p){pm[p.symbol]=parseFloat(p.price);});
-    // 수익률 업데이트 (깜박임 효과)
-    top5.forEach(function(item){
-      var cur=pm[item.ticker+"USDT"]||0;
-      var entry=item.entry_price||0;
-      var pct=entry>0&&cur>0?((cur-entry)/entry*100):null;
-      var pctStr=pct!==null?(pct>=0?"+":"")+pct.toFixed(1)+"%":"—";
-    var cursor=i<3?'<span class="fomo-cursor"></span>':'';
-      var neg=pct!==null&&pct<0?" neg":"";
-      var els=document.querySelectorAll('.fomo-pct');
-      top5.forEach(function(it,i){
-        var c2=pm[it.ticker+"USDT"]||0;
-        var e2=it.entry_price||0;
-        var p2=e2>0&&c2>0?((c2-e2)/e2*100):null;
-        var s2=p2!==null?(p2>=0?"+":"")+p2.toFixed(1)+"%":"—";
-        if(els[i]){
-          var old=els[i].textContent;
-          if(old!==s2){
-            els[i].textContent=s2;
-            els[i].className='fomo-pct'+(p2!==null&&p2<0?' neg':'');
-            els[i].style.transition='none';
-            els[i].style.opacity='0.3';
-            setTimeout(function(el){el.style.transition='opacity 0.4s';el.style.opacity='1';}(els[i]),50);
-          }
-        }
-      });
-    });
-  }).catch(function(){});
-},5000);
+// FOMO WebSocket 실시간 갱신으로 대체됨
 </script>
 <script>
 
