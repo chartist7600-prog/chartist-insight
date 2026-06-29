@@ -2850,6 +2850,16 @@ function startFomoPriceWs(items){
     _fomoUpbitWs = new WebSocket('wss://api.upbit.com/websocket/v1');
     _fomoUpbitWs.onopen = function(){
       _fomoUpbitWs.send(JSON.stringify([{ticket:'fomo'},{type:'ticker',codes:krwTickers}]));
+      // 업비트 ping (120초마다)
+      if(window._fomoUpbitPing) clearInterval(window._fomoUpbitPing);
+      window._fomoUpbitPing = setInterval(function(){
+        if(_fomoUpbitWs && _fomoUpbitWs.readyState===1) _fomoUpbitWs.send('PING');
+      }, 60000);
+    };
+    _fomoUpbitWs.onclose = function(){
+      // 재연결
+      if(window._fomoUpbitPing) clearInterval(window._fomoUpbitPing);
+      setTimeout(function(){if(window._fomoItems)startFomoPriceWs(window._fomoItems);},3000);
     };
     _fomoUpbitWs.onmessage = function(e){
       var reader = new FileReader();
