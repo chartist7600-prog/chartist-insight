@@ -2913,7 +2913,7 @@ function loadFomoSection(){
     mid=mid.filter(function(x){return x.time&&(now-new Date(x.time.length===10?x.time+' 00:00':x.time))<3*86400000;});
     if(!mid.length){document.getElementById("fomo-list").innerHTML='<div style="text-align:center;color:#555;padding:20px;font-size:12px;">신호 데이터 준비 중...</div>';return;}
     mid.sort(function(a,b){return (b.time||'').localeCompare(a.time||'');});
-    var top5=mid.slice(0,3).map(function(x){
+    var top5=mid.slice(0,10).map(function(x){
       var parts=(x.key||'').split('_');
       var exch=parts[0]||'';
       var ticker=parts[1]||'';
@@ -2954,6 +2954,7 @@ function renderFomo(items,pm){
     var pb=b.entry_price>0&&cb>0?(cb-b.entry_price)/b.entry_price:0;
     return pb-pa;
   });
+  items=items.slice(0,3);
   if(!items.length){document.getElementById('fomo-list').innerHTML='';return;}
   var el=document.getElementById("fomo-list");
   if(!el)return;
