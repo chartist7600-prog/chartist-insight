@@ -729,6 +729,7 @@
 
   /* RSI 다이버전스 색상 */
   .sig-rsi-bull { background:rgba(224,85,85,0.12);color:#ff6b6b; }
+  .hidden-label { color:#4caf50; font-weight:700; }
   .sig-rsi-bear-badge { background:rgba(74,158,255,0.12);color:var(--blue); }
 
   /* 달력 인풋 개선 */
@@ -2132,9 +2133,9 @@ checkNewBtcSignal=function(signals){
 // ══════════════════════════════════════════════
 // sigMap에 rsi_bull/rsi_hidden_bull 매핑 추가
 sigMap['rsi_bull']        = {label:'상승 다이버전스', cls:'sig-rsi-bull'};
-sigMap['rsi_hidden_bull'] = {label:'숨은 상승 다이버전스', cls:'sig-rsi-bull'};
+sigMap['rsi_hidden_bull'] = {label:'<span class="hidden-label">히든</span> 상승 다이버전스', cls:'sig-rsi-bull'};
 sigMap['rsi_bear']        = {label:'하락 다이버전스', cls:'sig-rsi-bear-badge'};
-sigMap['rsi_hidden_bear'] = {label:'숨은 하락 다이버전스', cls:'sig-rsi-bear-badge'};
+sigMap['rsi_hidden_bear'] = {label:'<span class="hidden-label">히든</span> 하락 다이버전스', cls:'sig-rsi-bear-badge'};
 
 // ══════════════════════════════════════════════
 
@@ -2142,8 +2143,8 @@ sigMap['rsi_hidden_bear'] = {label:'숨은 하락 다이버전스', cls:'sig-rsi
 var _origSwitchTab=switchTab;
 switchTab=function(tab,btn){
   _origSwitchTab(tab,btn);
-  var _tn=document.querySelector('.tab-nav');
-  if(_tn){window.scrollTo({top:_tn.getBoundingClientRect().top+window.scrollY-56,behavior:'smooth'});}
+  var _tc=document.getElementById('tab-'+tab);
+  if(_tc){var _top=_tc.offsetTop-60;window.scrollTo({top:_top,behavior:'smooth'});}
   if(tab==='btc'){initBtcBlur();}
   if(tab==='journal'){document.getElementById('j-auth-screen').style.display='none';document.getElementById('j-main-screen').style.display='';}
 };
