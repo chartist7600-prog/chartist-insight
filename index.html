@@ -1013,8 +1013,8 @@
 </div>
 
 <div class="tab-nav">
-  <button class="tab-btn" id="tab-btn-btc" onclick="if(!tgUser){tgLogin();}else if(!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{switchTab('btc',this);}">₿ 비트</button>
-  <button class="tab-btn" id="tab-btn-altcoin" onclick="if(!tgUser){tgLogin();}else if(!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{switchTab('altcoin',this);}">📊 알트</button>
+  <button class="tab-btn" id="tab-btn-btc" onclick="if(!tgUser){openLoginModal();}else if(!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{switchTab('btc',this);}">₿ 비트</button>
+  <button class="tab-btn" id="tab-btn-altcoin" onclick="if(!tgUser){openLoginModal();}else if(!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{switchTab('altcoin',this);}">📊 알트</button>
   <button class="tab-btn" id="tab-btn-calc" onclick="switchTab('calc',this);setTimeout(function(){var el=document.getElementById('tab-calc');if(el)window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-60,behavior:'smooth'});},100)">🧮 계산기</button>
   <button class="tab-btn" id="tab-btn-journal" onclick="switchTab('journal',this);setTimeout(function(){var el=document.getElementById('tab-journal');if(el)window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-60,behavior:'smooth'});},100)" style="letter-spacing:-0.5px;">📒 매매일지</button>
 </div>
@@ -1025,7 +1025,7 @@
     <div class="fomo-subtitle">신호 발생 시점 대비 현재 수익률 · 실시간 업데이트</div>
     <div class="fomo-list" id="fomo-list"><div style="text-align:center;color:#555;padding:20px;font-size:12px;">로딩 중...</div></div>
     <div class="fomo-cta-row">
-      <button class="fomo-cta-btn" onclick="(function(){if(typeof tgUser!=='undefined'&&tgUser&&tgUser.is_member){window.scrollTo({top:document.querySelector('.tab-nav').getBoundingClientRect().top+window.scrollY-56,behavior:'smooth'});setTimeout(function(){switchTab('altcoin',document.getElementById('tab-btn-altcoin'));},300);}else if(typeof tgUser!=='undefined'&&tgUser&&!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{window.open('https://fanding.kr/@bzcLu6QCTdMe/membership/','_blank');}})()">전체 신호 보기</button>
+      <button class="fomo-cta-btn" onclick="(function(){if(typeof tgUser!=='undefined'&&tgUser&&tgUser.is_member){window.scrollTo({top:document.querySelector('.tab-nav').getBoundingClientRect().top+window.scrollY-56,behavior:'smooth'});setTimeout(function(){switchTab('altcoin',document.getElementById('tab-btn-altcoin'));},300);}else if(typeof tgUser!=='undefined'&&tgUser&&!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{openLoginModal();}})()">전체 신호 보기</button>
     </div>
   </div>
 </section>
@@ -1060,7 +1060,7 @@
     <div class="service-group">
       <div class="service-group-label">🔒 멤버십 전용</div>
       <div class="service-cards">
-        <div class="service-card paid-card" onclick="(function(){var b=document.getElementById('tab-btn-btc');if(document.body.classList.contains('tg-logged')){switchTab('btc',b);}window.scrollTo({top:document.querySelector('.tab-nav').getBoundingClientRect().top+window.scrollY-56,behavior:'smooth'});if(!document.body.classList.contains('tg-logged')){tgLogin();}})()">
+        <div class="service-card paid-card" onclick="(function(){if(!tgUser){openLoginModal();}else if(!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{var b=document.getElementById('tab-btn-btc');switchTab('btc',b);window.scrollTo({top:document.querySelector('.tab-nav').getBoundingClientRect().top+window.scrollY-56,behavior:'smooth'});}})()">
           <div class="service-card-icon">₿</div>
           <div class="service-card-body">
             <div class="service-card-title">비트코인</div>
@@ -1071,7 +1071,7 @@
           </div>
           <div class="service-card-badge paid">멤버십</div>
         </div>
-        <div class="service-card paid-card" onclick="(function(){var b=document.getElementById('tab-btn-altcoin');if(document.body.classList.contains('tg-logged')){switchTab('altcoin',b);}window.scrollTo({top:document.querySelector('.tab-nav').getBoundingClientRect().top+window.scrollY-56,behavior:'smooth'});if(!document.body.classList.contains('tg-logged')){tgLogin();}})()">
+        <div class="service-card paid-card" onclick="(function(){if(!tgUser){openLoginModal();}else if(!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{var b=document.getElementById('tab-btn-altcoin');switchTab('altcoin',b);window.scrollTo({top:document.querySelector('.tab-nav').getBoundingClientRect().top+window.scrollY-56,behavior:'smooth'});}})()">
           <div class="service-card-icon">📊</div>
           <div class="service-card-body">
             <div class="service-card-title">알트코인</div>
@@ -1873,8 +1873,8 @@ function goSignalTab(){
   hideSignalPopup();
   var tab=document.getElementById('signal-box-tab').getAttribute('data-tab');
   var btn=document.getElementById('tab-btn-'+tab);
-  if(!document.body.classList.contains('tg-logged')){tgLogin();}
-  else if(typeof tgUser!=='undefined'&&tgUser&&!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}
+  if(!tgUser){openLoginModal();}
+  else if(!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}
   else{switchTab(tab,btn);setTimeout(function(){var el=document.querySelector('.tab-nav');if(el)window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-56,behavior:'smooth'});},100);}
 }
 
@@ -2712,6 +2712,8 @@ function updateStatBadges(){try{jRenderStats();}catch(e){}}
 var TG_BOT_NAME = 'ChartMasterBot';
 var tgUser = null;
 
+function openLoginModal() { document.getElementById('login-modal').style.display='flex'; }
+function closeLoginModal() { document.getElementById('login-modal').style.display='none'; }
 function tgLogin() {
   var returnUrl = encodeURIComponent('https://chartist-insight.com/');
   var loginUrl = 'https://oauth.telegram.org/auth?bot_id=8458968839&origin=https%3A%2F%2Fchartist-insight.com&embed=1&request_access=write&return_to=' + returnUrl;
@@ -2948,10 +2950,13 @@ setInterval(function(){
 
 function serviceNavClick(tab) {
   var tabNav = document.querySelector('.tab-nav');
-  var logged = document.body.classList.contains('tg-logged');
   var freeTabs = ['calc', 'journal'];
-  if (!logged && !freeTabs.includes(tab)) {
-    tgLogin();
+  if (!tgUser && !freeTabs.includes(tab)) {
+    openLoginModal();
+    return;
+  }
+  if (tgUser && !tgUser.is_member && !freeTabs.includes(tab)) {
+    document.getElementById('member-modal').classList.add('show');
     return;
   }
   var btn = document.getElementById('tab-btn-' + tab);
@@ -2963,6 +2968,15 @@ function serviceNavClick(tab) {
 
 
 
+<div id="login-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:9999;align-items:center;justify-content:center;" onclick="if(event.target===this)closeLoginModal();">
+  <div style="background:#1a1a1a;border:1px solid #2a2a2a;border-top:2px solid #C9A84C;border-radius:12px;padding:36px 32px;max-width:360px;width:90%;text-align:center;">
+    <div style="font-size:32px;margin-bottom:12px;">🔐</div>
+    <h2 style="font-size:18px;font-weight:700;color:#C9A84C;margin-bottom:8px;">로그인이 필요합니다</h2>
+    <p style="font-size:13px;color:#777;margin-bottom:24px;line-height:1.7;">텔레그램으로 로그인하면<br>멤버십 서비스를 이용할 수 있습니다</p>
+    <button onclick="closeLoginModal();tgLogin();" style="width:100%;background:#229ED9;color:#fff;border:none;border-radius:8px;padding:13px;font-size:14px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:10px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm5.9 8.2l-2 9.4c-.1.6-.5.8-1 .5l-2.8-2.1-1.3 1.3c-.2.2-.3.3-.6.3l.2-2.9 5.1-4.6c.2-.2 0-.3-.3-.1L6.1 14.7 3.4 14c-.6-.2-.6-.6.1-.8l11.6-4.5c.5-.2 1 .1.8.8z"/></svg>텔레그램으로 로그인</button>
+    <button onclick="closeLoginModal();" style="width:100%;background:transparent;color:#555;border:1px solid #333;border-radius:8px;padding:10px;font-size:13px;cursor:pointer;">닫기</button>
+  </div>
+</div>
 <div class="member-modal-overlay" id="member-modal" onclick="if(event.target===this)document.getElementById('member-modal').classList.remove('show')">
   <div class="member-modal-box">
     <div class="member-modal-icon">🔒</div>
