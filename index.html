@@ -2927,22 +2927,15 @@ function loadFomoSection(){
 function renderFomoWithLiveprices(){
   var items=window._fomoItems;
   if(!items||!items.length)return;
-  var pm={};
-  items.forEach(function(x){
-    var lp=liveprices[x.ticker];
-    if(lp&&lp.price){pm[x.ticker+'_'+(x.currency||'KRW')]=lp.price;}
-  });
-  renderFomo(items,pm);
-  // 5초마다 갱신
+  function fetchAndRender(){
+    fetch('/data/fomo_prices.json?t='+Date.now()).then(function(r){return r.json();}).then(function(d){
+      var pm=d.prices||{};
+      renderFomo(items,pm);
+    }).catch(function(){renderFomo(items,{});});
+  }
+  fetchAndRender();
   if(window._fomoLiveInterval)clearInterval(window._fomoLiveInterval);
-  window._fomoLiveInterval=setInterval(function(){
-    var pm2={};
-    items.forEach(function(x){
-      var lp=liveprices[x.ticker];
-      if(lp&&lp.price){pm2[x.ticker+'_'+(x.currency||'KRW')]=lp.price;}
-    });
-    renderFomo(items,pm2);
-  },5000);
+  window._fomoLiveInterval=setInterval(fetchAndRender,60000);
 }
 function renderFomo(items,pm){
   // 수익률 계산 (currency별 key 사용)
