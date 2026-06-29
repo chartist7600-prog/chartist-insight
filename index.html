@@ -2946,17 +2946,15 @@ function renderFomoWithLiveprices(){
 }
 function renderFomo(items,pm){
   // 수익률 계산 (currency별 key 사용)
-  function getPrice(item){return pm[item.ticker+'_'+(item.currency||'USDT')]||0;}
-  // 수익률 플러스만 필터
-  items=items.filter(function(x){var c=getPrice(x);return x.entry_price>0&&c>0&&c>x.entry_price;});
-  if(!items.length){document.getElementById('fomo-list').innerHTML='';return;}
-  // 수익률 높은 순 정렬
+  function getPrice(item){return pm[item.ticker+'_'+(item.currency||'KRW')]||0;}
+  // 필터 없이 전체 표시, 수익률 높은 순 정렬
   items=items.slice().sort(function(a,b){
     var ca=getPrice(a),cb=getPrice(b);
     var pa=a.entry_price>0&&ca>0?(ca-a.entry_price)/a.entry_price:0;
     var pb=b.entry_price>0&&cb>0?(cb-b.entry_price)/b.entry_price:0;
     return pb-pa;
   });
+  if(!items.length){document.getElementById('fomo-list').innerHTML='';return;}
   var el=document.getElementById("fomo-list");
   if(!el)return;
   var html="";
