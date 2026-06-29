@@ -1566,7 +1566,7 @@ setInterval(function(){
 
 function filterAltcoin(f){
   currentAltcoinFilter=f;
-  ['all','trend','ma','kiz','wyc'].forEach(function(v){
+  ['all','trend','ma','rsi','kiz','wyc'].forEach(function(v){
     var btn=document.getElementById('af-'+v);
     if(btn)btn.classList.remove('active');
   });
@@ -2142,8 +2142,8 @@ sigMap['rsi_hidden_bear'] = {label:'숨은 하락 다이버전스', cls:'sig-rsi
 var _origSwitchTab=switchTab;
 switchTab=function(tab,btn){
   _origSwitchTab(tab,btn);
-  var _tc=document.getElementById('tab-'+tab);
-  if(_tc){window.scrollTo({top:_tc.getBoundingClientRect().top+window.scrollY-56,behavior:'smooth'});}
+  var _tn=document.querySelector('.tab-nav');
+  if(_tn){window.scrollTo({top:_tn.getBoundingClientRect().top+window.scrollY-56,behavior:'smooth'});}
   if(tab==='btc'){initBtcBlur();}
   if(tab==='journal'){document.getElementById('j-auth-screen').style.display='none';document.getElementById('j-main-screen').style.display='';}
 };
