@@ -1902,7 +1902,6 @@ initSoundBtn();
 // ══════════════════════════════════════════════
 // BTC 탭 블러 + 인라인 페이월
 // ══════════════════════════════════════════════
-var BINANCE_FUTURES=["BTC", "ETH", "NEAR", "SOL", "WLD", "XRP", "SUI", "TRX", "DOGE", "TAO", "SPK", "RENDER", "ONDO", "ADA", "LINK", "FIL", "VIRTUAL", "INJ", "ENA", "SEI", "AVAX", "ICP", "ALT", "XAUT", "WLFI", "TIA", "PENGU", "DOT", "AAVE", "SAHARA", "XPL", "UNI", "APT", "HBAR", "PUMP", "ATOM", "PENDLE", "FF", "ARKM", "CHZ", "TRUMP", "BCH", "CHIP", "JTO", "KITE", "ARB", "XLM", "GRT", "ETHFI", "VET", "OP", "MMT", "ETC", "ZAMA", "LPT", "ZBT", "ZRO", "MEGA", "POL", "CFG", "0G", "ERA", "BIO", "VANA", "PLUME", "MIRA", "WIF", "ORCA", "JUP", "ALGO", "ZK", "SYRUP", "SENT", "OPEN", "W", "JST", "KAITO", "IOTA", "SAND", "BERA", "STORJ", "HOLO", "COMP", "GMT", "PYTH", "AVNT", "KAT", "NXPC", "LAYER", "MANTRA", "SUN", "PROVE", "SKY", "RED", "SUPER", "THETA", "AXS", "IMX", "RVN", "SOMI", "WCT", "2Z", "HYPER", "AWE", "YGG", "LINEA", "STX", "MOVE", "ONT", "ME", "WAL", "ENS", "NEWT", "ESP", "HIVE", "POLYX", "NEO", "KAVA", "ANKR", "TREE", "ID", "API3", "CELO", "BARD", "A", "MASK", "ENSO", "BIGTIME", "AGLD", "CYBER", "SIGN", "STEEM", "ZKC", "LA", "ZIL", "MANA", "QTUM", "AUCTION", "EGLD", "CKB", "XTZ", "BLUR", "MINA", "MTL", "1INCH", "T", "BREV", "ASTR", "BAT", "GAS"];
 function searchTicker(val){
   var wrap=document.getElementById('j-ticker-wrap');
   var ac=document.getElementById('j-ticker-ac');
@@ -1922,73 +1921,17 @@ function selectTicker(t){
 document.addEventListener('click',function(e){
   var ac=document.getElementById('j-ticker-ac');
 });
-var BINANCE_FUTURES=["BTC", "ETH", "NEAR", "SOL", "WLD", "XRP", "SUI", "TRX", "DOGE", "TAO", "SPK", "RENDER", "ONDO", "ADA", "LINK", "FIL", "VIRTUAL", "INJ", "ENA", "SEI", "AVAX", "ICP", "ALT", "XAUT", "WLFI", "TIA", "PENGU", "DOT", "AAVE", "SAHARA", "XPL", "UNI", "APT", "HBAR", "PUMP", "ATOM", "PENDLE", "FF", "ARKM", "CHZ", "TRUMP", "BCH", "CHIP", "JTO", "KITE", "ARB", "XLM", "GRT", "ETHFI", "VET", "OP", "MMT", "ETC", "ZAMA", "LPT", "ZBT", "ZRO", "MEGA", "POL", "CFG", "0G", "ERA", "BIO", "VANA", "PLUME", "MIRA", "WIF", "ORCA", "JUP", "ALGO", "ZK", "SYRUP", "SENT", "OPEN", "W", "JST", "KAITO", "IOTA", "SAND", "BERA", "STORJ", "HOLO", "COMP", "GMT", "PYTH", "AVNT", "KAT", "NXPC", "LAYER", "MANTRA", "SUN", "PROVE", "SKY", "RED", "SUPER", "THETA", "AXS", "IMX", "RVN", "SOMI", "WCT", "2Z", "HYPER", "AWE", "YGG", "LINEA", "STX", "MOVE", "ONT", "ME", "WAL", "ENS", "NEWT", "ESP", "HIVE", "POLYX", "NEO", "KAVA", "ANKR", "TREE", "ID", "API3", "CELO", "BARD", "A", "MASK", "ENSO", "BIGTIME", "AGLD", "CYBER", "SIGN", "STEEM", "ZKC", "LA", "ZIL", "MANA", "QTUM", "AUCTION", "EGLD", "CKB", "XTZ", "BLUR", "MINA", "MTL", "1INCH", "T", "BREV", "ASTR", "BAT", "GAS"];
-function searchTicker(val){
+document.addEventListener("click",function(e){
   var ac=document.getElementById("j-ticker-ac");
-  if(!ac)return;
-  val=(val||"").toUpperCase().trim();
-  if(!val){ac.innerHTML="";ac.style.display="none";return;}
-  var matches=BINANCE_FUTURES.filter(function(t){return t.startsWith(val);}).slice(0,8);
-  if(!matches.length){ac.style.display="none";return;}
-  ac.innerHTML=matches.map(function(t){
-    return '<div class="ticker-autocomplete-item" onclick="selectTicker(\''+t+'\')" style="padding:8px 12px;cursor:pointer;font-size:12px;color:#e2e2e2;border-bottom:1px solid #242424;">'+t+'USDT</div>';
-  }).join("");
-  ac.style.display="block";
-}
-function selectTicker(t){
-  var inp=document.getElementById("j-ticker");
-  if(inp){inp.value=t+"USDT";inp.style.borderColor="#C9A84C";}
-  var ac=document.getElementById("j-ticker-ac");
-  if(ac){ac.innerHTML="";ac.style.display="none";}
-}
+  if(ac&&e.target.id!=="j-ticker"){ac.innerHTML="";ac.style.display="none";}
+});
+
 document.addEventListener("click",function(e){
   var ac=document.getElementById("j-ticker-ac");
   if(ac&&e.target.id!=="j-ticker"){ac.innerHTML="";ac.style.display="none";}
 });
 
 var BINANCE_FUTURES=["BTC", "ETH", "NEAR", "SOL", "WLD", "XRP", "SUI", "TRX", "DOGE", "TAO", "SPK", "RENDER", "ONDO", "ADA", "LINK", "FIL", "VIRTUAL", "INJ", "ENA", "SEI", "AVAX", "ICP", "ALT", "XAUT", "WLFI", "TIA", "PENGU", "DOT", "AAVE", "SAHARA", "XPL", "UNI", "APT", "HBAR", "PUMP", "ATOM", "PENDLE", "FF", "ARKM", "CHZ", "TRUMP", "BCH", "CHIP", "JTO", "KITE", "ARB", "XLM", "GRT", "ETHFI", "VET", "OP", "MMT", "ETC", "ZAMA", "LPT", "ZBT", "ZRO", "MEGA", "POL", "CFG", "0G", "ERA", "BIO", "VANA", "PLUME", "MIRA", "WIF", "ORCA", "JUP", "ALGO", "ZK", "SYRUP", "SENT", "OPEN", "W", "JST", "KAITO", "IOTA", "SAND", "BERA", "STORJ", "HOLO", "COMP", "GMT", "PYTH", "AVNT", "KAT", "NXPC", "LAYER", "MANTRA", "SUN", "PROVE", "SKY", "RED", "SUPER", "THETA", "AXS", "IMX", "RVN", "SOMI", "WCT", "2Z", "HYPER", "AWE", "YGG", "LINEA", "STX", "MOVE", "ONT", "ME", "WAL", "ENS", "NEWT", "ESP", "HIVE", "POLYX", "NEO", "KAVA", "ANKR", "TREE", "ID", "API3", "CELO", "BARD", "A", "MASK", "ENSO", "BIGTIME", "AGLD", "CYBER", "SIGN", "STEEM", "ZKC", "LA", "ZIL", "MANA", "QTUM", "AUCTION", "EGLD", "CKB", "XTZ", "BLUR", "MINA", "MTL", "1INCH", "T", "BREV", "ASTR", "BAT", "GAS"];
-function searchTicker(val){
-  var ac=document.getElementById("j-ticker-ac");
-  if(!ac)return;
-  val=(val||"").toUpperCase().trim();
-  if(!val){ac.innerHTML="";ac.style.display="none";return;}
-  var matches=BINANCE_FUTURES.filter(function(t){return t.startsWith(val);}).slice(0,8);
-  if(!matches.length){ac.style.display="none";return;}
-  ac.innerHTML=matches.map(function(t){
-    return '<div class="ticker-autocomplete-item" onclick="selectTicker(\''+t+'\')" style="padding:8px 12px;cursor:pointer;font-size:12px;color:#e2e2e2;border-bottom:1px solid #242424;">'+t+'USDT</div>';
-  }).join("");
-  ac.style.display="block";
-}
-function selectTicker(t){
-  var inp=document.getElementById("j-ticker");
-  if(inp){inp.value=t+"USDT";inp.style.borderColor="#C9A84C";}
-  var ac=document.getElementById("j-ticker-ac");
-  if(ac){ac.innerHTML="";ac.style.display="none";}
-}
-document.addEventListener("click",function(e){
-  var ac=document.getElementById("j-ticker-ac");
-  if(ac&&e.target.id!=="j-ticker"){ac.innerHTML="";ac.style.display="none";}
-});
-
-var BINANCE_FUTURES=["BTC", "ETH", "NEAR", "SOL", "WLD", "XRP", "SUI", "TRX", "DOGE", "TAO", "SPK", "RENDER", "ONDO", "ADA", "LINK", "FIL", "VIRTUAL", "INJ", "ENA", "SEI", "AVAX", "ICP", "ALT", "XAUT", "WLFI", "TIA", "PENGU", "DOT", "AAVE", "SAHARA", "XPL", "UNI", "APT", "HBAR", "PUMP", "ATOM", "PENDLE", "FF", "ARKM", "CHZ", "TRUMP", "BCH", "CHIP", "JTO", "KITE", "ARB", "XLM", "GRT", "ETHFI", "VET", "OP", "MMT", "ETC", "ZAMA", "LPT", "ZBT", "ZRO", "MEGA", "POL", "CFG", "0G", "ERA", "BIO", "VANA", "PLUME", "MIRA", "WIF", "ORCA", "JUP", "ALGO", "ZK", "SYRUP", "SENT", "OPEN", "W", "JST", "KAITO", "IOTA", "SAND", "BERA", "STORJ", "HOLO", "COMP", "GMT", "PYTH", "AVNT", "KAT", "NXPC", "LAYER", "MANTRA", "SUN", "PROVE", "SKY", "RED", "SUPER", "THETA", "AXS", "IMX", "RVN", "SOMI", "WCT", "2Z", "HYPER", "AWE", "YGG", "LINEA", "STX", "MOVE", "ONT", "ME", "WAL", "ENS", "NEWT", "ESP", "HIVE", "POLYX", "NEO", "KAVA", "ANKR", "TREE", "ID", "API3", "CELO", "BARD", "A", "MASK", "ENSO", "BIGTIME", "AGLD", "CYBER", "SIGN", "STEEM", "ZKC", "LA", "ZIL", "MANA", "QTUM", "AUCTION", "EGLD", "CKB", "XTZ", "BLUR", "MINA", "MTL", "1INCH", "T", "BREV", "ASTR", "BAT", "GAS"];
-function searchTicker(val){
-  var ac=document.getElementById("j-ticker-ac");
-  if(!ac)return;
-  val=(val||"").toUpperCase().trim();
-  if(!val){ac.innerHTML="";ac.style.display="none";return;}
-  var matches=BINANCE_FUTURES.filter(function(t){return t.startsWith(val);}).slice(0,8);
-  if(!matches.length){ac.style.display="none";return;}
-  ac.innerHTML=matches.map(function(t){
-    return '<div class="ticker-autocomplete-item" onclick="selectTicker(\''+t+'\')" style="padding:8px 12px;cursor:pointer;font-size:12px;color:#e2e2e2;border-bottom:1px solid #242424;">'+t+'USDT</div>';
-  }).join("");
-  ac.style.display="block";
-}
-function selectTicker(t){
-  var inp=document.getElementById("j-ticker");
-  if(inp){inp.value=t+"USDT";inp.style.borderColor="#C9A84C";}
-  var ac=document.getElementById("j-ticker-ac");
-  if(ac){ac.innerHTML="";ac.style.display="none";}
-}
 document.addEventListener("click",function(e){
   var ac=document.getElementById("j-ticker-ac");
   if(ac&&e.target.id!=="j-ticker"){ac.innerHTML="";ac.style.display="none";}
