@@ -2910,28 +2910,39 @@ function loadFomoSection(){
   fetch("/data/altcoin_data.json?t="+Date.now()).then(function(r){return r.json();}).then(function(d){
     var mid=Array.isArray(d.mid)?d.mid:[];
     var now=Date.now();
-    // 3일 이내 신호만
     mid=mid.filter(function(x){return x.time&&(now-new Date(x.time.length===10?x.time+' 00:00':x.time))<3*86400000;});
     if(!mid.length){document.getElementById("fomo-list").innerHTML='<div style="text-align:center;color:#555;padding:20px;font-size:12px;">신호 데이터 준비 중...</div>';return;}
-    // 최신순 정렬 후 상위 5개
     mid.sort(function(a,b){return (b.time||'').localeCompare(a.time||'');});
     var top5=mid.slice(0,5).map(function(x){
       var parts=(x.key||'').split('_');
       var exch=parts[0]||'';
       var ticker=parts[1]||'';
-      return {
-        ticker:ticker,
-        name:ticker,
-        exchange:exch,
-        entry_price:x.price||0,
-        currency:exch==='바이낸스'?'USDT':'KRW',
-        entry_time:x.time||'',
-        signal:'trend'
-      };
+      return {ticker:ticker,name:ticker,exchange:exch,entry_price:x.price||0,currency:exch==='바이낸스'?'USDT':'KRW',entry_time:x.time||'',signal:'trend'};
     });
     window._fomoItems=top5;
-    startFomoPriceWs(top5);
+    renderFomoWithLiveprices();
   }).catch(function(){});
+}
+
+function renderFomoWithLiveprices(){
+  var items=window._fomoItems;
+  if(!items||!items.length)return;
+  var pm={};
+  items.forEach(function(x){
+    var lp=liveprices[x.ticker];
+    if(lp&&lp.price){pm[x.ticker+'_'+(x.currency||'KRW')]=lp.price;}
+  });
+  renderFomo(items,pm);
+  // 5초마다 갱신
+  if(window._fomoLiveInterval)clearInterval(window._fomoLiveInterval);
+  window._fomoLiveInterval=setInterval(function(){
+    var pm2={};
+    items.forEach(function(x){
+      var lp=liveprices[x.ticker];
+      if(lp&&lp.price){pm2[x.ticker+'_'+(x.currency||'KRW')]=lp.price;}
+    });
+    renderFomo(items,pm2);
+  },5000);
 }
 function renderFomo(items,pm){
   // 수익률 계산 (currency별 key 사용)
