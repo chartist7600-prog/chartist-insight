@@ -1,5 +1,23 @@
 [
   {
+    "ticker": "EDU",
+    "name": "EDU",
+    "exchange": "빗썸",
+    "entry_price": 48.6,
+    "currency": "KRW",
+    "entry_time": "2026-06-29 21:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "MAGIC",
+    "name": "MAGIC",
+    "exchange": "빗썸",
+    "entry_price": 71.87,
+    "currency": "KRW",
+    "entry_time": "2026-06-29 21:05",
+    "signal": "trend"
+  },
+  {
     "ticker": "S",
     "name": "S",
     "exchange": "빗썸",
@@ -60,21 +78,5 @@
     "entry_price": 65.0,
     "currency": "USDT",
     "entry_time": "2026-06-27 09:00"
-  },
-  {
-    "ticker": "BNB",
-    "name": "바이낸스코인",
-    "exchange": "binance",
-    "entry_price": 520.0,
-    "currency": "USDT",
-    "entry_time": "2026-06-26 09:00"
-  },
-  {
-    "ticker": "XRP",
-    "name": "리플",
-    "exchange": "binance",
-    "entry_price": 0.95,
-    "currency": "USDT",
-    "entry_time": "2026-06-26 09:00"
   }
 ]

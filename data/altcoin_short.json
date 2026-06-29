@@ -22,5 +22,17 @@
     "time": "2026-06-29 09:00",
     "price": 0.000587,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_EDU",
+    "time": "2026-06-29 21:00",
+    "price": 48.6,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_MAGIC",
+    "time": "2026-06-29 21:00",
+    "price": 71.87,
+    "sig_type": "trend"
   }
 ]
