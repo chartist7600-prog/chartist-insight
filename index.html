@@ -490,8 +490,6 @@
   .btc-blur-wrap{position:relative;}
   .btc-blur-content{transition:filter 0.3s;}
   .btc-blur-content.blurred{filter:none !important;color:transparent !important;text-shadow:0 0 8px rgba(255,255,255,0.5) !important;pointer-events:auto;user-select:none;cursor:pointer;}
-  .btc-paywall-inline{display:none;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:10;width:300px;}
-  .btc-paywall-inline.show{display:block;}
 
   /* ══ BTC 신호 팝업 (슬라이드인) ══ */
   .btc-popup{position:fixed;bottom:20px;right:16px;z-index:3000;width:260px;background:linear-gradient(135deg,#1a1a1a,#111);border:1px solid rgba(201,168,76,0.3);border-radius:16px;padding:16px;box-shadow:0 8px 32px rgba(0,0,0,0.7);transform:translateY(120px);opacity:0;transition:transform 0.35s cubic-bezier(0.34,1.56,0.64,1),opacity 0.3s ease;pointer-events:none;}
@@ -1183,18 +1181,6 @@
     <div class="btc-blur-content" id="btc-blur-content">
       <div id="btc-signal-content"><div class="loading-box">신호를 불러오는 중입니다...</div></div>
     </div>
-    <div class="btc-paywall-inline" id="btc-paywall-inline">
-      <div class="paywall-box" onclick="event.stopPropagation()">
-        <div class="paywall-icon">🔒</div>
-        <button id="btc-pw-close-btn" onclick="document.getElementById('btc-paywall-inline').classList.remove('show')" style="position:absolute;top:12px;right:12px;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,0.05);border:0.5px solid rgba(255,255,255,0.12);color:#666;font-size:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;" onmouseover="this.style.color='#ccc'" onmouseout="this.style.color='#666'">✕</button>
-<div class="paywall-title">멤버십 전용 데이터</div>
-        <div class="paywall-desc">팬딩 멤버십 가입 후<br>비트코인 신호를<br>열람할 수 있습니다.</div>
-        <input class="paywall-input" id="btc-pw-input2" type="password" placeholder="••••" maxlength="10" onkeydown="if(event.key==='Enter')checkBtcPasswordInline()">
-        <button class="paywall-btn" onclick="checkBtcPasswordInline()">비밀번호 입력</button>
-        <div class="paywall-error" id="btc-pw-error2">비밀번호가 틀렸습니다.</div>
-        <div class="paywall-sub"><a href="https://fanding.kr/@bzcLu6QCTdMe/membership/" target="_blank" onclick="event.stopPropagation()">팬딩 멤버십 구독하기 →</a></div>
-      </div>
-    </div>
   </div>
   </div>
 </div>
@@ -1701,44 +1687,10 @@ document.getElementById('fee-rate').value=DEFAULT_FEE_FUTURES;
 // ══════════════════════════════════════════════
 // 페이월 함수
 // ══════════════════════════════════════════════
-function unlockRsiClose(){
-  var paywall=document.getElementById('rsi-paywall');
-  if(paywall)paywall.classList.remove('show');
-}
 
-function showBtcPaywall(){
-  var overlay=document.getElementById('btc-paywall-overlay');
-  if(overlay){overlay.style.display='flex';}
-  var input=document.getElementById('btc-pw-input');
-  if(input){input.value='';setTimeout(function(){input.focus();},100);}
-}
 
-function hideBtcPaywall(){
-  var overlay=document.getElementById('btc-paywall-overlay');
-  if(overlay)overlay.style.display='none';
-}
 
-function checkBtcPassword(){
-  var input=document.getElementById('btc-pw-input');
-  var error=document.getElementById('btc-pw-error');
-  if(!input)return;
-  if(input.value===RSI_PW){
-    hideBtcPaywall();
-    unlockRsi();
-    loadBtcSignals();
-    if(error)error.classList.remove('show');
-  }else{
-    input.value='';
-    if(error)error.classList.add('show');
-    setTimeout(function(){if(error)error.classList.remove('show');},2000);
-  }
-}
 
-// ★ 수정①: 오버레이 배경 클릭 시 닫힘 (paywall-box 내부 클릭은 stopPropagation으로 차단)
-document.addEventListener('click',function(e){
-  var overlay=document.getElementById('btc-paywall-overlay');
-  if(overlay&&overlay.style.display==='flex'&&e.target===overlay){hideBtcPaywall();}
-});
 
 // ══════════════════════════════════════════════
 // 알림음 시스템
@@ -2049,34 +2001,10 @@ function initBtcBlur(){
   content.style.filter='';content.style.color='';content.style.textShadow='';
   if(!unlocked){
     content.classList.add('blurred');
-    var paywall=document.getElementById('btc-paywall-inline');
-    if(paywall)paywall.classList.remove('show');
-    content.onclick=function(){
-      var pw=document.getElementById('btc-paywall-inline');
-      if(pw)pw.classList.add('show');
-      var inp=document.getElementById('btc-pw-input2');
-      if(inp){inp.value='';setTimeout(function(){inp.focus();},100);}
-    };
+    content.onclick=null;
   }else{
     content.classList.remove('blurred');
     content.onclick=null;
-  }
-}
-function checkBtcPasswordInline(){
-  var input=document.getElementById('btc-pw-input2');
-  var error=document.getElementById('btc-pw-error2');
-  if(!input)return;
-  if(input.value===RSI_PW){
-    localStorage.setItem('rsi_unlocked','1');
-    initBtcBlur();
-    loadBtcSignals();
-    var pw=document.getElementById('btc-paywall-inline');
-    if(pw)pw.classList.remove('show');
-    if(error)error.classList.remove('show');
-  }else{
-    input.value='';
-    if(error)error.classList.add('show');
-    setTimeout(function(){if(error)error.classList.remove('show');},2000);
   }
 }
 
