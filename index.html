@@ -2775,6 +2775,7 @@ function tgUpdateUI() {
       : '<span class="tg-nonmember-badge">비멤버</span>';
     area.innerHTML = '<div class="tg-user-info"><span class="tg-user-name">' + (tgUser.first_name || tgUser.username) + '</span>' + badge + '<button class="tg-logout-btn" onclick="tgLogout()">로그아웃</button></div>';
     initBtcBlur();
+    if(document.getElementById('tab-btc').classList.contains('active')){loadBtcSignals();}
   } else {
     area.innerHTML = '<button class="tg-login-btn" onclick="tgLogin()"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm5.9 8.2l-2 9.4c-.1.6-.5.8-1 .5l-2.8-2.1-1.3 1.3c-.2.2-.3.3-.6.3l.2-2.9 5.1-4.6c.2-.2 0-.3-.3-.1L6.1 14.7 3.4 14c-.6-.2-.6-.6.1-.8l11.6-4.5c.5-.2 1 .1.8.8z"/></svg>로그인</button>';
   }
