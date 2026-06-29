@@ -2859,7 +2859,7 @@ function startFomoPriceWs(items){
     _fomoUpbitWs.onclose = function(){
       // 재연결
       if(window._fomoUpbitPing) clearInterval(window._fomoUpbitPing);
-      setTimeout(function(){if(window._fomoItems)startFomoPriceWs(window._fomoItems);},3000);
+      setTimeout(function(){if(window._fomoItems)startFomoPriceWs(window._fomoItems);},30000);
     };
     _fomoUpbitWs.onmessage = function(e){
       var reader = new FileReader();
