@@ -2913,7 +2913,7 @@ function loadFomoSection(){
     mid=mid.filter(function(x){return x.time&&(now-new Date(x.time.length===10?x.time+' 00:00':x.time))<3*86400000;});
     if(!mid.length){document.getElementById("fomo-list").innerHTML='<div style="text-align:center;color:#555;padding:20px;font-size:12px;">신호 데이터 준비 중...</div>';return;}
     mid.sort(function(a,b){return (b.time||'').localeCompare(a.time||'');});
-    var top5=mid.slice(0,5).map(function(x){
+    var top5=mid.slice(0,3).map(function(x){
       var parts=(x.key||'').split('_');
       var exch=parts[0]||'';
       var ticker=parts[1]||'';
@@ -2969,7 +2969,7 @@ function renderFomo(items,pm){
     var neg=pct!==null&&pct<0?" neg":"";
     var dt=item.entry_time?item.entry_time.split(" ")[0]:"";
     var days=dt?Math.floor((Date.now()-new Date(dt))/86400000):"?";
-    var blur=i>=3;
+    var blur=false;
     html+='<div class="fomo-item'+(blur?' blurred':'')+'">'+'<div class="fomo-rank">'+(i+1)+'</div>'+'<div class="fomo-coin"><div class="fomo-coin-name">'+item.ticker+'<span style="font-size:11px;color:#666;font-weight:400;margin-left:6px;">'+(item.name||"")+'</span></div><div class="fomo-coin-meta">신호일: '+dt+'</div></div>'+'<div class="fomo-right"><div class="fomo-pct'+neg+'">'+pctStr+cursor+'</div><div class="fomo-days">'+days+'일 전</div></div>';
     
     html+='</div>';
