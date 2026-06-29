@@ -1526,7 +1526,7 @@ function renderBtcSignals(signals){
     contentEl.innerHTML='<div class="signal-empty">오늘 신호가 없습니다.<br><span style="font-size:10px;color:var(--text3);">09:00 KST 기준 일봉 마감 후 리셋</span></div>';
     return;
   }
-  var isUnlocked=(typeof tgUser!=="undefined"&&tgUser&&tgUser.is_member)||localStorage.getItem('rsi_unlocked')==='1';
+  var isUnlocked=(typeof tgUser!=="undefined"&&tgUser&&tgUser.is_member);
   var html='<div class="signal-list">';
   signals.forEach(function(s){
     var isLong=s.type==='LONG';
@@ -1950,7 +1950,6 @@ initSoundBtn();
 // ══════════════════════════════════════════════
 // BTC 탭 블러 + 인라인 페이월
 // ══════════════════════════════════════════════
-var RSI_PW="7777";
 var BINANCE_FUTURES=["BTC", "ETH", "NEAR", "SOL", "WLD", "XRP", "SUI", "TRX", "DOGE", "TAO", "SPK", "RENDER", "ONDO", "ADA", "LINK", "FIL", "VIRTUAL", "INJ", "ENA", "SEI", "AVAX", "ICP", "ALT", "XAUT", "WLFI", "TIA", "PENGU", "DOT", "AAVE", "SAHARA", "XPL", "UNI", "APT", "HBAR", "PUMP", "ATOM", "PENDLE", "FF", "ARKM", "CHZ", "TRUMP", "BCH", "CHIP", "JTO", "KITE", "ARB", "XLM", "GRT", "ETHFI", "VET", "OP", "MMT", "ETC", "ZAMA", "LPT", "ZBT", "ZRO", "MEGA", "POL", "CFG", "0G", "ERA", "BIO", "VANA", "PLUME", "MIRA", "WIF", "ORCA", "JUP", "ALGO", "ZK", "SYRUP", "SENT", "OPEN", "W", "JST", "KAITO", "IOTA", "SAND", "BERA", "STORJ", "HOLO", "COMP", "GMT", "PYTH", "AVNT", "KAT", "NXPC", "LAYER", "MANTRA", "SUN", "PROVE", "SKY", "RED", "SUPER", "THETA", "AXS", "IMX", "RVN", "SOMI", "WCT", "2Z", "HYPER", "AWE", "YGG", "LINEA", "STX", "MOVE", "ONT", "ME", "WAL", "ENS", "NEWT", "ESP", "HIVE", "POLYX", "NEO", "KAVA", "ANKR", "TREE", "ID", "API3", "CELO", "BARD", "A", "MASK", "ENSO", "BIGTIME", "AGLD", "CYBER", "SIGN", "STEEM", "ZKC", "LA", "ZIL", "MANA", "QTUM", "AUCTION", "EGLD", "CKB", "XTZ", "BLUR", "MINA", "MTL", "1INCH", "T", "BREV", "ASTR", "BAT", "GAS"];
 function searchTicker(val){
   var wrap=document.getElementById('j-ticker-wrap');
@@ -2043,11 +2042,8 @@ document.addEventListener("click",function(e){
   if(ac&&e.target.id!=="j-ticker"){ac.innerHTML="";ac.style.display="none";}
 });
 
-var RSI_PW="7777";
-var RSI_PW="7777";
-var RSI_PW="7777";
 function initBtcBlur(){
-  var unlocked=(typeof tgUser!=="undefined"&&tgUser&&tgUser.is_member)||localStorage.getItem('rsi_unlocked')==='1';
+  var unlocked=(typeof tgUser!=="undefined"&&tgUser&&tgUser.is_member);
   var content=document.getElementById('btc-blur-content');
   if(!content)return;
   content.style.filter='';content.style.color='';content.style.textShadow='';
@@ -2095,7 +2091,7 @@ function showBtcSlidePopup(signal){
   var tfEl=document.getElementById('btc-popup-tf');
   if(!popup)return;
   var isLong=signal.type==='LONG';
-  var isUnlocked=(typeof tgUser!=="undefined"&&tgUser&&tgUser.is_member)||localStorage.getItem('rsi_unlocked')==='1';
+  var isUnlocked=(typeof tgUser!=="undefined"&&tgUser&&tgUser.is_member);
   if(dirEl){dirEl.textContent=isLong?'🔴 LONG':'🔵 SHORT';dirEl.className='btc-popup-dir '+(isLong?'long':'short');}
   if(entryEl){
     if(isUnlocked){entryEl.textContent=signal.entry||'—';entryEl.className='btc-popup-entry';}
