@@ -2143,10 +2143,12 @@ sigMap['rsi_hidden_bear'] = {label:'<span class="hidden-label">히든</span> 하
 var _origSwitchTab=switchTab;
 switchTab=function(tab,btn){
   _origSwitchTab(tab,btn);
-  var _tc=document.getElementById('tab-'+tab);
-  if(_tc){var _top=_tc.offsetTop-60;window.scrollTo({top:_top,behavior:'smooth'});}
   if(tab==='btc'){initBtcBlur();}
   if(tab==='journal'){document.getElementById('j-auth-screen').style.display='none';document.getElementById('j-main-screen').style.display='';}
+  setTimeout(function(){
+    var _tc=document.getElementById('tab-'+tab);
+    if(_tc){window.scrollTo({top:_tc.offsetTop-60,behavior:'smooth'});}
+  },50);
 };
 
 // ══════════════════════════════════════════════
