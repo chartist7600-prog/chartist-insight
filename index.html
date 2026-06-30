@@ -1218,9 +1218,12 @@
       </div>
       <div id="j-add-err" style="background:rgba(226,83,74,0.12);border:1px solid rgba(226,83,74,0.3);border-radius:6px;color:#e2534a;font-size:12px;padding:8px 12px;margin-top:10px;display:none;"></div>
     </div>
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:10px;">
       <div style="font-size:12px;font-weight:700;color:#C9A84C;letter-spacing:1.2px;text-transform:uppercase;">매매 기록</div>
-      <div style="font-size:12px;color:#666;" id="j-trade-count"></div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <input class="journal-search" id="journal-search" type="text" placeholder="종목 검색" oninput="jRenderList()">
+        <div style="font-size:12px;color:#666;" id="j-trade-count"></div>
+      </div>
     </div>
     <div style="display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap;">
       <button class="j-filter active" onclick="jSetFilter('all',this)" style="font-size:12px;padding:5px 14px;border:1px solid #C9A84C;border-radius:20px;background:rgba(201,168,76,0.12);color:#C9A84C;cursor:pointer;">전체</button>
@@ -1993,6 +1996,9 @@ function jRenderList(){
   try{
     var tbody=document.getElementById('j-tbody');if(!tbody)return;
     var trades=(jAllTrades||[]).filter(function(t){return!!t;});
+    var searchEl=document.getElementById('journal-search');
+    var searchVal=searchEl?searchEl.value.trim().toUpperCase():'';
+    if(searchVal)trades=trades.filter(function(t){return(t.ticker||t.symbol||'').toUpperCase().indexOf(searchVal)!==-1;});
     if(jFilter==='open')trades=trades.filter(function(t){return t.status==='open';});
     else if(jFilter==='closed')trades=trades.filter(function(t){return t.status==='closed';});
     else if(jFilter==='LONG')trades=trades.filter(function(t){return t.direction==='LONG';});
@@ -2551,6 +2557,18 @@ window.addEventListener('scroll',function(){
   </div>
 </div>
 
+
+<div class="btc-popup" id="btc-slide-popup">
+  <div class="btc-popup-header">
+    <span class="btc-popup-title">BTC 신호 감지</span>
+    <button class="btc-popup-close" onclick="closeBtcPopup()">✕</button>
+  </div>
+  <div class="btc-popup-body">
+    <div class="btc-popup-dir" id="btc-popup-dir">—</div>
+    <div class="btc-popup-entry" id="btc-popup-entry">—</div>
+    <div class="btc-popup-tf" id="btc-popup-tf">—</div>
+  </div>
+</div>
 
 <div class="signal-overlay" id="signal-overlay">
   <div class="signal-box">
