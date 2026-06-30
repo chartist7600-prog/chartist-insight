@@ -1942,6 +1942,229 @@ switchTab=function(tab,btn){
 
 </script>
 
+</script>
+<script>
+function jSwitchAuthTab(tab){
+  var l=document.getElementById('j-login-section');
+  var r=document.getElementById('j-register-section');
+  var lb=document.getElementById('j-tab-login-btn');
+  var rb=document.getElementById('j-tab-reg-btn');
+  if(tab==='login'){
+    if(l)l.style.display='';if(r)r.style.display='none';
+    if(lb){lb.style.borderBottom='2px solid #C9A84C';lb.style.color='#C9A84C';}
+    if(rb){rb.style.borderBottom='2px solid transparent';rb.style.color='#777';}
+  }else{
+    if(l)l.style.display='none';if(r)r.style.display='';
+    if(rb){rb.style.borderBottom='2px solid #C9A84C';rb.style.color='#C9A84C';}
+    if(lb){lb.style.borderBottom='2px solid transparent';lb.style.color='#777';}
+  }
+}
+
+async function journalLogin(){
+  var un=(document.getElementById('j-username').value||'').trim();
+  var pw=document.getElementById('j-password').value||'';
+  var e=document.getElementById('j-login-err');e.style.display='none';
+  if(!un||!pw){e.textContent='아이디와 비밀번호를 입력해주세요';e.style.display='block';return;}
+  try{
+    var res=await fetch('https://chartist-insight.com/trade/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:un,password:pw})});
+    var d=await res.json();
+    if(!res.ok||d.error){e.textContent=d.error||'로그인 실패';e.style.display='block';return;}
+    localStorage.setItem('j_token',d.token||'ok');
+    localStorage.setItem('j_user',un);
+    document.getElementById('j-auth-screen').style.display='none';
+    document.getElementById('j-main-screen').style.display='';
+    var ul=document.getElementById('j-user-label');if(ul)ul.textContent=un+' 님의 매매일지';
+    var dt=document.getElementById('j-date');if(dt&&!dt.value)dt.value=new Date().toISOString().split('T')[0];
+    jLoadTrades();
+  }catch(err){e.textContent='서버 연결 오류. 잠시 후 다시 시도해주세요.';e.style.display='block';}
+}
+
+async function journalRegister(){
+  var un=(document.getElementById('j-reg-username').value||'').trim();
+  var fi=(document.getElementById('j-reg-fanding').value||'').trim();
+  var pw=document.getElementById('j-reg-pw').value||'';
+  var pw2=document.getElementById('j-reg-pw2').value||'';
+  var e=document.getElementById('j-reg-err');e.style.display='none';
+  if(!un||!pw||!fi){e.textContent='모든 필드를 입력해주세요';e.style.display='block';return;}
+  if(un.length<4){e.textContent='아이디는 4자 이상';e.style.display='block';return;}
+  if(pw.length<8){e.textContent='비밀번호는 8자 이상';e.style.display='block';return;}
+  if(pw!==pw2){e.textContent='비밀번호가 일치하지 않습니다';e.style.display='block';return;}
+  try{
+    var res=await fetch('https://chartist-insight.com/trade/register',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:un,password:pw,fanding_id:fi})});
+    var d=await res.json();
+    if(!res.ok||d.error){e.textContent=d.error||'회원가입 실패';e.style.display='block';return;}
+    alert('회원가입 완료! 로그인해주세요.');
+    jSwitchAuthTab('login');
+    document.getElementById('j-username').value=un;
+  }catch(err){e.textContent='서버 연결 오류.';e.style.display='block';}
+}
+
+function journalLogout(){
+  localStorage.removeItem('j_token');localStorage.removeItem('j_user');
+  document.getElementById('j-auth-screen').style.display='block';
+  document.getElementById('j-main-screen').style.display='none';
+}
+
+var jAllTrades=[];var jFilter='all';
+
+async function jLoadTrades(){
+  var tok=localStorage.getItem('j_token');if(!tok)return;
+  try{
+    var res=await fetch('https://chartist-insight.com/trade/list',{headers:{'Authorization':'Bearer '+tok}});
+    if(res.status===401){journalLogout();return;}
+    var d=await res.json();
+    jAllTrades=Array.isArray(d.trades)?d.trades:[];
+    jRenderStats();jRenderList();
+    var dt=document.getElementById('j-date');if(dt&&!dt.value)dt.value=new Date().toISOString().split('T')[0];
+  }catch(err){jAllTrades=[];jRenderStats();jRenderList();}
+}
+
+function jRenderStats(){
+  try{
+    var closed=(jAllTrades||[]).filter(function(t){return t&&t.status==='closed';});
+    var wins=closed.filter(function(t){return(parseFloat(t.pnl_amount||t.pnl)||0)>0;});
+    var totalPnl=closed.reduce(function(s,t){return s+(parseFloat(t.pnl_amount||t.pnl)||0);},0);
+    var wr=closed.length>0?Math.round(wins.length/closed.length*100):0;
+    var rrS=0,rrC=0;
+    closed.forEach(function(t){var en=parseFloat(t.entry)||0,ex=parseFloat(t.exit_price||t.exit)||0,sl=parseFloat(t.stop_loss||t.sl)||0;if(en&&ex&&sl&&Math.abs(en-sl)>0){rrS+=Math.abs(ex-en)/Math.abs(en-sl);rrC++;}});
+    var openCnt=(jAllTrades||[]).filter(function(t){return t&&t.status==='open';}).length;
+    var ts=document.getElementById('j-s-total');if(ts)ts.textContent=jAllTrades.length+'건 (오픈 '+openCnt+')';
+    var we=document.getElementById('j-s-wr');if(we){we.textContent=wr+'%';we.style.color=wr>=50?'#26a642':'#e2534a';}
+    var wb=document.getElementById('j-s-wr-bar');if(wb)wb.style.background=wr>=50?'#26a642':'#e2534a';
+    var pe=document.getElementById('j-s-pnl');if(pe){pe.textContent=(totalPnl>0?'+':'')+totalPnl.toFixed(1)+'$';pe.style.color=totalPnl>0?'#26a642':totalPnl<0?'#e2534a':'#e2e2e2';}
+    var pb=document.getElementById('j-s-pnl-bar');if(pb)pb.style.background=totalPnl>0?'#26a642':totalPnl<0?'#e2534a':'#C9A84C';
+    var rr=document.getElementById('j-s-rr');if(rr)rr.textContent=rrC>0?(rrS/rrC).toFixed(1)+'R':'—';
+  }catch(err){}
+}
+
+function jRenderList(){
+  try{
+    var tbody=document.getElementById('j-tbody');if(!tbody)return;
+    var trades=(jAllTrades||[]).filter(function(t){return!!t;});
+    if(jFilter==='open')trades=trades.filter(function(t){return t.status==='open';});
+    else if(jFilter==='closed')trades=trades.filter(function(t){return t.status==='closed';});
+    else if(jFilter==='LONG')trades=trades.filter(function(t){return t.direction==='LONG';});
+    else if(jFilter==='SHORT')trades=trades.filter(function(t){return t.direction==='SHORT';});
+    trades.sort(function(a,b){return(b.entry_date||'').localeCompare(a.entry_date||'');});
+    var tc=document.getElementById('j-trade-count');if(tc)tc.textContent=trades.length+'건';
+    if(!trades.length){tbody.innerHTML='<tr><td colspan="9" style="text-align:center;padding:60px 20px;color:#555;font-size:13px;">📋 매매 기록이 없습니다</td></tr>';return;}
+    tbody.innerHTML=trades.map(function(t){
+      var pnl=parseFloat(t.pnl_amount||t.pnl)||0;
+      var pc=pnl>0?'color:#26a642;font-weight:700;':pnl<0?'color:#e2534a;font-weight:700;':'color:#555;';
+      var ps=pnl!==0?(pnl>0?'+':'')+pnl.toFixed(1)+'$':'—';
+      var sz=parseFloat(t.amount||t.size)||0;var lv=parseFloat(String(t.leverage||'1').replace(/x/i,''))||1;
+      var pp=sz>0&&pnl!==0?(pnl>0?'+':'')+(pnl/sz*100/lv).toFixed(1)+'%':'—';
+      var tk=(t.ticker||t.symbol||'').toUpperCase();
+      var ls=t.leverage?String(t.leverage).toLowerCase().includes('x')?t.leverage:t.leverage+'x':'';
+      var db=t.direction==='LONG'?'background:rgba(38,166,66,0.12);color:#26a642;':'background:rgba(226,83,74,0.12);color:#e2534a;';
+      var sb=t.status==='open'?'background:rgba(201,168,76,0.1);color:#C9A84C;border:1px solid rgba(201,168,76,0.28);':'background:#1e1e1e;color:#555;';
+      var tid=(t.id||t._id||'');
+      return '<tr style="border-bottom:1px solid #1a1a1a;">'+
+        '<td style="padding:12px;"><div style="font-weight:700;font-size:14px;color:#e2e2e2;">'+tk+'</div><div style="font-size:11px;color:#555;margin-top:2px;">'+(t.entry_date||'')+' '+(ls?'· '+ls:'')+'</div></td>'+
+        '<td style="padding:12px;"><span style="display:inline-block;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:700;'+db+'">'+(t.direction||'')+'</span></td>'+
+        '<td style="padding:12px;color:#e2e2e2;">'+(t.entry||'—')+'</td>'+
+        '<td style="padding:12px;color:#e2e2e2;">'+(t.exit_price||t.exit||'<span style="color:#444">—</span>')+'</td>'+
+        '<td style="padding:12px;color:#e2e2e2;">$'+sz+'</td>'+
+        '<td style="padding:12px;'+pc+'">'+ps+'</td>'+
+        '<td style="padding:12px;'+pc+'font-size:12px;">'+pp+'</td>'+
+        '<td style="padding:12px;"><span style="display:inline-block;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:700;'+sb+'">'+(t.status==='open'?'오픈':'청산')+'</span></td>'+
+        '<td style="padding:12px;"><button onclick="jOpenEdit(\''+tid+'\')" style="background:none;border:1px solid #242424;border-radius:5px;color:#555;font-size:12px;padding:4px 8px;cursor:pointer;">✎</button></td>'+
+      '</tr>';
+    }).join('');
+  }catch(err){}
+}
+
+function jSetFilter(f,btn){
+  jFilter=f;
+  document.querySelectorAll('.j-filter').forEach(function(b){b.style.borderColor='#242424';b.style.color='#777';b.style.background='transparent';});
+  if(btn){btn.style.borderColor='#C9A84C';btn.style.color='#C9A84C';btn.style.background='rgba(201,168,76,0.12)';}
+  jRenderList();
+}
+
+function jResetForm(){
+  ['j-ticker','j-lev','j-entry','j-exit','j-size','j-sl','j-tp','j-memo'].forEach(function(id){var el=document.getElementById(id);if(el)el.value='';});
+  var d=document.getElementById('j-dir');if(d)d.value='LONG';
+  var dt=document.getElementById('j-date');if(dt)dt.value=new Date().toISOString().split('T')[0];
+  var e=document.getElementById('j-add-err');if(e)e.style.display='none';
+}
+
+async function journalAdd(){
+  var tok=localStorage.getItem('j_token');if(!tok)return;
+  var ticker=(document.getElementById('j-ticker').value||'').trim().toUpperCase();
+  var direction=document.getElementById('j-dir').value;
+  var leverage=(document.getElementById('j-lev').value||'').trim()||'1x';
+  var entry_date=document.getElementById('j-date').value;
+  var entry_price=parseFloat(String(document.getElementById('j-entry').value).replace(/,/g,''))||0;
+  var exit_price=parseFloat(String(document.getElementById('j-exit').value).replace(/,/g,''))||null;
+  var size=parseFloat(String(document.getElementById('j-size').value).replace(/,/g,''))||0;
+  var stop_loss=parseFloat(String(document.getElementById('j-sl').value).replace(/,/g,''))||null;
+  var take_profit=parseFloat(String(document.getElementById('j-tp').value).replace(/,/g,''))||null;
+  var memo=(document.getElementById('j-memo').value||'').trim();
+  var e=document.getElementById('j-add-err');e.style.display='none';
+  if(!ticker){e.textContent='종목을 입력해주세요';e.style.display='block';return;}
+  if(!entry_price){e.textContent='진입가를 입력해주세요';e.style.display='block';return;}
+  if(!size){e.textContent='투자금을 입력해주세요';e.style.display='block';return;}
+  if(!entry_date){e.textContent='진입일을 선택해주세요';e.style.display='block';return;}
+  try{
+    var res=await fetch('https://chartist-insight.com/trade/add',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+tok},body:JSON.stringify({ticker,direction,leverage,entry_date,entry_price,exit_price,size,stop_loss,take_profit,memo})});
+    if(res.status===401){journalLogout();return;}
+    var d=await res.json();
+    if(!res.ok||d.error){e.textContent=d.error||'저장 실패';e.style.display='block';return;}
+    jResetForm();await jLoadTrades();
+  }catch(err){e.textContent='서버 연결 오류';e.style.display='block';}
+}
+
+var jEditId=null;
+function jOpenEdit(id){
+  if(!id)return;
+  var t=jAllTrades.find(function(x){return x&&(x.id===id||x._id===id);});
+  if(!t)return;
+  jEditId=id;
+  var modal=document.getElementById('j-edit-modal');
+  if(!modal){
+    modal=document.createElement('div');modal.id='j-edit-modal';
+    modal.style.cssText='position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:10000;display:flex;align-items:center;justify-content:center;';
+    modal.innerHTML='<div style="background:#1a1a1a;border:1px solid #242424;border-top:2px solid #C9A84C;border-radius:12px;padding:28px;width:100%;max-width:480px;max-height:90vh;overflow-y:auto;"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;"><h3 style="font-size:15px;font-weight:700;color:#C9A84C;">✏️ 매매 수정</h3><button onclick="jCloseEdit()" style="background:none;border:none;color:#666;font-size:18px;cursor:pointer;">✕</button></div><input type="hidden" id="j-e-id"><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;"><div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;">종목</label><input id="j-e-ticker" type="text" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;"></div><div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;">방향</label><select id="j-e-dir" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;"><option value="LONG">LONG</option><option value="SHORT">SHORT</option></select></div><div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;">배율</label><input id="j-e-lev" type="text" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;"></div><div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;">진입일</label><input id="j-e-date" type="date" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;color-scheme:dark;"></div><div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;">진입가</label><input id="j-e-entry" type="text" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;"></div><div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;">청산가</label><input id="j-e-exit" type="text" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;"></div><div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;">투자금($)</label><input id="j-e-size" type="text" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;"></div><div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;">손절가</label><input id="j-e-sl" type="text" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;"></div><div style="grid-column:1/-1;"><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;">메모</label><input id="j-e-memo" type="text" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;"></div></div><div id="j-e-err" style="background:rgba(226,83,74,0.12);border:1px solid rgba(226,83,74,0.3);border-radius:6px;color:#e2534a;font-size:12px;padding:8px 12px;margin-top:10px;display:none;"></div><div style="display:flex;gap:8px;justify-content:flex-end;margin-top:20px;"><button onclick="jCloseEdit()" style="background:transparent;color:#777;border:1px solid #242424;border-radius:6px;padding:9px 16px;font-size:13px;cursor:pointer;">취소</button><button onclick="journalUpdate()" style="background:#C9A84C;color:#000;border:none;border-radius:6px;padding:9px 24px;font-size:13px;font-weight:700;cursor:pointer;">저장</button></div></div>';
+    document.body.appendChild(modal);
+    modal.addEventListener('click',function(e){if(e.target===modal)jCloseEdit();});
+  }
+  modal.style.display='flex';
+  document.getElementById('j-e-id').value=id;
+  document.getElementById('j-e-ticker').value=(t.ticker||t.symbol||'').toUpperCase();
+  document.getElementById('j-e-dir').value=t.direction||'LONG';
+  document.getElementById('j-e-lev').value=t.leverage||'';
+  document.getElementById('j-e-date').value=t.entry_date||'';
+  document.getElementById('j-e-entry').value=t.entry||'';
+  document.getElementById('j-e-exit').value=t.exit_price||t.exit||'';
+  document.getElementById('j-e-size').value=t.size||'';
+  document.getElementById('j-e-sl').value=t.stop_loss||t.sl||'';
+  document.getElementById('j-e-memo').value=t.memo||'';
+  var ee=document.getElementById('j-e-err');if(ee)ee.style.display='none';
+}
+function jCloseEdit(){var m=document.getElementById('j-edit-modal');if(m)m.style.display='none';}
+
+async function journalUpdate(){
+  var tok=localStorage.getItem('j_token');if(!tok)return;
+  var id=document.getElementById('j-e-id').value;
+  var ep=parseFloat(String(document.getElementById('j-e-entry').value).replace(/,/g,''))||0;
+  var e=document.getElementById('j-e-err');e.style.display='none';
+  if(!ep){e.textContent='진입가를 입력해주세요';e.style.display='block';return;}
+  var payload={id,ticker:document.getElementById('j-e-ticker').value.trim().toUpperCase(),direction:document.getElementById('j-e-dir').value,leverage:document.getElementById('j-e-lev').value.trim(),entry_date:document.getElementById('j-e-date').value,entry_price:ep,exit_price:parseFloat(String(document.getElementById('j-e-exit').value).replace(/,/g,''))||null,size:parseFloat(String(document.getElementById('j-e-size').value).replace(/,/g,''))||null,stop_loss:parseFloat(String(document.getElementById('j-e-sl').value).replace(/,/g,''))||null,memo:document.getElementById('j-e-memo').value.trim()};
+  try{
+    var res=await fetch('https://chartist-insight.com/trade/update',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+tok},body:JSON.stringify(payload)});
+    if(res.status===401){journalLogout();return;}
+    var d=await res.json();
+    if(!res.ok||d.error){e.textContent=d.error||'수정 실패';e.style.display='block';return;}
+    jCloseEdit();await jLoadTrades();
+  }catch(err){e.textContent='서버 연결 오류';e.style.display='block';}
+}
+
+function updateStatBadges(){try{jRenderStats();}catch(e){}}
+// ════════════════ END 매매일지 v4 ════════════════
+
+</script>
+<script>
+
 <script>
 // ══ 텔레그램 OAuth ══
 var TG_BOT_NAME = 'ChartMasterBot';
