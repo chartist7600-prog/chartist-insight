@@ -1284,7 +1284,7 @@ function getDaysAgoRange(days){var today=getTodayRange();return{start:new Date(t
 dateRange=getDaysAgoRange(3);
 function isInRange(timeStr){if(!timeStr)return false;var d;try{if(timeStr.length===10){d=new Date(timeStr+'T09:00:00+09:00');}else{d=new Date(timeStr.replace(' ','T')+':00+09:00');}if(isNaN(d.getTime()))return false;}catch(e){return false;}return d>=dateRange.start&&d<=dateRange.end;}
 var currentPreset='3d';
-function setDatePreset(preset){currentPreset=preset;['today','3d','7d','30d','cal'].forEach(function(p){var btn=document.getElementById('dq-'+p);if(btn)btn.classList.remove('active');});var activeBtn=document.getElementById('dq-'+preset);if(activeBtn)activeBtn.classList.add('active');document.getElementById('altcoin-calendar').classList.remove('show');if(preset==='today')dateRange=getTodayRange();else if(preset==='3d')dateRange=getDaysAgoRange(3);else if(preset==='7d')dateRange=getDaysAgoRange(7);else if(preset==='30d')dateRange=getDaysAgoRange(30);if(altcoinData){renderAltcoin(true);}else{loadAltcoinData();}}
+function setDatePreset(preset){currentPreset=preset;['today','3d','7d','30d','cal'].forEach(function(p){var btn=document.getElementById('dq-'+p);if(btn)btn.classList.remove('active');});var activeBtn=document.getElementById('dq-'+preset);if(activeBtn)activeBtn.classList.add('active');document.getElementById('altcoin-calendar').classList.remove('show');if(preset==='today')dateRange=getDaysAgoRange(3);else if(preset==='3d')dateRange=getDaysAgoRange(3);else if(preset==='7d')dateRange=getDaysAgoRange(7);else if(preset==='30d')dateRange=getDaysAgoRange(30);if(altcoinData){renderAltcoin(true);}else{loadAltcoinData();}}
 var calYear,calMonth,calSel1=null,calSel2=null;
 function initCal(){var now=new Date();calYear=now.getFullYear();calMonth=now.getMonth();}initCal();
 function toggleCalendar(){var el=document.getElementById('altcoin-calendar');if(el.classList.contains('show')){el.classList.remove('show');}else{el.classList.add('show');renderCal();}}
@@ -2214,9 +2214,9 @@ function tgUpdateUI() {
   if (saved) {
     try {
       tgUser = JSON.parse(saved);
-      tgUpdateUI();
     } catch(e) {}
   }
+  tgUpdateUI();
 })();
 
 
