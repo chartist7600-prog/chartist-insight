@@ -1933,7 +1933,7 @@ var _origSwitchTab=switchTab;
 switchTab=function(tab,btn){
   _origSwitchTab(tab,btn);
   if(tab==='btc'){initBtcBlur();}
-  if(tab==='journal'){document.getElementById('j-auth-screen').style.display='none';document.getElementById('j-main-screen').style.display='';}
+  if(tab==='journal'){document.getElementById('j-auth-screen').style.display='none';document.getElementById('j-main-screen').style.display='';jLoadTrades();}
   setTimeout(function(){
     var _tc=document.getElementById('tab-'+tab);
     if(_tc){window.scrollTo({top:_tc.offsetTop-60,behavior:'smooth'});}
@@ -1944,74 +1944,24 @@ switchTab=function(tab,btn){
 
 </script>
 <script>
-function jSwitchAuthTab(tab){
-  var l=document.getElementById('j-login-section');
-  var r=document.getElementById('j-register-section');
-  var lb=document.getElementById('j-tab-login-btn');
-  var rb=document.getElementById('j-tab-reg-btn');
-  if(tab==='login'){
-    if(l)l.style.display='';if(r)r.style.display='none';
-    if(lb){lb.style.borderBottom='2px solid #C9A84C';lb.style.color='#C9A84C';}
-    if(rb){rb.style.borderBottom='2px solid transparent';rb.style.color='#777';}
-  }else{
-    if(l)l.style.display='none';if(r)r.style.display='';
-    if(rb){rb.style.borderBottom='2px solid #C9A84C';rb.style.color='#C9A84C';}
-    if(lb){lb.style.borderBottom='2px solid transparent';lb.style.color='#777';}
-  }
-}
+function jSwitchAuthTab(tab){}
 
-async function journalLogin(){
-  var un=(document.getElementById('j-username').value||'').trim();
-  var pw=document.getElementById('j-password').value||'';
-  var e=document.getElementById('j-login-err');e.style.display='none';
-  if(!un||!pw){e.textContent='아이디와 비밀번호를 입력해주세요';e.style.display='block';return;}
+function jGetTgId(){
   try{
-    var res=await fetch('https://chartist-insight.com/trade/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:un,password:pw})});
-    var d=await res.json();
-    if(!res.ok||d.error){e.textContent=d.error||'로그인 실패';e.style.display='block';return;}
-    localStorage.setItem('j_token',d.token||'ok');
-    localStorage.setItem('j_user',un);
-    document.getElementById('j-auth-screen').style.display='none';
-    document.getElementById('j-main-screen').style.display='';
-    var ul=document.getElementById('j-user-label');if(ul)ul.textContent=un+' 님의 매매일지';
-    var dt=document.getElementById('j-date');if(dt&&!dt.value)dt.value=new Date().toISOString().split('T')[0];
-    jLoadTrades();
-  }catch(err){e.textContent='서버 연결 오류. 잠시 후 다시 시도해주세요.';e.style.display='block';}
-}
-
-async function journalRegister(){
-  var un=(document.getElementById('j-reg-username').value||'').trim();
-  var fi=(document.getElementById('j-reg-fanding').value||'').trim();
-  var pw=document.getElementById('j-reg-pw').value||'';
-  var pw2=document.getElementById('j-reg-pw2').value||'';
-  var e=document.getElementById('j-reg-err');e.style.display='none';
-  if(!un||!pw||!fi){e.textContent='모든 필드를 입력해주세요';e.style.display='block';return;}
-  if(un.length<4){e.textContent='아이디는 4자 이상';e.style.display='block';return;}
-  if(pw.length<8){e.textContent='비밀번호는 8자 이상';e.style.display='block';return;}
-  if(pw!==pw2){e.textContent='비밀번호가 일치하지 않습니다';e.style.display='block';return;}
-  try{
-    var res=await fetch('https://chartist-insight.com/trade/register',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:un,password:pw,fanding_id:fi})});
-    var d=await res.json();
-    if(!res.ok||d.error){e.textContent=d.error||'회원가입 실패';e.style.display='block';return;}
-    alert('회원가입 완료! 로그인해주세요.');
-    jSwitchAuthTab('login');
-    document.getElementById('j-username').value=un;
-  }catch(err){e.textContent='서버 연결 오류.';e.style.display='block';}
+    var u=JSON.parse(localStorage.getItem('tg_user')||'null');
+    return u&&u.id?String(u.id):null;
+  }catch(e){return null;}
 }
 
 function journalLogout(){
-  localStorage.removeItem('j_token');localStorage.removeItem('j_user');
-  document.getElementById('j-auth-screen').style.display='block';
-  document.getElementById('j-main-screen').style.display='none';
+  tgLogout();
 }
 
-var jAllTrades=[];var jFilter='all';
-
 async function jLoadTrades(){
-  var tok=localStorage.getItem('j_token');if(!tok)return;
+  var tgId=jGetTgId();
+  if(!tgId){jAllTrades=[];jRenderStats();jRenderList();return;}
   try{
-    var res=await fetch('https://chartist-insight.com/trade/list',{headers:{'Authorization':'Bearer '+tok}});
-    if(res.status===401){journalLogout();return;}
+    var res=await fetch('https://chartist-insight.com/trade/tg_list',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({tg_id:tgId})});
     var d=await res.json();
     jAllTrades=Array.isArray(d.trades)?d.trades:[];
     jRenderStats();jRenderList();
@@ -2068,7 +2018,7 @@ function jRenderList(){
         '<td style="padding:12px;'+pc+'">'+ps+'</td>'+
         '<td style="padding:12px;'+pc+'font-size:12px;">'+pp+'</td>'+
         '<td style="padding:12px;"><span style="display:inline-block;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:700;'+sb+'">'+(t.status==='open'?'오픈':'청산')+'</span></td>'+
-        '<td style="padding:12px;"><button onclick="jOpenEdit(\''+tid+'\')" style="background:none;border:1px solid #242424;border-radius:5px;color:#555;font-size:12px;padding:4px 8px;cursor:pointer;">✎</button></td>'+
+        '<td style="padding:12px;white-space:nowrap;"><button onclick="jOpenEdit(\''+tid+'\')" style="background:none;border:1px solid #242424;border-radius:5px;color:#555;font-size:12px;padding:4px 8px;cursor:pointer;margin-right:4px;">✎</button><button onclick="journalDeleteTrade(\''+tid+'\')" style="background:none;border:1px solid #242424;border-radius:5px;color:#e2534a;font-size:12px;padding:4px 8px;cursor:pointer;">✕</button></td>'+
       '</tr>';
     }).join('');
   }catch(err){}
@@ -2089,7 +2039,8 @@ function jResetForm(){
 }
 
 async function journalAdd(){
-  var tok=localStorage.getItem('j_token');if(!tok)return;
+  var tgId=jGetTgId();
+  if(!tgId){openLoginModal();return;}
   var ticker=(document.getElementById('j-ticker').value||'').trim().toUpperCase();
   var direction=document.getElementById('j-dir').value;
   var leverage=(document.getElementById('j-lev').value||'').trim()||'1x';
@@ -2106,8 +2057,7 @@ async function journalAdd(){
   if(!size){e.textContent='투자금을 입력해주세요';e.style.display='block';return;}
   if(!entry_date){e.textContent='진입일을 선택해주세요';e.style.display='block';return;}
   try{
-    var res=await fetch('https://chartist-insight.com/trade/add',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+tok},body:JSON.stringify({ticker,direction,leverage,entry_date,entry_price,exit_price,size,stop_loss,take_profit,memo})});
-    if(res.status===401){journalLogout();return;}
+    var res=await fetch('https://chartist-insight.com/trade/tg_add',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({tg_id:tgId,ticker,direction,leverage,entry_date,entry_price,exit_price,size,stop_loss,take_profit,memo})});
     var d=await res.json();
     if(!res.ok||d.error){e.textContent=d.error||'저장 실패';e.style.display='block';return;}
     jResetForm();await jLoadTrades();
@@ -2144,19 +2094,29 @@ function jOpenEdit(id){
 function jCloseEdit(){var m=document.getElementById('j-edit-modal');if(m)m.style.display='none';}
 
 async function journalUpdate(){
-  var tok=localStorage.getItem('j_token');if(!tok)return;
+  var tgId=jGetTgId();
+  if(!tgId)return;
   var id=document.getElementById('j-e-id').value;
   var ep=parseFloat(String(document.getElementById('j-e-entry').value).replace(/,/g,''))||0;
   var e=document.getElementById('j-e-err');e.style.display='none';
   if(!ep){e.textContent='진입가를 입력해주세요';e.style.display='block';return;}
-  var payload={id,ticker:document.getElementById('j-e-ticker').value.trim().toUpperCase(),direction:document.getElementById('j-e-dir').value,leverage:document.getElementById('j-e-lev').value.trim(),entry_date:document.getElementById('j-e-date').value,entry_price:ep,exit_price:parseFloat(String(document.getElementById('j-e-exit').value).replace(/,/g,''))||null,size:parseFloat(String(document.getElementById('j-e-size').value).replace(/,/g,''))||null,stop_loss:parseFloat(String(document.getElementById('j-e-sl').value).replace(/,/g,''))||null,memo:document.getElementById('j-e-memo').value.trim()};
+  var payload={tg_id:tgId,id,ticker:document.getElementById('j-e-ticker').value.trim().toUpperCase(),direction:document.getElementById('j-e-dir').value,leverage:document.getElementById('j-e-lev').value.trim(),entry_date:document.getElementById('j-e-date').value,entry_price:ep,exit_price:parseFloat(String(document.getElementById('j-e-exit').value).replace(/,/g,''))||null,size:parseFloat(String(document.getElementById('j-e-size').value).replace(/,/g,''))||null,stop_loss:parseFloat(String(document.getElementById('j-e-sl').value).replace(/,/g,''))||null,memo:document.getElementById('j-e-memo').value.trim()};
   try{
-    var res=await fetch('https://chartist-insight.com/trade/update',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+tok},body:JSON.stringify(payload)});
-    if(res.status===401){journalLogout();return;}
+    var res=await fetch('https://chartist-insight.com/trade/tg_update',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
     var d=await res.json();
     if(!res.ok||d.error){e.textContent=d.error||'수정 실패';e.style.display='block';return;}
     jCloseEdit();await jLoadTrades();
   }catch(err){e.textContent='서버 연결 오류';e.style.display='block';}
+}
+
+async function journalDeleteTrade(id){
+  var tgId=jGetTgId();
+  if(!tgId||!id)return;
+  if(!confirm('삭제하시겠습니까?'))return;
+  try{
+    await fetch('https://chartist-insight.com/trade/tg_delete',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({tg_id:tgId,id:id})});
+    await jLoadTrades();
+  }catch(err){}
 }
 
 function updateStatBadges(){try{jRenderStats();}catch(e){}}
