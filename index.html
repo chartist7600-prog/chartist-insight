@@ -1447,10 +1447,10 @@ function renderBtcSignals(signals){
 
     var entryHtml=isUnlocked
       ?'<div class="signal-entry-label">진입가</div><div class="'+entryCls+'">'+(s.entry||'—')+'</div>'
-      :'<div class="signal-entry-label">진입가</div><div class="'+entryCls+'" style="filter:blur(6px);user-select:none;cursor:pointer;" onclick="if(!tgUser){openLoginModal();}else{document.getElementById('member-modal').classList.add('show');}">00,000</div>';
+      :'<div class="signal-entry-label">진입가</div><div class="'+entryCls+'" style="filter:blur(6px);user-select:none;cursor:pointer;" onclick="if(!tgUser){openLoginModal();}else{document.getElementById(\'member-modal\').classList.add(\'show\');}">00,000</div>';
     var timeHtml=isUnlocked
       ?'<div class="signal-time">⏱ '+timeStr+'</div>'
-      :'<div class="signal-time" style="filter:blur(4px);user-select:none;cursor:pointer;" onclick="if(!tgUser){openLoginModal();}else{document.getElementById('member-modal').classList.add('show');}">00-00 00:00</div>';
+      :'<div class="signal-time" style="filter:blur(4px);user-select:none;cursor:pointer;" onclick="if(!tgUser){openLoginModal();}else{document.getElementById(\'member-modal\').classList.add(\'show\');}">00-00 00:00</div>';
 
     html+='<div class="'+itemCls+'">';
     html+='<div class="signal-left">';
