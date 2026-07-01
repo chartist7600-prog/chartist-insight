@@ -1,5 +1,23 @@
 [
   {
+    "ticker": "RIF",
+    "name": "RIF",
+    "exchange": "바이낸스",
+    "entry_price": 0.091,
+    "currency": "USDT",
+    "entry_time": "2026-07-01 09:09",
+    "signal": "trend"
+  },
+  {
+    "ticker": "GNS",
+    "name": "GNS",
+    "exchange": "바이낸스",
+    "entry_price": 0.568,
+    "currency": "USDT",
+    "entry_time": "2026-07-01 09:09",
+    "signal": "trend"
+  },
+  {
     "ticker": "A8",
     "name": "A8",
     "exchange": "빗썸",
@@ -69,24 +87,6 @@
     "entry_price": 0.000587,
     "currency": "USDT",
     "entry_time": "2026-06-29 09:09",
-    "signal": "trend"
-  },
-  {
-    "ticker": "ACT",
-    "name": "ACT",
-    "exchange": "바이낸스",
-    "entry_price": 0.01454,
-    "currency": "USDT",
-    "entry_time": "2026-06-28 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "SNX",
-    "name": "SNX",
-    "exchange": "빗썸",
-    "entry_price": 348.0,
-    "currency": "KRW",
-    "entry_time": "2026-06-28 13:25",
     "signal": "trend"
   }
 ]
