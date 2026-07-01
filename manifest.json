@@ -1,11 +1,12 @@
 {
   "name": "차티스트 인사이트",
   "short_name": "차티스트",
-  "description": "알트코인 네비게이션 · 추세전환 · RSI 다이버전스 신호",
+  "description": "데이터 기반 크립토 인사이트 · 실시간 신호",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0e0e0e",
   "theme_color": "#C9A84C",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "/favicon-192v2.png",
