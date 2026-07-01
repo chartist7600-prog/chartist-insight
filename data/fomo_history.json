@@ -1,5 +1,32 @@
 [
   {
+    "ticker": "CYS",
+    "name": "CYS",
+    "exchange": "빗썸",
+    "entry_price": 552.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-01 21:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "NFP",
+    "name": "NFP",
+    "exchange": "바이낸스",
+    "entry_price": 0.01023,
+    "currency": "USDT",
+    "entry_time": "2026-07-01 21:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "NOM",
+    "name": "NOM",
+    "exchange": "바이낸스",
+    "entry_price": 0.0016,
+    "currency": "USDT",
+    "entry_time": "2026-07-01 21:05",
+    "signal": "trend"
+  },
+  {
     "ticker": "RIF",
     "name": "RIF",
     "exchange": "바이낸스",
@@ -59,33 +86,6 @@
     "exchange": "빗썸",
     "entry_price": 39.98,
     "currency": "KRW",
-    "entry_time": "2026-06-29 09:09",
-    "signal": "trend"
-  },
-  {
-    "ticker": "COOKIE",
-    "name": "COOKIE",
-    "exchange": "빗썸",
-    "entry_price": 14.71,
-    "currency": "KRW",
-    "entry_time": "2026-06-29 09:09",
-    "signal": "trend"
-  },
-  {
-    "ticker": "GWEI",
-    "name": "GWEI",
-    "exchange": "빗썸",
-    "entry_price": 217.0,
-    "currency": "KRW",
-    "entry_time": "2026-06-29 09:09",
-    "signal": "trend"
-  },
-  {
-    "ticker": "MEME",
-    "name": "MEME",
-    "exchange": "바이낸스",
-    "entry_price": 0.000587,
-    "currency": "USDT",
     "entry_time": "2026-06-29 09:09",
     "signal": "trend"
   }

@@ -10,5 +10,23 @@
     "time": "2026-07-01 09:00",
     "price": 0.568,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_CYS",
+    "time": "2026-07-01 21:00",
+    "price": 552.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_NFP",
+    "time": "2026-07-01 21:00",
+    "price": 0.01023,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_NOM",
+    "time": "2026-07-01 21:00",
+    "price": 0.0016,
+    "sig_type": "trend"
   }
 ]
