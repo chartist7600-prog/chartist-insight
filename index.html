@@ -2623,4 +2623,44 @@ window.addEventListener('scroll',function(){
   </div>
 </div>
 
+<script>
+// ══ PWA 서비스워커 등록 ══
+const VAPID_PUBLIC_KEY = 'BMZitEkdCP09DzzfCdwqvHIgWn6wpEfqLpNVTPLHJqltfgAsZaM7Er3byv8q18B9kdtvHf59ai5Qj-9NLcgH05E';
+
+if('serviceWorker' in navigator && 'PushManager' in window) {
+  navigator.serviceWorker.register('/sw.js').then(function(reg) {
+    console.log('ServiceWorker 등록 완료');
+    window._swReg = reg;
+  }).catch(function(err) {
+    console.log('ServiceWorker 등록 실패:', err);
+  });
+}
+
+function urlBase64ToUint8Array(base64String) {
+  const padding = '='.repeat((4 - base64String.length % 4) % 4);
+  const base64 = (base64String + padding).replace(/-/g, '+').replace(/_/g, '/');
+  const rawData = atob(base64);
+  return new Uint8Array([...rawData].map(c => c.charCodeAt(0)));
+}
+
+async function subscribePush() {
+  if (!window._swReg) { alert('서비스워커가 준비되지 않았습니다.'); return; }
+  try {
+    const sub = await window._swReg.pushManager.subscribe({
+      userVisibleOnly: true,
+      applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY)
+    });
+    const tgId = tgUser ? tgUser.id : null;
+    await fetch('/push/subscribe', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ subscription: sub, tg_id: tgId })
+    });
+    alert('알림 구독 완료! 신호 발생 시 알림을 받습니다.');
+  } catch(e) {
+    console.error('푸시 구독 실패:', e);
+    alert('알림 허용이 필요합니다.');
+  }
+}
+</script>
 </body>
