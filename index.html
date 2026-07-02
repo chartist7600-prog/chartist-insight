@@ -1744,6 +1744,13 @@ function showSoundPopup(){
     var btn=document.getElementById('stype-'+t);
     if(btn)btn.classList.toggle('active',t===stype);
   });
+  var pushSaved = null;
+  try { pushSaved = JSON.parse(localStorage.getItem('push_categories') || 'null'); } catch(e){}
+  var pushSelected = (Array.isArray(pushSaved) && pushSaved.length) ? pushSaved : PUSH_CATEGORIES.slice();
+  document.querySelectorAll('.push-cat-item').forEach(function(pcb){
+    pcb.checked = pushSelected.indexOf(pcb.value) !== -1;
+  });
+  updatePushAllCheckbox();
   var overlay=document.getElementById('sound-overlay');
   if(overlay)overlay.classList.add('show');
 }
@@ -2284,7 +2291,6 @@ function tgUpdateUI() {
       '<div class="tg-dropdown" id="tg-dropdown">' +
         '<div class="tg-dropdown-name"><span class="tg-user-name">' + dispName + '</span>' + badge + '</div>' +
         '<div class="tg-dropdown-actions">' +
-          '<button class="tg-logout-btn" onclick="openPushSettings()" title="푸시 알림 구독" style="background:transparent;border:0.5px solid rgba(201,168,76,0.4);color:#C9A84C;padding:6px 10px;border-radius:5px;font-size:11px;cursor:pointer;">📲 알림</button>' +
           '<button class="tg-logout-btn" onclick="tgLogout()">로그아웃</button>' +
         '</div>' +
       '</div>' +
@@ -2538,23 +2544,6 @@ function serviceNavClick(tab) {
     <button class="member-modal-close" onclick="document.getElementById('member-modal').classList.remove('show')">닫기</button>
   </div>
 </div>
-<div class="member-modal-overlay" id="push-modal" onclick="if(event.target===this)closePushModal()">
-  <div class="member-modal-box" style="text-align:left;max-width:320px;">
-    <div class="member-modal-icon" style="text-align:center;">🔔</div>
-    <div class="member-modal-title" style="text-align:center;">알림 받을 신호 선택</div>
-    <div class="member-modal-desc" style="text-align:center;margin-bottom:16px;">선택한 신호가 발생하면<br>폰으로 알림을 보내드려요</div>
-    <div id="push-cat-list" style="display:flex;flex-direction:column;margin-bottom:20px;">
-      <label class="push-cat-row"><input type="checkbox" id="pc-all" onchange="pushToggleAll(this)"><span>전체</span></label>
-      <div style="height:1px;background:#242424;margin:6px 0;"></div>
-      <label class="push-cat-row"><input type="checkbox" class="push-cat-item" value="btc"><span>₿ 비트코인</span></label>
-      <label class="push-cat-row"><input type="checkbox" class="push-cat-item" value="alt_trend"><span>📊 알트 추세전환</span></label>
-      <label class="push-cat-row"><input type="checkbox" class="push-cat-item" value="alt_whale"><span>🐋 알트 고래봇</span></label>
-      <label class="push-cat-row"><input type="checkbox" class="push-cat-item" value="alt_div"><span>📈 알트 RSI 다이버전스</span></label>
-    </div>
-    <button class="member-modal-btn" onclick="savePushSettings()">저장</button>
-    <button class="member-modal-close" onclick="closePushModal()">취소</button>
-  </div>
-</div>
 
 <button id="scroll-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 <footer class="site-footer">
@@ -2682,6 +2671,17 @@ window.addEventListener('scroll',function(){
         <button class="sound-type-btn" id="stype-elec" onclick="setSoundType('elec',this);previewSound('elec')">전자음</button>
       </div>
     </div>
+    <div style="height:1px;background:#242424;margin:18px 0 14px;"></div>
+    <div class="sound-type-label" style="margin-bottom:10px;">📱 폰 푸시 알림 (신호 유형)</div>
+    <div id="push-cat-list" style="display:flex;flex-direction:column;margin-bottom:14px;">
+      <label class="push-cat-row"><input type="checkbox" id="pc-all" onchange="pushToggleAll(this)"><span>전체</span></label>
+      <div style="height:1px;background:#242424;margin:6px 0;"></div>
+      <label class="push-cat-row"><input type="checkbox" class="push-cat-item" value="btc"><span>₿ 비트코인</span></label>
+      <label class="push-cat-row"><input type="checkbox" class="push-cat-item" value="alt_trend"><span>📊 알트 추세전환</span></label>
+      <label class="push-cat-row"><input type="checkbox" class="push-cat-item" value="alt_whale"><span>🐋 알트 고래봇</span></label>
+      <label class="push-cat-row"><input type="checkbox" class="push-cat-item" value="alt_div"><span>📈 알트 RSI 다이버전스</span></label>
+    </div>
+    <button class="member-modal-btn" onclick="savePushSettings()" style="margin-bottom:0;">푸시 알림 저장</button>
   </div>
 </div>
 
@@ -2729,23 +2729,6 @@ function urlBase64ToUint8Array(base64String) {
 
 var PUSH_CATEGORIES = ['btc', 'alt_trend', 'alt_whale', 'alt_div'];
 
-function openPushSettings(){
-  var saved = null;
-  try { saved = JSON.parse(localStorage.getItem('push_categories') || 'null'); } catch(e){}
-  var selected = (Array.isArray(saved) && saved.length) ? saved : PUSH_CATEGORIES.slice();
-  document.querySelectorAll('.push-cat-item').forEach(function(cb){
-    cb.checked = selected.indexOf(cb.value) !== -1;
-  });
-  updatePushAllCheckbox();
-  var el = document.getElementById('push-modal');
-  if (el) el.classList.add('show');
-}
-
-function closePushModal(){
-  var el = document.getElementById('push-modal');
-  if (el) el.classList.remove('show');
-}
-
 function pushToggleAll(allCb){
   document.querySelectorAll('.push-cat-item').forEach(function(cb){ cb.checked = allCb.checked; });
 }
@@ -2775,7 +2758,6 @@ async function savePushSettings(){
     return;
   }
   localStorage.setItem('push_categories', JSON.stringify(selected));
-  closePushModal();
   await subscribePush(selected);
 }
 
