@@ -834,6 +834,16 @@
   .tg-logout-btn:hover{border-color:rgba(255,255,255,0.3);color:#f0f0f0;}
   .tg-member-badge{background:rgba(201,168,76,0.15);border:0.5px solid rgba(201,168,76,0.4);color:#C9A84C;font-size:10px;padding:2px 7px;border-radius:4px;}
   .tg-nonmember-badge{background:rgba(255,80,80,0.1);border:0.5px solid rgba(255,80,80,0.3);color:#ff6b6b;font-size:10px;padding:2px 7px;border-radius:4px;}
+  /* ══ 로그인 아바타/드롭다운 ══ */
+  .tg-avatar-wrap{position:relative;}
+  .tg-avatar-btn{width:30px;height:30px;border-radius:50%;background:rgba(201,168,76,0.15);border:1px solid rgba(201,168,76,0.4);color:#C9A84C;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;}
+  .tg-avatar-btn:hover{opacity:0.85;}
+  .tg-dropdown{position:absolute;top:calc(100% + 10px);right:0;background:#161616;border:0.5px solid rgba(255,255,255,0.12);border-radius:10px;padding:14px;min-width:190px;display:none;flex-direction:column;gap:10px;z-index:9500;box-shadow:0 8px 24px rgba(0,0,0,0.45);}
+  .tg-dropdown.show{display:flex;}
+  .tg-dropdown-name{color:#f0f0f0;font-weight:600;font-size:13px;display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
+  .tg-dropdown-name span.tg-user-name{color:#C9A84C;}
+  .tg-dropdown-actions{display:flex;gap:6px;}
+  .tg-dropdown-actions .tg-logout-btn{flex:1;text-align:center;}
 
   .fomo-section{background:#0e0e0e;padding:16px 20px 32px;border-bottom:0.5px solid rgba(255,255,255,0.06);}
   .fomo-container{max-width:900px;margin:0 auto;position:relative;padding:20px 20px;border:0.5px solid rgba(201,168,76,0.2);border-radius:16px;background:rgba(201,168,76,0.02);}
@@ -884,12 +894,6 @@
   <div class="sth-right">
     <span class="sth-live"><span class="sth-dot"></span><span class="sth-btn-text">LIVE</span></span>
     <button class="sth-btn sth-btn-icon" id="sound-toggle-btn" onclick="showSoundPopup()" title="알림음 설정">🔔</button>
-    <a class="sth-btn sth-btn-youtube" href="https://www.youtube.com/@CHARTISTLAB" target="_blank">
-      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg><span class="sth-btn-text">유튜브</span>
-    </a>
-    <a class="sth-btn sth-btn-fanding" href="https://fanding.kr/@bzcLu6QCTdMe/membership/" target="_blank">
-      <img src="https://fanding.kr/favicon.ico" width="15" height="15" style="border-radius:3px;opacity:0.85;"><span class="sth-btn-text">구독하기</span>
-    </a>
     <div id="tg-auth-area">
     <button class="tg-login-btn" onclick="tgLogin()">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm5.9 8.2l-2 9.4c-.1.6-.5.8-1 .5l-2.8-2.1-1.3 1.3c-.2.2-.3.3-.6.3l.2-2.9 5.1-4.6c.2-.2 0-.3-.3-.1L6.1 14.7 3.4 14c-.6-.2-.6-.6.1-.8l11.6-4.5c.5-.2 1 .1.8.8z"/></svg>
@@ -2235,7 +2239,18 @@ function tgUpdateUI() {
     var badge = tgUser.is_member
       ? '<span class="tg-member-badge">멤버</span>'
       : '<span class="tg-nonmember-badge">비멤버</span>';
-    area.innerHTML = '<div class="tg-user-info"><span class="tg-user-name">' + (tgUser.first_name || tgUser.username) + '</span>' + badge + '<button class="tg-logout-btn" onclick="subscribePush()" title="푸시 알림 구독" style="background:transparent;border:0.5px solid rgba(201,168,76,0.4);color:#C9A84C;padding:4px 10px;border-radius:5px;font-size:11px;cursor:pointer;">📲</button><button class="tg-logout-btn" onclick="tgLogout()">로그아웃</button></div>';
+    var dispName = tgUser.first_name || tgUser.username || '?';
+    var initial = dispName.trim().charAt(0).toUpperCase();
+    area.innerHTML = '<div class="tg-avatar-wrap" id="tg-avatar-wrap">' +
+      '<button class="tg-avatar-btn" onclick="toggleTgDropdown(event)" title="계정 메뉴">' + initial + '</button>' +
+      '<div class="tg-dropdown" id="tg-dropdown">' +
+        '<div class="tg-dropdown-name"><span class="tg-user-name">' + dispName + '</span>' + badge + '</div>' +
+        '<div class="tg-dropdown-actions">' +
+          '<button class="tg-logout-btn" onclick="subscribePush()" title="푸시 알림 구독" style="background:transparent;border:0.5px solid rgba(201,168,76,0.4);color:#C9A84C;padding:6px 10px;border-radius:5px;font-size:11px;cursor:pointer;">📲 알림</button>' +
+          '<button class="tg-logout-btn" onclick="tgLogout()">로그아웃</button>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
     initBtcBlur();
     if(document.getElementById('tab-btc').classList.contains('active')){loadBtcSignals();}
     var fb=document.getElementById('footer-login-btn');if(fb)fb.style.display='none';
@@ -2244,6 +2259,19 @@ function tgUpdateUI() {
     area.innerHTML = '<button class="tg-login-btn" onclick="tgLogin()"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm5.9 8.2l-2 9.4c-.1.6-.5.8-1 .5l-2.8-2.1-1.3 1.3c-.2.2-.3.3-.6.3l.2-2.9 5.1-4.6c.2-.2 0-.3-.3-.1L6.1 14.7 3.4 14c-.6-.2-.6-.6.1-.8l11.6-4.5c.5-.2 1 .1.8.8z"/></svg>로그인</button>';
   }
 }
+
+function toggleTgDropdown(e) {
+  if (e) e.stopPropagation();
+  var dd = document.getElementById('tg-dropdown');
+  if (!dd) return;
+  dd.classList.toggle('show');
+}
+document.addEventListener('click', function(e) {
+  var wrap = document.getElementById('tg-avatar-wrap');
+  var dd = document.getElementById('tg-dropdown');
+  if (!wrap || !dd || !dd.classList.contains('show')) return;
+  if (!wrap.contains(e.target)) dd.classList.remove('show');
+});
 
 // 페이지 로드시 로그인 상태 복원
 (function() {
