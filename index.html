@@ -588,6 +588,30 @@
   .jf-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;}
   .jf-field{display:flex;flex-direction:column;gap:4px;}
   .jf-label{font-size:11px;color:var(--text3);}
+  /* ══ 매매일지 통계/신규기록 폼 정리 ══ */
+  .j-stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px;}
+  .j-stat-card{background:#1a1a1a;border:1px solid #242424;border-radius:10px;padding:14px;position:relative;overflow:hidden;}
+  .j-stat-bar{position:absolute;top:0;left:0;right:0;height:2px;background:#C9A84C;}
+  .j-stat-label{font-size:10px;color:#777;letter-spacing:0.6px;text-transform:uppercase;margin-bottom:8px;}
+  .j-stat-value{font-size:18px;font-weight:700;color:#e2e2e2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:flex;flex-direction:column;gap:2px;}
+  .j-stat-num{font-size:18px;font-weight:700;}
+  .j-stat-sub{font-size:11px;font-weight:500;color:#666;}
+  @media(max-width:520px){
+    .j-stat-grid{grid-template-columns:repeat(2,1fr);gap:8px;}
+    .j-stat-card{padding:12px;}
+    .j-stat-value,.j-stat-num{font-size:15px;}
+  }
+  .j-form-row{display:grid;gap:10px;margin-bottom:10px;}
+  .j-form-row-1{grid-template-columns:2fr 1fr 1fr 1fr;}
+  .j-form-row-2{grid-template-columns:repeat(5,1fr);}
+  .j-field label{display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .j-field input,.j-field select{width:100%;height:36px;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:0 10px;outline:none;box-sizing:border-box;transition:border-color 0.15s;}
+  .j-field input[type="date"]{color-scheme:dark;}
+  .j-field input:focus,.j-field select:focus{border-color:#C9A84C;}
+  @media(max-width:520px){
+    .j-form-row-1{grid-template-columns:1fr 1fr;}
+    .j-form-row-2{grid-template-columns:1fr 1fr;}
+  }
   .jf-req{color:var(--red);font-size:9px;margin-left:2px;}
   .jf-input{background:var(--bg3);border:0.5px solid var(--border2);border-radius:8px;padding:9px 11px;color:var(--text);font-family:'JetBrains Mono',monospace;font-size:13px;width:100%;transition:border-color 0.15s;}
   .jf-input:focus{outline:none;border-color:var(--gold);}
@@ -1229,28 +1253,28 @@
   <div id="j-main-screen" style="display:block;padding:20px 16px;"><div style="background:rgba(34,158,217,0.15);border:1.5px solid rgba(34,158,217,0.5);border-radius:10px;padding:14px 20px;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;gap:12px;"><span style="font-size:13px;color:#ddd;font-weight:500;">📌 텔레그램 로그인 시 매매 기록이 <strong style="color:#C9A84C;">영구 저장</strong>됩니다</span><button onclick="tgLogin()" style="background:#229ED9;color:#fff;border:none;border-radius:6px;padding:6px 14px;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;">로그인</button></div>
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
       <div><div style="font-size:16px;font-weight:700;color:#C9A84C;">📒 매매일지</div><div style="font-size:12px;color:#666;margin-top:2px;" id="j-user-label"></div></div>
-      <button onclick="journalLogout()" style="background:transparent;color:#777;border:1px solid #242424;border-radius:6px;padding:6px 14px;font-size:12px;cursor:pointer;">로그아웃</button>
+      <button id="j-logout-btn" onclick="journalLogout()" style="display:none;background:transparent;color:#777;border:1px solid #242424;border-radius:6px;padding:6px 14px;font-size:12px;cursor:pointer;">로그아웃</button>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px;">
-      <div style="background:#1a1a1a;border:1px solid #242424;border-radius:10px;padding:16px;position:relative;overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:#C9A84C;"></div><div style="font-size:10px;color:#777;letter-spacing:0.6px;text-transform:uppercase;margin-bottom:8px;">총 매매</div><div style="font-size:22px;font-weight:700;color:#e2e2e2;" id="j-s-total">-</div></div>
-      <div style="background:#1a1a1a;border:1px solid #242424;border-radius:10px;padding:16px;position:relative;overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:#C9A84C;" id="j-s-wr-bar"></div><div style="font-size:10px;color:#777;letter-spacing:0.6px;text-transform:uppercase;margin-bottom:8px;">승률</div><div style="font-size:22px;font-weight:700;" id="j-s-wr">-</div></div>
-      <div style="background:#1a1a1a;border:1px solid #242424;border-radius:10px;padding:16px;position:relative;overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:#C9A84C;" id="j-s-pnl-bar"></div><div style="font-size:10px;color:#777;letter-spacing:0.6px;text-transform:uppercase;margin-bottom:8px;">총 손익</div><div style="font-size:22px;font-weight:700;" id="j-s-pnl">-</div></div>
-      <div style="background:#1a1a1a;border:1px solid #242424;border-radius:10px;padding:16px;position:relative;overflow:hidden;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:#C9A84C;"></div><div style="font-size:10px;color:#777;letter-spacing:0.6px;text-transform:uppercase;margin-bottom:8px;">평균 RR</div><div style="font-size:22px;font-weight:700;color:#e2e2e2;" id="j-s-rr">-</div></div>
+    <div class="j-stat-grid">
+      <div class="j-stat-card"><div class="j-stat-bar"></div><div class="j-stat-label">총 매매</div><div class="j-stat-value" id="j-s-total">-</div></div>
+      <div class="j-stat-card"><div class="j-stat-bar" id="j-s-wr-bar"></div><div class="j-stat-label">승률</div><div class="j-stat-value" id="j-s-wr">-</div></div>
+      <div class="j-stat-card"><div class="j-stat-bar" id="j-s-pnl-bar"></div><div class="j-stat-label">총 손익</div><div class="j-stat-value" id="j-s-pnl">-</div></div>
+      <div class="j-stat-card"><div class="j-stat-bar"></div><div class="j-stat-label">평균 RR</div><div class="j-stat-value" id="j-s-rr">-</div></div>
     </div>
     <div style="background:#1a1a1a;border:1px solid #242424;border-left:3px solid #C9A84C;border-radius:10px;padding:20px;margin-bottom:20px;">
       <div style="font-size:12px;font-weight:700;color:#C9A84C;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:16px;">신규 매매 기록</div>
-      <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:10px;margin-bottom:10px;">
-        <div style="position:relative;"><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">종목</label><input id="j-ticker" type="text" placeholder="BTCUSDT" oninput="searchTicker(this.value)" autocomplete="off" oninput="searchTicker(this.value)" autocomplete="off" oninput="searchTicker(this.value)" autocomplete="off" oninput="searchTicker(this.value)" autocomplete="off" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
-        <div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">방향</label><select id="j-dir" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;"><option value="LONG">LONG</option><option value="SHORT">SHORT</option></select></div>
-        <div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">배율</label><input id="j-lev" type="text" placeholder="10x" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
-        <div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">진입일</label><input id="j-date" type="date" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;color-scheme:dark;"></div>
+      <div class="j-form-row j-form-row-1">
+        <div class="j-field"><label>종목</label><input id="j-ticker" type="text" placeholder="BTCUSDT" oninput="searchTicker(this.value)" autocomplete="off"></div>
+        <div class="j-field"><label>방향</label><select id="j-dir"><option value="LONG">LONG</option><option value="SHORT">SHORT</option></select></div>
+        <div class="j-field"><label>배율</label><input id="j-lev" type="text" placeholder="10x"></div>
+        <div class="j-field"><label>진입일</label><input id="j-date" type="date"></div>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:14px;">
-        <div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">진입가</label><input id="j-entry" type="text" placeholder="103,450" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
-        <div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">청산가</label><input id="j-exit" type="text" placeholder="—" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
-        <div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">투자금($)</label><input id="j-size" type="text" placeholder="1,000" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
-        <div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">손절가</label><input id="j-sl" type="text" placeholder="—" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
-        <div><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">목표가</label><input id="j-tp" type="text" placeholder="—" style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
+      <div class="j-form-row j-form-row-2">
+        <div class="j-field"><label>진입가</label><input id="j-entry" type="text" placeholder="103,450" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')"></div>
+        <div class="j-field"><label>청산가</label><input id="j-exit" type="text" placeholder="—" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')"></div>
+        <div class="j-field"><label>투자금($)</label><input id="j-size" type="text" placeholder="1,000" oninput="this.value=this.value.replace(/[^0-9.]/g,'')" onblur="if(this.value)this.value=parseFloat(this.value).toLocaleString('ko-KR')"></div>
+        <div class="j-field"><label>손절가</label><input id="j-sl" type="text" placeholder="—"></div>
+        <div class="j-field"><label>목표가</label><input id="j-tp" type="text" placeholder="—"></div>
       </div>
       <div style="margin-bottom:14px;"><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">메모</label><input id="j-memo" type="text" placeholder="진입 근거, 특이사항..." style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
       <div style="display:flex;gap:8px;justify-content:flex-end;">
@@ -1274,16 +1298,16 @@
       <button class="j-filter" onclick="jSetFilter('SHORT',this)" style="font-size:12px;padding:5px 14px;border:1px solid #242424;border-radius:20px;background:transparent;color:#777;cursor:pointer;">SHORT만</button>
     </div>
     <div style="overflow-x:auto;">
-      <table style="width:100%;border-collapse:collapse;font-size:13px;">
+      <table style="width:100%;min-width:640px;border-collapse:collapse;font-size:13px;">
         <thead><tr>
           <th style="font-size:10px;color:#777;text-align:left;padding:8px 12px;border-bottom:1px solid #242424;text-transform:uppercase;white-space:nowrap;">종목</th>
-          <th style="font-size:10px;color:#777;text-align:left;padding:8px 12px;border-bottom:1px solid #242424;text-transform:uppercase;">방향</th>
-          <th style="font-size:10px;color:#777;text-align:left;padding:8px 12px;border-bottom:1px solid #242424;text-transform:uppercase;">진입가</th>
-          <th style="font-size:10px;color:#777;text-align:left;padding:8px 12px;border-bottom:1px solid #242424;text-transform:uppercase;">청산가</th>
-          <th style="font-size:10px;color:#777;text-align:left;padding:8px 12px;border-bottom:1px solid #242424;text-transform:uppercase;">투자금</th>
-          <th style="font-size:10px;color:#777;text-align:left;padding:8px 12px;border-bottom:1px solid #242424;text-transform:uppercase;">손익</th>
-          <th style="font-size:10px;color:#777;text-align:left;padding:8px 12px;border-bottom:1px solid #242424;text-transform:uppercase;">손익률</th>
-          <th style="font-size:10px;color:#777;text-align:left;padding:8px 12px;border-bottom:1px solid #242424;text-transform:uppercase;">상태</th>
+          <th style="font-size:10px;color:#777;text-align:left;padding:8px 12px;border-bottom:1px solid #242424;text-transform:uppercase;white-space:nowrap;">방향</th>
+          <th style="font-size:10px;color:#777;text-align:left;padding:8px 12px;border-bottom:1px solid #242424;text-transform:uppercase;white-space:nowrap;">진입가</th>
+          <th style="font-size:10px;color:#777;text-align:left;padding:8px 12px;border-bottom:1px solid #242424;text-transform:uppercase;white-space:nowrap;">청산가</th>
+          <th style="font-size:10px;color:#777;text-align:left;padding:8px 12px;border-bottom:1px solid #242424;text-transform:uppercase;white-space:nowrap;">투자금</th>
+          <th style="font-size:10px;color:#777;text-align:left;padding:8px 12px;border-bottom:1px solid #242424;text-transform:uppercase;white-space:nowrap;">손익</th>
+          <th style="font-size:10px;color:#777;text-align:left;padding:8px 12px;border-bottom:1px solid #242424;text-transform:uppercase;white-space:nowrap;">손익률</th>
+          <th style="font-size:10px;color:#777;text-align:left;padding:8px 12px;border-bottom:1px solid #242424;text-transform:uppercase;white-space:nowrap;">상태</th>
           <th style="font-size:10px;color:#777;text-align:left;padding:8px 12px;border-bottom:1px solid #242424;"></th>
         </tr></thead>
         <tbody id="j-tbody"><tr><td colspan="9" style="text-align:center;padding:60px 20px;color:#555;font-size:13px;">📋 매매 기록이 없습니다</td></tr></tbody>
@@ -2003,6 +2027,18 @@ function journalLogout(){
   tgLogout();
 }
 
+function jUpdateAuthUI(){
+  var btn=document.getElementById('j-logout-btn');
+  var label=document.getElementById('j-user-label');
+  if(tgUser){
+    if(btn)btn.style.display='';
+    if(label)label.textContent='@'+(tgUser.username||tgUser.first_name||'');
+  }else{
+    if(btn)btn.style.display='none';
+    if(label)label.textContent='';
+  }
+}
+
 async function jLoadTrades(){
   var tgId=jGetTgId();
   if(!tgId){jAllTrades=[];jRenderStats();jRenderList();return;}
@@ -2024,7 +2060,7 @@ function jRenderStats(){
     var rrS=0,rrC=0;
     closed.forEach(function(t){var en=parseFloat(t.entry)||0,ex=parseFloat(t.exit_price||t.exit)||0,sl=parseFloat(t.stop_loss||t.sl)||0;if(en&&ex&&sl&&Math.abs(en-sl)>0){rrS+=Math.abs(ex-en)/Math.abs(en-sl);rrC++;}});
     var openCnt=(jAllTrades||[]).filter(function(t){return t&&t.status==='open';}).length;
-    var ts=document.getElementById('j-s-total');if(ts)ts.textContent=jAllTrades.length+'건 (오픈 '+openCnt+')';
+    var ts=document.getElementById('j-s-total');if(ts)ts.innerHTML='<span class="j-stat-num">'+jAllTrades.length+'건</span><span class="j-stat-sub">오픈 '+openCnt+'</span>';
     var we=document.getElementById('j-s-wr');if(we){we.textContent=wr+'%';we.style.color=wr>=50?'#26a642':'#e2534a';}
     var wb=document.getElementById('j-s-wr-bar');if(wb)wb.style.background=wr>=50?'#26a642':'#e2534a';
     var pe=document.getElementById('j-s-pnl');if(pe){pe.textContent=(totalPnl>0?'+':'')+totalPnl.toFixed(1)+'$';pe.style.color=totalPnl>0?'#26a642':totalPnl<0?'#e2534a':'#e2e2e2';}
@@ -2258,6 +2294,7 @@ function tgUpdateUI() {
     var fb=document.getElementById('footer-login-btn');if(fb)fb.style.display='';
     area.innerHTML = '<button class="tg-login-btn" onclick="tgLogin()"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm5.9 8.2l-2 9.4c-.1.6-.5.8-1 .5l-2.8-2.1-1.3 1.3c-.2.2-.3.3-.6.3l.2-2.9 5.1-4.6c.2-.2 0-.3-.3-.1L6.1 14.7 3.4 14c-.6-.2-.6-.6.1-.8l11.6-4.5c.5-.2 1 .1.8.8z"/></svg>로그인</button>';
   }
+  jUpdateAuthUI();
 }
 
 function toggleTgDropdown(e) {
