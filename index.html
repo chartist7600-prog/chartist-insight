@@ -2644,9 +2644,13 @@ function urlBase64ToUint8Array(base64String) {
 }
 
 async function subscribePush() {
-  if (!window._swReg) { alert('서비스워커가 준비되지 않았습니다.'); return; }
+  if (!('serviceWorker' in navigator) || !('PushManager' in window)) {
+    alert('이 브라우저는 푸시 알림을 지원하지 않습니다.');
+    return;
+  }
   try {
-    const sub = await window._swReg.pushManager.subscribe({
+    const reg = await navigator.serviceWorker.ready;
+    const sub = await reg.pushManager.subscribe({
       userVisibleOnly: true,
       applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY)
     });
@@ -2659,7 +2663,7 @@ async function subscribePush() {
     alert('알림 구독 완료! 신호 발생 시 알림을 받습니다.');
   } catch(e) {
     console.error('푸시 구독 실패:', e);
-    alert('알림 허용이 필요합니다.');
+    alert('알림 허용이 필요합니다. 브라우저 설정에서 알림을 허용해주세요.');
   }
 }
 </script>
