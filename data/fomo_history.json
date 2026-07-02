@@ -1,5 +1,41 @@
 [
   {
+    "ticker": "MORPHO",
+    "name": "MORPHO",
+    "exchange": "빗썸",
+    "entry_price": 3161.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-02 09:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "POND",
+    "name": "POND",
+    "exchange": "바이낸스",
+    "entry_price": 0.00153,
+    "currency": "USDT",
+    "entry_time": "2026-07-02 09:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "TLM",
+    "name": "TLM",
+    "exchange": "바이낸스",
+    "entry_price": 0.001495,
+    "currency": "USDT",
+    "entry_time": "2026-07-02 09:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "SLP",
+    "name": "SLP",
+    "exchange": "바이낸스",
+    "entry_price": 0.000507,
+    "currency": "USDT",
+    "entry_time": "2026-07-02 09:05",
+    "signal": "trend"
+  },
+  {
     "ticker": "CYS",
     "name": "CYS",
     "exchange": "빗썸",
@@ -51,42 +87,6 @@
     "entry_price": 9.883,
     "currency": "KRW",
     "entry_time": "2026-06-30 09:09",
-    "signal": "trend"
-  },
-  {
-    "ticker": "ORDI",
-    "name": "ORDI",
-    "exchange": "바이낸스",
-    "entry_price": 3.836,
-    "currency": "USDT",
-    "entry_time": "2026-06-30 09:09",
-    "signal": "trend"
-  },
-  {
-    "ticker": "EDU",
-    "name": "EDU",
-    "exchange": "빗썸",
-    "entry_price": 48.6,
-    "currency": "KRW",
-    "entry_time": "2026-06-29 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "MAGIC",
-    "name": "MAGIC",
-    "exchange": "빗썸",
-    "entry_price": 71.87,
-    "currency": "KRW",
-    "entry_time": "2026-06-29 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "S",
-    "name": "S",
-    "exchange": "빗썸",
-    "entry_price": 39.98,
-    "currency": "KRW",
-    "entry_time": "2026-06-29 09:09",
     "signal": "trend"
   }
 ]
