@@ -422,6 +422,8 @@
   .member-modal-desc{font-size:13px;color:#888;line-height:1.8;margin-bottom:24px;}
   .member-modal-btn{display:block;width:100%;background:#C9A84C;color:#0e0e0e;border:none;border-radius:10px;padding:13px;font-size:14px;font-weight:700;cursor:pointer;text-decoration:none;margin-bottom:10px;}
   .member-modal-close{background:transparent;border:0.5px solid #333;border-radius:10px;padding:10px;color:#666;font-size:13px;cursor:pointer;width:100%;}
+  .push-cat-row{display:flex;align-items:center;gap:10px;font-size:13px;color:#ddd;cursor:pointer;padding:4px 0;}
+  .push-cat-row input[type="checkbox"]{width:16px;height:16px;accent-color:#C9A84C;cursor:pointer;flex-shrink:0;}
 
 
 
@@ -2282,7 +2284,7 @@ function tgUpdateUI() {
       '<div class="tg-dropdown" id="tg-dropdown">' +
         '<div class="tg-dropdown-name"><span class="tg-user-name">' + dispName + '</span>' + badge + '</div>' +
         '<div class="tg-dropdown-actions">' +
-          '<button class="tg-logout-btn" onclick="subscribePush()" title="푸시 알림 구독" style="background:transparent;border:0.5px solid rgba(201,168,76,0.4);color:#C9A84C;padding:6px 10px;border-radius:5px;font-size:11px;cursor:pointer;">📲 알림</button>' +
+          '<button class="tg-logout-btn" onclick="openPushSettings()" title="푸시 알림 구독" style="background:transparent;border:0.5px solid rgba(201,168,76,0.4);color:#C9A84C;padding:6px 10px;border-radius:5px;font-size:11px;cursor:pointer;">📲 알림</button>' +
           '<button class="tg-logout-btn" onclick="tgLogout()">로그아웃</button>' +
         '</div>' +
       '</div>' +
@@ -2536,6 +2538,23 @@ function serviceNavClick(tab) {
     <button class="member-modal-close" onclick="document.getElementById('member-modal').classList.remove('show')">닫기</button>
   </div>
 </div>
+<div class="member-modal-overlay" id="push-modal" onclick="if(event.target===this)closePushModal()">
+  <div class="member-modal-box" style="text-align:left;max-width:320px;">
+    <div class="member-modal-icon" style="text-align:center;">🔔</div>
+    <div class="member-modal-title" style="text-align:center;">알림 받을 신호 선택</div>
+    <div class="member-modal-desc" style="text-align:center;margin-bottom:16px;">선택한 신호가 발생하면<br>폰으로 알림을 보내드려요</div>
+    <div id="push-cat-list" style="display:flex;flex-direction:column;margin-bottom:20px;">
+      <label class="push-cat-row"><input type="checkbox" id="pc-all" onchange="pushToggleAll(this)"><span>전체</span></label>
+      <div style="height:1px;background:#242424;margin:6px 0;"></div>
+      <label class="push-cat-row"><input type="checkbox" class="push-cat-item" value="btc"><span>₿ 비트코인</span></label>
+      <label class="push-cat-row"><input type="checkbox" class="push-cat-item" value="alt_trend"><span>📊 알트 추세전환</span></label>
+      <label class="push-cat-row"><input type="checkbox" class="push-cat-item" value="alt_whale"><span>🐋 알트 고래봇</span></label>
+      <label class="push-cat-row"><input type="checkbox" class="push-cat-item" value="alt_div"><span>📈 알트 RSI 다이버전스</span></label>
+    </div>
+    <button class="member-modal-btn" onclick="savePushSettings()">저장</button>
+    <button class="member-modal-close" onclick="closePushModal()">취소</button>
+  </div>
+</div>
 
 <button id="scroll-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 <footer class="site-footer">
@@ -2708,24 +2727,84 @@ function urlBase64ToUint8Array(base64String) {
   return new Uint8Array([...rawData].map(c => c.charCodeAt(0)));
 }
 
-async function subscribePush() {
+var PUSH_CATEGORIES = ['btc', 'alt_trend', 'alt_whale', 'alt_div'];
+
+function openPushSettings(){
+  var saved = null;
+  try { saved = JSON.parse(localStorage.getItem('push_categories') || 'null'); } catch(e){}
+  var selected = (Array.isArray(saved) && saved.length) ? saved : PUSH_CATEGORIES.slice();
+  document.querySelectorAll('.push-cat-item').forEach(function(cb){
+    cb.checked = selected.indexOf(cb.value) !== -1;
+  });
+  updatePushAllCheckbox();
+  var el = document.getElementById('push-modal');
+  if (el) el.classList.add('show');
+}
+
+function closePushModal(){
+  var el = document.getElementById('push-modal');
+  if (el) el.classList.remove('show');
+}
+
+function pushToggleAll(allCb){
+  document.querySelectorAll('.push-cat-item').forEach(function(cb){ cb.checked = allCb.checked; });
+}
+
+function updatePushAllCheckbox(){
+  var items = document.querySelectorAll('.push-cat-item');
+  var all = document.getElementById('pc-all');
+  if (!all) return;
+  var checkedCount = 0;
+  items.forEach(function(cb){ if (cb.checked) checkedCount++; });
+  all.checked = items.length > 0 && checkedCount === items.length;
+}
+
+document.addEventListener('change', function(e){
+  if (e.target && e.target.classList && e.target.classList.contains('push-cat-item')) {
+    updatePushAllCheckbox();
+  }
+});
+
+async function savePushSettings(){
+  var selected = [];
+  document.querySelectorAll('.push-cat-item').forEach(function(cb){
+    if (cb.checked) selected.push(cb.value);
+  });
+  if (selected.length === 0) {
+    alert('최소 하나 이상 선택해주세요.');
+    return;
+  }
+  localStorage.setItem('push_categories', JSON.stringify(selected));
+  closePushModal();
+  await subscribePush(selected);
+}
+
+async function subscribePush(categories) {
   if (!('serviceWorker' in navigator) || !('PushManager' in window)) {
     alert('이 브라우저는 푸시 알림을 지원하지 않습니다.');
     return;
   }
+  if (!categories) {
+    var saved = null;
+    try { saved = JSON.parse(localStorage.getItem('push_categories') || 'null'); } catch(e){}
+    categories = (Array.isArray(saved) && saved.length) ? saved : PUSH_CATEGORIES.slice();
+  }
   try {
     const reg = await navigator.serviceWorker.ready;
-    const sub = await reg.pushManager.subscribe({
-      userVisibleOnly: true,
-      applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY)
-    });
+    let sub = await reg.pushManager.getSubscription();
+    if (!sub) {
+      sub = await reg.pushManager.subscribe({
+        userVisibleOnly: true,
+        applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY)
+      });
+    }
     const tgId = tgUser ? tgUser.id : null;
     await fetch('/push/subscribe', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({ subscription: sub, tg_id: tgId })
+      body: JSON.stringify({ subscription: sub, tg_id: tgId, categories: categories })
     });
-    alert('알림 구독 완료! 신호 발생 시 알림을 받습니다.');
+    alert('알림 설정 완료! 선택한 신호 발생 시 알림을 받습니다.');
   } catch(e) {
     console.error('푸시 구독 실패:', e);
     alert('알림 허용이 필요합니다. 브라우저 설정에서 알림을 허용해주세요.');
