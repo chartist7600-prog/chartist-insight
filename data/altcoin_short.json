@@ -22,5 +22,11 @@
     "time": "2026-07-02 09:00",
     "price": 0.000507,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_HEMI",
+    "time": "2026-07-02 21:00",
+    "price": 7.873,
+    "sig_type": "trend"
   }
 ]

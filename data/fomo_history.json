@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "HEMI",
+    "name": "HEMI",
+    "exchange": "빗썸",
+    "entry_price": 7.873,
+    "currency": "KRW",
+    "entry_time": "2026-07-02 21:04",
+    "signal": "trend"
+  },
+  {
     "ticker": "MORPHO",
     "name": "MORPHO",
     "exchange": "빗썸",
@@ -78,15 +87,6 @@
     "entry_price": 0.568,
     "currency": "USDT",
     "entry_time": "2026-07-01 09:09",
-    "signal": "trend"
-  },
-  {
-    "ticker": "A8",
-    "name": "A8",
-    "exchange": "빗썸",
-    "entry_price": 9.883,
-    "currency": "KRW",
-    "entry_time": "2026-06-30 09:09",
     "signal": "trend"
   }
 ]
