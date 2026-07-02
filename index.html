@@ -2781,6 +2781,16 @@ document.addEventListener('change', function(e){
 });
 
 async function savePushSettings(){
+  if (!tgUser) {
+    hideSoundPopup({target:document.getElementById('sound-overlay')});
+    openLoginModal();
+    return;
+  }
+  if (!tgUser.is_member) {
+    hideSoundPopup({target:document.getElementById('sound-overlay')});
+    document.getElementById('member-modal').classList.add('show');
+    return;
+  }
   var selected = [];
   document.querySelectorAll('.push-cat-item').forEach(function(cb){
     if (cb.checked) selected.push(cb.value);
