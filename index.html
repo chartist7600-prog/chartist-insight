@@ -2235,7 +2235,7 @@ function tgUpdateUI() {
     var badge = tgUser.is_member
       ? '<span class="tg-member-badge">멤버</span>'
       : '<span class="tg-nonmember-badge">비멤버</span>';
-    area.innerHTML = '<div class="tg-user-info"><span class="tg-user-name">' + (tgUser.first_name || tgUser.username) + '</span>' + badge + '<button class="tg-logout-btn" onclick="subscribePush()" title="알림 받기" style="background:transparent;border:0.5px solid rgba(201,168,76,0.4);color:#C9A84C;padding:4px 10px;border-radius:5px;font-size:11px;cursor:pointer;">🔔</button><button class="tg-logout-btn" onclick="tgLogout()">로그아웃</button></div>';
+    area.innerHTML = '<div class="tg-user-info"><span class="tg-user-name">' + (tgUser.first_name || tgUser.username) + '</span>' + badge + '<button class="tg-logout-btn" onclick="subscribePush()" title="푸시 알림 구독" style="background:transparent;border:0.5px solid rgba(201,168,76,0.4);color:#C9A84C;padding:4px 10px;border-radius:5px;font-size:11px;cursor:pointer;">📲</button><button class="tg-logout-btn" onclick="tgLogout()">로그아웃</button></div>';
     initBtcBlur();
     if(document.getElementById('tab-btc').classList.contains('active')){loadBtcSignals();}
     var fb=document.getElementById('footer-login-btn');if(fb)fb.style.display='none';
