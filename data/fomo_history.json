@@ -1,5 +1,77 @@
 [
   {
+    "ticker": "CRV",
+    "name": "CRV",
+    "exchange": "빗썸",
+    "entry_price": 310.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-03 21:04",
+    "signal": "trend"
+  },
+  {
+    "ticker": "GMX",
+    "name": "GMX",
+    "exchange": "빗썸",
+    "entry_price": 8820.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-03 21:04",
+    "signal": "trend"
+  },
+  {
+    "ticker": "THE",
+    "name": "THE",
+    "exchange": "빗썸",
+    "entry_price": 94.93,
+    "currency": "KRW",
+    "entry_time": "2026-07-03 21:04",
+    "signal": "trend"
+  },
+  {
+    "ticker": "ZEC",
+    "name": "ZEC",
+    "exchange": "바이낸스",
+    "entry_price": 464.06,
+    "currency": "USDT",
+    "entry_time": "2026-07-03 21:04",
+    "signal": "trend_strong"
+  },
+  {
+    "ticker": "TRB",
+    "name": "TRB",
+    "exchange": "바이낸스",
+    "entry_price": 14.82,
+    "currency": "USDT",
+    "entry_time": "2026-07-03 21:04",
+    "signal": "trend"
+  },
+  {
+    "ticker": "WBETH",
+    "name": "WBETH",
+    "exchange": "바이낸스",
+    "entry_price": 1916.59,
+    "currency": "USDT",
+    "entry_time": "2026-07-03 21:04",
+    "signal": "trend"
+  },
+  {
+    "ticker": "HMSTR",
+    "name": "HMSTR",
+    "exchange": "바이낸스",
+    "entry_price": 0.000203,
+    "currency": "USDT",
+    "entry_time": "2026-07-03 21:04",
+    "signal": "trend"
+  },
+  {
+    "ticker": "TURTLE",
+    "name": "TURTLE",
+    "exchange": "바이낸스",
+    "entry_price": 0.0378,
+    "currency": "USDT",
+    "entry_time": "2026-07-03 21:04",
+    "signal": "trend"
+  },
+  {
     "ticker": "BANANA",
     "name": "BANANA",
     "exchange": "바이낸스",
@@ -15,126 +87,5 @@
     "entry_price": 89.7,
     "currency": "KRW",
     "entry_time": "2026-07-03 09:00"
-  },
-  {
-    "ticker": "RAY",
-    "name": "레이디움",
-    "exchange": "업비트",
-    "entry_price": 1047.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-03 09:00"
-  },
-  {
-    "ticker": "BIRB",
-    "name": "문버드",
-    "exchange": "업비트",
-    "entry_price": 138.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-03 09:00"
-  },
-  {
-    "ticker": "BREV",
-    "name": "브레비스",
-    "exchange": "업비트",
-    "entry_price": 136.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-03 09:00"
-  },
-  {
-    "ticker": "SYRUP",
-    "name": "SYRUP",
-    "exchange": "바이낸스",
-    "entry_price": 0.1579,
-    "currency": "USD",
-    "entry_time": "2026-07-03 09:00"
-  },
-  {
-    "ticker": "WLFI",
-    "name": "WLFI",
-    "exchange": "바이낸스",
-    "entry_price": 0.0582,
-    "currency": "USD",
-    "entry_time": "2026-07-03 09:00"
-  },
-  {
-    "ticker": "HEMI",
-    "name": "HEMI",
-    "exchange": "빗썸",
-    "entry_price": 7.873,
-    "currency": "KRW",
-    "entry_time": "2026-07-02 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "MORPHO",
-    "name": "MORPHO",
-    "exchange": "빗썸",
-    "entry_price": 3161.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-02 09:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "POND",
-    "name": "POND",
-    "exchange": "바이낸스",
-    "entry_price": 0.00153,
-    "currency": "USDT",
-    "entry_time": "2026-07-02 09:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "TLM",
-    "name": "TLM",
-    "exchange": "바이낸스",
-    "entry_price": 0.001495,
-    "currency": "USDT",
-    "entry_time": "2026-07-02 09:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "SLP",
-    "name": "SLP",
-    "exchange": "바이낸스",
-    "entry_price": 0.000507,
-    "currency": "USDT",
-    "entry_time": "2026-07-02 09:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "CYS",
-    "name": "CYS",
-    "exchange": "빗썸",
-    "entry_price": 552.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-01 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "NFP",
-    "name": "NFP",
-    "exchange": "바이낸스",
-    "entry_price": 0.01023,
-    "currency": "USDT",
-    "entry_time": "2026-07-01 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "NOM",
-    "name": "NOM",
-    "exchange": "바이낸스",
-    "entry_price": 0.0016,
-    "currency": "USDT",
-    "entry_time": "2026-07-01 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "RIF",
-    "name": "RIF",
-    "exchange": "바이낸스",
-    "entry_price": 0.091,
-    "currency": "USDT",
-    "entry_time": "2026-07-01 09:09",
-    "signal": "trend"
   }
 ]
