@@ -1,32 +1,8 @@
 [
   {
-    "key": "빗썸_MORPHO",
-    "time": "2026-07-02 09:00",
-    "price": 3161.0,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_POND",
-    "time": "2026-07-02 09:00",
-    "price": 0.00153,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_TLM",
-    "time": "2026-07-02 09:00",
-    "price": 0.001495,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_SLP",
-    "time": "2026-07-02 09:00",
-    "price": 0.000507,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_HEMI",
-    "time": "2026-07-02 21:00",
-    "price": 7.873,
+    "key": "바이낸스_BANANA",
+    "time": "2026-07-03 09:00",
+    "price": 2.936,
     "sig_type": "trend"
   }
 ]

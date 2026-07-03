@@ -1,5 +1,62 @@
 [
   {
+    "ticker": "BANANA",
+    "name": "BANANA",
+    "exchange": "바이낸스",
+    "entry_price": 2.936,
+    "currency": "USDT",
+    "entry_time": "2026-07-03 09:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "SKY",
+    "name": "스카이프로토콜",
+    "exchange": "업비트",
+    "entry_price": 89.7,
+    "currency": "KRW",
+    "entry_time": "2026-07-03 09:00"
+  },
+  {
+    "ticker": "RAY",
+    "name": "레이디움",
+    "exchange": "업비트",
+    "entry_price": 1047.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-03 09:00"
+  },
+  {
+    "ticker": "BIRB",
+    "name": "문버드",
+    "exchange": "업비트",
+    "entry_price": 138.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-03 09:00"
+  },
+  {
+    "ticker": "BREV",
+    "name": "브레비스",
+    "exchange": "업비트",
+    "entry_price": 136.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-03 09:00"
+  },
+  {
+    "ticker": "SYRUP",
+    "name": "SYRUP",
+    "exchange": "바이낸스",
+    "entry_price": 0.1579,
+    "currency": "USD",
+    "entry_time": "2026-07-03 09:00"
+  },
+  {
+    "ticker": "WLFI",
+    "name": "WLFI",
+    "exchange": "바이낸스",
+    "entry_price": 0.0582,
+    "currency": "USD",
+    "entry_time": "2026-07-03 09:00"
+  },
+  {
     "ticker": "HEMI",
     "name": "HEMI",
     "exchange": "빗썸",
@@ -76,15 +133,6 @@
     "name": "RIF",
     "exchange": "바이낸스",
     "entry_price": 0.091,
-    "currency": "USDT",
-    "entry_time": "2026-07-01 09:09",
-    "signal": "trend"
-  },
-  {
-    "ticker": "GNS",
-    "name": "GNS",
-    "exchange": "바이낸스",
-    "entry_price": 0.568,
     "currency": "USDT",
     "entry_time": "2026-07-01 09:09",
     "signal": "trend"
