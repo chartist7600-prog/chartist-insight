@@ -1,5 +1,45 @@
 [
   {
+    "ticker": "ARPA",
+    "name": "ARPA",
+    "exchange": "빗썸",
+    "entry_price": 16.05,
+    "currency": "KRW",
+    "entry_time": "2026-07-04 00:00"
+  },
+  {
+    "ticker": "RAY",
+    "name": "RAY",
+    "exchange": "빗썸",
+    "entry_price": 1032.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-04 00:00"
+  },
+  {
+    "ticker": "ZKP",
+    "name": "ZKP",
+    "exchange": "빗썸",
+    "entry_price": 88.09,
+    "currency": "KRW",
+    "entry_time": "2026-07-04 00:00"
+  },
+  {
+    "ticker": "COW",
+    "name": "COW",
+    "exchange": "빗썸",
+    "entry_price": 217.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-04 00:00"
+  },
+  {
+    "ticker": "WLFI",
+    "name": "WLFI",
+    "exchange": "빗썸",
+    "entry_price": 85.25,
+    "currency": "KRW",
+    "entry_time": "2026-07-04 00:00"
+  },
+  {
     "ticker": "CRV",
     "name": "CRV",
     "exchange": "빗썸",
