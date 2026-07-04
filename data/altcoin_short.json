@@ -70,5 +70,59 @@
     "time": "2026-07-04 09:00",
     "price": 0.546,
     "sig_type": "trend_strong"
+  },
+  {
+    "key": "빗썸_WOO",
+    "time": "2026-07-04 21:00",
+    "price": 17.92,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_GTC",
+    "time": "2026-07-04 21:00",
+    "price": 117.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_NIL",
+    "time": "2026-07-04 21:00",
+    "price": 59.84,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SHELL",
+    "time": "2026-07-04 21:00",
+    "price": 35.03,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SXT",
+    "time": "2026-07-04 21:00",
+    "price": 11.38,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_BAND",
+    "time": "2026-07-04 21:00",
+    "price": 0.1636,
+    "sig_type": "trend_strong"
+  },
+  {
+    "key": "바이낸스_NOT",
+    "time": "2026-07-04 21:00",
+    "price": 0.000437,
+    "sig_type": "trend_strong"
+  },
+  {
+    "key": "바이낸스_DOGS",
+    "time": "2026-07-04 21:00",
+    "price": 4.914e-05,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_MUBARAK",
+    "time": "2026-07-04 21:00",
+    "price": 0.01166,
+    "sig_type": "trend"
   }
 ]
