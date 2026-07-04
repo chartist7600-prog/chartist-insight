@@ -1,56 +1,74 @@
 [
   {
-    "key": "바이낸스_BANANA",
-    "time": "2026-07-03 09:00",
-    "price": 2.936,
+    "key": "빗썸_XPR",
+    "time": "2026-07-04 09:00",
+    "price": 3.277,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_CRV",
-    "time": "2026-07-03 21:00",
-    "price": 310.0,
+    "key": "빗썸_ARPA",
+    "time": "2026-07-04 09:00",
+    "price": 16.05,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_GMX",
-    "time": "2026-07-03 21:00",
-    "price": 8820.0,
+    "key": "빗썸_YFI",
+    "time": "2026-07-04 09:00",
+    "price": 2716000.0,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_THE",
-    "time": "2026-07-03 21:00",
-    "price": 94.93,
+    "key": "빗썸_GALA",
+    "time": "2026-07-04 09:00",
+    "price": 3.789,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_ZEC",
-    "time": "2026-07-03 21:00",
-    "price": 464.06,
+    "key": "빗썸_ALLO",
+    "time": "2026-07-04 09:00",
+    "price": 566.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_DIA",
+    "time": "2026-07-04 09:00",
+    "price": 0.1123,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_CVX",
+    "time": "2026-07-04 09:00",
+    "price": 1.206,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_GLMR",
+    "time": "2026-07-04 09:00",
+    "price": 0.0091,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_BEAMX",
+    "time": "2026-07-04 09:00",
+    "price": 0.001472,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_PIXEL",
+    "time": "2026-07-04 09:00",
+    "price": 0.0053,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_CETUS",
+    "time": "2026-07-04 09:00",
+    "price": 0.01906,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_EPIC",
+    "time": "2026-07-04 09:00",
+    "price": 0.546,
     "sig_type": "trend_strong"
-  },
-  {
-    "key": "바이낸스_TRB",
-    "time": "2026-07-03 21:00",
-    "price": 14.82,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_WBETH",
-    "time": "2026-07-03 21:00",
-    "price": 1916.59,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_HMSTR",
-    "time": "2026-07-03 21:00",
-    "price": 0.000203,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_TURTLE",
-    "time": "2026-07-03 21:00",
-    "price": 0.0378,
-    "sig_type": "trend"
   }
 ]
