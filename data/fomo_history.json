@@ -1,5 +1,69 @@
 [
   {
+    "ticker": "ADA",
+    "name": "ADA",
+    "exchange": "빗썸",
+    "entry_price": 279.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 00:00"
+  },
+  {
+    "ticker": "OGN",
+    "name": "OGN",
+    "exchange": "빗썸",
+    "entry_price": 29.8,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 00:00"
+  },
+  {
+    "ticker": "MASK",
+    "name": "MASK",
+    "exchange": "빗썸",
+    "entry_price": 630.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 00:00"
+  },
+  {
+    "ticker": "MINA",
+    "name": "MINA",
+    "exchange": "빗썸",
+    "entry_price": 68.96,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 00:00"
+  },
+  {
+    "ticker": "ETHFI",
+    "name": "ETHFI",
+    "exchange": "빗썸",
+    "entry_price": 625.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 00:00"
+  },
+  {
+    "ticker": "SKY",
+    "name": "SKY",
+    "exchange": "빗썸",
+    "entry_price": 87.81,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 00:00"
+  },
+  {
+    "ticker": "MIRA",
+    "name": "MIRA",
+    "exchange": "빗썸",
+    "entry_price": 82.29,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 00:00"
+  },
+  {
+    "ticker": "WLFI",
+    "name": "WLFI",
+    "exchange": "빗썸",
+    "entry_price": 84.73,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 00:00"
+  },
+  {
     "ticker": "WOO",
     "name": "WOO",
     "exchange": "빗썸",
