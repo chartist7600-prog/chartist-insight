@@ -1,156 +1,196 @@
 [
   {
-    "ticker": "ADA",
-    "name": "ADA",
-    "exchange": "빗썸",
-    "entry_price": 279.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-05 00:00"
-  },
-  {
     "ticker": "OGN",
     "name": "OGN",
     "exchange": "빗썸",
     "entry_price": 29.8,
     "currency": "KRW",
-    "entry_time": "2026-07-05 00:00"
+    "entry_time": "2026-07-05 09:06",
+    "signal": "trend"
   },
   {
-    "ticker": "MASK",
-    "name": "MASK",
+    "ticker": "FLR",
+    "name": "FLR",
     "exchange": "빗썸",
-    "entry_price": 630.0,
+    "entry_price": 10.77,
     "currency": "KRW",
-    "entry_time": "2026-07-05 00:00"
+    "entry_time": "2026-07-05 09:06",
+    "signal": "trend"
   },
   {
-    "ticker": "MINA",
-    "name": "MINA",
+    "ticker": "SFP",
+    "name": "SFP",
     "exchange": "빗썸",
-    "entry_price": 68.96,
+    "entry_price": 342.0,
     "currency": "KRW",
-    "entry_time": "2026-07-05 00:00"
+    "entry_time": "2026-07-05 09:06",
+    "signal": "trend"
+  },
+  {
+    "ticker": "HFT",
+    "name": "HFT",
+    "exchange": "빗썸",
+    "entry_price": 14.69,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 09:06",
+    "signal": "trend"
+  },
+  {
+    "ticker": "AR",
+    "name": "AR",
+    "exchange": "빗썸",
+    "entry_price": 3111.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 09:06",
+    "signal": "trend"
+  },
+  {
+    "ticker": "IOTX",
+    "name": "IOTX",
+    "exchange": "빗썸",
+    "entry_price": 4.573,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 09:06",
+    "signal": "trend_strong"
+  },
+  {
+    "ticker": "GRAM",
+    "name": "GRAM",
+    "exchange": "빗썸",
+    "entry_price": 2721.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 09:06",
+    "signal": "trend"
+  },
+  {
+    "ticker": "TURBO",
+    "name": "TURBO",
+    "exchange": "빗썸",
+    "entry_price": 1.372,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 09:06",
+    "signal": "trend"
+  },
+  {
+    "ticker": "BMT",
+    "name": "BMT",
+    "exchange": "빗썸",
+    "entry_price": 19.28,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 09:06",
+    "signal": "trend"
+  },
+  {
+    "ticker": "AVA",
+    "name": "AVA",
+    "exchange": "바이낸스",
+    "entry_price": 0.1839,
+    "currency": "USDT",
+    "entry_time": "2026-07-05 09:06",
+    "signal": "trend_strong"
+  },
+  {
+    "ticker": "WIF",
+    "name": "도그위프햇",
+    "exchange": "업비트",
+    "entry_price": 277.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 09:00"
+  },
+  {
+    "ticker": "BEAM",
+    "name": "빔",
+    "exchange": "업비트",
+    "entry_price": 2.37,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 09:00"
+  },
+  {
+    "ticker": "PEPE",
+    "name": "페페",
+    "exchange": "업비트",
+    "entry_price": 0.00418,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 09:00"
+  },
+  {
+    "ticker": "BCH",
+    "name": "비트코인캐시",
+    "exchange": "업비트",
+    "entry_price": 355700.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 09:00"
+  },
+  {
+    "ticker": "CRO",
+    "name": "크로노스",
+    "exchange": "업비트",
+    "entry_price": 91.2,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 09:00"
+  },
+  {
+    "ticker": "A",
+    "name": "볼타",
+    "exchange": "업비트",
+    "entry_price": 112.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 09:00"
+  },
+  {
+    "ticker": "ZRX",
+    "name": "제로엑스",
+    "exchange": "업비트",
+    "entry_price": 138.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 09:00"
+  },
+  {
+    "ticker": "MIRA",
+    "name": "미라네트워크",
+    "exchange": "업비트",
+    "entry_price": 82.3,
+    "currency": "KRW",
+    "entry_time": "2026-07-05 09:00"
+  },
+  {
+    "ticker": "GLMR",
+    "name": "GLMR",
+    "exchange": "바이낸스",
+    "entry_price": 0.011,
+    "currency": "USD",
+    "entry_time": "2026-07-05 09:00"
+  },
+  {
+    "ticker": "HOT",
+    "name": "HOT",
+    "exchange": "바이낸스",
+    "entry_price": 0.000352,
+    "currency": "USD",
+    "entry_time": "2026-07-05 09:00"
+  },
+  {
+    "ticker": "VANRY",
+    "name": "VANRY",
+    "exchange": "바이낸스",
+    "entry_price": 0.004568,
+    "currency": "USD",
+    "entry_time": "2026-07-05 09:00"
+  },
+  {
+    "ticker": "BEAMX",
+    "name": "BEAMX",
+    "exchange": "바이낸스",
+    "entry_price": 0.00157,
+    "currency": "USD",
+    "entry_time": "2026-07-05 09:00"
   },
   {
     "ticker": "ETHFI",
     "name": "ETHFI",
-    "exchange": "빗썸",
-    "entry_price": 625.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-05 00:00"
-  },
-  {
-    "ticker": "SKY",
-    "name": "SKY",
-    "exchange": "빗썸",
-    "entry_price": 87.81,
-    "currency": "KRW",
-    "entry_time": "2026-07-05 00:00"
-  },
-  {
-    "ticker": "MIRA",
-    "name": "MIRA",
-    "exchange": "빗썸",
-    "entry_price": 82.29,
-    "currency": "KRW",
-    "entry_time": "2026-07-05 00:00"
-  },
-  {
-    "ticker": "WLFI",
-    "name": "WLFI",
-    "exchange": "빗썸",
-    "entry_price": 84.73,
-    "currency": "KRW",
-    "entry_time": "2026-07-05 00:00"
-  },
-  {
-    "ticker": "WOO",
-    "name": "WOO",
-    "exchange": "빗썸",
-    "entry_price": 17.92,
-    "currency": "KRW",
-    "entry_time": "2026-07-04 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "GTC",
-    "name": "GTC",
-    "exchange": "빗썸",
-    "entry_price": 117.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-04 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "NIL",
-    "name": "NIL",
-    "exchange": "빗썸",
-    "entry_price": 59.84,
-    "currency": "KRW",
-    "entry_time": "2026-07-04 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "SHELL",
-    "name": "SHELL",
-    "exchange": "빗썸",
-    "entry_price": 35.03,
-    "currency": "KRW",
-    "entry_time": "2026-07-04 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "SXT",
-    "name": "SXT",
-    "exchange": "빗썸",
-    "entry_price": 11.38,
-    "currency": "KRW",
-    "entry_time": "2026-07-04 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "BAND",
-    "name": "BAND",
     "exchange": "바이낸스",
-    "entry_price": 0.1636,
-    "currency": "USDT",
-    "entry_time": "2026-07-04 21:04",
-    "signal": "trend_strong"
-  },
-  {
-    "ticker": "NOT",
-    "name": "NOT",
-    "exchange": "바이낸스",
-    "entry_price": 0.000437,
-    "currency": "USDT",
-    "entry_time": "2026-07-04 21:04",
-    "signal": "trend_strong"
-  },
-  {
-    "ticker": "DOGS",
-    "name": "DOGS",
-    "exchange": "바이낸스",
-    "entry_price": 4.914e-05,
-    "currency": "USDT",
-    "entry_time": "2026-07-04 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "MUBARAK",
-    "name": "MUBARAK",
-    "exchange": "바이낸스",
-    "entry_price": 0.01166,
-    "currency": "USDT",
-    "entry_time": "2026-07-04 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "XPR",
-    "name": "XPR",
-    "exchange": "빗썸",
-    "entry_price": 3.277,
-    "currency": "KRW",
-    "entry_time": "2026-07-04 09:06",
-    "signal": "trend"
+    "entry_price": 0.412,
+    "currency": "USD",
+    "entry_time": "2026-07-05 09:00"
   }
 ]
