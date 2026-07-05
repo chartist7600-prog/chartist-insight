@@ -1,5 +1,29 @@
 [
   {
+    "ticker": "BCH",
+    "name": "BCH",
+    "exchange": "빗썸",
+    "entry_price": 358900.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-06 00:00"
+  },
+  {
+    "ticker": "CRO",
+    "name": "CRO",
+    "exchange": "빗썸",
+    "entry_price": 91.84,
+    "currency": "KRW",
+    "entry_time": "2026-07-06 00:00"
+  },
+  {
+    "ticker": "MINA",
+    "name": "MINA",
+    "exchange": "빗썸",
+    "entry_price": 68.96,
+    "currency": "KRW",
+    "entry_time": "2026-07-06 00:00"
+  },
+  {
     "ticker": "HOT",
     "name": "HOT",
     "exchange": "바이낸스",
