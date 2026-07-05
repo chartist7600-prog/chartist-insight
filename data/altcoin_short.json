@@ -82,5 +82,11 @@
     "time": "2026-07-05 09:00",
     "price": 0.03461,
     "sig_type": "trend_strong"
+  },
+  {
+    "key": "바이낸스_HOT",
+    "time": "2026-07-05 21:00",
+    "price": 0.000388,
+    "sig_type": "trend"
   }
 ]

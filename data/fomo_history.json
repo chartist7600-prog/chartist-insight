@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "HOT",
+    "name": "HOT",
+    "exchange": "바이낸스",
+    "entry_price": 0.000388,
+    "currency": "USDT",
+    "entry_time": "2026-07-05 21:04",
+    "signal": "trend"
+  },
+  {
     "ticker": "OGN",
     "name": "OGN",
     "exchange": "빗썸",
@@ -79,118 +88,5 @@
     "currency": "KRW",
     "entry_time": "2026-07-05 09:06",
     "signal": "trend"
-  },
-  {
-    "ticker": "AVA",
-    "name": "AVA",
-    "exchange": "바이낸스",
-    "entry_price": 0.1839,
-    "currency": "USDT",
-    "entry_time": "2026-07-05 09:06",
-    "signal": "trend_strong"
-  },
-  {
-    "ticker": "WIF",
-    "name": "도그위프햇",
-    "exchange": "업비트",
-    "entry_price": 277.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-05 09:00"
-  },
-  {
-    "ticker": "BEAM",
-    "name": "빔",
-    "exchange": "업비트",
-    "entry_price": 2.37,
-    "currency": "KRW",
-    "entry_time": "2026-07-05 09:00"
-  },
-  {
-    "ticker": "PEPE",
-    "name": "페페",
-    "exchange": "업비트",
-    "entry_price": 0.00418,
-    "currency": "KRW",
-    "entry_time": "2026-07-05 09:00"
-  },
-  {
-    "ticker": "BCH",
-    "name": "비트코인캐시",
-    "exchange": "업비트",
-    "entry_price": 355700.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-05 09:00"
-  },
-  {
-    "ticker": "CRO",
-    "name": "크로노스",
-    "exchange": "업비트",
-    "entry_price": 91.2,
-    "currency": "KRW",
-    "entry_time": "2026-07-05 09:00"
-  },
-  {
-    "ticker": "A",
-    "name": "볼타",
-    "exchange": "업비트",
-    "entry_price": 112.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-05 09:00"
-  },
-  {
-    "ticker": "ZRX",
-    "name": "제로엑스",
-    "exchange": "업비트",
-    "entry_price": 138.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-05 09:00"
-  },
-  {
-    "ticker": "MIRA",
-    "name": "미라네트워크",
-    "exchange": "업비트",
-    "entry_price": 82.3,
-    "currency": "KRW",
-    "entry_time": "2026-07-05 09:00"
-  },
-  {
-    "ticker": "GLMR",
-    "name": "GLMR",
-    "exchange": "바이낸스",
-    "entry_price": 0.011,
-    "currency": "USD",
-    "entry_time": "2026-07-05 09:00"
-  },
-  {
-    "ticker": "HOT",
-    "name": "HOT",
-    "exchange": "바이낸스",
-    "entry_price": 0.000352,
-    "currency": "USD",
-    "entry_time": "2026-07-05 09:00"
-  },
-  {
-    "ticker": "VANRY",
-    "name": "VANRY",
-    "exchange": "바이낸스",
-    "entry_price": 0.004568,
-    "currency": "USD",
-    "entry_time": "2026-07-05 09:00"
-  },
-  {
-    "ticker": "BEAMX",
-    "name": "BEAMX",
-    "exchange": "바이낸스",
-    "entry_price": 0.00157,
-    "currency": "USD",
-    "entry_time": "2026-07-05 09:00"
-  },
-  {
-    "ticker": "ETHFI",
-    "name": "ETHFI",
-    "exchange": "바이낸스",
-    "entry_price": 0.412,
-    "currency": "USD",
-    "entry_time": "2026-07-05 09:00"
   }
 ]
