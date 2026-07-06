@@ -1,5 +1,45 @@
 [
   {
+    "ticker": "A",
+    "name": "A",
+    "exchange": "빗썸",
+    "entry_price": 113.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-07 00:00"
+  },
+  {
+    "ticker": "YFI",
+    "name": "YFI",
+    "exchange": "빗썸",
+    "entry_price": 3398000.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-07 00:00"
+  },
+  {
+    "ticker": "XTZ",
+    "name": "XTZ",
+    "exchange": "빗썸",
+    "entry_price": 381.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-07 00:00"
+  },
+  {
+    "ticker": "SUN",
+    "name": "SUN",
+    "exchange": "빗썸",
+    "entry_price": 26.46,
+    "currency": "KRW",
+    "entry_time": "2026-07-07 00:00"
+  },
+  {
+    "ticker": "MON",
+    "name": "MON",
+    "exchange": "빗썸",
+    "entry_price": 34.7,
+    "currency": "KRW",
+    "entry_time": "2026-07-07 00:00"
+  },
+  {
     "ticker": "CTSI",
     "name": "CTSI",
     "exchange": "빗썸",
