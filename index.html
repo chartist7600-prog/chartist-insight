@@ -112,8 +112,9 @@
   .fg-label{font-size:11px;color:var(--text3);}
 
   /* ══ 탭 ══ */
-  .tab-nav{display:flex;gap:6px;max-width:var(--max-w);margin:0 auto;padding:8px 16px;position:sticky;top:64px;z-index:200;background:#0e0e0e;border-bottom:0.5px solid rgba(201,168,76,0.15);}
-  @media(max-width:520px){.tab-nav{top:56px;}}
+  .tab-nav-wrap{position:sticky;top:64px;z-index:200;background:#0e0e0e;border-bottom:2px solid var(--gold);}
+  @media(max-width:520px){.tab-nav-wrap{top:56px;}}
+  .tab-nav{display:flex;gap:6px;max-width:var(--max-w);margin:0 auto;padding:8px 16px;}
   /* ★ 수정③: 탭 글자 줄바꿈 허용 + 균일 높이 */
   .tab-btn{
     flex:1;
@@ -945,12 +946,12 @@
   </div>
   </div>
 </header>
-<div class="tab-nav">
+<div class="tab-nav-wrap"><div class="tab-nav">
   <button class="tab-btn" id="tab-btn-btc" onclick="if(!tgUser){openLoginModal();}else if(!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{switchTab('btc',this);}">₿ 비트</button>
   <button class="tab-btn" id="tab-btn-altcoin" onclick="if(!tgUser){openLoginModal();}else if(!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{switchTab('altcoin',this);}">📊 알트</button>
   <button class="tab-btn" id="tab-btn-calc" onclick="switchTab('calc',this);setTimeout(function(){var el=document.getElementById('tab-calc');if(el)window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-60,behavior:'smooth'});},100)">🧮 계산기</button>
   <button class="tab-btn" id="tab-btn-journal" onclick="switchTab('journal',this);setTimeout(function(){var el=document.getElementById('tab-journal');if(el)window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-60,behavior:'smooth'});},100)" style="letter-spacing:-0.5px;">📒 매매일지</button>
-</div>
+</div></div>
 
 <div class="nonmember-toast" id="nonmember-toast">
   <span class="nonmember-toast-icon">🔒</span>
