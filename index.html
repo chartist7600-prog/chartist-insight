@@ -2535,6 +2535,7 @@ function renderFomo(items,pm){
   var el=document.getElementById("fomo-list");
   if(!el)return;
   var html="";
+  var maxDays=1;
   items.forEach(function(item,i){
     var cur=getPrice(item);
     var entry=item.entry_price||0;
@@ -2544,12 +2545,15 @@ function renderFomo(items,pm){
     var neg=pct!==null&&pct<0?" neg":"";
     var dt=item.entry_time?item.entry_time.split(" ")[0]:"";
     var days=dt?Math.floor((Date.now()-new Date(dt))/86400000):"?";
+    if(typeof days==="number"&&days>maxDays)maxDays=days;
     var blur=false;
     html+='<div class="fomo-item'+(blur?' blurred':'')+'">'+'<div class="fomo-rank">'+(i+1)+'</div>'+'<div class="fomo-coin"><div class="fomo-coin-name">'+item.ticker+'<span style="font-size:11px;color:#666;font-weight:400;margin-left:6px;">'+(item.name||"")+'</span></div><div class="fomo-coin-meta">신호일: '+dt+'</div></div>'+'<div class="fomo-right"><div class="fomo-pct'+neg+'">'+pctStr+cursor+'</div><div class="fomo-days">'+days+'일 전</div></div>';
     
     html+='</div>';
   });
   el.innerHTML=html;
+  var titleEl=document.querySelector('.fomo-title');
+  if(titleEl)titleEl.textContent='🚀 멤버십 포착 코인 · 최근 '+maxDays+'일 추세전환 신호';
 }
 loadFomoSection();
 
