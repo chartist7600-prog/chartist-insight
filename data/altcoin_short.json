@@ -1,92 +1,32 @@
 [
   {
-    "key": "빗썸_OGN",
-    "time": "2026-07-05 09:00",
-    "price": 29.8,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_FLR",
-    "time": "2026-07-05 09:00",
-    "price": 10.77,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_SFP",
-    "time": "2026-07-05 09:00",
-    "price": 342.0,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_HFT",
-    "time": "2026-07-05 09:00",
-    "price": 14.69,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_AR",
-    "time": "2026-07-05 09:00",
-    "price": 3111.0,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_IOTX",
-    "time": "2026-07-05 09:00",
-    "price": 4.573,
+    "key": "빗썸_BNB",
+    "time": "2026-07-06 09:00",
+    "price": 884500.0,
     "sig_type": "trend_strong"
   },
   {
-    "key": "빗썸_GRAM",
-    "time": "2026-07-05 09:00",
-    "price": 2721.0,
+    "key": "바이낸스_LTC",
+    "time": "2026-07-06 09:00",
+    "price": 45.82,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_TURBO",
-    "time": "2026-07-05 09:00",
-    "price": 1.372,
+    "key": "바이낸스_OG",
+    "time": "2026-07-06 09:00",
+    "price": 2.695,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_BMT",
-    "time": "2026-07-05 09:00",
-    "price": 19.28,
+    "key": "바이낸스_NEIRO",
+    "time": "2026-07-06 09:00",
+    "price": 7.11e-05,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_AVA",
-    "time": "2026-07-05 09:00",
-    "price": 0.1839,
+    "key": "바이낸스_GIGGLE",
+    "time": "2026-07-06 09:00",
+    "price": 30.25,
     "sig_type": "trend_strong"
-  },
-  {
-    "key": "바이낸스_MOVR",
-    "time": "2026-07-05 09:00",
-    "price": 1.371,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_VANRY",
-    "time": "2026-07-05 09:00",
-    "price": 0.004568,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_币安人生",
-    "time": "2026-07-05 09:00",
-    "price": 0.8052,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_NIGHT",
-    "time": "2026-07-05 09:00",
-    "price": 0.03461,
-    "sig_type": "trend_strong"
-  },
-  {
-    "key": "바이낸스_HOT",
-    "time": "2026-07-05 21:00",
-    "price": 0.000388,
-    "sig_type": "trend"
   }
 ]
