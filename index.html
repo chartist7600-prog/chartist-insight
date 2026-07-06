@@ -136,6 +136,11 @@
     word-break:keep-all;
   }
   .tab-btn.active{color:var(--gold);border-color:rgba(201,168,76,0.5);background:rgba(201,168,76,0.05);font-weight:700;}
+  /* 탭 카테고리 컬러 인디케이터 (비활성 상태에서만 표시) */
+  #tab-btn-btc:not(.active){border-top:2px solid #EF9F27;}
+  #tab-btn-altcoin:not(.active){border-top:2px solid #378ADD;}
+  #tab-btn-calc:not(.active){border-top:2px solid #639922;}
+  #tab-btn-journal:not(.active){border-top:2px solid #7F77DD;}
   .tab-content{display:none;padding-top:16px;}
   .tab-content.active{display:block;}
 
