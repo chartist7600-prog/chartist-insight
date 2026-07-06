@@ -2319,7 +2319,7 @@ function tgUpdateUI() {
   if (tgUser) {
     document.body.classList.add('tg-logged');
     var badge = tgUser.is_member
-      ? '<span class="tg-member-badge">멤버</span>'
+      ? '<span class="tg-member-badge">멤버십</span>'
       : '<span class="tg-nonmember-badge">비멤버</span>';
     var dispName = tgUser.first_name || tgUser.username || '?';
     var initial = dispName.trim().charAt(0).toUpperCase();
