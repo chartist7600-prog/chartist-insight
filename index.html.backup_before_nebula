@@ -2748,29 +2748,8 @@ window.addEventListener('scroll',function(){
       o: Math.random()*0.7+0.2
     });
   }
-  var meteor = null;
-  function spawnMeteor(){
-    meteor = {
-      x: Math.random()*canvas.width*0.6+canvas.width*0.2,
-      y: -20,
-      dx: (Math.random()*0.6+0.8)*4,
-      dy: (Math.random()*0.4+0.6)*4,
-      life: 1
-    };
-  }
-  setInterval(function(){
-    if(!meteor && Math.random()<0.5) spawnMeteor();
-  }, 4000);
   function draw(){
     ctx.clearRect(0,0,canvas.width,canvas.height);
-    var grad = ctx.createRadialGradient(
-      canvas.width*0.78, canvas.height*0.28, 0,
-      canvas.width*0.78, canvas.height*0.28, canvas.width*0.45
-    );
-    grad.addColorStop(0, 'rgba(201,168,76,0.10)');
-    grad.addColorStop(1, 'rgba(201,168,76,0)');
-    ctx.fillStyle = grad;
-    ctx.fillRect(0,0,canvas.width,canvas.height);
     particles.forEach(function(p){
       ctx.beginPath();
       ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
@@ -2782,20 +2761,6 @@ window.addEventListener('scroll',function(){
       if(p.x<-5)p.x=canvas.width+5;
       if(p.x>canvas.width+5)p.x=-5;
     });
-    if(meteor){
-      ctx.save();
-      ctx.strokeStyle='rgba(255,255,255,'+(0.5*meteor.life)+')';
-      ctx.lineWidth=1.5;
-      ctx.beginPath();
-      ctx.moveTo(meteor.x, meteor.y);
-      ctx.lineTo(meteor.x-meteor.dx*8, meteor.y-meteor.dy*8);
-      ctx.stroke();
-      ctx.restore();
-      meteor.x+=meteor.dx;
-      meteor.y+=meteor.dy;
-      meteor.life-=0.012;
-      if(meteor.y>canvas.height+20||meteor.x>canvas.width+20||meteor.life<=0) meteor=null;
-    }
     requestAnimationFrame(draw);
   }
   draw();
