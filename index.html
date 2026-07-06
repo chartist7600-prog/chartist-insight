@@ -2359,6 +2359,48 @@ document.addEventListener('click', function(e) {
     } catch(e) {}
   }
   tgUpdateUI();
+
+  function checkMembership() {
+    if (!tgUser || !tgUser.user_id) return;
+    fetch('/tg/check', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ user_id: tgUser.user_id })
+    }).then(function(r){ return r.json(); }).then(function(data){
+      if (data.ok && tgUser && tgUser.is_member !== data.is_member) {
+        tgUser.is_member = data.is_member;
+        localStorage.setItem('tg_user', JSON.stringify(tgUser));
+        if (!data.is_member) {
+          tgLogout();
+          showNonmemberToast();
+        } else {
+          tgUpdateUI();
+        }
+      }
+    }).catch(function(e){ console.log('tg check error', e); });
+  }
+
+  var POLL_MS = (10 * 60 * 1000) + (Math.random() * 2 * 60 * 1000 - 60 * 1000); // 10분 ± 1분 지터
+  var pollTimer = null;
+
+  function startPolling() {
+    if (pollTimer) return;
+    pollTimer = setInterval(checkMembership, POLL_MS);
+  }
+  function stopPolling() {
+    if (pollTimer) { clearInterval(pollTimer); pollTimer = null; }
+  }
+
+  document.addEventListener('visibilitychange', function() {
+    if (document.visibilityState === 'visible') {
+      checkMembership();
+      startPolling();
+    } else {
+      stopPolling();
+    }
+  });
+
+  if (document.visibilityState === 'visible') startPolling();
 })();
 
 
