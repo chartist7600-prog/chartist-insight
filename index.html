@@ -946,6 +946,17 @@
   </div>
   </div>
 </header>
+<div id="site-notice-bar" style="display:none;background:linear-gradient(135deg,rgba(201,168,76,0.15),rgba(201,168,76,0.08));border-bottom:1px solid rgba(201,168,76,0.3);padding:10px 16px;">
+  <div style="max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+    <span id="site-notice-text" style="font-size:12px;color:#e8e8e4;font-weight:500;flex:1;min-width:0;"></span>
+    <div style="display:flex;align-items:center;gap:10px;flex-shrink:0;">
+      <label style="display:flex;align-items:center;gap:5px;font-size:11px;color:#999;cursor:pointer;white-space:nowrap;">
+        <input type="checkbox" id="notice-hide-today" style="accent-color:#C9A84C;cursor:pointer;">오늘 하루 안 보기
+      </label>
+      <button onclick="closeNoticeBar()" style="background:transparent;border:none;color:#999;font-size:16px;cursor:pointer;padding:0 4px;line-height:1;">✕</button>
+    </div>
+  </div>
+</div>
 <div class="tab-nav-wrap"><div class="tab-nav">
   <button class="tab-btn" id="tab-btn-btc" onclick="if(!tgUser){openLoginModal();}else if(!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{goToTab('btc',this);}">₿ 비트</button>
   <button class="tab-btn" id="tab-btn-altcoin" onclick="if(!tgUser){openLoginModal();}else if(!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{goToTab('altcoin',this);}">📊 알트</button>
@@ -2743,6 +2754,36 @@ window.addEventListener('scroll',function(){
   if(window.scrollY>40){header.classList.add('scrolled');}
   else{header.classList.remove('scrolled');}
 },{passive:true});
+
+// ══════════════════════════════════════════════
+// 공지 배너 — 사용법: NOTICE_ENABLED를 true로,
+// NOTICE_TEXT에 문구 채운 뒤 배포. 끝나면 false로 되돌리기.
+// ══════════════════════════════════════════════
+var NOTICE_ENABLED = false;
+var NOTICE_TEXT = "";
+var NOTICE_ID = "2026-notice-1";
+
+function closeNoticeBar(){
+  var bar = document.getElementById('site-notice-bar');
+  if(bar) bar.style.display = 'none';
+  var cb = document.getElementById('notice-hide-today');
+  if(cb && cb.checked){
+    var today = new Date().toISOString().split('T')[0];
+    localStorage.setItem('notice_hide_'+NOTICE_ID, today);
+  }
+}
+
+function initNoticeBar(){
+  if(!NOTICE_ENABLED || !NOTICE_TEXT) return;
+  var hiddenDate = localStorage.getItem('notice_hide_'+NOTICE_ID);
+  var today = new Date().toISOString().split('T')[0];
+  if(hiddenDate === today) return;
+  var textEl = document.getElementById('site-notice-text');
+  var bar = document.getElementById('site-notice-bar');
+  if(textEl) textEl.textContent = NOTICE_TEXT;
+  if(bar) bar.style.display = 'block';
+}
+initNoticeBar();
 </script>
 
 <script>
