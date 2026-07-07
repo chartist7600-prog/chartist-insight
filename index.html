@@ -1793,7 +1793,7 @@ async function refreshPushSubStatus(){
     const reg=await navigator.serviceWorker.ready;
     const sub=await reg.pushManager.getSubscription();
     if(!sub){
-      statusEl.textContent='아직 구독하지 않았습니다';
+      statusEl.textContent='아직 알림을 받고 있지 않습니다';
       unsubBtn.style.display='none';
       return;
     }
@@ -1804,10 +1804,10 @@ async function refreshPushSubStatus(){
     });
     const data=await res.json();
     if(data.ok&&data.subscribed){
-      statusEl.textContent='이미 구독 중입니다 ('+data.categories.length+'개 카테고리)';
+      statusEl.textContent='알림을 받고 있습니다 ('+data.categories.length+'개 카테고리)';
       unsubBtn.style.display='';
     } else {
-      statusEl.textContent='아직 구독하지 않았습니다';
+      statusEl.textContent='아직 알림을 받고 있지 않습니다';
       unsubBtn.style.display='none';
     }
   }catch(e){
@@ -1831,8 +1831,8 @@ async function unsubscribePush(){
     alert('푸시 알림 구독이 취소되었습니다.');
     refreshPushSubStatus();
   }catch(e){
-    console.error('구독 취소 실패:',e);
-    alert('구독 취소 중 오류가 발생했습니다.');
+    console.error('폰 알림 해제 실패:',e);
+    alert('폰 알림 해제 중 오류가 발생했습니다.');
   }
 }
 function hideSoundPopup(e){
@@ -2863,7 +2863,7 @@ window.addEventListener('scroll',function(){
     </div>
     <div id="push-sub-status" style="font-size:12px;color:#777;margin-bottom:10px;text-align:center;"></div>
     <button class="member-modal-btn" onclick="savePushSettings()" style="margin-bottom:8px;">푸시 알림 저장</button>
-    <button class="member-modal-btn" id="push-unsub-btn" onclick="unsubscribePush()" style="margin-bottom:0;background:transparent;border:0.5px solid #444;color:#999;display:none;">구독 취소</button>
+    <button class="member-modal-btn" id="push-unsub-btn" onclick="unsubscribePush()" style="margin-bottom:0;background:transparent;border:0.5px solid #444;color:#999;display:none;">폰 알림 해제</button>
   </div>
 </div>
 
