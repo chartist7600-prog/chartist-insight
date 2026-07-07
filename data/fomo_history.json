@@ -1,5 +1,23 @@
 [
   {
+    "ticker": "LDO",
+    "name": "LDO",
+    "exchange": "빗썸",
+    "entry_price": 422.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-07 21:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "EDGEX",
+    "name": "EDGEX",
+    "exchange": "빗썸",
+    "entry_price": 478.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-07 21:05",
+    "signal": "trend"
+  },
+  {
     "ticker": "QI",
     "name": "QI",
     "exchange": "바이낸스",
@@ -63,81 +81,5 @@
     "entry_price": 0.1737,
     "currency": "USD",
     "entry_time": "2026-07-07 09:00"
-  },
-  {
-    "ticker": "A",
-    "name": "A",
-    "exchange": "빗썸",
-    "entry_price": 113.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-07 00:00"
-  },
-  {
-    "ticker": "YFI",
-    "name": "YFI",
-    "exchange": "빗썸",
-    "entry_price": 3398000.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-07 00:00"
-  },
-  {
-    "ticker": "XTZ",
-    "name": "XTZ",
-    "exchange": "빗썸",
-    "entry_price": 381.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-07 00:00"
-  },
-  {
-    "ticker": "SUN",
-    "name": "SUN",
-    "exchange": "빗썸",
-    "entry_price": 26.46,
-    "currency": "KRW",
-    "entry_time": "2026-07-07 00:00"
-  },
-  {
-    "ticker": "MON",
-    "name": "MON",
-    "exchange": "빗썸",
-    "entry_price": 34.7,
-    "currency": "KRW",
-    "entry_time": "2026-07-07 00:00"
-  },
-  {
-    "ticker": "CTSI",
-    "name": "CTSI",
-    "exchange": "빗썸",
-    "entry_price": 36.01,
-    "currency": "KRW",
-    "entry_time": "2026-07-06 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "ALICE",
-    "name": "ALICE",
-    "exchange": "빗썸",
-    "entry_price": 215.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-06 21:05",
-    "signal": "trend_strong"
-  },
-  {
-    "ticker": "KSM",
-    "name": "KSM",
-    "exchange": "빗썸",
-    "entry_price": 5080.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-06 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "SCRT",
-    "name": "SCRT",
-    "exchange": "바이낸스",
-    "entry_price": 0.0575,
-    "currency": "USDT",
-    "entry_time": "2026-07-06 21:05",
-    "signal": "trend"
   }
 ]

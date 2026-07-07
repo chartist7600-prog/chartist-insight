@@ -4,5 +4,17 @@
     "time": "2026-07-07 09:00",
     "price": 0.00126,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_LDO",
+    "time": "2026-07-07 21:00",
+    "price": 422.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_EDGEX",
+    "time": "2026-07-07 21:00",
+    "price": 478.0,
+    "sig_type": "trend"
   }
 ]
