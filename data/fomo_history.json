@@ -1,5 +1,22 @@
 [
   {
+    "ticker": "SPELL",
+    "name": "SPELL",
+    "exchange": "바이낸스",
+    "entry_price": 0.000108,
+    "currency": "USDT",
+    "entry_time": "2026-07-08 09:06",
+    "signal": "trend"
+  },
+  {
+    "ticker": "MUBARAK",
+    "name": "MUBARAK",
+    "exchange": "바이낸스",
+    "entry_price": 0.01207,
+    "currency": "USD",
+    "entry_time": "2026-07-08 09:00"
+  },
+  {
     "ticker": "COW",
     "name": "COW",
     "exchange": "빗썸",
@@ -71,22 +88,6 @@
     "name": "PYTH",
     "exchange": "바이낸스",
     "entry_price": 0.04555,
-    "currency": "USD",
-    "entry_time": "2026-07-07 09:00"
-  },
-  {
-    "ticker": "MASK",
-    "name": "MASK",
-    "exchange": "바이낸스",
-    "entry_price": 0.431,
-    "currency": "USD",
-    "entry_time": "2026-07-07 09:00"
-  },
-  {
-    "ticker": "BAND",
-    "name": "BAND",
-    "exchange": "바이낸스",
-    "entry_price": 0.1737,
     "currency": "USD",
     "entry_time": "2026-07-07 09:00"
   }
