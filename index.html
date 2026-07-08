@@ -2219,8 +2219,10 @@ function jRenderList(){
       var db=t.direction==='LONG'?'background:rgba(38,166,66,0.12);color:#26a642;':'background:rgba(226,83,74,0.12);color:#e2534a;';
       var sb=t.status==='open'?'background:rgba(201,168,76,0.1);color:#C9A84C;border:1px solid rgba(201,168,76,0.28);':'background:#1e1e1e;color:#555;';
       var tid=(t.id||t._id||'');
+      var imgs=Array.isArray(t.images)?t.images:[];
+      var imgBadge=imgs.length?'<span onclick="jOpenImageViewer(\''+tid+'\')" style="cursor:pointer;display:inline-block;margin-top:3px;font-size:10px;color:#C9A84C;background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.3);border-radius:10px;padding:1px 7px;">📷 '+imgs.length+'</span>':'';
       return '<tr style="border-bottom:1px solid #1a1a1a;">'+
-        '<td style="padding:12px;"><div style="font-weight:700;font-size:14px;color:#e2e2e2;">'+tk+'</div><div style="font-size:11px;color:#555;margin-top:2px;">'+(t.entry_date||'')+' '+(ls?'· '+ls:'')+'</div></td>'+
+        '<td style="padding:12px;"><div style="font-weight:700;font-size:14px;color:#e2e2e2;">'+tk+'</div><div style="font-size:11px;color:#555;margin-top:2px;">'+(t.entry_date||'')+' '+(ls?'· '+ls:'')+'</div>'+imgBadge+'</td>'+
         '<td style="padding:12px;"><span style="display:inline-block;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:700;'+db+'">'+(t.direction||'')+'</span></td>'+
         '<td style="padding:12px;color:#e2e2e2;">'+(t.entry||'—')+'</td>'+
         '<td style="padding:12px;color:#e2e2e2;">'+(t.exit_price||t.exit||'<span style="color:#444">—</span>')+'</td>'+
@@ -2241,11 +2243,60 @@ function jSetFilter(f,btn){
   jRenderList();
 }
 
+var jPendingImages = [];
+
+function jHandleImageSelect(files){
+  var arr = Array.from(files || []);
+  var room = 3 - jPendingImages.length;
+  if (room <= 0) { alert('이미지는 최대 3장까지 선택할 수 있습니다.'); return; }
+  arr = arr.slice(0, room);
+  arr.forEach(function(f){
+    if (!f.type.startsWith('image/')) return;
+    jPendingImages.push(f);
+  });
+  jRenderImagePreview();
+  var input = document.getElementById('j-image-input');
+  if (input) input.value = '';
+}
+
+function jRemovePendingImage(idx){
+  jPendingImages.splice(idx, 1);
+  jRenderImagePreview();
+}
+
+function jRenderImagePreview(){
+  var box = document.getElementById('j-image-preview');
+  if (!box) return;
+  box.innerHTML = jPendingImages.map(function(f, i){
+    var url = URL.createObjectURL(f);
+    return '<div style="position:relative;width:56px;height:56px;">' +
+      '<img src="' + url + '" style="width:56px;height:56px;object-fit:cover;border-radius:6px;border:1px solid #333;">' +
+      '<button type="button" onclick="jRemovePendingImage(' + i + ')" style="position:absolute;top:-6px;right:-6px;width:18px;height:18px;border-radius:50%;background:#e2534a;color:#fff;border:none;font-size:11px;line-height:1;cursor:pointer;">✕</button>' +
+      '</div>';
+  }).join('');
+}
+
+async function jUploadImagesForTrade(tgId, tradeId, files){
+  for (var i = 0; i < files.length; i++) {
+    try {
+      var fd = new FormData();
+      fd.append('tg_id', tgId);
+      fd.append('trade_id', tradeId);
+      fd.append('image', files[i]);
+      await fetch('https://chartist-insight.com/trade/tg_upload_image', { method: 'POST', body: fd });
+    } catch (e) {
+      console.error('이미지 업로드 실패:', e);
+    }
+  }
+}
+
 function jResetForm(){
   ['j-ticker','j-lev','j-entry','j-exit','j-size','j-sl','j-tp','j-memo'].forEach(function(id){var el=document.getElementById(id);if(el)el.value='';});
   var d=document.getElementById('j-dir');if(d)d.value='LONG';
   var dt=document.getElementById('j-date');if(dt)dt.value=new Date().toISOString().split('T')[0];
   var e=document.getElementById('j-add-err');if(e)e.style.display='none';
+  jPendingImages = [];
+  jRenderImagePreview();
 }
 
 async function journalAdd(){
@@ -2270,8 +2321,59 @@ async function journalAdd(){
     var res=await fetch('https://chartist-insight.com/trade/tg_add',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({tg_id:tgId,ticker,direction,leverage,entry_date,entry_price,exit_price,size,stop_loss,take_profit,memo})});
     var d=await res.json();
     if(!res.ok||d.error){e.textContent=d.error||'저장 실패';e.style.display='block';return;}
+    if(jPendingImages.length && d.trade && d.trade.id){
+      await jUploadImagesForTrade(tgId, d.trade.id, jPendingImages);
+    }
+    jPendingImages = [];
     jResetForm();await jLoadTrades();
   }catch(err){e.textContent='서버 연결 오류';e.style.display='block';}
+}
+
+function jOpenImageViewer(tradeId){
+  var t = jAllTrades.find(function(x){ return x && (x.id === tradeId || x._id === tradeId); });
+  if (!t) return;
+  var imgs = Array.isArray(t.images) ? t.images : [];
+  var modal = document.getElementById('j-image-viewer-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'j-image-viewer-modal';
+    modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:10001;display:flex;align-items:center;justify-content:center;padding:20px;';
+    modal.onclick = function(e){ if (e.target === modal) modal.style.display = 'none'; };
+    document.body.appendChild(modal);
+  }
+  var tgId = jGetTgId();
+  function render(){
+    modal.innerHTML = '<div style="background:#161616;border-radius:12px;padding:20px;max-width:520px;width:100%;max-height:85vh;overflow-y:auto;">' +
+      '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;">' +
+      '<div style="font-size:14px;font-weight:700;color:#C9A84C;">📷 첨부 이미지 (' + imgs.length + '/3)</div>' +
+      '<button onclick="document.getElementById(\'j-image-viewer-modal\').style.display=\'none\'" style="background:none;border:none;color:#999;font-size:20px;cursor:pointer;">✕</button>' +
+      '</div>' +
+      '<div style="display:flex;flex-direction:column;gap:10px;">' +
+      imgs.map(function(p){
+        return '<div style="position:relative;"><img src="https://chartist-insight.com/trade_img/' + p + '" style="width:100%;border-radius:8px;display:block;">' +
+          '<button onclick="jDeleteViewerImage(\'' + tradeId + '\',\'' + p + '\')" style="position:absolute;top:8px;right:8px;background:rgba(226,83,74,0.9);color:#fff;border:none;border-radius:6px;padding:4px 10px;font-size:11px;cursor:pointer;">삭제</button></div>';
+      }).join('') +
+      (imgs.length < 3 ? '<label style="border:1px dashed #333;border-radius:8px;padding:16px;text-align:center;color:#999;font-size:12px;cursor:pointer;">+ 이미지 추가<input type="file" accept="image/*" style="display:none;" onchange="jAddViewerImage(\'' + tradeId + '\', this.files)"></label>' : '') +
+      '</div></div>';
+    modal.style.display = 'flex';
+  }
+  window.jDeleteViewerImage = async function(tid, path){
+    if (!confirm('이미지를 삭제할까요?')) return;
+    await fetch('https://chartist-insight.com/trade/tg_delete_image', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({ tg_id: tgId, trade_id: tid, image_path: path }) });
+    await jLoadTrades();
+    var updated = jAllTrades.find(function(x){ return x && (x.id === tid || x._id === tid); });
+    imgs = updated && Array.isArray(updated.images) ? updated.images : [];
+    render();
+  };
+  window.jAddViewerImage = async function(tid, files){
+    if (!files || !files[0]) return;
+    await jUploadImagesForTrade(tgId, tid, [files[0]]);
+    await jLoadTrades();
+    var updated = jAllTrades.find(function(x){ return x && (x.id === tid || x._id === tid); });
+    imgs = updated && Array.isArray(updated.images) ? updated.images : [];
+    render();
+  };
+  render();
 }
 
 var jEditId=null;
