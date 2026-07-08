@@ -1314,6 +1314,12 @@
         <div class="j-field"><label>목표가</label><input id="j-tp" type="text" placeholder="—"></div>
       </div>
       <div style="margin-bottom:14px;"><label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">메모</label><input id="j-memo" type="text" placeholder="진입 근거, 특이사항..." style="width:100%;background:#111;border:1px solid #242424;border-radius:6px;color:#e2e2e2;font-size:13px;padding:9px 12px;outline:none;box-sizing:border-box;" onfocus="this.style.borderColor='#C9A84C'" onblur="this.style.borderColor='#242424'"></div>
+      <div style="margin-bottom:14px;">
+        <label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">차트 이미지 (최대 3장)</label>
+        <input id="j-image-input" type="file" accept="image/*" multiple style="display:none;" onchange="jHandleImageSelect(this.files)">
+        <button type="button" onclick="document.getElementById('j-image-input').click()" style="background:#111;border:1px dashed #333;border-radius:6px;color:#999;font-size:12px;padding:8px 14px;cursor:pointer;">📷 이미지 선택</button>
+        <div id="j-image-preview" style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;"></div>
+      </div>
       <div style="display:flex;gap:8px;justify-content:flex-end;">
         <button onclick="jResetForm()" style="background:transparent;color:#777;border:1px solid #242424;border-radius:6px;padding:9px 16px;font-size:13px;cursor:pointer;">초기화</button>
         <button onclick="journalAdd()" style="background:#C9A84C;color:#000;border:none;border-radius:6px;padding:9px 24px;font-size:13px;font-weight:700;cursor:pointer;">저장</button>
