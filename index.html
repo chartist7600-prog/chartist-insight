@@ -1317,7 +1317,10 @@
       <div style="margin-bottom:14px;">
         <label style="display:block;font-size:11px;color:#777;margin-bottom:5px;text-transform:uppercase;">차트 이미지 (최대 3장)</label>
         <input id="j-image-input" type="file" accept="image/*" multiple style="display:none;" onchange="jHandleImageSelect(this.files)">
-        <button type="button" onclick="document.getElementById('j-image-input').click()" style="background:#111;border:1px dashed #333;border-radius:6px;color:#999;font-size:12px;padding:8px 14px;cursor:pointer;">📷 이미지 선택</button>
+        <div id="j-image-dropzone" ondragover="jDropzoneDragOver(event)" ondragleave="jDropzoneDragLeave(event)" ondrop="jDropzoneDrop(event)" style="border:1px dashed #333;border-radius:8px;padding:14px;text-align:center;transition:all 0.15s;">
+          <button type="button" onclick="document.getElementById('j-image-input').click()" style="background:#111;border:1px dashed #333;border-radius:6px;color:#999;font-size:12px;padding:8px 14px;cursor:pointer;">📷 이미지 선택</button>
+          <div style="font-size:11px;color:#555;margin-top:6px;">또는 이미지를 여기로 끌어다 놓으세요</div>
+        </div>
         <div id="j-image-preview" style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;"></div>
       </div>
       <div style="display:flex;gap:8px;justify-content:flex-end;">
@@ -2244,6 +2247,29 @@ function jSetFilter(f,btn){
 }
 
 var jPendingImages = [];
+
+function jDropzoneDragOver(e){
+  e.preventDefault();
+  e.stopPropagation();
+  var dz = document.getElementById('j-image-dropzone');
+  if (dz) { dz.style.borderColor = '#C9A84C'; dz.style.background = 'rgba(201,168,76,0.06)'; }
+}
+
+function jDropzoneDragLeave(e){
+  e.preventDefault();
+  e.stopPropagation();
+  var dz = document.getElementById('j-image-dropzone');
+  if (dz) { dz.style.borderColor = '#333'; dz.style.background = 'transparent'; }
+}
+
+function jDropzoneDrop(e){
+  e.preventDefault();
+  e.stopPropagation();
+  var dz = document.getElementById('j-image-dropzone');
+  if (dz) { dz.style.borderColor = '#333'; dz.style.background = 'transparent'; }
+  var files = e.dataTransfer ? e.dataTransfer.files : null;
+  if (files && files.length) jHandleImageSelect(files);
+}
 
 function jHandleImageSelect(files){
   var arr = Array.from(files || []);
