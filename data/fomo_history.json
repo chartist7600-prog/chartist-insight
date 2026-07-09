@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "PEOPLE",
+    "name": "PEOPLE",
+    "exchange": "바이낸스",
+    "entry_price": 0.00568,
+    "currency": "USDT",
+    "entry_time": "2026-07-09 21:04",
+    "signal": "trend"
+  },
+  {
     "ticker": "SPELL",
     "name": "SPELL",
     "exchange": "바이낸스",
@@ -73,22 +82,6 @@
     "exchange": "업비트",
     "entry_price": 148.0,
     "currency": "KRW",
-    "entry_time": "2026-07-07 09:00"
-  },
-  {
-    "ticker": "MOVR",
-    "name": "MOVR",
-    "exchange": "바이낸스",
-    "entry_price": 1.52,
-    "currency": "USD",
-    "entry_time": "2026-07-07 09:00"
-  },
-  {
-    "ticker": "PYTH",
-    "name": "PYTH",
-    "exchange": "바이낸스",
-    "entry_price": 0.04555,
-    "currency": "USD",
     "entry_time": "2026-07-07 09:00"
   }
 ]
