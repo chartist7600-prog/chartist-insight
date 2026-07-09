@@ -1,5 +1,21 @@
 [
   {
+    "ticker": "EGLD",
+    "name": "EGLD",
+    "exchange": "빗썸",
+    "entry_price": 4480.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-10 00:00"
+  },
+  {
+    "ticker": "APE",
+    "name": "APE",
+    "exchange": "빗썸",
+    "entry_price": 239.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-10 00:00"
+  },
+  {
     "ticker": "PEOPLE",
     "name": "PEOPLE",
     "exchange": "바이낸스",
