@@ -1,5 +1,32 @@
 [
   {
+    "ticker": "SKL",
+    "name": "SKL",
+    "exchange": "빗썸",
+    "entry_price": 6.901,
+    "currency": "KRW",
+    "entry_time": "2026-07-10 21:04",
+    "signal": "trend"
+  },
+  {
+    "ticker": "PROMPT",
+    "name": "PROMPT",
+    "exchange": "빗썸",
+    "entry_price": 33.76,
+    "currency": "KRW",
+    "entry_time": "2026-07-10 21:04",
+    "signal": "trend"
+  },
+  {
+    "ticker": "ADX",
+    "name": "ADX",
+    "exchange": "바이낸스",
+    "entry_price": 0.0598,
+    "currency": "USDT",
+    "entry_time": "2026-07-10 21:04",
+    "signal": "trend"
+  },
+  {
     "ticker": "RSR",
     "name": "RSR",
     "exchange": "빗썸",
@@ -55,90 +82,5 @@
     "entry_price": 106.0,
     "currency": "KRW",
     "entry_time": "2026-07-10 09:00"
-  },
-  {
-    "ticker": "BICO",
-    "name": "BICO",
-    "exchange": "바이낸스",
-    "entry_price": 0.01418,
-    "currency": "USD",
-    "entry_time": "2026-07-10 09:00"
-  },
-  {
-    "ticker": "EGLD",
-    "name": "EGLD",
-    "exchange": "빗썸",
-    "entry_price": 4480.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-10 00:00"
-  },
-  {
-    "ticker": "APE",
-    "name": "APE",
-    "exchange": "빗썸",
-    "entry_price": 239.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-10 00:00"
-  },
-  {
-    "ticker": "PEOPLE",
-    "name": "PEOPLE",
-    "exchange": "바이낸스",
-    "entry_price": 0.00568,
-    "currency": "USDT",
-    "entry_time": "2026-07-09 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "SPELL",
-    "name": "SPELL",
-    "exchange": "바이낸스",
-    "entry_price": 0.000108,
-    "currency": "USDT",
-    "entry_time": "2026-07-08 09:06",
-    "signal": "trend"
-  },
-  {
-    "ticker": "MUBARAK",
-    "name": "MUBARAK",
-    "exchange": "바이낸스",
-    "entry_price": 0.01207,
-    "currency": "USD",
-    "entry_time": "2026-07-08 09:00"
-  },
-  {
-    "ticker": "COW",
-    "name": "COW",
-    "exchange": "빗썸",
-    "entry_price": 214.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-08 00:00"
-  },
-  {
-    "ticker": "LDO",
-    "name": "LDO",
-    "exchange": "빗썸",
-    "entry_price": 422.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-07 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "EDGEX",
-    "name": "EDGEX",
-    "exchange": "빗썸",
-    "entry_price": 478.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-07 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "QI",
-    "name": "QI",
-    "exchange": "바이낸스",
-    "entry_price": 0.00126,
-    "currency": "USDT",
-    "entry_time": "2026-07-07 09:06",
-    "signal": "trend"
   }
 ]

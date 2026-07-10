@@ -4,5 +4,23 @@
     "time": "2026-07-10 09:00",
     "price": 1.913,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SKL",
+    "time": "2026-07-10 21:00",
+    "price": 6.901,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_PROMPT",
+    "time": "2026-07-10 21:00",
+    "price": 33.76,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_ADX",
+    "time": "2026-07-10 21:00",
+    "price": 0.0598,
+    "sig_type": "trend"
   }
 ]
