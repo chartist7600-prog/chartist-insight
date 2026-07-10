@@ -1,5 +1,70 @@
 [
   {
+    "ticker": "RSR",
+    "name": "RSR",
+    "exchange": "빗썸",
+    "entry_price": 1.913,
+    "currency": "KRW",
+    "entry_time": "2026-07-10 09:06",
+    "signal": "trend"
+  },
+  {
+    "ticker": "ENSO",
+    "name": "엔소",
+    "exchange": "업비트",
+    "entry_price": 1059.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-10 09:00"
+  },
+  {
+    "ticker": "TIA",
+    "name": "TIA",
+    "exchange": "바이낸스",
+    "entry_price": 0.4109,
+    "currency": "USD",
+    "entry_time": "2026-07-10 09:00"
+  },
+  {
+    "ticker": "MORPHO",
+    "name": "MORPHO",
+    "exchange": "바이낸스",
+    "entry_price": 2.251,
+    "currency": "USD",
+    "entry_time": "2026-07-10 09:00"
+  },
+  {
+    "ticker": "SKL",
+    "name": "SKL",
+    "exchange": "바이낸스",
+    "entry_price": 0.00422,
+    "currency": "USD",
+    "entry_time": "2026-07-10 09:00"
+  },
+  {
+    "ticker": "TRX",
+    "name": "TRX",
+    "exchange": "바이낸스",
+    "entry_price": 0.3322,
+    "currency": "USD",
+    "entry_time": "2026-07-10 09:00"
+  },
+  {
+    "ticker": "EDGE",
+    "name": "디피니티브",
+    "exchange": "업비트",
+    "entry_price": 106.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-10 09:00"
+  },
+  {
+    "ticker": "BICO",
+    "name": "BICO",
+    "exchange": "바이낸스",
+    "entry_price": 0.01418,
+    "currency": "USD",
+    "entry_time": "2026-07-10 09:00"
+  },
+  {
     "ticker": "EGLD",
     "name": "EGLD",
     "exchange": "빗썸",
@@ -75,29 +140,5 @@
     "currency": "USDT",
     "entry_time": "2026-07-07 09:06",
     "signal": "trend"
-  },
-  {
-    "ticker": "BLUR",
-    "name": "블러",
-    "exchange": "업비트",
-    "entry_price": 32.3,
-    "currency": "KRW",
-    "entry_time": "2026-07-07 09:00"
-  },
-  {
-    "ticker": "IMX",
-    "name": "이뮤터블엑스",
-    "exchange": "업비트",
-    "entry_price": 217.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-07 09:00"
-  },
-  {
-    "ticker": "SAFE",
-    "name": "세이프",
-    "exchange": "업비트",
-    "entry_price": 148.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-07 09:00"
   }
 ]
