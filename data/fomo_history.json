@@ -1,5 +1,45 @@
 [
   {
+    "ticker": "EGLD",
+    "name": "EGLD",
+    "exchange": "빗썸",
+    "entry_price": 4480.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-11 00:00"
+  },
+  {
+    "ticker": "APE",
+    "name": "APE",
+    "exchange": "빗썸",
+    "entry_price": 239.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-11 00:00"
+  },
+  {
+    "ticker": "ARB",
+    "name": "ARB",
+    "exchange": "빗썸",
+    "entry_price": 136.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-11 00:00"
+  },
+  {
+    "ticker": "COW",
+    "name": "COW",
+    "exchange": "빗썸",
+    "entry_price": 205.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-11 00:00"
+  },
+  {
+    "ticker": "WET",
+    "name": "WET",
+    "exchange": "빗썸",
+    "entry_price": 99.74,
+    "currency": "KRW",
+    "entry_time": "2026-07-11 00:00"
+  },
+  {
     "ticker": "SKL",
     "name": "SKL",
     "exchange": "빗썸",
