@@ -1,5 +1,23 @@
 [
   {
+    "ticker": "PYR",
+    "name": "PYR",
+    "exchange": "빗썸",
+    "entry_price": 267.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-11 21:04",
+    "signal": "trend"
+  },
+  {
+    "ticker": "1MBABYDOGE",
+    "name": "1MBABYDOGE",
+    "exchange": "바이낸스",
+    "entry_price": 0.0003271,
+    "currency": "USDT",
+    "entry_time": "2026-07-11 21:04",
+    "signal": "trend"
+  },
+  {
     "ticker": "TUT",
     "name": "TUT",
     "exchange": "바이낸스",
@@ -64,40 +82,5 @@
     "entry_price": 205.0,
     "currency": "KRW",
     "entry_time": "2026-07-11 00:00"
-  },
-  {
-    "ticker": "WET",
-    "name": "WET",
-    "exchange": "빗썸",
-    "entry_price": 99.74,
-    "currency": "KRW",
-    "entry_time": "2026-07-11 00:00"
-  },
-  {
-    "ticker": "SKL",
-    "name": "SKL",
-    "exchange": "빗썸",
-    "entry_price": 6.901,
-    "currency": "KRW",
-    "entry_time": "2026-07-10 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "PROMPT",
-    "name": "PROMPT",
-    "exchange": "빗썸",
-    "entry_price": 33.76,
-    "currency": "KRW",
-    "entry_time": "2026-07-10 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "ADX",
-    "name": "ADX",
-    "exchange": "바이낸스",
-    "entry_price": 0.0598,
-    "currency": "USDT",
-    "entry_time": "2026-07-10 21:04",
-    "signal": "trend"
   }
 ]

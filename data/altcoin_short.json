@@ -10,5 +10,17 @@
     "time": "2026-07-11 09:00",
     "price": 0.011442,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_PYR",
+    "time": "2026-07-11 21:00",
+    "price": 267.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_1MBABYDOGE",
+    "time": "2026-07-11 21:00",
+    "price": 0.0003271,
+    "sig_type": "trend"
   }
 ]
