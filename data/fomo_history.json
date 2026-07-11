@@ -1,5 +1,53 @@
 [
   {
+    "ticker": "T",
+    "name": "T",
+    "exchange": "빗썸",
+    "entry_price": 6.94,
+    "currency": "KRW",
+    "entry_time": "2026-07-12 00:00"
+  },
+  {
+    "ticker": "BEAM",
+    "name": "BEAM",
+    "exchange": "빗썸",
+    "entry_price": 2.348,
+    "currency": "KRW",
+    "entry_time": "2026-07-12 00:00"
+  },
+  {
+    "ticker": "MORPHO",
+    "name": "MORPHO",
+    "exchange": "빗썸",
+    "entry_price": 3288.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-12 00:00"
+  },
+  {
+    "ticker": "FLUID",
+    "name": "FLUID",
+    "exchange": "빗썸",
+    "entry_price": 1610.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-12 00:00"
+  },
+  {
+    "ticker": "EDGE",
+    "name": "EDGE",
+    "exchange": "빗썸",
+    "entry_price": 102.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-12 00:00"
+  },
+  {
+    "ticker": "WET",
+    "name": "WET",
+    "exchange": "빗썸",
+    "entry_price": 99.74,
+    "currency": "KRW",
+    "entry_time": "2026-07-12 00:00"
+  },
+  {
     "ticker": "PYR",
     "name": "PYR",
     "exchange": "빗썸",
