@@ -355,6 +355,9 @@
   .signal-desc{font-size:11px;color:var(--text3);line-height:1.5;}
   .signal-right{display:flex;flex-direction:column;align-items:flex-end;gap:4px;}
   .signal-entry-label{font-size:10px;color:var(--text3);}
+  .signal-sltp-grid{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;}
+  .signal-sltp-item{display:flex;align-items:center;gap:4px;font-size:11px;background:rgba(255,255,255,0.04);border:0.5px solid rgba(255,255,255,0.08);border-radius:5px;padding:3px 7px;}
+  .signal-sltp-label{color:var(--text3);font-size:10px;}
   .signal-entry{font-size:18px;font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--gold);letter-spacing:-0.5px;}
   .signal-entry.long-color{color:var(--red2);}
   .signal-entry.short-color{color:var(--blue);}
@@ -1587,11 +1590,25 @@ function renderBtcSignals(signals){
       ?'<div class="signal-time">⏱ '+timeStr+'</div>'
       :'<div class="signal-time" style="filter:blur(4px);user-select:none;cursor:pointer;" onclick="if(!tgUser){openLoginModal();}else{document.getElementById(\'member-modal\').classList.add(\'show\');}">00-00 00:00</div>';
 
+    var slTpItems=[];
+    if(s.sl) slTpItems.push({label:'SL',val:s.sl,cls:'short-color'});
+    ['tp1','tp2','tp3','tp4','tp5'].forEach(function(k,i){ if(s[k]) slTpItems.push({label:'TP'+(i+1),val:s[k],cls:'long-color'}); });
+    var slTpHtml='';
+    if(slTpItems.length){
+      slTpHtml='<div class="signal-sltp-grid">'+slTpItems.map(function(it){
+        var valHtml=isUnlocked
+          ?'<span class="'+it.cls+'">'+it.val+'</span>'
+          :'<span class="'+it.cls+'" style="filter:blur(4px);user-select:none;cursor:pointer;" onclick="if(!tgUser){openLoginModal();}else{document.getElementById(\'member-modal\').classList.add(\'show\');}">00,000</span>';
+        return '<div class="signal-sltp-item"><span class="signal-sltp-label">'+it.label+'</span>'+valHtml+'</div>';
+      }).join('')+'</div>';
+    }
+
     html+='<div class="'+itemCls+'">';
     html+='<div class="signal-left">';
     html+='<div class="signal-top-row"><span class="'+badgeCls+'">'+badgeTxt+'</span><span class="signal-tf">'+( s.tf||'—')+'</span></div>';
     html+='<div class="signal-ticker">'+(s.ticker||'BTCUSDT')+'</div>';
     if(tfDesc) html+='<div class="signal-desc">'+tfDesc+' · 이동평균선 기반 알고리즘</div>';
+    html+=slTpHtml;
     html+='</div>';
     html+='<div class="signal-right">';
     html+=entryHtml;
