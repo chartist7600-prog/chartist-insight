@@ -2153,7 +2153,8 @@ function jSwitchAuthTab(tab){}
 function jGetTgId(){
   try{
     var u=JSON.parse(localStorage.getItem('tg_user')||'null');
-    return u&&u.id?String(u.id):null;
+    var uid = u && (u.user_id || u.id);
+    return uid ? String(uid) : null;
   }catch(e){return null;}
 }
 
