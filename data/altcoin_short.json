@@ -1,26 +1,14 @@
 [
   {
-    "key": "빗썸_RSR",
-    "time": "2026-07-10 09:00",
-    "price": 1.913,
+    "key": "바이낸스_TUT",
+    "time": "2026-07-11 09:00",
+    "price": 0.01159,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_SKL",
-    "time": "2026-07-10 21:00",
-    "price": 6.901,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_PROMPT",
-    "time": "2026-07-10 21:00",
-    "price": 33.76,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_ADX",
-    "time": "2026-07-10 21:00",
-    "price": 0.0598,
+    "key": "바이낸스_KGST",
+    "time": "2026-07-11 09:00",
+    "price": 0.011442,
     "sig_type": "trend"
   }
 ]
