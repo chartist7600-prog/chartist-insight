@@ -1,5 +1,61 @@
 [
   {
+    "ticker": "CAKE",
+    "name": "CAKE",
+    "exchange": "빗썸",
+    "entry_price": 2132.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-13 00:00"
+  },
+  {
+    "ticker": "BLAST",
+    "name": "BLAST",
+    "exchange": "빗썸",
+    "entry_price": 0.4895,
+    "currency": "KRW",
+    "entry_time": "2026-07-13 00:00"
+  },
+  {
+    "ticker": "RED",
+    "name": "RED",
+    "exchange": "빗썸",
+    "entry_price": 170.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-13 00:00"
+  },
+  {
+    "ticker": "FLUID",
+    "name": "FLUID",
+    "exchange": "빗썸",
+    "entry_price": 1610.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-13 00:00"
+  },
+  {
+    "ticker": "DEXE",
+    "name": "DEXE",
+    "exchange": "빗썸",
+    "entry_price": 69750.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-13 00:00"
+  },
+  {
+    "ticker": "EDGE",
+    "name": "EDGE",
+    "exchange": "빗썸",
+    "entry_price": 102.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-13 00:00"
+  },
+  {
+    "ticker": "WET",
+    "name": "WET",
+    "exchange": "빗썸",
+    "entry_price": 99.77,
+    "currency": "KRW",
+    "entry_time": "2026-07-13 00:00"
+  },
+  {
     "ticker": "SUNDOG",
     "name": "SUNDOG",
     "exchange": "빗썸",
