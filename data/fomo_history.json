@@ -1,5 +1,23 @@
 [
   {
+    "ticker": "SUNDOG",
+    "name": "SUNDOG",
+    "exchange": "빗썸",
+    "entry_price": 6.769,
+    "currency": "KRW",
+    "entry_time": "2026-07-12 21:04",
+    "signal": "trend"
+  },
+  {
+    "ticker": "USUAL",
+    "name": "USUAL",
+    "exchange": "바이낸스",
+    "entry_price": 0.01002,
+    "currency": "USDT",
+    "entry_time": "2026-07-12 21:04",
+    "signal": "trend"
+  },
+  {
     "ticker": "C98",
     "name": "C98",
     "exchange": "빗썸",
@@ -63,56 +81,5 @@
     "entry_price": 3288.0,
     "currency": "KRW",
     "entry_time": "2026-07-12 00:00"
-  },
-  {
-    "ticker": "FLUID",
-    "name": "FLUID",
-    "exchange": "빗썸",
-    "entry_price": 1610.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-12 00:00"
-  },
-  {
-    "ticker": "EDGE",
-    "name": "EDGE",
-    "exchange": "빗썸",
-    "entry_price": 102.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-12 00:00"
-  },
-  {
-    "ticker": "WET",
-    "name": "WET",
-    "exchange": "빗썸",
-    "entry_price": 99.74,
-    "currency": "KRW",
-    "entry_time": "2026-07-12 00:00"
-  },
-  {
-    "ticker": "PYR",
-    "name": "PYR",
-    "exchange": "빗썸",
-    "entry_price": 267.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-11 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "1MBABYDOGE",
-    "name": "1MBABYDOGE",
-    "exchange": "바이낸스",
-    "entry_price": 0.0003271,
-    "currency": "USDT",
-    "entry_time": "2026-07-11 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "TUT",
-    "name": "TUT",
-    "exchange": "바이낸스",
-    "entry_price": 0.01159,
-    "currency": "USDT",
-    "entry_time": "2026-07-11 09:06",
-    "signal": "trend"
   }
 ]

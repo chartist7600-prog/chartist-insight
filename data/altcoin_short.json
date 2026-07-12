@@ -4,5 +4,17 @@
     "time": "2026-07-12 09:00",
     "price": 20.91,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SUNDOG",
+    "time": "2026-07-12 21:00",
+    "price": 6.769,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_USUAL",
+    "time": "2026-07-12 21:00",
+    "price": 0.01002,
+    "sig_type": "trend"
   }
 ]
