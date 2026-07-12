@@ -1,5 +1,46 @@
 [
   {
+    "ticker": "C98",
+    "name": "C98",
+    "exchange": "빗썸",
+    "entry_price": 20.91,
+    "currency": "KRW",
+    "entry_time": "2026-07-12 09:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "ELSA",
+    "name": "헤이엘사",
+    "exchange": "업비트",
+    "entry_price": 79.2,
+    "currency": "KRW",
+    "entry_time": "2026-07-12 09:00"
+  },
+  {
+    "ticker": "PROM",
+    "name": "PROM",
+    "exchange": "바이낸스",
+    "entry_price": 1.294,
+    "currency": "USD",
+    "entry_time": "2026-07-12 09:00"
+  },
+  {
+    "ticker": "SXT",
+    "name": "SXT",
+    "exchange": "바이낸스",
+    "entry_price": 0.00962,
+    "currency": "USD",
+    "entry_time": "2026-07-12 09:00"
+  },
+  {
+    "ticker": "COW",
+    "name": "카우프로토콜",
+    "exchange": "업비트",
+    "entry_price": 209.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-12 09:00"
+  },
+  {
     "ticker": "T",
     "name": "T",
     "exchange": "빗썸",
@@ -73,62 +114,5 @@
     "currency": "USDT",
     "entry_time": "2026-07-11 09:06",
     "signal": "trend"
-  },
-  {
-    "ticker": "KGST",
-    "name": "KGST",
-    "exchange": "바이낸스",
-    "entry_price": 0.011442,
-    "currency": "USDT",
-    "entry_time": "2026-07-11 09:06",
-    "signal": "trend"
-  },
-  {
-    "ticker": "NVDAB",
-    "name": "NVDAB",
-    "exchange": "바이낸스",
-    "entry_price": 210.6,
-    "currency": "USD",
-    "entry_time": "2026-07-11 09:00"
-  },
-  {
-    "ticker": "PYR",
-    "name": "PYR",
-    "exchange": "바이낸스",
-    "entry_price": 0.185,
-    "currency": "USD",
-    "entry_time": "2026-07-11 09:00"
-  },
-  {
-    "ticker": "EGLD",
-    "name": "EGLD",
-    "exchange": "빗썸",
-    "entry_price": 4480.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-11 00:00"
-  },
-  {
-    "ticker": "APE",
-    "name": "APE",
-    "exchange": "빗썸",
-    "entry_price": 239.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-11 00:00"
-  },
-  {
-    "ticker": "ARB",
-    "name": "ARB",
-    "exchange": "빗썸",
-    "entry_price": 136.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-11 00:00"
-  },
-  {
-    "ticker": "COW",
-    "name": "COW",
-    "exchange": "빗썸",
-    "entry_price": 205.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-11 00:00"
   }
 ]

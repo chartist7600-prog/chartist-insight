@@ -1,26 +1,8 @@
 [
   {
-    "key": "바이낸스_TUT",
-    "time": "2026-07-11 09:00",
-    "price": 0.01159,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_KGST",
-    "time": "2026-07-11 09:00",
-    "price": 0.011442,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_PYR",
-    "time": "2026-07-11 21:00",
-    "price": 267.0,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_1MBABYDOGE",
-    "time": "2026-07-11 21:00",
-    "price": 0.0003271,
+    "key": "빗썸_C98",
+    "time": "2026-07-12 09:00",
+    "price": 20.91,
     "sig_type": "trend"
   }
 ]
