@@ -3198,7 +3198,7 @@ async function subscribePush(categories) {
         applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY)
       });
     }
-    const tgId = tgUser ? tgUser.id : null;
+    const tgId = tgUser ? (tgUser.user_id || tgUser.id) : null;
     await fetch('/push/subscribe', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
