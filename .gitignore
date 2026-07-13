@@ -1,4 +1,5 @@
 index.html.bak
-index.html.backup_*
+*.backup_*
+*.bak
 macro_scanner.py
 *.lock
