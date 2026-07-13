@@ -2469,7 +2469,7 @@ async function journalUpdate(){
   var ep=parseFloat(String(document.getElementById('j-e-entry').value).replace(/,/g,''))||0;
   var e=document.getElementById('j-e-err');e.style.display='none';
   if(!ep){e.textContent='진입가를 입력해주세요';e.style.display='block';return;}
-  var payload={tg_id:tgId,id,ticker:document.getElementById('j-e-ticker').value.trim().toUpperCase(),direction:document.getElementById('j-e-dir').value,leverage:document.getElementById('j-e-lev').value.trim(),entry_date:document.getElementById('j-e-date').value,entry_price:ep,exit_price:parseFloat(String(document.getElementById('j-e-exit').value).replace(/,/g,''))||null,size:parseFloat(String(document.getElementById('j-e-size').value).replace(/,/g,''))||null,stop_loss:parseFloat(String(document.getElementById('j-e-sl').value).replace(/,/g,''))||null,memo:document.getElementById('j-e-memo').value.trim()};
+  var exitRaw=String(document.getElementById('j-e-exit').value||'').trim();var exitVal=exitRaw?parseFloat(exitRaw.replace(/,/g,'')):'';var payload={tg_id:tgId,id,ticker:document.getElementById('j-e-ticker').value.trim().toUpperCase(),direction:document.getElementById('j-e-dir').value,leverage:document.getElementById('j-e-lev').value.trim(),entry_date:document.getElementById('j-e-date').value,entry_price:ep,exit_price:exitVal,size:parseFloat(String(document.getElementById('j-e-size').value).replace(/,/g,''))||null,stop_loss:parseFloat(String(document.getElementById('j-e-sl').value).replace(/,/g,''))||null,memo:document.getElementById('j-e-memo').value.trim()};
   try{
     var res=await fetch('https://chartist-insight.com/trade/tg_update',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
     var d=await res.json();
