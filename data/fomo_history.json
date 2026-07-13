@@ -1,5 +1,63 @@
 [
   {
+    "ticker": "DCR",
+    "name": "DCR",
+    "exchange": "바이낸스",
+    "entry_price": 12.23,
+    "currency": "USDT",
+    "entry_time": "2026-07-13 09:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "DODO",
+    "name": "DODO",
+    "exchange": "바이낸스",
+    "entry_price": 0.02322,
+    "currency": "USDT",
+    "entry_time": "2026-07-13 09:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "EGLD",
+    "name": "멀티버스엑스",
+    "exchange": "업비트",
+    "entry_price": 4513.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-13 09:00"
+  },
+  {
+    "ticker": "ZEC",
+    "name": "ZEC",
+    "exchange": "바이낸스",
+    "entry_price": 533.53,
+    "currency": "USD",
+    "entry_time": "2026-07-13 09:00"
+  },
+  {
+    "ticker": "POL",
+    "name": "POL",
+    "exchange": "바이낸스",
+    "entry_price": 0.08106,
+    "currency": "USD",
+    "entry_time": "2026-07-13 09:00"
+  },
+  {
+    "ticker": "HOLO",
+    "name": "HOLO",
+    "exchange": "바이낸스",
+    "entry_price": 0.0741,
+    "currency": "USD",
+    "entry_time": "2026-07-13 09:00"
+  },
+  {
+    "ticker": "WBETH",
+    "name": "WBETH",
+    "exchange": "바이낸스",
+    "entry_price": 1986.53,
+    "currency": "USD",
+    "entry_time": "2026-07-13 09:00"
+  },
+  {
     "ticker": "CAKE",
     "name": "CAKE",
     "exchange": "빗썸",
@@ -63,79 +121,5 @@
     "currency": "KRW",
     "entry_time": "2026-07-12 21:04",
     "signal": "trend"
-  },
-  {
-    "ticker": "USUAL",
-    "name": "USUAL",
-    "exchange": "바이낸스",
-    "entry_price": 0.01002,
-    "currency": "USDT",
-    "entry_time": "2026-07-12 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "C98",
-    "name": "C98",
-    "exchange": "빗썸",
-    "entry_price": 20.91,
-    "currency": "KRW",
-    "entry_time": "2026-07-12 09:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "ELSA",
-    "name": "헤이엘사",
-    "exchange": "업비트",
-    "entry_price": 79.2,
-    "currency": "KRW",
-    "entry_time": "2026-07-12 09:00"
-  },
-  {
-    "ticker": "PROM",
-    "name": "PROM",
-    "exchange": "바이낸스",
-    "entry_price": 1.294,
-    "currency": "USD",
-    "entry_time": "2026-07-12 09:00"
-  },
-  {
-    "ticker": "SXT",
-    "name": "SXT",
-    "exchange": "바이낸스",
-    "entry_price": 0.00962,
-    "currency": "USD",
-    "entry_time": "2026-07-12 09:00"
-  },
-  {
-    "ticker": "COW",
-    "name": "카우프로토콜",
-    "exchange": "업비트",
-    "entry_price": 209.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-12 09:00"
-  },
-  {
-    "ticker": "T",
-    "name": "T",
-    "exchange": "빗썸",
-    "entry_price": 6.94,
-    "currency": "KRW",
-    "entry_time": "2026-07-12 00:00"
-  },
-  {
-    "ticker": "BEAM",
-    "name": "BEAM",
-    "exchange": "빗썸",
-    "entry_price": 2.348,
-    "currency": "KRW",
-    "entry_time": "2026-07-12 00:00"
-  },
-  {
-    "ticker": "MORPHO",
-    "name": "MORPHO",
-    "exchange": "빗썸",
-    "entry_price": 3288.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-12 00:00"
   }
 ]
