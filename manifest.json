@@ -1,6 +1,6 @@
 {
   "name": "차티스트 인사이트",
-  "short_name": "차티스트",
+  "short_name": "차티스트 인사이트",
   "description": "데이터 기반 크립토 인사이트 · 실시간 신호",
   "start_url": "/",
   "display": "standalone",
