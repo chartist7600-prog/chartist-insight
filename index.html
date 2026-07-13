@@ -2503,7 +2503,7 @@ function closeLoginModal() { document.getElementById('login-modal').style.displa
 function tgLogin() {
   var returnUrl = encodeURIComponent('https://chartist-insight.com/');
   var loginUrl = 'https://oauth.telegram.org/auth?bot_id=8458968839&origin=https%3A%2F%2Fchartist-insight.com&embed=1&request_access=write&return_to=' + returnUrl;
-  window.location.replace(loginUrl);
+  window.location.href = loginUrl;
 }
 
 // redirect 콜백 처리 (hash 방식)
