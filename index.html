@@ -2243,7 +2243,7 @@ function jRenderList(){
       var pc=pnl>0?'color:#26a642;font-weight:700;':pnl<0?'color:#e2534a;font-weight:700;':'color:#555;';
       var ps=pnl!==0?(pnl>0?'+':'')+pnl.toFixed(1)+'$':'—';
       var sz=parseFloat(t.amount||t.size)||0;var lv=parseFloat(String(t.leverage||'1').replace(/x/i,''))||1;
-      var pp=sz>0&&pnl!==0?(pnl>0?'+':'')+(pnl/sz*100/lv).toFixed(1)+'%':'—';
+      var pp=sz>0&&pnl!==0?(pnl>0?'+':'')+(pnl/sz*100).toFixed(1)+'%':'—';
       var tk=(t.ticker||t.symbol||'').toUpperCase();
       var ls=t.leverage?String(t.leverage).toLowerCase().includes('x')?t.leverage:t.leverage+'x':'';
       var db=t.direction==='LONG'?'background:rgba(38,166,66,0.12);color:#26a642;':'background:rgba(226,83,74,0.12);color:#e2534a;';
