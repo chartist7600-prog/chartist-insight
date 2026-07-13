@@ -1,5 +1,37 @@
 [
   {
+    "ticker": "XEC",
+    "name": "XEC",
+    "exchange": "빗썸",
+    "entry_price": 0.0098,
+    "currency": "KRW",
+    "entry_time": "2026-07-14 00:00"
+  },
+  {
+    "ticker": "RED",
+    "name": "RED",
+    "exchange": "빗썸",
+    "entry_price": 170.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-14 00:00"
+  },
+  {
+    "ticker": "BILL",
+    "name": "BILL",
+    "exchange": "빗썸",
+    "entry_price": 87.36,
+    "currency": "KRW",
+    "entry_time": "2026-07-14 00:00"
+  },
+  {
+    "ticker": "ELSA",
+    "name": "ELSA",
+    "exchange": "빗썸",
+    "entry_price": 80.23,
+    "currency": "KRW",
+    "entry_time": "2026-07-14 00:00"
+  },
+  {
     "ticker": "MVC",
     "name": "MVC",
     "exchange": "빗썸",
