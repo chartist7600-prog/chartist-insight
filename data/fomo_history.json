@@ -1,5 +1,21 @@
 [
   {
+    "ticker": "XPR",
+    "name": "XPR",
+    "exchange": "빗썸",
+    "entry_price": 3.494,
+    "currency": "KRW",
+    "entry_time": "2026-07-15 00:00"
+  },
+  {
+    "ticker": "B3",
+    "name": "B3",
+    "exchange": "빗썸",
+    "entry_price": 0.9581,
+    "currency": "KRW",
+    "entry_time": "2026-07-15 00:00"
+  },
+  {
     "ticker": "COS",
     "name": "COS",
     "exchange": "빗썸",
