@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "COS",
+    "name": "COS",
+    "exchange": "빗썸",
+    "entry_price": 0.4983,
+    "currency": "KRW",
+    "entry_time": "2026-07-14 21:04",
+    "signal": "trend"
+  },
+  {
     "ticker": "VANA",
     "name": "바나",
     "exchange": "업비트",
@@ -74,53 +83,5 @@
     "currency": "USDT",
     "entry_time": "2026-07-13 09:05",
     "signal": "trend"
-  },
-  {
-    "ticker": "EGLD",
-    "name": "멀티버스엑스",
-    "exchange": "업비트",
-    "entry_price": 4513.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-13 09:00"
-  },
-  {
-    "ticker": "ZEC",
-    "name": "ZEC",
-    "exchange": "바이낸스",
-    "entry_price": 533.53,
-    "currency": "USD",
-    "entry_time": "2026-07-13 09:00"
-  },
-  {
-    "ticker": "POL",
-    "name": "POL",
-    "exchange": "바이낸스",
-    "entry_price": 0.08106,
-    "currency": "USD",
-    "entry_time": "2026-07-13 09:00"
-  },
-  {
-    "ticker": "HOLO",
-    "name": "HOLO",
-    "exchange": "바이낸스",
-    "entry_price": 0.0741,
-    "currency": "USD",
-    "entry_time": "2026-07-13 09:00"
-  },
-  {
-    "ticker": "WBETH",
-    "name": "WBETH",
-    "exchange": "바이낸스",
-    "entry_price": 1986.53,
-    "currency": "USD",
-    "entry_time": "2026-07-13 09:00"
-  },
-  {
-    "ticker": "CAKE",
-    "name": "CAKE",
-    "exchange": "빗썸",
-    "entry_price": 2132.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-13 00:00"
   }
 ]
