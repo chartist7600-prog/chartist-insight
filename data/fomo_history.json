@@ -1,5 +1,13 @@
 [
   {
+    "ticker": "VANA",
+    "name": "바나",
+    "exchange": "업비트",
+    "entry_price": 1933.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-14 09:00"
+  },
+  {
     "ticker": "XEC",
     "name": "XEC",
     "exchange": "빗썸",
