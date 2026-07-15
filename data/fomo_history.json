@@ -1,5 +1,29 @@
 [
   {
+    "ticker": "FLOCK",
+    "name": "FLOCK",
+    "exchange": "빗썸",
+    "entry_price": 57.16,
+    "currency": "KRW",
+    "entry_time": "2026-07-16 00:00"
+  },
+  {
+    "ticker": "FF",
+    "name": "FF",
+    "exchange": "빗썸",
+    "entry_price": 108.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-16 00:00"
+  },
+  {
+    "ticker": "BCH",
+    "name": "BCH",
+    "exchange": "빗썸",
+    "entry_price": 345100.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-16 00:00"
+  },
+  {
     "ticker": "XVS",
     "name": "XVS",
     "exchange": "빗썸",
