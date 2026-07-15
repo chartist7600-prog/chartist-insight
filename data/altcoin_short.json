@@ -1,8 +1,38 @@
 [
   {
-    "key": "빗썸_COS",
-    "time": "2026-07-14 21:00",
-    "price": 0.4983,
+    "key": "빗썸_XVS",
+    "time": "2026-07-15 09:00",
+    "price": 4015.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_RUNE",
+    "time": "2026-07-15 09:00",
+    "price": 0.422,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_LAZIO",
+    "time": "2026-07-15 09:00",
+    "price": 0.406,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_PORTO",
+    "time": "2026-07-15 09:00",
+    "price": 0.616,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_SANTOS",
+    "time": "2026-07-15 09:00",
+    "price": 0.574,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_ALPINE",
+    "time": "2026-07-15 09:00",
+    "price": 0.328,
     "sig_type": "trend"
   }
 ]

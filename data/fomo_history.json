@@ -1,5 +1,99 @@
 [
   {
+    "ticker": "XVS",
+    "name": "XVS",
+    "exchange": "빗썸",
+    "entry_price": 4015.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-15 09:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "RUNE",
+    "name": "RUNE",
+    "exchange": "바이낸스",
+    "entry_price": 0.422,
+    "currency": "USDT",
+    "entry_time": "2026-07-15 09:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "LAZIO",
+    "name": "LAZIO",
+    "exchange": "바이낸스",
+    "entry_price": 0.406,
+    "currency": "USDT",
+    "entry_time": "2026-07-15 09:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "PORTO",
+    "name": "PORTO",
+    "exchange": "바이낸스",
+    "entry_price": 0.616,
+    "currency": "USDT",
+    "entry_time": "2026-07-15 09:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "SANTOS",
+    "name": "SANTOS",
+    "exchange": "바이낸스",
+    "entry_price": 0.574,
+    "currency": "USDT",
+    "entry_time": "2026-07-15 09:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "ALPINE",
+    "name": "ALPINE",
+    "exchange": "바이낸스",
+    "entry_price": 0.328,
+    "currency": "USDT",
+    "entry_time": "2026-07-15 09:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "PENDLE",
+    "name": "펜들",
+    "exchange": "업비트",
+    "entry_price": 2324.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-15 09:00"
+  },
+  {
+    "ticker": "POL",
+    "name": "폴리곤에코시스템토큰",
+    "exchange": "업비트",
+    "entry_price": 125.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-15 09:00"
+  },
+  {
+    "ticker": "LINK",
+    "name": "LINK",
+    "exchange": "바이낸스",
+    "entry_price": 8.345,
+    "currency": "USD",
+    "entry_time": "2026-07-15 09:00"
+  },
+  {
+    "ticker": "CVX",
+    "name": "CVX",
+    "exchange": "바이낸스",
+    "entry_price": 1.347,
+    "currency": "USD",
+    "entry_time": "2026-07-15 09:00"
+  },
+  {
+    "ticker": "DCR",
+    "name": "DCR",
+    "exchange": "바이낸스",
+    "entry_price": 13.74,
+    "currency": "USD",
+    "entry_time": "2026-07-15 09:00"
+  },
+  {
     "ticker": "XPR",
     "name": "XPR",
     "exchange": "빗썸",
@@ -31,73 +125,5 @@
     "entry_price": 1933.0,
     "currency": "KRW",
     "entry_time": "2026-07-14 09:00"
-  },
-  {
-    "ticker": "XEC",
-    "name": "XEC",
-    "exchange": "빗썸",
-    "entry_price": 0.0098,
-    "currency": "KRW",
-    "entry_time": "2026-07-14 00:00"
-  },
-  {
-    "ticker": "RED",
-    "name": "RED",
-    "exchange": "빗썸",
-    "entry_price": 170.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-14 00:00"
-  },
-  {
-    "ticker": "BILL",
-    "name": "BILL",
-    "exchange": "빗썸",
-    "entry_price": 87.36,
-    "currency": "KRW",
-    "entry_time": "2026-07-14 00:00"
-  },
-  {
-    "ticker": "ELSA",
-    "name": "ELSA",
-    "exchange": "빗썸",
-    "entry_price": 80.23,
-    "currency": "KRW",
-    "entry_time": "2026-07-14 00:00"
-  },
-  {
-    "ticker": "MVC",
-    "name": "MVC",
-    "exchange": "빗썸",
-    "entry_price": 1.762,
-    "currency": "KRW",
-    "entry_time": "2026-07-13 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "EPT",
-    "name": "EPT",
-    "exchange": "빗썸",
-    "entry_price": 0.8052,
-    "currency": "KRW",
-    "entry_time": "2026-07-13 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "DCR",
-    "name": "DCR",
-    "exchange": "바이낸스",
-    "entry_price": 12.23,
-    "currency": "USDT",
-    "entry_time": "2026-07-13 09:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "DODO",
-    "name": "DODO",
-    "exchange": "바이낸스",
-    "entry_price": 0.02322,
-    "currency": "USDT",
-    "entry_time": "2026-07-13 09:05",
-    "signal": "trend"
   }
 ]
