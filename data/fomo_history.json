@@ -1,5 +1,80 @@
 [
   {
+    "ticker": "TOWNS",
+    "name": "TOWNS",
+    "exchange": "빗썸",
+    "entry_price": 3.213,
+    "currency": "KRW",
+    "entry_time": "2026-07-16 09:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "EUR",
+    "name": "EUR",
+    "exchange": "바이낸스",
+    "entry_price": 1.1475,
+    "currency": "USDT",
+    "entry_time": "2026-07-16 09:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "DGB",
+    "name": "DGB",
+    "exchange": "바이낸스",
+    "entry_price": 0.00269,
+    "currency": "USDT",
+    "entry_time": "2026-07-16 09:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "POL",
+    "name": "폴리곤에코시스템토큰",
+    "exchange": "업비트",
+    "entry_price": 125.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-16 09:00"
+  },
+  {
+    "ticker": "LINK",
+    "name": "체인링크",
+    "exchange": "업비트",
+    "entry_price": 12570.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-16 09:00"
+  },
+  {
+    "ticker": "ONDO",
+    "name": "온도파이낸스",
+    "exchange": "업비트",
+    "entry_price": 536.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-16 09:00"
+  },
+  {
+    "ticker": "PUMP",
+    "name": "PUMP",
+    "exchange": "바이낸스",
+    "entry_price": 0.00169,
+    "currency": "USD",
+    "entry_time": "2026-07-16 09:00"
+  },
+  {
+    "ticker": "GNO",
+    "name": "GNO",
+    "exchange": "바이낸스",
+    "entry_price": 116.8,
+    "currency": "USD",
+    "entry_time": "2026-07-16 09:00"
+  },
+  {
+    "ticker": "CITY",
+    "name": "CITY",
+    "exchange": "바이낸스",
+    "entry_price": 0.394,
+    "currency": "USD",
+    "entry_time": "2026-07-16 09:00"
+  },
+  {
     "ticker": "FLOCK",
     "name": "FLOCK",
     "exchange": "빗썸",
@@ -58,96 +133,5 @@
     "currency": "USDT",
     "entry_time": "2026-07-15 09:05",
     "signal": "trend"
-  },
-  {
-    "ticker": "SANTOS",
-    "name": "SANTOS",
-    "exchange": "바이낸스",
-    "entry_price": 0.574,
-    "currency": "USDT",
-    "entry_time": "2026-07-15 09:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "ALPINE",
-    "name": "ALPINE",
-    "exchange": "바이낸스",
-    "entry_price": 0.328,
-    "currency": "USDT",
-    "entry_time": "2026-07-15 09:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "PENDLE",
-    "name": "펜들",
-    "exchange": "업비트",
-    "entry_price": 2324.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-15 09:00"
-  },
-  {
-    "ticker": "POL",
-    "name": "폴리곤에코시스템토큰",
-    "exchange": "업비트",
-    "entry_price": 125.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-15 09:00"
-  },
-  {
-    "ticker": "LINK",
-    "name": "LINK",
-    "exchange": "바이낸스",
-    "entry_price": 8.345,
-    "currency": "USD",
-    "entry_time": "2026-07-15 09:00"
-  },
-  {
-    "ticker": "CVX",
-    "name": "CVX",
-    "exchange": "바이낸스",
-    "entry_price": 1.347,
-    "currency": "USD",
-    "entry_time": "2026-07-15 09:00"
-  },
-  {
-    "ticker": "DCR",
-    "name": "DCR",
-    "exchange": "바이낸스",
-    "entry_price": 13.74,
-    "currency": "USD",
-    "entry_time": "2026-07-15 09:00"
-  },
-  {
-    "ticker": "XPR",
-    "name": "XPR",
-    "exchange": "빗썸",
-    "entry_price": 3.494,
-    "currency": "KRW",
-    "entry_time": "2026-07-15 00:00"
-  },
-  {
-    "ticker": "B3",
-    "name": "B3",
-    "exchange": "빗썸",
-    "entry_price": 0.9581,
-    "currency": "KRW",
-    "entry_time": "2026-07-15 00:00"
-  },
-  {
-    "ticker": "COS",
-    "name": "COS",
-    "exchange": "빗썸",
-    "entry_price": 0.4983,
-    "currency": "KRW",
-    "entry_time": "2026-07-14 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "VANA",
-    "name": "바나",
-    "exchange": "업비트",
-    "entry_price": 1933.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-14 09:00"
   }
 ]

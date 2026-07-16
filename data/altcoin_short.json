@@ -1,38 +1,20 @@
 [
   {
-    "key": "빗썸_XVS",
-    "time": "2026-07-15 09:00",
-    "price": 4015.0,
+    "key": "빗썸_TOWNS",
+    "time": "2026-07-16 09:00",
+    "price": 3.213,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_RUNE",
-    "time": "2026-07-15 09:00",
-    "price": 0.422,
+    "key": "바이낸스_EUR",
+    "time": "2026-07-16 09:00",
+    "price": 1.1475,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_LAZIO",
-    "time": "2026-07-15 09:00",
-    "price": 0.406,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_PORTO",
-    "time": "2026-07-15 09:00",
-    "price": 0.616,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_SANTOS",
-    "time": "2026-07-15 09:00",
-    "price": 0.574,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_ALPINE",
-    "time": "2026-07-15 09:00",
-    "price": 0.328,
+    "key": "바이낸스_DGB",
+    "time": "2026-07-16 09:00",
+    "price": 0.00269,
     "sig_type": "trend"
   }
 ]
