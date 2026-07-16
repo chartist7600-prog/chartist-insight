@@ -1,5 +1,32 @@
 [
   {
+    "ticker": "BNT",
+    "name": "BNT",
+    "exchange": "빗썸",
+    "entry_price": 412.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-16 21:04",
+    "signal": "trend"
+  },
+  {
+    "ticker": "SPURS",
+    "name": "SPURS",
+    "exchange": "빗썸",
+    "entry_price": 303.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-16 21:04",
+    "signal": "trend"
+  },
+  {
+    "ticker": "HOME",
+    "name": "HOME",
+    "exchange": "빗썸",
+    "entry_price": 23.56,
+    "currency": "KRW",
+    "entry_time": "2026-07-16 21:04",
+    "signal": "trend"
+  },
+  {
     "ticker": "TOWNS",
     "name": "TOWNS",
     "exchange": "빗썸",
@@ -57,81 +84,5 @@
     "entry_price": 0.00169,
     "currency": "USD",
     "entry_time": "2026-07-16 09:00"
-  },
-  {
-    "ticker": "GNO",
-    "name": "GNO",
-    "exchange": "바이낸스",
-    "entry_price": 116.8,
-    "currency": "USD",
-    "entry_time": "2026-07-16 09:00"
-  },
-  {
-    "ticker": "CITY",
-    "name": "CITY",
-    "exchange": "바이낸스",
-    "entry_price": 0.394,
-    "currency": "USD",
-    "entry_time": "2026-07-16 09:00"
-  },
-  {
-    "ticker": "FLOCK",
-    "name": "FLOCK",
-    "exchange": "빗썸",
-    "entry_price": 57.16,
-    "currency": "KRW",
-    "entry_time": "2026-07-16 00:00"
-  },
-  {
-    "ticker": "FF",
-    "name": "FF",
-    "exchange": "빗썸",
-    "entry_price": 108.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-16 00:00"
-  },
-  {
-    "ticker": "BCH",
-    "name": "BCH",
-    "exchange": "빗썸",
-    "entry_price": 345100.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-16 00:00"
-  },
-  {
-    "ticker": "XVS",
-    "name": "XVS",
-    "exchange": "빗썸",
-    "entry_price": 4015.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-15 09:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "RUNE",
-    "name": "RUNE",
-    "exchange": "바이낸스",
-    "entry_price": 0.422,
-    "currency": "USDT",
-    "entry_time": "2026-07-15 09:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "LAZIO",
-    "name": "LAZIO",
-    "exchange": "바이낸스",
-    "entry_price": 0.406,
-    "currency": "USDT",
-    "entry_time": "2026-07-15 09:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "PORTO",
-    "name": "PORTO",
-    "exchange": "바이낸스",
-    "entry_price": 0.616,
-    "currency": "USDT",
-    "entry_time": "2026-07-15 09:05",
-    "signal": "trend"
   }
 ]
