@@ -1,5 +1,61 @@
 [
   {
+    "ticker": "PENDLE",
+    "name": "PENDLE",
+    "exchange": "빗썸",
+    "entry_price": 2349.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-17 00:00"
+  },
+  {
+    "ticker": "VIRTUAL",
+    "name": "VIRTUAL",
+    "exchange": "빗썸",
+    "entry_price": 950.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-17 00:00"
+  },
+  {
+    "ticker": "FF",
+    "name": "FF",
+    "exchange": "빗썸",
+    "entry_price": 108.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-17 00:00"
+  },
+  {
+    "ticker": "MANTRA",
+    "name": "MANTRA",
+    "exchange": "빗썸",
+    "entry_price": 11.7,
+    "currency": "KRW",
+    "entry_time": "2026-07-17 00:00"
+  },
+  {
+    "ticker": "BCH",
+    "name": "BCH",
+    "exchange": "빗썸",
+    "entry_price": 345100.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-17 00:00"
+  },
+  {
+    "ticker": "MOODENG",
+    "name": "MOODENG",
+    "exchange": "빗썸",
+    "entry_price": 56.01,
+    "currency": "KRW",
+    "entry_time": "2026-07-17 00:00"
+  },
+  {
+    "ticker": "EUL",
+    "name": "EUL",
+    "exchange": "빗썸",
+    "entry_price": 1430.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-17 00:00"
+  },
+  {
     "ticker": "BNT",
     "name": "BNT",
     "exchange": "빗썸",
