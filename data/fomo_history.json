@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "BOB",
+    "name": "BOB",
+    "exchange": "빗썸",
+    "entry_price": 6.687,
+    "currency": "KRW",
+    "entry_time": "2026-07-17 21:04",
+    "signal": "trend"
+  },
+  {
     "ticker": "CRO",
     "name": "크로노스",
     "exchange": "업비트",
@@ -70,107 +79,5 @@
     "entry_price": 345100.0,
     "currency": "KRW",
     "entry_time": "2026-07-17 00:00"
-  },
-  {
-    "ticker": "MOODENG",
-    "name": "MOODENG",
-    "exchange": "빗썸",
-    "entry_price": 56.01,
-    "currency": "KRW",
-    "entry_time": "2026-07-17 00:00"
-  },
-  {
-    "ticker": "EUL",
-    "name": "EUL",
-    "exchange": "빗썸",
-    "entry_price": 1430.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-17 00:00"
-  },
-  {
-    "ticker": "BNT",
-    "name": "BNT",
-    "exchange": "빗썸",
-    "entry_price": 412.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-16 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "SPURS",
-    "name": "SPURS",
-    "exchange": "빗썸",
-    "entry_price": 303.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-16 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "HOME",
-    "name": "HOME",
-    "exchange": "빗썸",
-    "entry_price": 23.56,
-    "currency": "KRW",
-    "entry_time": "2026-07-16 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "TOWNS",
-    "name": "TOWNS",
-    "exchange": "빗썸",
-    "entry_price": 3.213,
-    "currency": "KRW",
-    "entry_time": "2026-07-16 09:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "EUR",
-    "name": "EUR",
-    "exchange": "바이낸스",
-    "entry_price": 1.1475,
-    "currency": "USDT",
-    "entry_time": "2026-07-16 09:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "DGB",
-    "name": "DGB",
-    "exchange": "바이낸스",
-    "entry_price": 0.00269,
-    "currency": "USDT",
-    "entry_time": "2026-07-16 09:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "POL",
-    "name": "폴리곤에코시스템토큰",
-    "exchange": "업비트",
-    "entry_price": 125.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-16 09:00"
-  },
-  {
-    "ticker": "LINK",
-    "name": "체인링크",
-    "exchange": "업비트",
-    "entry_price": 12570.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-16 09:00"
-  },
-  {
-    "ticker": "ONDO",
-    "name": "온도파이낸스",
-    "exchange": "업비트",
-    "entry_price": 536.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-16 09:00"
-  },
-  {
-    "ticker": "PUMP",
-    "name": "PUMP",
-    "exchange": "바이낸스",
-    "entry_price": 0.00169,
-    "currency": "USD",
-    "entry_time": "2026-07-16 09:00"
   }
 ]
