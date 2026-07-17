@@ -1,5 +1,29 @@
 [
   {
+    "ticker": "ES",
+    "name": "ES",
+    "exchange": "빗썸",
+    "entry_price": 75.87,
+    "currency": "KRW",
+    "entry_time": "2026-07-18 00:00"
+  },
+  {
+    "ticker": "MOODENG",
+    "name": "MOODENG",
+    "exchange": "빗썸",
+    "entry_price": 54.91,
+    "currency": "KRW",
+    "entry_time": "2026-07-18 00:00"
+  },
+  {
+    "ticker": "EUL",
+    "name": "EUL",
+    "exchange": "빗썸",
+    "entry_price": 1430.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-18 00:00"
+  },
+  {
     "ticker": "BOB",
     "name": "BOB",
     "exchange": "빗썸",
