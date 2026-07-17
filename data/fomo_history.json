@@ -1,5 +1,37 @@
 [
   {
+    "ticker": "CRO",
+    "name": "크로노스",
+    "exchange": "업비트",
+    "entry_price": 90.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-17 09:00"
+  },
+  {
+    "ticker": "RED",
+    "name": "레드스톤",
+    "exchange": "업비트",
+    "entry_price": 150.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-17 09:00"
+  },
+  {
+    "ticker": "WIF",
+    "name": "WIF",
+    "exchange": "바이낸스",
+    "entry_price": 0.1511,
+    "currency": "USD",
+    "entry_time": "2026-07-17 09:00"
+  },
+  {
+    "ticker": "VIC",
+    "name": "VIC",
+    "exchange": "바이낸스",
+    "entry_price": 0.0377,
+    "currency": "USD",
+    "entry_time": "2026-07-17 09:00"
+  },
+  {
     "ticker": "PENDLE",
     "name": "PENDLE",
     "exchange": "빗썸",
