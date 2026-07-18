@@ -1037,6 +1037,22 @@
     <div class="service-group">
       <div class="service-group-label">🆓 무료 제공</div>
       <div class="service-cards">
+        <div class="service-card free-card" onclick="openVolumeModal()">
+          <div class="service-card-icon">🚨</div>
+          <div class="service-card-body">
+            <div class="service-card-title">거래량 알림</div>
+            <div class="service-card-desc"><span class="service-tag">실시간 감지</span><span class="service-tag">비트코인</span></div>
+          </div>
+          <div class="service-card-badge free">무료</div>
+        </div>
+        <div class="service-card free-card" onclick="openTickerModal()">
+          <div class="service-card-icon">📥</div>
+          <div class="service-card-body">
+            <div class="service-card-title">실시간 종목 리스트</div>
+            <div class="service-card-desc"><span class="service-tag">6개 거래소</span><span class="service-tag">실시간 업데이트</span></div>
+          </div>
+          <div class="service-card-badge free">무료</div>
+        </div>
         <div class="service-card free-card" onclick="goToTab('calc',document.getElementById('tab-btn-calc'))">
           <div class="service-card-icon">🧮</div>
           <div class="service-card-body">
@@ -2880,6 +2896,70 @@ function serviceNavClick(tab) {
     <button class="member-modal-close" onclick="document.getElementById('member-modal').classList.remove('show')">닫기</button>
   </div>
 </div>
+
+<div class="member-modal-overlay" id="ticker-modal" onclick="if(event.target===this)document.getElementById('ticker-modal').classList.remove('show')">
+  <div class="member-modal-box" style="max-width:360px;">
+    <div class="member-modal-icon">📥</div>
+    <div class="member-modal-title">실시간 종목 리스트</div>
+    <div id="ticker-modal-body"></div>
+    <button class="member-modal-close" onclick="document.getElementById('ticker-modal').classList.remove('show')">닫기</button>
+  </div>
+</div>
+
+<div class="member-modal-overlay" id="volume-modal" onclick="if(event.target===this)document.getElementById('volume-modal').classList.remove('show')">
+  <div class="member-modal-box" style="max-width:360px;">
+    <div class="member-modal-icon">🚨</div>
+    <div class="member-modal-title">거래량 알림</div>
+    <div id="volume-modal-body" style="max-height:340px;overflow-y:auto;text-align:left;margin-bottom:16px;">
+      <div style="text-align:center;color:#666;font-size:12px;padding:20px 0;">불러오는 중...</div>
+    </div>
+    <button class="member-modal-close" onclick="document.getElementById('volume-modal').classList.remove('show')">닫기</button>
+  </div>
+</div>
+
+<script>
+function jTickerBtn(key,label){
+  var tgId=jGetTgId();
+  var url='https://chartist-insight.com/tickers/download/'+key+'?tg_id='+encodeURIComponent(tgId);
+  return '<a href="'+url+'" style="background:rgba(201,168,76,0.08);border:0.5px solid rgba(201,168,76,0.3);color:#ddd;padding:10px 4px;border-radius:8px;font-size:12px;text-decoration:none;text-align:center;display:block;">'+label+'</a>';
+}
+function openTickerModal(){
+  var body=document.getElementById('ticker-modal-body');
+  var tgId=jGetTgId();
+  if(!tgId){
+    body.innerHTML='<div class="member-modal-desc">텔레그램 로그인하면 6개 거래소<br>실시간 종목 리스트를 무료로<br>받을 수 있습니다.</div><button class="member-modal-btn" onclick="document.getElementById(\'ticker-modal\').classList.remove(\'show\');openLoginModal();">텔레그램 로그인하기</button>';
+  }else{
+    body.innerHTML='<div class="member-modal-desc" style="margin-bottom:12px;">원하는 거래소를 선택하세요.</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">'
+      +jTickerBtn('binance','바이낸스')+jTickerBtn('bybit','바이비트')+jTickerBtn('bitget','비트겟')
+      +jTickerBtn('bingx','빙엑스')+jTickerBtn('upbit','업비트')+jTickerBtn('bithumb','빗썸')
+      +'</div>';
+  }
+  document.getElementById('ticker-modal').classList.add('show');
+}
+function openVolumeModal(){
+  var body=document.getElementById('volume-modal-body');
+  document.getElementById('volume-modal').classList.add('show');
+  fetch('https://chartist-insight.com/data/volume_alerts.json?t='+Date.now())
+    .then(function(r){return r.json();})
+    .then(function(list){
+      if(!Array.isArray(list)||list.length===0){
+        body.innerHTML='<div style="text-align:center;color:#666;font-size:12px;padding:20px 0;">아직 신호 없음.</div>';
+        return;
+      }
+      var html='';
+      list.forEach(function(a){
+        var t=(a.time||'').replace('T',' ').slice(0,16);
+        html+='<div style="border-bottom:0.5px solid #222;padding:10px 2px;">'
+          +'<div style="color:#C9A84C;font-size:12px;font-weight:600;">🚨 거래량 '+(a.count||'')+'개 돌파</div>'
+          +'<div style="color:#999;font-size:11px;margin-top:2px;">'+(a.label||'')+'</div>'
+          +'<div style="color:#666;font-size:11px;margin-top:2px;">비트코인 '+(a.price||'')+' · '+t+'</div>'
+          +'</div>';
+      });
+      body.innerHTML=html;
+    })
+    .catch(function(){body.innerHTML='<div style="text-align:center;color:#666;font-size:12px;padding:20px 0;">일시적으로 신호를 불러올 수 없습니다</div>';});
+}
+</script>
 
 <button id="scroll-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 <footer class="site-footer">
