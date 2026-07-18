@@ -2906,6 +2906,22 @@ function serviceNavClick(tab) {
   </div>
 </div>
 
+<div class="member-modal-overlay" id="ticker-guide-modal" onclick="if(event.target===this)document.getElementById('ticker-guide-modal').classList.remove('show')">
+  <div class="member-modal-box" style="max-width:380px;text-align:left;">
+    <div class="member-modal-icon" style="text-align:center;">📖</div>
+    <div class="member-modal-title" style="text-align:center;">종목 리스트 추가 방법</div>
+    <div class="member-modal-desc" style="text-align:left;">
+      1. 원하는 거래소 버튼을 눌러 .txt 파일을 다운로드합니다.<br><br>
+      2. 트레이딩뷰에서 차트 화면 좌측 <b style="color:#C9A84C;">관심목록(워치리스트)</b> 패널을 엽니다.<br><br>
+      3. 관심목록 상단의 <b style="color:#C9A84C;">＋</b> 버튼 또는 <b style="color:#C9A84C;">⋯(더보기)</b> 메뉴를 눌러 <b style="color:#C9A84C;">"리스트 가져오기"</b>를 선택합니다.<br><br>
+      4. 다운받은 .txt 파일 안의 내용을 그대로 복사해서 붙여넣거나, 파일 자체를 업로드합니다.<br><br>
+      5. 가져오기를 누르면 해당 거래소 전 종목이 관심목록에 한 번에 추가됩니다.<br><br>
+      <span style="color:#e05555;background:rgba(220,53,69,0.12);border:0.5px solid rgba(220,53,69,0.3);padding:4px 10px;border-radius:6px;font-size:12px;display:inline-block;">💻 PC(웹) 트레이딩뷰에서 진행하시는 걸 권장합니다.</span>
+    </div>
+    <button class="member-modal-close" onclick="document.getElementById('ticker-guide-modal').classList.remove('show')">닫기</button>
+  </div>
+</div>
+
 <div class="member-modal-overlay" id="volume-modal" onclick="if(event.target===this)document.getElementById('volume-modal').classList.remove('show')">
   <div class="member-modal-box" style="max-width:360px;">
     <div class="member-modal-icon">🚨</div>
@@ -2930,11 +2946,15 @@ function openTickerModal(){
     body.innerHTML='<div class="member-modal-desc">텔레그램 로그인하면 6개 거래소<br>실시간 종목 리스트를 무료로<br>받을 수 있습니다.</div><button class="member-modal-btn" onclick="document.getElementById(\'ticker-modal\').classList.remove(\'show\');openLoginModal();">텔레그램 로그인하기</button>';
   }else{
     body.innerHTML='<div class="member-modal-desc" style="margin-bottom:12px;">원하는 거래소를 선택하세요.</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">'
-      +jTickerBtn('binance','바이낸스')+jTickerBtn('bybit','바이비트')+jTickerBtn('bitget','비트겟')
-      +jTickerBtn('bingx','빙엑스')+jTickerBtn('upbit','업비트')+jTickerBtn('bithumb','빗썸')
-      +'</div>';
+      +jTickerBtn('upbit','업비트')+jTickerBtn('bithumb','빗썸')
+      +jTickerBtn('binance','바이낸스')+jTickerBtn('bybit','바이비트')
+      +jTickerBtn('bitget','비트겟')+jTickerBtn('bingx','빙엑스')
+      +'</div><button class="member-modal-btn" style="background:transparent;border:0.5px solid rgba(201,168,76,0.4);color:#C9A84C;margin-top:12px;" onclick="document.getElementById(\'ticker-modal\').classList.remove(\'show\');openTickerGuideModal();">📖 종목 리스트 추가 방법</button>';
   }
   document.getElementById('ticker-modal').classList.add('show');
+}
+function openTickerGuideModal(){
+  document.getElementById('ticker-guide-modal').classList.add('show');
 }
 function openVolumeModal(){
   var body=document.getElementById('volume-modal-body');
@@ -2949,10 +2969,10 @@ function openVolumeModal(){
       var html='';
       list.forEach(function(a){
         var t=(a.time||'').replace('T',' ').slice(0,16);
-        html+='<div style="border-bottom:0.5px solid #222;padding:10px 2px;">'
-          +'<div style="color:#C9A84C;font-size:12px;font-weight:600;">🚨 거래량 '+(a.count||'')+'개 돌파</div>'
-          +'<div style="color:#999;font-size:11px;margin-top:2px;">'+(a.label||'')+'</div>'
-          +'<div style="color:#666;font-size:11px;margin-top:2px;">비트코인 '+(a.price||'')+' · '+t+'</div>'
+        html+='<div style="border-bottom:0.5px solid #222;padding:14px 4px;">'
+          +'<div style="color:#C9A84C;font-size:15px;font-weight:700;">🚨 거래량 '+(a.count||'')+'개 돌파</div>'
+          +'<div style="color:#bbb;font-size:13px;margin-top:4px;">'+(a.label||'')+'</div>'
+          +'<div style="color:#888;font-size:13px;margin-top:4px;">비트코인 '+(a.price||'')+' · '+t+'</div>'
           +'</div>';
       });
       body.innerHTML=html;
@@ -3162,10 +3182,11 @@ initNoticeBar();
     <div id="push-cat-list" style="display:flex;flex-direction:column;margin-bottom:14px;">
       <label class="push-cat-row"><input type="checkbox" id="pc-all" onchange="pushToggleAll(this)"><span>전체</span></label>
       <div style="height:1px;background:#242424;margin:6px 0;"></div>
-      <label class="push-cat-row"><input type="checkbox" class="push-cat-item" value="btc"><span>₿ 비트코인</span></label>
-      <label class="push-cat-row"><input type="checkbox" class="push-cat-item" value="alt_trend"><span>📊 알트 추세전환</span></label>
-      <label class="push-cat-row"><input type="checkbox" class="push-cat-item" value="alt_whale"><span>🐋 알트 고래봇</span></label>
-      <label class="push-cat-row"><input type="checkbox" class="push-cat-item" value="alt_div"><span>📈 알트 RSI 다이버전스</span></label>
+      <label class="push-cat-row" style="justify-content:space-between;"><span style="display:flex;align-items:center;gap:6px;"><input type="checkbox" class="push-cat-item" value="vol">🚨 비트 거래량</span><span style="font-size:10px;color:#7bc47f;background:rgba(123,196,127,0.12);border:0.5px solid rgba(123,196,127,0.35);padding:1px 6px;border-radius:5px;">무료</span></label>
+      <label class="push-cat-row" style="justify-content:space-between;"><span style="display:flex;align-items:center;gap:6px;"><input type="checkbox" class="push-cat-item" value="btc">💰 비트 롱/숏</span><span style="font-size:10px;color:#C9A84C;background:rgba(201,168,76,0.12);border:0.5px solid rgba(201,168,76,0.35);padding:1px 6px;border-radius:5px;">멤버십</span></label>
+      <label class="push-cat-row" style="justify-content:space-between;"><span style="display:flex;align-items:center;gap:6px;"><input type="checkbox" class="push-cat-item" value="alt_trend">📊 알트 추세전환</span><span style="font-size:10px;color:#C9A84C;background:rgba(201,168,76,0.12);border:0.5px solid rgba(201,168,76,0.35);padding:1px 6px;border-radius:5px;">멤버십</span></label>
+      <label class="push-cat-row" style="justify-content:space-between;"><span style="display:flex;align-items:center;gap:6px;"><input type="checkbox" class="push-cat-item" value="alt_whale">🐋 알트 고래봇</span><span style="font-size:10px;color:#C9A84C;background:rgba(201,168,76,0.12);border:0.5px solid rgba(201,168,76,0.35);padding:1px 6px;border-radius:5px;">멤버십</span></label>
+      <label class="push-cat-row" style="justify-content:space-between;"><span style="display:flex;align-items:center;gap:6px;"><input type="checkbox" class="push-cat-item" value="alt_div">📈 알트 RSI 다이버전스</span><span style="font-size:10px;color:#C9A84C;background:rgba(201,168,76,0.12);border:0.5px solid rgba(201,168,76,0.35);padding:1px 6px;border-radius:5px;">멤버십</span></label>
     </div>
     <div id="push-sub-status" style="font-size:12px;color:#777;margin-bottom:10px;text-align:center;"></div>
     <button class="member-modal-btn" onclick="savePushSettings()" style="margin-bottom:8px;">푸시 알림 저장</button>
