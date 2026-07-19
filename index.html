@@ -3281,15 +3281,12 @@ document.addEventListener('change', function(e){
   }
 });
 
+var FREE_PUSH_CATEGORIES = ['vol'];
+
 async function savePushSettings(){
   if (!tgUser) {
     hideSoundPopup({target:document.getElementById('sound-overlay')});
     openLoginModal();
-    return;
-  }
-  if (!tgUser.is_member) {
-    hideSoundPopup({target:document.getElementById('sound-overlay')});
-    document.getElementById('member-modal').classList.add('show');
     return;
   }
   var selected = [];
@@ -3299,6 +3296,14 @@ async function savePushSettings(){
   if (selected.length === 0) {
     alert('최소 하나 이상 선택해주세요.');
     return;
+  }
+  if (!tgUser.is_member) {
+    selected = selected.filter(function(c){ return FREE_PUSH_CATEGORIES.indexOf(c) !== -1; });
+    if (selected.length === 0) {
+      hideSoundPopup({target:document.getElementById('sound-overlay')});
+      document.getElementById('member-modal').classList.add('show');
+      return;
+    }
   }
   localStorage.setItem('push_categories', JSON.stringify(selected));
   await subscribePush(selected);
