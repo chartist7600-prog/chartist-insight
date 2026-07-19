@@ -1,5 +1,69 @@
 [
   {
+    "ticker": "WOO",
+    "name": "WOO",
+    "exchange": "빗썸",
+    "entry_price": 19.05,
+    "currency": "KRW",
+    "entry_time": "2026-07-20 00:00"
+  },
+  {
+    "ticker": "TOWNS",
+    "name": "TOWNS",
+    "exchange": "빗썸",
+    "entry_price": 3.492,
+    "currency": "KRW",
+    "entry_time": "2026-07-20 00:00"
+  },
+  {
+    "ticker": "KAITO",
+    "name": "KAITO",
+    "exchange": "빗썸",
+    "entry_price": 1359.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-20 00:00"
+  },
+  {
+    "ticker": "ADA",
+    "name": "ADA",
+    "exchange": "빗썸",
+    "entry_price": 245.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-20 00:00"
+  },
+  {
+    "ticker": "AXS",
+    "name": "AXS",
+    "exchange": "빗썸",
+    "entry_price": 1352.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-20 00:00"
+  },
+  {
+    "ticker": "MOODENG",
+    "name": "MOODENG",
+    "exchange": "빗썸",
+    "entry_price": 54.9,
+    "currency": "KRW",
+    "entry_time": "2026-07-20 00:00"
+  },
+  {
+    "ticker": "ME",
+    "name": "ME",
+    "exchange": "빗썸",
+    "entry_price": 90.33,
+    "currency": "KRW",
+    "entry_time": "2026-07-20 00:00"
+  },
+  {
+    "ticker": "EUL",
+    "name": "EUL",
+    "exchange": "빗썸",
+    "entry_price": 1397.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-20 00:00"
+  },
+  {
     "ticker": "TEMCO",
     "name": "TEMCO",
     "exchange": "빗썸",
