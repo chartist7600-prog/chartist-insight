@@ -1,5 +1,111 @@
 [
   {
+    "ticker": "SUSHI",
+    "name": "SUSHI",
+    "exchange": "빗썸",
+    "entry_price": 257.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-20 09:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "SOLV",
+    "name": "SOLV",
+    "exchange": "빗썸",
+    "entry_price": 4.098,
+    "currency": "KRW",
+    "entry_time": "2026-07-20 09:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "ACE",
+    "name": "ACE",
+    "exchange": "바이낸스",
+    "entry_price": 0.0844,
+    "currency": "USD",
+    "entry_time": "2026-07-20 09:00"
+  },
+  {
+    "ticker": "YB",
+    "name": "YB",
+    "exchange": "바이낸스",
+    "entry_price": 0.0914,
+    "currency": "USD",
+    "entry_time": "2026-07-20 09:00"
+  },
+  {
+    "ticker": "FIL",
+    "name": "파일코인",
+    "exchange": "업비트",
+    "entry_price": 1059.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-20 09:00"
+  },
+  {
+    "ticker": "AVAX",
+    "name": "아발란체",
+    "exchange": "업비트",
+    "entry_price": 9500.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-20 09:00"
+  },
+  {
+    "ticker": "DEEP",
+    "name": "딥북",
+    "exchange": "업비트",
+    "entry_price": 25.4,
+    "currency": "KRW",
+    "entry_time": "2026-07-20 09:00"
+  },
+  {
+    "ticker": "VIC",
+    "name": "VIC",
+    "exchange": "바이낸스",
+    "entry_price": 0.0373,
+    "currency": "USD",
+    "entry_time": "2026-07-20 09:00"
+  },
+  {
+    "ticker": "CITY",
+    "name": "CITY",
+    "exchange": "바이낸스",
+    "entry_price": 0.387,
+    "currency": "USD",
+    "entry_time": "2026-07-20 09:00"
+  },
+  {
+    "ticker": "1000SATS",
+    "name": "1000SATS",
+    "exchange": "바이낸스",
+    "entry_price": 9.47e-06,
+    "currency": "USD",
+    "entry_time": "2026-07-20 09:00"
+  },
+  {
+    "ticker": "PEOPLE",
+    "name": "PEOPLE",
+    "exchange": "바이낸스",
+    "entry_price": 0.00526,
+    "currency": "USD",
+    "entry_time": "2026-07-20 09:00"
+  },
+  {
+    "ticker": "CTSI",
+    "name": "CTSI",
+    "exchange": "바이낸스",
+    "entry_price": 0.02248,
+    "currency": "USD",
+    "entry_time": "2026-07-20 09:00"
+  },
+  {
+    "ticker": "PNUT",
+    "name": "PNUT",
+    "exchange": "바이낸스",
+    "entry_price": 0.0405,
+    "currency": "USD",
+    "entry_time": "2026-07-20 09:00"
+  },
+  {
     "ticker": "WOO",
     "name": "WOO",
     "exchange": "빗썸",
@@ -62,92 +168,5 @@
     "entry_price": 1397.0,
     "currency": "KRW",
     "entry_time": "2026-07-20 00:00"
-  },
-  {
-    "ticker": "TEMCO",
-    "name": "TEMCO",
-    "exchange": "빗썸",
-    "entry_price": 0.5817,
-    "currency": "KRW",
-    "entry_time": "2026-07-19 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "JASMY",
-    "name": "JASMY",
-    "exchange": "빗썸",
-    "entry_price": 7.038,
-    "currency": "KRW",
-    "entry_time": "2026-07-19 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "FANC",
-    "name": "FANC",
-    "exchange": "빗썸",
-    "entry_price": 1.085,
-    "currency": "KRW",
-    "entry_time": "2026-07-19 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "CFX",
-    "name": "CFX",
-    "exchange": "빗썸",
-    "entry_price": 68.62,
-    "currency": "KRW",
-    "entry_time": "2026-07-19 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "YB",
-    "name": "YB",
-    "exchange": "빗썸",
-    "entry_price": 119.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-19 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "TLM",
-    "name": "TLM",
-    "exchange": "바이낸스",
-    "entry_price": 0.00212,
-    "currency": "USDT",
-    "entry_time": "2026-07-19 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "RECALL",
-    "name": "RECALL",
-    "exchange": "빗썸",
-    "entry_price": 55.76,
-    "currency": "KRW",
-    "entry_time": "2026-07-19 09:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "BONK",
-    "name": "봉크",
-    "exchange": "업비트",
-    "entry_price": 0.00807,
-    "currency": "KRW",
-    "entry_time": "2026-07-19 09:00"
-  },
-  {
-    "ticker": "GMX",
-    "name": "GMX",
-    "exchange": "바이낸스",
-    "entry_price": 6.38,
-    "currency": "USD",
-    "entry_time": "2026-07-19 09:00"
-  },
-  {
-    "ticker": "LTC",
-    "name": "LTC",
-    "exchange": "바이낸스",
-    "entry_price": 47.01,
-    "currency": "USD",
-    "entry_time": "2026-07-19 09:00"
   }
 ]

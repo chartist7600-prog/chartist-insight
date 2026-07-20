@@ -1,44 +1,14 @@
 [
   {
-    "key": "빗썸_RECALL",
-    "time": "2026-07-19 09:00",
-    "price": 55.76,
+    "key": "빗썸_SUSHI",
+    "time": "2026-07-20 09:00",
+    "price": 257.0,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_TEMCO",
-    "time": "2026-07-19 21:00",
-    "price": 0.5817,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_JASMY",
-    "time": "2026-07-19 21:00",
-    "price": 7.038,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_FANC",
-    "time": "2026-07-19 21:00",
-    "price": 1.085,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_CFX",
-    "time": "2026-07-19 21:00",
-    "price": 68.62,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_YB",
-    "time": "2026-07-19 21:00",
-    "price": 119.0,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_TLM",
-    "time": "2026-07-19 21:00",
-    "price": 0.00212,
+    "key": "빗썸_SOLV",
+    "time": "2026-07-20 09:00",
+    "price": 4.098,
     "sig_type": "trend"
   }
 ]
