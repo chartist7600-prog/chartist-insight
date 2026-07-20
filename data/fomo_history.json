@@ -1,5 +1,77 @@
 [
   {
+    "ticker": "GMX",
+    "name": "GMX",
+    "exchange": "빗썸",
+    "entry_price": 9390.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-21 00:00"
+  },
+  {
+    "ticker": "HEMI",
+    "name": "HEMI",
+    "exchange": "빗썸",
+    "entry_price": 8.095,
+    "currency": "KRW",
+    "entry_time": "2026-07-21 00:00"
+  },
+  {
+    "ticker": "ADA",
+    "name": "ADA",
+    "exchange": "빗썸",
+    "entry_price": 239.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-21 00:00"
+  },
+  {
+    "ticker": "AXS",
+    "name": "AXS",
+    "exchange": "빗썸",
+    "entry_price": 1352.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-21 00:00"
+  },
+  {
+    "ticker": "EDU",
+    "name": "EDU",
+    "exchange": "빗썸",
+    "entry_price": 42.6,
+    "currency": "KRW",
+    "entry_time": "2026-07-21 00:00"
+  },
+  {
+    "ticker": "MOODENG",
+    "name": "MOODENG",
+    "exchange": "빗썸",
+    "entry_price": 56.14,
+    "currency": "KRW",
+    "entry_time": "2026-07-21 00:00"
+  },
+  {
+    "ticker": "ME",
+    "name": "ME",
+    "exchange": "빗썸",
+    "entry_price": 88.06,
+    "currency": "KRW",
+    "entry_time": "2026-07-21 00:00"
+  },
+  {
+    "ticker": "WIF",
+    "name": "WIF",
+    "exchange": "빗썸",
+    "entry_price": 219.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-21 00:00"
+  },
+  {
+    "ticker": "EUL",
+    "name": "EUL",
+    "exchange": "빗썸",
+    "entry_price": 1379.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-21 00:00"
+  },
+  {
     "ticker": "ACE",
     "name": "ACE",
     "exchange": "빗썸",
