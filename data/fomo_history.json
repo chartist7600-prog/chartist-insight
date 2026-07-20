@@ -1,5 +1,32 @@
 [
   {
+    "ticker": "ACE",
+    "name": "ACE",
+    "exchange": "빗썸",
+    "entry_price": 143.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-20 21:04",
+    "signal": "trend"
+  },
+  {
+    "ticker": "FORM",
+    "name": "FORM",
+    "exchange": "바이낸스",
+    "entry_price": 0.2029,
+    "currency": "USDT",
+    "entry_time": "2026-07-20 21:04",
+    "signal": "trend"
+  },
+  {
+    "ticker": "TURTLE",
+    "name": "TURTLE",
+    "exchange": "바이낸스",
+    "entry_price": 0.0364,
+    "currency": "USDT",
+    "entry_time": "2026-07-20 21:04",
+    "signal": "trend"
+  },
+  {
     "ticker": "SUSHI",
     "name": "SUSHI",
     "exchange": "빗썸",
@@ -56,117 +83,5 @@
     "entry_price": 25.4,
     "currency": "KRW",
     "entry_time": "2026-07-20 09:00"
-  },
-  {
-    "ticker": "VIC",
-    "name": "VIC",
-    "exchange": "바이낸스",
-    "entry_price": 0.0373,
-    "currency": "USD",
-    "entry_time": "2026-07-20 09:00"
-  },
-  {
-    "ticker": "CITY",
-    "name": "CITY",
-    "exchange": "바이낸스",
-    "entry_price": 0.387,
-    "currency": "USD",
-    "entry_time": "2026-07-20 09:00"
-  },
-  {
-    "ticker": "1000SATS",
-    "name": "1000SATS",
-    "exchange": "바이낸스",
-    "entry_price": 9.47e-06,
-    "currency": "USD",
-    "entry_time": "2026-07-20 09:00"
-  },
-  {
-    "ticker": "PEOPLE",
-    "name": "PEOPLE",
-    "exchange": "바이낸스",
-    "entry_price": 0.00526,
-    "currency": "USD",
-    "entry_time": "2026-07-20 09:00"
-  },
-  {
-    "ticker": "CTSI",
-    "name": "CTSI",
-    "exchange": "바이낸스",
-    "entry_price": 0.02248,
-    "currency": "USD",
-    "entry_time": "2026-07-20 09:00"
-  },
-  {
-    "ticker": "PNUT",
-    "name": "PNUT",
-    "exchange": "바이낸스",
-    "entry_price": 0.0405,
-    "currency": "USD",
-    "entry_time": "2026-07-20 09:00"
-  },
-  {
-    "ticker": "WOO",
-    "name": "WOO",
-    "exchange": "빗썸",
-    "entry_price": 19.05,
-    "currency": "KRW",
-    "entry_time": "2026-07-20 00:00"
-  },
-  {
-    "ticker": "TOWNS",
-    "name": "TOWNS",
-    "exchange": "빗썸",
-    "entry_price": 3.492,
-    "currency": "KRW",
-    "entry_time": "2026-07-20 00:00"
-  },
-  {
-    "ticker": "KAITO",
-    "name": "KAITO",
-    "exchange": "빗썸",
-    "entry_price": 1359.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-20 00:00"
-  },
-  {
-    "ticker": "ADA",
-    "name": "ADA",
-    "exchange": "빗썸",
-    "entry_price": 245.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-20 00:00"
-  },
-  {
-    "ticker": "AXS",
-    "name": "AXS",
-    "exchange": "빗썸",
-    "entry_price": 1352.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-20 00:00"
-  },
-  {
-    "ticker": "MOODENG",
-    "name": "MOODENG",
-    "exchange": "빗썸",
-    "entry_price": 54.9,
-    "currency": "KRW",
-    "entry_time": "2026-07-20 00:00"
-  },
-  {
-    "ticker": "ME",
-    "name": "ME",
-    "exchange": "빗썸",
-    "entry_price": 90.33,
-    "currency": "KRW",
-    "entry_time": "2026-07-20 00:00"
-  },
-  {
-    "ticker": "EUL",
-    "name": "EUL",
-    "exchange": "빗썸",
-    "entry_price": 1397.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-20 00:00"
   }
 ]

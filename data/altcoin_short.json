@@ -10,5 +10,23 @@
     "time": "2026-07-20 09:00",
     "price": 4.098,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_ACE",
+    "time": "2026-07-20 21:00",
+    "price": 143.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_FORM",
+    "time": "2026-07-20 21:00",
+    "price": 0.2029,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_TURTLE",
+    "time": "2026-07-20 21:00",
+    "price": 0.0364,
+    "sig_type": "trend"
   }
 ]
