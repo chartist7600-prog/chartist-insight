@@ -4,5 +4,11 @@
     "time": "2026-07-21 09:00",
     "price": 0.482,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_MET",
+    "time": "2026-07-21 21:00",
+    "price": 240.0,
+    "sig_type": "trend"
   }
 ]
