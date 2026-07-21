@@ -1,5 +1,69 @@
 [
   {
+    "ticker": "ERA",
+    "name": "ERA",
+    "exchange": "빗썸",
+    "entry_price": 146.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-22 00:00"
+  },
+  {
+    "ticker": "MBL",
+    "name": "MBL",
+    "exchange": "빗썸",
+    "entry_price": 1.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-22 00:00"
+  },
+  {
+    "ticker": "CTSI",
+    "name": "CTSI",
+    "exchange": "빗썸",
+    "entry_price": 33.45,
+    "currency": "KRW",
+    "entry_time": "2026-07-22 00:00"
+  },
+  {
+    "ticker": "BFC",
+    "name": "BFC",
+    "exchange": "빗썸",
+    "entry_price": 16.8,
+    "currency": "KRW",
+    "entry_time": "2026-07-22 00:00"
+  },
+  {
+    "ticker": "AXS",
+    "name": "AXS",
+    "exchange": "빗썸",
+    "entry_price": 1360.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-22 00:00"
+  },
+  {
+    "ticker": "EDU",
+    "name": "EDU",
+    "exchange": "빗썸",
+    "entry_price": 42.6,
+    "currency": "KRW",
+    "entry_time": "2026-07-22 00:00"
+  },
+  {
+    "ticker": "MEW",
+    "name": "MEW",
+    "exchange": "빗썸",
+    "entry_price": 0.5311,
+    "currency": "KRW",
+    "entry_time": "2026-07-22 00:00"
+  },
+  {
+    "ticker": "MOODENG",
+    "name": "MOODENG",
+    "exchange": "빗썸",
+    "entry_price": 56.22,
+    "currency": "KRW",
+    "entry_time": "2026-07-22 00:00"
+  },
+  {
     "ticker": "MET",
     "name": "MET",
     "exchange": "빗썸",
