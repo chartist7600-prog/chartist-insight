@@ -1,141 +1,143 @@
 [
   {
-    "ticker": "ERA",
-    "name": "ERA",
-    "exchange": "빗썸",
-    "entry_price": 146.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-22 00:00"
-  },
-  {
-    "ticker": "MBL",
-    "name": "MBL",
-    "exchange": "빗썸",
-    "entry_price": 1.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-22 00:00"
-  },
-  {
-    "ticker": "CTSI",
-    "name": "CTSI",
-    "exchange": "빗썸",
-    "entry_price": 33.45,
-    "currency": "KRW",
-    "entry_time": "2026-07-22 00:00"
-  },
-  {
-    "ticker": "BFC",
-    "name": "BFC",
-    "exchange": "빗썸",
-    "entry_price": 16.8,
-    "currency": "KRW",
-    "entry_time": "2026-07-22 00:00"
-  },
-  {
-    "ticker": "AXS",
-    "name": "AXS",
-    "exchange": "빗썸",
-    "entry_price": 1360.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-22 00:00"
-  },
-  {
-    "ticker": "EDU",
-    "name": "EDU",
-    "exchange": "빗썸",
-    "entry_price": 42.6,
-    "currency": "KRW",
-    "entry_time": "2026-07-22 00:00"
-  },
-  {
-    "ticker": "MEW",
-    "name": "MEW",
-    "exchange": "빗썸",
-    "entry_price": 0.5311,
-    "currency": "KRW",
-    "entry_time": "2026-07-22 00:00"
-  },
-  {
-    "ticker": "MOODENG",
-    "name": "MOODENG",
-    "exchange": "빗썸",
-    "entry_price": 56.22,
-    "currency": "KRW",
-    "entry_time": "2026-07-22 00:00"
-  },
-  {
-    "ticker": "MET",
-    "name": "MET",
-    "exchange": "빗썸",
-    "entry_price": 240.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-21 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "XNO",
-    "name": "XNO",
+    "ticker": "ONE",
+    "name": "ONE",
     "exchange": "바이낸스",
-    "entry_price": 0.482,
+    "entry_price": 0.00138,
     "currency": "USDT",
-    "entry_time": "2026-07-21 09:05",
+    "entry_time": "2026-07-22 09:05",
     "signal": "trend"
   },
   {
-    "ticker": "VIRTUAL",
-    "name": "버추얼프로토콜",
-    "exchange": "업비트",
-    "entry_price": 939.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-21 09:00"
-  },
-  {
-    "ticker": "TOWNS",
-    "name": "TOWNS",
+    "ticker": "SAGA",
+    "name": "SAGA",
     "exchange": "바이낸스",
-    "entry_price": 0.00236,
-    "currency": "USD",
-    "entry_time": "2026-07-21 09:00"
+    "entry_price": 0.01354,
+    "currency": "USDT",
+    "entry_time": "2026-07-22 09:05",
+    "signal": "trend"
   },
   {
-    "ticker": "ZAMA",
-    "name": "ZAMA",
+    "ticker": "EPIC",
+    "name": "EPIC",
     "exchange": "바이낸스",
-    "entry_price": 0.0399,
-    "currency": "USD",
-    "entry_time": "2026-07-21 09:00"
+    "entry_price": 0.545,
+    "currency": "USDT",
+    "entry_time": "2026-07-22 09:05",
+    "signal": "trend"
   },
   {
-    "ticker": "FIL",
-    "name": "파일코인",
+    "ticker": "GENIUS",
+    "name": "GENIUS",
+    "exchange": "바이낸스",
+    "entry_price": 0.3634,
+    "currency": "USDT",
+    "entry_time": "2026-07-22 09:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "1INCH",
+    "name": "1인치네트워크",
     "exchange": "업비트",
-    "entry_price": 1074.0,
+    "entry_price": 121.0,
     "currency": "KRW",
-    "entry_time": "2026-07-21 09:00"
+    "entry_time": "2026-07-22 09:00"
+  },
+  {
+    "ticker": "WOO",
+    "name": "WOO",
+    "exchange": "바이낸스",
+    "entry_price": 0.01304,
+    "currency": "USD",
+    "entry_time": "2026-07-22 09:00"
+  },
+  {
+    "ticker": "2Z",
+    "name": "더블제로",
+    "exchange": "업비트",
+    "entry_price": 95.6,
+    "currency": "KRW",
+    "entry_time": "2026-07-22 09:00"
+  },
+  {
+    "ticker": "BOUNTY",
+    "name": "체인바운티",
+    "exchange": "업비트",
+    "entry_price": 21.5,
+    "currency": "KRW",
+    "entry_time": "2026-07-22 09:00"
   },
   {
     "ticker": "BLUR",
     "name": "블러",
     "exchange": "업비트",
-    "entry_price": 23.0,
+    "entry_price": 22.7,
     "currency": "KRW",
-    "entry_time": "2026-07-21 09:00"
+    "entry_time": "2026-07-22 09:00"
   },
   {
     "ticker": "AVAX",
     "name": "아발란체",
     "exchange": "업비트",
-    "entry_price": 9615.0,
+    "entry_price": 9610.0,
     "currency": "KRW",
-    "entry_time": "2026-07-21 09:00"
+    "entry_time": "2026-07-22 09:00"
+  },
+  {
+    "ticker": "MEW",
+    "name": "캣인어독스월드",
+    "exchange": "업비트",
+    "entry_price": 0.532,
+    "currency": "KRW",
+    "entry_time": "2026-07-22 09:00"
   },
   {
     "ticker": "ORBS",
     "name": "오브스",
     "exchange": "업비트",
-    "entry_price": 8.7,
+    "entry_price": 8.77,
     "currency": "KRW",
-    "entry_time": "2026-07-21 09:00"
+    "entry_time": "2026-07-22 09:00"
+  },
+  {
+    "ticker": "EDGE",
+    "name": "디피니티브",
+    "exchange": "업비트",
+    "entry_price": 97.6,
+    "currency": "KRW",
+    "entry_time": "2026-07-22 09:00"
+  },
+  {
+    "ticker": "SNT",
+    "name": "스테이터스네트워크토큰",
+    "exchange": "업비트",
+    "entry_price": 10.5,
+    "currency": "KRW",
+    "entry_time": "2026-07-22 09:00"
+  },
+  {
+    "ticker": "MOODENG",
+    "name": "무뎅",
+    "exchange": "업비트",
+    "entry_price": 56.1,
+    "currency": "KRW",
+    "entry_time": "2026-07-22 09:00"
+  },
+  {
+    "ticker": "ONG",
+    "name": "온톨로지가스",
+    "exchange": "업비트",
+    "entry_price": 68.9,
+    "currency": "KRW",
+    "entry_time": "2026-07-22 09:00"
+  },
+  {
+    "ticker": "ONT",
+    "name": "ONT",
+    "exchange": "바이낸스",
+    "entry_price": 0.04301,
+    "currency": "USD",
+    "entry_time": "2026-07-22 09:00"
   },
   {
     "ticker": "GLMR",
@@ -143,6 +145,102 @@
     "exchange": "바이낸스",
     "entry_price": 0.0091,
     "currency": "USD",
-    "entry_time": "2026-07-21 09:00"
+    "entry_time": "2026-07-22 09:00"
+  },
+  {
+    "ticker": "W",
+    "name": "W",
+    "exchange": "바이낸스",
+    "entry_price": 0.00922,
+    "currency": "USD",
+    "entry_time": "2026-07-22 09:00"
+  },
+  {
+    "ticker": "NOM",
+    "name": "NOM",
+    "exchange": "바이낸스",
+    "entry_price": 0.00154,
+    "currency": "USD",
+    "entry_time": "2026-07-22 09:00"
+  },
+  {
+    "ticker": "CYBER",
+    "name": "CYBER",
+    "exchange": "바이낸스",
+    "entry_price": 0.342,
+    "currency": "USD",
+    "entry_time": "2026-07-22 09:00"
+  },
+  {
+    "ticker": "CITY",
+    "name": "CITY",
+    "exchange": "바이낸스",
+    "entry_price": 0.389,
+    "currency": "USD",
+    "entry_time": "2026-07-22 09:00"
+  },
+  {
+    "ticker": "INIT",
+    "name": "INIT",
+    "exchange": "바이낸스",
+    "entry_price": 0.0553,
+    "currency": "USD",
+    "entry_time": "2026-07-22 09:00"
+  },
+  {
+    "ticker": "COOKIE",
+    "name": "COOKIE",
+    "exchange": "바이낸스",
+    "entry_price": 0.0085,
+    "currency": "USD",
+    "entry_time": "2026-07-22 09:00"
+  },
+  {
+    "ticker": "1000SATS",
+    "name": "1000SATS",
+    "exchange": "바이낸스",
+    "entry_price": 9.59e-06,
+    "currency": "USD",
+    "entry_time": "2026-07-22 09:00"
+  },
+  {
+    "ticker": "PEOPLE",
+    "name": "PEOPLE",
+    "exchange": "바이낸스",
+    "entry_price": 0.00535,
+    "currency": "USD",
+    "entry_time": "2026-07-22 09:00"
+  },
+  {
+    "ticker": "DCR",
+    "name": "DCR",
+    "exchange": "바이낸스",
+    "entry_price": 12.67,
+    "currency": "USD",
+    "entry_time": "2026-07-22 09:00"
+  },
+  {
+    "ticker": "REQ",
+    "name": "REQ",
+    "exchange": "바이낸스",
+    "entry_price": 0.0507,
+    "currency": "USD",
+    "entry_time": "2026-07-22 09:00"
+  },
+  {
+    "ticker": "TURBO",
+    "name": "TURBO",
+    "exchange": "바이낸스",
+    "entry_price": 0.000831,
+    "currency": "USD",
+    "entry_time": "2026-07-22 09:00"
+  },
+  {
+    "ticker": "XTZ",
+    "name": "XTZ",
+    "exchange": "바이낸스",
+    "entry_price": 0.2288,
+    "currency": "USD",
+    "entry_time": "2026-07-22 09:00"
   }
 ]

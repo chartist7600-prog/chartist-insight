@@ -1,14 +1,26 @@
 [
   {
-    "key": "바이낸스_XNO",
-    "time": "2026-07-21 09:00",
-    "price": 0.482,
+    "key": "바이낸스_ONE",
+    "time": "2026-07-22 09:00",
+    "price": 0.00138,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_MET",
-    "time": "2026-07-21 21:00",
-    "price": 240.0,
+    "key": "바이낸스_SAGA",
+    "time": "2026-07-22 09:00",
+    "price": 0.01354,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_EPIC",
+    "time": "2026-07-22 09:00",
+    "price": 0.545,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_GENIUS",
+    "time": "2026-07-22 09:00",
+    "price": 0.3634,
     "sig_type": "trend"
   }
 ]
