@@ -22,5 +22,29 @@
     "time": "2026-07-22 09:00",
     "price": 0.3634,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_PUFFER",
+    "time": "2026-07-22 21:00",
+    "price": 20.28,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_INIT",
+    "time": "2026-07-22 21:00",
+    "price": 82.62,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_LQTY",
+    "time": "2026-07-22 21:00",
+    "price": 0.1721,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_AEVO",
+    "time": "2026-07-22 21:00",
+    "price": 0.01986,
+    "sig_type": "trend"
   }
 ]
