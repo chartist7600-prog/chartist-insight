@@ -1,5 +1,101 @@
 [
   {
+    "ticker": "ORBS",
+    "name": "ORBS",
+    "exchange": "빗썸",
+    "entry_price": 8.758,
+    "currency": "KRW",
+    "entry_time": "2026-07-23 00:00"
+  },
+  {
+    "ticker": "CTSI",
+    "name": "CTSI",
+    "exchange": "빗썸",
+    "entry_price": 33.45,
+    "currency": "KRW",
+    "entry_time": "2026-07-23 00:00"
+  },
+  {
+    "ticker": "BFC",
+    "name": "BFC",
+    "exchange": "빗썸",
+    "entry_price": 16.8,
+    "currency": "KRW",
+    "entry_time": "2026-07-23 00:00"
+  },
+  {
+    "ticker": "AXS",
+    "name": "AXS",
+    "exchange": "빗썸",
+    "entry_price": 1345.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-23 00:00"
+  },
+  {
+    "ticker": "ONG",
+    "name": "ONG",
+    "exchange": "빗썸",
+    "entry_price": 67.94,
+    "currency": "KRW",
+    "entry_time": "2026-07-23 00:00"
+  },
+  {
+    "ticker": "AVAX",
+    "name": "AVAX",
+    "exchange": "빗썸",
+    "entry_price": 9585.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-23 00:00"
+  },
+  {
+    "ticker": "OP",
+    "name": "OP",
+    "exchange": "빗썸",
+    "entry_price": 143.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-23 00:00"
+  },
+  {
+    "ticker": "EDU",
+    "name": "EDU",
+    "exchange": "빗썸",
+    "entry_price": 44.14,
+    "currency": "KRW",
+    "entry_time": "2026-07-23 00:00"
+  },
+  {
+    "ticker": "MEW",
+    "name": "MEW",
+    "exchange": "빗썸",
+    "entry_price": 0.5311,
+    "currency": "KRW",
+    "entry_time": "2026-07-23 00:00"
+  },
+  {
+    "ticker": "MOODENG",
+    "name": "MOODENG",
+    "exchange": "빗썸",
+    "entry_price": 55.21,
+    "currency": "KRW",
+    "entry_time": "2026-07-23 00:00"
+  },
+  {
+    "ticker": "DKA",
+    "name": "DKA",
+    "exchange": "빗썸",
+    "entry_price": 5.638,
+    "currency": "KRW",
+    "entry_time": "2026-07-23 00:00"
+  },
+  {
+    "ticker": "EDGE",
+    "name": "EDGE",
+    "exchange": "빗썸",
+    "entry_price": 94.9,
+    "currency": "KRW",
+    "entry_time": "2026-07-23 00:00"
+  },
+  {
     "ticker": "PUFFER",
     "name": "PUFFER",
     "exchange": "빗썸",
