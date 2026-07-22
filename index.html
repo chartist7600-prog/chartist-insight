@@ -1020,7 +1020,7 @@
 
 <section class="fomo-section fade-up">
   <div class="fomo-container">
-    <div class="fomo-title">🚀 멤버십 포착 코인 (최근 3일 기준)</div>
+    <div class="fomo-title">🚀 멤버십 포착 코인 (최근 7일 기준)</div>
     <div class="fomo-subtitle">신호 발생 시점 대비 현재 수익률 · 실시간 업데이트</div>
     <div class="fomo-list" id="fomo-list"><div style="text-align:center;color:#555;padding:20px;font-size:12px;">로딩 중...</div></div>
     <div class="fomo-cta-row">
@@ -2770,13 +2770,13 @@ function loadFomoSection(){
     var now=Date.now();
     var allItems=[];
     // mid (추세전환)
-    if(Array.isArray(d.mid)){d.mid.forEach(function(x){if(x.time&&(now-new Date(x.time.length===10?x.time+' 00:00':x.time))<3*86400000){var parts=(x.key||'').split('_');allItems.push({ticker:parts[1]||'',exchange:parts[0]||'',entry_price:x.price||0,currency:(parts[0]||'')==='바이낸스'?'USDT':'KRW',entry_time:x.time||'',signal:'trend'});}});}
+    if(Array.isArray(d.mid)){d.mid.forEach(function(x){if(x.time&&(now-new Date(x.time.length===10?x.time+' 00:00':x.time))<7*86400000){var parts=(x.key||'').split('_');allItems.push({ticker:parts[1]||'',exchange:parts[0]||'',entry_price:x.price||0,currency:(parts[0]||'')==='바이낸스'?'USDT':'KRW',entry_time:x.time||'',signal:'trend'});}});}
     // div (RSI 다이버전스 - 상승만)
-    if(Array.isArray(d.div)){d.div.forEach(function(x){var sig=x.sig_type==='rsi'&&x.div_type?('rsi_'+x.div_type):(x.sig_type||'rsi_bull');if(sig==='rsi_bear'||sig==='rsi_hidden_bear')return;if(x.time&&(now-new Date(x.time.length===10?x.time+' 00:00':x.time))<3*86400000){var parts=(x.key||'').split('_');allItems.push({ticker:parts[1]||'',exchange:parts[0]||'',entry_price:x.price||0,currency:(parts[0]||'')==='바이낸스'?'USDT':'KRW',entry_time:x.time||'',signal:sig});}});}
+    if(Array.isArray(d.div)){d.div.forEach(function(x){var sig=x.sig_type==='rsi'&&x.div_type?('rsi_'+x.div_type):(x.sig_type||'rsi_bull');if(sig==='rsi_bear'||sig==='rsi_hidden_bear')return;if(x.time&&(now-new Date(x.time.length===10?x.time+' 00:00':x.time))<7*86400000){var parts=(x.key||'').split('_');allItems.push({ticker:parts[1]||'',exchange:parts[0]||'',entry_price:x.price||0,currency:(parts[0]||'')==='바이낸스'?'USDT':'KRW',entry_time:x.time||'',signal:sig});}});}
     // whale (고래봇)
-    if(Array.isArray(d.whale)){d.whale.forEach(function(x){if(x.time&&(now-new Date(x.time.length===10?x.time+' 00:00':x.time))<3*86400000){var parts=(x.key||'').split('_');allItems.push({ticker:parts[1]||'',exchange:parts[0]||'',entry_price:x.price||0,currency:(parts[0]||'')==='바이낸스'?'USDT':'KRW',entry_time:x.time||'',signal:'whale'});}});}
+    if(Array.isArray(d.whale)){d.whale.forEach(function(x){if(x.time&&(now-new Date(x.time.length===10?x.time+' 00:00':x.time))<7*86400000){var parts=(x.key||'').split('_');allItems.push({ticker:parts[1]||'',exchange:parts[0]||'',entry_price:x.price||0,currency:(parts[0]||'')==='바이낸스'?'USDT':'KRW',entry_time:x.time||'',signal:'whale'});}});}
     // ma (이동평균)
-    if(Array.isArray(d.ma)){d.ma.forEach(function(x){if(x.time&&(now-new Date(x.time.length===10?x.time+' 00:00':x.time))<3*86400000){var parts=(x.key||'').split('_');allItems.push({ticker:parts[1]||'',exchange:parts[0]||'',entry_price:x.price||0,currency:(parts[0]||'')==='바이낸스'?'USDT':'KRW',entry_time:x.time||'',signal:'ma'});}});}
+    if(Array.isArray(d.ma)){d.ma.forEach(function(x){if(x.time&&(now-new Date(x.time.length===10?x.time+' 00:00':x.time))<7*86400000){var parts=(x.key||'').split('_');allItems.push({ticker:parts[1]||'',exchange:parts[0]||'',entry_price:x.price||0,currency:(parts[0]||'')==='바이낸스'?'USDT':'KRW',entry_time:x.time||'',signal:'ma'});}});}
     // 티커 중복 제거 (같은 티커는 가장 최신 신호 하나만)
     var seen={};
     allItems=allItems.filter(function(x){if(!x.ticker||seen[x.ticker])return false;seen[x.ticker]=true;return true;});
