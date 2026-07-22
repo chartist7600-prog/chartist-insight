@@ -1190,7 +1190,7 @@
         glowStyle='background:rgba(220,53,69,0.06);animation:crkGoldGlow 2s ease-in-out infinite;';
       }
       var coinName=(window._coinNames&&window._coinNames[sym])?window._coinNames[sym]:'';
-      var nameHtml=coinName?'<span style="font-size:10px;color:#666;font-weight:400;margin-left:6px;">'+coinName+'</span>':'';
+      var nameHtml=coinName?'<span style="font-size:10px;color:#999;font-weight:500;margin-left:6px;">'+coinName+'</span>':'';
       return '<div class="crk" style="'+glowStyle+'"><div class="crk-num">'+medal+'</div><div class="crk-icon" style="'+iconStyle+'">'+iconHtml+'</div><div class="crk-info"><div class="crk-sym">'+sym+nameHtml+'</div><div class="crk-price">'+priceStr+'</div>'+navTag+'</div><div class="crk-chg '+cls+'">'+chgStr+'</div></div>';
     }
     function loadCoinRank(){
@@ -2827,7 +2827,7 @@ function renderFomo(items,pm){
     if(typeof days==="number"&&days>maxDays)maxDays=days;
     var blur=false;
     var liveName=(window._coinNames&&window._coinNames[item.ticker])||item.name||"";
-    html+='<div class="fomo-item'+(blur?' blurred':'')+'">'+'<div class="fomo-rank">'+(i+1)+'</div>'+'<div class="fomo-coin"><div class="fomo-coin-name">'+item.ticker+'<span style="font-size:11px;color:#666;font-weight:400;margin-left:6px;">'+liveName+'</span></div><div class="fomo-coin-meta">신호일: '+dt+'</div></div>'+'<div class="fomo-right"><div class="fomo-pct'+neg+'">'+pctStr+cursor+'</div><div class="fomo-days">'+days+'일 전</div></div>';
+    html+='<div class="fomo-item'+(blur?' blurred':'')+'">'+'<div class="fomo-rank">'+(i+1)+'</div>'+'<div class="fomo-coin"><div class="fomo-coin-name">'+item.ticker+'<span style="font-size:11px;color:#999;font-weight:500;margin-left:6px;">'+liveName+'</span></div><div class="fomo-coin-meta">신호일: '+dt+'</div></div>'+'<div class="fomo-right"><div class="fomo-pct'+neg+'">'+pctStr+cursor+'</div><div class="fomo-days">'+days+'일 전</div></div>';
     
     html+='</div>';
   });
