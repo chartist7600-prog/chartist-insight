@@ -1,5 +1,133 @@
 [
   {
+    "ticker": "SNT",
+    "name": "SNT",
+    "exchange": "빗썸",
+    "entry_price": 10.47,
+    "currency": "KRW",
+    "entry_time": "2026-07-24 00:00"
+  },
+  {
+    "ticker": "ORBS",
+    "name": "ORBS",
+    "exchange": "빗썸",
+    "entry_price": 8.677,
+    "currency": "KRW",
+    "entry_time": "2026-07-24 00:00"
+  },
+  {
+    "ticker": "CTSI",
+    "name": "CTSI",
+    "exchange": "빗썸",
+    "entry_price": 33.13,
+    "currency": "KRW",
+    "entry_time": "2026-07-24 00:00"
+  },
+  {
+    "ticker": "BFC",
+    "name": "BFC",
+    "exchange": "빗썸",
+    "entry_price": 16.11,
+    "currency": "KRW",
+    "entry_time": "2026-07-24 00:00"
+  },
+  {
+    "ticker": "ONG",
+    "name": "ONG",
+    "exchange": "빗썸",
+    "entry_price": 67.94,
+    "currency": "KRW",
+    "entry_time": "2026-07-24 00:00"
+  },
+  {
+    "ticker": "AVAX",
+    "name": "AVAX",
+    "exchange": "빗썸",
+    "entry_price": 9460.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-24 00:00"
+  },
+  {
+    "ticker": "OP",
+    "name": "OP",
+    "exchange": "빗썸",
+    "entry_price": 142.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-24 00:00"
+  },
+  {
+    "ticker": "FIL",
+    "name": "FIL",
+    "exchange": "빗썸",
+    "entry_price": 1056.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-24 00:00"
+  },
+  {
+    "ticker": "EDU",
+    "name": "EDU",
+    "exchange": "빗썸",
+    "entry_price": 44.14,
+    "currency": "KRW",
+    "entry_time": "2026-07-24 00:00"
+  },
+  {
+    "ticker": "STORJ",
+    "name": "STORJ",
+    "exchange": "빗썸",
+    "entry_price": 108.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-24 00:00"
+  },
+  {
+    "ticker": "SKL",
+    "name": "SKL",
+    "exchange": "빗썸",
+    "entry_price": 5.657,
+    "currency": "KRW",
+    "entry_time": "2026-07-24 00:00"
+  },
+  {
+    "ticker": "MEW",
+    "name": "MEW",
+    "exchange": "빗썸",
+    "entry_price": 0.5262,
+    "currency": "KRW",
+    "entry_time": "2026-07-24 00:00"
+  },
+  {
+    "ticker": "MOODENG",
+    "name": "MOODENG",
+    "exchange": "빗썸",
+    "entry_price": 54.07,
+    "currency": "KRW",
+    "entry_time": "2026-07-24 00:00"
+  },
+  {
+    "ticker": "DKA",
+    "name": "DKA",
+    "exchange": "빗썸",
+    "entry_price": 5.611,
+    "currency": "KRW",
+    "entry_time": "2026-07-24 00:00"
+  },
+  {
+    "ticker": "COOKIE",
+    "name": "COOKIE",
+    "exchange": "빗썸",
+    "entry_price": 12.46,
+    "currency": "KRW",
+    "entry_time": "2026-07-24 00:00"
+  },
+  {
+    "ticker": "EDGE",
+    "name": "EDGE",
+    "exchange": "빗썸",
+    "entry_price": 94.09,
+    "currency": "KRW",
+    "entry_time": "2026-07-24 00:00"
+  },
+  {
     "ticker": "PCI",
     "name": "PCI",
     "exchange": "빗썸",
