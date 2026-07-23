@@ -1020,7 +1020,7 @@
 
 <section class="fomo-section fade-up">
   <div class="fomo-container">
-    <div class="fomo-title">🚀 멤버십 포착 코인 (최근 7일 기준)</div>
+    <div class="fomo-title">🚀 멤버십 포착 코인 (주간 하이라이트)</div>
     <div class="fomo-subtitle">신호 발생 시점 대비 현재 수익률 · 실시간 업데이트</div>
     <div class="fomo-list" id="fomo-list"><div style="text-align:center;color:#555;padding:20px;font-size:12px;">로딩 중...</div></div>
     <div class="fomo-cta-row">
@@ -2770,13 +2770,13 @@ function loadFomoSection(){
     var now=Date.now();
     var allItems=[];
     // mid (추세전환)
-    if(Array.isArray(d.mid)){d.mid.forEach(function(x){if(x.time&&(now-new Date(x.time.length===10?x.time+' 00:00':x.time))<7*86400000){var parts=(x.key||'').split('_');allItems.push({ticker:parts[1]||'',exchange:parts[0]||'',entry_price:x.price||0,currency:(parts[0]||'')==='바이낸스'?'USDT':'KRW',entry_time:x.time||'',signal:'trend'});}});}
+    if(Array.isArray(d.mid)){d.mid.forEach(function(x){if(x.time&&(now-new Date(x.time.length===10?x.time+'T09:00:00+09:00':x.time.replace(' ','T')+':00+09:00'))<7*86400000){var parts=(x.key||'').split('_');allItems.push({ticker:parts[1]||'',exchange:parts[0]||'',entry_price:x.price||0,currency:(parts[0]||'')==='바이낸스'?'USDT':'KRW',entry_time:x.time||'',signal:'trend'});}});}
     // div (RSI 다이버전스 - 상승만)
-    if(Array.isArray(d.div)){d.div.forEach(function(x){var sig=x.sig_type==='rsi'&&x.div_type?('rsi_'+x.div_type):(x.sig_type||'rsi_bull');if(sig==='rsi_bear'||sig==='rsi_hidden_bear')return;if(x.time&&(now-new Date(x.time.length===10?x.time+' 00:00':x.time))<7*86400000){var parts=(x.key||'').split('_');allItems.push({ticker:parts[1]||'',exchange:parts[0]||'',entry_price:x.price||0,currency:(parts[0]||'')==='바이낸스'?'USDT':'KRW',entry_time:x.time||'',signal:sig});}});}
+    if(Array.isArray(d.div)){d.div.forEach(function(x){var sig=x.sig_type==='rsi'&&x.div_type?('rsi_'+x.div_type):(x.sig_type||'rsi_bull');if(sig==='rsi_bear'||sig==='rsi_hidden_bear')return;if(x.time&&(now-new Date(x.time.length===10?x.time+'T09:00:00+09:00':x.time.replace(' ','T')+':00+09:00'))<7*86400000){var parts=(x.key||'').split('_');allItems.push({ticker:parts[1]||'',exchange:parts[0]||'',entry_price:x.price||0,currency:(parts[0]||'')==='바이낸스'?'USDT':'KRW',entry_time:x.time||'',signal:sig});}});}
     // whale (고래봇)
-    if(Array.isArray(d.whale)){d.whale.forEach(function(x){if(x.time&&(now-new Date(x.time.length===10?x.time+' 00:00':x.time))<7*86400000){var parts=(x.key||'').split('_');allItems.push({ticker:parts[1]||'',exchange:parts[0]||'',entry_price:x.price||0,currency:(parts[0]||'')==='바이낸스'?'USDT':'KRW',entry_time:x.time||'',signal:'whale'});}});}
+    if(Array.isArray(d.whale)){d.whale.forEach(function(x){if(x.time&&(now-new Date(x.time.length===10?x.time+'T09:00:00+09:00':x.time.replace(' ','T')+':00+09:00'))<7*86400000){var parts=(x.key||'').split('_');allItems.push({ticker:parts[1]||'',exchange:parts[0]||'',entry_price:x.price||0,currency:(parts[0]||'')==='바이낸스'?'USDT':'KRW',entry_time:x.time||'',signal:'whale'});}});}
     // ma (이동평균)
-    if(Array.isArray(d.ma)){d.ma.forEach(function(x){if(x.time&&(now-new Date(x.time.length===10?x.time+' 00:00':x.time))<7*86400000){var parts=(x.key||'').split('_');allItems.push({ticker:parts[1]||'',exchange:parts[0]||'',entry_price:x.price||0,currency:(parts[0]||'')==='바이낸스'?'USDT':'KRW',entry_time:x.time||'',signal:'ma'});}});}
+    if(Array.isArray(d.ma)){d.ma.forEach(function(x){if(x.time&&(now-new Date(x.time.length===10?x.time+'T09:00:00+09:00':x.time.replace(' ','T')+':00+09:00'))<7*86400000){var parts=(x.key||'').split('_');allItems.push({ticker:parts[1]||'',exchange:parts[0]||'',entry_price:x.price||0,currency:(parts[0]||'')==='바이낸스'?'USDT':'KRW',entry_time:x.time||'',signal:'ma'});}});}
     // 티커 중복 제거 (같은 티커는 가장 최신 신호 하나만)
     var seen={};
     allItems=allItems.filter(function(x){if(!x.ticker||seen[x.ticker])return false;seen[x.ticker]=true;return true;});
@@ -2823,7 +2823,8 @@ function renderFomo(items,pm){
     var cursor=i<3?'<span class="fomo-cursor"></span>':'';
     var neg=pct!==null&&pct<0?" neg":"";
     var dt=item.entry_time?item.entry_time.split(" ")[0]:"";
-    var days=dt?Math.floor((Date.now()-new Date(dt))/86400000):"?";
+    var entryDateObj=item.entry_time?(item.entry_time.length===10?new Date(item.entry_time+'T09:00:00+09:00'):new Date(item.entry_time.replace(' ','T')+':00+09:00')):null;
+    var days=entryDateObj?Math.floor((Date.now()-entryDateObj.getTime())/86400000):"?";
     if(typeof days==="number"&&days>maxDays)maxDays=days;
     var blur=false;
     var liveName=(window._coinNames&&window._coinNames[item.ticker])||item.name||"";
@@ -2833,7 +2834,7 @@ function renderFomo(items,pm){
   });
   el.innerHTML=html;
   var titleEl=document.querySelector('.fomo-title');
-  if(titleEl)titleEl.textContent='🚀 멤버십 포착 코인 (최근 '+(maxDays+1)+'일 기준)';
+  if(titleEl)titleEl.textContent='🚀 멤버십 포착 코인 (주간 하이라이트)';
 }
 loadFomoSection();
 
