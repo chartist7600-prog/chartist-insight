@@ -1157,7 +1157,7 @@
         _navSignals={};
         all.forEach(function(x){
           if(!x.time)return;
-          var t=new Date(x.time.length===10?x.time+' 00:00':x.time);
+          var t=x.time.length===10?new Date(x.time+'T09:00:00+09:00'):new Date(x.time.replace(' ','T')+':00+09:00');
           var diff=now-t.getTime();
           if(diff>7*86400000)return;
           var parts=(x.key||'').split('_');
@@ -1166,6 +1166,7 @@
           var days=Math.floor(diff/86400000);
           if(!_navSignals[ticker]||days<_navSignals[ticker]){_navSignals[ticker]=days;}
         });
+        if(window.loadCoinRank)window.loadCoinRank();
       }).catch(function(){});
     }
     loadNavSignals();
@@ -1220,6 +1221,7 @@
         .then(function(d){window._coinNames=d.names||{};})
         .catch(function(){});
     }
+    window.loadCoinRank=loadCoinRank;
     loadCoinNames();
     loadCoinRank();
     setInterval(loadCoinRank,30000);
