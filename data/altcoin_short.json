@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "key": "빗썸_PCI",
+    "time": "2026-07-23 21:00",
+    "price": 58.18,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_LISTA",
+    "time": "2026-07-23 21:00",
+    "price": 73.7,
+    "sig_type": "trend"
+  }
+]

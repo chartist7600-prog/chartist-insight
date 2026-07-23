@@ -1,5 +1,23 @@
 [
   {
+    "ticker": "PCI",
+    "name": "PCI",
+    "exchange": "빗썸",
+    "entry_price": 58.18,
+    "currency": "KRW",
+    "entry_time": "2026-07-23 21:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "LISTA",
+    "name": "LISTA",
+    "exchange": "빗썸",
+    "entry_price": 73.7,
+    "currency": "KRW",
+    "entry_time": "2026-07-23 21:05",
+    "signal": "trend"
+  },
+  {
     "ticker": "CELO",
     "name": "CELO",
     "exchange": "바이낸스",
@@ -62,181 +80,5 @@
     "entry_price": 1511.0,
     "currency": "KRW",
     "entry_time": "2026-07-23 09:00"
-  },
-  {
-    "ticker": "SNT",
-    "name": "스테이터스네트워크토큰",
-    "exchange": "업비트",
-    "entry_price": 10.6,
-    "currency": "KRW",
-    "entry_time": "2026-07-23 09:00"
-  },
-  {
-    "ticker": "SIGN",
-    "name": "SIGN",
-    "exchange": "바이낸스",
-    "entry_price": 0.00859,
-    "currency": "USD",
-    "entry_time": "2026-07-23 09:00"
-  },
-  {
-    "ticker": "ONT",
-    "name": "ONT",
-    "exchange": "바이낸스",
-    "entry_price": 0.04256,
-    "currency": "USD",
-    "entry_time": "2026-07-23 09:00"
-  },
-  {
-    "ticker": "W",
-    "name": "W",
-    "exchange": "바이낸스",
-    "entry_price": 0.00908,
-    "currency": "USD",
-    "entry_time": "2026-07-23 09:00"
-  },
-  {
-    "ticker": "STORJ",
-    "name": "STORJ",
-    "exchange": "바이낸스",
-    "entry_price": 0.0751,
-    "currency": "USD",
-    "entry_time": "2026-07-23 09:00"
-  },
-  {
-    "ticker": "NOM",
-    "name": "NOM",
-    "exchange": "바이낸스",
-    "entry_price": 0.00155,
-    "currency": "USD",
-    "entry_time": "2026-07-23 09:00"
-  },
-  {
-    "ticker": "CYBER",
-    "name": "CYBER",
-    "exchange": "바이낸스",
-    "entry_price": 0.338,
-    "currency": "USD",
-    "entry_time": "2026-07-23 09:00"
-  },
-  {
-    "ticker": "CITY",
-    "name": "CITY",
-    "exchange": "바이낸스",
-    "entry_price": 0.395,
-    "currency": "USD",
-    "entry_time": "2026-07-23 09:00"
-  },
-  {
-    "ticker": "COOKIE",
-    "name": "COOKIE",
-    "exchange": "바이낸스",
-    "entry_price": 0.0085,
-    "currency": "USD",
-    "entry_time": "2026-07-23 09:00"
-  },
-  {
-    "ticker": "BAR",
-    "name": "BAR",
-    "exchange": "바이낸스",
-    "entry_price": 0.281,
-    "currency": "USD",
-    "entry_time": "2026-07-23 09:00"
-  },
-  {
-    "ticker": "LSK",
-    "name": "LSK",
-    "exchange": "바이낸스",
-    "entry_price": 0.0871,
-    "currency": "USD",
-    "entry_time": "2026-07-23 09:00"
-  },
-  {
-    "ticker": "1000SATS",
-    "name": "1000SATS",
-    "exchange": "바이낸스",
-    "entry_price": 9.6e-06,
-    "currency": "USD",
-    "entry_time": "2026-07-23 09:00"
-  },
-  {
-    "ticker": "TFUEL",
-    "name": "TFUEL",
-    "exchange": "바이낸스",
-    "entry_price": 0.00789,
-    "currency": "USD",
-    "entry_time": "2026-07-23 09:00"
-  },
-  {
-    "ticker": "REQ",
-    "name": "REQ",
-    "exchange": "바이낸스",
-    "entry_price": 0.0508,
-    "currency": "USD",
-    "entry_time": "2026-07-23 09:00"
-  },
-  {
-    "ticker": "TURBO",
-    "name": "TURBO",
-    "exchange": "바이낸스",
-    "entry_price": 0.000822,
-    "currency": "USD",
-    "entry_time": "2026-07-23 09:00"
-  },
-  {
-    "ticker": "ORBS",
-    "name": "ORBS",
-    "exchange": "빗썸",
-    "entry_price": 8.758,
-    "currency": "KRW",
-    "entry_time": "2026-07-23 00:00"
-  },
-  {
-    "ticker": "CTSI",
-    "name": "CTSI",
-    "exchange": "빗썸",
-    "entry_price": 33.45,
-    "currency": "KRW",
-    "entry_time": "2026-07-23 00:00"
-  },
-  {
-    "ticker": "BFC",
-    "name": "BFC",
-    "exchange": "빗썸",
-    "entry_price": 16.8,
-    "currency": "KRW",
-    "entry_time": "2026-07-23 00:00"
-  },
-  {
-    "ticker": "AXS",
-    "name": "AXS",
-    "exchange": "빗썸",
-    "entry_price": 1345.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-23 00:00"
-  },
-  {
-    "ticker": "ONG",
-    "name": "ONG",
-    "exchange": "빗썸",
-    "entry_price": 67.94,
-    "currency": "KRW",
-    "entry_time": "2026-07-23 00:00"
-  },
-  {
-    "ticker": "AVAX",
-    "name": "AVAX",
-    "exchange": "빗썸",
-    "entry_price": 9585.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-23 00:00"
-  },
-  {
-    "ticker": "OP",
-    "name": "OP",
-    "exchange": "빗썸",
-    "entry_price": 143.0,
-    "currency": "KRW",
-    "entry_time": "2026-07-23 00:00"
   }
 ]
