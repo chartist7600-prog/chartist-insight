@@ -2446,9 +2446,13 @@ function jOpenImageViewer(tradeId){
 async function jDeleteViewerImage(tradeId, path){
   if (!confirm('\uc774\ubbf8\uc9c0\ub97c \uc0ad\uc81c\ud560\uae4c\uc694?')) return;
   var tgId = jGetTgId();
-  await fetch('https://chartist-insight.com/trade/tg_delete_image', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({ tg_id: tgId, trade_id: tradeId, image_path: path }) });
-  await jLoadTrades();
-  jRenderImageViewer(tradeId);
+  try {
+    await fetch('https://chartist-insight.com/trade/tg_delete_image', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({ tg_id: tgId, trade_id: tradeId, image_path: path }) });
+    await jLoadTrades();
+    jRenderImageViewer(tradeId);
+  } catch (err) {
+    alert('이미지 삭제에 실패했습니다. 다시 시도해주세요.');
+  }
 }
 
 async function jAddViewerImage(tradeId, files){
@@ -2513,7 +2517,9 @@ async function journalDeleteTrade(id){
   try{
     await fetch('https://chartist-insight.com/trade/tg_delete',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({tg_id:tgId,id:id})});
     await jLoadTrades();
-  }catch(err){}
+  }catch(err){
+    alert('삭제에 실패했습니다. 다시 시도해주세요.');
+  }
 }
 
 function updateStatBadges(){try{jRenderStats();}catch(e){}}
