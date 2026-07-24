@@ -941,6 +941,7 @@
   </div>
   <div class="sth-right">
     <span class="sth-live"><span class="sth-dot"></span><span class="sth-btn-text">LIVE</span></span>
+    <button class="sth-btn sth-btn-icon" id="help-guide-btn" onclick="openHelpGuideModal()" title="사용 설명서">❓</button>
     <button class="sth-btn sth-btn-icon" id="sound-toggle-btn" onclick="showSoundPopup()" title="알림음 설정">🔔</button>
     <div id="tg-auth-area">
     <button class="tg-login-btn" onclick="tgLogin()">
@@ -2970,7 +2971,37 @@ function serviceNavClick(tab) {
   </div>
 </div>
 
+<div class="member-modal-overlay" id="help-guide-modal" onclick="if(event.target===this)document.getElementById('help-guide-modal').classList.remove('show')">
+  <div class="member-modal-box" style="max-width:380px;text-align:left;">
+    <div class="member-modal-icon" style="text-align:center;">❓</div>
+    <div class="member-modal-title" style="text-align:center;">홈페이지 사용 설명서</div>
+    <div class="member-modal-desc" style="text-align:left;">
+      <b style="color:#C9A84C;">1. 로그인</b><br>
+      텔레그램 계정으로 로그인하면 무료 기능을 이용할 수 있습니다. (회원가입 불필요)<br><br>
+      <b style="color:#C9A84C;">2. 무료 기능</b> (로그인 시 이용 가능)<br>
+      🚨 거래량 알림 — 실시간 급증 감지<br>
+      📥 종목 리스트 — 6개 거래소, 매일 자동 업데이트<br>
+      🧮 매매계산기 — 손익비·분할매수 계산<br>
+      📒 매매일지 — 매매 기록 및 승률 관리<br><br>
+      <b style="color:#C9A84C;">3. 멤버십 전용 기능</b><br>
+      💰 비트 롱/숏 신호<br>
+      📊 알트 추세전환 / 🐋 알트 고래봇 / 📈 알트 RSI 다이버전스<br>
+      🚀 멤버십 포착 코인 (주간 하이라이트)<br><br>
+      <b style="color:#C9A84C;">4. 🔔 알림 설정</b><br>
+      우측 상단 종 모양 아이콘 클릭 → 원하는 알림 카테고리 체크 → 저장하면 폰으로 푸시 알림을 받을 수 있습니다.<br><br>
+      <b style="color:#C9A84C;">5. 📱 앱처럼 설치하기</b><br>
+      스마트폰에서 홈 화면에 추가하면 앱처럼 바로 열립니다.<br>
+      안드로이드: 크롬 메뉴 → 홈 화면에 추가<br>
+      아이폰: 사파리 공유 버튼 → 홈 화면에 추가
+    </div>
+    <button class="member-modal-close" onclick="document.getElementById('help-guide-modal').classList.remove('show')">닫기</button>
+  </div>
+</div>
+
 <script>
+function openHelpGuideModal(){
+  document.getElementById('help-guide-modal').classList.add('show');
+}
 function jTickerBtn(key,label){
   var tgId=jGetTgId();
   var url='https://chartist-insight.com/tickers/download/'+key+'?tg_id='+encodeURIComponent(tgId);
