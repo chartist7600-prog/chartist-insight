@@ -997,6 +997,30 @@
   </div>
 </section>
 
+<section class="stat-counter-section fade-up">
+  <div style="max-width:520px;margin:0 auto;padding:0 20px 24px;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+      <div style="background:#141210;border:0.5px solid rgba(201,168,76,0.25);border-radius:10px;padding:16px 14px;text-align:center;">
+        <div style="color:#C9A84C;font-size:22px;font-weight:700;">6개</div>
+        <div style="color:#888;font-size:11px;margin-top:4px;">거래소 연동</div>
+      </div>
+      <div style="background:#141210;border:0.5px solid rgba(201,168,76,0.25);border-radius:10px;padding:16px 14px;text-align:center;">
+        <div style="color:#C9A84C;font-size:22px;font-weight:700;">13,500+</div>
+        <div style="color:#888;font-size:11px;margin-top:4px;">텔레그램 회원</div>
+      </div>
+      <div style="background:#141210;border:0.5px solid rgba(201,168,76,0.25);border-radius:10px;padding:16px 14px;text-align:center;">
+        <div style="color:#C9A84C;font-size:22px;font-weight:700;">365일</div>
+        <div style="color:#888;font-size:11px;margin-top:4px;">자동 신호 감지</div>
+      </div>
+      <div style="background:#141210;border:0.5px solid rgba(201,168,76,0.4);border-radius:10px;padding:16px 14px;text-align:center;position:relative;cursor:pointer;" onclick="openCareerModal()">
+        <div style="color:#C9A84C;font-size:22px;font-weight:700;">10년+</div>
+        <div style="color:#888;font-size:11px;margin-top:4px;">연기금 · 카이스트 수료</div>
+        <div style="position:absolute;top:6px;right:8px;color:#665a3a;font-size:10px;">ⓘ</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div class="market-bar fade-up">
   <a class="market-card" href="https://www.tradingview.com/chart/?symbol=BINANCE:BTCUSDT" target="_blank" rel="noopener" style="text-decoration:none;display:block;cursor:pointer;">
     <div class="mc-label">BTC / USDT</div>
@@ -1691,7 +1715,7 @@ var _altcoinRenderSilent=false;function renderAltcoin(silent){_altcoinRenderSile
   contentEl.style.display='';contentEl.innerHTML=html;
 }
 var binanceWsList=[];var _lastConnectedTickers='';var binanceReconnectActive=false;
-function connectLivePrices(items){var _tickerKey=items.slice(0,200).map(function(i){return i.exchange+'_'+i.ticker;}).sort().join(',');if(_tickerKey===_lastConnectedTickers)return;_lastConnectedTickers=_tickerKey;var binanceTickers=[];var krwTickers=[];items.slice(0,200).forEach(function(item){if(!item.ticker)return;if(item.exchange==='바이낸스'){if(binanceTickers.indexOf(item.ticker)===-1)binanceTickers.push(item.ticker);}else{if(krwTickers.indexOf(item.ticker)===-1)krwTickers.push(item.ticker);}});binanceWsList.forEach(function(ws){try{ws.close();}catch(e){}});binanceWsList=[];binanceReconnectActive=true;if(binanceTickers.length>0){var streams=binanceTickers.map(function(t){return t.toLowerCase()+'usdt@ticker';}).join('/');reconnectBinanceWs(streams);}var upbitTickers=[];var bithumbTickers=[];items.slice(0,200).forEach(function(item){if(!item.ticker)return;if(item.exchange==='업비트'){if(upbitTickers.indexOf(item.ticker)===-1)upbitTickers.push(item.ticker);}else if(item.exchange==='빗썸'){if(bithumbTickers.indexOf(item.ticker)===-1)bithumbTickers.push(item.ticker);}});if(upbitPollTimer)clearInterval(upbitPollTimer);function pollKrw(){if(upbitTickers.length>0){var markets=upbitTickers.map(function(t){return'KRW-'+t;}).join(',');fetch('https://api.upbit.com/v1/ticker?markets='+encodeURIComponent(markets)).then(function(r){return r.json();}).then(function(arr){if(!Array.isArray(arr))return;arr.forEach(function(d){var sym=d.market.replace('KRW-','');liveprices[sym]={price:d.trade_price,change24h:d.signed_change_rate*100,exchange:'업비트'};updateTickerRow(sym);});}).catch(function(){});}if(bithumbTickers.length>0){fetch('https://api.bithumb.com/public/ticker/ALL_KRW').then(function(r){return r.json();}).then(function(d){if(!d||d.status!=='0000')return;bithumbTickers.forEach(function(ticker){var td=d.data[ticker];if(!td)return;var price=parseFloat(td.closing_price);var open=parseFloat(td.opening_price);var change24h=open>0?(price-open)/open*100:0;liveprices[ticker]={price:price,change24h:change24h,exchange:'빗썸'};updateTickerRow(ticker);});}).catch(function(){});}}if(upbitTickers.length>0||bithumbTickers.length>0){pollKrw();upbitPollTimer=setInterval(pollKrw,5000);}}
+function connectLivePrices(items){var _tickerKey=items.slice(0,200).map(function(i){return i.exchange+'_'+i.ticker;}).sort().join(',');if(_tickerKey===_lastConnectedTickers)return;_lastConnectedTickers=_tickerKey;var binanceTickers=[];var krwTickers=[];items.slice(0,200).forEach(function(item){if(!item.ticker)return;if(item.exchange==='바이낸스'){if(binanceTickers.indexOf(item.ticker)===-1)binanceTickers.push(item.ticker);}else{if(krwTickers.indexOf(item.ticker)===-1)krwTickers.push(item.ticker);}});binanceWsList.forEach(function(ws){try{ws.close();}catch(e){}});binanceWsList=[];binanceReconnectActive=true;if(binanceTickers.length>0){var streams=binanceTickers.map(function(t){return t.toLowerCase()+'usdt@ticker';}).join('/');reconnectBinanceWs(streams);}var upbitTickers=[];var bithumbTickers=[];items.slice(0,200).forEach(function(item){if(!item.ticker)return;if(item.exchange==='업비트'){if(upbitTickers.indexOf(item.ticker)===-1)upbitTickers.push(item.ticker);}else if(item.exchange==='빗썸'){if(bithumbTickers.indexOf(item.ticker)===-1)bithumbTickers.push(item.ticker);}});if(upbitPollTimer)clearInterval(upbitPollTimer);function pollKrw(){var _now=Date.now();if(_now-(connectLivePrices._lastPollTime||0)<4000)return;connectLivePrices._lastPollTime=_now;if(upbitTickers.length>0){var markets=upbitTickers.map(function(t){return'KRW-'+t;}).join(',');fetch('https://api.upbit.com/v1/ticker?markets='+encodeURIComponent(markets)).then(function(r){if(!r.ok)throw new Error('http '+r.status);return r.json();}).then(function(arr){if(!Array.isArray(arr))return;arr.forEach(function(d){var sym=d.market.replace('KRW-','');liveprices[sym]={price:d.trade_price,change24h:d.signed_change_rate*100,exchange:'업비트'};updateTickerRow(sym);});}).catch(function(){});}if(bithumbTickers.length>0){fetch('https://api.bithumb.com/public/ticker/ALL_KRW').then(function(r){if(!r.ok)throw new Error('http '+r.status);return r.json();}).then(function(d){if(!d||d.status!=='0000')return;bithumbTickers.forEach(function(ticker){var td=d.data[ticker];if(!td)return;var price=parseFloat(td.closing_price);var open=parseFloat(td.opening_price);var change24h=open>0?(price-open)/open*100:0;liveprices[ticker]={price:price,change24h:change24h,exchange:'빗썸'};updateTickerRow(ticker);});}).catch(function(){});}}if(upbitTickers.length>0||bithumbTickers.length>0){pollKrw();upbitPollTimer=setInterval(pollKrw,5000);}}
 var _profitResortTimer=null;
 function scheduleProfitResort(){if(currentAltSort!=='profit')return;if(_profitResortTimer)clearTimeout(_profitResortTimer);_profitResortTimer=setTimeout(function(){if(document.getElementById('tab-altcoin').classList.contains('active'))renderAltcoin(true);},800);}
 function updateTickerRow(sym){var lp=liveprices[sym];if(!lp)return;scheduleProfitResort();var priceEl=document.getElementById('lp-'+sym);var changeEl=document.getElementById('lc-'+sym);var rowEl=document.getElementById('tr-'+sym);var exchange=lp.exchange||'바이낸스';if(priceEl){var oldPrice=priceEl.getAttribute('data-price');var newPrice=String(lp.price);if(oldPrice&&oldPrice!==newPrice&&rowEl){rowEl.classList.remove('flash-up','flash-dn');void rowEl.offsetWidth;rowEl.classList.add(parseFloat(newPrice)>parseFloat(oldPrice)?'flash-up':'flash-dn');}priceEl.setAttribute('data-price',newPrice);priceEl.textContent=fmtPrice(lp.price,exchange);}if(changeEl){var chg=lp.change24h;var cls=chg>0?'up':(chg<0?'dn':'flat');var sign=chg>0?'+':'';changeEl.className='ticker-change '+cls;changeEl.textContent=sign+chg.toFixed(2)+'%';}}
@@ -2927,6 +2951,26 @@ function serviceNavClick(tab) {
   </div>
 </div>
 
+<div class="member-modal-overlay" id="career-modal" onclick="if(event.target===this)document.getElementById('career-modal').classList.remove('show')">
+  <div class="member-modal-box" style="max-width:380px;text-align:left;">
+    <div class="member-modal-icon" style="text-align:center;">🎓</div>
+    <div class="member-modal-title" style="text-align:center;">10년, 연기금에서 시작된 데이터 기반 매매</div>
+    <div class="member-modal-desc" style="text-align:left;">
+      국내 연기금 자산운용기관에서 10년간 근무했으며, 카이스트 디지털금융전문가 과정을 회사 대표로 수료할 만큼 암호화폐에 깊은 관심을 가져왔습니다.<br><br>
+      기관에 있을 때 가장 크게 느꼈던 한계는 하나였습니다 — <b style="color:#C9A84C;">결정적인 타이밍을 놓치는 것.</b> 그 고민이 지금의 자동화 시스템으로 이어졌습니다.<br><br>
+      <div style="border-left:2px solid rgba(201,168,76,0.4);padding-left:12px;margin:12px 0;color:#999;font-size:13px;">
+        "차트를 계속 볼 수 없는 직장인인데, 그 부분까지 해결해 주셔서 감사합니다."<br>
+        <span style="color:#666;font-size:11px;">— Godspeed927 멤버 후기</span>
+      </div>
+      <div style="border-left:2px solid rgba(201,168,76,0.4);padding-left:12px;margin:12px 0;color:#999;font-size:13px;">
+        "바쁜 직장인들을 위해... 새로운 지표와 강의를 개발해 주셔서 많은 도움이 됩니다."<br>
+        <span style="color:#666;font-size:11px;">— 일하는 하마 멤버 후기</span>
+      </div>
+    </div>
+    <button class="member-modal-close" onclick="document.getElementById('career-modal').classList.remove('show')">닫기</button>
+  </div>
+</div>
+
 <div class="member-modal-overlay" id="ticker-guide-modal" onclick="if(event.target===this)document.getElementById('ticker-guide-modal').classList.remove('show')">
   <div class="member-modal-box" style="max-width:380px;text-align:left;">
     <div class="member-modal-icon" style="text-align:center;">📖</div>
@@ -3001,6 +3045,9 @@ function serviceNavClick(tab) {
 <script>
 function openHelpGuideModal(){
   document.getElementById('help-guide-modal').classList.add('show');
+}
+function openCareerModal(){
+  document.getElementById('career-modal').classList.add('show');
 }
 function jTickerBtn(key,label){
   var tgId=jGetTgId();
