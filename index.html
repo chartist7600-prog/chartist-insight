@@ -1002,7 +1002,7 @@
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
       <div style="background:#141210;border:0.5px solid rgba(201,168,76,0.25);border-radius:10px;padding:16px 14px;text-align:center;">
         <div style="color:#C9A84C;font-size:22px;font-weight:700;">6개</div>
-        <div style="color:#888;font-size:11px;margin-top:4px;">거래소 연동</div>
+        <div style="color:#888;font-size:11px;margin-top:4px;">국내·외 거래소 연동</div>
       </div>
       <div style="background:#141210;border:0.5px solid rgba(201,168,76,0.25);border-radius:10px;padding:16px 14px;text-align:center;">
         <div style="color:#C9A84C;font-size:22px;font-weight:700;">13,500+</div>
@@ -1740,7 +1740,7 @@ function reconnectBinanceWs(streams){if(!binanceReconnectActive)return;var wsUrl
 // ══════════════════════════════════════════════
 // 공포탐욕
 // ══════════════════════════════════════════════
-function loadFearGreed(){fetch('https://api.alternative.me/fng/').then(function(r){return r.json();}).then(function(d){var val=parseInt(d.data[0].value);var cls=d.data[0].value_classification;document.getElementById('fg-value').textContent=val;var fgEmoji=val<=25?'😱':val<=45?'😟':val<=55?'😐':val<=75?'🙂':'🤑';document.getElementById('fg-label').textContent=fgEmoji+' '+cls;var gaugeColor=val<=25?'#e05555':val<=45?'#ff8c00':val<=55?'#f0d060':val<=75?'#7bc67e':'#4caf7d';drawGauge(val,gaugeColor);}).catch(function(){document.getElementById('fg-value').textContent='—';document.getElementById('fg-label').textContent='로드 실패';});}
+function loadFearGreed(){fetch('https://api.alternative.me/fng/').then(function(r){return r.json();}).then(function(d){var val=parseInt(d.data[0].value);var cls=d.data[0].value_classification;document.getElementById('fg-value').textContent=val;var fgEmoji=val<=25?'😱':val<=45?'😟':val<=55?'😐':val<=75?'🙂':'🤑';var fgKorean=val<=25?'극단적 공포':val<=45?'공포':val<=55?'중립':val<=75?'탐욕':'극단적 탐욕';document.getElementById('fg-label').textContent=fgEmoji+' '+cls+' ('+fgKorean+')';var gaugeColor=val<=25?'#e05555':val<=45?'#ff8c00':val<=55?'#f0d060':val<=75?'#7bc67e':'#4caf7d';drawGauge(val,gaugeColor);}).catch(function(){document.getElementById('fg-value').textContent='—';document.getElementById('fg-label').textContent='로드 실패';});}
 function drawGauge(val,color){var canvas=document.getElementById('fg-canvas');if(!canvas)return;var ctx=canvas.getContext('2d');ctx.clearRect(0,0,64,34);ctx.beginPath();ctx.arc(32,34,26,Math.PI,0);ctx.lineWidth=7;ctx.strokeStyle='rgba(255,255,255,0.08)';ctx.stroke();var angle=Math.PI+(val/100)*Math.PI;ctx.beginPath();ctx.arc(32,34,26,Math.PI,angle);ctx.strokeStyle=color;ctx.stroke();}
 
 // ══════════════════════════════════════════════
@@ -2954,9 +2954,9 @@ function serviceNavClick(tab) {
 <div class="member-modal-overlay" id="career-modal" onclick="if(event.target===this)document.getElementById('career-modal').classList.remove('show')">
   <div class="member-modal-box" style="max-width:380px;text-align:left;">
     <div class="member-modal-icon" style="text-align:center;">🎓</div>
-    <div class="member-modal-title" style="text-align:center;">10년, 연기금에서 시작된 데이터 기반 매매</div>
+    <div class="member-modal-title" style="text-align:center;">연기금에서 10년, 지금은 데이터로 매매합니다</div>
     <div class="member-modal-desc" style="text-align:left;">
-      국내 연기금 자산운용기관에서 10년간 근무했으며, 카이스트 디지털금융전문가 과정을 회사 대표로 수료할 만큼 암호화폐에 깊은 관심을 가져왔습니다.<br><br>
+      저는 국내 연기금 자산운용기관에서 10년간 근무했으며, 카이스트 디지털금융전문가 과정을 회사 대표로 수료할 만큼 암호화폐에 깊은 관심을 가져왔습니다.<br><br>
       기관에 있을 때 가장 크게 느꼈던 한계는 하나였습니다 — <b style="color:#C9A84C;">결정적인 타이밍을 놓치는 것.</b> 그 고민이 지금의 자동화 시스템으로 이어졌습니다.<br><br>
       <div style="border-left:2px solid rgba(201,168,76,0.4);padding-left:12px;margin:12px 0;color:#999;font-size:13px;">
         "차트를 계속 볼 수 없는 직장인인데, 그 부분까지 해결해 주셔서 감사합니다."<br>
