@@ -1,5 +1,157 @@
 [
   {
+    "ticker": "RECALL",
+    "name": "RECALL",
+    "exchange": "빗썸",
+    "entry_price": 58.66,
+    "currency": "KRW",
+    "entry_time": "2026-07-26 00:00"
+  },
+  {
+    "ticker": "ZRX",
+    "name": "ZRX",
+    "exchange": "빗썸",
+    "entry_price": 120.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-26 00:00"
+  },
+  {
+    "ticker": "VET",
+    "name": "VET",
+    "exchange": "빗썸",
+    "entry_price": 6.69,
+    "currency": "KRW",
+    "entry_time": "2026-07-26 00:00"
+  },
+  {
+    "ticker": "ORBS",
+    "name": "ORBS",
+    "exchange": "빗썸",
+    "entry_price": 8.539,
+    "currency": "KRW",
+    "entry_time": "2026-07-26 00:00"
+  },
+  {
+    "ticker": "MVC",
+    "name": "MVC",
+    "exchange": "빗썸",
+    "entry_price": 1.658,
+    "currency": "KRW",
+    "entry_time": "2026-07-26 00:00"
+  },
+  {
+    "ticker": "CTSI",
+    "name": "CTSI",
+    "exchange": "빗썸",
+    "entry_price": 31.91,
+    "currency": "KRW",
+    "entry_time": "2026-07-26 00:00"
+  },
+  {
+    "ticker": "BFC",
+    "name": "BFC",
+    "exchange": "빗썸",
+    "entry_price": 16.08,
+    "currency": "KRW",
+    "entry_time": "2026-07-26 00:00"
+  },
+  {
+    "ticker": "ONG",
+    "name": "ONG",
+    "exchange": "빗썸",
+    "entry_price": 66.14,
+    "currency": "KRW",
+    "entry_time": "2026-07-26 00:00"
+  },
+  {
+    "ticker": "XTZ",
+    "name": "XTZ",
+    "exchange": "빗썸",
+    "entry_price": 331.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-26 00:00"
+  },
+  {
+    "ticker": "AVAX",
+    "name": "AVAX",
+    "exchange": "빗썸",
+    "entry_price": 9615.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-26 00:00"
+  },
+  {
+    "ticker": "SUI",
+    "name": "SUI",
+    "exchange": "빗썸",
+    "entry_price": 1037.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-26 00:00"
+  },
+  {
+    "ticker": "FIL",
+    "name": "FIL",
+    "exchange": "빗썸",
+    "entry_price": 1030.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-26 00:00"
+  },
+  {
+    "ticker": "SKL",
+    "name": "SKL",
+    "exchange": "빗썸",
+    "entry_price": 5.563,
+    "currency": "KRW",
+    "entry_time": "2026-07-26 00:00"
+  },
+  {
+    "ticker": "MEW",
+    "name": "MEW",
+    "exchange": "빗썸",
+    "entry_price": 0.5076,
+    "currency": "KRW",
+    "entry_time": "2026-07-26 00:00"
+  },
+  {
+    "ticker": "ATH",
+    "name": "ATH",
+    "exchange": "빗썸",
+    "entry_price": 6.366,
+    "currency": "KRW",
+    "entry_time": "2026-07-26 00:00"
+  },
+  {
+    "ticker": "DKA",
+    "name": "DKA",
+    "exchange": "빗썸",
+    "entry_price": 5.599,
+    "currency": "KRW",
+    "entry_time": "2026-07-26 00:00"
+  },
+  {
+    "ticker": "BOUNTY",
+    "name": "BOUNTY",
+    "exchange": "빗썸",
+    "entry_price": 20.49,
+    "currency": "KRW",
+    "entry_time": "2026-07-26 00:00"
+  },
+  {
+    "ticker": "2Z",
+    "name": "2Z",
+    "exchange": "빗썸",
+    "entry_price": 88.64,
+    "currency": "KRW",
+    "entry_time": "2026-07-26 00:00"
+  },
+  {
+    "ticker": "LINEA",
+    "name": "LINEA",
+    "exchange": "빗썸",
+    "entry_price": 3.538,
+    "currency": "KRW",
+    "entry_time": "2026-07-26 00:00"
+  },
+  {
     "ticker": "EUL",
     "name": "EUL",
     "exchange": "빗썸",
