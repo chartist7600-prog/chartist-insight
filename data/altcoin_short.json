@@ -4,5 +4,35 @@
     "time": "2026-07-27 09:00",
     "price": 45.09,
     "sig_type": "trend_strong"
+  },
+  {
+    "key": "빗썸_MERL",
+    "time": "2026-07-27 21:00",
+    "price": 27.46,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_THQ",
+    "time": "2026-07-27 21:00",
+    "price": 27.24,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SAPIEN",
+    "time": "2026-07-27 21:00",
+    "price": 118.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_XVG",
+    "time": "2026-07-27 21:00",
+    "price": 0.002264,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_TST",
+    "time": "2026-07-27 21:00",
+    "price": 0.01232,
+    "sig_type": "trend"
   }
 ]
