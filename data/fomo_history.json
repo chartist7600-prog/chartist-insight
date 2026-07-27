@@ -1,5 +1,125 @@
 [
   {
+    "ticker": "NIL",
+    "name": "NIL",
+    "exchange": "빗썸",
+    "entry_price": 64.81,
+    "currency": "KRW",
+    "entry_time": "2026-07-28 00:00"
+  },
+  {
+    "ticker": "ZRX",
+    "name": "ZRX",
+    "exchange": "빗썸",
+    "entry_price": 118.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-28 00:00"
+  },
+  {
+    "ticker": "ADA",
+    "name": "ADA",
+    "exchange": "빗썸",
+    "entry_price": 232.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-28 00:00"
+  },
+  {
+    "ticker": "ORBS",
+    "name": "ORBS",
+    "exchange": "빗썸",
+    "entry_price": 8.482,
+    "currency": "KRW",
+    "entry_time": "2026-07-28 00:00"
+  },
+  {
+    "ticker": "ARPA",
+    "name": "ARPA",
+    "exchange": "빗썸",
+    "entry_price": 11.61,
+    "currency": "KRW",
+    "entry_time": "2026-07-28 00:00"
+  },
+  {
+    "ticker": "MVC",
+    "name": "MVC",
+    "exchange": "빗썸",
+    "entry_price": 1.657,
+    "currency": "KRW",
+    "entry_time": "2026-07-28 00:00"
+  },
+  {
+    "ticker": "OGN",
+    "name": "OGN",
+    "exchange": "빗썸",
+    "entry_price": 23.26,
+    "currency": "KRW",
+    "entry_time": "2026-07-28 00:00"
+  },
+  {
+    "ticker": "ONG",
+    "name": "ONG",
+    "exchange": "빗썸",
+    "entry_price": 64.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-28 00:00"
+  },
+  {
+    "ticker": "MASK",
+    "name": "MASK",
+    "exchange": "빗썸",
+    "entry_price": 527.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-28 00:00"
+  },
+  {
+    "ticker": "AVAX",
+    "name": "AVAX",
+    "exchange": "빗썸",
+    "entry_price": 9520.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-28 00:00"
+  },
+  {
+    "ticker": "SUI",
+    "name": "SUI",
+    "exchange": "빗썸",
+    "entry_price": 1023.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-28 00:00"
+  },
+  {
+    "ticker": "BOUNTY",
+    "name": "BOUNTY",
+    "exchange": "빗썸",
+    "entry_price": 21.05,
+    "currency": "KRW",
+    "entry_time": "2026-07-28 00:00"
+  },
+  {
+    "ticker": "PROVE",
+    "name": "PROVE",
+    "exchange": "빗썸",
+    "entry_price": 268.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-28 00:00"
+  },
+  {
+    "ticker": "POPCAT",
+    "name": "POPCAT",
+    "exchange": "빗썸",
+    "entry_price": 62.7,
+    "currency": "KRW",
+    "entry_time": "2026-07-28 00:00"
+  },
+  {
+    "ticker": "LINEA",
+    "name": "LINEA",
+    "exchange": "빗썸",
+    "entry_price": 3.568,
+    "currency": "KRW",
+    "entry_time": "2026-07-28 00:00"
+  },
+  {
     "ticker": "MERL",
     "name": "MERL",
     "exchange": "빗썸",
