@@ -1,5 +1,125 @@
 [
   {
+    "ticker": "STORJ",
+    "name": "STORJ",
+    "exchange": "빗썸",
+    "entry_price": 128.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-29 00:00"
+  },
+  {
+    "ticker": "PROS",
+    "name": "PROS",
+    "exchange": "빗썸",
+    "entry_price": 630.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-29 00:00"
+  },
+  {
+    "ticker": "ZRX",
+    "name": "ZRX",
+    "exchange": "빗썸",
+    "entry_price": 114.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-29 00:00"
+  },
+  {
+    "ticker": "ADA",
+    "name": "ADA",
+    "exchange": "빗썸",
+    "entry_price": 227.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-29 00:00"
+  },
+  {
+    "ticker": "ORBS",
+    "name": "ORBS",
+    "exchange": "빗썸",
+    "entry_price": 8.366,
+    "currency": "KRW",
+    "entry_time": "2026-07-29 00:00"
+  },
+  {
+    "ticker": "ARPA",
+    "name": "ARPA",
+    "exchange": "빗썸",
+    "entry_price": 11.61,
+    "currency": "KRW",
+    "entry_time": "2026-07-29 00:00"
+  },
+  {
+    "ticker": "MVC",
+    "name": "MVC",
+    "exchange": "빗썸",
+    "entry_price": 1.591,
+    "currency": "KRW",
+    "entry_time": "2026-07-29 00:00"
+  },
+  {
+    "ticker": "SUSHI",
+    "name": "SUSHI",
+    "exchange": "빗썸",
+    "entry_price": 222.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-29 00:00"
+  },
+  {
+    "ticker": "OGN",
+    "name": "OGN",
+    "exchange": "빗썸",
+    "entry_price": 23.26,
+    "currency": "KRW",
+    "entry_time": "2026-07-29 00:00"
+  },
+  {
+    "ticker": "ONG",
+    "name": "ONG",
+    "exchange": "빗썸",
+    "entry_price": 61.65,
+    "currency": "KRW",
+    "entry_time": "2026-07-29 00:00"
+  },
+  {
+    "ticker": "MASK",
+    "name": "MASK",
+    "exchange": "빗썸",
+    "entry_price": 527.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-29 00:00"
+  },
+  {
+    "ticker": "BLUR",
+    "name": "BLUR",
+    "exchange": "빗썸",
+    "entry_price": 21.42,
+    "currency": "KRW",
+    "entry_time": "2026-07-29 00:00"
+  },
+  {
+    "ticker": "SUI",
+    "name": "SUI",
+    "exchange": "빗썸",
+    "entry_price": 995.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-29 00:00"
+  },
+  {
+    "ticker": "ALT",
+    "name": "ALT",
+    "exchange": "빗썸",
+    "entry_price": 8.316,
+    "currency": "KRW",
+    "entry_time": "2026-07-29 00:00"
+  },
+  {
+    "ticker": "PROVE",
+    "name": "PROVE",
+    "exchange": "빗썸",
+    "entry_price": 268.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-29 00:00"
+  },
+  {
     "ticker": "COTI",
     "name": "COTI",
     "exchange": "빗썸",
