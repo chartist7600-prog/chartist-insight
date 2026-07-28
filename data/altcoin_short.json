@@ -10,5 +10,17 @@
     "time": "2026-07-28 09:00",
     "price": 105.0,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_COTI",
+    "time": "2026-07-28 21:00",
+    "price": 19.89,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_TWT",
+    "time": "2026-07-28 21:00",
+    "price": 0.3589,
+    "sig_type": "trend_strong"
   }
 ]
