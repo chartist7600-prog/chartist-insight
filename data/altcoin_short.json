@@ -16,5 +16,17 @@
     "time": "2026-07-29 09:00",
     "price": 0.000505,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_COS",
+    "time": "2026-07-29 21:00",
+    "price": 0.3312,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_OBSR",
+    "time": "2026-07-29 21:00",
+    "price": 0.7329,
+    "sig_type": "trend"
   }
 ]
