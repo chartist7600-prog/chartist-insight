@@ -1,26 +1,20 @@
 [
   {
-    "key": "빗썸_APE",
-    "time": "2026-07-28 09:00",
-    "price": 230.0,
+    "key": "빗썸_KMNO",
+    "time": "2026-07-29 09:00",
+    "price": 27.62,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_GTC",
-    "time": "2026-07-28 09:00",
-    "price": 105.0,
+    "key": "바이낸스_FLOW",
+    "time": "2026-07-29 09:00",
+    "price": 0.02599,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_COTI",
-    "time": "2026-07-28 21:00",
-    "price": 19.89,
+    "key": "바이낸스_1000CHEEMS",
+    "time": "2026-07-29 09:00",
+    "price": 0.000505,
     "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_TWT",
-    "time": "2026-07-28 21:00",
-    "price": 0.3589,
-    "sig_type": "trend_strong"
   }
 ]
