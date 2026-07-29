@@ -1,5 +1,141 @@
 [
   {
+    "ticker": "IRYS",
+    "name": "IRYS",
+    "exchange": "빗썸",
+    "entry_price": 21.74,
+    "currency": "KRW",
+    "entry_time": "2026-07-30 00:00"
+  },
+  {
+    "ticker": "HOLO",
+    "name": "HOLO",
+    "exchange": "빗썸",
+    "entry_price": 104.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-30 00:00"
+  },
+  {
+    "ticker": "A",
+    "name": "A",
+    "exchange": "빗썸",
+    "entry_price": 86.38,
+    "currency": "KRW",
+    "entry_time": "2026-07-30 00:00"
+  },
+  {
+    "ticker": "ZRX",
+    "name": "ZRX",
+    "exchange": "빗썸",
+    "entry_price": 113.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-30 00:00"
+  },
+  {
+    "ticker": "ADA",
+    "name": "ADA",
+    "exchange": "빗썸",
+    "entry_price": 233.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-30 00:00"
+  },
+  {
+    "ticker": "ORBS",
+    "name": "ORBS",
+    "exchange": "빗썸",
+    "entry_price": 7.996,
+    "currency": "KRW",
+    "entry_time": "2026-07-30 00:00"
+  },
+  {
+    "ticker": "MVC",
+    "name": "MVC",
+    "exchange": "빗썸",
+    "entry_price": 1.601,
+    "currency": "KRW",
+    "entry_time": "2026-07-30 00:00"
+  },
+  {
+    "ticker": "SUSHI",
+    "name": "SUSHI",
+    "exchange": "빗썸",
+    "entry_price": 222.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-30 00:00"
+  },
+  {
+    "ticker": "OGN",
+    "name": "OGN",
+    "exchange": "빗썸",
+    "entry_price": 22.8,
+    "currency": "KRW",
+    "entry_time": "2026-07-30 00:00"
+  },
+  {
+    "ticker": "WOO",
+    "name": "WOO",
+    "exchange": "빗썸",
+    "entry_price": 16.34,
+    "currency": "KRW",
+    "entry_time": "2026-07-30 00:00"
+  },
+  {
+    "ticker": "ONG",
+    "name": "ONG",
+    "exchange": "빗썸",
+    "entry_price": 61.65,
+    "currency": "KRW",
+    "entry_time": "2026-07-30 00:00"
+  },
+  {
+    "ticker": "MASK",
+    "name": "MASK",
+    "exchange": "빗썸",
+    "entry_price": 509.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-30 00:00"
+  },
+  {
+    "ticker": "SUI",
+    "name": "SUI",
+    "exchange": "빗썸",
+    "entry_price": 985.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-30 00:00"
+  },
+  {
+    "ticker": "TIA",
+    "name": "TIA",
+    "exchange": "빗썸",
+    "entry_price": 454.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-30 00:00"
+  },
+  {
+    "ticker": "ALT",
+    "name": "ALT",
+    "exchange": "빗썸",
+    "entry_price": 8.038,
+    "currency": "KRW",
+    "entry_time": "2026-07-30 00:00"
+  },
+  {
+    "ticker": "ENA",
+    "name": "ENA",
+    "exchange": "빗썸",
+    "entry_price": 116.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-30 00:00"
+  },
+  {
+    "ticker": "PROVE",
+    "name": "PROVE",
+    "exchange": "빗썸",
+    "entry_price": 255.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-30 00:00"
+  },
+  {
     "ticker": "COS",
     "name": "COS",
     "exchange": "빗썸",
