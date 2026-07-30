@@ -1,5 +1,141 @@
 [
   {
+    "ticker": "A",
+    "name": "A",
+    "exchange": "빗썸",
+    "entry_price": 86.38,
+    "currency": "KRW",
+    "entry_time": "2026-07-31 00:00"
+  },
+  {
+    "ticker": "ADA",
+    "name": "ADA",
+    "exchange": "빗썸",
+    "entry_price": 244.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-31 00:00"
+  },
+  {
+    "ticker": "ORBS",
+    "name": "ORBS",
+    "exchange": "빗썸",
+    "entry_price": 7.77,
+    "currency": "KRW",
+    "entry_time": "2026-07-31 00:00"
+  },
+  {
+    "ticker": "MBL",
+    "name": "MBL",
+    "exchange": "빗썸",
+    "entry_price": 0.96,
+    "currency": "KRW",
+    "entry_time": "2026-07-31 00:00"
+  },
+  {
+    "ticker": "COMP",
+    "name": "COMP",
+    "exchange": "빗썸",
+    "entry_price": 23260.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-31 00:00"
+  },
+  {
+    "ticker": "MVC",
+    "name": "MVC",
+    "exchange": "빗썸",
+    "entry_price": 1.576,
+    "currency": "KRW",
+    "entry_time": "2026-07-31 00:00"
+  },
+  {
+    "ticker": "OGN",
+    "name": "OGN",
+    "exchange": "빗썸",
+    "entry_price": 22.8,
+    "currency": "KRW",
+    "entry_time": "2026-07-31 00:00"
+  },
+  {
+    "ticker": "WOO",
+    "name": "WOO",
+    "exchange": "빗썸",
+    "entry_price": 16.34,
+    "currency": "KRW",
+    "entry_time": "2026-07-31 00:00"
+  },
+  {
+    "ticker": "META",
+    "name": "META",
+    "exchange": "빗썸",
+    "entry_price": 10.01,
+    "currency": "KRW",
+    "entry_time": "2026-07-31 00:00"
+  },
+  {
+    "ticker": "SUI",
+    "name": "SUI",
+    "exchange": "빗썸",
+    "entry_price": 990.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-31 00:00"
+  },
+  {
+    "ticker": "TIA",
+    "name": "TIA",
+    "exchange": "빗썸",
+    "entry_price": 454.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-31 00:00"
+  },
+  {
+    "ticker": "KAVA",
+    "name": "KAVA",
+    "exchange": "빗썸",
+    "entry_price": 61.94,
+    "currency": "KRW",
+    "entry_time": "2026-07-31 00:00"
+  },
+  {
+    "ticker": "SKL",
+    "name": "SKL",
+    "exchange": "빗썸",
+    "entry_price": 4.946,
+    "currency": "KRW",
+    "entry_time": "2026-07-31 00:00"
+  },
+  {
+    "ticker": "ALT",
+    "name": "ALT",
+    "exchange": "빗썸",
+    "entry_price": 8.038,
+    "currency": "KRW",
+    "entry_time": "2026-07-31 00:00"
+  },
+  {
+    "ticker": "SAFE",
+    "name": "SAFE",
+    "exchange": "빗썸",
+    "entry_price": 121.0,
+    "currency": "KRW",
+    "entry_time": "2026-07-31 00:00"
+  },
+  {
+    "ticker": "ME",
+    "name": "ME",
+    "exchange": "빗썸",
+    "entry_price": 85.42,
+    "currency": "KRW",
+    "entry_time": "2026-07-31 00:00"
+  },
+  {
+    "ticker": "TOWNS",
+    "name": "TOWNS",
+    "exchange": "빗썸",
+    "entry_price": 2.81,
+    "currency": "KRW",
+    "entry_time": "2026-07-31 00:00"
+  },
+  {
     "ticker": "AL",
     "name": "AL",
     "exchange": "빗썸",
