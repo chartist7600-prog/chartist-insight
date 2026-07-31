@@ -1,5 +1,77 @@
 [
   {
+    "ticker": "ADA",
+    "name": "ADA",
+    "exchange": "빗썸",
+    "entry_price": 241.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-01 00:00"
+  },
+  {
+    "ticker": "MBL",
+    "name": "MBL",
+    "exchange": "빗썸",
+    "entry_price": 0.949,
+    "currency": "KRW",
+    "entry_time": "2026-08-01 00:00"
+  },
+  {
+    "ticker": "MVC",
+    "name": "MVC",
+    "exchange": "빗썸",
+    "entry_price": 1.579,
+    "currency": "KRW",
+    "entry_time": "2026-08-01 00:00"
+  },
+  {
+    "ticker": "OGN",
+    "name": "OGN",
+    "exchange": "빗썸",
+    "entry_price": 21.55,
+    "currency": "KRW",
+    "entry_time": "2026-08-01 00:00"
+  },
+  {
+    "ticker": "WOO",
+    "name": "WOO",
+    "exchange": "빗썸",
+    "entry_price": 16.34,
+    "currency": "KRW",
+    "entry_time": "2026-08-01 00:00"
+  },
+  {
+    "ticker": "SUI",
+    "name": "SUI",
+    "exchange": "빗썸",
+    "entry_price": 983.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-01 00:00"
+  },
+  {
+    "ticker": "SKL",
+    "name": "SKL",
+    "exchange": "빗썸",
+    "entry_price": 4.946,
+    "currency": "KRW",
+    "entry_time": "2026-08-01 00:00"
+  },
+  {
+    "ticker": "ME",
+    "name": "ME",
+    "exchange": "빗썸",
+    "entry_price": 85.42,
+    "currency": "KRW",
+    "entry_time": "2026-08-01 00:00"
+  },
+  {
+    "ticker": "TOWNS",
+    "name": "TOWNS",
+    "exchange": "빗썸",
+    "entry_price": 2.81,
+    "currency": "KRW",
+    "entry_time": "2026-08-01 00:00"
+  },
+  {
     "ticker": "RLC",
     "name": "RLC",
     "exchange": "빗썸",
