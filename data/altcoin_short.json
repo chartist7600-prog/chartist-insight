@@ -16,5 +16,17 @@
     "time": "2026-07-31 09:00",
     "price": 0.01188,
     "sig_type": "trend_strong"
+  },
+  {
+    "key": "빗썸_RLC",
+    "time": "2026-07-31 21:00",
+    "price": 443.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_REI",
+    "time": "2026-07-31 21:00",
+    "price": 3.48,
+    "sig_type": "trend"
   }
 ]
