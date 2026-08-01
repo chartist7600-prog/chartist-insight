@@ -22,5 +22,35 @@
     "time": "2026-08-01 09:00",
     "price": 6.339e-05,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_BNB",
+    "time": "2026-08-01 21:00",
+    "price": 848000.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_VERONA",
+    "time": "2026-08-01 21:00",
+    "price": 195.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_BAND",
+    "time": "2026-08-01 21:00",
+    "price": 0.1603,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_AVA",
+    "time": "2026-08-01 21:00",
+    "price": 0.172,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_TUT",
+    "time": "2026-08-01 21:00",
+    "price": 0.01758,
+    "sig_type": "trend"
   }
 ]
