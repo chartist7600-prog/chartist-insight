@@ -1,32 +1,26 @@
 [
   {
-    "key": "빗썸_ROBO",
-    "time": "2026-07-31 09:00",
-    "price": 17.78,
+    "key": "빗썸_SFP",
+    "time": "2026-08-01 09:00",
+    "price": 313.0,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_DCR",
-    "time": "2026-07-31 09:00",
-    "price": 13.58,
+    "key": "빗썸_BTR",
+    "time": "2026-08-01 09:00",
+    "price": 26.8,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_MUBARAK",
-    "time": "2026-07-31 09:00",
-    "price": 0.01188,
-    "sig_type": "trend_strong"
-  },
-  {
-    "key": "빗썸_RLC",
-    "time": "2026-07-31 21:00",
-    "price": 443.0,
+    "key": "바이낸스_1000SATS",
+    "time": "2026-08-01 09:00",
+    "price": 1.079e-05,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_REI",
-    "time": "2026-07-31 21:00",
-    "price": 3.48,
+    "key": "바이낸스_NEIRO",
+    "time": "2026-08-01 09:00",
+    "price": 6.339e-05,
     "sig_type": "trend"
   }
 ]
