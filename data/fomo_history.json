@@ -1,5 +1,85 @@
 [
   {
+    "ticker": "ADA",
+    "name": "ADA",
+    "exchange": "빗썸",
+    "entry_price": 273.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-03 00:00"
+  },
+  {
+    "ticker": "TT",
+    "name": "TT",
+    "exchange": "빗썸",
+    "entry_price": 1.076,
+    "currency": "KRW",
+    "entry_time": "2026-08-03 00:00"
+  },
+  {
+    "ticker": "BCH",
+    "name": "BCH",
+    "exchange": "빗썸",
+    "entry_price": 305000.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-03 00:00"
+  },
+  {
+    "ticker": "MVC",
+    "name": "MVC",
+    "exchange": "빗썸",
+    "entry_price": 1.588,
+    "currency": "KRW",
+    "entry_time": "2026-08-03 00:00"
+  },
+  {
+    "ticker": "MANA",
+    "name": "MANA",
+    "exchange": "빗썸",
+    "entry_price": 94.62,
+    "currency": "KRW",
+    "entry_time": "2026-08-03 00:00"
+  },
+  {
+    "ticker": "MINA",
+    "name": "MINA",
+    "exchange": "빗썸",
+    "entry_price": 58.17,
+    "currency": "KRW",
+    "entry_time": "2026-08-03 00:00"
+  },
+  {
+    "ticker": "T",
+    "name": "T",
+    "exchange": "빗썸",
+    "entry_price": 4.664,
+    "currency": "KRW",
+    "entry_time": "2026-08-03 00:00"
+  },
+  {
+    "ticker": "ME",
+    "name": "ME",
+    "exchange": "빗썸",
+    "entry_price": 86.29,
+    "currency": "KRW",
+    "entry_time": "2026-08-03 00:00"
+  },
+  {
+    "ticker": "TOWNS",
+    "name": "TOWNS",
+    "exchange": "빗썸",
+    "entry_price": 2.842,
+    "currency": "KRW",
+    "entry_time": "2026-08-03 00:00"
+  },
+  {
+    "ticker": "MON",
+    "name": "MON",
+    "exchange": "빗썸",
+    "entry_price": 29.58,
+    "currency": "KRW",
+    "entry_time": "2026-08-03 00:00"
+  },
+  {
     "ticker": "YFI",
     "name": "YFI",
     "exchange": "빗썸",
