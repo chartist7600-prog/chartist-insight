@@ -4,5 +4,23 @@
     "time": "2026-08-02 09:00",
     "price": 152.0,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_YFI",
+    "time": "2026-08-02 21:00",
+    "price": 3033000.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_KSM",
+    "time": "2026-08-02 21:00",
+    "price": 4490.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_HOME",
+    "time": "2026-08-02 21:00",
+    "price": 10.07,
+    "sig_type": "trend"
   }
 ]
