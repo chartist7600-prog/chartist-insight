@@ -1,26 +1,26 @@
 [
   {
-    "key": "빗썸_CTK",
-    "time": "2026-08-02 09:00",
-    "price": 152.0,
+    "key": "빗썸_CELR",
+    "time": "2026-08-03 09:00",
+    "price": 2.357,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_YFI",
-    "time": "2026-08-02 21:00",
-    "price": 3033000.0,
+    "key": "빗썸_POPCAT",
+    "time": "2026-08-03 09:00",
+    "price": 63.72,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_KSM",
-    "time": "2026-08-02 21:00",
-    "price": 4490.0,
+    "key": "빗썸_EDEN",
+    "time": "2026-08-03 09:00",
+    "price": 56.63,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_HOME",
-    "time": "2026-08-02 21:00",
-    "price": 10.07,
-    "sig_type": "trend"
+    "key": "바이낸스_TKO",
+    "time": "2026-08-03 09:00",
+    "price": 0.0485,
+    "sig_type": "trend_strong"
   }
 ]
