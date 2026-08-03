@@ -1,5 +1,45 @@
 [
   {
+    "ticker": "GTC",
+    "name": "GTC",
+    "exchange": "빗썸",
+    "entry_price": 110.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-04 00:00"
+  },
+  {
+    "ticker": "MVC",
+    "name": "MVC",
+    "exchange": "빗썸",
+    "entry_price": 1.571,
+    "currency": "KRW",
+    "entry_time": "2026-08-04 00:00"
+  },
+  {
+    "ticker": "MINA",
+    "name": "MINA",
+    "exchange": "빗썸",
+    "entry_price": 58.17,
+    "currency": "KRW",
+    "entry_time": "2026-08-04 00:00"
+  },
+  {
+    "ticker": "ME",
+    "name": "ME",
+    "exchange": "빗썸",
+    "entry_price": 86.29,
+    "currency": "KRW",
+    "entry_time": "2026-08-04 00:00"
+  },
+  {
+    "ticker": "TOWNS",
+    "name": "TOWNS",
+    "exchange": "빗썸",
+    "entry_price": 3.059,
+    "currency": "KRW",
+    "entry_time": "2026-08-04 00:00"
+  },
+  {
     "ticker": "BICO",
     "name": "BICO",
     "exchange": "빗썸",
