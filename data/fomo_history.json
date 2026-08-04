@@ -1,5 +1,32 @@
 [
   {
+    "ticker": "PHA",
+    "name": "PHA",
+    "exchange": "빗썸",
+    "entry_price": 29.59,
+    "currency": "KRW",
+    "entry_time": "2026-08-04 21:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "ZRC",
+    "name": "ZRC",
+    "exchange": "빗썸",
+    "entry_price": 1.857,
+    "currency": "KRW",
+    "entry_time": "2026-08-04 21:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "SPCXB",
+    "name": "SPCXB",
+    "exchange": "바이낸스",
+    "entry_price": 118.53,
+    "currency": "USDT",
+    "entry_time": "2026-08-04 21:05",
+    "signal": "trend"
+  },
+  {
     "ticker": "HFT",
     "name": "HFT",
     "exchange": "빗썸",
@@ -58,189 +85,5 @@
     "entry_price": 0.00416,
     "currency": "USD",
     "entry_time": "2026-08-04 09:00"
-  },
-  {
-    "ticker": "PLTRB",
-    "name": "PLTRB",
-    "exchange": "바이낸스",
-    "entry_price": 144.72,
-    "currency": "USD",
-    "entry_time": "2026-08-04 09:00"
-  },
-  {
-    "ticker": "CELO",
-    "name": "셀로",
-    "exchange": "업비트",
-    "entry_price": 87.3,
-    "currency": "KRW",
-    "entry_time": "2026-08-04 09:00"
-  },
-  {
-    "ticker": "ARB",
-    "name": "아비트럼",
-    "exchange": "업비트",
-    "entry_price": 117.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-04 09:00"
-  },
-  {
-    "ticker": "BCH",
-    "name": "BCH",
-    "exchange": "바이낸스",
-    "entry_price": 213.2,
-    "currency": "USD",
-    "entry_time": "2026-08-04 09:00"
-  },
-  {
-    "ticker": "MBL",
-    "name": "MBL",
-    "exchange": "바이낸스",
-    "entry_price": 0.000637,
-    "currency": "USD",
-    "entry_time": "2026-08-04 09:00"
-  },
-  {
-    "ticker": "ENS",
-    "name": "ENS",
-    "exchange": "바이낸스",
-    "entry_price": 4.24,
-    "currency": "USD",
-    "entry_time": "2026-08-04 09:00"
-  },
-  {
-    "ticker": "SKL",
-    "name": "SKL",
-    "exchange": "바이낸스",
-    "entry_price": 0.00365,
-    "currency": "USD",
-    "entry_time": "2026-08-04 09:00"
-  },
-  {
-    "ticker": "PORTO",
-    "name": "PORTO",
-    "exchange": "바이낸스",
-    "entry_price": 0.449,
-    "currency": "USD",
-    "entry_time": "2026-08-04 09:00"
-  },
-  {
-    "ticker": "HEMI",
-    "name": "HEMI",
-    "exchange": "바이낸스",
-    "entry_price": 0.00466,
-    "currency": "USD",
-    "entry_time": "2026-08-04 09:00"
-  },
-  {
-    "ticker": "ORCA",
-    "name": "ORCA",
-    "exchange": "바이낸스",
-    "entry_price": 1.082,
-    "currency": "USD",
-    "entry_time": "2026-08-04 09:00"
-  },
-  {
-    "ticker": "CITY",
-    "name": "CITY",
-    "exchange": "바이낸스",
-    "entry_price": 0.364,
-    "currency": "USD",
-    "entry_time": "2026-08-04 09:00"
-  },
-  {
-    "ticker": "MOVR",
-    "name": "MOVR",
-    "exchange": "바이낸스",
-    "entry_price": 1.148,
-    "currency": "USD",
-    "entry_time": "2026-08-04 09:00"
-  },
-  {
-    "ticker": "TFUEL",
-    "name": "TFUEL",
-    "exchange": "바이낸스",
-    "entry_price": 0.00734,
-    "currency": "USD",
-    "entry_time": "2026-08-04 09:00"
-  },
-  {
-    "ticker": "SUI",
-    "name": "SUI",
-    "exchange": "바이낸스",
-    "entry_price": 0.6912,
-    "currency": "USD",
-    "entry_time": "2026-08-04 09:00"
-  },
-  {
-    "ticker": "OGN",
-    "name": "OGN",
-    "exchange": "바이낸스",
-    "entry_price": 0.01533,
-    "currency": "USD",
-    "entry_time": "2026-08-04 09:00"
-  },
-  {
-    "ticker": "T",
-    "name": "T",
-    "exchange": "바이낸스",
-    "entry_price": 0.00338,
-    "currency": "USD",
-    "entry_time": "2026-08-04 09:00"
-  },
-  {
-    "ticker": "LINEA",
-    "name": "LINEA",
-    "exchange": "바이낸스",
-    "entry_price": 0.00224,
-    "currency": "USD",
-    "entry_time": "2026-08-04 09:00"
-  },
-  {
-    "ticker": "KAVA",
-    "name": "KAVA",
-    "exchange": "바이낸스",
-    "entry_price": 0.04071,
-    "currency": "USD",
-    "entry_time": "2026-08-04 09:00"
-  },
-  {
-    "ticker": "CFX",
-    "name": "CFX",
-    "exchange": "바이낸스",
-    "entry_price": 0.04081,
-    "currency": "USD",
-    "entry_time": "2026-08-04 09:00"
-  },
-  {
-    "ticker": "JUV",
-    "name": "JUV",
-    "exchange": "바이낸스",
-    "entry_price": 0.308,
-    "currency": "USD",
-    "entry_time": "2026-08-04 09:00"
-  },
-  {
-    "ticker": "GTC",
-    "name": "GTC",
-    "exchange": "빗썸",
-    "entry_price": 110.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-04 00:00"
-  },
-  {
-    "ticker": "MVC",
-    "name": "MVC",
-    "exchange": "빗썸",
-    "entry_price": 1.571,
-    "currency": "KRW",
-    "entry_time": "2026-08-04 00:00"
-  },
-  {
-    "ticker": "MINA",
-    "name": "MINA",
-    "exchange": "빗썸",
-    "entry_price": 58.17,
-    "currency": "KRW",
-    "entry_time": "2026-08-04 00:00"
   }
 ]
