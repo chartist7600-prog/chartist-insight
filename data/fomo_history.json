@@ -1,5 +1,77 @@
 [
   {
+    "ticker": "HOME",
+    "name": "HOME",
+    "exchange": "빗썸",
+    "entry_price": 15.14,
+    "currency": "KRW",
+    "entry_time": "2026-08-05 00:00"
+  },
+  {
+    "ticker": "PIEVERSE",
+    "name": "PIEVERSE",
+    "exchange": "빗썸",
+    "entry_price": 1149.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-05 00:00"
+  },
+  {
+    "ticker": "CYS",
+    "name": "CYS",
+    "exchange": "빗썸",
+    "entry_price": 730.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-05 00:00"
+  },
+  {
+    "ticker": "MVC",
+    "name": "MVC",
+    "exchange": "빗썸",
+    "entry_price": 1.571,
+    "currency": "KRW",
+    "entry_time": "2026-08-05 00:00"
+  },
+  {
+    "ticker": "MINA",
+    "name": "MINA",
+    "exchange": "빗썸",
+    "entry_price": 57.7,
+    "currency": "KRW",
+    "entry_time": "2026-08-05 00:00"
+  },
+  {
+    "ticker": "ARB",
+    "name": "ARB",
+    "exchange": "빗썸",
+    "entry_price": 115.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-05 00:00"
+  },
+  {
+    "ticker": "CELO",
+    "name": "CELO",
+    "exchange": "빗썸",
+    "entry_price": 84.33,
+    "currency": "KRW",
+    "entry_time": "2026-08-05 00:00"
+  },
+  {
+    "ticker": "ME",
+    "name": "ME",
+    "exchange": "빗썸",
+    "entry_price": 85.03,
+    "currency": "KRW",
+    "entry_time": "2026-08-05 00:00"
+  },
+  {
+    "ticker": "MON",
+    "name": "MON",
+    "exchange": "빗썸",
+    "entry_price": 29.39,
+    "currency": "KRW",
+    "entry_time": "2026-08-05 00:00"
+  },
+  {
     "ticker": "PHA",
     "name": "PHA",
     "exchange": "빗썸",
