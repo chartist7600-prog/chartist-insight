@@ -1,44 +1,26 @@
 [
   {
-    "key": "빗썸_CELR",
-    "time": "2026-08-03 09:00",
-    "price": 2.357,
+    "key": "빗썸_HFT",
+    "time": "2026-08-04 09:00",
+    "price": 14.16,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_POPCAT",
-    "time": "2026-08-03 09:00",
-    "price": 63.72,
+    "key": "빗썸_PUMPBTC",
+    "time": "2026-08-04 09:00",
+    "price": 14.68,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_EDEN",
-    "time": "2026-08-03 09:00",
-    "price": 56.63,
+    "key": "바이낸스_VIC",
+    "time": "2026-08-04 09:00",
+    "price": 0.0524,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_TKO",
-    "time": "2026-08-03 09:00",
-    "price": 0.0485,
-    "sig_type": "trend_strong"
-  },
-  {
-    "key": "빗썸_BICO",
-    "time": "2026-08-03 21:00",
-    "price": 24.02,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_CORE",
-    "time": "2026-08-03 21:00",
-    "price": 29.94,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_ZEN",
-    "time": "2026-08-03 21:00",
-    "price": 4.189,
+    "key": "바이낸스_NVDAB",
+    "time": "2026-08-04 09:00",
+    "price": 207.07,
     "sig_type": "trend"
   }
 ]
