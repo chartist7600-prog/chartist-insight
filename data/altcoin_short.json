@@ -1,44 +1,32 @@
 [
   {
-    "key": "빗썸_HFT",
-    "time": "2026-08-04 09:00",
-    "price": 14.16,
+    "key": "빗썸_CYS",
+    "time": "2026-08-05 09:00",
+    "price": 730.0,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_PUMPBTC",
-    "time": "2026-08-04 09:00",
-    "price": 14.68,
+    "key": "바이낸스_CATI",
+    "time": "2026-08-05 09:00",
+    "price": 0.039,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_VIC",
-    "time": "2026-08-04 09:00",
-    "price": 0.0524,
+    "key": "바이낸스_HEI",
+    "time": "2026-08-05 09:00",
+    "price": 0.1293,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_NVDAB",
-    "time": "2026-08-04 09:00",
-    "price": 207.07,
+    "key": "바이낸스_STO",
+    "time": "2026-08-05 09:00",
+    "price": 0.0411,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_PHA",
-    "time": "2026-08-04 21:00",
-    "price": 29.59,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_ZRC",
-    "time": "2026-08-04 21:00",
-    "price": 1.857,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_SPCXB",
-    "time": "2026-08-04 21:00",
-    "price": 118.53,
+    "key": "바이낸스_SNDKB",
+    "time": "2026-08-05 09:00",
+    "price": 1437.1,
     "sig_type": "trend"
   }
 ]
