@@ -1,5 +1,77 @@
 [
   {
+    "ticker": "HFT",
+    "name": "HFT",
+    "exchange": "빗썸",
+    "entry_price": 23.03,
+    "currency": "KRW",
+    "entry_time": "2026-08-06 00:00"
+  },
+  {
+    "ticker": "BTR",
+    "name": "BTR",
+    "exchange": "빗썸",
+    "entry_price": 29.32,
+    "currency": "KRW",
+    "entry_time": "2026-08-06 00:00"
+  },
+  {
+    "ticker": "SKR",
+    "name": "SKR",
+    "exchange": "빗썸",
+    "entry_price": 12.03,
+    "currency": "KRW",
+    "entry_time": "2026-08-06 00:00"
+  },
+  {
+    "ticker": "RSR",
+    "name": "RSR",
+    "exchange": "빗썸",
+    "entry_price": 1.798,
+    "currency": "KRW",
+    "entry_time": "2026-08-06 00:00"
+  },
+  {
+    "ticker": "WOO",
+    "name": "WOO",
+    "exchange": "빗썸",
+    "entry_price": 15.96,
+    "currency": "KRW",
+    "entry_time": "2026-08-06 00:00"
+  },
+  {
+    "ticker": "EGLD",
+    "name": "EGLD",
+    "exchange": "빗썸",
+    "entry_price": 3879.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-06 00:00"
+  },
+  {
+    "ticker": "MINA",
+    "name": "MINA",
+    "exchange": "빗썸",
+    "entry_price": 57.26,
+    "currency": "KRW",
+    "entry_time": "2026-08-06 00:00"
+  },
+  {
+    "ticker": "ARB",
+    "name": "ARB",
+    "exchange": "빗썸",
+    "entry_price": 116.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-06 00:00"
+  },
+  {
+    "ticker": "CELO",
+    "name": "CELO",
+    "exchange": "빗썸",
+    "entry_price": 84.33,
+    "currency": "KRW",
+    "entry_time": "2026-08-06 00:00"
+  },
+  {
     "ticker": "ZEC",
     "name": "ZEC",
     "exchange": "바이낸스",
