@@ -28,5 +28,35 @@
     "time": "2026-08-05 09:00",
     "price": 1437.1,
     "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_ZEC",
+    "time": "2026-08-05 21:00",
+    "price": 517.59,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_FIDA",
+    "time": "2026-08-05 21:00",
+    "price": 0.02114,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_PORTAL",
+    "time": "2026-08-05 21:00",
+    "price": 0.01086,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_RESOLV",
+    "time": "2026-08-05 21:00",
+    "price": 0.01786,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_NOM",
+    "time": "2026-08-05 21:00",
+    "price": 0.00164,
+    "sig_type": "trend"
   }
 ]
