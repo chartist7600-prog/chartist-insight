@@ -1,5 +1,93 @@
 [
   {
+    "ticker": "CTSI",
+    "name": "CTSI",
+    "exchange": "빗썸",
+    "entry_price": 47.4,
+    "currency": "KRW",
+    "entry_time": "2026-08-07 00:00"
+  },
+  {
+    "ticker": "COOKIE",
+    "name": "COOKIE",
+    "exchange": "빗썸",
+    "entry_price": 14.29,
+    "currency": "KRW",
+    "entry_time": "2026-08-07 00:00"
+  },
+  {
+    "ticker": "BTR",
+    "name": "BTR",
+    "exchange": "빗썸",
+    "entry_price": 29.32,
+    "currency": "KRW",
+    "entry_time": "2026-08-07 00:00"
+  },
+  {
+    "ticker": "ZBT",
+    "name": "ZBT",
+    "exchange": "빗썸",
+    "entry_price": 253.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-07 00:00"
+  },
+  {
+    "ticker": "ROBO",
+    "name": "ROBO",
+    "exchange": "빗썸",
+    "entry_price": 20.17,
+    "currency": "KRW",
+    "entry_time": "2026-08-07 00:00"
+  },
+  {
+    "ticker": "RSR",
+    "name": "RSR",
+    "exchange": "빗썸",
+    "entry_price": 1.74,
+    "currency": "KRW",
+    "entry_time": "2026-08-07 00:00"
+  },
+  {
+    "ticker": "WOO",
+    "name": "WOO",
+    "exchange": "빗썸",
+    "entry_price": 15.96,
+    "currency": "KRW",
+    "entry_time": "2026-08-07 00:00"
+  },
+  {
+    "ticker": "EGLD",
+    "name": "EGLD",
+    "exchange": "빗썸",
+    "entry_price": 3983.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-07 00:00"
+  },
+  {
+    "ticker": "MINA",
+    "name": "MINA",
+    "exchange": "빗썸",
+    "entry_price": 57.26,
+    "currency": "KRW",
+    "entry_time": "2026-08-07 00:00"
+  },
+  {
+    "ticker": "ARB",
+    "name": "ARB",
+    "exchange": "빗썸",
+    "entry_price": 111.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-07 00:00"
+  },
+  {
+    "ticker": "HEMI",
+    "name": "HEMI",
+    "exchange": "빗썸",
+    "entry_price": 7.152,
+    "currency": "KRW",
+    "entry_time": "2026-08-07 00:00"
+  },
+  {
     "ticker": "ACT",
     "name": "ACT",
     "exchange": "바이낸스",
