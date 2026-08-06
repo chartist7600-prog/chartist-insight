@@ -2561,7 +2561,7 @@ function openLoginModal() { document.getElementById('login-modal').style.display
 function closeLoginModal() { document.getElementById('login-modal').style.display='none'; }
 function tgLogin() {
   var returnUrl = encodeURIComponent('https://chartist-insight.com/');
-  var loginUrl = 'https://oauth.telegram.org/auth?bot_id=8458968839&origin=https%3A%2F%2Fchartist-insight.com&embed=1&request_access=write&return_to=' + returnUrl;
+  var loginUrl = 'https://oauth.telegram.org/auth?bot_id=8458968839&origin=https%3A%2F%2Fchartist-insight.com&embed=0&request_access=write&return_to=' + returnUrl;
   window.location.href = loginUrl;
 }
 
