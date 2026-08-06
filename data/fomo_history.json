@@ -1,5 +1,201 @@
 [
   {
+    "ticker": "BMT",
+    "name": "BMT",
+    "exchange": "빗썸",
+    "entry_price": 17.44,
+    "currency": "KRW",
+    "entry_time": "2026-08-06 09:08",
+    "signal": "trend"
+  },
+  {
+    "ticker": "DODO",
+    "name": "DODO",
+    "exchange": "바이낸스",
+    "entry_price": 0.02692,
+    "currency": "USDT",
+    "entry_time": "2026-08-06 09:08",
+    "signal": "trend"
+  },
+  {
+    "ticker": "SYN",
+    "name": "SYN",
+    "exchange": "바이낸스",
+    "entry_price": 0.1421,
+    "currency": "USDT",
+    "entry_time": "2026-08-06 09:08",
+    "signal": "trend"
+  },
+  {
+    "ticker": "HMSTR",
+    "name": "HMSTR",
+    "exchange": "바이낸스",
+    "entry_price": 0.0002012,
+    "currency": "USDT",
+    "entry_time": "2026-08-06 09:08",
+    "signal": "trend"
+  },
+  {
+    "ticker": "FORM",
+    "name": "FORM",
+    "exchange": "바이낸스",
+    "entry_price": 0.2191,
+    "currency": "USD",
+    "entry_time": "2026-08-06 09:00"
+  },
+  {
+    "ticker": "FIDA",
+    "name": "FIDA",
+    "exchange": "바이낸스",
+    "entry_price": 0.01991,
+    "currency": "USD",
+    "entry_time": "2026-08-06 09:00"
+  },
+  {
+    "ticker": "CELO",
+    "name": "셀로",
+    "exchange": "업비트",
+    "entry_price": 85.5,
+    "currency": "KRW",
+    "entry_time": "2026-08-06 09:00"
+  },
+  {
+    "ticker": "ARB",
+    "name": "아비트럼",
+    "exchange": "업비트",
+    "entry_price": 114.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-06 09:00"
+  },
+  {
+    "ticker": "ENS",
+    "name": "이더리움네임서비스",
+    "exchange": "업비트",
+    "entry_price": 5995.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-06 09:00"
+  },
+  {
+    "ticker": "MINA",
+    "name": "미나",
+    "exchange": "업비트",
+    "entry_price": 58.1,
+    "currency": "KRW",
+    "entry_time": "2026-08-06 09:00"
+  },
+  {
+    "ticker": "CFX",
+    "name": "CFX",
+    "exchange": "바이낸스",
+    "entry_price": 0.03806,
+    "currency": "USD",
+    "entry_time": "2026-08-06 09:00"
+  },
+  {
+    "ticker": "SKL",
+    "name": "SKL",
+    "exchange": "바이낸스",
+    "entry_price": 0.00363,
+    "currency": "USD",
+    "entry_time": "2026-08-06 09:00"
+  },
+  {
+    "ticker": "QTUM",
+    "name": "QTUM",
+    "exchange": "바이낸스",
+    "entry_price": 0.644,
+    "currency": "USD",
+    "entry_time": "2026-08-06 09:00"
+  },
+  {
+    "ticker": "SUI",
+    "name": "SUI",
+    "exchange": "바이낸스",
+    "entry_price": 0.6903,
+    "currency": "USD",
+    "entry_time": "2026-08-06 09:00"
+  },
+  {
+    "ticker": "TFUEL",
+    "name": "TFUEL",
+    "exchange": "바이낸스",
+    "entry_price": 0.00734,
+    "currency": "USD",
+    "entry_time": "2026-08-06 09:00"
+  },
+  {
+    "ticker": "BCH",
+    "name": "BCH",
+    "exchange": "바이낸스",
+    "entry_price": 214.6,
+    "currency": "USD",
+    "entry_time": "2026-08-06 09:00"
+  },
+  {
+    "ticker": "CGPT",
+    "name": "CGPT",
+    "exchange": "바이낸스",
+    "entry_price": 0.0185,
+    "currency": "USD",
+    "entry_time": "2026-08-06 09:00"
+  },
+  {
+    "ticker": "PORTO",
+    "name": "PORTO",
+    "exchange": "바이낸스",
+    "entry_price": 0.462,
+    "currency": "USD",
+    "entry_time": "2026-08-06 09:00"
+  },
+  {
+    "ticker": "MBL",
+    "name": "MBL",
+    "exchange": "바이낸스",
+    "entry_price": 0.000638,
+    "currency": "USD",
+    "entry_time": "2026-08-06 09:00"
+  },
+  {
+    "ticker": "LINEA",
+    "name": "LINEA",
+    "exchange": "바이낸스",
+    "entry_price": 0.002258,
+    "currency": "USD",
+    "entry_time": "2026-08-06 09:00"
+  },
+  {
+    "ticker": "KAVA",
+    "name": "KAVA",
+    "exchange": "바이낸스",
+    "entry_price": 0.04018,
+    "currency": "USD",
+    "entry_time": "2026-08-06 09:00"
+  },
+  {
+    "ticker": "ME",
+    "name": "ME",
+    "exchange": "바이낸스",
+    "entry_price": 0.0593,
+    "currency": "USD",
+    "entry_time": "2026-08-06 09:00"
+  },
+  {
+    "ticker": "JASMY",
+    "name": "JASMY",
+    "exchange": "바이낸스",
+    "entry_price": 0.00416,
+    "currency": "USD",
+    "entry_time": "2026-08-06 09:00"
+  },
+  {
+    "ticker": "BAR",
+    "name": "BAR",
+    "exchange": "바이낸스",
+    "entry_price": 0.269,
+    "currency": "USD",
+    "entry_time": "2026-08-06 09:00"
+  },
+  {
     "ticker": "HFT",
     "name": "HFT",
     "exchange": "빗썸",
@@ -46,119 +242,5 @@
     "entry_price": 3879.0,
     "currency": "KRW",
     "entry_time": "2026-08-06 00:00"
-  },
-  {
-    "ticker": "MINA",
-    "name": "MINA",
-    "exchange": "빗썸",
-    "entry_price": 57.26,
-    "currency": "KRW",
-    "entry_time": "2026-08-06 00:00"
-  },
-  {
-    "ticker": "ARB",
-    "name": "ARB",
-    "exchange": "빗썸",
-    "entry_price": 116.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-06 00:00"
-  },
-  {
-    "ticker": "CELO",
-    "name": "CELO",
-    "exchange": "빗썸",
-    "entry_price": 84.33,
-    "currency": "KRW",
-    "entry_time": "2026-08-06 00:00"
-  },
-  {
-    "ticker": "ZEC",
-    "name": "ZEC",
-    "exchange": "바이낸스",
-    "entry_price": 517.59,
-    "currency": "USDT",
-    "entry_time": "2026-08-05 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "FIDA",
-    "name": "FIDA",
-    "exchange": "바이낸스",
-    "entry_price": 0.02114,
-    "currency": "USDT",
-    "entry_time": "2026-08-05 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "PORTAL",
-    "name": "PORTAL",
-    "exchange": "바이낸스",
-    "entry_price": 0.01086,
-    "currency": "USDT",
-    "entry_time": "2026-08-05 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "RESOLV",
-    "name": "RESOLV",
-    "exchange": "바이낸스",
-    "entry_price": 0.01786,
-    "currency": "USDT",
-    "entry_time": "2026-08-05 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "NOM",
-    "name": "NOM",
-    "exchange": "바이낸스",
-    "entry_price": 0.00164,
-    "currency": "USDT",
-    "entry_time": "2026-08-05 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "CYS",
-    "name": "CYS",
-    "exchange": "빗썸",
-    "entry_price": 730.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-05 09:07",
-    "signal": "trend"
-  },
-  {
-    "ticker": "CATI",
-    "name": "CATI",
-    "exchange": "바이낸스",
-    "entry_price": 0.039,
-    "currency": "USDT",
-    "entry_time": "2026-08-05 09:07",
-    "signal": "trend"
-  },
-  {
-    "ticker": "HEI",
-    "name": "HEI",
-    "exchange": "바이낸스",
-    "entry_price": 0.1293,
-    "currency": "USDT",
-    "entry_time": "2026-08-05 09:07",
-    "signal": "trend"
-  },
-  {
-    "ticker": "STO",
-    "name": "STO",
-    "exchange": "바이낸스",
-    "entry_price": 0.0411,
-    "currency": "USDT",
-    "entry_time": "2026-08-05 09:07",
-    "signal": "trend"
-  },
-  {
-    "ticker": "SNDKB",
-    "name": "SNDKB",
-    "exchange": "바이낸스",
-    "entry_price": 1437.1,
-    "currency": "USDT",
-    "entry_time": "2026-08-05 09:07",
-    "signal": "trend"
   }
 ]

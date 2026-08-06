@@ -1,62 +1,26 @@
 [
   {
-    "key": "빗썸_CYS",
-    "time": "2026-08-05 09:00",
-    "price": 730.0,
+    "key": "빗썸_BMT",
+    "time": "2026-08-06 09:00",
+    "price": 17.44,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_CATI",
-    "time": "2026-08-05 09:00",
-    "price": 0.039,
+    "key": "바이낸스_DODO",
+    "time": "2026-08-06 09:00",
+    "price": 0.02692,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_HEI",
-    "time": "2026-08-05 09:00",
-    "price": 0.1293,
+    "key": "바이낸스_SYN",
+    "time": "2026-08-06 09:00",
+    "price": 0.1421,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_STO",
-    "time": "2026-08-05 09:00",
-    "price": 0.0411,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_SNDKB",
-    "time": "2026-08-05 09:00",
-    "price": 1437.1,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_ZEC",
-    "time": "2026-08-05 21:00",
-    "price": 517.59,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_FIDA",
-    "time": "2026-08-05 21:00",
-    "price": 0.02114,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_PORTAL",
-    "time": "2026-08-05 21:00",
-    "price": 0.01086,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_RESOLV",
-    "time": "2026-08-05 21:00",
-    "price": 0.01786,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_NOM",
-    "time": "2026-08-05 21:00",
-    "price": 0.00164,
+    "key": "바이낸스_HMSTR",
+    "time": "2026-08-06 09:00",
+    "price": 0.0002012,
     "sig_type": "trend"
   }
 ]
