@@ -1,5 +1,69 @@
 [
   {
+    "ticker": "C98",
+    "name": "C98",
+    "exchange": "빗썸",
+    "entry_price": 23.22,
+    "currency": "KRW",
+    "entry_time": "2026-08-08 00:00"
+  },
+  {
+    "ticker": "ACE",
+    "name": "ACE",
+    "exchange": "빗썸",
+    "entry_price": 159.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-08 00:00"
+  },
+  {
+    "ticker": "HNT",
+    "name": "HNT",
+    "exchange": "빗썸",
+    "entry_price": 295.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-08 00:00"
+  },
+  {
+    "ticker": "RSR",
+    "name": "RSR",
+    "exchange": "빗썸",
+    "entry_price": 1.74,
+    "currency": "KRW",
+    "entry_time": "2026-08-08 00:00"
+  },
+  {
+    "ticker": "WOO",
+    "name": "WOO",
+    "exchange": "빗썸",
+    "entry_price": 16.05,
+    "currency": "KRW",
+    "entry_time": "2026-08-08 00:00"
+  },
+  {
+    "ticker": "ARB",
+    "name": "ARB",
+    "exchange": "빗썸",
+    "entry_price": 111.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-08 00:00"
+  },
+  {
+    "ticker": "SKY",
+    "name": "SKY",
+    "exchange": "빗썸",
+    "entry_price": 77.08,
+    "currency": "KRW",
+    "entry_time": "2026-08-08 00:00"
+  },
+  {
+    "ticker": "VIRTUAL",
+    "name": "VIRTUAL",
+    "exchange": "빗썸",
+    "entry_price": 785.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-08 00:00"
+  },
+  {
     "ticker": "XAI",
     "name": "XAI",
     "exchange": "빗썸",
