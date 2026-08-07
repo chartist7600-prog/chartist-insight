@@ -1,44 +1,50 @@
 [
   {
-    "key": "빗썸_BMT",
-    "time": "2026-08-06 09:00",
-    "price": 17.44,
+    "key": "빗썸_CTSI",
+    "time": "2026-08-07 09:00",
+    "price": 47.4,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_DODO",
-    "time": "2026-08-06 09:00",
-    "price": 0.02692,
+    "key": "빗썸_SUSHI",
+    "time": "2026-08-07 09:00",
+    "price": 232.0,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_SYN",
-    "time": "2026-08-06 09:00",
-    "price": 0.1421,
+    "key": "빗썸_C98",
+    "time": "2026-08-07 09:00",
+    "price": 18.76,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_HMSTR",
-    "time": "2026-08-06 09:00",
-    "price": 0.0002012,
+    "key": "빗썸_ILV",
+    "time": "2026-08-07 09:00",
+    "price": 4240.0,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_ACT",
-    "time": "2026-08-06 21:00",
-    "price": 0.00966,
+    "key": "빗썸_ACE",
+    "time": "2026-08-07 09:00",
+    "price": 138.0,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_USUAL",
-    "time": "2026-08-06 21:00",
-    "price": 0.00884,
+    "key": "빗썸_COOKIE",
+    "time": "2026-08-07 09:00",
+    "price": 14.29,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_AT",
-    "time": "2026-08-06 21:00",
-    "price": 0.1464,
+    "key": "바이낸스_ROSE",
+    "time": "2026-08-07 09:00",
+    "price": 0.00576,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_STG",
+    "time": "2026-08-07 09:00",
+    "price": 0.1555,
     "sig_type": "trend"
   }
 ]
