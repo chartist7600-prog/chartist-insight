@@ -1,5 +1,37 @@
 [
   {
+    "ticker": "RSR",
+    "name": "RSR",
+    "exchange": "빗썸",
+    "entry_price": 1.708,
+    "currency": "KRW",
+    "entry_time": "2026-08-09 00:00"
+  },
+  {
+    "ticker": "WOO",
+    "name": "WOO",
+    "exchange": "빗썸",
+    "entry_price": 15.96,
+    "currency": "KRW",
+    "entry_time": "2026-08-09 00:00"
+  },
+  {
+    "ticker": "BEAM",
+    "name": "BEAM",
+    "exchange": "빗썸",
+    "entry_price": 1.946,
+    "currency": "KRW",
+    "entry_time": "2026-08-09 00:00"
+  },
+  {
+    "ticker": "SKY",
+    "name": "SKY",
+    "exchange": "빗썸",
+    "entry_price": 77.08,
+    "currency": "KRW",
+    "entry_time": "2026-08-09 00:00"
+  },
+  {
     "ticker": "DAO",
     "name": "DAO",
     "exchange": "빗썸",
