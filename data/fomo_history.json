@@ -1,5 +1,117 @@
 [
   {
+    "ticker": "CELR",
+    "name": "CELR",
+    "exchange": "빗썸",
+    "entry_price": 2.577,
+    "currency": "KRW",
+    "entry_time": "2026-08-10 00:00"
+  },
+  {
+    "ticker": "MAV",
+    "name": "MAV",
+    "exchange": "빗썸",
+    "entry_price": 13.04,
+    "currency": "KRW",
+    "entry_time": "2026-08-10 00:00"
+  },
+  {
+    "ticker": "EDU",
+    "name": "EDU",
+    "exchange": "빗썸",
+    "entry_price": 51.2,
+    "currency": "KRW",
+    "entry_time": "2026-08-10 00:00"
+  },
+  {
+    "ticker": "PHA",
+    "name": "PHA",
+    "exchange": "빗썸",
+    "entry_price": 32.96,
+    "currency": "KRW",
+    "entry_time": "2026-08-10 00:00"
+  },
+  {
+    "ticker": "LISTA",
+    "name": "LISTA",
+    "exchange": "빗썸",
+    "entry_price": 86.64,
+    "currency": "KRW",
+    "entry_time": "2026-08-10 00:00"
+  },
+  {
+    "ticker": "SHELL",
+    "name": "SHELL",
+    "exchange": "빗썸",
+    "entry_price": 30.77,
+    "currency": "KRW",
+    "entry_time": "2026-08-10 00:00"
+  },
+  {
+    "ticker": "BMT",
+    "name": "BMT",
+    "exchange": "빗썸",
+    "entry_price": 33.1,
+    "currency": "KRW",
+    "entry_time": "2026-08-10 00:00"
+  },
+  {
+    "ticker": "AVNT",
+    "name": "AVNT",
+    "exchange": "빗썸",
+    "entry_price": 132.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-10 00:00"
+  },
+  {
+    "ticker": "BICO",
+    "name": "BICO",
+    "exchange": "빗썸",
+    "entry_price": 60.72,
+    "currency": "KRW",
+    "entry_time": "2026-08-10 00:00"
+  },
+  {
+    "ticker": "WOO",
+    "name": "WOO",
+    "exchange": "빗썸",
+    "entry_price": 16.76,
+    "currency": "KRW",
+    "entry_time": "2026-08-10 00:00"
+  },
+  {
+    "ticker": "BEAM",
+    "name": "BEAM",
+    "exchange": "빗썸",
+    "entry_price": 1.952,
+    "currency": "KRW",
+    "entry_time": "2026-08-10 00:00"
+  },
+  {
+    "ticker": "SKY",
+    "name": "SKY",
+    "exchange": "빗썸",
+    "entry_price": 76.37,
+    "currency": "KRW",
+    "entry_time": "2026-08-10 00:00"
+  },
+  {
+    "ticker": "VIRTUAL",
+    "name": "VIRTUAL",
+    "exchange": "빗썸",
+    "entry_price": 793.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-10 00:00"
+  },
+  {
+    "ticker": "AZTEC",
+    "name": "AZTEC",
+    "exchange": "빗썸",
+    "entry_price": 19.55,
+    "currency": "KRW",
+    "entry_time": "2026-08-10 00:00"
+  },
+  {
     "ticker": "ARPA",
     "name": "ARPA",
     "exchange": "빗썸",
