@@ -1,68 +1,86 @@
 [
   {
-    "key": "빗썸_SNX",
-    "time": "2026-08-08 09:00",
-    "price": 331.0,
+    "key": "빗썸_CRV",
+    "time": "2026-08-09 09:00",
+    "price": 315.0,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_NIL",
-    "time": "2026-08-08 09:00",
-    "price": 52.11,
+    "key": "빗썸_S",
+    "time": "2026-08-09 09:00",
+    "price": 32.33,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_HNT",
-    "time": "2026-08-08 09:00",
-    "price": 295.0,
+    "key": "빗썸_RON",
+    "time": "2026-08-09 09:00",
+    "price": 72.65,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_ALLO",
-    "time": "2026-08-08 09:00",
-    "price": 481.0,
+    "key": "빗썸_C",
+    "time": "2026-08-09 09:00",
+    "price": 84.13,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_VELODROME",
-    "time": "2026-08-08 09:00",
-    "price": 0.01816,
+    "key": "빗썸_CTR",
+    "time": "2026-08-09 09:00",
+    "price": 11.53,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_TSLAB",
-    "time": "2026-08-08 09:00",
-    "price": 329.17,
+    "key": "바이낸스_ASR",
+    "time": "2026-08-09 09:00",
+    "price": 0.884,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_DAO",
-    "time": "2026-08-08 21:00",
-    "price": 39.22,
+    "key": "바이낸스_SLP",
+    "time": "2026-08-09 09:00",
+    "price": 0.000575,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_MAV",
-    "time": "2026-08-08 21:00",
-    "price": 12.43,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_DUSK",
-    "time": "2026-08-08 21:00",
-    "price": 0.0667,
+    "key": "바이낸스_RARE",
+    "time": "2026-08-09 09:00",
+    "price": 0.01308,
     "sig_type": "trend_strong"
   },
   {
-    "key": "바이낸스_PSG",
-    "time": "2026-08-08 21:00",
-    "price": 0.52,
+    "key": "바이낸스_GLMR",
+    "time": "2026-08-09 09:00",
+    "price": 0.010235,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_PIXEL",
-    "time": "2026-08-08 21:00",
-    "price": 0.00457,
+    "key": "바이낸스_RONIN",
+    "time": "2026-08-09 09:00",
+    "price": 0.0553,
     "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_DYM",
+    "time": "2026-08-09 09:00",
+    "price": 0.01493,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_NOT",
+    "time": "2026-08-09 09:00",
+    "price": 0.000363,
+    "sig_type": "trend_strong"
+  },
+  {
+    "key": "바이낸스_BANANAS31",
+    "time": "2026-08-09 09:00",
+    "price": 0.0078,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_CRCLB",
+    "time": "2026-08-09 09:00",
+    "price": 67.78,
+    "sig_type": "trend_strong"
   }
 ]
