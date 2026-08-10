@@ -82,5 +82,47 @@
     "time": "2026-08-10 09:00",
     "price": 0.00326,
     "sig_type": "trend_strong"
+  },
+  {
+    "key": "빗썸_FLUX",
+    "time": "2026-08-10 21:00",
+    "price": 60.16,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_AIOZ",
+    "time": "2026-08-10 21:00",
+    "price": 72.22,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SCR",
+    "time": "2026-08-10 21:00",
+    "price": 30.36,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_INIT",
+    "time": "2026-08-10 21:00",
+    "price": 76.65,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SOLV",
+    "time": "2026-08-10 21:00",
+    "price": 3.753,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_BNSOL",
+    "time": "2026-08-10 21:00",
+    "price": 86.6,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_FOGO",
+    "time": "2026-08-10 21:00",
+    "price": 0.00917,
+    "sig_type": "trend"
   }
 ]
