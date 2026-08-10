@@ -3046,5 +3046,83 @@
     "time": "2026-08-10 00:00",
     "price": 132.0,
     "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_AVNT",
+    "time": "2026-08-10 09:00",
+    "price": 0.0934,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_DYM",
+    "time": "2026-08-10 09:00",
+    "price": 0.01564,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_BANANAS31",
+    "time": "2026-08-10 09:00",
+    "price": 0.010528,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_AIXBT",
+    "time": "2026-08-10 09:00",
+    "price": 0.01997,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_DOLO",
+    "time": "2026-08-10 09:00",
+    "price": 0.0245,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_ADX",
+    "time": "2026-08-10 09:00",
+    "price": 0.0664,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_JOE",
+    "time": "2026-08-10 09:00",
+    "price": 0.0298,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_HAEDAL",
+    "time": "2026-08-10 09:00",
+    "price": 0.01756,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_REZ",
+    "time": "2026-08-10 09:00",
+    "price": 0.003056,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_BABY",
+    "time": "2026-08-10 09:00",
+    "price": 0.01298,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_NIL",
+    "time": "2026-08-10 09:00",
+    "price": 0.04228,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_1000CHEEMS",
+    "time": "2026-08-10 09:00",
+    "price": 0.000522,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_MAGIC",
+    "time": "2026-08-10 09:00",
+    "price": 0.0417,
+    "sig_type": "convergence"
   }
 ]
