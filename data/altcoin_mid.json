@@ -3124,5 +3124,35 @@
     "time": "2026-08-10 09:00",
     "price": 0.0417,
     "sig_type": "convergence"
+  },
+  {
+    "key": "빗썸_CTK",
+    "time": "2026-08-11 00:00",
+    "price": 158.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SFP",
+    "time": "2026-08-11 00:00",
+    "price": 329.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_AIOZ",
+    "time": "2026-08-11 00:00",
+    "price": 76.22,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_REZ",
+    "time": "2026-08-11 00:00",
+    "price": 4.066,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_BIO",
+    "time": "2026-08-11 00:00",
+    "price": 37.92,
+    "sig_type": "trend"
   }
 ]
