@@ -3154,5 +3154,59 @@
     "time": "2026-08-11 00:00",
     "price": 37.92,
     "sig_type": "trend"
+  },
+  {
+    "key": "업비트_BIO",
+    "time": "2026-08-11 09:00",
+    "price": 37.3,
+    "sig_type": "trend"
+  },
+  {
+    "key": "업비트_MNT",
+    "time": "2026-08-11 09:00",
+    "price": 630.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "업비트_ICP",
+    "time": "2026-08-11 09:00",
+    "price": 3233.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_RAD",
+    "time": "2026-08-11 09:00",
+    "price": 0.274,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_MAV",
+    "time": "2026-08-11 09:00",
+    "price": 0.00961,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_C",
+    "time": "2026-08-11 09:00",
+    "price": 0.067,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_BFUSD",
+    "time": "2026-08-11 09:00",
+    "price": 0.9996,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_MIRA",
+    "time": "2026-08-11 09:00",
+    "price": 0.0421,
+    "sig_type": "convergence"
+  },
+  {
+    "key": "바이낸스_MINA",
+    "time": "2026-08-11 09:00",
+    "price": 0.04,
+    "sig_type": "convergence"
   }
 ]
