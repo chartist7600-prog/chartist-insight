@@ -1,5 +1,45 @@
 [
   {
+    "ticker": "ICP",
+    "name": "ICP",
+    "exchange": "빗썸",
+    "entry_price": 3270.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-12 00:00"
+  },
+  {
+    "ticker": "AIOZ",
+    "name": "AIOZ",
+    "exchange": "빗썸",
+    "entry_price": 76.22,
+    "currency": "KRW",
+    "entry_time": "2026-08-12 00:00"
+  },
+  {
+    "ticker": "BABY",
+    "name": "BABY",
+    "exchange": "빗썸",
+    "entry_price": 18.49,
+    "currency": "KRW",
+    "entry_time": "2026-08-12 00:00"
+  },
+  {
+    "ticker": "RSR",
+    "name": "RSR",
+    "exchange": "빗썸",
+    "entry_price": 1.759,
+    "currency": "KRW",
+    "entry_time": "2026-08-12 00:00"
+  },
+  {
+    "ticker": "AZTEC",
+    "name": "AZTEC",
+    "exchange": "빗썸",
+    "entry_price": 18.79,
+    "currency": "KRW",
+    "entry_time": "2026-08-12 00:00"
+  },
+  {
     "ticker": "ADP",
     "name": "ADP",
     "exchange": "빗썸",

@@ -3208,5 +3208,23 @@
     "time": "2026-08-11 09:00",
     "price": 0.04,
     "sig_type": "convergence"
+  },
+  {
+    "key": "빗썸_ICP",
+    "time": "2026-08-12 00:00",
+    "price": 3270.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_RAD",
+    "time": "2026-08-12 00:00",
+    "price": 381.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_BABY",
+    "time": "2026-08-12 00:00",
+    "price": 18.49,
+    "sig_type": "trend"
   }
 ]
