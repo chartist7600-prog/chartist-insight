@@ -3226,5 +3226,29 @@
     "time": "2026-08-12 00:00",
     "price": 18.49,
     "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_BNB",
+    "time": "2026-08-12 09:00",
+    "price": 616.69,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_CETUS",
+    "time": "2026-08-12 09:00",
+    "price": 0.01954,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_LUNA",
+    "time": "2026-08-12 09:00",
+    "price": 0.0488,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_GUN",
+    "time": "2026-08-12 09:00",
+    "price": 0.00348,
+    "sig_type": "trend"
   }
 ]

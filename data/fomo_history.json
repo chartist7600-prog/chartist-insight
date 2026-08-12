@@ -1,5 +1,111 @@
 [
   {
+    "ticker": "LUNA",
+    "name": "LUNA",
+    "exchange": "바이낸스",
+    "entry_price": 0.0488,
+    "currency": "USDT",
+    "entry_time": "2026-08-12 09:09",
+    "signal": "trend"
+  },
+  {
+    "ticker": "LQTY",
+    "name": "LQTY",
+    "exchange": "바이낸스",
+    "entry_price": 0.2084,
+    "currency": "USDT",
+    "entry_time": "2026-08-12 09:09",
+    "signal": "trend"
+  },
+  {
+    "ticker": "BIO",
+    "name": "바이오프로토콜",
+    "exchange": "업비트",
+    "entry_price": 37.3,
+    "currency": "KRW",
+    "entry_time": "2026-08-12 09:00"
+  },
+  {
+    "ticker": "MNT",
+    "name": "맨틀",
+    "exchange": "업비트",
+    "entry_price": 630.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-12 09:00"
+  },
+  {
+    "ticker": "BNB",
+    "name": "BNB",
+    "exchange": "바이낸스",
+    "entry_price": 616.69,
+    "currency": "USD",
+    "entry_time": "2026-08-12 09:00"
+  },
+  {
+    "ticker": "CETUS",
+    "name": "CETUS",
+    "exchange": "바이낸스",
+    "entry_price": 0.01954,
+    "currency": "USD",
+    "entry_time": "2026-08-12 09:00"
+  },
+  {
+    "ticker": "GUN",
+    "name": "GUN",
+    "exchange": "바이낸스",
+    "entry_price": 0.00348,
+    "currency": "USD",
+    "entry_time": "2026-08-12 09:00"
+  },
+  {
+    "ticker": "MAGIC",
+    "name": "MAGIC",
+    "exchange": "바이낸스",
+    "entry_price": 0.0404,
+    "currency": "USD",
+    "entry_time": "2026-08-12 09:00"
+  },
+  {
+    "ticker": "ACH",
+    "name": "ACH",
+    "exchange": "바이낸스",
+    "entry_price": 0.00421,
+    "currency": "USD",
+    "entry_time": "2026-08-12 09:00"
+  },
+  {
+    "ticker": "WOO",
+    "name": "WOO",
+    "exchange": "바이낸스",
+    "entry_price": 0.0108,
+    "currency": "USD",
+    "entry_time": "2026-08-12 09:00"
+  },
+  {
+    "ticker": "ME",
+    "name": "ME",
+    "exchange": "바이낸스",
+    "entry_price": 0.06065,
+    "currency": "USD",
+    "entry_time": "2026-08-12 09:00"
+  },
+  {
+    "ticker": "QKC",
+    "name": "QKC",
+    "exchange": "바이낸스",
+    "entry_price": 0.001965,
+    "currency": "USD",
+    "entry_time": "2026-08-12 09:00"
+  },
+  {
+    "ticker": "MITO",
+    "name": "MITO",
+    "exchange": "바이낸스",
+    "entry_price": 0.02433,
+    "currency": "USD",
+    "entry_time": "2026-08-12 09:00"
+  },
+  {
     "ticker": "ICP",
     "name": "ICP",
     "exchange": "빗썸",
@@ -65,66 +171,5 @@
     "currency": "KRW",
     "entry_time": "2026-08-11 21:05",
     "signal": "trend"
-  },
-  {
-    "ticker": "RAD",
-    "name": "RAD",
-    "exchange": "빗썸",
-    "entry_price": 328.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-11 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "CSPR",
-    "name": "CSPR",
-    "exchange": "빗썸",
-    "entry_price": 2.802,
-    "currency": "KRW",
-    "entry_time": "2026-08-11 09:08",
-    "signal": "trend"
-  },
-  {
-    "ticker": "D",
-    "name": "D",
-    "exchange": "빗썸",
-    "entry_price": 3.021,
-    "currency": "KRW",
-    "entry_time": "2026-08-11 09:08",
-    "signal": "trend"
-  },
-  {
-    "ticker": "DBR",
-    "name": "DBR",
-    "exchange": "빗썸",
-    "entry_price": 21.04,
-    "currency": "KRW",
-    "entry_time": "2026-08-11 09:08",
-    "signal": "trend"
-  },
-  {
-    "ticker": "SXT",
-    "name": "SXT",
-    "exchange": "빗썸",
-    "entry_price": 11.1,
-    "currency": "KRW",
-    "entry_time": "2026-08-11 09:08",
-    "signal": "trend_strong"
-  },
-  {
-    "ticker": "CARV",
-    "name": "카브",
-    "exchange": "업비트",
-    "entry_price": 44.7,
-    "currency": "KRW",
-    "entry_time": "2026-08-11 09:00"
-  },
-  {
-    "ticker": "BIO",
-    "name": "바이오프로토콜",
-    "exchange": "업비트",
-    "entry_price": 37.3,
-    "currency": "KRW",
-    "entry_time": "2026-08-11 09:00"
   }
 ]

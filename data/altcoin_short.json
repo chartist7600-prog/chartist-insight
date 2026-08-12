@@ -1,50 +1,14 @@
 [
   {
-    "key": "빗썸_CSPR",
-    "time": "2026-08-11 09:00",
-    "price": 2.802,
+    "key": "바이낸스_LUNA",
+    "time": "2026-08-12 09:00",
+    "price": 0.0488,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_D",
-    "time": "2026-08-11 09:00",
-    "price": 3.021,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_DBR",
-    "time": "2026-08-11 09:00",
-    "price": 21.04,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_SXT",
-    "time": "2026-08-11 09:00",
-    "price": 11.1,
-    "sig_type": "trend_strong"
-  },
-  {
-    "key": "빗썸_ADP",
-    "time": "2026-08-11 21:00",
-    "price": 0.4462,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_XVS",
-    "time": "2026-08-11 21:00",
-    "price": 3803.0,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_STAT",
-    "time": "2026-08-11 21:00",
-    "price": 35.02,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_RAD",
-    "time": "2026-08-11 21:00",
-    "price": 328.0,
+    "key": "바이낸스_LQTY",
+    "time": "2026-08-12 09:00",
+    "price": 0.2084,
     "sig_type": "trend"
   }
 ]
