@@ -1,5 +1,21 @@
 [
   {
+    "ticker": "ICP",
+    "name": "ICP",
+    "exchange": "빗썸",
+    "entry_price": 3270.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-13 00:00"
+  },
+  {
+    "ticker": "RSR",
+    "name": "RSR",
+    "exchange": "빗썸",
+    "entry_price": 1.759,
+    "currency": "KRW",
+    "entry_time": "2026-08-13 00:00"
+  },
+  {
     "ticker": "AVAIL",
     "name": "AVAIL",
     "exchange": "빗썸",
