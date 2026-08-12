@@ -10,5 +10,29 @@
     "time": "2026-08-12 09:00",
     "price": 0.2084,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_AVAIL",
+    "time": "2026-08-12 21:00",
+    "price": 3.769,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_RARE",
+    "time": "2026-08-12 21:00",
+    "price": 0.01565,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_KGST",
+    "time": "2026-08-12 21:00",
+    "price": 0.011439,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_EWYB",
+    "time": "2026-08-12 21:00",
+    "price": 172.8,
+    "sig_type": "trend"
   }
 ]

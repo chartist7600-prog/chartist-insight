@@ -1,5 +1,41 @@
 [
   {
+    "ticker": "AVAIL",
+    "name": "AVAIL",
+    "exchange": "빗썸",
+    "entry_price": 3.769,
+    "currency": "KRW",
+    "entry_time": "2026-08-12 21:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "RARE",
+    "name": "RARE",
+    "exchange": "바이낸스",
+    "entry_price": 0.01565,
+    "currency": "USDT",
+    "entry_time": "2026-08-12 21:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "KGST",
+    "name": "KGST",
+    "exchange": "바이낸스",
+    "entry_price": 0.011439,
+    "currency": "USDT",
+    "entry_time": "2026-08-12 21:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "EWYB",
+    "name": "EWYB",
+    "exchange": "바이낸스",
+    "entry_price": 172.8,
+    "currency": "USDT",
+    "entry_time": "2026-08-12 21:05",
+    "signal": "trend"
+  },
+  {
     "ticker": "LUNA",
     "name": "LUNA",
     "exchange": "바이낸스",
@@ -48,128 +84,5 @@
     "entry_price": 0.01954,
     "currency": "USD",
     "entry_time": "2026-08-12 09:00"
-  },
-  {
-    "ticker": "GUN",
-    "name": "GUN",
-    "exchange": "바이낸스",
-    "entry_price": 0.00348,
-    "currency": "USD",
-    "entry_time": "2026-08-12 09:00"
-  },
-  {
-    "ticker": "MAGIC",
-    "name": "MAGIC",
-    "exchange": "바이낸스",
-    "entry_price": 0.0404,
-    "currency": "USD",
-    "entry_time": "2026-08-12 09:00"
-  },
-  {
-    "ticker": "ACH",
-    "name": "ACH",
-    "exchange": "바이낸스",
-    "entry_price": 0.00421,
-    "currency": "USD",
-    "entry_time": "2026-08-12 09:00"
-  },
-  {
-    "ticker": "WOO",
-    "name": "WOO",
-    "exchange": "바이낸스",
-    "entry_price": 0.0108,
-    "currency": "USD",
-    "entry_time": "2026-08-12 09:00"
-  },
-  {
-    "ticker": "ME",
-    "name": "ME",
-    "exchange": "바이낸스",
-    "entry_price": 0.06065,
-    "currency": "USD",
-    "entry_time": "2026-08-12 09:00"
-  },
-  {
-    "ticker": "QKC",
-    "name": "QKC",
-    "exchange": "바이낸스",
-    "entry_price": 0.001965,
-    "currency": "USD",
-    "entry_time": "2026-08-12 09:00"
-  },
-  {
-    "ticker": "MITO",
-    "name": "MITO",
-    "exchange": "바이낸스",
-    "entry_price": 0.02433,
-    "currency": "USD",
-    "entry_time": "2026-08-12 09:00"
-  },
-  {
-    "ticker": "ICP",
-    "name": "ICP",
-    "exchange": "빗썸",
-    "entry_price": 3270.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-12 00:00"
-  },
-  {
-    "ticker": "AIOZ",
-    "name": "AIOZ",
-    "exchange": "빗썸",
-    "entry_price": 76.22,
-    "currency": "KRW",
-    "entry_time": "2026-08-12 00:00"
-  },
-  {
-    "ticker": "BABY",
-    "name": "BABY",
-    "exchange": "빗썸",
-    "entry_price": 18.49,
-    "currency": "KRW",
-    "entry_time": "2026-08-12 00:00"
-  },
-  {
-    "ticker": "RSR",
-    "name": "RSR",
-    "exchange": "빗썸",
-    "entry_price": 1.759,
-    "currency": "KRW",
-    "entry_time": "2026-08-12 00:00"
-  },
-  {
-    "ticker": "AZTEC",
-    "name": "AZTEC",
-    "exchange": "빗썸",
-    "entry_price": 18.79,
-    "currency": "KRW",
-    "entry_time": "2026-08-12 00:00"
-  },
-  {
-    "ticker": "ADP",
-    "name": "ADP",
-    "exchange": "빗썸",
-    "entry_price": 0.4462,
-    "currency": "KRW",
-    "entry_time": "2026-08-11 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "XVS",
-    "name": "XVS",
-    "exchange": "빗썸",
-    "entry_price": 3803.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-11 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "STAT",
-    "name": "STAT",
-    "exchange": "빗썸",
-    "entry_price": 35.02,
-    "currency": "KRW",
-    "entry_time": "2026-08-11 21:05",
-    "signal": "trend"
   }
 ]
