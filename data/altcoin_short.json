@@ -10,5 +10,11 @@
     "time": "2026-08-13 09:00",
     "price": 0.294,
     "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_ATM",
+    "time": "2026-08-13 21:00",
+    "price": 1.821,
+    "sig_type": "trend"
   }
 ]

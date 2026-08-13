@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "ATM",
+    "name": "ATM",
+    "exchange": "바이낸스",
+    "entry_price": 1.821,
+    "currency": "USDT",
+    "entry_time": "2026-08-13 21:05",
+    "signal": "trend"
+  },
+  {
     "ticker": "MVC",
     "name": "MVC",
     "exchange": "빗썸",
@@ -72,123 +81,5 @@
     "entry_price": 0.004415,
     "currency": "USD",
     "entry_time": "2026-08-13 09:00"
-  },
-  {
-    "ticker": "ALGO",
-    "name": "ALGO",
-    "exchange": "바이낸스",
-    "entry_price": 0.0791,
-    "currency": "USD",
-    "entry_time": "2026-08-13 09:00"
-  },
-  {
-    "ticker": "WOO",
-    "name": "WOO",
-    "exchange": "바이낸스",
-    "entry_price": 0.01059,
-    "currency": "USD",
-    "entry_time": "2026-08-13 09:00"
-  },
-  {
-    "ticker": "QKC",
-    "name": "QKC",
-    "exchange": "바이낸스",
-    "entry_price": 0.00194,
-    "currency": "USD",
-    "entry_time": "2026-08-13 09:00"
-  },
-  {
-    "ticker": "ZEN",
-    "name": "ZEN",
-    "exchange": "바이낸스",
-    "entry_price": 4.033,
-    "currency": "USD",
-    "entry_time": "2026-08-13 09:00"
-  },
-  {
-    "ticker": "MITO",
-    "name": "MITO",
-    "exchange": "바이낸스",
-    "entry_price": 0.02388,
-    "currency": "USD",
-    "entry_time": "2026-08-13 09:00"
-  },
-  {
-    "ticker": "ENS",
-    "name": "ENS",
-    "exchange": "바이낸스",
-    "entry_price": 4.04,
-    "currency": "USD",
-    "entry_time": "2026-08-13 09:00"
-  },
-  {
-    "ticker": "ICP",
-    "name": "ICP",
-    "exchange": "빗썸",
-    "entry_price": 3270.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-13 00:00"
-  },
-  {
-    "ticker": "RSR",
-    "name": "RSR",
-    "exchange": "빗썸",
-    "entry_price": 1.759,
-    "currency": "KRW",
-    "entry_time": "2026-08-13 00:00"
-  },
-  {
-    "ticker": "AVAIL",
-    "name": "AVAIL",
-    "exchange": "빗썸",
-    "entry_price": 3.769,
-    "currency": "KRW",
-    "entry_time": "2026-08-12 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "RARE",
-    "name": "RARE",
-    "exchange": "바이낸스",
-    "entry_price": 0.01565,
-    "currency": "USDT",
-    "entry_time": "2026-08-12 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "KGST",
-    "name": "KGST",
-    "exchange": "바이낸스",
-    "entry_price": 0.011439,
-    "currency": "USDT",
-    "entry_time": "2026-08-12 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "EWYB",
-    "name": "EWYB",
-    "exchange": "바이낸스",
-    "entry_price": 172.8,
-    "currency": "USDT",
-    "entry_time": "2026-08-12 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "LUNA",
-    "name": "LUNA",
-    "exchange": "바이낸스",
-    "entry_price": 0.0488,
-    "currency": "USDT",
-    "entry_time": "2026-08-12 09:09",
-    "signal": "trend"
-  },
-  {
-    "ticker": "LQTY",
-    "name": "LQTY",
-    "exchange": "바이낸스",
-    "entry_price": 0.2084,
-    "currency": "USDT",
-    "entry_time": "2026-08-12 09:09",
-    "signal": "trend"
   }
 ]
