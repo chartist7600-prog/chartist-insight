@@ -1,5 +1,29 @@
 [
   {
+    "ticker": "ATOM",
+    "name": "ATOM",
+    "exchange": "빗썸",
+    "entry_price": 2118.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-14 00:00"
+  },
+  {
+    "ticker": "AKT",
+    "name": "AKT",
+    "exchange": "빗썸",
+    "entry_price": 770.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-14 00:00"
+  },
+  {
+    "ticker": "RSR",
+    "name": "RSR",
+    "exchange": "빗썸",
+    "entry_price": 1.664,
+    "currency": "KRW",
+    "entry_time": "2026-08-14 00:00"
+  },
+  {
     "ticker": "ATM",
     "name": "ATM",
     "exchange": "바이낸스",
