@@ -3256,5 +3256,29 @@
     "time": "2026-08-13 00:00",
     "price": 627.0,
     "sig_type": "trend"
+  },
+  {
+    "key": "업비트_AVNT",
+    "time": "2026-08-13 09:00",
+    "price": 132.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "업비트_ELF",
+    "time": "2026-08-13 09:00",
+    "price": 90.4,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_NOKB",
+    "time": "2026-08-13 09:00",
+    "price": 10.36,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_ZEN",
+    "time": "2026-08-13 09:00",
+    "price": 4.033,
+    "sig_type": "convergence"
   }
 ]

@@ -1,5 +1,127 @@
 [
   {
+    "ticker": "MVC",
+    "name": "MVC",
+    "exchange": "빗썸",
+    "entry_price": 1.653,
+    "currency": "KRW",
+    "entry_time": "2026-08-13 09:09",
+    "signal": "trend"
+  },
+  {
+    "ticker": "FITFI",
+    "name": "FITFI",
+    "exchange": "빗썸",
+    "entry_price": 0.294,
+    "currency": "KRW",
+    "entry_time": "2026-08-13 09:09",
+    "signal": "trend"
+  },
+  {
+    "ticker": "AVNT",
+    "name": "아반티스",
+    "exchange": "업비트",
+    "entry_price": 132.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-13 09:00"
+  },
+  {
+    "ticker": "ELF",
+    "name": "엘프",
+    "exchange": "업비트",
+    "entry_price": 90.4,
+    "currency": "KRW",
+    "entry_time": "2026-08-13 09:00"
+  },
+  {
+    "ticker": "NOKB",
+    "name": "NOKB",
+    "exchange": "바이낸스",
+    "entry_price": 10.36,
+    "currency": "USD",
+    "entry_time": "2026-08-13 09:00"
+  },
+  {
+    "ticker": "MAGIC",
+    "name": "MAGIC",
+    "exchange": "바이낸스",
+    "entry_price": 0.0394,
+    "currency": "USD",
+    "entry_time": "2026-08-13 09:00"
+  },
+  {
+    "ticker": "JUV",
+    "name": "JUV",
+    "exchange": "바이낸스",
+    "entry_price": 0.302,
+    "currency": "USD",
+    "entry_time": "2026-08-13 09:00"
+  },
+  {
+    "ticker": "ACH",
+    "name": "ACH",
+    "exchange": "바이낸스",
+    "entry_price": 0.0041,
+    "currency": "USD",
+    "entry_time": "2026-08-13 09:00"
+  },
+  {
+    "ticker": "VET",
+    "name": "VET",
+    "exchange": "바이낸스",
+    "entry_price": 0.004415,
+    "currency": "USD",
+    "entry_time": "2026-08-13 09:00"
+  },
+  {
+    "ticker": "ALGO",
+    "name": "ALGO",
+    "exchange": "바이낸스",
+    "entry_price": 0.0791,
+    "currency": "USD",
+    "entry_time": "2026-08-13 09:00"
+  },
+  {
+    "ticker": "WOO",
+    "name": "WOO",
+    "exchange": "바이낸스",
+    "entry_price": 0.01059,
+    "currency": "USD",
+    "entry_time": "2026-08-13 09:00"
+  },
+  {
+    "ticker": "QKC",
+    "name": "QKC",
+    "exchange": "바이낸스",
+    "entry_price": 0.00194,
+    "currency": "USD",
+    "entry_time": "2026-08-13 09:00"
+  },
+  {
+    "ticker": "ZEN",
+    "name": "ZEN",
+    "exchange": "바이낸스",
+    "entry_price": 4.033,
+    "currency": "USD",
+    "entry_time": "2026-08-13 09:00"
+  },
+  {
+    "ticker": "MITO",
+    "name": "MITO",
+    "exchange": "바이낸스",
+    "entry_price": 0.02388,
+    "currency": "USD",
+    "entry_time": "2026-08-13 09:00"
+  },
+  {
+    "ticker": "ENS",
+    "name": "ENS",
+    "exchange": "바이낸스",
+    "entry_price": 4.04,
+    "currency": "USD",
+    "entry_time": "2026-08-13 09:00"
+  },
+  {
     "ticker": "ICP",
     "name": "ICP",
     "exchange": "빗썸",
@@ -68,37 +190,5 @@
     "currency": "USDT",
     "entry_time": "2026-08-12 09:09",
     "signal": "trend"
-  },
-  {
-    "ticker": "BIO",
-    "name": "바이오프로토콜",
-    "exchange": "업비트",
-    "entry_price": 37.3,
-    "currency": "KRW",
-    "entry_time": "2026-08-12 09:00"
-  },
-  {
-    "ticker": "MNT",
-    "name": "맨틀",
-    "exchange": "업비트",
-    "entry_price": 630.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-12 09:00"
-  },
-  {
-    "ticker": "BNB",
-    "name": "BNB",
-    "exchange": "바이낸스",
-    "entry_price": 616.69,
-    "currency": "USD",
-    "entry_time": "2026-08-12 09:00"
-  },
-  {
-    "ticker": "CETUS",
-    "name": "CETUS",
-    "exchange": "바이낸스",
-    "entry_price": 0.01954,
-    "currency": "USD",
-    "entry_time": "2026-08-12 09:00"
   }
 ]
