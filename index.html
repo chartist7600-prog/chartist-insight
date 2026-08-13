@@ -1282,8 +1282,8 @@
   </div>
   <div class="date-filter-wrap">
     <div class="date-filter-row" id="date-preset-row">
-      <button class="date-quick-btn" id="dq-today" onclick="setDatePreset('today')">당일</button>
-      <button class="date-quick-btn active" id="dq-3d" onclick="setDatePreset('3d')">3일</button>
+      <button class="date-quick-btn active" id="dq-today" onclick="setDatePreset('today')">당일</button>
+      <button class="date-quick-btn" id="dq-3d" onclick="setDatePreset('3d')">3일</button>
       <button class="date-quick-btn" id="dq-7d" onclick="setDatePreset('7d')">7일</button>
       <button class="date-quick-btn" id="dq-30d" onclick="setDatePreset('30d')">30일</button>
       <button class="date-quick-btn" id="dq-cal" onclick="toggleCalendar()">📅 직접 선택</button>
@@ -1457,10 +1457,10 @@ function setFontSize(size){
 // ══════════════════════════════════════════════
 function getTodayRange(){var nowUtc=new Date();var kstOffset=9*60*60*1000;var nowKst=new Date(nowUtc.getTime()+kstOffset);var h=nowKst.getUTCHours();var baseKst=new Date(nowKst);if(h<9){baseKst.setUTCDate(baseKst.getUTCDate()-1);}baseKst.setUTCHours(9,0,0,0);var startUtc=new Date(baseKst.getTime()-kstOffset);var endUtc=new Date(startUtc.getTime()+24*60*60*1000-1000);return{start:startUtc,end:endUtc};}
 function getDaysAgoRange(days){var today=getTodayRange();return{start:new Date(today.start.getTime()-(days-1)*24*60*60*1000),end:today.end};}
-dateRange=getDaysAgoRange(3);
+dateRange=getDaysAgoRange(1);
 function isInRange(timeStr){if(!timeStr)return false;var d;try{if(timeStr.length===10){d=new Date(timeStr+'T09:00:00+09:00');}else{d=new Date(timeStr.replace(' ','T')+':00+09:00');}if(isNaN(d.getTime()))return false;}catch(e){return false;}return d>=dateRange.start&&d<=dateRange.end;}
-var currentPreset='3d';
-function setDatePreset(preset){currentPreset=preset;['today','3d','7d','30d','cal'].forEach(function(p){var btn=document.getElementById('dq-'+p);if(btn)btn.classList.remove('active');});var activeBtn=document.getElementById('dq-'+preset);if(activeBtn)activeBtn.classList.add('active');document.getElementById('altcoin-calendar').classList.remove('show');if(preset==='today')dateRange=getDaysAgoRange(3);else if(preset==='3d')dateRange=getDaysAgoRange(3);else if(preset==='7d')dateRange=getDaysAgoRange(7);else if(preset==='30d')dateRange=getDaysAgoRange(30);if(altcoinData){renderAltcoin(true);}else{loadAltcoinData();}}
+var currentPreset='today';
+function setDatePreset(preset){currentPreset=preset;['today','3d','7d','30d','cal'].forEach(function(p){var btn=document.getElementById('dq-'+p);if(btn)btn.classList.remove('active');});var activeBtn=document.getElementById('dq-'+preset);if(activeBtn)activeBtn.classList.add('active');document.getElementById('altcoin-calendar').classList.remove('show');if(preset==='today')dateRange=getDaysAgoRange(1);else if(preset==='3d')dateRange=getDaysAgoRange(3);else if(preset==='7d')dateRange=getDaysAgoRange(7);else if(preset==='30d')dateRange=getDaysAgoRange(30);if(altcoinData){renderAltcoin(true);}else{loadAltcoinData();}}
 var calYear,calMonth,calSel1=null,calSel2=null;
 function initCal(){var now=new Date();calYear=now.getFullYear();calMonth=now.getMonth();}initCal();
 function toggleCalendar(){var el=document.getElementById('altcoin-calendar');if(el.classList.contains('show')){el.classList.remove('show');}else{el.classList.add('show');renderCal();}}
