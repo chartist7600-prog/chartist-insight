@@ -3298,5 +3298,29 @@
     "time": "2026-08-14 00:00",
     "price": 770.0,
     "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_CRCLB",
+    "time": "2026-08-14 09:00",
+    "price": 75.02,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_SCRT",
+    "time": "2026-08-14 09:00",
+    "price": 0.0382,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_EWYB",
+    "time": "2026-08-14 09:00",
+    "price": 180.63,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_NOT",
+    "time": "2026-08-14 09:00",
+    "price": 0.000386,
+    "sig_type": "trend"
   }
 ]

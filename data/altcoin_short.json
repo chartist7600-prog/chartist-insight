@@ -1,20 +1,44 @@
 [
   {
-    "key": "빗썸_MVC",
-    "time": "2026-08-13 09:00",
-    "price": 1.653,
+    "key": "빗썸_EGG",
+    "time": "2026-08-14 09:00",
+    "price": 0.4242,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_FITFI",
-    "time": "2026-08-13 09:00",
-    "price": 0.294,
+    "key": "빗썸_LWP",
+    "time": "2026-08-14 09:00",
+    "price": 3.313,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_ATM",
-    "time": "2026-08-13 21:00",
-    "price": 1.821,
+    "key": "빗썸_OSMO",
+    "time": "2026-08-14 09:00",
+    "price": 43.5,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_GPS",
+    "time": "2026-08-14 09:00",
+    "price": 15.6,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_GRASS",
+    "time": "2026-08-14 09:00",
+    "price": 457.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_SCRT",
+    "time": "2026-08-14 09:00",
+    "price": 0.0382,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_MUB",
+    "time": "2026-08-14 09:00",
+    "price": 965.63,
     "sig_type": "trend"
   }
 ]
