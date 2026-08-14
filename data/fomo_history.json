@@ -1,5 +1,13 @@
 [
   {
+    "ticker": "ONG",
+    "name": "ONG",
+    "exchange": "빗썸",
+    "entry_price": 64.35,
+    "currency": "KRW",
+    "entry_time": "2026-08-15 00:00"
+  },
+  {
     "ticker": "EGG",
     "name": "EGG",
     "exchange": "빗썸",
