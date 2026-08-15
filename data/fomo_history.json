@@ -1,5 +1,45 @@
 [
   {
+    "ticker": "ONG",
+    "name": "ONG",
+    "exchange": "빗썸",
+    "entry_price": 64.35,
+    "currency": "KRW",
+    "entry_time": "2026-08-16 00:00"
+  },
+  {
+    "ticker": "COW",
+    "name": "COW",
+    "exchange": "빗썸",
+    "entry_price": 211.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-16 00:00"
+  },
+  {
+    "ticker": "WAL",
+    "name": "WAL",
+    "exchange": "빗썸",
+    "entry_price": 36.4,
+    "currency": "KRW",
+    "entry_time": "2026-08-16 00:00"
+  },
+  {
+    "ticker": "HEMI",
+    "name": "HEMI",
+    "exchange": "빗썸",
+    "entry_price": 9.214,
+    "currency": "KRW",
+    "entry_time": "2026-08-16 00:00"
+  },
+  {
+    "ticker": "RSR",
+    "name": "RSR",
+    "exchange": "빗썸",
+    "entry_price": 1.622,
+    "currency": "KRW",
+    "entry_time": "2026-08-16 00:00"
+  },
+  {
     "ticker": "OBSR",
     "name": "OBSR",
     "exchange": "빗썸",
