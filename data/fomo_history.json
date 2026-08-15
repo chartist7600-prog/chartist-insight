@@ -1,5 +1,95 @@
 [
   {
+    "ticker": "ALICE",
+    "name": "ALICE",
+    "exchange": "빗썸",
+    "entry_price": 179.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-15 09:08",
+    "signal": "trend"
+  },
+  {
+    "ticker": "AMDB",
+    "name": "AMDB",
+    "exchange": "바이낸스",
+    "entry_price": 515.48,
+    "currency": "USDT",
+    "entry_time": "2026-08-15 09:08",
+    "signal": "trend"
+  },
+  {
+    "ticker": "AKT",
+    "name": "아카시네트워크",
+    "exchange": "업비트",
+    "entry_price": 767.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-15 09:00"
+  },
+  {
+    "ticker": "ILV",
+    "name": "ILV",
+    "exchange": "바이낸스",
+    "entry_price": 3.21,
+    "currency": "USD",
+    "entry_time": "2026-08-15 09:00"
+  },
+  {
+    "ticker": "ETHFI",
+    "name": "ETHFI",
+    "exchange": "바이낸스",
+    "entry_price": 0.4496,
+    "currency": "USD",
+    "entry_time": "2026-08-15 09:00"
+  },
+  {
+    "ticker": "SNDKB",
+    "name": "SNDKB",
+    "exchange": "바이낸스",
+    "entry_price": 1659.27,
+    "currency": "USD",
+    "entry_time": "2026-08-15 09:00"
+  },
+  {
+    "ticker": "PORTO",
+    "name": "PORTO",
+    "exchange": "바이낸스",
+    "entry_price": 0.431,
+    "currency": "USD",
+    "entry_time": "2026-08-15 09:00"
+  },
+  {
+    "ticker": "CTK",
+    "name": "CTK",
+    "exchange": "바이낸스",
+    "entry_price": 0.1041,
+    "currency": "USD",
+    "entry_time": "2026-08-15 09:00"
+  },
+  {
+    "ticker": "ACH",
+    "name": "ACH",
+    "exchange": "바이낸스",
+    "entry_price": 0.00414,
+    "currency": "USD",
+    "entry_time": "2026-08-15 09:00"
+  },
+  {
+    "ticker": "SXT",
+    "name": "SXT",
+    "exchange": "바이낸스",
+    "entry_price": 0.00698,
+    "currency": "USD",
+    "entry_time": "2026-08-15 09:00"
+  },
+  {
+    "ticker": "ENS",
+    "name": "ENS",
+    "exchange": "바이낸스",
+    "entry_price": 4.06,
+    "currency": "USD",
+    "entry_time": "2026-08-15 09:00"
+  },
+  {
     "ticker": "ONG",
     "name": "ONG",
     "exchange": "빗썸",
@@ -69,109 +159,5 @@
     "currency": "USDT",
     "entry_time": "2026-08-14 09:09",
     "signal": "trend"
-  },
-  {
-    "ticker": "BSV",
-    "name": "비트코인에스브이",
-    "exchange": "업비트",
-    "entry_price": 21260.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-14 09:00"
-  },
-  {
-    "ticker": "CRCLB",
-    "name": "CRCLB",
-    "exchange": "바이낸스",
-    "entry_price": 75.02,
-    "currency": "USD",
-    "entry_time": "2026-08-14 09:00"
-  },
-  {
-    "ticker": "EWYB",
-    "name": "EWYB",
-    "exchange": "바이낸스",
-    "entry_price": 180.63,
-    "currency": "USD",
-    "entry_time": "2026-08-14 09:00"
-  },
-  {
-    "ticker": "EDEN",
-    "name": "EDEN",
-    "exchange": "바이낸스",
-    "entry_price": 0.07148,
-    "currency": "USD",
-    "entry_time": "2026-08-14 09:00"
-  },
-  {
-    "ticker": "NOT",
-    "name": "NOT",
-    "exchange": "바이낸스",
-    "entry_price": 0.000386,
-    "currency": "USD",
-    "entry_time": "2026-08-14 09:00"
-  },
-  {
-    "ticker": "ACH",
-    "name": "ACH",
-    "exchange": "바이낸스",
-    "entry_price": 0.00416,
-    "currency": "USD",
-    "entry_time": "2026-08-14 09:00"
-  },
-  {
-    "ticker": "ALGO",
-    "name": "ALGO",
-    "exchange": "바이낸스",
-    "entry_price": 0.0787,
-    "currency": "USD",
-    "entry_time": "2026-08-14 09:00"
-  },
-  {
-    "ticker": "WOO",
-    "name": "WOO",
-    "exchange": "바이낸스",
-    "entry_price": 0.01069,
-    "currency": "USD",
-    "entry_time": "2026-08-14 09:00"
-  },
-  {
-    "ticker": "SXT",
-    "name": "SXT",
-    "exchange": "바이낸스",
-    "entry_price": 0.00716,
-    "currency": "USD",
-    "entry_time": "2026-08-14 09:00"
-  },
-  {
-    "ticker": "ENS",
-    "name": "ENS",
-    "exchange": "바이낸스",
-    "entry_price": 4.06,
-    "currency": "USD",
-    "entry_time": "2026-08-14 09:00"
-  },
-  {
-    "ticker": "ATOM",
-    "name": "ATOM",
-    "exchange": "빗썸",
-    "entry_price": 2118.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-14 00:00"
-  },
-  {
-    "ticker": "AKT",
-    "name": "AKT",
-    "exchange": "빗썸",
-    "entry_price": 770.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-14 00:00"
-  },
-  {
-    "ticker": "RSR",
-    "name": "RSR",
-    "exchange": "빗썸",
-    "entry_price": 1.664,
-    "currency": "KRW",
-    "entry_time": "2026-08-14 00:00"
   }
 ]

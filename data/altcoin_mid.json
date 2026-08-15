@@ -3322,5 +3322,17 @@
     "time": "2026-08-14 09:00",
     "price": 0.000386,
     "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_ILV",
+    "time": "2026-08-15 09:00",
+    "price": 3.21,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_SNDKB",
+    "time": "2026-08-15 09:00",
+    "price": 1659.27,
+    "sig_type": "trend"
   }
 ]
