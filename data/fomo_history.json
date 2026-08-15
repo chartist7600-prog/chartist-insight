@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "OBSR",
+    "name": "OBSR",
+    "exchange": "빗썸",
+    "entry_price": 0.4311,
+    "currency": "KRW",
+    "entry_time": "2026-08-15 21:05",
+    "signal": "trend"
+  },
+  {
     "ticker": "ALICE",
     "name": "ALICE",
     "exchange": "빗썸",
@@ -72,92 +81,5 @@
     "entry_price": 0.00414,
     "currency": "USD",
     "entry_time": "2026-08-15 09:00"
-  },
-  {
-    "ticker": "SXT",
-    "name": "SXT",
-    "exchange": "바이낸스",
-    "entry_price": 0.00698,
-    "currency": "USD",
-    "entry_time": "2026-08-15 09:00"
-  },
-  {
-    "ticker": "ENS",
-    "name": "ENS",
-    "exchange": "바이낸스",
-    "entry_price": 4.06,
-    "currency": "USD",
-    "entry_time": "2026-08-15 09:00"
-  },
-  {
-    "ticker": "ONG",
-    "name": "ONG",
-    "exchange": "빗썸",
-    "entry_price": 64.35,
-    "currency": "KRW",
-    "entry_time": "2026-08-15 00:00"
-  },
-  {
-    "ticker": "EGG",
-    "name": "EGG",
-    "exchange": "빗썸",
-    "entry_price": 0.4242,
-    "currency": "KRW",
-    "entry_time": "2026-08-14 09:09",
-    "signal": "trend"
-  },
-  {
-    "ticker": "LWP",
-    "name": "LWP",
-    "exchange": "빗썸",
-    "entry_price": 3.313,
-    "currency": "KRW",
-    "entry_time": "2026-08-14 09:09",
-    "signal": "trend"
-  },
-  {
-    "ticker": "OSMO",
-    "name": "OSMO",
-    "exchange": "빗썸",
-    "entry_price": 43.5,
-    "currency": "KRW",
-    "entry_time": "2026-08-14 09:09",
-    "signal": "trend"
-  },
-  {
-    "ticker": "GPS",
-    "name": "GPS",
-    "exchange": "빗썸",
-    "entry_price": 15.6,
-    "currency": "KRW",
-    "entry_time": "2026-08-14 09:09",
-    "signal": "trend"
-  },
-  {
-    "ticker": "GRASS",
-    "name": "GRASS",
-    "exchange": "빗썸",
-    "entry_price": 457.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-14 09:09",
-    "signal": "trend"
-  },
-  {
-    "ticker": "SCRT",
-    "name": "SCRT",
-    "exchange": "바이낸스",
-    "entry_price": 0.0382,
-    "currency": "USDT",
-    "entry_time": "2026-08-14 09:09",
-    "signal": "trend"
-  },
-  {
-    "ticker": "MUB",
-    "name": "MUB",
-    "exchange": "바이낸스",
-    "entry_price": 965.63,
-    "currency": "USDT",
-    "entry_time": "2026-08-14 09:09",
-    "signal": "trend"
   }
 ]

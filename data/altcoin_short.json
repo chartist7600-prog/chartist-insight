@@ -10,5 +10,11 @@
     "time": "2026-08-15 09:00",
     "price": 515.48,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_OBSR",
+    "time": "2026-08-15 21:00",
+    "price": 0.4311,
+    "sig_type": "trend"
   }
 ]
