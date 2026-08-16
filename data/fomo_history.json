@@ -1,5 +1,29 @@
 [
   {
+    "ticker": "C",
+    "name": "C",
+    "exchange": "빗썸",
+    "entry_price": 94.59,
+    "currency": "KRW",
+    "entry_time": "2026-08-17 00:00"
+  },
+  {
+    "ticker": "WLFI",
+    "name": "WLFI",
+    "exchange": "빗썸",
+    "entry_price": 87.12,
+    "currency": "KRW",
+    "entry_time": "2026-08-17 00:00"
+  },
+  {
+    "ticker": "CHIP",
+    "name": "CHIP",
+    "exchange": "빗썸",
+    "entry_price": 41.89,
+    "currency": "KRW",
+    "entry_time": "2026-08-17 00:00"
+  },
+  {
     "ticker": "RLC",
     "name": "RLC",
     "exchange": "빗썸",
