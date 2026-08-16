@@ -1,5 +1,121 @@
 [
   {
+    "ticker": "RLC",
+    "name": "RLC",
+    "exchange": "빗썸",
+    "entry_price": 402.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-16 09:08",
+    "signal": "trend"
+  },
+  {
+    "ticker": "HOOK",
+    "name": "HOOK",
+    "exchange": "빗썸",
+    "entry_price": 5.465,
+    "currency": "KRW",
+    "entry_time": "2026-08-16 09:08",
+    "signal": "trend"
+  },
+  {
+    "ticker": "SUNDOG",
+    "name": "SUNDOG",
+    "exchange": "빗썸",
+    "entry_price": 6.05,
+    "currency": "KRW",
+    "entry_time": "2026-08-16 09:08",
+    "signal": "trend"
+  },
+  {
+    "ticker": "HUMA",
+    "name": "HUMA",
+    "exchange": "빗썸",
+    "entry_price": 30.36,
+    "currency": "KRW",
+    "entry_time": "2026-08-16 09:08",
+    "signal": "trend"
+  },
+  {
+    "ticker": "ETHFI",
+    "name": "이더파이",
+    "exchange": "업비트",
+    "entry_price": 636.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-16 09:00"
+  },
+  {
+    "ticker": "AKT",
+    "name": "아카시네트워크",
+    "exchange": "업비트",
+    "entry_price": 767.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-16 09:00"
+  },
+  {
+    "ticker": "AWE",
+    "name": "에이더블유이",
+    "exchange": "업비트",
+    "entry_price": 91.2,
+    "currency": "KRW",
+    "entry_time": "2026-08-16 09:00"
+  },
+  {
+    "ticker": "YB",
+    "name": "YB",
+    "exchange": "바이낸스",
+    "entry_price": 0.0811,
+    "currency": "USD",
+    "entry_time": "2026-08-16 09:00"
+  },
+  {
+    "ticker": "KGST",
+    "name": "KGST",
+    "exchange": "바이낸스",
+    "entry_price": 0.011443,
+    "currency": "USD",
+    "entry_time": "2026-08-16 09:00"
+  },
+  {
+    "ticker": "PIXEL",
+    "name": "PIXEL",
+    "exchange": "바이낸스",
+    "entry_price": 0.00488,
+    "currency": "USD",
+    "entry_time": "2026-08-16 09:00"
+  },
+  {
+    "ticker": "PORTO",
+    "name": "PORTO",
+    "exchange": "바이낸스",
+    "entry_price": 0.433,
+    "currency": "USD",
+    "entry_time": "2026-08-16 09:00"
+  },
+  {
+    "ticker": "SXT",
+    "name": "SXT",
+    "exchange": "바이낸스",
+    "entry_price": 0.00699,
+    "currency": "USD",
+    "entry_time": "2026-08-16 09:00"
+  },
+  {
+    "ticker": "REZ",
+    "name": "REZ",
+    "exchange": "바이낸스",
+    "entry_price": 0.002707,
+    "currency": "USD",
+    "entry_time": "2026-08-16 09:00"
+  },
+  {
+    "ticker": "ENS",
+    "name": "ENS",
+    "exchange": "바이낸스",
+    "entry_price": 4.03,
+    "currency": "USD",
+    "entry_time": "2026-08-16 09:00"
+  },
+  {
     "ticker": "ONG",
     "name": "ONG",
     "exchange": "빗썸",
@@ -47,79 +163,5 @@
     "currency": "KRW",
     "entry_time": "2026-08-15 21:05",
     "signal": "trend"
-  },
-  {
-    "ticker": "ALICE",
-    "name": "ALICE",
-    "exchange": "빗썸",
-    "entry_price": 179.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-15 09:08",
-    "signal": "trend"
-  },
-  {
-    "ticker": "AMDB",
-    "name": "AMDB",
-    "exchange": "바이낸스",
-    "entry_price": 515.48,
-    "currency": "USDT",
-    "entry_time": "2026-08-15 09:08",
-    "signal": "trend"
-  },
-  {
-    "ticker": "AKT",
-    "name": "아카시네트워크",
-    "exchange": "업비트",
-    "entry_price": 767.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-15 09:00"
-  },
-  {
-    "ticker": "ILV",
-    "name": "ILV",
-    "exchange": "바이낸스",
-    "entry_price": 3.21,
-    "currency": "USD",
-    "entry_time": "2026-08-15 09:00"
-  },
-  {
-    "ticker": "ETHFI",
-    "name": "ETHFI",
-    "exchange": "바이낸스",
-    "entry_price": 0.4496,
-    "currency": "USD",
-    "entry_time": "2026-08-15 09:00"
-  },
-  {
-    "ticker": "SNDKB",
-    "name": "SNDKB",
-    "exchange": "바이낸스",
-    "entry_price": 1659.27,
-    "currency": "USD",
-    "entry_time": "2026-08-15 09:00"
-  },
-  {
-    "ticker": "PORTO",
-    "name": "PORTO",
-    "exchange": "바이낸스",
-    "entry_price": 0.431,
-    "currency": "USD",
-    "entry_time": "2026-08-15 09:00"
-  },
-  {
-    "ticker": "CTK",
-    "name": "CTK",
-    "exchange": "바이낸스",
-    "entry_price": 0.1041,
-    "currency": "USD",
-    "entry_time": "2026-08-15 09:00"
-  },
-  {
-    "ticker": "ACH",
-    "name": "ACH",
-    "exchange": "바이낸스",
-    "entry_price": 0.00414,
-    "currency": "USD",
-    "entry_time": "2026-08-15 09:00"
   }
 ]

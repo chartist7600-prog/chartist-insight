@@ -1,20 +1,26 @@
 [
   {
-    "key": "빗썸_ALICE",
-    "time": "2026-08-15 09:00",
-    "price": 179.0,
+    "key": "빗썸_RLC",
+    "time": "2026-08-16 09:00",
+    "price": 402.0,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_AMDB",
-    "time": "2026-08-15 09:00",
-    "price": 515.48,
+    "key": "빗썸_HOOK",
+    "time": "2026-08-16 09:00",
+    "price": 5.465,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_OBSR",
-    "time": "2026-08-15 21:00",
-    "price": 0.4311,
+    "key": "빗썸_SUNDOG",
+    "time": "2026-08-16 09:00",
+    "price": 6.05,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_HUMA",
+    "time": "2026-08-16 09:00",
+    "price": 30.36,
     "sig_type": "trend"
   }
 ]

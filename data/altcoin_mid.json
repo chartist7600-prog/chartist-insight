@@ -3334,5 +3334,29 @@
     "time": "2026-08-15 09:00",
     "price": 1659.27,
     "sig_type": "trend"
+  },
+  {
+    "key": "업비트_WAL",
+    "time": "2026-08-16 09:00",
+    "price": 34.9,
+    "sig_type": "trend"
+  },
+  {
+    "key": "업비트_AWE",
+    "time": "2026-08-16 09:00",
+    "price": 91.2,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_KGST",
+    "time": "2026-08-16 09:00",
+    "price": 0.011443,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_PIXEL",
+    "time": "2026-08-16 09:00",
+    "price": 0.00488,
+    "sig_type": "trend"
   }
 ]
