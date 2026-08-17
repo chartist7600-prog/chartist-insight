@@ -1,5 +1,13 @@
 [
   {
+    "ticker": "ALICE",
+    "name": "ALICE",
+    "exchange": "빗썸",
+    "entry_price": 190.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-18 00:00"
+  },
+  {
     "ticker": "GMX",
     "name": "GMX",
     "exchange": "빗썸",
