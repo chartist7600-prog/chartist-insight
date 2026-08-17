@@ -3340,5 +3340,35 @@
     "time": "2026-08-17 00:00",
     "price": 41.89,
     "sig_type": "trend"
+  },
+  {
+    "key": "업비트_PIEVERSE",
+    "time": "2026-08-17 09:00",
+    "price": 1203.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "업비트_CHIP",
+    "time": "2026-08-17 09:00",
+    "price": 39.7,
+    "sig_type": "trend"
+  },
+  {
+    "key": "업비트_MORPHO",
+    "time": "2026-08-17 09:00",
+    "price": 2829.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_DUSK",
+    "time": "2026-08-17 09:00",
+    "price": 0.0705,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_PORTAL",
+    "time": "2026-08-17 09:00",
+    "price": 0.01655,
+    "sig_type": "trend"
   }
 ]

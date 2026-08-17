@@ -1,5 +1,37 @@
 [
   {
+    "ticker": "PIEVERSE",
+    "name": "파이버스",
+    "exchange": "업비트",
+    "entry_price": 1203.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-17 09:00"
+  },
+  {
+    "ticker": "MORPHO",
+    "name": "모포",
+    "exchange": "업비트",
+    "entry_price": 2829.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-17 09:00"
+  },
+  {
+    "ticker": "DUSK",
+    "name": "DUSK",
+    "exchange": "바이낸스",
+    "entry_price": 0.0705,
+    "currency": "USD",
+    "entry_time": "2026-08-17 09:00"
+  },
+  {
+    "ticker": "PORTAL",
+    "name": "PORTAL",
+    "exchange": "바이낸스",
+    "entry_price": 0.01655,
+    "currency": "USD",
+    "entry_time": "2026-08-17 09:00"
+  },
+  {
     "ticker": "C",
     "name": "C",
     "exchange": "빗썸",
