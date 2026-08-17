@@ -349,10 +349,15 @@
     border:1px solid rgba(74,158,255,0.4);letter-spacing:0.5px;
   }
   .signal-tf{
-    font-size:10px;color:var(--text3);
+    font-size:12px;color:var(--text3);
     background:rgba(255,255,255,0.06);
     border:0.5px solid var(--border2);
-    padding:3px 7px;border-radius:4px;font-family:'JetBrains Mono',monospace;
+    padding:4px 10px;border-radius:6px;font-family:'JetBrains Mono',monospace;
+  }
+  .signal-badge-confirm{
+    background:rgba(99,153,34,0.18);color:#97C459;
+    font-size:12px;font-weight:700;padding:4px 10px;border-radius:6px;
+    border:1px solid rgba(99,153,34,0.4);letter-spacing:0.5px;
   }
   .signal-ticker{font-size:12px;color:var(--text2);font-family:'JetBrains Mono',monospace;}
   .signal-desc{font-size:11px;color:var(--text3);line-height:1.5;}
@@ -1661,7 +1666,8 @@ function renderBtcSignals(signals){
 
     html+='<div class="'+itemCls+'">';
     html+='<div class="signal-left">';
-    html+='<div class="signal-top-row"><span class="'+badgeCls+'">'+badgeTxt+'</span><span class="signal-tf">'+( s.tf||'—')+'</span></div>';
+    var confirmBadge=s.confirmed?'<span class="signal-badge-confirm">CONFIRM</span>':'';
+    html+='<div class="signal-top-row"><span class="'+badgeCls+'">'+badgeTxt+'</span><span class="signal-tf">'+( s.tf||'—')+'</span>'+confirmBadge+'</div>';
     html+='<div class="signal-ticker">'+(s.ticker||'BTCUSDT')+'</div>';
     if(tfDesc) html+='<div class="signal-desc">'+tfDesc+' · 이동평균선 기반 알고리즘</div>';
     html+=slTpHtml;
@@ -3311,6 +3317,7 @@ initNoticeBar();
       <label class="push-cat-row" style="justify-content:space-between;"><span style="display:flex;align-items:center;gap:6px;"><input type="checkbox" class="push-cat-item" value="alt_trend">📊 알트 추세전환</span><span style="font-size:10px;color:#C9A84C;background:rgba(201,168,76,0.12);border:0.5px solid rgba(201,168,76,0.35);padding:1px 6px;border-radius:5px;">멤버십</span></label>
       <label class="push-cat-row" style="justify-content:space-between;"><span style="display:flex;align-items:center;gap:6px;"><input type="checkbox" class="push-cat-item" value="alt_whale">🐋 알트 고래봇</span><span style="font-size:10px;color:#C9A84C;background:rgba(201,168,76,0.12);border:0.5px solid rgba(201,168,76,0.35);padding:1px 6px;border-radius:5px;">멤버십</span></label>
       <label class="push-cat-row" style="justify-content:space-between;"><span style="display:flex;align-items:center;gap:6px;"><input type="checkbox" class="push-cat-item" value="alt_div">📈 알트 RSI 다이버전스</span><span style="font-size:10px;color:#C9A84C;background:rgba(201,168,76,0.12);border:0.5px solid rgba(201,168,76,0.35);padding:1px 6px;border-radius:5px;">멤버십</span></label>
+      <label class="push-cat-row" style="justify-content:space-between;"><span style="display:flex;align-items:center;gap:6px;"><input type="checkbox" class="push-cat-item" value="lightning">⚡ 알트 번개알림</span><span style="font-size:10px;color:#C9A84C;background:rgba(201,168,76,0.12);border:0.5px solid rgba(201,168,76,0.35);padding:1px 6px;border-radius:5px;">멤버십</span></label>
     </div>
     <div id="push-sub-status" style="font-size:12px;color:#777;margin-bottom:10px;text-align:center;"></div>
     <button class="member-modal-btn" onclick="savePushSettings()" style="margin-bottom:8px;">푸시 알림 저장</button>
@@ -3360,7 +3367,7 @@ function urlBase64ToUint8Array(base64String) {
   return new Uint8Array([...rawData].map(c => c.charCodeAt(0)));
 }
 
-var PUSH_CATEGORIES = ['btc', 'alt_trend', 'alt_whale', 'alt_div'];
+var PUSH_CATEGORIES = ['btc', 'alt_trend', 'alt_whale', 'alt_div', 'lightning'];
 
 function pushToggleAll(allCb){
   document.querySelectorAll('.push-cat-item').forEach(function(cb){ cb.checked = allCb.checked; });
