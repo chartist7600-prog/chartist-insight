@@ -1,5 +1,21 @@
 [
   {
+    "ticker": "JTO",
+    "name": "JTO",
+    "exchange": "빗썸",
+    "entry_price": 837.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-19 00:00"
+  },
+  {
+    "ticker": "SYRUP",
+    "name": "SYRUP",
+    "exchange": "빗썸",
+    "entry_price": 240.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-19 00:00"
+  },
+  {
     "ticker": "PEAQ",
     "name": "PEAQ",
     "exchange": "빗썸",
