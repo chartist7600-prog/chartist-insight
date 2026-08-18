@@ -1,5 +1,29 @@
 [
   {
+    "ticker": "COMP",
+    "name": "컴파운드",
+    "exchange": "업비트",
+    "entry_price": 25040.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-18 09:00"
+  },
+  {
+    "ticker": "SHELL",
+    "name": "SHELL",
+    "exchange": "바이낸스",
+    "entry_price": 0.0217,
+    "currency": "USD",
+    "entry_time": "2026-08-18 09:00"
+  },
+  {
+    "ticker": "POL",
+    "name": "POL",
+    "exchange": "바이낸스",
+    "entry_price": 0.08,
+    "currency": "USD",
+    "entry_time": "2026-08-18 09:00"
+  },
+  {
     "ticker": "ALICE",
     "name": "ALICE",
     "exchange": "빗썸",
