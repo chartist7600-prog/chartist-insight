@@ -1,5 +1,47 @@
 [
   {
+    "ticker": "BNT",
+    "name": "BNT",
+    "exchange": "빗썸",
+    "entry_price": 378.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-19 09:07",
+    "signal": "trend"
+  },
+  {
+    "ticker": "ACM",
+    "name": "ACM",
+    "exchange": "바이낸스",
+    "entry_price": 0.282,
+    "currency": "USDT",
+    "entry_time": "2026-08-19 09:07",
+    "signal": "trend"
+  },
+  {
+    "ticker": "VVV",
+    "name": "베니스토큰",
+    "exchange": "업비트",
+    "entry_price": 19760.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-19 09:00"
+  },
+  {
+    "ticker": "THETA",
+    "name": "THETA",
+    "exchange": "바이낸스",
+    "entry_price": 0.1433,
+    "currency": "USD",
+    "entry_time": "2026-08-19 09:00"
+  },
+  {
+    "ticker": "ALPINE",
+    "name": "ALPINE",
+    "exchange": "바이낸스",
+    "entry_price": 0.376,
+    "currency": "USD",
+    "entry_time": "2026-08-19 09:00"
+  },
+  {
     "ticker": "JTO",
     "name": "JTO",
     "exchange": "빗썸",
@@ -40,65 +82,5 @@
     "entry_price": 25040.0,
     "currency": "KRW",
     "entry_time": "2026-08-18 09:00"
-  },
-  {
-    "ticker": "SHELL",
-    "name": "SHELL",
-    "exchange": "바이낸스",
-    "entry_price": 0.0217,
-    "currency": "USD",
-    "entry_time": "2026-08-18 09:00"
-  },
-  {
-    "ticker": "POL",
-    "name": "POL",
-    "exchange": "바이낸스",
-    "entry_price": 0.08,
-    "currency": "USD",
-    "entry_time": "2026-08-18 09:00"
-  },
-  {
-    "ticker": "ALICE",
-    "name": "ALICE",
-    "exchange": "빗썸",
-    "entry_price": 190.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-18 00:00"
-  },
-  {
-    "ticker": "GMX",
-    "name": "GMX",
-    "exchange": "빗썸",
-    "entry_price": 9450.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-17 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "XAI",
-    "name": "XAI",
-    "exchange": "빗썸",
-    "entry_price": 10.21,
-    "currency": "KRW",
-    "entry_time": "2026-08-17 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "DIA",
-    "name": "DIA",
-    "exchange": "바이낸스",
-    "entry_price": 0.1467,
-    "currency": "USDT",
-    "entry_time": "2026-08-17 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "LUMIA",
-    "name": "LUMIA",
-    "exchange": "바이낸스",
-    "entry_price": 0.0905,
-    "currency": "USDT",
-    "entry_time": "2026-08-17 21:04",
-    "signal": "trend_strong"
   }
 ]

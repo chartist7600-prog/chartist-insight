@@ -3376,5 +3376,23 @@
     "time": "2026-08-18 09:00",
     "price": 0.0217,
     "sig_type": "trend"
+  },
+  {
+    "key": "업비트_VVV",
+    "time": "2026-08-19 09:00",
+    "price": 19760.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_THETA",
+    "time": "2026-08-19 09:00",
+    "price": 0.1433,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_ALPINE",
+    "time": "2026-08-19 09:00",
+    "price": 0.376,
+    "sig_type": "trend"
   }
 ]
