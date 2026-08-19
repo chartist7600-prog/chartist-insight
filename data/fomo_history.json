@@ -1,5 +1,29 @@
 [
   {
+    "ticker": "POL",
+    "name": "POL",
+    "exchange": "빗썸",
+    "entry_price": 116.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-20 00:00"
+  },
+  {
+    "ticker": "DBR",
+    "name": "DBR",
+    "exchange": "빗썸",
+    "entry_price": 22.11,
+    "currency": "KRW",
+    "entry_time": "2026-08-20 00:00"
+  },
+  {
+    "ticker": "TREE",
+    "name": "TREE",
+    "exchange": "빗썸",
+    "entry_price": 56.21,
+    "currency": "KRW",
+    "entry_time": "2026-08-20 00:00"
+  },
+  {
     "ticker": "CAKE",
     "name": "CAKE",
     "exchange": "빗썸",
