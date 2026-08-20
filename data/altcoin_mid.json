@@ -3460,5 +3460,77 @@
     "time": "2026-08-20 09:00",
     "price": 0.02827,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_XRP",
+    "time": "2026-08-21 00:00",
+    "price": 1688.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_DOGE",
+    "time": "2026-08-21 00:00",
+    "price": 108.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_S",
+    "time": "2026-08-21 00:00",
+    "price": 33.58,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_FLOKI",
+    "time": "2026-08-21 00:00",
+    "price": 0.0308,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_PEPE",
+    "time": "2026-08-21 00:00",
+    "price": 0.0043,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_GAS",
+    "time": "2026-08-21 00:00",
+    "price": 1440.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_BRETT",
+    "time": "2026-08-21 00:00",
+    "price": 6.06,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_TURBO",
+    "time": "2026-08-21 00:00",
+    "price": 1.209,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_PENGU",
+    "time": "2026-08-21 00:00",
+    "price": 9.73,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_AERO",
+    "time": "2026-08-21 00:00",
+    "price": 654.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_HAEDAL",
+    "time": "2026-08-21 00:00",
+    "price": 25.19,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SPX",
+    "time": "2026-08-21 00:00",
+    "price": 521.0,
+    "sig_type": "trend"
   }
 ]

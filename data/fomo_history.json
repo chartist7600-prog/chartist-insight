@@ -1,5 +1,181 @@
 [
   {
+    "ticker": "XRP",
+    "name": "XRP",
+    "exchange": "빗썸",
+    "entry_price": 1688.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
+    "ticker": "XLM",
+    "name": "XLM",
+    "exchange": "빗썸",
+    "entry_price": 248.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
+    "ticker": "DOGE",
+    "name": "DOGE",
+    "exchange": "빗썸",
+    "entry_price": 108.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
+    "ticker": "BNB",
+    "name": "BNB",
+    "exchange": "빗썸",
+    "entry_price": 883500.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
+    "ticker": "SOL",
+    "name": "SOL",
+    "exchange": "빗썸",
+    "entry_price": 119100.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
+    "ticker": "HBAR",
+    "name": "HBAR",
+    "exchange": "빗썸",
+    "entry_price": 101.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
+    "ticker": "PEPE",
+    "name": "PEPE",
+    "exchange": "빗썸",
+    "entry_price": 0.0043,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
+    "ticker": "GAS",
+    "name": "GAS",
+    "exchange": "빗썸",
+    "entry_price": 1440.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
+    "ticker": "MEW",
+    "name": "MEW",
+    "exchange": "빗썸",
+    "entry_price": 0.5042,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
+    "ticker": "TURBO",
+    "name": "TURBO",
+    "exchange": "빗썸",
+    "entry_price": 1.209,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
+    "ticker": "RAY",
+    "name": "RAY",
+    "exchange": "빗썸",
+    "entry_price": 937.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
+    "ticker": "MOODENG",
+    "name": "MOODENG",
+    "exchange": "빗썸",
+    "entry_price": 57.51,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
+    "ticker": "PENGU",
+    "name": "PENGU",
+    "exchange": "빗썸",
+    "entry_price": 9.73,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
+    "ticker": "AERO",
+    "name": "AERO",
+    "exchange": "빗썸",
+    "entry_price": 654.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
+    "ticker": "TRUMP",
+    "name": "TRUMP",
+    "exchange": "빗썸",
+    "entry_price": 2264.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
+    "ticker": "GNO",
+    "name": "GNO",
+    "exchange": "빗썸",
+    "entry_price": 168000.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
+    "ticker": "RED",
+    "name": "RED",
+    "exchange": "빗썸",
+    "entry_price": 141.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
+    "ticker": "HAEDAL",
+    "name": "HAEDAL",
+    "exchange": "빗썸",
+    "entry_price": 25.19,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
+    "ticker": "TOSHI",
+    "name": "TOSHI",
+    "exchange": "빗썸",
+    "entry_price": 0.1528,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
+    "ticker": "MON",
+    "name": "MON",
+    "exchange": "빗썸",
+    "entry_price": 35.31,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
+    "ticker": "MEGA",
+    "name": "MEGA",
+    "exchange": "빗썸",
+    "entry_price": 52.83,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
+    "ticker": "SPX",
+    "name": "SPX",
+    "exchange": "빗썸",
+    "entry_price": 521.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-21 00:00"
+  },
+  {
     "ticker": "YFI",
     "name": "YFI",
     "exchange": "빗썸",
@@ -67,24 +243,6 @@
     "name": "WAXL",
     "exchange": "빗썸",
     "entry_price": 51.45,
-    "currency": "KRW",
-    "entry_time": "2026-08-20 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "BRETT",
-    "name": "BRETT",
-    "exchange": "빗썸",
-    "entry_price": 5.678,
-    "currency": "KRW",
-    "entry_time": "2026-08-20 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "ASTER",
-    "name": "ASTER",
-    "exchange": "빗썸",
-    "entry_price": 864.0,
     "currency": "KRW",
     "entry_time": "2026-08-20 21:05",
     "signal": "trend"
