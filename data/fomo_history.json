@@ -1,111 +1,90 @@
 [
   {
-    "ticker": "POL",
-    "name": "POL",
-    "exchange": "빗썸",
-    "entry_price": 116.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-20 00:00"
-  },
-  {
-    "ticker": "DBR",
-    "name": "DBR",
-    "exchange": "빗썸",
-    "entry_price": 22.11,
-    "currency": "KRW",
-    "entry_time": "2026-08-20 00:00"
-  },
-  {
-    "ticker": "TREE",
-    "name": "TREE",
-    "exchange": "빗썸",
-    "entry_price": 56.21,
-    "currency": "KRW",
-    "entry_time": "2026-08-20 00:00"
-  },
-  {
-    "ticker": "CAKE",
-    "name": "CAKE",
-    "exchange": "빗썸",
-    "entry_price": 2106.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-19 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "GNO",
-    "name": "GNO",
-    "exchange": "빗썸",
-    "entry_price": 153800.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-19 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "BNT",
-    "name": "BNT",
-    "exchange": "빗썸",
-    "entry_price": 378.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-19 09:07",
-    "signal": "trend"
-  },
-  {
-    "ticker": "ACM",
-    "name": "ACM",
+    "ticker": "LTC",
+    "name": "LTC",
     "exchange": "바이낸스",
-    "entry_price": 0.282,
+    "entry_price": 46.8,
     "currency": "USDT",
-    "entry_time": "2026-08-19 09:07",
+    "entry_time": "2026-08-20 09:07",
     "signal": "trend"
   },
   {
-    "ticker": "VVV",
-    "name": "베니스토큰",
+    "ticker": "DASH",
+    "name": "DASH",
+    "exchange": "바이낸스",
+    "entry_price": 31.81,
+    "currency": "USDT",
+    "entry_time": "2026-08-20 09:07",
+    "signal": "trend"
+  },
+  {
+    "ticker": "ZEN",
+    "name": "ZEN",
+    "exchange": "바이낸스",
+    "entry_price": 4.193,
+    "currency": "USDT",
+    "entry_time": "2026-08-20 09:07",
+    "signal": "trend"
+  },
+  {
+    "ticker": "SLP",
+    "name": "SLP",
+    "exchange": "바이낸스",
+    "entry_price": 0.000563,
+    "currency": "USDT",
+    "entry_time": "2026-08-20 09:07",
+    "signal": "trend"
+  },
+  {
+    "ticker": "NEXO",
+    "name": "NEXO",
+    "exchange": "바이낸스",
+    "entry_price": 0.759,
+    "currency": "USDT",
+    "entry_time": "2026-08-20 09:07",
+    "signal": "trend"
+  },
+  {
+    "ticker": "SSV",
+    "name": "SSV",
+    "exchange": "바이낸스",
+    "entry_price": 2.263,
+    "currency": "USDT",
+    "entry_time": "2026-08-20 09:07",
+    "signal": "trend"
+  },
+  {
+    "ticker": "NIGHT",
+    "name": "NIGHT",
+    "exchange": "바이낸스",
+    "entry_price": 0.01893,
+    "currency": "USDT",
+    "entry_time": "2026-08-20 09:07",
+    "signal": "trend"
+  },
+  {
+    "ticker": "MSTRB",
+    "name": "MSTRB",
+    "exchange": "바이낸스",
+    "entry_price": 108.1,
+    "currency": "USDT",
+    "entry_time": "2026-08-20 09:07",
+    "signal": "trend"
+  },
+  {
+    "ticker": "TRUMP",
+    "name": "오피셜트럼프",
     "exchange": "업비트",
-    "entry_price": 19760.0,
+    "entry_price": 2465.0,
     "currency": "KRW",
-    "entry_time": "2026-08-19 09:00"
+    "entry_time": "2026-08-20 09:00"
   },
   {
-    "ticker": "THETA",
-    "name": "THETA",
-    "exchange": "바이낸스",
-    "entry_price": 0.1433,
-    "currency": "USD",
-    "entry_time": "2026-08-19 09:00"
-  },
-  {
-    "ticker": "ALPINE",
-    "name": "ALPINE",
-    "exchange": "바이낸스",
-    "entry_price": 0.376,
-    "currency": "USD",
-    "entry_time": "2026-08-19 09:00"
-  },
-  {
-    "ticker": "JTO",
-    "name": "JTO",
-    "exchange": "빗썸",
-    "entry_price": 837.0,
+    "ticker": "ARB",
+    "name": "아비트럼",
+    "exchange": "업비트",
+    "entry_price": 123.0,
     "currency": "KRW",
-    "entry_time": "2026-08-19 00:00"
-  },
-  {
-    "ticker": "SYRUP",
-    "name": "SYRUP",
-    "exchange": "빗썸",
-    "entry_price": 240.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-19 00:00"
-  },
-  {
-    "ticker": "PEAQ",
-    "name": "PEAQ",
-    "exchange": "빗썸",
-    "entry_price": 26.88,
-    "currency": "KRW",
-    "entry_time": "2026-08-18 21:04",
-    "signal": "trend"
+    "entry_time": "2026-08-20 09:00"
   }
 ]
