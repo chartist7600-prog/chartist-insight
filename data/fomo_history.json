@@ -1,92 +1,242 @@
 [
   {
-    "ticker": "ENJ",
-    "name": "ENJ",
+    "ticker": "BCH",
+    "name": "비트코인캐시",
     "exchange": "빗썸",
-    "entry_price": 35.61,
+    "entry_price": 381300.0,
     "currency": "KRW",
-    "entry_time": "2026-08-21 21:05",
-    "signal": "trend"
+    "entry_time": "2026-08-22 00:00"
   },
   {
-    "ticker": "UMA",
-    "name": "UMA",
+    "ticker": "KNC",
+    "name": "카이버네트워크",
     "exchange": "빗썸",
-    "entry_price": 477.0,
+    "entry_price": 157.0,
     "currency": "KRW",
-    "entry_time": "2026-08-21 21:05",
-    "signal": "trend"
+    "entry_time": "2026-08-22 00:00"
   },
   {
-    "ticker": "NMR",
-    "name": "NMR",
+    "ticker": "WAXP",
+    "name": "왁스",
     "exchange": "빗썸",
-    "entry_price": 11690.0,
+    "entry_price": 5.797,
     "currency": "KRW",
-    "entry_time": "2026-08-21 21:05",
-    "signal": "trend"
+    "entry_time": "2026-08-22 00:00"
   },
   {
-    "ticker": "BIOT",
-    "name": "BIOT",
+    "ticker": "THETA",
+    "name": "쎄타토큰",
     "exchange": "빗썸",
-    "entry_price": 0.2727,
+    "entry_price": 220.0,
     "currency": "KRW",
-    "entry_time": "2026-08-21 21:05",
-    "signal": "trend"
+    "entry_time": "2026-08-22 00:00"
   },
   {
-    "ticker": "OGN",
-    "name": "OGN",
+    "ticker": "VET",
+    "name": "비체인",
     "exchange": "빗썸",
-    "entry_price": 24.12,
+    "entry_price": 6.948,
     "currency": "KRW",
-    "entry_time": "2026-08-21 21:05",
-    "signal": "trend"
+    "entry_time": "2026-08-22 00:00"
   },
   {
-    "ticker": "SWAP",
-    "name": "SWAP",
+    "ticker": "CRO",
+    "name": "크로노스",
     "exchange": "빗썸",
-    "entry_price": 51.21,
+    "entry_price": 73.35,
     "currency": "KRW",
-    "entry_time": "2026-08-21 21:05",
-    "signal": "trend"
+    "entry_time": "2026-08-22 00:00"
   },
   {
-    "ticker": "GALA",
-    "name": "GALA",
+    "ticker": "MBL",
+    "name": "무비블록",
     "exchange": "빗썸",
-    "entry_price": 2.239,
+    "entry_price": 0.9122,
     "currency": "KRW",
-    "entry_time": "2026-08-21 21:05",
-    "signal": "trend"
+    "entry_time": "2026-08-22 00:00"
   },
   {
-    "ticker": "MBX",
-    "name": "MBX",
+    "ticker": "RLC",
+    "name": "RLC",
     "exchange": "빗썸",
-    "entry_price": 29.92,
+    "entry_price": 444.0,
     "currency": "KRW",
-    "entry_time": "2026-08-21 21:05",
-    "signal": "trend"
+    "entry_time": "2026-08-22 00:00"
   },
   {
-    "ticker": "APE",
-    "name": "APE",
+    "ticker": "SAND",
+    "name": "샌드박스",
     "exchange": "빗썸",
-    "entry_price": 181.0,
+    "entry_price": 65.66,
     "currency": "KRW",
-    "entry_time": "2026-08-21 21:05",
-    "signal": "trend"
+    "entry_time": "2026-08-22 00:00"
   },
   {
-    "ticker": "LWP",
-    "name": "LWP",
+    "ticker": "BEL",
+    "name": "BEL",
     "exchange": "빗썸",
-    "entry_price": 3.094,
+    "entry_price": 163.0,
     "currency": "KRW",
-    "entry_time": "2026-08-21 21:05",
-    "signal": "trend"
+    "entry_time": "2026-08-22 00:00"
+  },
+  {
+    "ticker": "GHX",
+    "name": "GHX",
+    "exchange": "빗썸",
+    "entry_price": 7.866,
+    "currency": "KRW",
+    "entry_time": "2026-08-22 00:00"
+  },
+  {
+    "ticker": "BNT",
+    "name": "BNT",
+    "exchange": "빗썸",
+    "entry_price": 407.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-22 00:00"
+  },
+  {
+    "ticker": "CHZ",
+    "name": "칠리즈",
+    "exchange": "빗썸",
+    "entry_price": 19.61,
+    "currency": "KRW",
+    "entry_time": "2026-08-22 00:00"
+  },
+  {
+    "ticker": "KAIA",
+    "name": "KAIA",
+    "exchange": "빗썸",
+    "entry_price": 39.66,
+    "currency": "KRW",
+    "entry_time": "2026-08-22 00:00"
+  },
+  {
+    "ticker": "XTZ",
+    "name": "테조스",
+    "exchange": "빗썸",
+    "entry_price": 319.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-22 00:00"
+  },
+  {
+    "ticker": "DOT",
+    "name": "폴카닷",
+    "exchange": "빗썸",
+    "entry_price": 1240.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-22 00:00"
+  },
+  {
+    "ticker": "KSM",
+    "name": "KSM",
+    "exchange": "빗썸",
+    "entry_price": 4658.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-22 00:00"
+  },
+  {
+    "ticker": "AVAX",
+    "name": "아발란체",
+    "exchange": "빗썸",
+    "entry_price": 10490.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-22 00:00"
+  },
+  {
+    "ticker": "HBAR",
+    "name": "헤데라",
+    "exchange": "빗썸",
+    "entry_price": 101.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-22 00:00"
+  },
+  {
+    "ticker": "T",
+    "name": "쓰레스홀드",
+    "exchange": "빗썸",
+    "entry_price": 5.318,
+    "currency": "KRW",
+    "entry_time": "2026-08-22 00:00"
+  },
+  {
+    "ticker": "XCN",
+    "name": "오닉스코인",
+    "exchange": "빗썸",
+    "entry_price": 5.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-22 00:00"
+  },
+  {
+    "ticker": "APT",
+    "name": "앱토스",
+    "exchange": "빗썸",
+    "entry_price": 882.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-22 00:00"
+  },
+  {
+    "ticker": "GMX",
+    "name": "GMX",
+    "exchange": "빗썸",
+    "entry_price": 10030.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-22 00:00"
+  },
+  {
+    "ticker": "INJ",
+    "name": "인젝티브",
+    "exchange": "빗썸",
+    "entry_price": 6830.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-22 00:00"
+  },
+  {
+    "ticker": "RPL",
+    "name": "RPL",
+    "exchange": "빗썸",
+    "entry_price": 2337.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-22 00:00"
+  },
+  {
+    "ticker": "IMX",
+    "name": "이뮤터블엑스",
+    "exchange": "빗썸",
+    "entry_price": 172.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-22 00:00"
+  },
+  {
+    "ticker": "CFX",
+    "name": "콘플럭스",
+    "exchange": "빗썸",
+    "entry_price": 66.59,
+    "currency": "KRW",
+    "entry_time": "2026-08-22 00:00"
+  },
+  {
+    "ticker": "S",
+    "name": "S",
+    "exchange": "빗썸",
+    "entry_price": 33.58,
+    "currency": "KRW",
+    "entry_time": "2026-08-22 00:00"
+  },
+  {
+    "ticker": "FET",
+    "name": "FET",
+    "exchange": "빗썸",
+    "entry_price": 217.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-22 00:00"
+  },
+  {
+    "ticker": "SUI",
+    "name": "수이",
+    "exchange": "빗썸",
+    "entry_price": 1103.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-22 00:00"
   }
 ]
