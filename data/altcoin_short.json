@@ -112,5 +112,167 @@
     "time": "2026-08-21 09:00",
     "price": 0.02502,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_ENJ",
+    "time": "2026-08-21 21:00",
+    "price": 35.61,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_UMA",
+    "time": "2026-08-21 21:00",
+    "price": 477.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_NMR",
+    "time": "2026-08-21 21:00",
+    "price": 11690.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_BIOT",
+    "time": "2026-08-21 21:00",
+    "price": 0.2727,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_OGN",
+    "time": "2026-08-21 21:00",
+    "price": 24.12,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SWAP",
+    "time": "2026-08-21 21:00",
+    "price": 51.21,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_GALA",
+    "time": "2026-08-21 21:00",
+    "price": 2.239,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_MBX",
+    "time": "2026-08-21 21:00",
+    "price": 29.92,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_APE",
+    "time": "2026-08-21 21:00",
+    "price": 181.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_LWP",
+    "time": "2026-08-21 21:00",
+    "price": 3.094,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_FET",
+    "time": "2026-08-21 21:00",
+    "price": 203.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SKL",
+    "time": "2026-08-21 21:00",
+    "price": 4.96,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_GRAM",
+    "time": "2026-08-21 21:00",
+    "price": 1927.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_EIGEN",
+    "time": "2026-08-21 21:00",
+    "price": 267.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_PONKE",
+    "time": "2026-08-21 21:00",
+    "price": 23.24,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_PUFFER",
+    "time": "2026-08-21 21:00",
+    "price": 18.87,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_WIN",
+    "time": "2026-08-21 21:00",
+    "price": 3.482e-05,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_JUV",
+    "time": "2026-08-21 21:00",
+    "price": 0.325,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_FLOW",
+    "time": "2026-08-21 21:00",
+    "price": 0.03114,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_CVX",
+    "time": "2026-08-21 21:00",
+    "price": 1.814,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_BTTC",
+    "time": "2026-08-21 21:00",
+    "price": 3e-07,
+    "sig_type": "trend_strong"
+  },
+  {
+    "key": "바이낸스_XNO",
+    "time": "2026-08-21 21:00",
+    "price": 0.411,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_GNS",
+    "time": "2026-08-21 21:00",
+    "price": 0.536,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_RONIN",
+    "time": "2026-08-21 21:00",
+    "price": 0.0572,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_币安人生",
+    "time": "2026-08-21 21:00",
+    "price": 0.5197,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_FOGO",
+    "time": "2026-08-21 21:00",
+    "price": 0.00964,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_AIGENSYN",
+    "time": "2026-08-21 21:00",
+    "price": 0.02227,
+    "sig_type": "trend"
   }
 ]
