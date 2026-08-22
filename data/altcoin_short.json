@@ -190,5 +190,131 @@
     "time": "2026-08-22 09:00",
     "price": 38.14,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_EL",
+    "time": "2026-08-22 21:00",
+    "price": 1.664,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_UOS",
+    "time": "2026-08-22 21:00",
+    "price": 3.9,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SNX",
+    "time": "2026-08-22 21:00",
+    "price": 339.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_BFC",
+    "time": "2026-08-22 21:00",
+    "price": 13.82,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_TDROP",
+    "time": "2026-08-22 21:00",
+    "price": 0.532,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_AL",
+    "time": "2026-08-22 21:00",
+    "price": 2.243,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_CRTS",
+    "time": "2026-08-22 21:00",
+    "price": 0.062,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_ACS",
+    "time": "2026-08-22 21:00",
+    "price": 0.1959,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_NCT",
+    "time": "2026-08-22 21:00",
+    "price": 6.477,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_AGI",
+    "time": "2026-08-22 21:00",
+    "price": 6.158,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_IOTX",
+    "time": "2026-08-22 21:00",
+    "price": 4.308,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_A8",
+    "time": "2026-08-22 21:00",
+    "price": 6.327,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_BLUE",
+    "time": "2026-08-22 21:00",
+    "price": 11.38,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_OBT",
+    "time": "2026-08-22 21:00",
+    "price": 0.4523,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_PARTI",
+    "time": "2026-08-22 21:00",
+    "price": 36.48,
+    "sig_type": "trend_strong"
+  },
+  {
+    "key": "빗썸_HNT",
+    "time": "2026-08-22 21:00",
+    "price": 272.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SD",
+    "time": "2026-08-22 21:00",
+    "price": 150.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_CAMP",
+    "time": "2026-08-22 21:00",
+    "price": 0.4011,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SAPIEN",
+    "time": "2026-08-22 21:00",
+    "price": 117.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_PSG",
+    "time": "2026-08-22 21:00",
+    "price": 0.503,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_MUBARAK",
+    "time": "2026-08-22 21:00",
+    "price": 0.02448,
+    "sig_type": "trend"
   }
 ]
