@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "key": "빗썸_COS",
+    "time": "2026-08-23 21:00",
+    "price": 0.256,
+    "sig_type": "trend_strong"
+  },
+  {
+    "key": "빗썸_AVL",
+    "time": "2026-08-23 21:00",
+    "price": 24.55,
+    "sig_type": "trend"
+  }
+]
