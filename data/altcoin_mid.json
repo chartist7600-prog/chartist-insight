@@ -4726,5 +4726,47 @@
     "time": "2026-08-23 09:00",
     "price": 1.09,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_ACH",
+    "time": "2026-08-24 00:00",
+    "price": 6.907,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_MBX",
+    "time": "2026-08-24 00:00",
+    "price": 32.72,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_TAVA",
+    "time": "2026-08-24 00:00",
+    "price": 2.233,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_LM",
+    "time": "2026-08-24 00:00",
+    "price": 0.6581,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_GRAM",
+    "time": "2026-08-24 00:00",
+    "price": 2046.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_XYO",
+    "time": "2026-08-24 00:00",
+    "price": 4.555,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_STX",
+    "time": "2026-08-24 00:00",
+    "price": 313.0,
+    "sig_type": "trend"
   }
 ]

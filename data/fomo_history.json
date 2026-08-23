@@ -1,5 +1,149 @@
 [
   {
+    "ticker": "POWR",
+    "name": "파워렛저",
+    "exchange": "빗썸",
+    "entry_price": 60.59,
+    "currency": "KRW",
+    "entry_time": "2026-08-24 00:00"
+  },
+  {
+    "ticker": "OGN",
+    "name": "OGN",
+    "exchange": "빗썸",
+    "entry_price": 26.14,
+    "currency": "KRW",
+    "entry_time": "2026-08-24 00:00"
+  },
+  {
+    "ticker": "ACH",
+    "name": "ACH",
+    "exchange": "빗썸",
+    "entry_price": 6.907,
+    "currency": "KRW",
+    "entry_time": "2026-08-24 00:00"
+  },
+  {
+    "ticker": "MAY",
+    "name": "MAY",
+    "exchange": "빗썸",
+    "entry_price": 4.85,
+    "currency": "KRW",
+    "entry_time": "2026-08-24 00:00"
+  },
+  {
+    "ticker": "MBX",
+    "name": "MBX",
+    "exchange": "빗썸",
+    "entry_price": 32.72,
+    "currency": "KRW",
+    "entry_time": "2026-08-24 00:00"
+  },
+  {
+    "ticker": "TAVA",
+    "name": "TAVA",
+    "exchange": "빗썸",
+    "entry_price": 2.233,
+    "currency": "KRW",
+    "entry_time": "2026-08-24 00:00"
+  },
+  {
+    "ticker": "LM",
+    "name": "LM",
+    "exchange": "빗썸",
+    "entry_price": 0.6581,
+    "currency": "KRW",
+    "entry_time": "2026-08-24 00:00"
+  },
+  {
+    "ticker": "KAVA",
+    "name": "카바",
+    "exchange": "빗썸",
+    "entry_price": 61.12,
+    "currency": "KRW",
+    "entry_time": "2026-08-24 00:00"
+  },
+  {
+    "ticker": "SKL",
+    "name": "SKL",
+    "exchange": "빗썸",
+    "entry_price": 5.444,
+    "currency": "KRW",
+    "entry_time": "2026-08-24 00:00"
+  },
+  {
+    "ticker": "TRAC",
+    "name": "오리진트레일",
+    "exchange": "빗썸",
+    "entry_price": 484.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-24 00:00"
+  },
+  {
+    "ticker": "GRAM",
+    "name": "GRAM",
+    "exchange": "빗썸",
+    "entry_price": 2046.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-24 00:00"
+  },
+  {
+    "ticker": "MVL",
+    "name": "엠블",
+    "exchange": "빗썸",
+    "entry_price": 1.163,
+    "currency": "KRW",
+    "entry_time": "2026-08-24 00:00"
+  },
+  {
+    "ticker": "VANA",
+    "name": "바나",
+    "exchange": "빗썸",
+    "entry_price": 1379.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-24 00:00"
+  },
+  {
+    "ticker": "XYO",
+    "name": "XYO",
+    "exchange": "빗썸",
+    "entry_price": 4.555,
+    "currency": "KRW",
+    "entry_time": "2026-08-24 00:00"
+  },
+  {
+    "ticker": "DKA",
+    "name": "디카르고",
+    "exchange": "빗썸",
+    "entry_price": 4.785,
+    "currency": "KRW",
+    "entry_time": "2026-08-24 00:00"
+  },
+  {
+    "ticker": "XRP",
+    "name": "XRP",
+    "exchange": "빗썸",
+    "entry_price": 2077.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-24 00:00"
+  },
+  {
+    "ticker": "STX",
+    "name": "STX",
+    "exchange": "빗썸",
+    "entry_price": 313.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-24 00:00"
+  },
+  {
+    "ticker": "TRUMP",
+    "name": "TRUMP",
+    "exchange": "빗썸",
+    "entry_price": 3735.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-24 00:00"
+  },
+  {
     "ticker": "COS",
     "name": "COS",
     "exchange": "빗썸",
