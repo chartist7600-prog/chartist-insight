@@ -4768,5 +4768,59 @@
     "time": "2026-08-24 00:00",
     "price": 313.0,
     "sig_type": "trend"
+  },
+  {
+    "key": "업비트_TRAC",
+    "time": "2026-08-24 09:00",
+    "price": 515.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "업비트_BORA",
+    "time": "2026-08-24 09:00",
+    "price": 30.3,
+    "sig_type": "trend"
+  },
+  {
+    "key": "업비트_TOKAMAK",
+    "time": "2026-08-24 09:00",
+    "price": 441.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "업비트_NEWT",
+    "time": "2026-08-24 09:00",
+    "price": 60.5,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_TREE",
+    "time": "2026-08-24 09:00",
+    "price": 0.0391,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_BARD",
+    "time": "2026-08-24 09:00",
+    "price": 0.1226,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_KITE",
+    "time": "2026-08-24 09:00",
+    "price": 0.1151,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_LAZIO",
+    "time": "2026-08-24 09:00",
+    "price": 0.393,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_UNI",
+    "time": "2026-08-24 09:00",
+    "price": 4.523,
+    "sig_type": "trend"
   }
 ]

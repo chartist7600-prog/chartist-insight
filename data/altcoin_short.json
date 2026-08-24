@@ -1,14 +1,20 @@
 [
   {
-    "key": "빗썸_COS",
-    "time": "2026-08-23 21:00",
-    "price": 0.256,
-    "sig_type": "trend_strong"
+    "key": "빗썸_BOBA",
+    "time": "2026-08-24 09:00",
+    "price": 27.12,
+    "sig_type": "trend"
   },
   {
-    "key": "빗썸_AVL",
-    "time": "2026-08-23 21:00",
-    "price": 24.55,
+    "key": "빗썸_REI",
+    "time": "2026-08-24 09:00",
+    "price": 2.281,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_WNCG",
+    "time": "2026-08-24 09:00",
+    "price": 6.033,
     "sig_type": "trend"
   }
 ]
