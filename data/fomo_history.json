@@ -1,5 +1,109 @@
 [
   {
+    "ticker": "ORBS",
+    "name": "오브스",
+    "exchange": "빗썸",
+    "entry_price": 8.099,
+    "currency": "KRW",
+    "entry_time": "2026-08-25 00:00"
+  },
+  {
+    "ticker": "OGN",
+    "name": "OGN",
+    "exchange": "빗썸",
+    "entry_price": 26.14,
+    "currency": "KRW",
+    "entry_time": "2026-08-25 00:00"
+  },
+  {
+    "ticker": "SIX",
+    "name": "SIX",
+    "exchange": "빗썸",
+    "entry_price": 6.28,
+    "currency": "KRW",
+    "entry_time": "2026-08-25 00:00"
+  },
+  {
+    "ticker": "ACH",
+    "name": "ACH",
+    "exchange": "빗썸",
+    "entry_price": 6.907,
+    "currency": "KRW",
+    "entry_time": "2026-08-25 00:00"
+  },
+  {
+    "ticker": "MAY",
+    "name": "MAY",
+    "exchange": "빗썸",
+    "entry_price": 4.85,
+    "currency": "KRW",
+    "entry_time": "2026-08-25 00:00"
+  },
+  {
+    "ticker": "MBX",
+    "name": "MBX",
+    "exchange": "빗썸",
+    "entry_price": 32.72,
+    "currency": "KRW",
+    "entry_time": "2026-08-25 00:00"
+  },
+  {
+    "ticker": "LM",
+    "name": "LM",
+    "exchange": "빗썸",
+    "entry_price": 0.6581,
+    "currency": "KRW",
+    "entry_time": "2026-08-25 00:00"
+  },
+  {
+    "ticker": "MOC",
+    "name": "모스코인",
+    "exchange": "빗썸",
+    "entry_price": 24.5,
+    "currency": "KRW",
+    "entry_time": "2026-08-25 00:00"
+  },
+  {
+    "ticker": "SKL",
+    "name": "SKL",
+    "exchange": "빗썸",
+    "entry_price": 5.444,
+    "currency": "KRW",
+    "entry_time": "2026-08-25 00:00"
+  },
+  {
+    "ticker": "VANA",
+    "name": "바나",
+    "exchange": "빗썸",
+    "entry_price": 1379.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-25 00:00"
+  },
+  {
+    "ticker": "BLUE",
+    "name": "BLUE",
+    "exchange": "빗썸",
+    "entry_price": 12.12,
+    "currency": "KRW",
+    "entry_time": "2026-08-25 00:00"
+  },
+  {
+    "ticker": "ARDR",
+    "name": "아더",
+    "exchange": "빗썸",
+    "entry_price": 29.09,
+    "currency": "KRW",
+    "entry_time": "2026-08-25 00:00"
+  },
+  {
+    "ticker": "DRV",
+    "name": "디라이브",
+    "exchange": "빗썸",
+    "entry_price": 202.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-25 00:00"
+  },
+  {
     "ticker": "PORTAL",
     "name": "PORTAL",
     "exchange": "바이낸스",

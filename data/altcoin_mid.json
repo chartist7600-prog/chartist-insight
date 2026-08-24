@@ -4822,5 +4822,35 @@
     "time": "2026-08-24 09:00",
     "price": 4.523,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SIX",
+    "time": "2026-08-25 00:00",
+    "price": 6.28,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_MOC",
+    "time": "2026-08-25 00:00",
+    "price": 24.5,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_BLUE",
+    "time": "2026-08-25 00:00",
+    "price": 12.12,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_ARDR",
+    "time": "2026-08-25 00:00",
+    "price": 29.09,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_DRV",
+    "time": "2026-08-25 00:00",
+    "price": 202.0,
+    "sig_type": "trend"
   }
 ]
