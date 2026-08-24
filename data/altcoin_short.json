@@ -16,5 +16,11 @@
     "time": "2026-08-24 09:00",
     "price": 6.033,
     "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_PORTAL",
+    "time": "2026-08-24 21:00",
+    "price": 0.01818,
+    "sig_type": "trend"
   }
 ]
