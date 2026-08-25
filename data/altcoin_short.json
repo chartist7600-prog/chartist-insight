@@ -10,5 +10,17 @@
     "time": "2026-08-25 09:00",
     "price": 494.0,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_XPLA",
+    "time": "2026-08-25 21:00",
+    "price": 5.937,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_ZRC",
+    "time": "2026-08-25 21:00",
+    "price": 1.5,
+    "sig_type": "trend"
   }
 ]

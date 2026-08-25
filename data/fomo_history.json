@@ -1,5 +1,23 @@
 [
   {
+    "ticker": "XPLA",
+    "name": "XPLA",
+    "exchange": "빗썸",
+    "entry_price": 5.937,
+    "currency": "KRW",
+    "entry_time": "2026-08-25 21:07",
+    "signal": "trend"
+  },
+  {
+    "ticker": "ZRC",
+    "name": "ZRC",
+    "exchange": "빗썸",
+    "entry_price": 1.5,
+    "currency": "KRW",
+    "entry_time": "2026-08-25 21:07",
+    "signal": "trend"
+  },
+  {
     "ticker": "COTI",
     "name": "COTI",
     "exchange": "빗썸",
@@ -62,22 +80,6 @@
     "name": "MAY",
     "exchange": "빗썸",
     "entry_price": 4.85,
-    "currency": "KRW",
-    "entry_time": "2026-08-25 00:00"
-  },
-  {
-    "ticker": "MBX",
-    "name": "MBX",
-    "exchange": "빗썸",
-    "entry_price": 32.72,
-    "currency": "KRW",
-    "entry_time": "2026-08-25 00:00"
-  },
-  {
-    "ticker": "LM",
-    "name": "LM",
-    "exchange": "빗썸",
-    "entry_price": 0.6581,
     "currency": "KRW",
     "entry_time": "2026-08-25 00:00"
   }
