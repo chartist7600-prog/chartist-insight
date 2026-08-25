@@ -1,5 +1,31 @@
 [
   {
+    "ticker": "COTI",
+    "name": "COTI",
+    "exchange": "빗썸",
+    "entry_price": 18.52,
+    "currency": "KRW",
+    "entry_time": "2026-08-25 09:20",
+    "signal": "trend"
+  },
+  {
+    "ticker": "GRASS",
+    "name": "GRASS",
+    "exchange": "빗썸",
+    "entry_price": 494.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-25 09:20",
+    "signal": "trend"
+  },
+  {
+    "ticker": "STORJ",
+    "name": "STORJ",
+    "exchange": "바이낸스",
+    "entry_price": 0.0585,
+    "currency": "USD",
+    "entry_time": "2026-08-25 09:00"
+  },
+  {
     "ticker": "ORBS",
     "name": "오브스",
     "exchange": "빗썸",
@@ -54,137 +80,5 @@
     "entry_price": 0.6581,
     "currency": "KRW",
     "entry_time": "2026-08-25 00:00"
-  },
-  {
-    "ticker": "MOC",
-    "name": "모스코인",
-    "exchange": "빗썸",
-    "entry_price": 24.5,
-    "currency": "KRW",
-    "entry_time": "2026-08-25 00:00"
-  },
-  {
-    "ticker": "SKL",
-    "name": "SKL",
-    "exchange": "빗썸",
-    "entry_price": 5.444,
-    "currency": "KRW",
-    "entry_time": "2026-08-25 00:00"
-  },
-  {
-    "ticker": "VANA",
-    "name": "바나",
-    "exchange": "빗썸",
-    "entry_price": 1379.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-25 00:00"
-  },
-  {
-    "ticker": "BLUE",
-    "name": "BLUE",
-    "exchange": "빗썸",
-    "entry_price": 12.12,
-    "currency": "KRW",
-    "entry_time": "2026-08-25 00:00"
-  },
-  {
-    "ticker": "ARDR",
-    "name": "아더",
-    "exchange": "빗썸",
-    "entry_price": 29.09,
-    "currency": "KRW",
-    "entry_time": "2026-08-25 00:00"
-  },
-  {
-    "ticker": "DRV",
-    "name": "디라이브",
-    "exchange": "빗썸",
-    "entry_price": 202.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-25 00:00"
-  },
-  {
-    "ticker": "PORTAL",
-    "name": "PORTAL",
-    "exchange": "바이낸스",
-    "entry_price": 0.01818,
-    "currency": "USDT",
-    "entry_time": "2026-08-24 21:07",
-    "signal": "trend"
-  },
-  {
-    "ticker": "BOBA",
-    "name": "BOBA",
-    "exchange": "빗썸",
-    "entry_price": 27.12,
-    "currency": "KRW",
-    "entry_time": "2026-08-24 09:21",
-    "signal": "trend"
-  },
-  {
-    "ticker": "REI",
-    "name": "REI",
-    "exchange": "빗썸",
-    "entry_price": 2.281,
-    "currency": "KRW",
-    "entry_time": "2026-08-24 09:21",
-    "signal": "trend"
-  },
-  {
-    "ticker": "WNCG",
-    "name": "WNCG",
-    "exchange": "빗썸",
-    "entry_price": 6.033,
-    "currency": "KRW",
-    "entry_time": "2026-08-24 09:21",
-    "signal": "trend"
-  },
-  {
-    "ticker": "TRAC",
-    "name": "오리진트레일",
-    "exchange": "업비트",
-    "entry_price": 515.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-24 09:00"
-  },
-  {
-    "ticker": "BORA",
-    "name": "보라",
-    "exchange": "업비트",
-    "entry_price": 30.3,
-    "currency": "KRW",
-    "entry_time": "2026-08-24 09:00"
-  },
-  {
-    "ticker": "HUNT",
-    "name": "헌트",
-    "exchange": "업비트",
-    "entry_price": 118.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-24 09:00"
-  },
-  {
-    "ticker": "TOKAMAK",
-    "name": "토카막네트워크",
-    "exchange": "업비트",
-    "entry_price": 441.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-24 09:00"
-  },
-  {
-    "ticker": "NEWT",
-    "name": "뉴턴프로토콜",
-    "exchange": "업비트",
-    "entry_price": 60.5,
-    "currency": "KRW",
-    "entry_time": "2026-08-24 09:00"
-  },
-  {
-    "ticker": "ZAMA",
-    "name": "자마",
-    "exchange": "업비트",
-    "entry_price": 78.6,
-    "currency": "KRW",
-    "entry_time": "2026-08-24 09:00"
   }
 ]
