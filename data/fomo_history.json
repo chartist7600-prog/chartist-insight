@@ -1,5 +1,93 @@
 [
   {
+    "ticker": "COS",
+    "name": "COS",
+    "exchange": "빗썸",
+    "entry_price": 0.3341,
+    "currency": "KRW",
+    "entry_time": "2026-08-26 00:00"
+  },
+  {
+    "ticker": "UOS",
+    "name": "UOS",
+    "exchange": "빗썸",
+    "entry_price": 4.056,
+    "currency": "KRW",
+    "entry_time": "2026-08-26 00:00"
+  },
+  {
+    "ticker": "JASMY",
+    "name": "JASMY",
+    "exchange": "빗썸",
+    "entry_price": 7.099,
+    "currency": "KRW",
+    "entry_time": "2026-08-26 00:00"
+  },
+  {
+    "ticker": "D",
+    "name": "D",
+    "exchange": "빗썸",
+    "entry_price": 3.628,
+    "currency": "KRW",
+    "entry_time": "2026-08-26 00:00"
+  },
+  {
+    "ticker": "CRTS",
+    "name": "CRTS",
+    "exchange": "빗썸",
+    "entry_price": 0.0663,
+    "currency": "KRW",
+    "entry_time": "2026-08-26 00:00"
+  },
+  {
+    "ticker": "MOC",
+    "name": "모스코인",
+    "exchange": "빗썸",
+    "entry_price": 24.5,
+    "currency": "KRW",
+    "entry_time": "2026-08-26 00:00"
+  },
+  {
+    "ticker": "PEAQ",
+    "name": "PEAQ",
+    "exchange": "빗썸",
+    "entry_price": 31.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-26 00:00"
+  },
+  {
+    "ticker": "AMP",
+    "name": "AMP",
+    "exchange": "빗썸",
+    "entry_price": 0.6696,
+    "currency": "KRW",
+    "entry_time": "2026-08-26 00:00"
+  },
+  {
+    "ticker": "SOLV",
+    "name": "SOLV",
+    "exchange": "빗썸",
+    "entry_price": 3.877,
+    "currency": "KRW",
+    "entry_time": "2026-08-26 00:00"
+  },
+  {
+    "ticker": "CAMP",
+    "name": "CAMP",
+    "exchange": "빗썸",
+    "entry_price": 0.49,
+    "currency": "KRW",
+    "entry_time": "2026-08-26 00:00"
+  },
+  {
+    "ticker": "ESP",
+    "name": "에스프레소",
+    "exchange": "빗썸",
+    "entry_price": 131.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-26 00:00"
+  },
+  {
     "ticker": "XPLA",
     "name": "XPLA",
     "exchange": "빗썸",

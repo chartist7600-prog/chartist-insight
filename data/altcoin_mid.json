@@ -4852,5 +4852,53 @@
     "time": "2026-08-25 00:00",
     "price": 202.0,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_UOS",
+    "time": "2026-08-26 00:00",
+    "price": 4.056,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_JASMY",
+    "time": "2026-08-26 00:00",
+    "price": 7.099,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_D",
+    "time": "2026-08-26 00:00",
+    "price": 3.628,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_CRTS",
+    "time": "2026-08-26 00:00",
+    "price": 0.0663,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_XPLA",
+    "time": "2026-08-26 00:00",
+    "price": 6.507,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_PEAQ",
+    "time": "2026-08-26 00:00",
+    "price": 31.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SOLV",
+    "time": "2026-08-26 00:00",
+    "price": 3.877,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_CAMP",
+    "time": "2026-08-26 00:00",
+    "price": 0.49,
+    "sig_type": "trend"
   }
 ]
