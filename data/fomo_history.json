@@ -1,5 +1,40 @@
 [
   {
+    "ticker": "DAO",
+    "name": "DAO",
+    "exchange": "빗썸",
+    "entry_price": 32.59,
+    "currency": "KRW",
+    "entry_time": "2026-08-26 09:21",
+    "signal": "trend"
+  },
+  {
+    "ticker": "ROA",
+    "name": "ROA",
+    "exchange": "빗썸",
+    "entry_price": 4.878,
+    "currency": "KRW",
+    "entry_time": "2026-08-26 09:21",
+    "signal": "trend"
+  },
+  {
+    "ticker": "XTER",
+    "name": "XTER",
+    "exchange": "빗썸",
+    "entry_price": 13.01,
+    "currency": "KRW",
+    "entry_time": "2026-08-26 09:21",
+    "signal": "trend"
+  },
+  {
+    "ticker": "META2",
+    "name": "메타다오",
+    "exchange": "업비트",
+    "entry_price": 9630.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-26 09:00"
+  },
+  {
     "ticker": "COS",
     "name": "COS",
     "exchange": "빗썸",
@@ -46,129 +81,5 @@
     "entry_price": 24.5,
     "currency": "KRW",
     "entry_time": "2026-08-26 00:00"
-  },
-  {
-    "ticker": "PEAQ",
-    "name": "PEAQ",
-    "exchange": "빗썸",
-    "entry_price": 31.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-26 00:00"
-  },
-  {
-    "ticker": "AMP",
-    "name": "AMP",
-    "exchange": "빗썸",
-    "entry_price": 0.6696,
-    "currency": "KRW",
-    "entry_time": "2026-08-26 00:00"
-  },
-  {
-    "ticker": "SOLV",
-    "name": "SOLV",
-    "exchange": "빗썸",
-    "entry_price": 3.877,
-    "currency": "KRW",
-    "entry_time": "2026-08-26 00:00"
-  },
-  {
-    "ticker": "CAMP",
-    "name": "CAMP",
-    "exchange": "빗썸",
-    "entry_price": 0.49,
-    "currency": "KRW",
-    "entry_time": "2026-08-26 00:00"
-  },
-  {
-    "ticker": "ESP",
-    "name": "에스프레소",
-    "exchange": "빗썸",
-    "entry_price": 131.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-26 00:00"
-  },
-  {
-    "ticker": "XPLA",
-    "name": "XPLA",
-    "exchange": "빗썸",
-    "entry_price": 5.937,
-    "currency": "KRW",
-    "entry_time": "2026-08-25 21:07",
-    "signal": "trend"
-  },
-  {
-    "ticker": "ZRC",
-    "name": "ZRC",
-    "exchange": "빗썸",
-    "entry_price": 1.5,
-    "currency": "KRW",
-    "entry_time": "2026-08-25 21:07",
-    "signal": "trend"
-  },
-  {
-    "ticker": "COTI",
-    "name": "COTI",
-    "exchange": "빗썸",
-    "entry_price": 18.52,
-    "currency": "KRW",
-    "entry_time": "2026-08-25 09:20",
-    "signal": "trend"
-  },
-  {
-    "ticker": "GRASS",
-    "name": "GRASS",
-    "exchange": "빗썸",
-    "entry_price": 494.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-25 09:20",
-    "signal": "trend"
-  },
-  {
-    "ticker": "STORJ",
-    "name": "STORJ",
-    "exchange": "바이낸스",
-    "entry_price": 0.0585,
-    "currency": "USD",
-    "entry_time": "2026-08-25 09:00"
-  },
-  {
-    "ticker": "ORBS",
-    "name": "오브스",
-    "exchange": "빗썸",
-    "entry_price": 8.099,
-    "currency": "KRW",
-    "entry_time": "2026-08-25 00:00"
-  },
-  {
-    "ticker": "OGN",
-    "name": "OGN",
-    "exchange": "빗썸",
-    "entry_price": 26.14,
-    "currency": "KRW",
-    "entry_time": "2026-08-25 00:00"
-  },
-  {
-    "ticker": "SIX",
-    "name": "SIX",
-    "exchange": "빗썸",
-    "entry_price": 6.28,
-    "currency": "KRW",
-    "entry_time": "2026-08-25 00:00"
-  },
-  {
-    "ticker": "ACH",
-    "name": "ACH",
-    "exchange": "빗썸",
-    "entry_price": 6.907,
-    "currency": "KRW",
-    "entry_time": "2026-08-25 00:00"
-  },
-  {
-    "ticker": "MAY",
-    "name": "MAY",
-    "exchange": "빗썸",
-    "entry_price": 4.85,
-    "currency": "KRW",
-    "entry_time": "2026-08-25 00:00"
   }
 ]
