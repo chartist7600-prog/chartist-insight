@@ -1,5 +1,41 @@
 [
   {
+    "ticker": "PYR",
+    "name": "PYR",
+    "exchange": "빗썸",
+    "entry_price": 71.71,
+    "currency": "KRW",
+    "entry_time": "2026-08-27 21:07",
+    "signal": "trend"
+  },
+  {
+    "ticker": "AVAIL",
+    "name": "AVAIL",
+    "exchange": "빗썸",
+    "entry_price": 3.028,
+    "currency": "KRW",
+    "entry_time": "2026-08-27 21:07",
+    "signal": "trend"
+  },
+  {
+    "ticker": "THQ",
+    "name": "THQ",
+    "exchange": "빗썸",
+    "entry_price": 15.77,
+    "currency": "KRW",
+    "entry_time": "2026-08-27 21:07",
+    "signal": "trend"
+  },
+  {
+    "ticker": "NVDAB",
+    "name": "NVDAB",
+    "exchange": "바이낸스",
+    "entry_price": 222.57,
+    "currency": "USDT",
+    "entry_time": "2026-08-27 21:07",
+    "signal": "trend"
+  },
+  {
     "ticker": "GHX",
     "name": "GHX",
     "exchange": "빗썸",
@@ -52,39 +88,5 @@
     "currency": "KRW",
     "entry_time": "2026-08-27 09:22",
     "signal": "trend"
-  },
-  {
-    "ticker": "CTR",
-    "name": "CTR",
-    "exchange": "빗썸",
-    "entry_price": 13.01,
-    "currency": "KRW",
-    "entry_time": "2026-08-27 09:22",
-    "signal": "trend"
-  },
-  {
-    "ticker": "LITEB",
-    "name": "LITEB",
-    "exchange": "바이낸스",
-    "entry_price": 965.83,
-    "currency": "USDT",
-    "entry_time": "2026-08-27 09:22",
-    "signal": "trend"
-  },
-  {
-    "ticker": "SKR",
-    "name": "시커",
-    "exchange": "업비트",
-    "entry_price": 11.9,
-    "currency": "KRW",
-    "entry_time": "2026-08-27 09:00"
-  },
-  {
-    "ticker": "KITE",
-    "name": "카이트",
-    "exchange": "업비트",
-    "entry_price": 165.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-27 09:00"
   }
 ]

@@ -46,5 +46,29 @@
     "time": "2026-08-27 09:00",
     "price": 965.83,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_PYR",
+    "time": "2026-08-27 21:00",
+    "price": 71.71,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_AVAIL",
+    "time": "2026-08-27 21:00",
+    "price": 3.028,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_THQ",
+    "time": "2026-08-27 21:00",
+    "price": 15.77,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_NVDAB",
+    "time": "2026-08-27 21:00",
+    "price": 222.57,
+    "sig_type": "trend"
   }
 ]
