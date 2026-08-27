@@ -1,44 +1,50 @@
 [
   {
-    "key": "빗썸_DAO",
-    "time": "2026-08-26 09:00",
-    "price": 32.59,
+    "key": "빗썸_GHX",
+    "time": "2026-08-27 09:00",
+    "price": 10.94,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_ROA",
-    "time": "2026-08-26 09:00",
-    "price": 4.878,
+    "key": "빗썸_REQ",
+    "time": "2026-08-27 09:00",
+    "price": 80.24,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_XTER",
-    "time": "2026-08-26 09:00",
+    "key": "빗썸_FANC",
+    "time": "2026-08-27 09:00",
+    "price": 0.6858,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_GRND",
+    "time": "2026-08-27 09:00",
+    "price": 14.41,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SWELL",
+    "time": "2026-08-27 09:00",
+    "price": 0.9662,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_BOB",
+    "time": "2026-08-27 09:00",
+    "price": 8.055,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_CTR",
+    "time": "2026-08-27 09:00",
     "price": 13.01,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_TEMCO",
-    "time": "2026-08-26 21:00",
-    "price": 0.316,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_AZIT",
-    "time": "2026-08-26 21:00",
-    "price": 2.255,
-    "sig_type": "trend_strong"
-  },
-  {
-    "key": "빗썸_BMT",
-    "time": "2026-08-26 21:00",
-    "price": 36.81,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_METAB",
-    "time": "2026-08-26 21:00",
-    "price": 578.61,
+    "key": "바이낸스_LITEB",
+    "time": "2026-08-27 09:00",
+    "price": 965.83,
     "sig_type": "trend"
   }
 ]

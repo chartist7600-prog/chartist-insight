@@ -5008,5 +5008,29 @@
     "time": "2026-08-27 00:00",
     "price": 13.01,
     "sig_type": "trend"
+  },
+  {
+    "key": "업비트_SKR",
+    "time": "2026-08-27 09:00",
+    "price": 11.9,
+    "sig_type": "trend"
+  },
+  {
+    "key": "업비트_KITE",
+    "time": "2026-08-27 09:00",
+    "price": 165.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "업비트_BABY",
+    "time": "2026-08-27 09:00",
+    "price": 17.7,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_HUMA",
+    "time": "2026-08-27 09:00",
+    "price": 0.02414,
+    "sig_type": "trend"
   }
 ]
