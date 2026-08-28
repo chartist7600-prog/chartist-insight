@@ -16,5 +16,17 @@
     "time": "2026-08-28 09:00",
     "price": 502.78,
     "sig_type": "trend_strong"
+  },
+  {
+    "key": "빗썸_BB",
+    "time": "2026-08-28 21:00",
+    "price": 17.64,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_HPP",
+    "time": "2026-08-28 21:00",
+    "price": 11.33,
+    "sig_type": "trend"
   }
 ]

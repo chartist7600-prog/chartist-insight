@@ -1,5 +1,23 @@
 [
   {
+    "ticker": "BB",
+    "name": "BB",
+    "exchange": "빗썸",
+    "entry_price": 17.64,
+    "currency": "KRW",
+    "entry_time": "2026-08-28 21:07",
+    "signal": "trend"
+  },
+  {
+    "ticker": "HPP",
+    "name": "HPP",
+    "exchange": "빗썸",
+    "entry_price": 11.33,
+    "currency": "KRW",
+    "entry_time": "2026-08-28 21:07",
+    "signal": "trend"
+  },
+  {
     "ticker": "CUDIS",
     "name": "CUDIS",
     "exchange": "빗썸",
@@ -63,22 +81,6 @@
     "name": "피르마체인",
     "exchange": "빗썸",
     "entry_price": 9.649,
-    "currency": "KRW",
-    "entry_time": "2026-08-28 00:00"
-  },
-  {
-    "ticker": "EGG",
-    "name": "EGG",
-    "exchange": "빗썸",
-    "entry_price": 0.6881,
-    "currency": "KRW",
-    "entry_time": "2026-08-28 00:00"
-  },
-  {
-    "ticker": "BFC",
-    "name": "BFC",
-    "exchange": "빗썸",
-    "entry_price": 14.87,
     "currency": "KRW",
     "entry_time": "2026-08-28 00:00"
   }
