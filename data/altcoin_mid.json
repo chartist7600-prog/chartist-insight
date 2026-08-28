@@ -5122,5 +5122,23 @@
     "time": "2026-08-28 09:00",
     "price": 9.69,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_BORA",
+    "time": "2026-08-29 00:00",
+    "price": 30.96,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_TOKAMAK",
+    "time": "2026-08-29 00:00",
+    "price": 442.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_PROMPT",
+    "time": "2026-08-29 00:00",
+    "price": 33.56,
+    "sig_type": "trend"
   }
 ]

@@ -1,5 +1,77 @@
 [
   {
+    "ticker": "BORA",
+    "name": "보라",
+    "exchange": "빗썸",
+    "entry_price": 30.96,
+    "currency": "KRW",
+    "entry_time": "2026-08-29 00:00"
+  },
+  {
+    "ticker": "DAO",
+    "name": "DAO",
+    "exchange": "빗썸",
+    "entry_price": 35.47,
+    "currency": "KRW",
+    "entry_time": "2026-08-29 00:00"
+  },
+  {
+    "ticker": "TEMCO",
+    "name": "TEMCO",
+    "exchange": "빗썸",
+    "entry_price": 0.3653,
+    "currency": "KRW",
+    "entry_time": "2026-08-29 00:00"
+  },
+  {
+    "ticker": "GRND",
+    "name": "GRND",
+    "exchange": "빗썸",
+    "entry_price": 15.46,
+    "currency": "KRW",
+    "entry_time": "2026-08-29 00:00"
+  },
+  {
+    "ticker": "TOKAMAK",
+    "name": "토카막네트워크",
+    "exchange": "빗썸",
+    "entry_price": 442.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-29 00:00"
+  },
+  {
+    "ticker": "STRAX",
+    "name": "저트라",
+    "exchange": "빗썸",
+    "entry_price": 13.48,
+    "currency": "KRW",
+    "entry_time": "2026-08-29 00:00"
+  },
+  {
+    "ticker": "BABY",
+    "name": "바빌론",
+    "exchange": "빗썸",
+    "entry_price": 17.51,
+    "currency": "KRW",
+    "entry_time": "2026-08-29 00:00"
+  },
+  {
+    "ticker": "PROMPT",
+    "name": "PROMPT",
+    "exchange": "빗썸",
+    "entry_price": 33.56,
+    "currency": "KRW",
+    "entry_time": "2026-08-29 00:00"
+  },
+  {
+    "ticker": "MANTRA",
+    "name": "만트라",
+    "exchange": "빗썸",
+    "entry_price": 11.31,
+    "currency": "KRW",
+    "entry_time": "2026-08-29 00:00"
+  },
+  {
     "ticker": "BB",
     "name": "BB",
     "exchange": "빗썸",
