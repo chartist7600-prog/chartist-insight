@@ -5104,5 +5104,23 @@
     "time": "2026-08-28 00:00",
     "price": 171.0,
     "sig_type": "trend"
+  },
+  {
+    "key": "업비트_HP",
+    "time": "2026-08-28 09:00",
+    "price": 10.2,
+    "sig_type": "trend"
+  },
+  {
+    "key": "업비트_ORDER",
+    "time": "2026-08-28 09:00",
+    "price": 47.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "업비트_FCT2",
+    "time": "2026-08-28 09:00",
+    "price": 9.69,
+    "sig_type": "trend"
   }
 ]
