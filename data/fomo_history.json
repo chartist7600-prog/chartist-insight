@@ -1,5 +1,21 @@
 [
   {
+    "ticker": "ZKP",
+    "name": "지케이패스",
+    "exchange": "빗썸",
+    "entry_price": 67.23,
+    "currency": "KRW",
+    "entry_time": "2026-08-30 00:00"
+  },
+  {
+    "ticker": "O",
+    "name": "오원익스체인지",
+    "exchange": "빗썸",
+    "entry_price": 740.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-30 00:00"
+  },
+  {
     "ticker": "DEXE",
     "name": "DEXE",
     "exchange": "빗썸",
