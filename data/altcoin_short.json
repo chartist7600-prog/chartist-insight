@@ -16,5 +16,11 @@
     "time": "2026-08-29 09:00",
     "price": 94.38,
     "sig_type": "trend_strong"
+  },
+  {
+    "key": "빗썸_DEXE",
+    "time": "2026-08-29 21:00",
+    "price": 3514.0,
+    "sig_type": "trend"
   }
 ]

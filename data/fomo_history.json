@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "DEXE",
+    "name": "DEXE",
+    "exchange": "빗썸",
+    "entry_price": 3514.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-29 21:06",
+    "signal": "trend"
+  },
+  {
     "ticker": "HFT",
     "name": "HFT",
     "exchange": "빗썸",
@@ -71,14 +80,6 @@
     "name": "저트라",
     "exchange": "빗썸",
     "entry_price": 13.48,
-    "currency": "KRW",
-    "entry_time": "2026-08-29 00:00"
-  },
-  {
-    "ticker": "BABY",
-    "name": "바빌론",
-    "exchange": "빗썸",
-    "entry_price": 17.51,
     "currency": "KRW",
     "entry_time": "2026-08-29 00:00"
   }
