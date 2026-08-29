@@ -1,32 +1,20 @@
 [
   {
-    "key": "빗썸_CUDIS",
-    "time": "2026-08-28 09:00",
-    "price": 4.74,
+    "key": "빗썸_HFT",
+    "time": "2026-08-29 09:00",
+    "price": 10.84,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_MOVR",
-    "time": "2026-08-28 09:00",
-    "price": 0.985,
+    "key": "빗썸_HEMI",
+    "time": "2026-08-29 09:00",
+    "price": 18.36,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_MSFTB",
-    "time": "2026-08-28 09:00",
-    "price": 502.78,
+    "key": "빗썸_EDEN",
+    "time": "2026-08-29 09:00",
+    "price": 94.38,
     "sig_type": "trend_strong"
-  },
-  {
-    "key": "빗썸_BB",
-    "time": "2026-08-28 21:00",
-    "price": 17.64,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_HPP",
-    "time": "2026-08-28 21:00",
-    "price": 11.33,
-    "sig_type": "trend"
   }
 ]

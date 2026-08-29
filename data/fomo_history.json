@@ -1,5 +1,32 @@
 [
   {
+    "ticker": "HFT",
+    "name": "HFT",
+    "exchange": "빗썸",
+    "entry_price": 10.84,
+    "currency": "KRW",
+    "entry_time": "2026-08-29 09:18",
+    "signal": "trend"
+  },
+  {
+    "ticker": "HEMI",
+    "name": "HEMI",
+    "exchange": "빗썸",
+    "entry_price": 18.36,
+    "currency": "KRW",
+    "entry_time": "2026-08-29 09:18",
+    "signal": "trend"
+  },
+  {
+    "ticker": "EDEN",
+    "name": "EDEN",
+    "exchange": "빗썸",
+    "entry_price": 94.38,
+    "currency": "KRW",
+    "entry_time": "2026-08-29 09:18",
+    "signal": "trend_strong"
+  },
+  {
     "ticker": "BORA",
     "name": "보라",
     "exchange": "빗썸",
@@ -54,106 +81,5 @@
     "entry_price": 17.51,
     "currency": "KRW",
     "entry_time": "2026-08-29 00:00"
-  },
-  {
-    "ticker": "PROMPT",
-    "name": "PROMPT",
-    "exchange": "빗썸",
-    "entry_price": 33.56,
-    "currency": "KRW",
-    "entry_time": "2026-08-29 00:00"
-  },
-  {
-    "ticker": "MANTRA",
-    "name": "만트라",
-    "exchange": "빗썸",
-    "entry_price": 11.31,
-    "currency": "KRW",
-    "entry_time": "2026-08-29 00:00"
-  },
-  {
-    "ticker": "BB",
-    "name": "BB",
-    "exchange": "빗썸",
-    "entry_price": 17.64,
-    "currency": "KRW",
-    "entry_time": "2026-08-28 21:07",
-    "signal": "trend"
-  },
-  {
-    "ticker": "HPP",
-    "name": "HPP",
-    "exchange": "빗썸",
-    "entry_price": 11.33,
-    "currency": "KRW",
-    "entry_time": "2026-08-28 21:07",
-    "signal": "trend"
-  },
-  {
-    "ticker": "CUDIS",
-    "name": "CUDIS",
-    "exchange": "빗썸",
-    "entry_price": 4.74,
-    "currency": "KRW",
-    "entry_time": "2026-08-28 09:21",
-    "signal": "trend"
-  },
-  {
-    "ticker": "MOVR",
-    "name": "MOVR",
-    "exchange": "바이낸스",
-    "entry_price": 0.985,
-    "currency": "USDT",
-    "entry_time": "2026-08-28 09:21",
-    "signal": "trend"
-  },
-  {
-    "ticker": "MSFTB",
-    "name": "MSFTB",
-    "exchange": "바이낸스",
-    "entry_price": 502.78,
-    "currency": "USDT",
-    "entry_time": "2026-08-28 09:21",
-    "signal": "trend_strong"
-  },
-  {
-    "ticker": "HP",
-    "name": "히포프로토콜",
-    "exchange": "업비트",
-    "entry_price": 10.2,
-    "currency": "KRW",
-    "entry_time": "2026-08-28 09:00"
-  },
-  {
-    "ticker": "ORDER",
-    "name": "오덜리",
-    "exchange": "업비트",
-    "entry_price": 47.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-28 09:00"
-  },
-  {
-    "ticker": "BMT",
-    "name": "BMT",
-    "exchange": "바이낸스",
-    "entry_price": 0.02704,
-    "currency": "USD",
-    "entry_time": "2026-08-28 09:00"
-  },
-  {
-    "ticker": "QKC",
-    "name": "QKC",
-    "exchange": "바이낸스",
-    "entry_price": 0.002199,
-    "currency": "USD",
-    "entry_time": "2026-08-28 09:00"
-  },
-  {
-    "ticker": "FCT2",
-    "name": "피르마체인",
-    "exchange": "빗썸",
-    "entry_price": 9.649,
-    "currency": "KRW",
-    "entry_time": "2026-08-28 00:00"
   }
 ]
