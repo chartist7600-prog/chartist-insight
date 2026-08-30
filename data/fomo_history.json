@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "FANC",
+    "name": "FANC",
+    "exchange": "빗썸",
+    "entry_price": 1.169,
+    "currency": "KRW",
+    "entry_time": "2026-08-30 21:05",
+    "signal": "trend"
+  },
+  {
     "ticker": "XAN",
     "name": "XAN",
     "exchange": "빗썸",
@@ -73,14 +82,6 @@
     "name": "보라",
     "exchange": "빗썸",
     "entry_price": 30.96,
-    "currency": "KRW",
-    "entry_time": "2026-08-29 00:00"
-  },
-  {
-    "ticker": "DAO",
-    "name": "DAO",
-    "exchange": "빗썸",
-    "entry_price": 35.47,
     "currency": "KRW",
     "entry_time": "2026-08-29 00:00"
   }
