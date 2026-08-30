@@ -1,5 +1,22 @@
 [
   {
+    "ticker": "XAN",
+    "name": "XAN",
+    "exchange": "빗썸",
+    "entry_price": 18.08,
+    "currency": "KRW",
+    "entry_time": "2026-08-30 09:10",
+    "signal": "trend"
+  },
+  {
+    "ticker": "MANTRA",
+    "name": "만트라",
+    "exchange": "업비트",
+    "entry_price": 7.09,
+    "currency": "KRW",
+    "entry_time": "2026-08-30 09:00"
+  },
+  {
     "ticker": "ZKP",
     "name": "지케이패스",
     "exchange": "빗썸",
@@ -64,38 +81,6 @@
     "name": "DAO",
     "exchange": "빗썸",
     "entry_price": 35.47,
-    "currency": "KRW",
-    "entry_time": "2026-08-29 00:00"
-  },
-  {
-    "ticker": "TEMCO",
-    "name": "TEMCO",
-    "exchange": "빗썸",
-    "entry_price": 0.3653,
-    "currency": "KRW",
-    "entry_time": "2026-08-29 00:00"
-  },
-  {
-    "ticker": "GRND",
-    "name": "GRND",
-    "exchange": "빗썸",
-    "entry_price": 15.46,
-    "currency": "KRW",
-    "entry_time": "2026-08-29 00:00"
-  },
-  {
-    "ticker": "TOKAMAK",
-    "name": "토카막네트워크",
-    "exchange": "빗썸",
-    "entry_price": 442.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-29 00:00"
-  },
-  {
-    "ticker": "STRAX",
-    "name": "저트라",
-    "exchange": "빗썸",
-    "entry_price": 13.48,
     "currency": "KRW",
     "entry_time": "2026-08-29 00:00"
   }

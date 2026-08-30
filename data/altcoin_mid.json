@@ -5146,5 +5146,11 @@
     "time": "2026-08-30 00:00",
     "price": 740.0,
     "sig_type": "trend"
+  },
+  {
+    "key": "업비트_MANTRA",
+    "time": "2026-08-30 09:00",
+    "price": 7.09,
+    "sig_type": "trend"
   }
 ]
