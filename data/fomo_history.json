@@ -1,5 +1,61 @@
 [
   {
+    "ticker": "SXT",
+    "name": "SXT",
+    "exchange": "빗썸",
+    "entry_price": 12.35,
+    "currency": "KRW",
+    "entry_time": "2026-08-31 00:00"
+  },
+  {
+    "ticker": "BARD",
+    "name": "롬바드",
+    "exchange": "빗썸",
+    "entry_price": 175.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-31 00:00"
+  },
+  {
+    "ticker": "VET",
+    "name": "VET",
+    "exchange": "빗썸",
+    "entry_price": 9.682,
+    "currency": "KRW",
+    "entry_time": "2026-08-31 00:00"
+  },
+  {
+    "ticker": "GHX",
+    "name": "GHX",
+    "exchange": "빗썸",
+    "entry_price": 11.84,
+    "currency": "KRW",
+    "entry_time": "2026-08-31 00:00"
+  },
+  {
+    "ticker": "ONG",
+    "name": "ONG",
+    "exchange": "빗썸",
+    "entry_price": 156.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-31 00:00"
+  },
+  {
+    "ticker": "NCT",
+    "name": "NCT",
+    "exchange": "빗썸",
+    "entry_price": 19.33,
+    "currency": "KRW",
+    "entry_time": "2026-08-31 00:00"
+  },
+  {
+    "ticker": "BTR",
+    "name": "BTR",
+    "exchange": "빗썸",
+    "entry_price": 228.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-31 00:00"
+  },
+  {
     "ticker": "FANC",
     "name": "FANC",
     "exchange": "빗썸",

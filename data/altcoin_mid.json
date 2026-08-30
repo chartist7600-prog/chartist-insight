@@ -5152,5 +5152,11 @@
     "time": "2026-08-30 09:00",
     "price": 7.09,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_BARD",
+    "time": "2026-08-31 00:00",
+    "price": 175.0,
+    "sig_type": "trend"
   }
 ]
