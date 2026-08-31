@@ -5164,5 +5164,23 @@
     "time": "2026-08-31 09:00",
     "price": 173.0,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_AVAIL",
+    "time": "2026-09-01 00:00",
+    "price": 3.421,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_HP",
+    "time": "2026-09-01 00:00",
+    "price": 10.09,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_0G",
+    "time": "2026-09-01 00:00",
+    "price": 281.0,
+    "sig_type": "trend"
   }
 ]

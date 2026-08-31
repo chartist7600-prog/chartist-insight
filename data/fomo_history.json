@@ -1,5 +1,37 @@
 [
   {
+    "ticker": "AVAIL",
+    "name": "AVAIL",
+    "exchange": "빗썸",
+    "entry_price": 3.421,
+    "currency": "KRW",
+    "entry_time": "2026-09-01 00:00"
+  },
+  {
+    "ticker": "HP",
+    "name": "히포프로토콜",
+    "exchange": "빗썸",
+    "entry_price": 10.09,
+    "currency": "KRW",
+    "entry_time": "2026-09-01 00:00"
+  },
+  {
+    "ticker": "0G",
+    "name": "제로지",
+    "exchange": "빗썸",
+    "entry_price": 281.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-01 00:00"
+  },
+  {
+    "ticker": "MIRA",
+    "name": "미라네트워크",
+    "exchange": "빗썸",
+    "entry_price": 63.47,
+    "currency": "KRW",
+    "entry_time": "2026-09-01 00:00"
+  },
+  {
     "ticker": "UNI",
     "name": "유니스왑",
     "exchange": "업비트",
