@@ -1,5 +1,21 @@
 [
   {
+    "ticker": "UNI",
+    "name": "유니스왑",
+    "exchange": "업비트",
+    "entry_price": 7140.0,
+    "currency": "KRW",
+    "entry_time": "2026-08-31 09:00"
+  },
+  {
+    "ticker": "SKR",
+    "name": "시커",
+    "exchange": "업비트",
+    "entry_price": 35.7,
+    "currency": "KRW",
+    "entry_time": "2026-08-31 09:00"
+  },
+  {
     "ticker": "SXT",
     "name": "SXT",
     "exchange": "빗썸",
