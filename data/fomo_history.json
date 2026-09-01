@@ -1,5 +1,46 @@
 [
   {
+    "ticker": "QCOMB",
+    "name": "QCOMB",
+    "exchange": "바이낸스",
+    "entry_price": 170.44,
+    "currency": "USDT",
+    "entry_time": "2026-09-01 09:08",
+    "signal": "trend"
+  },
+  {
+    "ticker": "TREE",
+    "name": "트리하우스",
+    "exchange": "업비트",
+    "entry_price": 55.8,
+    "currency": "KRW",
+    "entry_time": "2026-09-01 09:00"
+  },
+  {
+    "ticker": "BONK",
+    "name": "봉크",
+    "exchange": "업비트",
+    "entry_price": 0.00488,
+    "currency": "KRW",
+    "entry_time": "2026-09-01 09:00"
+  },
+  {
+    "ticker": "STORJ",
+    "name": "스토리지",
+    "exchange": "업비트",
+    "entry_price": 93.3,
+    "currency": "KRW",
+    "entry_time": "2026-09-01 09:00"
+  },
+  {
+    "ticker": "QCOMB",
+    "name": "QCOMB",
+    "exchange": "바이낸스",
+    "entry_price": 170.44,
+    "currency": "USD",
+    "entry_time": "2026-09-01 09:00"
+  },
+  {
     "ticker": "AVAIL",
     "name": "AVAIL",
     "exchange": "빗썸",
@@ -38,155 +79,5 @@
     "entry_price": 7140.0,
     "currency": "KRW",
     "entry_time": "2026-08-31 09:00"
-  },
-  {
-    "ticker": "SKR",
-    "name": "시커",
-    "exchange": "업비트",
-    "entry_price": 35.7,
-    "currency": "KRW",
-    "entry_time": "2026-08-31 09:00"
-  },
-  {
-    "ticker": "SXT",
-    "name": "SXT",
-    "exchange": "빗썸",
-    "entry_price": 12.35,
-    "currency": "KRW",
-    "entry_time": "2026-08-31 00:00"
-  },
-  {
-    "ticker": "BARD",
-    "name": "롬바드",
-    "exchange": "빗썸",
-    "entry_price": 175.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-31 00:00"
-  },
-  {
-    "ticker": "VET",
-    "name": "VET",
-    "exchange": "빗썸",
-    "entry_price": 9.682,
-    "currency": "KRW",
-    "entry_time": "2026-08-31 00:00"
-  },
-  {
-    "ticker": "GHX",
-    "name": "GHX",
-    "exchange": "빗썸",
-    "entry_price": 11.84,
-    "currency": "KRW",
-    "entry_time": "2026-08-31 00:00"
-  },
-  {
-    "ticker": "ONG",
-    "name": "ONG",
-    "exchange": "빗썸",
-    "entry_price": 156.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-31 00:00"
-  },
-  {
-    "ticker": "NCT",
-    "name": "NCT",
-    "exchange": "빗썸",
-    "entry_price": 19.33,
-    "currency": "KRW",
-    "entry_time": "2026-08-31 00:00"
-  },
-  {
-    "ticker": "BTR",
-    "name": "BTR",
-    "exchange": "빗썸",
-    "entry_price": 228.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-31 00:00"
-  },
-  {
-    "ticker": "FANC",
-    "name": "FANC",
-    "exchange": "빗썸",
-    "entry_price": 1.169,
-    "currency": "KRW",
-    "entry_time": "2026-08-30 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "XAN",
-    "name": "XAN",
-    "exchange": "빗썸",
-    "entry_price": 18.08,
-    "currency": "KRW",
-    "entry_time": "2026-08-30 09:10",
-    "signal": "trend"
-  },
-  {
-    "ticker": "MANTRA",
-    "name": "만트라",
-    "exchange": "업비트",
-    "entry_price": 7.09,
-    "currency": "KRW",
-    "entry_time": "2026-08-30 09:00"
-  },
-  {
-    "ticker": "ZKP",
-    "name": "지케이패스",
-    "exchange": "빗썸",
-    "entry_price": 67.23,
-    "currency": "KRW",
-    "entry_time": "2026-08-30 00:00"
-  },
-  {
-    "ticker": "O",
-    "name": "오원익스체인지",
-    "exchange": "빗썸",
-    "entry_price": 740.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-30 00:00"
-  },
-  {
-    "ticker": "DEXE",
-    "name": "DEXE",
-    "exchange": "빗썸",
-    "entry_price": 3514.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-29 21:06",
-    "signal": "trend"
-  },
-  {
-    "ticker": "HFT",
-    "name": "HFT",
-    "exchange": "빗썸",
-    "entry_price": 10.84,
-    "currency": "KRW",
-    "entry_time": "2026-08-29 09:18",
-    "signal": "trend"
-  },
-  {
-    "ticker": "HEMI",
-    "name": "HEMI",
-    "exchange": "빗썸",
-    "entry_price": 18.36,
-    "currency": "KRW",
-    "entry_time": "2026-08-29 09:18",
-    "signal": "trend"
-  },
-  {
-    "ticker": "EDEN",
-    "name": "EDEN",
-    "exchange": "빗썸",
-    "entry_price": 94.38,
-    "currency": "KRW",
-    "entry_time": "2026-08-29 09:18",
-    "signal": "trend_strong"
-  },
-  {
-    "ticker": "BORA",
-    "name": "보라",
-    "exchange": "빗썸",
-    "entry_price": 30.96,
-    "currency": "KRW",
-    "entry_time": "2026-08-29 00:00"
   }
 ]
