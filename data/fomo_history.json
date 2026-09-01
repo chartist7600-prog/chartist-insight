@@ -1,5 +1,13 @@
 [
   {
+    "ticker": "HPP",
+    "name": "HPP",
+    "exchange": "빗썸",
+    "entry_price": 10.44,
+    "currency": "KRW",
+    "entry_time": "2026-09-02 00:00"
+  },
+  {
     "ticker": "QCOMB",
     "name": "QCOMB",
     "exchange": "바이낸스",
