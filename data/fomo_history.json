@@ -1,5 +1,21 @@
 [
   {
+    "ticker": "BOUNTY",
+    "name": "체인바운티",
+    "exchange": "빗썸",
+    "entry_price": 17.05,
+    "currency": "KRW",
+    "entry_time": "2026-09-03 00:00"
+  },
+  {
+    "ticker": "SOPH",
+    "name": "소폰",
+    "exchange": "빗썸",
+    "entry_price": 6.106,
+    "currency": "KRW",
+    "entry_time": "2026-09-03 00:00"
+  },
+  {
     "ticker": "HPP",
     "name": "HPP",
     "exchange": "빗썸",

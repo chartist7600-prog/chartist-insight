@@ -5212,5 +5212,11 @@
     "time": "2026-09-02 00:00",
     "price": 10.44,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SOPH",
+    "time": "2026-09-03 00:00",
+    "price": 6.106,
+    "sig_type": "trend"
   }
 ]
