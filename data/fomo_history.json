@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "PUFFER",
+    "name": "PUFFER",
+    "exchange": "빗썸",
+    "entry_price": 23.9,
+    "currency": "KRW",
+    "entry_time": "2026-09-03 21:04",
+    "signal": "trend"
+  },
+  {
     "ticker": "POKT",
     "name": "포켓네트워크",
     "exchange": "업비트",
@@ -71,61 +80,5 @@
     "entry_price": 0.00488,
     "currency": "KRW",
     "entry_time": "2026-09-01 09:00"
-  },
-  {
-    "ticker": "STORJ",
-    "name": "스토리지",
-    "exchange": "업비트",
-    "entry_price": 93.3,
-    "currency": "KRW",
-    "entry_time": "2026-09-01 09:00"
-  },
-  {
-    "ticker": "QCOMB",
-    "name": "QCOMB",
-    "exchange": "바이낸스",
-    "entry_price": 170.44,
-    "currency": "USD",
-    "entry_time": "2026-09-01 09:00"
-  },
-  {
-    "ticker": "AVAIL",
-    "name": "AVAIL",
-    "exchange": "빗썸",
-    "entry_price": 3.421,
-    "currency": "KRW",
-    "entry_time": "2026-09-01 00:00"
-  },
-  {
-    "ticker": "HP",
-    "name": "히포프로토콜",
-    "exchange": "빗썸",
-    "entry_price": 10.09,
-    "currency": "KRW",
-    "entry_time": "2026-09-01 00:00"
-  },
-  {
-    "ticker": "0G",
-    "name": "제로지",
-    "exchange": "빗썸",
-    "entry_price": 281.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-01 00:00"
-  },
-  {
-    "ticker": "MIRA",
-    "name": "미라네트워크",
-    "exchange": "빗썸",
-    "entry_price": 63.47,
-    "currency": "KRW",
-    "entry_time": "2026-09-01 00:00"
-  },
-  {
-    "ticker": "UNI",
-    "name": "유니스왑",
-    "exchange": "업비트",
-    "entry_price": 7140.0,
-    "currency": "KRW",
-    "entry_time": "2026-08-31 09:00"
   }
 ]
