@@ -1,5 +1,29 @@
 [
   {
+    "ticker": "POKT",
+    "name": "포켓네트워크",
+    "exchange": "업비트",
+    "entry_price": 10.8,
+    "currency": "KRW",
+    "entry_time": "2026-09-03 09:00"
+  },
+  {
+    "ticker": "JST",
+    "name": "JST",
+    "exchange": "바이낸스",
+    "entry_price": 0.10768,
+    "currency": "USD",
+    "entry_time": "2026-09-03 09:00"
+  },
+  {
+    "ticker": "METAB",
+    "name": "METAB",
+    "exchange": "바이낸스",
+    "entry_price": 597.32,
+    "currency": "USD",
+    "entry_time": "2026-09-03 09:00"
+  },
+  {
     "ticker": "BOUNTY",
     "name": "체인바운티",
     "exchange": "빗썸",

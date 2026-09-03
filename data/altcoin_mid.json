@@ -5218,5 +5218,23 @@
     "time": "2026-09-03 00:00",
     "price": 6.106,
     "sig_type": "trend"
+  },
+  {
+    "key": "업비트_POKT",
+    "time": "2026-09-03 09:00",
+    "price": 10.8,
+    "sig_type": "trend"
+  },
+  {
+    "key": "업비트_SOPH",
+    "time": "2026-09-03 09:00",
+    "price": 6.23,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_METAB",
+    "time": "2026-09-03 09:00",
+    "price": 597.32,
+    "sig_type": "trend"
   }
 ]
