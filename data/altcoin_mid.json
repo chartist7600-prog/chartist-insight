@@ -5236,5 +5236,23 @@
     "time": "2026-09-03 09:00",
     "price": 597.32,
     "sig_type": "trend"
+  },
+  {
+    "key": "업비트_CBK",
+    "time": "2026-09-04 09:00",
+    "price": 249.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "업비트_QKC",
+    "time": "2026-09-04 09:00",
+    "price": 3.12,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_GMEB",
+    "time": "2026-09-04 09:00",
+    "price": 19.28,
+    "sig_type": "trend"
   }
 ]

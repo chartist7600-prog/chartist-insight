@@ -1,5 +1,55 @@
 [
   {
+    "ticker": "NIGHT",
+    "name": "NIGHT",
+    "exchange": "바이낸스",
+    "entry_price": 0.02164,
+    "currency": "USDT",
+    "entry_time": "2026-09-04 09:07",
+    "signal": "trend"
+  },
+  {
+    "ticker": "SPYB",
+    "name": "SPYB",
+    "exchange": "바이낸스",
+    "entry_price": 772.19,
+    "currency": "USDT",
+    "entry_time": "2026-09-04 09:07",
+    "signal": "trend"
+  },
+  {
+    "ticker": "CBK",
+    "name": "코박토큰",
+    "exchange": "업비트",
+    "entry_price": 249.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-04 09:00"
+  },
+  {
+    "ticker": "QKC",
+    "name": "쿼크체인",
+    "exchange": "업비트",
+    "entry_price": 3.12,
+    "currency": "KRW",
+    "entry_time": "2026-09-04 09:00"
+  },
+  {
+    "ticker": "GMEB",
+    "name": "GMEB",
+    "exchange": "바이낸스",
+    "entry_price": 19.28,
+    "currency": "USD",
+    "entry_time": "2026-09-04 09:00"
+  },
+  {
+    "ticker": "NVDAB",
+    "name": "NVDAB",
+    "exchange": "바이낸스",
+    "entry_price": 229.72,
+    "currency": "USD",
+    "entry_time": "2026-09-04 09:00"
+  },
+  {
     "ticker": "PUFFER",
     "name": "PUFFER",
     "exchange": "빗썸",
@@ -31,54 +81,5 @@
     "entry_price": 597.32,
     "currency": "USD",
     "entry_time": "2026-09-03 09:00"
-  },
-  {
-    "ticker": "BOUNTY",
-    "name": "체인바운티",
-    "exchange": "빗썸",
-    "entry_price": 17.05,
-    "currency": "KRW",
-    "entry_time": "2026-09-03 00:00"
-  },
-  {
-    "ticker": "SOPH",
-    "name": "소폰",
-    "exchange": "빗썸",
-    "entry_price": 6.106,
-    "currency": "KRW",
-    "entry_time": "2026-09-03 00:00"
-  },
-  {
-    "ticker": "HPP",
-    "name": "HPP",
-    "exchange": "빗썸",
-    "entry_price": 10.44,
-    "currency": "KRW",
-    "entry_time": "2026-09-02 00:00"
-  },
-  {
-    "ticker": "QCOMB",
-    "name": "QCOMB",
-    "exchange": "바이낸스",
-    "entry_price": 170.44,
-    "currency": "USDT",
-    "entry_time": "2026-09-01 09:08",
-    "signal": "trend"
-  },
-  {
-    "ticker": "TREE",
-    "name": "트리하우스",
-    "exchange": "업비트",
-    "entry_price": 55.8,
-    "currency": "KRW",
-    "entry_time": "2026-09-01 09:00"
-  },
-  {
-    "ticker": "BONK",
-    "name": "봉크",
-    "exchange": "업비트",
-    "entry_price": 0.00488,
-    "currency": "KRW",
-    "entry_time": "2026-09-01 09:00"
   }
 ]
