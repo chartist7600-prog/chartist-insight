@@ -10,5 +10,11 @@
     "time": "2026-09-04 09:00",
     "price": 772.19,
     "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_CBRSB",
+    "time": "2026-09-04 21:00",
+    "price": 192.13,
+    "sig_type": "trend"
   }
 ]

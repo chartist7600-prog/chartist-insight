@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "CBRSB",
+    "name": "CBRSB",
+    "exchange": "바이낸스",
+    "entry_price": 192.13,
+    "currency": "USDT",
+    "entry_time": "2026-09-04 21:04",
+    "signal": "trend"
+  },
+  {
     "ticker": "NIGHT",
     "name": "NIGHT",
     "exchange": "바이낸스",
@@ -71,14 +80,6 @@
     "name": "JST",
     "exchange": "바이낸스",
     "entry_price": 0.10768,
-    "currency": "USD",
-    "entry_time": "2026-09-03 09:00"
-  },
-  {
-    "ticker": "METAB",
-    "name": "METAB",
-    "exchange": "바이낸스",
-    "entry_price": 597.32,
     "currency": "USD",
     "entry_time": "2026-09-03 09:00"
   }
