@@ -1,20 +1,38 @@
 [
   {
-    "key": "바이낸스_NIGHT",
-    "time": "2026-09-04 09:00",
-    "price": 0.02164,
+    "key": "바이낸스_DUSK",
+    "time": "2026-09-05 09:00",
+    "price": 0.0773,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_SPYB",
-    "time": "2026-09-04 09:00",
-    "price": 772.19,
+    "key": "바이낸스_BROCCOLI714",
+    "time": "2026-09-05 09:00",
+    "price": 0.01984,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_CBRSB",
-    "time": "2026-09-04 21:00",
-    "price": 192.13,
+    "key": "바이낸스_MUB",
+    "time": "2026-09-05 09:00",
+    "price": 1013.98,
+    "sig_type": "trend_strong"
+  },
+  {
+    "key": "바이낸스_SNDKB",
+    "time": "2026-09-05 09:00",
+    "price": 1732.33,
+    "sig_type": "trend_strong"
+  },
+  {
+    "key": "바이낸스_INTCB",
+    "time": "2026-09-05 09:00",
+    "price": 95.81,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_NBISB",
+    "time": "2026-09-05 09:00",
+    "price": 225.12,
     "sig_type": "trend"
   }
 ]

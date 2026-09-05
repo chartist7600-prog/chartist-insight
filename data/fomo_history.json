@@ -1,5 +1,91 @@
 [
   {
+    "ticker": "DUSK",
+    "name": "DUSK",
+    "exchange": "바이낸스",
+    "entry_price": 0.0773,
+    "currency": "USDT",
+    "entry_time": "2026-09-05 09:07",
+    "signal": "trend"
+  },
+  {
+    "ticker": "BROCCOLI714",
+    "name": "BROCCOLI714",
+    "exchange": "바이낸스",
+    "entry_price": 0.01984,
+    "currency": "USDT",
+    "entry_time": "2026-09-05 09:07",
+    "signal": "trend"
+  },
+  {
+    "ticker": "MUB",
+    "name": "MUB",
+    "exchange": "바이낸스",
+    "entry_price": 1013.98,
+    "currency": "USDT",
+    "entry_time": "2026-09-05 09:07",
+    "signal": "trend_strong"
+  },
+  {
+    "ticker": "SNDKB",
+    "name": "SNDKB",
+    "exchange": "바이낸스",
+    "entry_price": 1732.33,
+    "currency": "USDT",
+    "entry_time": "2026-09-05 09:07",
+    "signal": "trend_strong"
+  },
+  {
+    "ticker": "INTCB",
+    "name": "INTCB",
+    "exchange": "바이낸스",
+    "entry_price": 95.81,
+    "currency": "USDT",
+    "entry_time": "2026-09-05 09:07",
+    "signal": "trend"
+  },
+  {
+    "ticker": "NBISB",
+    "name": "NBISB",
+    "exchange": "바이낸스",
+    "entry_price": 225.12,
+    "currency": "USDT",
+    "entry_time": "2026-09-05 09:07",
+    "signal": "trend"
+  },
+  {
+    "ticker": "QKC",
+    "name": "쿼크체인",
+    "exchange": "업비트",
+    "entry_price": 3.12,
+    "currency": "KRW",
+    "entry_time": "2026-09-05 09:00"
+  },
+  {
+    "ticker": "LA",
+    "name": "LA",
+    "exchange": "바이낸스",
+    "entry_price": 0.0671,
+    "currency": "USD",
+    "entry_time": "2026-09-05 09:00"
+  },
+  {
+    "ticker": "SKHYB",
+    "name": "SKHYB",
+    "exchange": "바이낸스",
+    "entry_price": 175.05,
+    "currency": "USD",
+    "entry_time": "2026-09-05 09:00"
+  },
+  {
+    "ticker": "IRENB",
+    "name": "IRENB",
+    "exchange": "바이낸스",
+    "entry_price": 44.37,
+    "currency": "USD",
+    "entry_time": "2026-09-05 09:00"
+  },
+  {
     "ticker": "CBRSB",
     "name": "CBRSB",
     "exchange": "바이낸스",
@@ -33,54 +119,5 @@
     "entry_price": 249.0,
     "currency": "KRW",
     "entry_time": "2026-09-04 09:00"
-  },
-  {
-    "ticker": "QKC",
-    "name": "쿼크체인",
-    "exchange": "업비트",
-    "entry_price": 3.12,
-    "currency": "KRW",
-    "entry_time": "2026-09-04 09:00"
-  },
-  {
-    "ticker": "GMEB",
-    "name": "GMEB",
-    "exchange": "바이낸스",
-    "entry_price": 19.28,
-    "currency": "USD",
-    "entry_time": "2026-09-04 09:00"
-  },
-  {
-    "ticker": "NVDAB",
-    "name": "NVDAB",
-    "exchange": "바이낸스",
-    "entry_price": 229.72,
-    "currency": "USD",
-    "entry_time": "2026-09-04 09:00"
-  },
-  {
-    "ticker": "PUFFER",
-    "name": "PUFFER",
-    "exchange": "빗썸",
-    "entry_price": 23.9,
-    "currency": "KRW",
-    "entry_time": "2026-09-03 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "POKT",
-    "name": "포켓네트워크",
-    "exchange": "업비트",
-    "entry_price": 10.8,
-    "currency": "KRW",
-    "entry_time": "2026-09-03 09:00"
-  },
-  {
-    "ticker": "JST",
-    "name": "JST",
-    "exchange": "바이낸스",
-    "entry_price": 0.10768,
-    "currency": "USD",
-    "entry_time": "2026-09-03 09:00"
   }
 ]
