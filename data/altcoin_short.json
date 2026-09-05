@@ -34,5 +34,35 @@
     "time": "2026-09-05 09:00",
     "price": 225.12,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_ENJ",
+    "time": "2026-09-05 21:00",
+    "price": 37.74,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_WIN",
+    "time": "2026-09-05 21:00",
+    "price": 3.5e-05,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_NOM",
+    "time": "2026-09-05 21:00",
+    "price": 0.00189,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_EWYB",
+    "time": "2026-09-05 21:00",
+    "price": 187.92,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_SKHYB",
+    "time": "2026-09-05 21:00",
+    "price": 176.07,
+    "sig_type": "trend_strong"
   }
 ]

@@ -1,5 +1,50 @@
 [
   {
+    "ticker": "ENJ",
+    "name": "ENJ",
+    "exchange": "빗썸",
+    "entry_price": 37.74,
+    "currency": "KRW",
+    "entry_time": "2026-09-05 21:04",
+    "signal": "trend"
+  },
+  {
+    "ticker": "WIN",
+    "name": "WIN",
+    "exchange": "바이낸스",
+    "entry_price": 3.5e-05,
+    "currency": "USDT",
+    "entry_time": "2026-09-05 21:04",
+    "signal": "trend"
+  },
+  {
+    "ticker": "NOM",
+    "name": "NOM",
+    "exchange": "바이낸스",
+    "entry_price": 0.00189,
+    "currency": "USDT",
+    "entry_time": "2026-09-05 21:04",
+    "signal": "trend"
+  },
+  {
+    "ticker": "EWYB",
+    "name": "EWYB",
+    "exchange": "바이낸스",
+    "entry_price": 187.92,
+    "currency": "USDT",
+    "entry_time": "2026-09-05 21:04",
+    "signal": "trend"
+  },
+  {
+    "ticker": "SKHYB",
+    "name": "SKHYB",
+    "exchange": "바이낸스",
+    "entry_price": 176.07,
+    "currency": "USDT",
+    "entry_time": "2026-09-05 21:04",
+    "signal": "trend_strong"
+  },
+  {
     "ticker": "DUSK",
     "name": "DUSK",
     "exchange": "바이낸스",
@@ -43,81 +88,5 @@
     "currency": "USDT",
     "entry_time": "2026-09-05 09:07",
     "signal": "trend"
-  },
-  {
-    "ticker": "NBISB",
-    "name": "NBISB",
-    "exchange": "바이낸스",
-    "entry_price": 225.12,
-    "currency": "USDT",
-    "entry_time": "2026-09-05 09:07",
-    "signal": "trend"
-  },
-  {
-    "ticker": "QKC",
-    "name": "쿼크체인",
-    "exchange": "업비트",
-    "entry_price": 3.12,
-    "currency": "KRW",
-    "entry_time": "2026-09-05 09:00"
-  },
-  {
-    "ticker": "LA",
-    "name": "LA",
-    "exchange": "바이낸스",
-    "entry_price": 0.0671,
-    "currency": "USD",
-    "entry_time": "2026-09-05 09:00"
-  },
-  {
-    "ticker": "SKHYB",
-    "name": "SKHYB",
-    "exchange": "바이낸스",
-    "entry_price": 175.05,
-    "currency": "USD",
-    "entry_time": "2026-09-05 09:00"
-  },
-  {
-    "ticker": "IRENB",
-    "name": "IRENB",
-    "exchange": "바이낸스",
-    "entry_price": 44.37,
-    "currency": "USD",
-    "entry_time": "2026-09-05 09:00"
-  },
-  {
-    "ticker": "CBRSB",
-    "name": "CBRSB",
-    "exchange": "바이낸스",
-    "entry_price": 192.13,
-    "currency": "USDT",
-    "entry_time": "2026-09-04 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "NIGHT",
-    "name": "NIGHT",
-    "exchange": "바이낸스",
-    "entry_price": 0.02164,
-    "currency": "USDT",
-    "entry_time": "2026-09-04 09:07",
-    "signal": "trend"
-  },
-  {
-    "ticker": "SPYB",
-    "name": "SPYB",
-    "exchange": "바이낸스",
-    "entry_price": 772.19,
-    "currency": "USDT",
-    "entry_time": "2026-09-04 09:07",
-    "signal": "trend"
-  },
-  {
-    "ticker": "CBK",
-    "name": "코박토큰",
-    "exchange": "업비트",
-    "entry_price": 249.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-04 09:00"
   }
 ]
