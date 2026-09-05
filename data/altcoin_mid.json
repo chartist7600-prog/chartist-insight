@@ -5272,5 +5272,23 @@
     "time": "2026-09-05 09:00",
     "price": 44.37,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_IOST",
+    "time": "2026-09-06 00:00",
+    "price": 0.8595,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SNX",
+    "time": "2026-09-06 00:00",
+    "price": 352.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_JST",
+    "time": "2026-09-06 00:00",
+    "price": 148.0,
+    "sig_type": "trend"
   }
 ]

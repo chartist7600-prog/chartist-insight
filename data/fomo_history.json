@@ -1,5 +1,45 @@
 [
   {
+    "ticker": "IOST",
+    "name": "아이오에스티",
+    "exchange": "빗썸",
+    "entry_price": 0.8595,
+    "currency": "KRW",
+    "entry_time": "2026-09-06 00:00"
+  },
+  {
+    "ticker": "SNX",
+    "name": "SNX",
+    "exchange": "빗썸",
+    "entry_price": 352.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-06 00:00"
+  },
+  {
+    "ticker": "JST",
+    "name": "저스트",
+    "exchange": "빗썸",
+    "entry_price": 148.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-06 00:00"
+  },
+  {
+    "ticker": "STORJ",
+    "name": "스토리지",
+    "exchange": "빗썸",
+    "entry_price": 109.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-06 00:00"
+  },
+  {
+    "ticker": "ELSA",
+    "name": "헤이엘사",
+    "exchange": "빗썸",
+    "entry_price": 72.14,
+    "currency": "KRW",
+    "entry_time": "2026-09-06 00:00"
+  },
+  {
     "ticker": "ENJ",
     "name": "ENJ",
     "exchange": "빗썸",
