@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06 23:25:10",
+  "updated_at": "2026-09-06 23:55:08",
   "total_coins": 236,
   "coins": {
     "0G": {
@@ -95,7 +95,7 @@
     },
     "API3": {
       "name_kr": "API3",
-      "1h": "sell",
+      "1h": "buy",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -249,7 +249,7 @@
     },
     "BIO": {
       "name_kr": "BIO",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "12h": "sell",
       "1d": "buy"
@@ -389,7 +389,7 @@
     },
     "CVC": {
       "name_kr": "CVC",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -536,7 +536,7 @@
     },
     "FIL": {
       "name_kr": "파일코인",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -746,7 +746,7 @@
     },
     "KERNEL": {
       "name_kr": "KERNEL",
-      "1h": "sell",
+      "1h": "buy",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -802,7 +802,7 @@
     },
     "LIT": {
       "name_kr": "LIT",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -879,7 +879,7 @@
     },
     "MIRA": {
       "name_kr": "MIRA",
-      "1h": "sell",
+      "1h": "buy",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -963,7 +963,7 @@
     },
     "O": {
       "name_kr": "O",
-      "1h": "sell",
+      "1h": "buy",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -984,7 +984,7 @@
     },
     "ONT": {
       "name_kr": "ONT",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
