@@ -1,0 +1,705 @@
+{
+  "updated_at": "2026-09-06 22:53:43",
+  "coins": {
+    "1INCH": {
+      "name_kr": "1인치네트워크",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "2Z": {
+      "name_kr": "더블제로",
+      "1h": "sell",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "sell"
+    },
+    "A": {
+      "name_kr": "볼타",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "AAVE": {
+      "name_kr": "에이브",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ADA": {
+      "name_kr": "에이다",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "AERO": {
+      "name_kr": "에어로드롬파이낸스",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ALGO": {
+      "name_kr": "알고랜드",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "APT": {
+      "name_kr": "앱토스",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "sell"
+    },
+    "ARB": {
+      "name_kr": "아비트럼",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ARKM": {
+      "name_kr": "아캄",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ATOM": {
+      "name_kr": "코스모스",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "AVAX": {
+      "name_kr": "아발란체",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "AWE": {
+      "name_kr": "에이더블유이",
+      "1h": "sell",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "AXS": {
+      "name_kr": "엑시인피니티",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "buy"
+    },
+    "BAT": {
+      "name_kr": "베이직어텐션토큰",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "BCH": {
+      "name_kr": "비트코인캐시",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "BONK": {
+      "name_kr": "봉크",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "BTC": {
+      "name_kr": "비트코인",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "CFG": {
+      "name_kr": "센트리퓨즈",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "sell",
+      "1d": "sell"
+    },
+    "CFX": {
+      "name_kr": "콘플럭스",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "buy"
+    },
+    "CHIP": {
+      "name_kr": "유에스디에이아이",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "CHZ": {
+      "name_kr": "칠리즈",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "COMP": {
+      "name_kr": "컴파운드",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "COW": {
+      "name_kr": "카우프로토콜",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "buy"
+    },
+    "DOGE": {
+      "name_kr": "도지코인",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "DOT": {
+      "name_kr": "폴카닷",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "EGLD": {
+      "name_kr": "멀티버스엑스",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ENA": {
+      "name_kr": "에테나",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ENS": {
+      "name_kr": "이더리움네임서비스",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ETC": {
+      "name_kr": "이더리움클래식",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ETH": {
+      "name_kr": "이더리움",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ETHFI": {
+      "name_kr": "이더파이",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "FF": {
+      "name_kr": "팔콘파이낸스",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "FIL": {
+      "name_kr": "파일코인",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "GAS": {
+      "name_kr": "가스",
+      "1h": "sell",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "GLM": {
+      "name_kr": "골렘",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "GRT": {
+      "name_kr": "더그래프",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "HBAR": {
+      "name_kr": "헤데라",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ICP": {
+      "name_kr": "인터넷컴퓨터",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "IMX": {
+      "name_kr": "이뮤터블엑스",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "INJ": {
+      "name_kr": "인젝티브",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "buy"
+    },
+    "IOTA": {
+      "name_kr": "아이오타",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "buy"
+    },
+    "JST": {
+      "name_kr": "저스트",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "JTO": {
+      "name_kr": "지토",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "sell"
+    },
+    "JUP": {
+      "name_kr": "주피터",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "KAITO": {
+      "name_kr": "카이토",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "sell",
+      "1d": "sell"
+    },
+    "KITE": {
+      "name_kr": "카이트",
+      "1h": "sell",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "KMNO": {
+      "name_kr": "카미노파이낸스",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "buy"
+    },
+    "LINK": {
+      "name_kr": "체인링크",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "LPT": {
+      "name_kr": "라이브피어",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "MANA": {
+      "name_kr": "디센트럴랜드",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "MORPHO": {
+      "name_kr": "모포",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "NEAR": {
+      "name_kr": "니어프로토콜",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "NEO": {
+      "name_kr": "네오",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "NXPC": {
+      "name_kr": "넥스페이스",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ONDO": {
+      "name_kr": "온도파이낸스",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "OP": {
+      "name_kr": "옵티미즘",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "sell"
+    },
+    "ORCA": {
+      "name_kr": "오르카",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "PENDLE": {
+      "name_kr": "펜들",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "PENGU": {
+      "name_kr": "퍼지펭귄",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "PEPE": {
+      "name_kr": "페페",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "PLUME": {
+      "name_kr": "플룸",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "POL": {
+      "name_kr": "폴리곤에코시스템토큰",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "sell"
+    },
+    "PUMP": {
+      "name_kr": "펌프펀",
+      "1h": "sell",
+      "4h": "sell",
+      "12h": "sell",
+      "1d": "buy"
+    },
+    "PYTH": {
+      "name_kr": "피스네트워크",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "QTUM": {
+      "name_kr": "퀀텀",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "RAY": {
+      "name_kr": "레이디움",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "RE": {
+      "name_kr": "리",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "RENDER": {
+      "name_kr": "렌더토큰",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "SAND": {
+      "name_kr": "샌드박스",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "sell"
+    },
+    "SEI": {
+      "name_kr": "세이",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "SENT": {
+      "name_kr": "센티언트",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "sell"
+    },
+    "SHIB": {
+      "name_kr": "시바이누",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "SKY": {
+      "name_kr": "스카이프로토콜",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "SOL": {
+      "name_kr": "솔라나",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "STX": {
+      "name_kr": "스택스",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "SUI": {
+      "name_kr": "수이",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "buy"
+    },
+    "SUN": {
+      "name_kr": "썬",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "sell"
+    },
+    "SUPER": {
+      "name_kr": "슈퍼버스",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "SYRUP": {
+      "name_kr": "메이플파이낸스",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "TAO": {
+      "name_kr": "비트텐서",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "THETA": {
+      "name_kr": "세타토큰",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "TIA": {
+      "name_kr": "셀레스티아",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "TRUMP": {
+      "name_kr": "오피셜트럼프",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "TRX": {
+      "name_kr": "트론",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "sell"
+    },
+    "UNI": {
+      "name_kr": "유니스왑",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "VET": {
+      "name_kr": "비체인",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "VIRTUAL": {
+      "name_kr": "버추얼프로토콜",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "WAL": {
+      "name_kr": "월러스",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "WIF": {
+      "name_kr": "도그위프햇",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "WLD": {
+      "name_kr": "월드코인",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "WLFI": {
+      "name_kr": "월드리버티파이낸셜",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "XEC": {
+      "name_kr": "이캐시",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "XLM": {
+      "name_kr": "스텔라루멘",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "XPL": {
+      "name_kr": "플라즈마",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "XRP": {
+      "name_kr": "엑스알피",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "XTZ": {
+      "name_kr": "테조스",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ZK": {
+      "name_kr": "지케이싱크",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ZRO": {
+      "name_kr": "레이어제로",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ZRX": {
+      "name_kr": "제로엑스",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    }
+  }
+}
