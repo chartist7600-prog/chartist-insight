@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 00:25:07",
+  "updated_at": "2026-09-07 00:55:09",
   "total_coins": 236,
   "coins": {
     "0G": {
@@ -445,7 +445,7 @@
     },
     "EGLD": {
       "name_kr": "멀티버스엑스",
-      "1h": "sell",
+      "1h": "buy",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -963,7 +963,7 @@
     },
     "O": {
       "name_kr": "O",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -1229,7 +1229,7 @@
     },
     "SKR": {
       "name_kr": "SKR",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
