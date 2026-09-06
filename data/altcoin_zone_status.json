@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 04:25:07",
+  "updated_at": "2026-09-07 04:55:08",
   "total_coins": 236,
   "coins": {
     "0G": {
@@ -1427,7 +1427,7 @@
       "name_kr": "트론",
       "1h": "buy",
       "4h": "buy",
-      "12h": "buy",
+      "12h": "sell",
       "1d": "sell"
     },
     "UNI": {
@@ -1635,7 +1635,7 @@
     },
     "ZORA": {
       "name_kr": "ZORA",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
