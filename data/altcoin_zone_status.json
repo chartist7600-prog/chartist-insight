@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 02:25:06",
+  "updated_at": "2026-09-07 02:55:09",
   "total_coins": 236,
   "coins": {
     "0G": {
@@ -515,7 +515,7 @@
     },
     "EUL": {
       "name_kr": "EUL",
-      "1h": "sell",
+      "1h": "buy",
       "4h": "buy",
       "12h": "buy",
       "1d": "sell"
@@ -963,7 +963,7 @@
     },
     "O": {
       "name_kr": "O",
-      "1h": "sell",
+      "1h": "buy",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -1103,7 +1103,7 @@
     },
     "PROVE": {
       "name_kr": "PROVE",
-      "1h": "sell",
+      "1h": "buy",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -1355,7 +1355,7 @@
     },
     "SYRUP": {
       "name_kr": "메이플파이낸스",
-      "1h": "sell",
+      "1h": "buy",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
