@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 03:55:07",
+  "updated_at": "2026-09-07 04:25:07",
   "total_coins": 236,
   "coins": {
     "0G": {
@@ -32,7 +32,7 @@
     },
     "AAVE": {
       "name_kr": "에이브",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -655,7 +655,7 @@
     },
     "IMX": {
       "name_kr": "이뮤터블엑스",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -1278,7 +1278,7 @@
     },
     "SOON": {
       "name_kr": "SOON",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "sell",
       "12h": "sell",
       "1d": "sell"
