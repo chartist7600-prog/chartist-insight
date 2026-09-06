@@ -3017,8 +3017,9 @@ function serviceNavClick(tab) {
     <div id="altcoin-search-modal-body">
       <input id="zoneSearchInput" type="text" placeholder="코인 이름 또는 티커 검색 (예: 이더리움, ETH)"
              style="width:100%;padding:10px 14px;border-radius:8px;border:1px solid #333;background:#111;color:#fff;font-size:15px;box-sizing:border-box;margin-top:8px;">
+      <div id="zoneCoinCount" style="margin-top:10px;color:#999;font-size:13px;text-align:center;"></div>
       <div id="zoneResultList" style="margin-top:12px;max-height:320px;overflow-y:auto;text-align:left;"></div>
-      <div id="zoneStatus" style="margin-top:8px;color:#666;font-size:11px;"></div>
+      <div id="zoneStatus" style="margin-top:6px;color:#999;font-size:13px;text-align:center;"></div>
     </div>
     <button class="member-modal-close" onclick="document.getElementById('altcoin-search-modal').classList.remove('show')">닫기</button>
   </div>
@@ -3128,6 +3129,9 @@ function loadZoneData(){
     .then(function(res){ if(!res.ok) throw new Error('서버 응답 오류: '+res.status); return res.json(); })
     .then(function(json){
       zoneData=json;
+      var countEl=document.getElementById('zoneCoinCount');
+      var coinCount=Object.keys(json.coins||{}).length;
+      if(countEl) countEl.textContent='업비트 · 빗썸 · 바이낸스 공통 상장 '+coinCount+'개 코인 (5분마다 갱신)';
       if(statusEl) statusEl.textContent='기준 시각: '+json.updated_at;
       var inputEl=document.getElementById('zoneSearchInput');
       searchZone(inputEl ? inputEl.value : '');
