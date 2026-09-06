@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 06:25:07",
+  "updated_at": "2026-09-07 06:55:06",
   "total_coins": 236,
   "coins": {
     "0G": {
@@ -438,7 +438,7 @@
     },
     "EDGE": {
       "name_kr": "EDGE",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -732,7 +732,7 @@
     },
     "KAT": {
       "name_kr": "KAT",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -1454,7 +1454,7 @@
     "VIRTUAL": {
       "name_kr": "버추얼프로토콜",
       "1h": "buy",
-      "4h": "sell",
+      "4h": "buy",
       "12h": "buy",
       "1d": "buy"
     },
@@ -1586,7 +1586,7 @@
     },
     "ZAMA": {
       "name_kr": "ZAMA",
-      "1h": "sell",
+      "1h": "buy",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
