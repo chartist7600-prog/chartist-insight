@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-09-06 22:53:43",
+  "updated_at": "2026-09-06 23:25:10",
+  "total_coins": 236,
   "coins": {
+    "0G": {
+      "name_kr": "0G",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "1INCH": {
       "name_kr": "1인치네트워크",
       "1h": "buy",
@@ -43,9 +51,51 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "AGLD": {
+      "name_kr": "AGLD",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "AI": {
+      "name_kr": "AI",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "sell"
+    },
+    "AKT": {
+      "name_kr": "AKT",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "buy"
+    },
     "ALGO": {
       "name_kr": "알고랜드",
       "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ANIME": {
+      "name_kr": "ANIME",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ANKR": {
+      "name_kr": "ANKR",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "API3": {
+      "name_kr": "API3",
+      "1h": "sell",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -64,10 +114,38 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "ARK": {
+      "name_kr": "ARK",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "ARKM": {
       "name_kr": "아캄",
       "1h": "buy",
       "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ARX": {
+      "name_kr": "ARX",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ASTR": {
+      "name_kr": "ASTR",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ATH": {
+      "name_kr": "ATH",
+      "1h": "buy",
+      "4h": "sell",
       "12h": "buy",
       "1d": "buy"
     },
@@ -78,8 +156,22 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "AUCTION": {
+      "name_kr": "AUCTION",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "AVAX": {
       "name_kr": "아발란체",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "AVNT": {
+      "name_kr": "AVNT",
       "1h": "buy",
       "4h": "buy",
       "12h": "buy",
@@ -99,6 +191,34 @@
       "12h": "sell",
       "1d": "buy"
     },
+    "AZTEC": {
+      "name_kr": "AZTEC",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "B3": {
+      "name_kr": "B3",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "sell"
+    },
+    "BABY": {
+      "name_kr": "BABY",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "BARD": {
+      "name_kr": "BARD",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "BAT": {
       "name_kr": "베이직어텐션토큰",
       "1h": "buy",
@@ -113,8 +233,64 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "BERA": {
+      "name_kr": "BERA",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "BIGTIME": {
+      "name_kr": "BIGTIME",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "BIO": {
+      "name_kr": "BIO",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "buy"
+    },
+    "BIRB": {
+      "name_kr": "BIRB",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "sell"
+    },
+    "BLUR": {
+      "name_kr": "BLUR",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "BONK": {
       "name_kr": "봉크",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "BREV": {
+      "name_kr": "BREV",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "BSB": {
+      "name_kr": "BSB",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "sell"
+    },
+    "BSV": {
+      "name_kr": "BSV",
       "1h": "buy",
       "4h": "buy",
       "12h": "buy",
@@ -123,6 +299,34 @@
     "BTC": {
       "name_kr": "비트코인",
       "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "CAP": {
+      "name_kr": "CAP",
+      "1h": "sell",
+      "4h": "sell",
+      "12h": "sell",
+      "1d": "sell"
+    },
+    "CARV": {
+      "name_kr": "CARV",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "CC": {
+      "name_kr": "CC",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "CELO": {
+      "name_kr": "CELO",
+      "1h": "buy",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -155,6 +359,13 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "CKB": {
+      "name_kr": "CKB",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "COMP": {
       "name_kr": "컴파운드",
       "1h": "buy",
@@ -169,10 +380,52 @@
       "12h": "sell",
       "1d": "buy"
     },
+    "CRV": {
+      "name_kr": "CRV",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "CVC": {
+      "name_kr": "CVC",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "CYBER": {
+      "name_kr": "CYBER",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "buy"
+    },
+    "DEEP": {
+      "name_kr": "DEEP",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "sell"
+    },
     "DOGE": {
       "name_kr": "도지코인",
       "1h": "buy",
       "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "DOOD": {
+      "name_kr": "DOOD",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "DOS": {
+      "name_kr": "DOS",
+      "1h": "sell",
+      "4h": "sell",
       "12h": "buy",
       "1d": "buy"
     },
@@ -183,8 +436,22 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "EDGE": {
+      "name_kr": "EDGE",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "EGLD": {
       "name_kr": "멀티버스엑스",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ELSA": {
+      "name_kr": "ELSA",
       "1h": "buy",
       "4h": "buy",
       "12h": "buy",
@@ -199,6 +466,27 @@
     },
     "ENS": {
       "name_kr": "이더리움네임서비스",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ENSO": {
+      "name_kr": "ENSO",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "sell"
+    },
+    "ERA": {
+      "name_kr": "ERA",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "sell"
+    },
+    "ESP": {
+      "name_kr": "ESP",
       "1h": "buy",
       "4h": "buy",
       "12h": "buy",
@@ -225,6 +513,20 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "EUL": {
+      "name_kr": "EUL",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "sell"
+    },
+    "F": {
+      "name_kr": "F",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "FF": {
       "name_kr": "팔콘파이낸스",
       "1h": "buy",
@@ -237,6 +539,27 @@
       "1h": "buy",
       "4h": "buy",
       "12h": "buy",
+      "1d": "buy"
+    },
+    "FLOCK": {
+      "name_kr": "FLOCK",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "FLUID": {
+      "name_kr": "FLUID",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "G": {
+      "name_kr": "G",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "sell",
       "1d": "buy"
     },
     "GAS": {
@@ -253,6 +576,13 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "GMT": {
+      "name_kr": "GMT",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "GRT": {
       "name_kr": "더그래프",
       "1h": "buy",
@@ -260,8 +590,43 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "GRVT": {
+      "name_kr": "GRVT",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "sell",
+      "1d": "sell"
+    },
     "HBAR": {
       "name_kr": "헤데라",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "HIVE": {
+      "name_kr": "HIVE",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "HOLO": {
+      "name_kr": "HOLO",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "sell"
+    },
+    "HOME": {
+      "name_kr": "HOME",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "sell",
+      "1d": "buy"
+    },
+    "HYPER": {
+      "name_kr": "HYPER",
       "1h": "buy",
       "4h": "buy",
       "12h": "buy",
@@ -274,12 +639,33 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "ICX": {
+      "name_kr": "ICX",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "sell",
+      "1d": "sell"
+    },
+    "ID": {
+      "name_kr": "ID",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "IMX": {
       "name_kr": "이뮤터블엑스",
       "1h": "buy",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
+    },
+    "IN": {
+      "name_kr": "IN",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "sell"
     },
     "INJ": {
       "name_kr": "인젝티브",
@@ -288,12 +674,33 @@
       "12h": "sell",
       "1d": "buy"
     },
+    "IO": {
+      "name_kr": "IO",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "IOST": {
+      "name_kr": "IOST",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "IOTA": {
       "name_kr": "아이오타",
       "1h": "buy",
       "4h": "buy",
       "12h": "sell",
       "1d": "buy"
+    },
+    "IRYS": {
+      "name_kr": "IRYS",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "sell"
     },
     "JST": {
       "name_kr": "저스트",
@@ -323,6 +730,27 @@
       "12h": "sell",
       "1d": "sell"
     },
+    "KAT": {
+      "name_kr": "KAT",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "KAVA": {
+      "name_kr": "KAVA",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "KERNEL": {
+      "name_kr": "KERNEL",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "KITE": {
       "name_kr": "카이트",
       "1h": "sell",
@@ -337,8 +765,43 @@
       "12h": "sell",
       "1d": "buy"
     },
+    "KNC": {
+      "name_kr": "KNC",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "LA": {
+      "name_kr": "LA",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "LAYER": {
+      "name_kr": "LAYER",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "LINEA": {
+      "name_kr": "LINEA",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "LINK": {
       "name_kr": "체인링크",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "LIT": {
+      "name_kr": "LIT",
       "1h": "buy",
       "4h": "buy",
       "12h": "buy",
@@ -351,6 +814,13 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "LSK": {
+      "name_kr": "LSK",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "MANA": {
       "name_kr": "디센트럴랜드",
       "1h": "buy",
@@ -358,8 +828,106 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "MANTRA": {
+      "name_kr": "MANTRA",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "sell"
+    },
+    "MASK": {
+      "name_kr": "MASK",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ME": {
+      "name_kr": "ME",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "buy"
+    },
+    "MEGA": {
+      "name_kr": "MEGA",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "META": {
+      "name_kr": "META",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "MEW": {
+      "name_kr": "MEW",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "MINA": {
+      "name_kr": "MINA",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "MIRA": {
+      "name_kr": "MIRA",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "MMT": {
+      "name_kr": "MMT",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "sell"
+    },
+    "MOCA": {
+      "name_kr": "MOCA",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "MON": {
+      "name_kr": "MON",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "MOODENG": {
+      "name_kr": "MOODENG",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "buy"
+    },
     "MORPHO": {
       "name_kr": "모포",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "MOVE": {
+      "name_kr": "MOVE",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "MTL": {
+      "name_kr": "MTL",
       "1h": "buy",
       "4h": "buy",
       "12h": "buy",
@@ -379,6 +947,13 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "NEWT": {
+      "name_kr": "NEWT",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "NXPC": {
       "name_kr": "넥스페이스",
       "1h": "buy",
@@ -386,8 +961,29 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "O": {
+      "name_kr": "O",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "ONDO": {
       "name_kr": "온도파이낸스",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ONG": {
+      "name_kr": "ONG",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ONT": {
+      "name_kr": "ONT",
       "1h": "buy",
       "4h": "buy",
       "12h": "buy",
@@ -400,8 +996,36 @@
       "12h": "buy",
       "1d": "sell"
     },
+    "OPEN": {
+      "name_kr": "OPEN",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "sell",
+      "1d": "sell"
+    },
+    "OPG": {
+      "name_kr": "OPG",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "sell"
+    },
+    "ORBS": {
+      "name_kr": "ORBS",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "ORCA": {
       "name_kr": "오르카",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ORDER": {
+      "name_kr": "ORDER",
       "1h": "buy",
       "4h": "buy",
       "12h": "buy",
@@ -428,6 +1052,13 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "PIEVERSE": {
+      "name_kr": "PIEVERSE",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "PLUME": {
       "name_kr": "플룸",
       "1h": "buy",
@@ -442,11 +1073,53 @@
       "12h": "sell",
       "1d": "sell"
     },
+    "POLYX": {
+      "name_kr": "POLYX",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "POWR": {
+      "name_kr": "POWR",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "PRL": {
+      "name_kr": "PRL",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "sell",
+      "1d": "sell"
+    },
+    "PROM": {
+      "name_kr": "PROM",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "PROVE": {
+      "name_kr": "PROVE",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "PUMP": {
       "name_kr": "펌프펀",
       "1h": "sell",
       "4h": "sell",
       "12h": "sell",
+      "1d": "buy"
+    },
+    "PUNDIX": {
+      "name_kr": "PUNDIX",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
       "1d": "buy"
     },
     "PYTH": {
@@ -477,8 +1150,36 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "RED": {
+      "name_kr": "RED",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "RENDER": {
       "name_kr": "렌더토큰",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "RVN": {
+      "name_kr": "RVN",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "SAFE": {
+      "name_kr": "SAFE",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "SAHARA": {
+      "name_kr": "SAHARA",
       "1h": "buy",
       "4h": "buy",
       "12h": "buy",
@@ -490,6 +1191,13 @@
       "4h": "buy",
       "12h": "sell",
       "1d": "sell"
+    },
+    "SC": {
+      "name_kr": "SC",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
     },
     "SEI": {
       "name_kr": "세이",
@@ -512,6 +1220,20 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "SIGN": {
+      "name_kr": "SIGN",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "SKR": {
+      "name_kr": "SKR",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "SKY": {
       "name_kr": "스카이프로토콜",
       "1h": "buy",
@@ -519,8 +1241,85 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "SLX": {
+      "name_kr": "SLX",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "sell"
+    },
+    "SNT": {
+      "name_kr": "SNT",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "SOL": {
       "name_kr": "솔라나",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "SOMI": {
+      "name_kr": "SOMI",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "SONIC": {
+      "name_kr": "SONIC",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "SOON": {
+      "name_kr": "SOON",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "sell",
+      "1d": "sell"
+    },
+    "SOPH": {
+      "name_kr": "SOPH",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "sell"
+    },
+    "SPK": {
+      "name_kr": "SPK",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "SPX": {
+      "name_kr": "SPX",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "STEEM": {
+      "name_kr": "STEEM",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "STORJ": {
+      "name_kr": "STORJ",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "STRAX": {
+      "name_kr": "STRAX",
       "1h": "buy",
       "4h": "buy",
       "12h": "buy",
@@ -561,6 +1360,20 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "T": {
+      "name_kr": "T",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "TAIKO": {
+      "name_kr": "TAIKO",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "sell"
+    },
     "TAO": {
       "name_kr": "비트텐서",
       "1h": "buy",
@@ -582,10 +1395,31 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "TOSHI": {
+      "name_kr": "TOSHI",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "TREE": {
+      "name_kr": "TREE",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "TRUMP": {
       "name_kr": "오피셜트럼프",
       "1h": "buy",
       "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "TRUST": {
+      "name_kr": "TRUST",
+      "1h": "buy",
+      "4h": "buy",
       "12h": "buy",
       "1d": "buy"
     },
@@ -603,6 +1437,13 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "VANA": {
+      "name_kr": "VANA",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "buy"
+    },
     "VET": {
       "name_kr": "비체인",
       "1h": "buy",
@@ -617,12 +1458,61 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "VTHO": {
+      "name_kr": "VTHO",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "VVV": {
+      "name_kr": "VVV",
+      "1h": "sell",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "W": {
+      "name_kr": "W",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "WAL": {
       "name_kr": "월러스",
       "1h": "buy",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
+    },
+    "WAVES": {
+      "name_kr": "WAVES",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "WAXP": {
+      "name_kr": "WAXP",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "WCT": {
+      "name_kr": "WCT",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "WET": {
+      "name_kr": "WET",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "sell"
     },
     "WIF": {
       "name_kr": "도그위프햇",
@@ -642,6 +1532,13 @@
       "name_kr": "월드리버티파이낸셜",
       "1h": "buy",
       "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "XCN": {
+      "name_kr": "XCN",
+      "1h": "buy",
+      "4h": "buy",
       "12h": "buy",
       "1d": "buy"
     },
@@ -680,8 +1577,64 @@
       "12h": "buy",
       "1d": "buy"
     },
+    "YGG": {
+      "name_kr": "YGG",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ZAMA": {
+      "name_kr": "ZAMA",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ZBT": {
+      "name_kr": "ZBT",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "sell",
+      "1d": "sell"
+    },
+    "ZETA": {
+      "name_kr": "ZETA",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ZIL": {
+      "name_kr": "ZIL",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
     "ZK": {
       "name_kr": "지케이싱크",
+      "1h": "buy",
+      "4h": "buy",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ZKC": {
+      "name_kr": "ZKC",
+      "1h": "sell",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ZKP": {
+      "name_kr": "ZKP",
+      "1h": "buy",
+      "4h": "sell",
+      "12h": "buy",
+      "1d": "buy"
+    },
+    "ZORA": {
+      "name_kr": "ZORA",
       "1h": "buy",
       "4h": "buy",
       "12h": "buy",
