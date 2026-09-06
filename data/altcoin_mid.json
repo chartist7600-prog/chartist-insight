@@ -5290,5 +5290,11 @@
     "time": "2026-09-06 00:00",
     "price": 148.0,
     "sig_type": "trend"
+  },
+  {
+    "key": "업비트_IOST",
+    "time": "2026-09-06 09:00",
+    "price": 0.928,
+    "sig_type": "trend"
   }
 ]
