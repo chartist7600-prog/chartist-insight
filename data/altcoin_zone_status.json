@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 05:55:07",
+  "updated_at": "2026-09-07 06:25:07",
   "total_coins": 236,
   "coins": {
     "0G": {
@@ -558,7 +558,7 @@
     "G": {
       "name_kr": "G",
       "1h": "buy",
-      "4h": "sell",
+      "4h": "buy",
       "12h": "sell",
       "1d": "buy"
     },
@@ -732,7 +732,7 @@
     },
     "KAT": {
       "name_kr": "KAT",
-      "1h": "sell",
+      "1h": "buy",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -994,7 +994,7 @@
       "1h": "buy",
       "4h": "buy",
       "12h": "buy",
-      "1d": "sell"
+      "1d": "buy"
     },
     "OPEN": {
       "name_kr": "OPEN",
@@ -1586,7 +1586,7 @@
     },
     "ZAMA": {
       "name_kr": "ZAMA",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
