@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 04:55:08",
+  "updated_at": "2026-09-07 05:25:08",
   "total_coins": 236,
   "coins": {
     "0G": {
@@ -382,7 +382,7 @@
     },
     "CRV": {
       "name_kr": "CRV",
-      "1h": "sell",
+      "1h": "buy",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -994,7 +994,7 @@
       "1h": "buy",
       "4h": "buy",
       "12h": "buy",
-      "1d": "sell"
+      "1d": "buy"
     },
     "OPEN": {
       "name_kr": "OPEN",
@@ -1427,7 +1427,7 @@
       "name_kr": "트론",
       "1h": "buy",
       "4h": "buy",
-      "12h": "sell",
+      "12h": "buy",
       "1d": "sell"
     },
     "UNI": {
@@ -1635,7 +1635,7 @@
     },
     "ZORA": {
       "name_kr": "ZORA",
-      "1h": "sell",
+      "1h": "buy",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
