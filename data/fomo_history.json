@@ -1,5 +1,50 @@
 [
   {
+    "ticker": "DYDX",
+    "name": "DYDX",
+    "exchange": "빗썸",
+    "entry_price": 165.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-06 21:04",
+    "signal": "trend"
+  },
+  {
+    "ticker": "STRK",
+    "name": "STRK",
+    "exchange": "빗썸",
+    "entry_price": 43.02,
+    "currency": "KRW",
+    "entry_time": "2026-09-06 21:04",
+    "signal": "trend_strong"
+  },
+  {
+    "ticker": "FLOW",
+    "name": "FLOW",
+    "exchange": "바이낸스",
+    "entry_price": 0.03004,
+    "currency": "USDT",
+    "entry_time": "2026-09-06 21:04",
+    "signal": "trend"
+  },
+  {
+    "ticker": "CGPT",
+    "name": "CGPT",
+    "exchange": "바이낸스",
+    "entry_price": 0.0212,
+    "currency": "USDT",
+    "entry_time": "2026-09-06 21:04",
+    "signal": "trend"
+  },
+  {
+    "ticker": "AT",
+    "name": "AT",
+    "exchange": "바이낸스",
+    "entry_price": 0.1555,
+    "currency": "USDT",
+    "entry_time": "2026-09-06 21:04",
+    "signal": "trend"
+  },
+  {
     "ticker": "1000CHEEMS",
     "name": "1000CHEEMS",
     "exchange": "바이낸스",
@@ -40,47 +85,5 @@
     "entry_price": 352.0,
     "currency": "KRW",
     "entry_time": "2026-09-06 00:00"
-  },
-  {
-    "ticker": "JST",
-    "name": "저스트",
-    "exchange": "빗썸",
-    "entry_price": 148.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-06 00:00"
-  },
-  {
-    "ticker": "STORJ",
-    "name": "스토리지",
-    "exchange": "빗썸",
-    "entry_price": 109.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-06 00:00"
-  },
-  {
-    "ticker": "ELSA",
-    "name": "헤이엘사",
-    "exchange": "빗썸",
-    "entry_price": 72.14,
-    "currency": "KRW",
-    "entry_time": "2026-09-06 00:00"
-  },
-  {
-    "ticker": "ENJ",
-    "name": "ENJ",
-    "exchange": "빗썸",
-    "entry_price": 37.74,
-    "currency": "KRW",
-    "entry_time": "2026-09-05 21:04",
-    "signal": "trend"
-  },
-  {
-    "ticker": "WIN",
-    "name": "WIN",
-    "exchange": "바이낸스",
-    "entry_price": 3.5e-05,
-    "currency": "USDT",
-    "entry_time": "2026-09-05 21:04",
-    "signal": "trend"
   }
 ]

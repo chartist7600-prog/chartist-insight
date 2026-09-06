@@ -10,5 +10,35 @@
     "time": "2026-09-06 09:00",
     "price": 0.4011,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_DYDX",
+    "time": "2026-09-06 21:00",
+    "price": 165.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_STRK",
+    "time": "2026-09-06 21:00",
+    "price": 43.02,
+    "sig_type": "trend_strong"
+  },
+  {
+    "key": "바이낸스_FLOW",
+    "time": "2026-09-06 21:00",
+    "price": 0.03004,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_CGPT",
+    "time": "2026-09-06 21:00",
+    "price": 0.0212,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_AT",
+    "time": "2026-09-06 21:00",
+    "price": 0.1555,
+    "sig_type": "trend"
   }
 ]
