@@ -1077,11 +1077,11 @@
     <div class="service-group">
       <div class="service-group-label">🆓 무료 제공</div>
       <div class="service-cards">
-        <div class="service-card free-card" onclick="openVolumeModal()">
-          <div class="service-card-icon">🚨</div>
+        <div class="service-card free-card" onclick="openAltcoinSearchModal()">
+          <div class="service-card-icon">🔍</div>
           <div class="service-card-body">
-            <div class="service-card-title">거래량 알림</div>
-            <div class="service-card-desc"><span class="service-tag">실시간 감지</span><span class="service-tag">비트코인</span></div>
+            <div class="service-card-title">알트코인 검색기</div>
+            <div class="service-card-desc"><span class="service-tag">매수존/매도존</span><span class="service-tag">1H·4H·12H·1D</span></div>
           </div>
           <div class="service-card-badge free">무료</div>
         </div>
@@ -3010,6 +3010,20 @@ function serviceNavClick(tab) {
   </div>
 </div>
 
+<div class="member-modal-overlay" id="altcoin-search-modal" onclick="if(event.target===this)document.getElementById('altcoin-search-modal').classList.remove('show')">
+  <div class="member-modal-box" style="max-width:420px;">
+    <div class="member-modal-icon">🔍</div>
+    <div class="member-modal-title">알트코인 검색기</div>
+    <div id="altcoin-search-modal-body">
+      <input id="zoneSearchInput" type="text" placeholder="코인 이름 또는 티커 검색 (예: 이더리움, ETH)"
+             style="width:100%;padding:10px 14px;border-radius:8px;border:1px solid #333;background:#111;color:#fff;font-size:15px;box-sizing:border-box;margin-top:8px;">
+      <div id="zoneResultList" style="margin-top:12px;max-height:320px;overflow-y:auto;text-align:left;"></div>
+      <div id="zoneStatus" style="margin-top:8px;color:#666;font-size:11px;"></div>
+    </div>
+    <button class="member-modal-close" onclick="document.getElementById('altcoin-search-modal').classList.remove('show')">닫기</button>
+  </div>
+</div>
+
 <div class="member-modal-overlay" id="volume-explain-modal" onclick="if(event.target===this)document.getElementById('volume-explain-modal').classList.remove('show')">
   <div class="member-modal-box" style="max-width:360px;text-align:left;">
     <div class="member-modal-icon" style="text-align:center;">🚨</div>
@@ -3066,6 +3080,73 @@ function jTickerBtn(key,label){
   var url='https://chartist-insight.com/tickers/download/'+key+'?tg_id='+encodeURIComponent(tgId);
   return '<a href="'+url+'" style="background:rgba(201,168,76,0.08);border:0.5px solid rgba(201,168,76,0.3);color:#ddd;padding:10px 4px;border-radius:8px;font-size:12px;text-decoration:none;text-align:center;display:block;">'+label+'</a>';
 }
+var zoneData = null;
+var ZONE_TF_LABELS = { "1h": "1시간", "4h": "4시간", "12h": "12시간", "1d": "일봉" };
+
+function zoneBadgeHtml(zone){
+  if(zone==='buy') return '<span style="background:#c0302a;color:#fff;padding:3px 8px;border-radius:6px;font-size:12px;">매수존</span>';
+  if(zone==='sell') return '<span style="background:#1e50c8;color:#fff;padding:3px 8px;border-radius:6px;font-size:12px;">매도존</span>';
+  return '<span style="background:#444;color:#aaa;padding:3px 8px;border-radius:6px;font-size:12px;">N/A</span>';
+}
+
+function renderZoneResults(matches){
+  var listEl=document.getElementById('zoneResultList');
+  if(!listEl) return;
+  if(matches.length===0){
+    listEl.innerHTML='<div style="color:#888;padding:12px 0;text-align:center;">검색 결과가 없습니다</div>';
+    return;
+  }
+  listEl.innerHTML=matches.map(function(item){
+    var tfCells=Object.keys(ZONE_TF_LABELS).map(function(tf){
+      return '<div style="text-align:center;flex:1;"><div style="color:#888;font-size:11px;margin-bottom:4px;">'+ZONE_TF_LABELS[tf]+'</div>'+zoneBadgeHtml(item.data[tf])+'</div>';
+    }).join('');
+    return '<div style="background:#1a1a1a;border-radius:10px;padding:12px 14px;margin-bottom:8px;">'
+      +'<div style="color:#fff;font-weight:600;margin-bottom:10px;">'+item.name_kr+' ('+item.ticker+')</div>'
+      +'<div style="display:flex;gap:6px;">'+tfCells+'</div></div>';
+  }).join('');
+}
+
+function searchZone(query){
+  if(!zoneData) return;
+  var q=query.trim().toLowerCase();
+  var coins=zoneData.coins||{};
+  var matches=[];
+  Object.keys(coins).forEach(function(ticker){
+    var entry=coins[ticker];
+    var nameKr=entry.name_kr||ticker;
+    if(q===''||ticker.toLowerCase().indexOf(q)!==-1||nameKr.indexOf(q)!==-1){
+      matches.push({ticker:ticker,name_kr:nameKr,data:entry});
+    }
+  });
+  renderZoneResults(matches.slice(0,30));
+}
+
+function loadZoneData(){
+  var statusEl=document.getElementById('zoneStatus');
+  if(statusEl) statusEl.textContent='데이터 불러오는 중...';
+  fetch('/api/altcoin-zones')
+    .then(function(res){ if(!res.ok) throw new Error('서버 응답 오류: '+res.status); return res.json(); })
+    .then(function(json){
+      zoneData=json;
+      if(statusEl) statusEl.textContent='기준 시각: '+json.updated_at;
+      var inputEl=document.getElementById('zoneSearchInput');
+      searchZone(inputEl ? inputEl.value : '');
+    })
+    .catch(function(err){
+      if(statusEl) statusEl.textContent='데이터 로드 실패: '+err.message;
+    });
+}
+
+var zoneSearchInputListenerAttached=false;
+function openAltcoinSearchModal(){
+  document.getElementById('altcoin-search-modal').classList.add('show');
+  if(!zoneSearchInputListenerAttached){
+    document.getElementById('zoneSearchInput').addEventListener('input', function(e){ searchZone(e.target.value); });
+    zoneSearchInputListenerAttached=true;
+  }
+  loadZoneData();
+}
+
 function openTickerModal(){
   var body=document.getElementById('ticker-modal-body');
   var tgId=jGetTgId();
