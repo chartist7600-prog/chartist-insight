@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 05:25:08",
+  "updated_at": "2026-09-07 05:55:07",
   "total_coins": 236,
   "coins": {
     "0G": {
@@ -994,7 +994,7 @@
       "1h": "buy",
       "4h": "buy",
       "12h": "buy",
-      "1d": "buy"
+      "1d": "sell"
     },
     "OPEN": {
       "name_kr": "OPEN",
@@ -1236,7 +1236,7 @@
     },
     "SKY": {
       "name_kr": "스카이프로토콜",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
