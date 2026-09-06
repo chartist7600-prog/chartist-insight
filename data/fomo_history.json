@@ -1,5 +1,77 @@
 [
   {
+    "ticker": "COTI",
+    "name": "COTI",
+    "exchange": "빗썸",
+    "entry_price": 25.27,
+    "currency": "KRW",
+    "entry_time": "2026-09-07 00:00"
+  },
+  {
+    "ticker": "QKC",
+    "name": "쿼크체인",
+    "exchange": "빗썸",
+    "entry_price": 3.06,
+    "currency": "KRW",
+    "entry_time": "2026-09-07 00:00"
+  },
+  {
+    "ticker": "XAN",
+    "name": "XAN",
+    "exchange": "빗썸",
+    "entry_price": 24.33,
+    "currency": "KRW",
+    "entry_time": "2026-09-07 00:00"
+  },
+  {
+    "ticker": "VET",
+    "name": "VET",
+    "exchange": "빗썸",
+    "entry_price": 9.682,
+    "currency": "KRW",
+    "entry_time": "2026-09-07 00:00"
+  },
+  {
+    "ticker": "GHX",
+    "name": "GHX",
+    "exchange": "빗썸",
+    "entry_price": 11.84,
+    "currency": "KRW",
+    "entry_time": "2026-09-07 00:00"
+  },
+  {
+    "ticker": "ONG",
+    "name": "ONG",
+    "exchange": "빗썸",
+    "entry_price": 156.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-07 00:00"
+  },
+  {
+    "ticker": "ARB",
+    "name": "ARB",
+    "exchange": "빗썸",
+    "entry_price": 253.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-07 00:00"
+  },
+  {
+    "ticker": "FLOCK",
+    "name": "FLOCK",
+    "exchange": "빗썸",
+    "entry_price": 98.82,
+    "currency": "KRW",
+    "entry_time": "2026-09-07 00:00"
+  },
+  {
+    "ticker": "CHIP",
+    "name": "CHIP",
+    "exchange": "빗썸",
+    "entry_price": 77.35,
+    "currency": "KRW",
+    "entry_time": "2026-09-07 00:00"
+  },
+  {
     "ticker": "DYDX",
     "name": "DYDX",
     "exchange": "빗썸",

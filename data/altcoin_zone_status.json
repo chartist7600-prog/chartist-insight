@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06 23:55:08",
+  "updated_at": "2026-09-07 00:25:07",
   "total_coins": 236,
   "coins": {
     "0G": {
@@ -95,7 +95,7 @@
     },
     "API3": {
       "name_kr": "API3",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -158,7 +158,7 @@
     },
     "AUCTION": {
       "name_kr": "AUCTION",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "sell",
       "12h": "buy",
       "1d": "buy"
@@ -445,7 +445,7 @@
     },
     "EGLD": {
       "name_kr": "멀티버스엑스",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -1243,7 +1243,7 @@
     },
     "SLX": {
       "name_kr": "SLX",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "12h": "sell",
       "1d": "sell"

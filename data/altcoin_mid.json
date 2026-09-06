@@ -5296,5 +5296,17 @@
     "time": "2026-09-06 09:00",
     "price": 0.928,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_QKC",
+    "time": "2026-09-07 00:00",
+    "price": 3.06,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_XAN",
+    "time": "2026-09-07 00:00",
+    "price": 24.33,
+    "sig_type": "trend"
   }
 ]
