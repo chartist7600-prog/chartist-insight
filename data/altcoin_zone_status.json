@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-07 14:55:08",
-  "total_coins": 236,
+  "updated_at": "2026-09-07 15:25:12",
+  "total_coins": 235,
   "coins": {
     "0G": {
       "name_kr": "제로지",
@@ -344,15 +344,6 @@
       "1d": "buy",
       "1d_strong": true
     },
-    "BONK": {
-      "name_kr": "봉크",
-      "1h": "sell",
-      "1h_strong": false,
-      "4h": "sell",
-      "4h_strong": false,
-      "1d": "buy",
-      "1d_strong": false
-    },
     "BREV": {
       "name_kr": "브레비스",
       "1h": "sell",
@@ -688,8 +679,8 @@
     },
     "FIL": {
       "name_kr": "파일코인",
-      "1h": "sell",
-      "1h_strong": false,
+      "1h": "buy",
+      "1h_strong": true,
       "4h": "buy",
       "4h_strong": true,
       "1d": "buy",
@@ -1764,7 +1755,7 @@
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": false
     },
     "TAO": {
       "name_kr": "비트텐서",
