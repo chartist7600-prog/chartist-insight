@@ -3022,6 +3022,11 @@ function serviceNavClick(tab) {
     <div id="altcoin-search-modal-body">
       <input id="zoneSearchInput" type="text" placeholder="코인 이름 또는 티커 검색 (예: 이더리움, ETH)"
              style="width:100%;padding:10px 14px;border-radius:8px;border:1px solid #333;background:#111;color:#fff;font-size:15px;box-sizing:border-box;margin-top:8px;">
+      <div style="display:flex;gap:6px;justify-content:center;margin-top:10px;">
+        <button class="filter-btn zone-tf-filter-btn" data-tf="1h" onclick="toggleZoneTfFilter('1h', this)">⚡ 1시간</button>
+        <button class="filter-btn zone-tf-filter-btn" data-tf="4h" onclick="toggleZoneTfFilter('4h', this)">⚡ 4시간</button>
+        <button class="filter-btn zone-tf-filter-btn" data-tf="1d" onclick="toggleZoneTfFilter('1d', this)">⚡ 일봉</button>
+      </div>
       <div id="zoneCoinCount" style="margin-top:10px;color:#999;font-size:13px;text-align:center;"></div>
       <div style="margin-top:6px;color:#888;font-size:11px;text-align:center;">⚡ 번개 : "추세전환 + 변동성 폭발 + 모멘텀"이 동시에 겹친 강한 알림</div>
       <div id="zoneResultList" style="margin-top:12px;max-height:320px;overflow-y:auto;text-align:left;"></div>
@@ -3104,9 +3109,11 @@ function toggleZoneTfFilter(tf, btn){
   searchZone(inputEl ? inputEl.value : '');
 }
 
-function zoneBadgeHtml(zone){
-  if(zone==='buy') return '<span style="background:#c0302a;color:#fff;padding:3px 8px;border-radius:6px;font-size:12px;">매수존</span>';
-  if(zone==='sell') return '<span style="background:#1e50c8;color:#fff;padding:3px 8px;border-radius:6px;font-size:12px;">매도존</span>';
+function zoneBadgeHtml(zone, isStrong){
+  var strongCls = isStrong ? ' zone-strong' : '';
+  var strongIcon = isStrong ? '⚡' : '';
+  if(zone==='buy') return '<span class="'+strongCls.trim()+'" style="background:#c0302a;color:#fff;padding:3px 8px;border-radius:6px;font-size:12px;display:inline-block;">'+strongIcon+'매수존</span>';
+  if(zone==='sell') return '<span class="'+strongCls.trim()+'" style="background:#1e50c8;color:#fff;padding:3px 8px;border-radius:6px;font-size:12px;display:inline-block;">'+strongIcon+'매도존</span>';
   return '<span style="background:#444;color:#aaa;padding:3px 8px;border-radius:6px;font-size:12px;">N/A</span>';
 }
 
