@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08 01:25:08",
+  "updated_at": "2026-09-08 01:55:09",
   "total_coins": 235,
   "coins": {
     "0G": {
@@ -447,7 +447,7 @@
       "name_kr": "칠리즈",
       "1h": "buy",
       "1h_strong": false,
-      "4h": "sell",
+      "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
       "1d_strong": true
@@ -1030,7 +1030,7 @@
     },
     "LPT": {
       "name_kr": "라이브피어",
-      "1h": "sell",
+      "1h": "buy",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
