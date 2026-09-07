@@ -939,6 +939,11 @@
   .service-nav-btn .nav-lock{font-size:9px;opacity:0.6;}
   @media(max-width:520px){.service-nav-btn{font-size:11px;padding:12px 4px;}}
 
+@keyframes zoneStrongBlink {
+  0%, 100% { box-shadow: 0 0 4px 1px rgba(255,200,0,0.9); }
+  50% { box-shadow: 0 0 12px 4px rgba(255,200,0,0.4); }
+}
+.zone-strong { animation: zoneStrongBlink 1.2s ease-in-out infinite; }
 </style>
 </head>
 <body id="body">
@@ -3018,6 +3023,7 @@ function serviceNavClick(tab) {
       <input id="zoneSearchInput" type="text" placeholder="코인 이름 또는 티커 검색 (예: 이더리움, ETH)"
              style="width:100%;padding:10px 14px;border-radius:8px;border:1px solid #333;background:#111;color:#fff;font-size:15px;box-sizing:border-box;margin-top:8px;">
       <div id="zoneCoinCount" style="margin-top:10px;color:#999;font-size:13px;text-align:center;"></div>
+      <div style="margin-top:6px;color:#888;font-size:11px;text-align:center;">⚡ 번개 : "추세전환 + 변동성 폭발 + 모멘텀"이 동시에 겹친 강한 알림</div>
       <div id="zoneResultList" style="margin-top:12px;max-height:320px;overflow-y:auto;text-align:left;"></div>
       <div id="zoneStatus" style="margin-top:6px;color:#999;font-size:13px;text-align:center;"></div>
     </div>
@@ -3083,6 +3089,20 @@ function jTickerBtn(key,label){
 }
 var zoneData = null;
 var ZONE_TF_LABELS = { "1h": "1시간", "4h": "4시간", "1d": "일봉" };
+var zoneActiveTfFilters = [];
+
+function toggleZoneTfFilter(tf, btn){
+  var idx = zoneActiveTfFilters.indexOf(tf);
+  if(idx === -1){
+    zoneActiveTfFilters.push(tf);
+    btn.classList.add('active');
+  } else {
+    zoneActiveTfFilters.splice(idx, 1);
+    btn.classList.remove('active');
+  }
+  var inputEl = document.getElementById('zoneSearchInput');
+  searchZone(inputEl ? inputEl.value : '');
+}
 
 function zoneBadgeHtml(zone){
   if(zone==='buy') return '<span style="background:#c0302a;color:#fff;padding:3px 8px;border-radius:6px;font-size:12px;">매수존</span>';
@@ -3099,7 +3119,7 @@ function renderZoneResults(matches){
   }
   listEl.innerHTML=matches.map(function(item){
     var tfCells=Object.keys(ZONE_TF_LABELS).map(function(tf){
-      return '<div style="text-align:center;flex:1;"><div style="color:#888;font-size:11px;margin-bottom:4px;">'+ZONE_TF_LABELS[tf]+'</div>'+zoneBadgeHtml(item.data[tf])+'</div>';
+      return '<div style="text-align:center;flex:1;"><div style="color:#888;font-size:11px;margin-bottom:4px;">'+ZONE_TF_LABELS[tf]+'</div>'+zoneBadgeHtml(item.data[tf], item.data[tf+'_strong'])+'</div>';
     }).join('');
     return '<div style="background:#1a1a1a;border-radius:10px;padding:12px 14px;margin-bottom:8px;">'
       +'<div style="color:#fff;font-weight:600;margin-bottom:10px;">'+item.name_kr+' ('+item.ticker+')</div>'
@@ -3115,7 +3135,9 @@ function searchZone(query){
   Object.keys(coins).forEach(function(ticker){
     var entry=coins[ticker];
     var nameKr=entry.name_kr||ticker;
-    if(q===''||ticker.toLowerCase().indexOf(q)!==-1||nameKr.indexOf(q)!==-1){
+    var matchesSearch = (q===''||ticker.toLowerCase().indexOf(q)!==-1||nameKr.indexOf(q)!==-1);
+    var matchesFilter = zoneActiveTfFilters.length===0 || zoneActiveTfFilters.some(function(tf){ return entry[tf+'_strong']===true; });
+    if(matchesSearch && matchesFilter){
       matches.push({ticker:ticker,name_kr:nameKr,data:entry});
     }
   });
