@@ -3028,7 +3028,7 @@ function serviceNavClick(tab) {
         <button class="filter-btn zone-tf-filter-btn" data-tf="1d" onclick="toggleZoneTfFilter('1d', this)">⚡ 일봉</button>
       </div>
       <div id="zoneCoinCount" style="margin-top:10px;color:#999;font-size:13px;text-align:center;"></div>
-      <div style="margin-top:6px;color:#888;font-size:11px;text-align:center;">⚡ 번개 : "추세전환 + 변동성 폭발 + 모멘텀"이 동시에 겹친 강한 알림</div>
+      <div style="margin-top:6px;color:var(--gold);font-size:11px;text-align:center;">⚡ 번개 : "추세전환 + 변동성 폭발 + 모멘텀"이 동시에 겹친 강한 알림</div>
       <div id="zoneResultList" style="margin-top:12px;max-height:320px;overflow-y:auto;text-align:left;"></div>
       <div id="zoneStatus" style="margin-top:6px;color:#999;font-size:13px;text-align:center;"></div>
     </div>
@@ -3143,7 +3143,7 @@ function searchZone(query){
     var entry=coins[ticker];
     var nameKr=entry.name_kr||ticker;
     var matchesSearch = (q===''||ticker.toLowerCase().indexOf(q)!==-1||nameKr.indexOf(q)!==-1);
-    var matchesFilter = zoneActiveTfFilters.length===0 || zoneActiveTfFilters.some(function(tf){ return entry[tf+'_strong']===true; });
+    var matchesFilter = zoneActiveTfFilters.length===0 || zoneActiveTfFilters.every(function(tf){ return entry[tf+'_strong']===true; });
     if(matchesSearch && matchesFilter){
       matches.push({ticker:ticker,name_kr:nameKr,data:entry});
     }
