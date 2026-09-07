@@ -1080,7 +1080,7 @@
         <div class="service-card free-card" onclick="openAltcoinSearchModal()">
           <div class="service-card-icon">🔍</div>
           <div class="service-card-body">
-            <div class="service-card-title">알트코인 검색기</div>
+            <div class="service-card-title">알트코인 탐색기</div>
             <div class="service-card-desc"><span class="service-tag">매수존/매도존</span><span class="service-tag">1H·4H·12H·1D</span></div>
           </div>
           <div class="service-card-badge free">무료</div>
@@ -3013,7 +3013,7 @@ function serviceNavClick(tab) {
 <div class="member-modal-overlay" id="altcoin-search-modal" onclick="if(event.target===this)document.getElementById('altcoin-search-modal').classList.remove('show')">
   <div class="member-modal-box" style="max-width:420px;">
     <div class="member-modal-icon">🔍</div>
-    <div class="member-modal-title">알트코인 검색기</div>
+    <div class="member-modal-title">알트코인 탐색기</div>
     <div id="altcoin-search-modal-body">
       <input id="zoneSearchInput" type="text" placeholder="코인 이름 또는 티커 검색 (예: 이더리움, ETH)"
              style="width:100%;padding:10px 14px;border-radius:8px;border:1px solid #333;background:#111;color:#fff;font-size:15px;box-sizing:border-box;margin-top:8px;">
@@ -3082,7 +3082,7 @@ function jTickerBtn(key,label){
   return '<a href="'+url+'" style="background:rgba(201,168,76,0.08);border:0.5px solid rgba(201,168,76,0.3);color:#ddd;padding:10px 4px;border-radius:8px;font-size:12px;text-decoration:none;text-align:center;display:block;">'+label+'</a>';
 }
 var zoneData = null;
-var ZONE_TF_LABELS = { "1h": "1시간", "4h": "4시간", "12h": "12시간", "1d": "일봉" };
+var ZONE_TF_LABELS = { "1h": "1시간", "4h": "4시간", "1d": "일봉" };
 
 function zoneBadgeHtml(zone){
   if(zone==='buy') return '<span style="background:#c0302a;color:#fff;padding:3px 8px;border-radius:6px;font-size:12px;">매수존</span>';
@@ -3131,7 +3131,7 @@ function loadZoneData(){
       zoneData=json;
       var countEl=document.getElementById('zoneCoinCount');
       var coinCount=Object.keys(json.coins||{}).length;
-      if(countEl) countEl.textContent='업비트 · 빗썸 · 바이낸스 공통 상장 '+coinCount+'개 코인 (5분마다 갱신)';
+      if(countEl) countEl.textContent='업비트 · 빗썸 · 바이낸스 공통 '+coinCount+'개 코인 (5분마다 갱신)';
       if(statusEl) statusEl.textContent='기준 시각: '+json.updated_at;
       var inputEl=document.getElementById('zoneSearchInput');
       searchZone(inputEl ? inputEl.value : '');
