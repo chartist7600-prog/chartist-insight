@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 22:25:09",
+  "updated_at": "2026-09-07 22:55:08",
   "total_coins": 235,
   "coins": {
     "0G": {
@@ -49,7 +49,7 @@
     },
     "ADA": {
       "name_kr": "에이다",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": true,
@@ -134,7 +134,7 @@
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
-      "1d": "buy",
+      "1d": "sell",
       "1d_strong": false
     },
     "ARB": {
@@ -1030,8 +1030,8 @@
     },
     "LPT": {
       "name_kr": "라이브피어",
-      "1h": "sell",
-      "1h_strong": false,
+      "1h": "buy",
+      "1h_strong": true,
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
@@ -1084,7 +1084,7 @@
     },
     "MEGA": {
       "name_kr": "메가이더",
-      "1h": "sell",
+      "1h": "buy",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
