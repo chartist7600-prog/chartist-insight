@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 09:55:08",
+  "updated_at": "2026-09-07 10:25:07",
   "total_coins": 236,
   "coins": {
     "0G": {
@@ -232,7 +232,7 @@
     },
     "BONK": {
       "name_kr": "봉크",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "1d": "buy"
     },
@@ -280,14 +280,14 @@
     },
     "CELO": {
       "name_kr": "CELO",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "1d": "buy"
     },
     "CFG": {
       "name_kr": "센트리퓨즈",
       "1h": "buy",
-      "4h": "sell",
+      "4h": "buy",
       "1d": "sell"
     },
     "CFX": {
@@ -305,7 +305,7 @@
     "CHZ": {
       "name_kr": "칠리즈",
       "1h": "buy",
-      "4h": "buy",
+      "4h": "sell",
       "1d": "buy"
     },
     "CKB": {
@@ -670,7 +670,7 @@
     },
     "LAYER": {
       "name_kr": "LAYER",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "1d": "buy"
     },
@@ -712,7 +712,7 @@
     },
     "MANTRA": {
       "name_kr": "MANTRA",
-      "1h": "sell",
+      "1h": "buy",
       "4h": "buy",
       "1d": "sell"
     },
@@ -730,7 +730,7 @@
     },
     "MEGA": {
       "name_kr": "MEGA",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "1d": "buy"
     },
@@ -1108,7 +1108,7 @@
     },
     "SPK": {
       "name_kr": "SPK",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "1d": "buy"
     },
@@ -1210,7 +1210,7 @@
     },
     "TRUMP": {
       "name_kr": "오피셜트럼프",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "sell",
       "1d": "buy"
     },
@@ -1360,7 +1360,7 @@
     },
     "ZAMA": {
       "name_kr": "ZAMA",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "1d": "buy"
     },
@@ -1402,7 +1402,7 @@
     },
     "ZORA": {
       "name_kr": "ZORA",
-      "1h": "buy",
+      "1h": "sell",
       "4h": "buy",
       "1d": "buy"
     },
