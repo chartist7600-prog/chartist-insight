@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08 00:25:12",
+  "updated_at": "2026-09-08 00:55:08",
   "total_coins": 235,
   "coins": {
     "0G": {
@@ -13,7 +13,7 @@
     },
     "1INCH": {
       "name_kr": "1인치네트워크",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": true,
       "4h": "buy",
       "4h_strong": false,
@@ -148,7 +148,7 @@
     },
     "ARK": {
       "name_kr": "아크",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
@@ -616,8 +616,8 @@
     },
     "ESP": {
       "name_kr": "에스프레소",
-      "1h": "buy",
-      "1h_strong": false,
+      "1h": "sell",
+      "1h_strong": true,
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
@@ -634,7 +634,7 @@
     },
     "ETH": {
       "name_kr": "이더리움",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
@@ -724,7 +724,7 @@
     },
     "GLM": {
       "name_kr": "골렘",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
@@ -778,8 +778,8 @@
     },
     "HOLO": {
       "name_kr": "홀로월드에이아이",
-      "1h": "buy",
-      "1h_strong": false,
+      "1h": "sell",
+      "1h_strong": true,
       "4h": "buy",
       "4h_strong": false,
       "1d": "sell",
@@ -904,7 +904,7 @@
     },
     "JTO": {
       "name_kr": "지토",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
@@ -949,7 +949,7 @@
     },
     "KERNEL": {
       "name_kr": "커널다오",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
@@ -996,8 +996,8 @@
       "name_kr": "솔레이어",
       "1h": "sell",
       "1h_strong": false,
-      "4h": "buy",
-      "4h_strong": true,
+      "4h": "sell",
+      "4h_strong": false,
       "1d": "buy",
       "1d_strong": true
     },
@@ -1075,7 +1075,7 @@
     },
     "ME": {
       "name_kr": "매직에덴",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
@@ -1165,8 +1165,8 @@
     },
     "MORPHO": {
       "name_kr": "모포",
-      "1h": "buy",
-      "1h_strong": false,
+      "1h": "sell",
+      "1h_strong": true,
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
@@ -1183,7 +1183,7 @@
     },
     "MTL": {
       "name_kr": "메탈",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
@@ -1211,7 +1211,7 @@
     "NEWT": {
       "name_kr": "뉴턴프로토콜",
       "1h": "sell",
-      "1h_strong": false,
+      "1h_strong": true,
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
@@ -1363,7 +1363,7 @@
     },
     "POL": {
       "name_kr": "폴리곤에코시스템토큰",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": true,
@@ -1372,8 +1372,8 @@
     },
     "POLYX": {
       "name_kr": "폴리매쉬",
-      "1h": "buy",
-      "1h_strong": false,
+      "1h": "sell",
+      "1h_strong": true,
       "4h": "buy",
       "4h_strong": true,
       "1d": "buy",
@@ -1393,7 +1393,7 @@
       "1h": "buy",
       "1h_strong": true,
       "4h": "buy",
-      "4h_strong": true,
+      "4h_strong": false,
       "1d": "sell",
       "1d_strong": false
     },
@@ -1498,7 +1498,7 @@
     },
     "SAFE": {
       "name_kr": "세이프",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": true,
@@ -1552,7 +1552,7 @@
     },
     "SHIB": {
       "name_kr": "시바이누",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": true,
@@ -1606,8 +1606,8 @@
     },
     "SOL": {
       "name_kr": "솔라나",
-      "1h": "buy",
-      "1h_strong": false,
+      "1h": "sell",
+      "1h_strong": true,
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
@@ -1647,7 +1647,7 @@
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": false
     },
     "SPK": {
       "name_kr": "스파크",
@@ -1662,8 +1662,8 @@
       "name_kr": "에스피엑스6900",
       "1h": "sell",
       "1h_strong": false,
-      "4h": "buy",
-      "4h_strong": true,
+      "4h": "sell",
+      "4h_strong": false,
       "1d": "buy",
       "1d_strong": false
     },
@@ -1831,7 +1831,7 @@
     },
     "UNI": {
       "name_kr": "유니스왑",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": true,
@@ -1867,7 +1867,7 @@
     },
     "VTHO": {
       "name_kr": "비토르토큰",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
@@ -1921,8 +1921,8 @@
     },
     "WCT": {
       "name_kr": "월렛커넥트",
-      "1h": "buy",
-      "1h_strong": true,
+      "1h": "sell",
+      "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
@@ -1975,8 +1975,8 @@
     },
     "XEC": {
       "name_kr": "이캐시",
-      "1h": "buy",
-      "1h_strong": true,
+      "1h": "sell",
+      "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
@@ -2003,7 +2003,7 @@
     "XRP": {
       "name_kr": "엑스알피(리플)",
       "1h": "sell",
-      "1h_strong": false,
+      "1h_strong": true,
       "4h": "buy",
       "4h_strong": true,
       "1d": "buy",
@@ -2047,7 +2047,7 @@
     },
     "ZETA": {
       "name_kr": "제타체인",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": true,
       "4h": "buy",
       "4h_strong": false,
@@ -2092,7 +2092,7 @@
     },
     "ZORA": {
       "name_kr": "조라",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
