@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08 04:55:08",
+  "updated_at": "2026-09-08 05:25:10",
   "total_coins": 235,
   "coins": {
     "0G": {
@@ -1714,8 +1714,8 @@
     },
     "SUN": {
       "name_kr": "썬",
-      "1h": "buy",
-      "1h_strong": false,
+      "1h": "sell",
+      "1h_strong": true,
       "4h": "buy",
       "4h_strong": false,
       "1d": "sell",
