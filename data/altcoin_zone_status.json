@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08 00:55:08",
+  "updated_at": "2026-09-08 01:25:08",
   "total_coins": 235,
   "coins": {
     "0G": {
@@ -104,7 +104,7 @@
     "ANIME": {
       "name_kr": "애니메코인",
       "1h": "buy",
-      "1h_strong": false,
+      "1h_strong": true,
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
@@ -617,7 +617,7 @@
     "ESP": {
       "name_kr": "에스프레소",
       "1h": "sell",
-      "1h_strong": true,
+      "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
@@ -725,7 +725,7 @@
     "GLM": {
       "name_kr": "골렘",
       "1h": "sell",
-      "1h_strong": false,
+      "1h_strong": true,
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
@@ -751,8 +751,8 @@
     },
     "GRVT": {
       "name_kr": "그래비티토큰",
-      "1h": "buy",
-      "1h_strong": true,
+      "1h": "sell",
+      "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
       "1d": "sell",
@@ -976,7 +976,7 @@
     },
     "KNC": {
       "name_kr": "카이버네트워크",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
@@ -996,8 +996,8 @@
       "name_kr": "솔레이어",
       "1h": "sell",
       "1h_strong": false,
-      "4h": "sell",
-      "4h_strong": false,
+      "4h": "buy",
+      "4h_strong": true,
       "1d": "buy",
       "1d_strong": true
     },
@@ -1075,7 +1075,7 @@
     },
     "ME": {
       "name_kr": "매직에덴",
-      "1h": "sell",
+      "1h": "buy",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
@@ -1183,7 +1183,7 @@
     },
     "MTL": {
       "name_kr": "메탈",
-      "1h": "sell",
+      "1h": "buy",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
@@ -1607,7 +1607,7 @@
     "SOL": {
       "name_kr": "솔라나",
       "1h": "sell",
-      "1h_strong": true,
+      "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
@@ -1755,7 +1755,7 @@
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": true
     },
     "TAO": {
       "name_kr": "비트텐서",
@@ -1921,8 +1921,8 @@
     },
     "WCT": {
       "name_kr": "월렛커넥트",
-      "1h": "sell",
-      "1h_strong": false,
+      "1h": "buy",
+      "1h_strong": true,
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
