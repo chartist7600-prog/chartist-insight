@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08 03:55:09",
+  "updated_at": "2026-09-08 04:25:09",
   "total_coins": 235,
   "coins": {
     "0G": {
@@ -1149,7 +1149,7 @@
       "name_kr": "모나드",
       "1h": "buy",
       "1h_strong": true,
-      "4h": "buy",
+      "4h": "sell",
       "4h_strong": false,
       "1d": "buy",
       "1d_strong": false
@@ -1547,8 +1547,8 @@
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": true,
-      "1d": "sell",
-      "1d_strong": true
+      "1d": "buy",
+      "1d_strong": false
     },
     "SHIB": {
       "name_kr": "시바이누",
@@ -1647,7 +1647,7 @@
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": false
     },
     "SPK": {
       "name_kr": "스파크",
@@ -1755,7 +1755,7 @@
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": true
     },
     "TAO": {
       "name_kr": "비트텐서",
