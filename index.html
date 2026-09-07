@@ -3128,7 +3128,7 @@ function renderZoneResults(matches){
   listEl.innerHTML=matches.map(function(item){
     var tfCells=Object.keys(ZONE_TF_LABELS).map(function(tf){
       var confirmedAt=item.data[tf+'_confirmed_at'];
-      return '<div style="text-align:center;flex:1;"><div style="color:#888;font-size:11px;margin-bottom:4px;">'+ZONE_TF_LABELS[tf]+'</div>'+zoneBadgeHtml(item.data[tf], item.data[tf+'_strong'])+(confirmedAt?'<div style="color:#666;font-size:10px;margin-top:4px;">'+confirmedAt+' 확정</div>':'')+'</div>';
+      return '<div style="text-align:center;flex:1;"><div style="color:#888;font-size:11px;margin-bottom:4px;">'+ZONE_TF_LABELS[tf]+'</div>'+zoneBadgeHtml(item.data[tf], item.data[tf+'_strong'])+(confirmedAt?'<div style="color:#999;font-size:11px;margin-top:2px;">'+confirmedAt+' 확정</div>':'')+'</div>';
     }).join('');
     return '<div style="background:#1a1a1a;border-radius:10px;padding:12px 14px;margin-bottom:8px;">'
       +'<div style="color:#fff;font-weight:600;margin-bottom:10px;">'+item.name_kr+' ('+item.ticker+')</div>'
