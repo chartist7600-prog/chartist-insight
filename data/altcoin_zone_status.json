@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 16:55:10",
+  "updated_at": "2026-09-07 17:25:08",
   "total_coins": 235,
   "coins": {
     "0G": {
@@ -1647,7 +1647,7 @@
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": true
     },
     "SPK": {
       "name_kr": "스파크",
@@ -1813,7 +1813,7 @@
     },
     "TRUST": {
       "name_kr": "인튜이션",
-      "1h": "sell",
+      "1h": "buy",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
