@@ -3245,6 +3245,28 @@ function openVolumeExplainModal(){
 </footer>
 <script>
 document.addEventListener('DOMContentLoaded', function(){ if(typeof tgUpdateUI==='function') tgUpdateUI(); });
+function autoOpenZoneSearch(ticker){
+  openAltcoinSearchModal();
+  var input=document.getElementById('zoneSearchInput');
+  if(input) input.value=ticker;
+  var tries=0;
+  var iv=setInterval(function(){
+    tries++;
+    if(typeof zoneData!=='undefined' && zoneData){
+      searchZone(ticker);
+      clearInterval(iv);
+    } else if(tries>20){
+      clearInterval(iv);
+    }
+  },300);
+}
+document.addEventListener('DOMContentLoaded', function(){
+  var params=new URLSearchParams(window.location.search);
+  var searchTicker=params.get('search');
+  if(searchTicker){
+    setTimeout(function(){ autoOpenZoneSearch(searchTicker.toUpperCase()); }, 500);
+  }
+});
 if(document.readyState!=='loading'){ if(typeof tgUpdateUI==='function') tgUpdateUI(); }
 </script>
 
