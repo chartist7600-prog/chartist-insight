@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 11:25:13",
+  "updated_at": "2026-09-07 11:55:11",
   "total_coins": 236,
   "coins": {
     "0G": {
@@ -121,8 +121,8 @@
     },
     "API3": {
       "name_kr": "에이피아이쓰리",
-      "1h": "sell",
-      "1h_strong": false,
+      "1h": "buy",
+      "1h_strong": true,
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
@@ -364,7 +364,7 @@
     },
     "BSB": {
       "name_kr": "블록스트리트",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
@@ -1417,8 +1417,8 @@
     },
     "PROVE": {
       "name_kr": "서싱트",
-      "1h": "sell",
-      "1h_strong": true,
+      "1h": "buy",
+      "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
@@ -1498,7 +1498,7 @@
     },
     "RVN": {
       "name_kr": "레이븐코인",
-      "1h": "sell",
+      "1h": "buy",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": true,
@@ -1723,8 +1723,8 @@
     },
     "SUN": {
       "name_kr": "썬",
-      "1h": "sell",
-      "1h_strong": true,
+      "1h": "buy",
+      "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
       "1d": "sell",
@@ -1763,8 +1763,8 @@
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
-      "1d": "sell",
-      "1d_strong": false
+      "1d": "buy",
+      "1d_strong": true
     },
     "TAO": {
       "name_kr": "비트텐서",
