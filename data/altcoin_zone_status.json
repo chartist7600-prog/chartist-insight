@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 16:25:08",
+  "updated_at": "2026-09-07 16:55:10",
   "total_coins": 235,
   "coins": {
     "0G": {
@@ -49,7 +49,7 @@
     },
     "ADA": {
       "name_kr": "에이다",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": true,
@@ -94,8 +94,8 @@
     },
     "ALGO": {
       "name_kr": "알고랜드",
-      "1h": "buy",
-      "1h_strong": false,
+      "1h": "sell",
+      "1h_strong": true,
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
@@ -373,7 +373,7 @@
     },
     "BTC": {
       "name_kr": "비트코인",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": true,
@@ -382,7 +382,7 @@
     },
     "CAP": {
       "name_kr": "캡",
-      "1h": "sell",
+      "1h": "buy",
       "1h_strong": false,
       "4h": "sell",
       "4h_strong": true,
@@ -564,7 +564,7 @@
       "name_kr": "멀티버스엑스",
       "1h": "sell",
       "1h_strong": false,
-      "4h": "buy",
+      "4h": "sell",
       "4h_strong": true,
       "1d": "buy",
       "1d_strong": true
@@ -841,8 +841,8 @@
     },
     "IN": {
       "name_kr": "인피닛",
-      "1h": "buy",
-      "1h_strong": true,
+      "1h": "sell",
+      "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
       "1d": "sell",
@@ -1003,7 +1003,7 @@
     },
     "LINEA": {
       "name_kr": "리네아",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
@@ -1039,7 +1039,7 @@
     },
     "LSK": {
       "name_kr": "리스크",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": true,
@@ -1138,7 +1138,7 @@
     },
     "MOCA": {
       "name_kr": "모카네트워크",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
@@ -1309,7 +1309,7 @@
     },
     "ORDER": {
       "name_kr": "오덜리",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": true,
@@ -1408,7 +1408,7 @@
     },
     "PROVE": {
       "name_kr": "서싱트",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
@@ -1426,7 +1426,7 @@
     },
     "PUNDIX": {
       "name_kr": "펀디엑스",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
@@ -1647,7 +1647,7 @@
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": false
     },
     "SPK": {
       "name_kr": "스파크",
@@ -1741,8 +1741,8 @@
     },
     "T": {
       "name_kr": "쓰레스홀드",
-      "1h": "buy",
-      "1h_strong": true,
+      "1h": "sell",
+      "1h_strong": false,
       "4h": "sell",
       "4h_strong": false,
       "1d": "buy",
@@ -1755,7 +1755,7 @@
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": true
     },
     "TAO": {
       "name_kr": "비트텐서",
@@ -1813,7 +1813,7 @@
     },
     "TRUST": {
       "name_kr": "인튜이션",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
@@ -1849,7 +1849,7 @@
     },
     "VET": {
       "name_kr": "비체인",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": true,
@@ -1912,7 +1912,7 @@
     },
     "WAXP": {
       "name_kr": "왁스",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
@@ -2110,8 +2110,8 @@
     },
     "ZRX": {
       "name_kr": "제로엑스",
-      "1h": "buy",
-      "1h_strong": false,
+      "1h": "sell",
+      "1h_strong": true,
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
