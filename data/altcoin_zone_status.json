@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 15:55:08",
+  "updated_at": "2026-09-07 16:25:08",
   "total_coins": 235,
   "coins": {
     "0G": {
@@ -139,7 +139,7 @@
     },
     "ARB": {
       "name_kr": "아비트럼",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": true,
@@ -1039,7 +1039,7 @@
     },
     "LSK": {
       "name_kr": "리스크",
-      "1h": "sell",
+      "1h": "buy",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": true,
@@ -2020,7 +2020,7 @@
     },
     "YGG": {
       "name_kr": "일드길드게임즈",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
