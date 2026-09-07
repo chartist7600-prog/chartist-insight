@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 20:25:09",
+  "updated_at": "2026-09-07 20:55:11",
   "total_coins": 235,
   "coins": {
     "0G": {
@@ -1570,7 +1570,7 @@
     },
     "SKR": {
       "name_kr": "시커",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
