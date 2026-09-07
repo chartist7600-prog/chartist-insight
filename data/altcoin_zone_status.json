@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 08:25:07",
+  "updated_at": "2026-09-07 08:55:06",
   "total_coins": 236,
   "coins": {
     "0G": {
@@ -298,7 +298,7 @@
     },
     "BTC": {
       "name_kr": "비트코인",
-      "1h": "sell",
+      "1h": "buy",
       "4h": "buy",
       "12h": "buy",
       "1d": "buy"
@@ -1243,7 +1243,7 @@
     },
     "SLX": {
       "name_kr": "SLX",
-      "1h": "sell",
+      "1h": "buy",
       "4h": "buy",
       "12h": "sell",
       "1d": "sell"
