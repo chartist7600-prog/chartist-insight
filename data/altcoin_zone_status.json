@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 17:55:10",
+  "updated_at": "2026-09-07 18:25:08",
   "total_coins": 235,
   "coins": {
     "0G": {
@@ -384,8 +384,8 @@
       "name_kr": "캡",
       "1h": "buy",
       "1h_strong": false,
-      "4h": "sell",
-      "4h_strong": true,
+      "4h": "buy",
+      "4h_strong": false,
       "1d": "sell",
       "1d_strong": false
     },
@@ -1255,8 +1255,8 @@
     },
     "ONT": {
       "name_kr": "온톨로지",
-      "1h": "buy",
-      "1h_strong": true,
+      "1h": "sell",
+      "1h_strong": false,
       "4h": "buy",
       "4h_strong": true,
       "1d": "buy",
@@ -1275,7 +1275,7 @@
       "name_kr": "오픈렛저",
       "1h": "buy",
       "1h_strong": false,
-      "4h": "sell",
+      "4h": "buy",
       "4h_strong": false,
       "1d": "sell",
       "1d_strong": false
