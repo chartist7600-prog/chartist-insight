@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08 01:55:09",
+  "updated_at": "2026-09-08 02:25:11",
   "total_coins": 235,
   "coins": {
     "0G": {
@@ -104,7 +104,7 @@
     "ANIME": {
       "name_kr": "애니메코인",
       "1h": "buy",
-      "1h_strong": true,
+      "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
@@ -134,7 +134,7 @@
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
-      "1d": "sell",
+      "1d": "buy",
       "1d_strong": false
     },
     "ARB": {
@@ -1642,8 +1642,8 @@
     },
     "SOPH": {
       "name_kr": "소폰",
-      "1h": "buy",
-      "1h_strong": true,
+      "1h": "sell",
+      "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
@@ -2092,7 +2092,7 @@
     },
     "ZORA": {
       "name_kr": "조라",
-      "1h": "sell",
+      "1h": "buy",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
