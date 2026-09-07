@@ -3110,10 +3110,11 @@ function toggleZoneTfFilter(tf, btn){
 }
 
 function zoneBadgeHtml(zone, isStrong){
-  var strongCls = isStrong ? ' zone-strong' : '';
-  var strongIcon = isStrong ? '⚡' : '';
+  var showLightning = isStrong && zone==='buy';
+  var strongCls = showLightning ? ' zone-strong' : '';
+  var strongIcon = showLightning ? '⚡' : '';
   if(zone==='buy') return '<span class="'+strongCls.trim()+'" style="background:#c0302a;color:#fff;padding:3px 8px;border-radius:6px;font-size:12px;display:inline-block;">'+strongIcon+'매수존</span>';
-  if(zone==='sell') return '<span class="'+strongCls.trim()+'" style="background:#1e50c8;color:#fff;padding:3px 8px;border-radius:6px;font-size:12px;display:inline-block;">'+strongIcon+'매도존</span>';
+  if(zone==='sell') return '<span style="background:#1e50c8;color:#fff;padding:3px 8px;border-radius:6px;font-size:12px;display:inline-block;">매도존</span>';
   return '<span style="background:#444;color:#aaa;padding:3px 8px;border-radius:6px;font-size:12px;">N/A</span>';
 }
 
@@ -3143,7 +3144,7 @@ function searchZone(query){
     var entry=coins[ticker];
     var nameKr=entry.name_kr||ticker;
     var matchesSearch = (q===''||ticker.toLowerCase().indexOf(q)!==-1||nameKr.indexOf(q)!==-1);
-    var matchesFilter = zoneActiveTfFilters.length===0 || zoneActiveTfFilters.every(function(tf){ return entry[tf+'_strong']===true; });
+    var matchesFilter = zoneActiveTfFilters.length===0 || zoneActiveTfFilters.every(function(tf){ return entry[tf+'_strong']===true && entry[tf]==='buy'; });
     if(matchesSearch && matchesFilter){
       matches.push({ticker:ticker,name_kr:nameKr,data:entry});
     }
