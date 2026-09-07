@@ -1,2121 +1,2826 @@
 {
-  "updated_at": "2026-09-08 05:55:09",
+  "updated_at": "2026-09-08 06:26:46",
   "total_coins": 235,
   "coins": {
     "0G": {
       "name_kr": "제로지",
       "1h": "sell",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "1INCH": {
       "name_kr": "1인치네트워크",
       "1h": "sell",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "2Z": {
       "name_kr": "더블제로",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "A": {
       "name_kr": "볼타",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "AAVE": {
       "name_kr": "에이브",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ADA": {
       "name_kr": "에이다",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "AERO": {
       "name_kr": "에어로드롬파이낸스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "AGLD": {
       "name_kr": "어드벤처골드",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "AI": {
       "name_kr": "젠신",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "AKT": {
       "name_kr": "아카시네트워크",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ALGO": {
       "name_kr": "알고랜드",
       "1h": "sell",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ANIME": {
       "name_kr": "애니메코인",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ANKR": {
       "name_kr": "앵커",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "API3": {
       "name_kr": "에이피아이쓰리",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "APT": {
       "name_kr": "앱토스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
-      "1d": "buy",
-      "1d_strong": false
+      "4h_confirmed_at": "09/08 05:00",
+      "1d": "sell",
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ARB": {
       "name_kr": "아비트럼",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ARK": {
       "name_kr": "아크",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ARKM": {
       "name_kr": "아캄",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ARX": {
       "name_kr": "아르키움",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ASTR": {
       "name_kr": "아스타",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ATH": {
       "name_kr": "에이셔",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ATOM": {
       "name_kr": "코스모스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "AUCTION": {
       "name_kr": "바운스토큰",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "AVAX": {
       "name_kr": "아발란체",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "AVNT": {
       "name_kr": "아반티스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "AWE": {
       "name_kr": "에이더블유이",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "AXS": {
       "name_kr": "엑시인피니티",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "AZTEC": {
       "name_kr": "아즈텍",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "B3": {
       "name_kr": "비쓰리",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "BABY": {
       "name_kr": "바빌론",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "BARD": {
       "name_kr": "롬바드",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "BAT": {
       "name_kr": "베이직어텐션토큰",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "BCH": {
       "name_kr": "비트코인캐시",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "BERA": {
       "name_kr": "베라체인",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "BIGTIME": {
       "name_kr": "빅타임",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "BIO": {
       "name_kr": "바이오프로토콜",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "BIRB": {
       "name_kr": "문버드",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "BLUR": {
       "name_kr": "블러",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "BREV": {
       "name_kr": "브레비스",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "BSB": {
       "name_kr": "블록스트리트",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "BSV": {
       "name_kr": "비트코인에스브이",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "BTC": {
       "name_kr": "비트코인",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "CAP": {
       "name_kr": "캡",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "CARV": {
       "name_kr": "카브",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "CC": {
       "name_kr": "캔톤",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "CELO": {
       "name_kr": "셀로",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "CFG": {
       "name_kr": "센트리퓨즈",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "CFX": {
       "name_kr": "콘플럭스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "CHIP": {
       "name_kr": "유에스디에이아이",
       "1h": "sell",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "CHZ": {
       "name_kr": "칠리즈",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "CKB": {
       "name_kr": "너보스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "COMP": {
       "name_kr": "컴파운드",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "COW": {
       "name_kr": "카우프로토콜",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "CRV": {
       "name_kr": "커브",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "CVC": {
       "name_kr": "시빅",
       "1h": "sell",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "CYBER": {
       "name_kr": "사이버",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "DEEP": {
       "name_kr": "딥북",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
-      "1d": "buy",
-      "1d_strong": false
+      "4h_confirmed_at": "09/08 05:00",
+      "1d": "sell",
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "DOGE": {
       "name_kr": "도지코인",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "DOOD": {
       "name_kr": "두들즈",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "DOS": {
       "name_kr": "댑오에스",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "DOT": {
       "name_kr": "폴카닷",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "EDGE": {
       "name_kr": "디피니티브",
       "1h": "sell",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "EGLD": {
       "name_kr": "멀티버스엑스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ELSA": {
       "name_kr": "헤이엘사",
       "1h": "sell",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ENA": {
       "name_kr": "에테나",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ENS": {
       "name_kr": "이더리움네임서비스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ENSO": {
       "name_kr": "엔소",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ERA": {
       "name_kr": "칼데라",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ESP": {
       "name_kr": "에스프레소",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ETC": {
       "name_kr": "이더리움클래식",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ETH": {
       "name_kr": "이더리움",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ETHFI": {
       "name_kr": "이더파이",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "EUL": {
       "name_kr": "오일러",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "F": {
       "name_kr": "신퓨처스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "FF": {
       "name_kr": "팔콘파이낸스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "FIL": {
       "name_kr": "파일코인",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "FLOCK": {
       "name_kr": "플록",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "FLUID": {
       "name_kr": "플루이드",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "G": {
       "name_kr": "그래비티",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "GAS": {
       "name_kr": "가스",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "GLM": {
       "name_kr": "골렘",
       "1h": "sell",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "GMT": {
       "name_kr": "스테픈",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "GRT": {
       "name_kr": "더그래프",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "GRVT": {
       "name_kr": "그래비티토큰",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "HBAR": {
       "name_kr": "헤데라",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "HIVE": {
       "name_kr": "하이브",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "HOLO": {
       "name_kr": "홀로월드에이아이",
       "1h": "sell",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "HOME": {
       "name_kr": "디파이앱",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "HYPER": {
       "name_kr": "하이퍼레인",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ICP": {
       "name_kr": "인터넷컴퓨터",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ICX": {
       "name_kr": "아이콘",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ID": {
       "name_kr": "스페이스아이디",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "IMX": {
       "name_kr": "이뮤터블엑스",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "IN": {
       "name_kr": "인피닛",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "INJ": {
       "name_kr": "인젝티브",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "IO": {
       "name_kr": "아이오넷",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "IOST": {
       "name_kr": "아이오에스티",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "IOTA": {
       "name_kr": "아이오타",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "IRYS": {
       "name_kr": "아이리스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "JST": {
       "name_kr": "저스트",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "JTO": {
       "name_kr": "지토",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "JUP": {
       "name_kr": "주피터",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "KAITO": {
       "name_kr": "카이토",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "KAT": {
       "name_kr": "카타나",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "KAVA": {
       "name_kr": "카바",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "KERNEL": {
       "name_kr": "커널다오",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "KITE": {
       "name_kr": "카이트",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "KMNO": {
       "name_kr": "카미노파이낸스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "KNC": {
       "name_kr": "카이버네트워크",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "LA": {
       "name_kr": "라그랑주",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "LAYER": {
       "name_kr": "솔레이어",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "LINEA": {
       "name_kr": "리네아",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "LINK": {
       "name_kr": "체인링크",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "LIT": {
       "name_kr": "라이터",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "LPT": {
       "name_kr": "라이브피어",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "LSK": {
       "name_kr": "리스크",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "MANA": {
       "name_kr": "디센트럴랜드",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "MANTRA": {
       "name_kr": "만트라",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "MASK": {
       "name_kr": "마스크네트워크",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ME": {
       "name_kr": "매직에덴",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "MEGA": {
       "name_kr": "메가이더",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "META": {
       "name_kr": "메타디움",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "MEW": {
       "name_kr": "캣인어독스월드",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "MINA": {
       "name_kr": "미나",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "MIRA": {
       "name_kr": "미라네트워크",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "MMT": {
       "name_kr": "모멘텀",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "MOCA": {
       "name_kr": "모카네트워크",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "MON": {
       "name_kr": "모나드",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "MOODENG": {
       "name_kr": "무뎅",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "MORPHO": {
       "name_kr": "모포",
       "1h": "sell",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "MOVE": {
       "name_kr": "무브먼트",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "MTL": {
       "name_kr": "메탈",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "NEAR": {
       "name_kr": "니어프로토콜",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "NEO": {
       "name_kr": "네오",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "NEWT": {
       "name_kr": "뉴턴프로토콜",
       "1h": "sell",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "NXPC": {
       "name_kr": "넥스페이스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "O": {
       "name_kr": "오원익스체인지",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ONDO": {
       "name_kr": "온도파이낸스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ONG": {
       "name_kr": "온톨로지가스",
       "1h": "sell",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ONT": {
       "name_kr": "온톨로지",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "OP": {
       "name_kr": "옵티미즘",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "OPEN": {
       "name_kr": "오픈렛저",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "OPG": {
       "name_kr": "오픈그라디언트",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ORBS": {
       "name_kr": "오브스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ORCA": {
       "name_kr": "오르카",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ORDER": {
       "name_kr": "오덜리",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "PENDLE": {
       "name_kr": "펜들",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "PENGU": {
       "name_kr": "펏지펭귄",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "PEPE": {
       "name_kr": "페페",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "PIEVERSE": {
       "name_kr": "파이버스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "PLUME": {
       "name_kr": "플룸",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "POL": {
       "name_kr": "폴리곤에코시스템토큰",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "POLYX": {
       "name_kr": "폴리매쉬",
       "1h": "sell",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "POWR": {
       "name_kr": "파워렛저",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "PRL": {
       "name_kr": "펄",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "PROM": {
       "name_kr": "프롬",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "PROVE": {
       "name_kr": "서싱트",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "PUMP": {
       "name_kr": "펌프펀",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "PUNDIX": {
       "name_kr": "펀디엑스",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "PYTH": {
       "name_kr": "피스네트워크",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "QTUM": {
       "name_kr": "퀀텀",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "RAY": {
       "name_kr": "레이디움",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "RE": {
       "name_kr": "리",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "RED": {
       "name_kr": "레드스톤",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "RENDER": {
       "name_kr": "렌더토큰",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "RVN": {
       "name_kr": "레이븐코인",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SAFE": {
       "name_kr": "세이프",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SAHARA": {
       "name_kr": "사하라에이아이",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SAND": {
       "name_kr": "샌드박스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SC": {
       "name_kr": "시아코인",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SEI": {
       "name_kr": "세이",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SENT": {
       "name_kr": "센티언트",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
-      "1d": "buy",
-      "1d_strong": false
+      "4h_confirmed_at": "09/08 05:00",
+      "1d": "sell",
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SHIB": {
       "name_kr": "시바이누",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SIGN": {
       "name_kr": "사인",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SKR": {
       "name_kr": "시커",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SKY": {
       "name_kr": "스카이프로토콜",
       "1h": "sell",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SLX": {
       "name_kr": "솔스티스",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SNT": {
       "name_kr": "스테이터스네트워크토큰",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SOL": {
       "name_kr": "솔라나",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SOMI": {
       "name_kr": "솜니아",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SONIC": {
       "name_kr": "소닉SVM",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SOON": {
       "name_kr": "쑨",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SOPH": {
       "name_kr": "소폰",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
-      "1d": "buy",
-      "1d_strong": true
+      "4h_confirmed_at": "09/08 05:00",
+      "1d": "sell",
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SPK": {
       "name_kr": "스파크",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SPX": {
       "name_kr": "에스피엑스6900",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "STEEM": {
       "name_kr": "스팀",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "STORJ": {
       "name_kr": "스토리지",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "STRAX": {
       "name_kr": "저트라",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "STX": {
       "name_kr": "스택스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SUI": {
       "name_kr": "수이",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SUN": {
       "name_kr": "썬",
       "1h": "sell",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SUPER": {
       "name_kr": "슈퍼버스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "SYRUP": {
       "name_kr": "메이플파이낸스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "T": {
       "name_kr": "쓰레스홀드",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "TAIKO": {
       "name_kr": "타이코",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
-      "1d": "buy",
-      "1d_strong": true
+      "4h_confirmed_at": "09/08 05:00",
+      "1d": "sell",
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "TAO": {
       "name_kr": "비트텐서",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "THETA": {
       "name_kr": "쎄타토큰",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "TIA": {
       "name_kr": "셀레스티아",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "TOSHI": {
       "name_kr": "토시",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "TREE": {
       "name_kr": "트리하우스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "TRUMP": {
       "name_kr": "오피셜트럼프",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "TRUST": {
       "name_kr": "인튜이션",
       "1h": "sell",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "TRX": {
       "name_kr": "트론",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "UNI": {
       "name_kr": "유니스왑",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "VANA": {
       "name_kr": "바나",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "VET": {
       "name_kr": "비체인",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "VIRTUAL": {
       "name_kr": "버추얼프로토콜",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "VTHO": {
       "name_kr": "비토르토큰",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "VVV": {
       "name_kr": "베니스토큰",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "W": {
       "name_kr": "웜홀",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "WAL": {
       "name_kr": "월러스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "WAVES": {
       "name_kr": "웨이브",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "WAXP": {
       "name_kr": "왁스",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "WCT": {
       "name_kr": "월렛커넥트",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "WET": {
       "name_kr": "휴미디파이",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "WIF": {
       "name_kr": "도그위프햇",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "WLD": {
       "name_kr": "월드코인",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "WLFI": {
       "name_kr": "월드리버티파이낸셜",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "XCN": {
       "name_kr": "오닉스코인",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "XEC": {
       "name_kr": "이캐시",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "XLM": {
       "name_kr": "스텔라루멘",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "XPL": {
       "name_kr": "플라즈마",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "XRP": {
       "name_kr": "엑스알피(리플)",
       "1h": "sell",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "XTZ": {
       "name_kr": "테조스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "YGG": {
       "name_kr": "일드길드게임즈",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ZAMA": {
       "name_kr": "자마",
       "1h": "sell",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ZBT": {
       "name_kr": "제로베이스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": true,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "sell",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ZETA": {
       "name_kr": "제타체인",
       "1h": "sell",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ZIL": {
       "name_kr": "질리카",
       "1h": "buy",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ZK": {
       "name_kr": "지케이싱크",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ZKC": {
       "name_kr": "바운드리스",
       "1h": "sell",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": true,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ZKP": {
       "name_kr": "지케이패스",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "sell",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ZORA": {
       "name_kr": "조라",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ZRO": {
       "name_kr": "레이어제로",
       "1h": "buy",
       "1h_strong": false,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     },
     "ZRX": {
       "name_kr": "제로엑스",
       "1h": "sell",
       "1h_strong": true,
+      "1h_confirmed_at": "09/08 06:00",
       "4h": "buy",
       "4h_strong": false,
+      "4h_confirmed_at": "09/08 05:00",
       "1d": "buy",
-      "1d_strong": false
+      "1d_strong": false,
+      "1d_confirmed_at": "09/07 09:00"
     }
   }
 }
