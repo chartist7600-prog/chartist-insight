@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 21:25:12",
+  "updated_at": "2026-09-07 21:55:10",
   "total_coins": 235,
   "coins": {
     "0G": {
@@ -94,8 +94,8 @@
     },
     "ALGO": {
       "name_kr": "알고랜드",
-      "1h": "sell",
-      "1h_strong": true,
+      "1h": "buy",
+      "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
@@ -134,7 +134,7 @@
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
-      "1d": "sell",
+      "1d": "buy",
       "1d_strong": false
     },
     "ARB": {
@@ -186,8 +186,8 @@
       "name_kr": "에이셔",
       "1h": "buy",
       "1h_strong": false,
-      "4h": "sell",
-      "4h_strong": false,
+      "4h": "buy",
+      "4h_strong": true,
       "1d": "buy",
       "1d_strong": true
     },
@@ -512,7 +512,7 @@
       "1h_strong": true,
       "4h": "buy",
       "4h_strong": false,
-      "1d": "sell",
+      "1d": "buy",
       "1d_strong": false
     },
     "DOGE": {
@@ -897,7 +897,7 @@
       "name_kr": "저스트",
       "1h": "sell",
       "1h_strong": false,
-      "4h": "sell",
+      "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
       "1d_strong": false
@@ -1570,7 +1570,7 @@
     },
     "SKR": {
       "name_kr": "시커",
-      "1h": "sell",
+      "1h": "buy",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
