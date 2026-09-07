@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 23:55:08",
+  "updated_at": "2026-09-08 00:25:12",
   "total_coins": 235,
   "coins": {
     "0G": {
@@ -104,7 +104,7 @@
     "ANIME": {
       "name_kr": "애니메코인",
       "1h": "buy",
-      "1h_strong": true,
+      "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
@@ -134,7 +134,7 @@
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
-      "1d": "buy",
+      "1d": "sell",
       "1d_strong": false
     },
     "ARB": {
@@ -186,8 +186,8 @@
       "name_kr": "에이셔",
       "1h": "buy",
       "1h_strong": false,
-      "4h": "buy",
-      "4h_strong": true,
+      "4h": "sell",
+      "4h_strong": false,
       "1d": "buy",
       "1d_strong": true
     },
@@ -447,7 +447,7 @@
       "name_kr": "칠리즈",
       "1h": "buy",
       "1h_strong": false,
-      "4h": "buy",
+      "4h": "sell",
       "4h_strong": false,
       "1d": "buy",
       "1d_strong": true
@@ -688,7 +688,7 @@
     },
     "FLOCK": {
       "name_kr": "플록",
-      "1h": "sell",
+      "1h": "buy",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
@@ -1210,7 +1210,7 @@
     },
     "NEWT": {
       "name_kr": "뉴턴프로토콜",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
@@ -1275,7 +1275,7 @@
       "name_kr": "오픈렛저",
       "1h": "buy",
       "1h_strong": false,
-      "4h": "buy",
+      "4h": "sell",
       "4h_strong": false,
       "1d": "sell",
       "1d_strong": false
@@ -1755,7 +1755,7 @@
       "4h": "buy",
       "4h_strong": false,
       "1d": "buy",
-      "1d_strong": true
+      "1d_strong": false
     },
     "TAO": {
       "name_kr": "비트텐서",
@@ -1822,7 +1822,7 @@
     },
     "TRX": {
       "name_kr": "트론",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,
@@ -2002,7 +2002,7 @@
     },
     "XRP": {
       "name_kr": "엑스알피(리플)",
-      "1h": "buy",
+      "1h": "sell",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": true,
@@ -2092,7 +2092,7 @@
     },
     "ZORA": {
       "name_kr": "조라",
-      "1h": "sell",
+      "1h": "buy",
       "1h_strong": false,
       "4h": "buy",
       "4h_strong": false,

@@ -1,5 +1,21 @@
 [
   {
+    "ticker": "SENT",
+    "name": "센티언트",
+    "exchange": "빗썸",
+    "entry_price": 19.26,
+    "currency": "KRW",
+    "entry_time": "2026-09-08 00:00"
+  },
+  {
+    "ticker": "ARX",
+    "name": "아르키움",
+    "exchange": "빗썸",
+    "entry_price": 201.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-08 00:00"
+  },
+  {
     "ticker": "LUNA",
     "name": "LUNA",
     "exchange": "바이낸스",
