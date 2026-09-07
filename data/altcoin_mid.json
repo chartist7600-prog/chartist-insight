@@ -5308,5 +5308,23 @@
     "time": "2026-09-07 00:00",
     "price": 24.33,
     "sig_type": "trend"
+  },
+  {
+    "key": "업비트_JST",
+    "time": "2026-09-07 09:00",
+    "price": 151.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_AUDIO",
+    "time": "2026-09-07 09:00",
+    "price": 0.01339,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_MUB",
+    "time": "2026-09-07 09:00",
+    "price": 1023.22,
+    "sig_type": "trend"
   }
 ]

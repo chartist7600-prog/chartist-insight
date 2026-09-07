@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 08:55:06",
+  "updated_at": "2026-09-07 09:25:07",
   "total_coins": 236,
   "coins": {
     "0G": {
@@ -886,7 +886,7 @@
     },
     "MMT": {
       "name_kr": "MMT",
-      "1h": "sell",
+      "1h": "buy",
       "4h": "buy",
       "12h": "sell",
       "1d": "sell"
