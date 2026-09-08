@@ -3159,7 +3159,7 @@ function renderZoneResults(matches){
     var goldenBadge = item.data.golden_zone ? '<div style="color:#C9A84C;font-size:12px;font-weight:700;margin-bottom:6px;">✨ 골든존</div>' : '';
     var cardBorder = item.data.golden_zone ? 'border:1px solid #C9A84C;' : '';
     var futSym = item.data.futures_symbol || item.ticker;
-    var tvUrl = 'https://kr.tradingview.com/chart/?symbol=BINANCE:'+futSym+'USDT.P&interval=60&studies=RSI@tv-basicstudies';
+    var tvUrl = 'https://kr.tradingview.com/chart/?symbol=BINANCE:'+futSym+'USDT.P&interval=60';
     return '<div style="background:#1a1a1a;border-radius:10px;padding:12px 14px;margin-bottom:8px;'+cardBorder+'">'
       +goldenBadge
       +'<a href="'+tvUrl+'" target="_blank" rel="noopener" style="color:#fff;font-weight:600;margin-bottom:10px;display:block;text-decoration:none;">'+item.name_kr+' ('+item.ticker+')</a>'
