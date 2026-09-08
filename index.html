@@ -3264,7 +3264,8 @@ document.addEventListener('DOMContentLoaded', function(){
   var params=new URLSearchParams(window.location.search);
   var searchTicker=params.get('search');
   if(searchTicker){
-    setTimeout(function(){ autoOpenZoneSearch(searchTicker.toUpperCase()); }, 500);
+    var cleanTicker=searchTicker.toUpperCase().replace(/USDT$/,'');
+    setTimeout(function(){ autoOpenZoneSearch(cleanTicker); }, 500);
   }
 });
 if(document.readyState!=='loading'){ if(typeof tgUpdateUI==='function') tgUpdateUI(); }
