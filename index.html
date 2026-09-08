@@ -3026,6 +3026,7 @@ function serviceNavClick(tab) {
         <button class="filter-btn zone-tf-filter-btn" data-tf="1h" onclick="toggleZoneTfFilter('1h', this)">⚡ 1시간</button>
         <button class="filter-btn zone-tf-filter-btn" data-tf="4h" onclick="toggleZoneTfFilter('4h', this)">⚡ 4시간</button>
         <button class="filter-btn zone-tf-filter-btn" data-tf="1d" onclick="toggleZoneTfFilter('1d', this)">⚡ 일봉</button>
+        <button class="filter-btn" id="goldenZoneFilterBtn" onclick="toggleGoldenZoneFilter(this)">✨ 골든존만</button>
       </div>
       <div id="zoneCoinCount" style="margin-top:10px;color:#999;font-size:13px;text-align:center;"></div>
       <div style="margin-top:6px;color:var(--gold);font-size:11px;text-align:center;">⚡ 번개 : "추세전환 + 변동성 폭발 + 모멘텀"이 동시에 겹친 강한 알림</div>
@@ -3095,6 +3096,14 @@ function jTickerBtn(key,label){
 var zoneData = null;
 var ZONE_TF_LABELS = { "1h": "1시간", "4h": "4시간", "1d": "일봉" };
 var zoneActiveTfFilters = [];
+var zoneGoldenOnly = false;
+
+function toggleGoldenZoneFilter(btn){
+  zoneGoldenOnly = !zoneGoldenOnly;
+  btn.classList.toggle('active', zoneGoldenOnly);
+  var inputEl = document.getElementById('zoneSearchInput');
+  searchZone(inputEl ? inputEl.value : '');
+}
 
 function toggleZoneTfFilter(tf, btn){
   var idx = zoneActiveTfFilters.indexOf(tf);
@@ -3130,7 +3139,10 @@ function renderZoneResults(matches){
       var confirmedAt=item.data[tf+'_confirmed_at'];
       return '<div style="text-align:center;flex:1;"><div style="color:#888;font-size:11px;margin-bottom:4px;">'+ZONE_TF_LABELS[tf]+'</div>'+zoneBadgeHtml(item.data[tf], item.data[tf+'_strong'])+(confirmedAt?'<div style="color:#999;font-size:11px;margin-top:2px;">'+confirmedAt+' 확정</div>':'')+'</div>';
     }).join('');
-    return '<div style="background:#1a1a1a;border-radius:10px;padding:12px 14px;margin-bottom:8px;">'
+    var goldenBadge = item.data.golden_zone ? '<div style="color:#C9A84C;font-size:12px;font-weight:700;margin-bottom:6px;">✨ 골든존</div>' : '';
+    var cardBorder = item.data.golden_zone ? 'border:1px solid #C9A84C;' : '';
+    return '<div style="background:#1a1a1a;border-radius:10px;padding:12px 14px;margin-bottom:8px;'+cardBorder+'">'
+      +goldenBadge
       +'<div style="color:#fff;font-weight:600;margin-bottom:10px;">'+item.name_kr+' ('+item.ticker+')</div>'
       +'<div style="display:flex;gap:6px;">'+tfCells+'</div></div>';
   }).join('');
@@ -3146,7 +3158,8 @@ function searchZone(query){
     var nameKr=entry.name_kr||ticker;
     var matchesSearch = (q===''||ticker.toLowerCase().indexOf(q)!==-1||nameKr.indexOf(q)!==-1);
     var matchesFilter = zoneActiveTfFilters.length===0 || zoneActiveTfFilters.every(function(tf){ return entry[tf+'_strong']===true && entry[tf]==='buy'; });
-    if(matchesSearch && matchesFilter){
+    var matchesGolden = !zoneGoldenOnly || entry.golden_zone===true;
+    if(matchesSearch && matchesFilter && matchesGolden){
       matches.push({ticker:ticker,name_kr:nameKr,data:entry});
     }
   });
