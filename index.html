@@ -3026,10 +3026,11 @@ function serviceNavClick(tab) {
         <button class="filter-btn zone-tf-filter-btn" data-tf="1h" onclick="toggleZoneTfFilter('1h', this)">⚡ 1시간</button>
         <button class="filter-btn zone-tf-filter-btn" data-tf="4h" onclick="toggleZoneTfFilter('4h', this)">⚡ 4시간</button>
         <button class="filter-btn zone-tf-filter-btn" data-tf="1d" onclick="toggleZoneTfFilter('1d', this)">⚡ 일봉</button>
-        <button class="filter-btn" id="goldenZoneFilterBtn" onclick="toggleGoldenZoneFilter(this)">✨ 골든존만</button>
+        <button class="filter-btn" id="goldenZoneFilterBtn" onclick="toggleGoldenZoneFilter(this)">✨ 골든존</button>
       </div>
       <div id="zoneCoinCount" style="margin-top:10px;color:#999;font-size:13px;text-align:center;"></div>
       <div style="margin-top:6px;color:var(--gold);font-size:11px;text-align:center;">⚡ 번개 : "추세전환 + 변동성 폭발 + 모멘텀"이 동시에 겹친 강한 알림</div>
+      <div style="margin-top:4px;color:#C9A84C;font-size:11px;text-align:center;">✨ 골든존 : 일봉·4시간·1시간 상승추세가 동시에 겹친 구간</div>
       <div id="zoneResultList" style="margin-top:12px;max-height:320px;overflow-y:auto;text-align:left;"></div>
       <div id="zoneStatus" style="margin-top:6px;color:#999;font-size:13px;text-align:center;"></div>
     </div>
@@ -3122,8 +3123,8 @@ function zoneBadgeHtml(zone, isStrong){
   var showLightning = isStrong && zone==='buy';
   var strongCls = showLightning ? ' zone-strong' : '';
   var strongIcon = showLightning ? '⚡' : '';
-  if(zone==='buy') return '<span class="'+strongCls.trim()+'" style="background:#c0302a;color:#fff;padding:3px 8px;border-radius:6px;font-size:12px;display:inline-block;">'+strongIcon+'매수존</span>';
-  if(zone==='sell') return '<span style="background:#1e50c8;color:#fff;padding:3px 8px;border-radius:6px;font-size:12px;display:inline-block;">매도존</span>';
+  if(zone==='buy') return '<span class="'+strongCls.trim()+'" style="background:#c0302a;color:#fff;padding:3px 8px;border-radius:6px;font-size:12px;display:inline-block;">'+strongIcon+'상승추세</span>';
+  if(zone==='sell') return '<span style="background:#1e50c8;color:#fff;padding:3px 8px;border-radius:6px;font-size:12px;display:inline-block;">하락추세</span>';
   return '<span style="background:#444;color:#aaa;padding:3px 8px;border-radius:6px;font-size:12px;">N/A</span>';
 }
 
