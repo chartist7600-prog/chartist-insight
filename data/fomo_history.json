@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "GLMR",
+    "name": "GLMR",
+    "exchange": "바이낸스",
+    "entry_price": 0.007569,
+    "currency": "USDT",
+    "entry_time": "2026-09-08 21:05",
+    "signal": "trend"
+  },
+  {
     "ticker": "APT",
     "name": "앱토스",
     "exchange": "업비트",
@@ -74,55 +83,5 @@
     "currency": "USDT",
     "entry_time": "2026-09-07 21:05",
     "signal": "trend"
-  },
-  {
-    "ticker": "TSMB",
-    "name": "TSMB",
-    "exchange": "바이낸스",
-    "entry_price": 435.48,
-    "currency": "USDT",
-    "entry_time": "2026-09-07 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "SOXLB",
-    "name": "SOXLB",
-    "exchange": "바이낸스",
-    "entry_price": 123.41,
-    "currency": "USDT",
-    "entry_time": "2026-09-07 09:08",
-    "signal": "trend"
-  },
-  {
-    "ticker": "JST",
-    "name": "저스트",
-    "exchange": "업비트",
-    "entry_price": 151.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-07 09:00"
-  },
-  {
-    "ticker": "ID",
-    "name": "스페이스아이디",
-    "exchange": "업비트",
-    "entry_price": 46.1,
-    "currency": "KRW",
-    "entry_time": "2026-09-07 09:00"
-  },
-  {
-    "ticker": "OP",
-    "name": "옵티미즘",
-    "exchange": "업비트",
-    "entry_price": 150.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-07 09:00"
-  },
-  {
-    "ticker": "AUDIO",
-    "name": "AUDIO",
-    "exchange": "바이낸스",
-    "entry_price": 0.01339,
-    "currency": "USD",
-    "entry_time": "2026-09-07 09:00"
   }
 ]
