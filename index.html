@@ -3004,7 +3004,7 @@ function serviceNavClick(tab) {
   </div>
 </div>
 
-<div class="member-modal-overlay" id="altcoin-search-guide-modal" onclick="if(event.target===this)document.getElementById('altcoin-search-guide-modal').classList.remove('show')">
+<div class="member-modal-overlay" id="altcoin-search-guide-modal" style="z-index:5100;background:rgba(0,0,0,0.7);" onclick="if(event.target===this)document.getElementById('altcoin-search-guide-modal').classList.remove('show')">
   <div class="member-modal-box" style="max-width:380px;text-align:left;">
     <div class="member-modal-icon" style="text-align:center;">📖</div>
     <div class="member-modal-title" style="text-align:center;">알트코인 탐색기 사용 방법</div>
@@ -3044,9 +3044,11 @@ function serviceNavClick(tab) {
         <button class="filter-btn" id="goldenZoneFilterBtn" onclick="toggleGoldenZoneFilter(this)">✨ 골든존</button>
       </div>
       <div id="zoneCoinCount" style="margin-top:10px;color:#999;font-size:13px;text-align:center;"></div>
+      <div style="margin-top:6px;color:var(--gold);font-size:11px;text-align:center;">⚡ 번개 : "추세전환 + 변동성 폭발 + 모멘텀"이 동시에 겹친 강한 알림</div>
+      <div style="margin-top:4px;color:#C9A84C;font-size:11px;text-align:center;">✨ 골든존 : 일봉·4시간·1시간 상승추세가 동시에 겹친 구간</div>
       <div style="margin-top:8px;text-align:center;"><button class="member-modal-btn" style="background:transparent;border:0.5px solid rgba(201,168,76,0.4);color:#C9A84C;padding:6px 14px;font-size:12px;border-radius:8px;" onclick="document.getElementById('altcoin-search-guide-modal').classList.add('show')">📖 사용 방법</button></div>
       <div id="zoneResultList" style="margin-top:12px;max-height:320px;overflow-y:auto;text-align:left;"></div>
-      <div id="zoneStatus" style="margin-top:6px;color:#999;font-size:13px;text-align:center;"></div>
+      <div id="zoneStatus" style="margin-top:6px;margin-bottom:14px;color:#999;font-size:13px;text-align:center;"></div>
     </div>
     <button class="member-modal-close" onclick="document.getElementById('altcoin-search-modal').classList.remove('show')">닫기</button>
   </div>
