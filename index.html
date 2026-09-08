@@ -3164,6 +3164,13 @@ function searchZone(query){
       matches.push({ticker:ticker,name_kr:nameKr,data:entry});
     }
   });
+  if(zoneGoldenOnly){
+    matches.sort(function(a,b){
+      var ta=a.data['1h_confirmed_at']||'';
+      var tb=b.data['1h_confirmed_at']||'';
+      return tb.localeCompare(ta);
+    });
+  }
   renderZoneResults(matches.slice(0,30));
 }
 
