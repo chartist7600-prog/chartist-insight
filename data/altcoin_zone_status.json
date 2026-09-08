@@ -1,9 +1,10 @@
 {
-  "updated_at": "2026-09-08 13:25:09",
+  "updated_at": "2026-09-08 13:37:11",
   "total_coins": 235,
   "coins": {
     "0G": {
       "name_kr": "제로지",
+      "futures_symbol": "0G",
       "1h": "sell",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -17,6 +18,7 @@
     },
     "1INCH": {
       "name_kr": "1인치네트워크",
+      "futures_symbol": "1INCH",
       "1h": "sell",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -30,6 +32,7 @@
     },
     "2Z": {
       "name_kr": "더블제로",
+      "futures_symbol": "2Z",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -43,6 +46,7 @@
     },
     "A": {
       "name_kr": "볼타",
+      "futures_symbol": "A",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -56,6 +60,7 @@
     },
     "AAVE": {
       "name_kr": "에이브",
+      "futures_symbol": "AAVE",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -69,6 +74,7 @@
     },
     "ADA": {
       "name_kr": "에이다",
+      "futures_symbol": "ADA",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -82,6 +88,7 @@
     },
     "AERO": {
       "name_kr": "에어로드롬파이낸스",
+      "futures_symbol": "AERO",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -95,6 +102,7 @@
     },
     "AGLD": {
       "name_kr": "어드벤처골드",
+      "futures_symbol": "AGLD",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -108,6 +116,7 @@
     },
     "AI": {
       "name_kr": "젠신",
+      "futures_symbol": "AI",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -121,6 +130,7 @@
     },
     "AKT": {
       "name_kr": "아카시네트워크",
+      "futures_symbol": "AKT",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -134,6 +144,7 @@
     },
     "ALGO": {
       "name_kr": "알고랜드",
+      "futures_symbol": "ALGO",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -147,6 +158,7 @@
     },
     "ANIME": {
       "name_kr": "애니메코인",
+      "futures_symbol": "ANIME",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -160,6 +172,7 @@
     },
     "ANKR": {
       "name_kr": "앵커",
+      "futures_symbol": "ANKR",
       "1h": "sell",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -173,6 +186,7 @@
     },
     "API3": {
       "name_kr": "에이피아이쓰리",
+      "futures_symbol": "API3",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -186,6 +200,7 @@
     },
     "APT": {
       "name_kr": "앱토스",
+      "futures_symbol": "APT",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -199,6 +214,7 @@
     },
     "ARB": {
       "name_kr": "아비트럼",
+      "futures_symbol": "ARB",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -212,6 +228,7 @@
     },
     "ARK": {
       "name_kr": "아크",
+      "futures_symbol": "ARK",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -225,6 +242,7 @@
     },
     "ARKM": {
       "name_kr": "아캄",
+      "futures_symbol": "ARKM",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -238,6 +256,7 @@
     },
     "ARX": {
       "name_kr": "아르키움",
+      "futures_symbol": "ARX",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -251,6 +270,7 @@
     },
     "ASTR": {
       "name_kr": "아스타",
+      "futures_symbol": "ASTR",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -264,6 +284,7 @@
     },
     "ATH": {
       "name_kr": "에이셔",
+      "futures_symbol": "ATH",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -277,6 +298,7 @@
     },
     "ATOM": {
       "name_kr": "코스모스",
+      "futures_symbol": "ATOM",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -290,6 +312,7 @@
     },
     "AUCTION": {
       "name_kr": "바운스토큰",
+      "futures_symbol": "AUCTION",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -303,6 +326,7 @@
     },
     "AVAX": {
       "name_kr": "아발란체",
+      "futures_symbol": "AVAX",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -316,6 +340,7 @@
     },
     "AVNT": {
       "name_kr": "아반티스",
+      "futures_symbol": "AVNT",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -329,6 +354,7 @@
     },
     "AWE": {
       "name_kr": "에이더블유이",
+      "futures_symbol": "AWE",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -342,6 +368,7 @@
     },
     "AXS": {
       "name_kr": "엑시인피니티",
+      "futures_symbol": "AXS",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -355,6 +382,7 @@
     },
     "AZTEC": {
       "name_kr": "아즈텍",
+      "futures_symbol": "AZTEC",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -368,6 +396,7 @@
     },
     "B3": {
       "name_kr": "비쓰리",
+      "futures_symbol": "B3",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -381,6 +410,7 @@
     },
     "BABY": {
       "name_kr": "바빌론",
+      "futures_symbol": "BABY",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -394,6 +424,7 @@
     },
     "BARD": {
       "name_kr": "롬바드",
+      "futures_symbol": "BARD",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -407,6 +438,7 @@
     },
     "BAT": {
       "name_kr": "베이직어텐션토큰",
+      "futures_symbol": "BAT",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -420,6 +452,7 @@
     },
     "BCH": {
       "name_kr": "비트코인캐시",
+      "futures_symbol": "BCH",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -433,6 +466,7 @@
     },
     "BERA": {
       "name_kr": "베라체인",
+      "futures_symbol": "BERA",
       "1h": "sell",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -446,6 +480,7 @@
     },
     "BIGTIME": {
       "name_kr": "빅타임",
+      "futures_symbol": "BIGTIME",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -459,6 +494,7 @@
     },
     "BIO": {
       "name_kr": "바이오프로토콜",
+      "futures_symbol": "BIO",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -472,6 +508,7 @@
     },
     "BIRB": {
       "name_kr": "문버드",
+      "futures_symbol": "BIRB",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -485,6 +522,7 @@
     },
     "BLUR": {
       "name_kr": "블러",
+      "futures_symbol": "BLUR",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -498,6 +536,7 @@
     },
     "BREV": {
       "name_kr": "브레비스",
+      "futures_symbol": "BREV",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -511,6 +550,7 @@
     },
     "BSB": {
       "name_kr": "블록스트리트",
+      "futures_symbol": "BSB",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -524,6 +564,7 @@
     },
     "BSV": {
       "name_kr": "비트코인에스브이",
+      "futures_symbol": "BSV",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -537,6 +578,7 @@
     },
     "BTC": {
       "name_kr": "비트코인",
+      "futures_symbol": "BTC",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -550,6 +592,7 @@
     },
     "CAP": {
       "name_kr": "캡",
+      "futures_symbol": "CAP",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -563,6 +606,7 @@
     },
     "CARV": {
       "name_kr": "카브",
+      "futures_symbol": "CARV",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -576,6 +620,7 @@
     },
     "CC": {
       "name_kr": "캔톤",
+      "futures_symbol": "CC",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -589,6 +634,7 @@
     },
     "CELO": {
       "name_kr": "셀로",
+      "futures_symbol": "CELO",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -602,6 +648,7 @@
     },
     "CFG": {
       "name_kr": "센트리퓨즈",
+      "futures_symbol": "CFG",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -615,6 +662,7 @@
     },
     "CFX": {
       "name_kr": "콘플럭스",
+      "futures_symbol": "CFX",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -628,6 +676,7 @@
     },
     "CHIP": {
       "name_kr": "유에스디에이아이",
+      "futures_symbol": "CHIP",
       "1h": "sell",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -641,6 +690,7 @@
     },
     "CHZ": {
       "name_kr": "칠리즈",
+      "futures_symbol": "CHZ",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -654,6 +704,7 @@
     },
     "CKB": {
       "name_kr": "너보스",
+      "futures_symbol": "CKB",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -667,6 +718,7 @@
     },
     "COMP": {
       "name_kr": "컴파운드",
+      "futures_symbol": "COMP",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -680,6 +732,7 @@
     },
     "COW": {
       "name_kr": "카우프로토콜",
+      "futures_symbol": "COW",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -693,6 +746,7 @@
     },
     "CRV": {
       "name_kr": "커브",
+      "futures_symbol": "CRV",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -706,6 +760,7 @@
     },
     "CVC": {
       "name_kr": "시빅",
+      "futures_symbol": "CVC",
       "1h": "sell",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -719,6 +774,7 @@
     },
     "CYBER": {
       "name_kr": "사이버",
+      "futures_symbol": "CYBER",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -732,6 +788,7 @@
     },
     "DEEP": {
       "name_kr": "딥북",
+      "futures_symbol": "DEEP",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -745,6 +802,7 @@
     },
     "DOGE": {
       "name_kr": "도지코인",
+      "futures_symbol": "DOGE",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -758,6 +816,7 @@
     },
     "DOOD": {
       "name_kr": "두들즈",
+      "futures_symbol": "DOOD",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -771,6 +830,7 @@
     },
     "DOS": {
       "name_kr": "댑오에스",
+      "futures_symbol": "DOS",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -784,6 +844,7 @@
     },
     "DOT": {
       "name_kr": "폴카닷",
+      "futures_symbol": "DOT",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -797,6 +858,7 @@
     },
     "EDGE": {
       "name_kr": "디피니티브",
+      "futures_symbol": "EDGE",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -810,6 +872,7 @@
     },
     "EGLD": {
       "name_kr": "멀티버스엑스",
+      "futures_symbol": "EGLD",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -823,6 +886,7 @@
     },
     "ELSA": {
       "name_kr": "헤이엘사",
+      "futures_symbol": "ELSA",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -836,6 +900,7 @@
     },
     "ENA": {
       "name_kr": "에테나",
+      "futures_symbol": "ENA",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -849,6 +914,7 @@
     },
     "ENS": {
       "name_kr": "이더리움네임서비스",
+      "futures_symbol": "ENS",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -862,6 +928,7 @@
     },
     "ENSO": {
       "name_kr": "엔소",
+      "futures_symbol": "ENSO",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -875,6 +942,7 @@
     },
     "ERA": {
       "name_kr": "칼데라",
+      "futures_symbol": "ERA",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -888,6 +956,7 @@
     },
     "ESP": {
       "name_kr": "에스프레소",
+      "futures_symbol": "ESP",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -901,6 +970,7 @@
     },
     "ETC": {
       "name_kr": "이더리움클래식",
+      "futures_symbol": "ETC",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -914,6 +984,7 @@
     },
     "ETH": {
       "name_kr": "이더리움",
+      "futures_symbol": "ETH",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -927,6 +998,7 @@
     },
     "ETHFI": {
       "name_kr": "이더파이",
+      "futures_symbol": "ETHFI",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -940,6 +1012,7 @@
     },
     "EUL": {
       "name_kr": "오일러",
+      "futures_symbol": "EUL",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -953,6 +1026,7 @@
     },
     "F": {
       "name_kr": "신퓨처스",
+      "futures_symbol": "F",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -966,6 +1040,7 @@
     },
     "FF": {
       "name_kr": "팔콘파이낸스",
+      "futures_symbol": "FF",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -979,6 +1054,7 @@
     },
     "FIL": {
       "name_kr": "파일코인",
+      "futures_symbol": "FIL",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -992,6 +1068,7 @@
     },
     "FLOCK": {
       "name_kr": "플록",
+      "futures_symbol": "FLOCK",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1005,6 +1082,7 @@
     },
     "FLUID": {
       "name_kr": "플루이드",
+      "futures_symbol": "FLUID",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1018,6 +1096,7 @@
     },
     "G": {
       "name_kr": "그래비티",
+      "futures_symbol": "G",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1031,6 +1110,7 @@
     },
     "GAS": {
       "name_kr": "가스",
+      "futures_symbol": "GAS",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -1044,6 +1124,7 @@
     },
     "GLM": {
       "name_kr": "골렘",
+      "futures_symbol": "GLM",
       "1h": "sell",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -1057,6 +1138,7 @@
     },
     "GMT": {
       "name_kr": "스테픈",
+      "futures_symbol": "GMT",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1070,6 +1152,7 @@
     },
     "GRT": {
       "name_kr": "더그래프",
+      "futures_symbol": "GRT",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1083,6 +1166,7 @@
     },
     "GRVT": {
       "name_kr": "그래비티토큰",
+      "futures_symbol": "GRVT",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1096,6 +1180,7 @@
     },
     "HBAR": {
       "name_kr": "헤데라",
+      "futures_symbol": "HBAR",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1109,6 +1194,7 @@
     },
     "HIVE": {
       "name_kr": "하이브",
+      "futures_symbol": "HIVE",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1122,6 +1208,7 @@
     },
     "HOLO": {
       "name_kr": "홀로월드에이아이",
+      "futures_symbol": "HOLO",
       "1h": "sell",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -1135,6 +1222,7 @@
     },
     "HOME": {
       "name_kr": "디파이앱",
+      "futures_symbol": "HOME",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1148,6 +1236,7 @@
     },
     "HYPER": {
       "name_kr": "하이퍼레인",
+      "futures_symbol": "HYPER",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1161,6 +1250,7 @@
     },
     "ICP": {
       "name_kr": "인터넷컴퓨터",
+      "futures_symbol": "ICP",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1174,6 +1264,7 @@
     },
     "ICX": {
       "name_kr": "아이콘",
+      "futures_symbol": "ICX",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1187,6 +1278,7 @@
     },
     "ID": {
       "name_kr": "스페이스아이디",
+      "futures_symbol": "ID",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1200,6 +1292,7 @@
     },
     "IMX": {
       "name_kr": "이뮤터블엑스",
+      "futures_symbol": "IMX",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1213,6 +1306,7 @@
     },
     "IN": {
       "name_kr": "인피닛",
+      "futures_symbol": "IN",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1226,6 +1320,7 @@
     },
     "INJ": {
       "name_kr": "인젝티브",
+      "futures_symbol": "INJ",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -1239,6 +1334,7 @@
     },
     "IO": {
       "name_kr": "아이오넷",
+      "futures_symbol": "IO",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1252,6 +1348,7 @@
     },
     "IOST": {
       "name_kr": "아이오에스티",
+      "futures_symbol": "IOST",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1265,6 +1362,7 @@
     },
     "IOTA": {
       "name_kr": "아이오타",
+      "futures_symbol": "IOTA",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1278,6 +1376,7 @@
     },
     "IRYS": {
       "name_kr": "아이리스",
+      "futures_symbol": "IRYS",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1291,6 +1390,7 @@
     },
     "JST": {
       "name_kr": "저스트",
+      "futures_symbol": "JST",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1304,6 +1404,7 @@
     },
     "JTO": {
       "name_kr": "지토",
+      "futures_symbol": "JTO",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1317,6 +1418,7 @@
     },
     "JUP": {
       "name_kr": "주피터",
+      "futures_symbol": "JUP",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1330,6 +1432,7 @@
     },
     "KAITO": {
       "name_kr": "카이토",
+      "futures_symbol": "KAITO",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -1343,6 +1446,7 @@
     },
     "KAT": {
       "name_kr": "카타나",
+      "futures_symbol": "KAT",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1356,6 +1460,7 @@
     },
     "KAVA": {
       "name_kr": "카바",
+      "futures_symbol": "KAVA",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1369,6 +1474,7 @@
     },
     "KERNEL": {
       "name_kr": "커널다오",
+      "futures_symbol": "KERNEL",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1382,6 +1488,7 @@
     },
     "KITE": {
       "name_kr": "카이트",
+      "futures_symbol": "KITE",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1395,6 +1502,7 @@
     },
     "KMNO": {
       "name_kr": "카미노파이낸스",
+      "futures_symbol": "KMNO",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1408,6 +1516,7 @@
     },
     "KNC": {
       "name_kr": "카이버네트워크",
+      "futures_symbol": "KNC",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1421,6 +1530,7 @@
     },
     "LA": {
       "name_kr": "라그랑주",
+      "futures_symbol": "LA",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1434,6 +1544,7 @@
     },
     "LAYER": {
       "name_kr": "솔레이어",
+      "futures_symbol": "LAYER",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1447,6 +1558,7 @@
     },
     "LINEA": {
       "name_kr": "리네아",
+      "futures_symbol": "LINEA",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1460,6 +1572,7 @@
     },
     "LINK": {
       "name_kr": "체인링크",
+      "futures_symbol": "LINK",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1473,6 +1586,7 @@
     },
     "LIT": {
       "name_kr": "라이터",
+      "futures_symbol": "LIT",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -1486,6 +1600,7 @@
     },
     "LPT": {
       "name_kr": "라이브피어",
+      "futures_symbol": "LPT",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1499,6 +1614,7 @@
     },
     "LSK": {
       "name_kr": "리스크",
+      "futures_symbol": "LSK",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1512,6 +1628,7 @@
     },
     "MANA": {
       "name_kr": "디센트럴랜드",
+      "futures_symbol": "MANA",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1525,6 +1642,7 @@
     },
     "MANTRA": {
       "name_kr": "만트라",
+      "futures_symbol": "MANTRA",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -1538,6 +1656,7 @@
     },
     "MASK": {
       "name_kr": "마스크네트워크",
+      "futures_symbol": "MASK",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1551,6 +1670,7 @@
     },
     "ME": {
       "name_kr": "매직에덴",
+      "futures_symbol": "ME",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1564,6 +1684,7 @@
     },
     "MEGA": {
       "name_kr": "메가이더",
+      "futures_symbol": "MEGA",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1577,6 +1698,7 @@
     },
     "META": {
       "name_kr": "메타디움",
+      "futures_symbol": "META",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1590,6 +1712,7 @@
     },
     "MEW": {
       "name_kr": "캣인어독스월드",
+      "futures_symbol": "MEW",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -1603,6 +1726,7 @@
     },
     "MINA": {
       "name_kr": "미나",
+      "futures_symbol": "MINA",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1616,6 +1740,7 @@
     },
     "MIRA": {
       "name_kr": "미라네트워크",
+      "futures_symbol": "MIRA",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1629,6 +1754,7 @@
     },
     "MMT": {
       "name_kr": "모멘텀",
+      "futures_symbol": "MMT",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -1642,6 +1768,7 @@
     },
     "MOCA": {
       "name_kr": "모카네트워크",
+      "futures_symbol": "MOCA",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1655,6 +1782,7 @@
     },
     "MON": {
       "name_kr": "모나드",
+      "futures_symbol": "MON",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -1668,6 +1796,7 @@
     },
     "MOODENG": {
       "name_kr": "무뎅",
+      "futures_symbol": "MOODENG",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -1681,6 +1810,7 @@
     },
     "MORPHO": {
       "name_kr": "모포",
+      "futures_symbol": "MORPHO",
       "1h": "sell",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -1694,6 +1824,7 @@
     },
     "MOVE": {
       "name_kr": "무브먼트",
+      "futures_symbol": "MOVE",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1707,6 +1838,7 @@
     },
     "MTL": {
       "name_kr": "메탈",
+      "futures_symbol": "MTL",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1720,6 +1852,7 @@
     },
     "NEAR": {
       "name_kr": "니어프로토콜",
+      "futures_symbol": "NEAR",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1733,6 +1866,7 @@
     },
     "NEO": {
       "name_kr": "네오",
+      "futures_symbol": "NEO",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1746,6 +1880,7 @@
     },
     "NEWT": {
       "name_kr": "뉴턴프로토콜",
+      "futures_symbol": "NEWT",
       "1h": "sell",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -1759,6 +1894,7 @@
     },
     "NXPC": {
       "name_kr": "넥스페이스",
+      "futures_symbol": "NXPC",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1772,6 +1908,7 @@
     },
     "O": {
       "name_kr": "오원익스체인지",
+      "futures_symbol": "O",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1785,6 +1922,7 @@
     },
     "ONDO": {
       "name_kr": "온도파이낸스",
+      "futures_symbol": "ONDO",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1798,6 +1936,7 @@
     },
     "ONG": {
       "name_kr": "온톨로지가스",
+      "futures_symbol": "ONG",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1811,6 +1950,7 @@
     },
     "ONT": {
       "name_kr": "온톨로지",
+      "futures_symbol": "ONT",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1824,6 +1964,7 @@
     },
     "OP": {
       "name_kr": "옵티미즘",
+      "futures_symbol": "OP",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1837,6 +1978,7 @@
     },
     "OPEN": {
       "name_kr": "오픈렛저",
+      "futures_symbol": "OPEN",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1850,6 +1992,7 @@
     },
     "OPG": {
       "name_kr": "오픈그라디언트",
+      "futures_symbol": "OPG",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1863,6 +2006,7 @@
     },
     "ORBS": {
       "name_kr": "오브스",
+      "futures_symbol": "ORBS",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1876,6 +2020,7 @@
     },
     "ORCA": {
       "name_kr": "오르카",
+      "futures_symbol": "ORCA",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1889,6 +2034,7 @@
     },
     "ORDER": {
       "name_kr": "오덜리",
+      "futures_symbol": "ORDER",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1902,6 +2048,7 @@
     },
     "PENDLE": {
       "name_kr": "펜들",
+      "futures_symbol": "PENDLE",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -1915,6 +2062,7 @@
     },
     "PENGU": {
       "name_kr": "펏지펭귄",
+      "futures_symbol": "PENGU",
       "1h": "sell",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -1928,6 +2076,7 @@
     },
     "PEPE": {
       "name_kr": "페페",
+      "futures_symbol": "1000PEPE",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1941,6 +2090,7 @@
     },
     "PIEVERSE": {
       "name_kr": "파이버스",
+      "futures_symbol": "PIEVERSE",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1954,6 +2104,7 @@
     },
     "PLUME": {
       "name_kr": "플룸",
+      "futures_symbol": "PLUME",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -1967,6 +2118,7 @@
     },
     "POL": {
       "name_kr": "폴리곤에코시스템토큰",
+      "futures_symbol": "POL",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1980,6 +2132,7 @@
     },
     "POLYX": {
       "name_kr": "폴리매쉬",
+      "futures_symbol": "POLYX",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -1993,6 +2146,7 @@
     },
     "POWR": {
       "name_kr": "파워렛저",
+      "futures_symbol": "POWR",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2006,6 +2160,7 @@
     },
     "PRL": {
       "name_kr": "펄",
+      "futures_symbol": "PRL",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -2019,6 +2174,7 @@
     },
     "PROM": {
       "name_kr": "프롬",
+      "futures_symbol": "PROM",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2032,6 +2188,7 @@
     },
     "PROVE": {
       "name_kr": "서싱트",
+      "futures_symbol": "PROVE",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2045,6 +2202,7 @@
     },
     "PUMP": {
       "name_kr": "펌프펀",
+      "futures_symbol": "PUMP",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -2058,6 +2216,7 @@
     },
     "PUNDIX": {
       "name_kr": "펀디엑스",
+      "futures_symbol": "PUNDIX",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2071,6 +2230,7 @@
     },
     "PYTH": {
       "name_kr": "피스네트워크",
+      "futures_symbol": "PYTH",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2084,6 +2244,7 @@
     },
     "QTUM": {
       "name_kr": "퀀텀",
+      "futures_symbol": "QTUM",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2097,6 +2258,7 @@
     },
     "RAY": {
       "name_kr": "레이디움",
+      "futures_symbol": "RAY",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2110,6 +2272,7 @@
     },
     "RE": {
       "name_kr": "리",
+      "futures_symbol": "RE",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2123,6 +2286,7 @@
     },
     "RED": {
       "name_kr": "레드스톤",
+      "futures_symbol": "RED",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2136,6 +2300,7 @@
     },
     "RENDER": {
       "name_kr": "렌더토큰",
+      "futures_symbol": "RENDER",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2149,6 +2314,7 @@
     },
     "RVN": {
       "name_kr": "레이븐코인",
+      "futures_symbol": "RVN",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2162,6 +2328,7 @@
     },
     "SAFE": {
       "name_kr": "세이프",
+      "futures_symbol": "SAFE",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2175,6 +2342,7 @@
     },
     "SAHARA": {
       "name_kr": "사하라에이아이",
+      "futures_symbol": "SAHARA",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2188,6 +2356,7 @@
     },
     "SAND": {
       "name_kr": "샌드박스",
+      "futures_symbol": "SAND",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2201,6 +2370,7 @@
     },
     "SC": {
       "name_kr": "시아코인",
+      "futures_symbol": "SC",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2214,6 +2384,7 @@
     },
     "SEI": {
       "name_kr": "세이",
+      "futures_symbol": "SEI",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2227,6 +2398,7 @@
     },
     "SENT": {
       "name_kr": "센티언트",
+      "futures_symbol": "SENT",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2240,6 +2412,7 @@
     },
     "SHIB": {
       "name_kr": "시바이누",
+      "futures_symbol": "1000SHIB",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2253,6 +2426,7 @@
     },
     "SIGN": {
       "name_kr": "사인",
+      "futures_symbol": "SIGN",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2266,6 +2440,7 @@
     },
     "SKR": {
       "name_kr": "시커",
+      "futures_symbol": "SKR",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2279,6 +2454,7 @@
     },
     "SKY": {
       "name_kr": "스카이프로토콜",
+      "futures_symbol": "SKY",
       "1h": "sell",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -2292,6 +2468,7 @@
     },
     "SLX": {
       "name_kr": "솔스티스",
+      "futures_symbol": "SLX",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -2305,6 +2482,7 @@
     },
     "SNT": {
       "name_kr": "스테이터스네트워크토큰",
+      "futures_symbol": "SNT",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2318,6 +2496,7 @@
     },
     "SOL": {
       "name_kr": "솔라나",
+      "futures_symbol": "SOL",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2331,6 +2510,7 @@
     },
     "SOMI": {
       "name_kr": "솜니아",
+      "futures_symbol": "SOMI",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2344,6 +2524,7 @@
     },
     "SONIC": {
       "name_kr": "소닉SVM",
+      "futures_symbol": "SONIC",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2357,6 +2538,7 @@
     },
     "SOON": {
       "name_kr": "쑨",
+      "futures_symbol": "SOON",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2370,6 +2552,7 @@
     },
     "SOPH": {
       "name_kr": "소폰",
+      "futures_symbol": "SOPH",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2383,6 +2566,7 @@
     },
     "SPK": {
       "name_kr": "스파크",
+      "futures_symbol": "SPK",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2396,6 +2580,7 @@
     },
     "SPX": {
       "name_kr": "에스피엑스6900",
+      "futures_symbol": "SPX",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2409,6 +2594,7 @@
     },
     "STEEM": {
       "name_kr": "스팀",
+      "futures_symbol": "STEEM",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2422,6 +2608,7 @@
     },
     "STORJ": {
       "name_kr": "스토리지",
+      "futures_symbol": "STORJ",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2435,6 +2622,7 @@
     },
     "STRAX": {
       "name_kr": "저트라",
+      "futures_symbol": "STRAX",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2448,6 +2636,7 @@
     },
     "STX": {
       "name_kr": "스택스",
+      "futures_symbol": "STX",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2461,6 +2650,7 @@
     },
     "SUI": {
       "name_kr": "수이",
+      "futures_symbol": "SUI",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2474,6 +2664,7 @@
     },
     "SUN": {
       "name_kr": "썬",
+      "futures_symbol": "SUN",
       "1h": "sell",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -2487,6 +2678,7 @@
     },
     "SUPER": {
       "name_kr": "슈퍼버스",
+      "futures_symbol": "SUPER",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2500,6 +2692,7 @@
     },
     "SYRUP": {
       "name_kr": "메이플파이낸스",
+      "futures_symbol": "SYRUP",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2513,6 +2706,7 @@
     },
     "T": {
       "name_kr": "쓰레스홀드",
+      "futures_symbol": "T",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2526,6 +2720,7 @@
     },
     "TAIKO": {
       "name_kr": "타이코",
+      "futures_symbol": "TAIKO",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2539,6 +2734,7 @@
     },
     "TAO": {
       "name_kr": "비트텐서",
+      "futures_symbol": "TAO",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2552,6 +2748,7 @@
     },
     "THETA": {
       "name_kr": "쎄타토큰",
+      "futures_symbol": "THETA",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2565,6 +2762,7 @@
     },
     "TIA": {
       "name_kr": "셀레스티아",
+      "futures_symbol": "TIA",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2578,6 +2776,7 @@
     },
     "TOSHI": {
       "name_kr": "토시",
+      "futures_symbol": "TOSHI",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2591,6 +2790,7 @@
     },
     "TREE": {
       "name_kr": "트리하우스",
+      "futures_symbol": "TREE",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2604,6 +2804,7 @@
     },
     "TRUMP": {
       "name_kr": "오피셜트럼프",
+      "futures_symbol": "TRUMP",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2617,6 +2818,7 @@
     },
     "TRUST": {
       "name_kr": "인튜이션",
+      "futures_symbol": "TRUST",
       "1h": "sell",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -2630,6 +2832,7 @@
     },
     "TRX": {
       "name_kr": "트론",
+      "futures_symbol": "TRX",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2643,6 +2846,7 @@
     },
     "UNI": {
       "name_kr": "유니스왑",
+      "futures_symbol": "UNI",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2656,6 +2860,7 @@
     },
     "VANA": {
       "name_kr": "바나",
+      "futures_symbol": "VANA",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2669,6 +2874,7 @@
     },
     "VET": {
       "name_kr": "비체인",
+      "futures_symbol": "VET",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2682,6 +2888,7 @@
     },
     "VIRTUAL": {
       "name_kr": "버추얼프로토콜",
+      "futures_symbol": "VIRTUAL",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2695,6 +2902,7 @@
     },
     "VTHO": {
       "name_kr": "비토르토큰",
+      "futures_symbol": "VTHO",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2708,6 +2916,7 @@
     },
     "VVV": {
       "name_kr": "베니스토큰",
+      "futures_symbol": "VVV",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -2721,6 +2930,7 @@
     },
     "W": {
       "name_kr": "웜홀",
+      "futures_symbol": "W",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2734,6 +2944,7 @@
     },
     "WAL": {
       "name_kr": "월러스",
+      "futures_symbol": "WAL",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2747,6 +2958,7 @@
     },
     "WAVES": {
       "name_kr": "웨이브",
+      "futures_symbol": "WAVES",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2760,6 +2972,7 @@
     },
     "WAXP": {
       "name_kr": "왁스",
+      "futures_symbol": "WAXP",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2773,6 +2986,7 @@
     },
     "WCT": {
       "name_kr": "월렛커넥트",
+      "futures_symbol": "WCT",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2786,6 +3000,7 @@
     },
     "WET": {
       "name_kr": "휴미디파이",
+      "futures_symbol": "WET",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2799,6 +3014,7 @@
     },
     "WIF": {
       "name_kr": "도그위프햇",
+      "futures_symbol": "WIF",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2812,6 +3028,7 @@
     },
     "WLD": {
       "name_kr": "월드코인",
+      "futures_symbol": "WLD",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2825,6 +3042,7 @@
     },
     "WLFI": {
       "name_kr": "월드리버티파이낸셜",
+      "futures_symbol": "WLFI",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2838,6 +3056,7 @@
     },
     "XCN": {
       "name_kr": "오닉스코인",
+      "futures_symbol": "XCN",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2851,6 +3070,7 @@
     },
     "XEC": {
       "name_kr": "이캐시",
+      "futures_symbol": "1000XEC",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2864,6 +3084,7 @@
     },
     "XLM": {
       "name_kr": "스텔라루멘",
+      "futures_symbol": "XLM",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2877,6 +3098,7 @@
     },
     "XPL": {
       "name_kr": "플라즈마",
+      "futures_symbol": "XPL",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2890,6 +3112,7 @@
     },
     "XRP": {
       "name_kr": "엑스알피(리플)",
+      "futures_symbol": "XRP",
       "1h": "sell",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -2903,6 +3126,7 @@
     },
     "XTZ": {
       "name_kr": "테조스",
+      "futures_symbol": "XTZ",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2916,6 +3140,7 @@
     },
     "YGG": {
       "name_kr": "일드길드게임즈",
+      "futures_symbol": "YGG",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2929,6 +3154,7 @@
     },
     "ZAMA": {
       "name_kr": "자마",
+      "futures_symbol": "ZAMA",
       "1h": "sell",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2942,6 +3168,7 @@
     },
     "ZBT": {
       "name_kr": "제로베이스",
+      "futures_symbol": "ZBT",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2955,6 +3182,7 @@
     },
     "ZETA": {
       "name_kr": "제타체인",
+      "futures_symbol": "ZETA",
       "1h": "sell",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -2968,6 +3196,7 @@
     },
     "ZIL": {
       "name_kr": "질리카",
+      "futures_symbol": "ZIL",
       "1h": "buy",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -2981,6 +3210,7 @@
     },
     "ZK": {
       "name_kr": "지케이싱크",
+      "futures_symbol": "ZK",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -2994,6 +3224,7 @@
     },
     "ZKC": {
       "name_kr": "바운드리스",
+      "futures_symbol": "ZKC",
       "1h": "sell",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
@@ -3007,6 +3238,7 @@
     },
     "ZKP": {
       "name_kr": "지케이패스",
+      "futures_symbol": "ZKP",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -3020,6 +3252,7 @@
     },
     "ZORA": {
       "name_kr": "조라",
+      "futures_symbol": "ZORA",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -3033,6 +3266,7 @@
     },
     "ZRO": {
       "name_kr": "레이어제로",
+      "futures_symbol": "ZRO",
       "1h": "buy",
       "1h_strong": false,
       "1h_confirmed_at": "09/08 13:00",
@@ -3046,6 +3280,7 @@
     },
     "ZRX": {
       "name_kr": "제로엑스",
+      "futures_symbol": "ZRX",
       "1h": "sell",
       "1h_strong": true,
       "1h_confirmed_at": "09/08 13:00",
