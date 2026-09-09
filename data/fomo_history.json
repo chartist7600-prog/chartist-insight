@@ -1,5 +1,72 @@
 [
   {
+    "ticker": "SCR",
+    "name": "SCR",
+    "exchange": "빗썸",
+    "entry_price": 33.62,
+    "currency": "KRW",
+    "entry_time": "2026-09-09 09:09",
+    "signal": "trend"
+  },
+  {
+    "ticker": "NOKB",
+    "name": "NOKB",
+    "exchange": "바이낸스",
+    "entry_price": 10.62,
+    "currency": "USDT",
+    "entry_time": "2026-09-09 09:09",
+    "signal": "trend"
+  },
+  {
+    "ticker": "RKLBB",
+    "name": "RKLBB",
+    "exchange": "바이낸스",
+    "entry_price": 67.09,
+    "currency": "USDT",
+    "entry_time": "2026-09-09 09:09",
+    "signal": "trend"
+  },
+  {
+    "ticker": "ZIL",
+    "name": "질리카",
+    "exchange": "업비트",
+    "entry_price": 3.8,
+    "currency": "KRW",
+    "entry_time": "2026-09-09 09:00"
+  },
+  {
+    "ticker": "INTCB",
+    "name": "INTCB",
+    "exchange": "바이낸스",
+    "entry_price": 103.92,
+    "currency": "USD",
+    "entry_time": "2026-09-09 09:00"
+  },
+  {
+    "ticker": "CRWVB",
+    "name": "CRWVB",
+    "exchange": "바이낸스",
+    "entry_price": 99.74,
+    "currency": "USD",
+    "entry_time": "2026-09-09 09:00"
+  },
+  {
+    "ticker": "INTWB",
+    "name": "INTWB",
+    "exchange": "바이낸스",
+    "entry_price": 24.51,
+    "currency": "USD",
+    "entry_time": "2026-09-09 09:00"
+  },
+  {
+    "ticker": "NBISB",
+    "name": "NBISB",
+    "exchange": "바이낸스",
+    "entry_price": 243.94,
+    "currency": "USD",
+    "entry_time": "2026-09-09 09:00"
+  },
+  {
     "ticker": "FANC",
     "name": "FANC",
     "exchange": "빗썸",
@@ -14,106 +81,5 @@
     "entry_price": 152.0,
     "currency": "KRW",
     "entry_time": "2026-09-09 00:00"
-  },
-  {
-    "ticker": "INJ",
-    "name": "인젝티브",
-    "exchange": "빗썸",
-    "entry_price": 8320.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-09 00:00"
-  },
-  {
-    "ticker": "SAFE",
-    "name": "세이프",
-    "exchange": "빗썸",
-    "entry_price": 140.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-09 00:00"
-  },
-  {
-    "ticker": "GLMR",
-    "name": "GLMR",
-    "exchange": "바이낸스",
-    "entry_price": 0.007569,
-    "currency": "USDT",
-    "entry_time": "2026-09-08 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "APT",
-    "name": "앱토스",
-    "exchange": "업비트",
-    "entry_price": 875.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-08 09:00"
-  },
-  {
-    "ticker": "TAIKO",
-    "name": "타이코",
-    "exchange": "업비트",
-    "entry_price": 115.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-08 09:00"
-  },
-  {
-    "ticker": "SOPH",
-    "name": "SOPH",
-    "exchange": "바이낸스",
-    "entry_price": 0.00579,
-    "currency": "USD",
-    "entry_time": "2026-09-08 09:00"
-  },
-  {
-    "ticker": "SENT",
-    "name": "센티언트",
-    "exchange": "빗썸",
-    "entry_price": 19.26,
-    "currency": "KRW",
-    "entry_time": "2026-09-08 00:00"
-  },
-  {
-    "ticker": "ARX",
-    "name": "아르키움",
-    "exchange": "빗썸",
-    "entry_price": 201.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-08 00:00"
-  },
-  {
-    "ticker": "LUNA",
-    "name": "LUNA",
-    "exchange": "바이낸스",
-    "entry_price": 0.0551,
-    "currency": "USDT",
-    "entry_time": "2026-09-07 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "AMDB",
-    "name": "AMDB",
-    "exchange": "바이낸스",
-    "entry_price": 481.32,
-    "currency": "USDT",
-    "entry_time": "2026-09-07 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "DRAMB",
-    "name": "DRAMB",
-    "exchange": "바이낸스",
-    "entry_price": 60.89,
-    "currency": "USDT",
-    "entry_time": "2026-09-07 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "GLWB",
-    "name": "GLWB",
-    "exchange": "바이낸스",
-    "entry_price": 155.86,
-    "currency": "USDT",
-    "entry_time": "2026-09-07 21:05",
-    "signal": "trend"
   }
 ]
