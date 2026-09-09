@@ -1,5 +1,29 @@
 [
   {
+    "ticker": "INJ",
+    "name": "인젝티브",
+    "exchange": "빗썸",
+    "entry_price": 8320.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-10 00:00"
+  },
+  {
+    "ticker": "SAFE",
+    "name": "세이프",
+    "exchange": "빗썸",
+    "entry_price": 140.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-10 00:00"
+  },
+  {
+    "ticker": "KAT",
+    "name": "카타나",
+    "exchange": "빗썸",
+    "entry_price": 7.432,
+    "currency": "KRW",
+    "entry_time": "2026-09-10 00:00"
+  },
+  {
     "ticker": "SCR",
     "name": "SCR",
     "exchange": "빗썸",
