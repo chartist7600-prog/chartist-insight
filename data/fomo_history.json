@@ -1,5 +1,21 @@
 [
   {
+    "ticker": "POKT",
+    "name": "포켓네트워크",
+    "exchange": "빗썸",
+    "entry_price": 10.79,
+    "currency": "KRW",
+    "entry_time": "2026-09-11 00:00"
+  },
+  {
+    "ticker": "BIRB",
+    "name": "문버드",
+    "exchange": "빗썸",
+    "entry_price": 91.36,
+    "currency": "KRW",
+    "entry_time": "2026-09-11 00:00"
+  },
+  {
     "ticker": "UP",
     "name": "UP",
     "exchange": "빗썸",

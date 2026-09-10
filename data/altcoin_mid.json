@@ -5386,5 +5386,17 @@
     "time": "2026-09-10 09:00",
     "price": 8.58,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_POKT",
+    "time": "2026-09-11 00:00",
+    "price": 10.79,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_UP",
+    "time": "2026-09-11 00:00",
+    "price": 97.34,
+    "sig_type": "trend"
   }
 ]
