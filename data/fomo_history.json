@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "UP",
+    "name": "UP",
+    "exchange": "빗썸",
+    "entry_price": 92.64,
+    "currency": "KRW",
+    "entry_time": "2026-09-10 21:05",
+    "signal": "trend"
+  },
+  {
     "ticker": "GPS",
     "name": "GPS",
     "exchange": "빗썸",
@@ -74,14 +83,6 @@
     "exchange": "업비트",
     "entry_price": 3.8,
     "currency": "KRW",
-    "entry_time": "2026-09-09 09:00"
-  },
-  {
-    "ticker": "INTCB",
-    "name": "INTCB",
-    "exchange": "바이낸스",
-    "entry_price": 103.92,
-    "currency": "USD",
     "entry_time": "2026-09-09 09:00"
   }
 ]

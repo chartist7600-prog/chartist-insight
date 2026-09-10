@@ -10,5 +10,11 @@
     "time": "2026-09-10 09:00",
     "price": 235.12,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_UP",
+    "time": "2026-09-10 21:00",
+    "price": 92.64,
+    "sig_type": "trend"
   }
 ]
