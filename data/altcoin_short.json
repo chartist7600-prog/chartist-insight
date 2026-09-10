@@ -1,20 +1,14 @@
 [
   {
-    "key": "빗썸_SCR",
-    "time": "2026-09-09 09:00",
-    "price": 33.62,
+    "key": "빗썸_GPS",
+    "time": "2026-09-10 09:00",
+    "price": 16.75,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_NOKB",
-    "time": "2026-09-09 09:00",
-    "price": 10.62,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_RKLBB",
-    "time": "2026-09-09 09:00",
-    "price": 67.09,
+    "key": "바이낸스_MRVLB",
+    "time": "2026-09-10 09:00",
+    "price": 235.12,
     "sig_type": "trend"
   }
 ]

@@ -1,5 +1,23 @@
 [
   {
+    "ticker": "GPS",
+    "name": "GPS",
+    "exchange": "빗썸",
+    "entry_price": 16.75,
+    "currency": "KRW",
+    "entry_time": "2026-09-10 09:10",
+    "signal": "trend"
+  },
+  {
+    "ticker": "MRVLB",
+    "name": "MRVLB",
+    "exchange": "바이낸스",
+    "entry_price": 235.12,
+    "currency": "USDT",
+    "entry_time": "2026-09-10 09:10",
+    "signal": "trend"
+  },
+  {
     "ticker": "INJ",
     "name": "인젝티브",
     "exchange": "빗썸",
@@ -65,45 +83,5 @@
     "entry_price": 103.92,
     "currency": "USD",
     "entry_time": "2026-09-09 09:00"
-  },
-  {
-    "ticker": "CRWVB",
-    "name": "CRWVB",
-    "exchange": "바이낸스",
-    "entry_price": 99.74,
-    "currency": "USD",
-    "entry_time": "2026-09-09 09:00"
-  },
-  {
-    "ticker": "INTWB",
-    "name": "INTWB",
-    "exchange": "바이낸스",
-    "entry_price": 24.51,
-    "currency": "USD",
-    "entry_time": "2026-09-09 09:00"
-  },
-  {
-    "ticker": "NBISB",
-    "name": "NBISB",
-    "exchange": "바이낸스",
-    "entry_price": 243.94,
-    "currency": "USD",
-    "entry_time": "2026-09-09 09:00"
-  },
-  {
-    "ticker": "FANC",
-    "name": "FANC",
-    "exchange": "빗썸",
-    "entry_price": 1.068,
-    "currency": "KRW",
-    "entry_time": "2026-09-09 00:00"
-  },
-  {
-    "ticker": "OP",
-    "name": "옵티미즘",
-    "exchange": "빗썸",
-    "entry_price": 152.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-09 00:00"
   }
 ]
