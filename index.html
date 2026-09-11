@@ -3050,6 +3050,7 @@ function serviceNavClick(tab) {
       <div style="margin-top:8px;text-align:center;"><button class="member-modal-btn" style="background:transparent;border:0.5px solid rgba(201,168,76,0.4);color:#C9A84C;padding:6px 14px;font-size:12px;border-radius:8px;" onclick="document.getElementById('altcoin-search-guide-modal').classList.add('show')">📖 사용 방법</button></div>
       <div id="zoneResultList" style="margin-top:12px;max-height:320px;overflow-y:auto;text-align:left;"></div>
       <div id="zoneStatus" style="margin-top:6px;margin-bottom:14px;color:#999;font-size:13px;text-align:center;"></div>
+      <div id="zoneGoldenCount" style="margin-bottom:14px;color:#C9A84C;font-size:13px;font-weight:600;text-align:center;display:none;"></div>
     </div>
     <button class="member-modal-close" onclick="document.getElementById('altcoin-search-modal').classList.remove('show')">닫기</button>
   </div>
@@ -3189,6 +3190,15 @@ function searchZone(query){
       var tb=b.data['1h_flip_at']||'';
       return tb.localeCompare(ta);
     });
+  }
+  var goldenCountEl=document.getElementById('zoneGoldenCount');
+  if(goldenCountEl){
+    if(zoneGoldenOnly){
+      goldenCountEl.textContent='✨ 현재 골든존 총 '+matches.length+'개';
+      goldenCountEl.style.display='';
+    } else {
+      goldenCountEl.style.display='none';
+    }
   }
   renderZoneResults(matches.slice(0,30));
 }
