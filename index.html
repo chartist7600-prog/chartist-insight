@@ -2629,7 +2629,7 @@ function tgOnAuth(user) {
       tgUser = data;
       localStorage.setItem('tg_user', JSON.stringify(data));
       tgUpdateUI();
-      if (!data.is_member) showNonmemberToast();
+      if (!data.is_member && data.checked !== false) showNonmemberToast();
     }
   }).catch(function(e) { console.log('tg auth error', e); });
 }
@@ -2703,7 +2703,8 @@ document.addEventListener('click', function(e) {
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({ user_id: tgUser.user_id })
     }).then(function(r){ return r.json(); }).then(function(data){
-      if (data.ok && tgUser && tgUser.is_member !== data.is_member) {
+      if (!data.ok || data.checked === false) return;
+      if (tgUser && tgUser.is_member !== data.is_member) {
         tgUser.is_member = data.is_member;
         localStorage.setItem('tg_user', JSON.stringify(tgUser));
         if (!data.is_member) {
@@ -3153,7 +3154,7 @@ function renderZoneResults(matches){
   }
   listEl.innerHTML=matches.map(function(item){
     var tfCells=Object.keys(ZONE_TF_LABELS).map(function(tf){
-      var confirmedAt=item.data[tf+'_confirmed_at'];
+      var confirmedAt=item.data[tf+'_flip_at'];
       return '<div style="text-align:center;flex:1;"><div style="color:#888;font-size:11px;margin-bottom:4px;">'+ZONE_TF_LABELS[tf]+'</div>'+zoneBadgeHtml(item.data[tf], item.data[tf+'_strong'])+(confirmedAt?'<div style="color:#999;font-size:11px;margin-top:2px;">'+confirmedAt+' 확정</div>':'')+'</div>';
     }).join('');
     var goldenBadge = item.data.golden_zone ? '<div style="color:#C9A84C;font-size:12px;font-weight:700;margin-bottom:6px;">✨ 골든존</div>' : '';
@@ -3184,8 +3185,8 @@ function searchZone(query){
   });
   if(zoneGoldenOnly){
     matches.sort(function(a,b){
-      var ta=a.data['1h_confirmed_at']||'';
-      var tb=b.data['1h_confirmed_at']||'';
+      var ta=a.data['1h_flip_at']||'';
+      var tb=b.data['1h_flip_at']||'';
       return tb.localeCompare(ta);
     });
   }
@@ -3497,6 +3498,7 @@ initNoticeBar();
       <label class="push-cat-row" style="justify-content:space-between;"><span style="display:flex;align-items:center;gap:6px;"><input type="checkbox" class="push-cat-item" value="alt_trend">📊 알트 추세전환</span><span style="font-size:10px;color:#C9A84C;background:rgba(201,168,76,0.12);border:0.5px solid rgba(201,168,76,0.35);padding:1px 6px;border-radius:5px;">멤버십</span></label>
       <label class="push-cat-row" style="justify-content:space-between;"><span style="display:flex;align-items:center;gap:6px;"><input type="checkbox" class="push-cat-item" value="alt_whale">🐋 알트 고래봇</span><span style="font-size:10px;color:#C9A84C;background:rgba(201,168,76,0.12);border:0.5px solid rgba(201,168,76,0.35);padding:1px 6px;border-radius:5px;">멤버십</span></label>
       <label class="push-cat-row" style="justify-content:space-between;"><span style="display:flex;align-items:center;gap:6px;"><input type="checkbox" class="push-cat-item" value="lightning">⚡ 알트 번개알림</span><span style="font-size:10px;color:#C9A84C;background:rgba(201,168,76,0.12);border:0.5px solid rgba(201,168,76,0.35);padding:1px 6px;border-radius:5px;">멤버십</span></label>
+      <label class="push-cat-row" style="justify-content:space-between;"><span style="display:flex;align-items:center;gap:6px;"><input type="checkbox" class="push-cat-item" value="golden_zone">✨ 알트 골든존</span><span style="font-size:10px;color:#C9A84C;background:rgba(201,168,76,0.12);border:0.5px solid rgba(201,168,76,0.35);padding:1px 6px;border-radius:5px;">멤버십</span></label>
     </div>
     <div id="push-sub-status" style="font-size:12px;color:#777;margin-bottom:10px;text-align:center;"></div>
     <button class="member-modal-btn" onclick="savePushSettings()" style="margin-bottom:8px;">푸시 알림 저장</button>
@@ -3546,7 +3548,7 @@ function urlBase64ToUint8Array(base64String) {
   return new Uint8Array([...rawData].map(c => c.charCodeAt(0)));
 }
 
-var PUSH_CATEGORIES = ['btc', 'alt_trend', 'alt_whale', 'alt_div', 'lightning'];
+var PUSH_CATEGORIES = ['btc', 'alt_trend', 'alt_whale', 'alt_div', 'lightning', 'golden_zone'];
 
 function pushToggleAll(allCb){
   document.querySelectorAll('.push-cat-item').forEach(function(cb){ cb.checked = allCb.checked; });
