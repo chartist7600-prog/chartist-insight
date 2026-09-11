@@ -1,5 +1,47 @@
 [
   {
+    "ticker": "BIOT",
+    "name": "BIOT",
+    "exchange": "빗썸",
+    "entry_price": 0.4584,
+    "currency": "KRW",
+    "entry_time": "2026-09-11 09:11",
+    "signal": "trend"
+  },
+  {
+    "ticker": "MET",
+    "name": "MET",
+    "exchange": "빗썸",
+    "entry_price": 294.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-11 09:11",
+    "signal": "trend"
+  },
+  {
+    "ticker": "UP2",
+    "name": "슈퍼폼",
+    "exchange": "업비트",
+    "entry_price": 99.6,
+    "currency": "KRW",
+    "entry_time": "2026-09-11 09:00"
+  },
+  {
+    "ticker": "SAGA",
+    "name": "SAGA",
+    "exchange": "바이낸스",
+    "entry_price": 0.01737,
+    "currency": "USD",
+    "entry_time": "2026-09-11 09:00"
+  },
+  {
+    "ticker": "TRX",
+    "name": "TRX",
+    "exchange": "바이낸스",
+    "entry_price": 0.34,
+    "currency": "USD",
+    "entry_time": "2026-09-11 09:00"
+  },
+  {
     "ticker": "POKT",
     "name": "포켓네트워크",
     "exchange": "빗썸",
@@ -41,64 +83,5 @@
     "currency": "USDT",
     "entry_time": "2026-09-10 09:10",
     "signal": "trend"
-  },
-  {
-    "ticker": "INJ",
-    "name": "인젝티브",
-    "exchange": "빗썸",
-    "entry_price": 8320.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-10 00:00"
-  },
-  {
-    "ticker": "SAFE",
-    "name": "세이프",
-    "exchange": "빗썸",
-    "entry_price": 140.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-10 00:00"
-  },
-  {
-    "ticker": "KAT",
-    "name": "카타나",
-    "exchange": "빗썸",
-    "entry_price": 7.432,
-    "currency": "KRW",
-    "entry_time": "2026-09-10 00:00"
-  },
-  {
-    "ticker": "SCR",
-    "name": "SCR",
-    "exchange": "빗썸",
-    "entry_price": 33.62,
-    "currency": "KRW",
-    "entry_time": "2026-09-09 09:09",
-    "signal": "trend"
-  },
-  {
-    "ticker": "NOKB",
-    "name": "NOKB",
-    "exchange": "바이낸스",
-    "entry_price": 10.62,
-    "currency": "USDT",
-    "entry_time": "2026-09-09 09:09",
-    "signal": "trend"
-  },
-  {
-    "ticker": "RKLBB",
-    "name": "RKLBB",
-    "exchange": "바이낸스",
-    "entry_price": 67.09,
-    "currency": "USDT",
-    "entry_time": "2026-09-09 09:09",
-    "signal": "trend"
-  },
-  {
-    "ticker": "ZIL",
-    "name": "질리카",
-    "exchange": "업비트",
-    "entry_price": 3.8,
-    "currency": "KRW",
-    "entry_time": "2026-09-09 09:00"
   }
 ]
