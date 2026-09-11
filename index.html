@@ -3502,6 +3502,7 @@ initNoticeBar();
     </div>
     <div id="push-sub-status" style="font-size:12px;color:#777;margin-bottom:10px;text-align:center;"></div>
     <button class="member-modal-btn" onclick="savePushSettings()" style="margin-bottom:8px;">푸시 알림 저장</button>
+    <button class="member-modal-btn" onclick="hideSoundPopup({target:document.getElementById('sound-overlay')})" style="margin-bottom:8px;background:transparent;border:0.5px solid #444;color:#999;">닫기</button>
     <button class="member-modal-btn" id="push-unsub-btn" onclick="unsubscribePush()" style="margin-bottom:0;background:transparent;border:0.5px solid #444;color:#999;display:none;">폰 알림 해제</button>
   </div>
 </div>
@@ -3622,6 +3623,7 @@ async function subscribePush(categories) {
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({ subscription: sub, tg_id: tgId, categories: categories })
     });
+    refreshPushSubStatus();
     alert('알림 설정 완료! 선택한 신호 발생 시 알림을 받습니다.');
   } catch(e) {
     console.error('푸시 구독 실패:', e);
