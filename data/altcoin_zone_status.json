@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-12 21:35:08",
+  "updated_at": "2026-09-12 21:55:16",
   "total_coins": 235,
   "coins": {
     "0G": {
@@ -17,7 +17,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "1INCH": {
       "name_kr": "1인치네트워크",
@@ -34,7 +35,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "2Z": {
       "name_kr": "더블제로",
@@ -51,7 +53,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "06/03 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "A": {
       "name_kr": "볼타",
@@ -68,7 +71,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "AAVE": {
       "name_kr": "에이브",
@@ -85,7 +89,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "06/25 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ADA": {
       "name_kr": "에이다",
@@ -102,7 +107,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/04 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "AERO": {
       "name_kr": "에어로드롬파이낸스",
@@ -119,7 +125,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "AGLD": {
       "name_kr": "어드벤처골드",
@@ -136,7 +143,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "06/27 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "AI": {
       "name_kr": "젠신",
@@ -153,7 +161,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "04/25 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "AKT": {
       "name_kr": "아카시네트워크",
@@ -170,7 +179,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/04 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ALGO": {
       "name_kr": "알고랜드",
@@ -187,7 +197,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/04 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ANIME": {
       "name_kr": "애니메코인",
@@ -204,7 +215,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ANKR": {
       "name_kr": "앵커",
@@ -221,7 +233,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "API3": {
       "name_kr": "에이피아이쓰리",
@@ -238,7 +251,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "APT": {
       "name_kr": "앱토스",
@@ -255,7 +269,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/09 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ARB": {
       "name_kr": "아비트럼",
@@ -272,7 +287,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/20 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ARK": {
       "name_kr": "아크",
@@ -289,7 +305,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ARKM": {
       "name_kr": "아캄",
@@ -306,7 +323,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ARX": {
       "name_kr": "아르키움",
@@ -323,7 +341,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": null,
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ASTR": {
       "name_kr": "아스타",
@@ -340,7 +359,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ATH": {
       "name_kr": "에이셔",
@@ -357,7 +377,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ATOM": {
       "name_kr": "코스모스",
@@ -374,7 +395,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/09 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "AUCTION": {
       "name_kr": "바운스토큰",
@@ -391,7 +413,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "AVAX": {
       "name_kr": "아발란체",
@@ -408,7 +431,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "AVNT": {
       "name_kr": "아반티스",
@@ -425,7 +449,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/10 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "AWE": {
       "name_kr": "에이더블유이",
@@ -442,7 +467,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/16 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "AXS": {
       "name_kr": "엑시인피니티",
@@ -459,7 +485,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/09 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "AZTEC": {
       "name_kr": "아즈텍",
@@ -476,7 +503,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "B3": {
       "name_kr": "비쓰리",
@@ -493,7 +521,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "03/27 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "BABY": {
       "name_kr": "바빌론",
@@ -510,7 +539,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/24 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "BARD": {
       "name_kr": "롬바드",
@@ -527,7 +557,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/24 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "BAT": {
       "name_kr": "베이직어텐션토큰",
@@ -544,7 +575,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "BCH": {
       "name_kr": "비트코인캐시",
@@ -561,7 +593,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/11 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "BERA": {
       "name_kr": "베라체인",
@@ -578,7 +611,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": true
+      "golden_zone": true,
+      "sell_zone": false
     },
     "BIGTIME": {
       "name_kr": "빅타임",
@@ -595,7 +629,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": true
+      "golden_zone": true,
+      "sell_zone": false
     },
     "BIO": {
       "name_kr": "바이오프로토콜",
@@ -612,7 +647,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/11 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "BIRB": {
       "name_kr": "문버드",
@@ -629,7 +665,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/12 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "BLUR": {
       "name_kr": "블러",
@@ -646,7 +683,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "BREV": {
       "name_kr": "브레비스",
@@ -663,7 +701,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "BSB": {
       "name_kr": "블록스트리트",
@@ -680,7 +719,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "05/27 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "BSV": {
       "name_kr": "비트코인에스브이",
@@ -697,7 +737,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "06/29 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "BTC": {
       "name_kr": "비트코인",
@@ -714,7 +755,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "CAP": {
       "name_kr": "캡",
@@ -731,7 +773,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/04 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "CARV": {
       "name_kr": "카브",
@@ -748,7 +791,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/10 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "CC": {
       "name_kr": "캔톤",
@@ -765,7 +809,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/12 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "CELO": {
       "name_kr": "셀로",
@@ -782,7 +827,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "CFG": {
       "name_kr": "센트리퓨즈",
@@ -799,7 +845,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "06/06 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "CFX": {
       "name_kr": "콘플럭스",
@@ -816,7 +863,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "CHIP": {
       "name_kr": "유에스디에이아이",
@@ -833,7 +881,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/20 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "CHZ": {
       "name_kr": "칠리즈",
@@ -850,7 +899,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "CKB": {
       "name_kr": "너보스",
@@ -867,7 +917,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "COMP": {
       "name_kr": "컴파운드",
@@ -884,7 +935,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/18 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "COW": {
       "name_kr": "카우프로토콜",
@@ -901,7 +953,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/16 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "CRV": {
       "name_kr": "커브",
@@ -918,7 +971,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/09 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "CVC": {
       "name_kr": "시빅",
@@ -935,7 +989,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": true
+      "golden_zone": true,
+      "sell_zone": false
     },
     "CYBER": {
       "name_kr": "사이버",
@@ -952,7 +1007,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/11 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": true
     },
     "DEEP": {
       "name_kr": "딥북",
@@ -969,7 +1025,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/13 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "DOGE": {
       "name_kr": "도지코인",
@@ -986,7 +1043,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "DOOD": {
       "name_kr": "두들즈",
@@ -1003,7 +1061,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "DOS": {
       "name_kr": "댑오에스",
@@ -1020,7 +1079,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": null,
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "DOT": {
       "name_kr": "폴카닷",
@@ -1037,7 +1097,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "EDGE": {
       "name_kr": "디피니티브",
@@ -1054,7 +1115,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "EGLD": {
       "name_kr": "멀티버스엑스",
@@ -1071,7 +1133,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ELSA": {
       "name_kr": "헤이엘사",
@@ -1088,7 +1151,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/06 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ENA": {
       "name_kr": "에테나",
@@ -1105,7 +1169,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ENS": {
       "name_kr": "이더리움네임서비스",
@@ -1122,7 +1187,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ENSO": {
       "name_kr": "엔소",
@@ -1139,7 +1205,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/14 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ERA": {
       "name_kr": "칼데라",
@@ -1156,7 +1223,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/31 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ESP": {
       "name_kr": "에스프레소",
@@ -1173,7 +1241,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/24 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ETC": {
       "name_kr": "이더리움클래식",
@@ -1190,7 +1259,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ETH": {
       "name_kr": "이더리움",
@@ -1207,7 +1277,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/15 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ETHFI": {
       "name_kr": "이더파이",
@@ -1224,7 +1295,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/15 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "EUL": {
       "name_kr": "오일러",
@@ -1241,7 +1313,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/29 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "F": {
       "name_kr": "신퓨처스",
@@ -1258,7 +1331,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "FF": {
       "name_kr": "팔콘파이낸스",
@@ -1275,7 +1349,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "FIL": {
       "name_kr": "파일코인",
@@ -1292,7 +1367,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "FLOCK": {
       "name_kr": "플록",
@@ -1309,7 +1385,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "FLUID": {
       "name_kr": "플루이드",
@@ -1326,7 +1403,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/11 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "G": {
       "name_kr": "그래비티",
@@ -1343,7 +1421,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "06/26 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "GAS": {
       "name_kr": "가스",
@@ -1360,7 +1439,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "GLM": {
       "name_kr": "골렘",
@@ -1377,7 +1457,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "GMT": {
       "name_kr": "스테픈",
@@ -1394,7 +1475,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "GRT": {
       "name_kr": "더그래프",
@@ -1411,7 +1493,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "GRVT": {
       "name_kr": "그래비티토큰",
@@ -1428,7 +1511,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/27 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "HBAR": {
       "name_kr": "헤데라",
@@ -1445,7 +1529,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/20 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "HIVE": {
       "name_kr": "하이브",
@@ -1462,7 +1547,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "HOLO": {
       "name_kr": "홀로월드에이아이",
@@ -1479,7 +1565,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/17 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "HOME": {
       "name_kr": "디파이앱",
@@ -1496,7 +1583,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/07 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "HYPER": {
       "name_kr": "하이퍼레인",
@@ -1513,7 +1601,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ICP": {
       "name_kr": "인터넷컴퓨터",
@@ -1530,7 +1619,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/11 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ICX": {
       "name_kr": "아이콘",
@@ -1547,7 +1637,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "05/18 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ID": {
       "name_kr": "스페이스아이디",
@@ -1564,7 +1655,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "06/23 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "IMX": {
       "name_kr": "이뮤터블엑스",
@@ -1581,7 +1673,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "IN": {
       "name_kr": "인피닛",
@@ -1598,7 +1691,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/01 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "INJ": {
       "name_kr": "인젝티브",
@@ -1615,7 +1709,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "IO": {
       "name_kr": "아이오넷",
@@ -1632,7 +1727,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "IOST": {
       "name_kr": "아이오에스티",
@@ -1649,7 +1745,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/06 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "IOTA": {
       "name_kr": "아이오타",
@@ -1666,7 +1763,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "IRYS": {
       "name_kr": "아이리스",
@@ -1683,7 +1781,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/19 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "JST": {
       "name_kr": "저스트",
@@ -1700,7 +1799,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/03 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "JTO": {
       "name_kr": "지토",
@@ -1717,7 +1817,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/29 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "JUP": {
       "name_kr": "주피터",
@@ -1734,7 +1835,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "KAITO": {
       "name_kr": "카이토",
@@ -1751,7 +1853,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/08 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "KAT": {
       "name_kr": "카타나",
@@ -1768,7 +1871,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "KAVA": {
       "name_kr": "카바",
@@ -1785,7 +1889,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "KERNEL": {
       "name_kr": "커널다오",
@@ -1802,7 +1907,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "KITE": {
       "name_kr": "카이트",
@@ -1819,7 +1925,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/24 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "KMNO": {
       "name_kr": "카미노파이낸스",
@@ -1836,7 +1943,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "06/20 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "KNC": {
       "name_kr": "카이버네트워크",
@@ -1853,7 +1961,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "LA": {
       "name_kr": "라그랑주",
@@ -1870,7 +1979,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/05 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "LAYER": {
       "name_kr": "솔레이어",
@@ -1887,7 +1997,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "LINEA": {
       "name_kr": "리네아",
@@ -1904,7 +2015,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "LINK": {
       "name_kr": "체인링크",
@@ -1921,7 +2033,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/16 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "LIT": {
       "name_kr": "라이터",
@@ -1938,7 +2051,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "04/11 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "LPT": {
       "name_kr": "라이브피어",
@@ -1955,7 +2069,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "LSK": {
       "name_kr": "리스크",
@@ -1972,7 +2087,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/20 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "MANA": {
       "name_kr": "디센트럴랜드",
@@ -1989,7 +2105,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "MANTRA": {
       "name_kr": "만트라",
@@ -2006,7 +2123,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "05/18 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "MASK": {
       "name_kr": "마스크네트워크",
@@ -2023,7 +2141,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ME": {
       "name_kr": "매직에덴",
@@ -2040,7 +2159,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "MEGA": {
       "name_kr": "메가이더",
@@ -2057,7 +2177,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "META": {
       "name_kr": "메타디움",
@@ -2074,7 +2195,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/03 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "MEW": {
       "name_kr": "캣인어독스월드",
@@ -2091,7 +2213,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "MINA": {
       "name_kr": "미나",
@@ -2108,7 +2231,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "MIRA": {
       "name_kr": "미라네트워크",
@@ -2125,7 +2249,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/23 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "MMT": {
       "name_kr": "모멘텀",
@@ -2142,7 +2267,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/03 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "MOCA": {
       "name_kr": "모카네트워크",
@@ -2159,7 +2285,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "MON": {
       "name_kr": "모나드",
@@ -2176,7 +2303,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/07 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "MOODENG": {
       "name_kr": "무뎅",
@@ -2193,7 +2321,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "MORPHO": {
       "name_kr": "모포",
@@ -2210,7 +2339,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/10 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "MOVE": {
       "name_kr": "무브먼트",
@@ -2227,7 +2357,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/23 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "MTL": {
       "name_kr": "메탈",
@@ -2244,7 +2375,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "NEAR": {
       "name_kr": "니어프로토콜",
@@ -2261,7 +2393,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "NEO": {
       "name_kr": "네오",
@@ -2278,7 +2411,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "NEWT": {
       "name_kr": "뉴턴프로토콜",
@@ -2295,7 +2429,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "NXPC": {
       "name_kr": "넥스페이스",
@@ -2312,7 +2447,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "O": {
       "name_kr": "오원익스체인지",
@@ -2329,7 +2465,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": null,
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ONDO": {
       "name_kr": "온도파이낸스",
@@ -2346,7 +2483,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ONG": {
       "name_kr": "온톨로지가스",
@@ -2363,7 +2501,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/16 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ONT": {
       "name_kr": "온톨로지",
@@ -2380,7 +2519,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "OP": {
       "name_kr": "옵티미즘",
@@ -2397,7 +2537,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/07 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "OPEN": {
       "name_kr": "오픈렛저",
@@ -2414,7 +2555,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/17 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "OPG": {
       "name_kr": "오픈그라디언트",
@@ -2431,7 +2573,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "06/26 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ORBS": {
       "name_kr": "오브스",
@@ -2448,7 +2591,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": null,
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ORCA": {
       "name_kr": "오르카",
@@ -2465,7 +2609,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": true
+      "golden_zone": true,
+      "sell_zone": false
     },
     "ORDER": {
       "name_kr": "오덜리",
@@ -2482,7 +2627,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "PENDLE": {
       "name_kr": "펜들",
@@ -2499,7 +2645,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "PENGU": {
       "name_kr": "펏지펭귄",
@@ -2516,7 +2663,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/12 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": true
     },
     "PEPE": {
       "name_kr": "페페",
@@ -2533,7 +2681,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/04 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "PIEVERSE": {
       "name_kr": "파이버스",
@@ -2550,7 +2699,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/09 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "PLUME": {
       "name_kr": "플룸",
@@ -2567,7 +2717,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/27 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "POL": {
       "name_kr": "폴리곤에코시스템토큰",
@@ -2584,7 +2735,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/01 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "POLYX": {
       "name_kr": "폴리매쉬",
@@ -2601,7 +2753,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "POWR": {
       "name_kr": "파워렛저",
@@ -2618,7 +2771,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "PRL": {
       "name_kr": "펄",
@@ -2635,7 +2789,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "PROM": {
       "name_kr": "프롬",
@@ -2652,7 +2807,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/12 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "PROVE": {
       "name_kr": "서싱트",
@@ -2669,7 +2825,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "PUMP": {
       "name_kr": "펌프펀",
@@ -2686,7 +2843,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/16 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "PUNDIX": {
       "name_kr": "펀디엑스",
@@ -2703,7 +2861,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "PYTH": {
       "name_kr": "피스네트워크",
@@ -2720,7 +2879,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "QTUM": {
       "name_kr": "퀀텀",
@@ -2737,7 +2897,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/20 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "RAY": {
       "name_kr": "레이디움",
@@ -2754,7 +2915,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": null,
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "RE": {
       "name_kr": "리",
@@ -2771,7 +2933,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": null,
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "RED": {
       "name_kr": "레드스톤",
@@ -2788,7 +2951,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "RENDER": {
       "name_kr": "렌더토큰",
@@ -2805,7 +2969,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "RVN": {
       "name_kr": "레이븐코인",
@@ -2822,7 +2987,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/11 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": true
     },
     "SAFE": {
       "name_kr": "세이프",
@@ -2839,7 +3005,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/27 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SAHARA": {
       "name_kr": "사하라에이아이",
@@ -2856,7 +3023,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SAND": {
       "name_kr": "샌드박스",
@@ -2873,7 +3041,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/30 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SC": {
       "name_kr": "시아코인",
@@ -2890,7 +3059,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": null,
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SEI": {
       "name_kr": "세이",
@@ -2907,7 +3077,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SENT": {
       "name_kr": "센티언트",
@@ -2924,7 +3095,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/08 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SHIB": {
       "name_kr": "시바이누",
@@ -2941,7 +3113,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SIGN": {
       "name_kr": "사인",
@@ -2958,7 +3131,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SKR": {
       "name_kr": "시커",
@@ -2975,7 +3149,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SKY": {
       "name_kr": "스카이프로토콜",
@@ -2992,7 +3167,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/20 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SLX": {
       "name_kr": "솔스티스",
@@ -3009,7 +3185,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/05 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SNT": {
       "name_kr": "스테이터스네트워크토큰",
@@ -3026,7 +3203,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": null,
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SOL": {
       "name_kr": "솔라나",
@@ -3043,7 +3221,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/02 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SOMI": {
       "name_kr": "솜니아",
@@ -3060,7 +3239,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SONIC": {
       "name_kr": "소닉SVM",
@@ -3077,7 +3257,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SOON": {
       "name_kr": "쑨",
@@ -3094,7 +3275,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/02 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SOPH": {
       "name_kr": "소폰",
@@ -3111,7 +3293,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/10 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SPK": {
       "name_kr": "스파크",
@@ -3128,7 +3311,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SPX": {
       "name_kr": "에스피엑스6900",
@@ -3145,7 +3329,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/20 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "STEEM": {
       "name_kr": "스팀",
@@ -3162,7 +3347,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "STORJ": {
       "name_kr": "스토리지",
@@ -3179,7 +3365,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/25 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "STRAX": {
       "name_kr": "저트라",
@@ -3196,7 +3383,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": null,
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "STX": {
       "name_kr": "스택스",
@@ -3213,7 +3401,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SUI": {
       "name_kr": "수이",
@@ -3230,7 +3419,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SUN": {
       "name_kr": "썬",
@@ -3247,7 +3437,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/19 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SUPER": {
       "name_kr": "슈퍼버스",
@@ -3264,7 +3455,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "SYRUP": {
       "name_kr": "메이플파이낸스",
@@ -3281,7 +3473,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "T": {
       "name_kr": "쓰레스홀드",
@@ -3298,7 +3491,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "TAIKO": {
       "name_kr": "타이코",
@@ -3315,7 +3509,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/08 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "TAO": {
       "name_kr": "비트텐서",
@@ -3332,7 +3527,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "THETA": {
       "name_kr": "쎄타토큰",
@@ -3349,7 +3545,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/19 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "TIA": {
       "name_kr": "셀레스티아",
@@ -3366,7 +3563,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "TOSHI": {
       "name_kr": "토시",
@@ -3383,7 +3581,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "TREE": {
       "name_kr": "트리하우스",
@@ -3400,7 +3599,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/24 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "TRUMP": {
       "name_kr": "오피셜트럼프",
@@ -3417,7 +3617,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/20 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "TRUST": {
       "name_kr": "인튜이션",
@@ -3434,7 +3635,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/06 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "TRX": {
       "name_kr": "트론",
@@ -3451,7 +3653,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "09/02 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "UNI": {
       "name_kr": "유니스왑",
@@ -3468,7 +3671,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "VANA": {
       "name_kr": "바나",
@@ -3485,7 +3689,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "VET": {
       "name_kr": "비체인",
@@ -3502,7 +3707,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "VIRTUAL": {
       "name_kr": "버추얼프로토콜",
@@ -3519,7 +3725,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/17 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "VTHO": {
       "name_kr": "비토르토큰",
@@ -3536,7 +3743,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "VVV": {
       "name_kr": "베니스토큰",
@@ -3553,7 +3761,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/27 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "W": {
       "name_kr": "웜홀",
@@ -3570,7 +3779,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "WAL": {
       "name_kr": "월러스",
@@ -3587,7 +3797,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "WAVES": {
       "name_kr": "웨이브",
@@ -3604,7 +3815,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": null,
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "WAXP": {
       "name_kr": "왁스",
@@ -3621,7 +3833,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "WCT": {
       "name_kr": "월렛커넥트",
@@ -3638,7 +3851,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "WET": {
       "name_kr": "휴미디파이",
@@ -3655,7 +3869,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/25 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "WIF": {
       "name_kr": "도그위프햇",
@@ -3672,7 +3887,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "WLD": {
       "name_kr": "월드코인",
@@ -3689,7 +3905,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "WLFI": {
       "name_kr": "월드리버티파이낸셜",
@@ -3706,7 +3923,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/17 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "XCN": {
       "name_kr": "오닉스코인",
@@ -3723,7 +3941,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": null,
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "XEC": {
       "name_kr": "이캐시",
@@ -3740,7 +3959,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/14 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "XLM": {
       "name_kr": "스텔라루멘",
@@ -3757,7 +3977,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "XPL": {
       "name_kr": "플라즈마",
@@ -3774,7 +3995,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "06/18 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "XRP": {
       "name_kr": "엑스알피(리플)",
@@ -3791,7 +4013,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/20 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "XTZ": {
       "name_kr": "테조스",
@@ -3808,7 +4031,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "YGG": {
       "name_kr": "일드길드게임즈",
@@ -3825,7 +4049,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ZAMA": {
       "name_kr": "자마",
@@ -3842,7 +4067,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/24 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ZBT": {
       "name_kr": "제로베이스",
@@ -3859,7 +4085,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/09 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ZETA": {
       "name_kr": "제타체인",
@@ -3876,7 +4103,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ZIL": {
       "name_kr": "질리카",
@@ -3893,7 +4121,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/29 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ZK": {
       "name_kr": "지케이싱크",
@@ -3910,7 +4139,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ZKC": {
       "name_kr": "바운드리스",
@@ -3927,7 +4157,8 @@
       "1d_strong": true,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ZKP": {
       "name_kr": "지케이패스",
@@ -3944,7 +4175,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "07/04 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ZORA": {
       "name_kr": "조라",
@@ -3961,7 +4193,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": true
+      "golden_zone": true,
+      "sell_zone": false
     },
     "ZRO": {
       "name_kr": "레이어제로",
@@ -3978,7 +4211,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/22 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     },
     "ZRX": {
       "name_kr": "제로엑스",
@@ -3995,7 +4229,8 @@
       "1d_strong": false,
       "1d_confirmed_at": "09/12 09:00",
       "1d_flip_at": "08/21 09:00",
-      "golden_zone": false
+      "golden_zone": false,
+      "sell_zone": false
     }
   }
 }
