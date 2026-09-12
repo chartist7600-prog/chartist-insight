@@ -1,5 +1,21 @@
 [
   {
+    "ticker": "IQ",
+    "name": "아이큐",
+    "exchange": "빗썸",
+    "entry_price": 1.16,
+    "currency": "KRW",
+    "entry_time": "2026-09-13 00:00"
+  },
+  {
+    "ticker": "CUDIS",
+    "name": "CUDIS",
+    "exchange": "빗썸",
+    "entry_price": 5.244,
+    "currency": "KRW",
+    "entry_time": "2026-09-13 00:00"
+  },
+  {
     "ticker": "XPLA",
     "name": "XPLA",
     "exchange": "빗썸",
