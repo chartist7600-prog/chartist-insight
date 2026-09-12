@@ -3057,6 +3057,17 @@ function serviceNavClick(tab) {
   </div>
 </div>
 
+<div class="member-modal-overlay" id="coin-history-modal" onclick="if(event.target===this)document.getElementById('coin-history-modal').classList.remove('show')">
+  <div class="member-modal-box" style="max-width:420px;">
+    <div style="text-align:center;">
+      <div id="coinHistoryTitle" style="font-size:17px;font-weight:700;color:#fff;margin-bottom:4px;"></div>
+      <div style="color:#888;font-size:12px;margin-bottom:14px;">최근 100건 이력</div>
+      <div id="coinHistoryList" style="max-height:400px;overflow-y:auto;text-align:left;"></div>
+    </div>
+    <button class="member-modal-close" onclick="document.getElementById('coin-history-modal').classList.remove('show')">닫기</button>
+  </div>
+</div>
+
 <div class="member-modal-overlay" id="volume-explain-modal" onclick="if(event.target===this)document.getElementById('volume-explain-modal').classList.remove('show')">
   <div class="member-modal-box" style="max-width:360px;text-align:left;">
     <div class="member-modal-icon" style="text-align:center;">🚨</div>
@@ -3165,9 +3176,51 @@ function renderZoneResults(matches){
     var tvUrl = 'https://kr.tradingview.com/chart/?symbol=BINANCE:'+futSym+'USDT.P&interval=60';
     return '<div style="background:#1a1a1a;border-radius:10px;padding:12px 14px;margin-bottom:8px;'+cardBorder+'">'
       +goldenBadge
-      +'<a href="'+tvUrl+'" target="_blank" rel="noopener" class="zone-coin-link" style="color:#fff;font-weight:600;margin-bottom:10px;display:block;text-decoration:none;">'+item.name_kr+' ('+item.ticker+')</a>'
+      +'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">'
+      +'<a href="'+tvUrl+'" target="_blank" rel="noopener" class="zone-coin-link" style="color:#fff;font-weight:600;text-decoration:none;">'+item.name_kr+' ('+item.ticker+')</a>'
+      +'<button onclick="showCoinHistory(\''+item.ticker+'\',\''+item.name_kr.replace(/'/g,"")+'\')" style="background:transparent;border:0.5px solid #444;color:#999;font-size:11px;padding:3px 8px;border-radius:6px;cursor:pointer;white-space:nowrap;">📜 기록</button>'
+      +'</div>'
       +'<div style="display:flex;gap:6px;">'+tfCells+'</div></div>';
   }).join('');
+}
+
+var HISTORY_TYPE_MAP = {
+  'golden_zone_in': {icon:'✨', color:'#C9A84C'},
+  'golden_zone_out': {icon:'⬇️', color:'#888'},
+  'sell_zone_in': {icon:'🔻', color:'#e05c5c'},
+  'whale': {icon:'🐋', color:'#5cb3e0'},
+  'lightning_buy': {icon:'⚡', color:'#e0c95c'}
+};
+
+function showCoinHistory(ticker, nameKr){
+  var titleEl = document.getElementById('coinHistoryTitle');
+  var listEl = document.getElementById('coinHistoryList');
+  if(titleEl) titleEl.textContent = nameKr + ' (' + ticker + ')';
+  if(listEl) listEl.innerHTML = '<div style="color:#888;text-align:center;padding:20px 0;">불러오는 중...</div>';
+  document.getElementById('coin-history-modal').classList.add('show');
+
+  fetch('/data/coin_history/' + ticker + '.json')
+    .then(function(res){ if(!res.ok) throw new Error('no data'); return res.json(); })
+    .then(function(events){
+      if(!Array.isArray(events) || events.length === 0){
+        listEl.innerHTML = '<div style="color:#888;text-align:center;padding:20px 0;">아직 기록이 없습니다</div>';
+        return;
+      }
+      listEl.innerHTML = events.map(function(ev){
+        var meta = HISTORY_TYPE_MAP[ev.type] || {icon:'•', color:'#999'};
+        return '<div style="display:flex;gap:8px;padding:8px 0;border-bottom:1px solid #222;">'
+          + '<div style="font-size:16px;">' + meta.icon + '</div>'
+          + '<div style="flex:1;">'
+          + '<div style="color:' + meta.color + ';font-size:13px;font-weight:600;">' + (ev.label||ev.type) + '</div>'
+          + (ev.detail ? '<div style="color:#888;font-size:11px;margin-top:2px;">' + ev.detail + '</div>' : '')
+          + '</div>'
+          + '<div style="color:#666;font-size:11px;white-space:nowrap;">' + (ev.time||'') + '</div>'
+          + '</div>';
+      }).join('');
+    })
+    .catch(function(){
+      listEl.innerHTML = '<div style="color:#888;text-align:center;padding:20px 0;">아직 기록이 없습니다</div>';
+    });
 }
 
 function searchZone(query){
