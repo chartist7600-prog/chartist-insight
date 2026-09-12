@@ -1,5 +1,23 @@
 [
   {
+    "ticker": "XPLA",
+    "name": "XPLA",
+    "exchange": "빗썸",
+    "entry_price": 9.722,
+    "currency": "KRW",
+    "entry_time": "2026-09-12 21:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "ALLO",
+    "name": "ALLO",
+    "exchange": "빗썸",
+    "entry_price": 335.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-12 21:05",
+    "signal": "trend"
+  },
+  {
     "ticker": "BIOT",
     "name": "BIOT",
     "exchange": "빗썸",
@@ -64,24 +82,6 @@
     "entry_price": 92.64,
     "currency": "KRW",
     "entry_time": "2026-09-10 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "GPS",
-    "name": "GPS",
-    "exchange": "빗썸",
-    "entry_price": 16.75,
-    "currency": "KRW",
-    "entry_time": "2026-09-10 09:10",
-    "signal": "trend"
-  },
-  {
-    "ticker": "MRVLB",
-    "name": "MRVLB",
-    "exchange": "바이낸스",
-    "entry_price": 235.12,
-    "currency": "USDT",
-    "entry_time": "2026-09-10 09:10",
     "signal": "trend"
   }
 ]
