@@ -3170,7 +3170,7 @@ function renderZoneResults(matches){
       var confirmedAt=item.data[tf+'_flip_at'];
       return '<div style="text-align:center;flex:1;"><div style="color:#888;font-size:11px;margin-bottom:4px;">'+ZONE_TF_LABELS[tf]+'</div>'+zoneBadgeHtml(item.data[tf], item.data[tf+'_strong'])+(confirmedAt?'<div style="color:#999;font-size:11px;margin-top:2px;">'+confirmedAt+' 확정</div>':'')+'</div>';
     }).join('');
-    var goldenBadge = item.data.golden_zone ? '<div style="color:#C9A84C;font-size:12px;font-weight:700;margin-bottom:6px;">✨ 골든존</div>' : '';
+    var goldenBadge = item.data.golden_zone ? '<div style="color:#C9A84C;font-size:12px;font-weight:700;margin-bottom:6px;">✨ 골든존</div>'+zoneSinceBadgeHtml(item.data.golden_zone_since) : '';
     var cardBorder = item.data.golden_zone ? 'border:1px solid #C9A84C;' : '';
     var futSym = item.data.futures_symbol || item.ticker;
     var tvUrl = 'https://kr.tradingview.com/chart/?symbol=BINANCE:'+futSym+'USDT.P&interval=60';
@@ -3223,6 +3223,29 @@ function showCoinHistory(ticker, nameKr){
     });
 }
 
+function zoneParseKst(str){
+  if(!str) return null;
+  var iso = str.replace(' ', 'T') + '+09:00';
+  var d = new Date(iso);
+  return isNaN(d.getTime()) ? null : d;
+}
+
+function zoneHoursSince(sinceStr){
+  if(!zoneData || !zoneData.updated_at) return null;
+  var now = zoneParseKst(zoneData.updated_at);
+  var since = zoneParseKst(sinceStr);
+  if(!now || !since) return null;
+  return (now.getTime() - since.getTime()) / 3600000;
+}
+
+function zoneSinceBadgeHtml(sinceStr){
+  var hours = zoneHoursSince(sinceStr);
+  if(hours === null) return '';
+  var days = Math.floor(hours / 24);
+  var label = days <= 0 ? '오늘 진입' : days + '일째 유지 중';
+  return '<div style="color:#888;font-size:11px;margin-top:6px;">🕐 '+label+'</div>';
+}
+
 function searchZone(query){
   if(!zoneData) return;
   var q=query.trim().toLowerCase();
@@ -3234,14 +3257,20 @@ function searchZone(query){
     var matchesSearch = (q===''||ticker.toLowerCase().indexOf(q)!==-1||nameKr.indexOf(q)!==-1);
     var matchesFilter = zoneActiveTfFilters.length===0 || zoneActiveTfFilters.every(function(tf){ return entry[tf+'_strong']===true && entry[tf]==='buy'; });
     var matchesGolden = !zoneGoldenOnly || entry.golden_zone===true;
+    if(zoneGoldenOnly && matchesGolden && entry.golden_zone_since){
+      var hoursSince = zoneHoursSince(entry.golden_zone_since);
+      if(hoursSince !== null && hoursSince > 72){
+        matchesGolden = false;
+      }
+    }
     if(matchesSearch && matchesFilter && matchesGolden){
       matches.push({ticker:ticker,name_kr:nameKr,data:entry});
     }
   });
   if(zoneGoldenOnly){
     matches.sort(function(a,b){
-      var ta=a.data['1h_flip_at']||'';
-      var tb=b.data['1h_flip_at']||'';
+      var ta=a.data['golden_zone_since']||'';
+      var tb=b.data['golden_zone_since']||'';
       return tb.localeCompare(ta);
     });
   }
