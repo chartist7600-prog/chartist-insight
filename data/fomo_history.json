@@ -1,5 +1,32 @@
 [
   {
+    "ticker": "ARPA",
+    "name": "ARPA",
+    "exchange": "빗썸",
+    "entry_price": 13.39,
+    "currency": "KRW",
+    "entry_time": "2026-09-13 21:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "SIX",
+    "name": "SIX",
+    "exchange": "빗썸",
+    "entry_price": 7.231,
+    "currency": "KRW",
+    "entry_time": "2026-09-13 21:05",
+    "signal": "trend"
+  },
+  {
+    "ticker": "AVA",
+    "name": "AVA",
+    "exchange": "바이낸스",
+    "entry_price": 0.1961,
+    "currency": "USDT",
+    "entry_time": "2026-09-13 21:05",
+    "signal": "trend"
+  },
+  {
     "ticker": "IQ",
     "name": "아이큐",
     "exchange": "빗썸",
@@ -58,46 +85,5 @@
     "entry_price": 99.6,
     "currency": "KRW",
     "entry_time": "2026-09-11 09:00"
-  },
-  {
-    "ticker": "SAGA",
-    "name": "SAGA",
-    "exchange": "바이낸스",
-    "entry_price": 0.01737,
-    "currency": "USD",
-    "entry_time": "2026-09-11 09:00"
-  },
-  {
-    "ticker": "TRX",
-    "name": "TRX",
-    "exchange": "바이낸스",
-    "entry_price": 0.34,
-    "currency": "USD",
-    "entry_time": "2026-09-11 09:00"
-  },
-  {
-    "ticker": "POKT",
-    "name": "포켓네트워크",
-    "exchange": "빗썸",
-    "entry_price": 10.79,
-    "currency": "KRW",
-    "entry_time": "2026-09-11 00:00"
-  },
-  {
-    "ticker": "BIRB",
-    "name": "문버드",
-    "exchange": "빗썸",
-    "entry_price": 91.36,
-    "currency": "KRW",
-    "entry_time": "2026-09-11 00:00"
-  },
-  {
-    "ticker": "UP",
-    "name": "UP",
-    "exchange": "빗썸",
-    "entry_price": 92.64,
-    "currency": "KRW",
-    "entry_time": "2026-09-10 21:05",
-    "signal": "trend"
   }
 ]
