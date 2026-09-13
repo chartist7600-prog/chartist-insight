@@ -1,5 +1,93 @@
 [
   {
+    "ticker": "XEC",
+    "name": "이캐시",
+    "exchange": "빗썸",
+    "entry_price": 0.0104,
+    "currency": "KRW",
+    "entry_time": "2026-09-14 00:00"
+  },
+  {
+    "ticker": "AGLD",
+    "name": "어드벤처골드",
+    "exchange": "빗썸",
+    "entry_price": 244.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-14 00:00"
+  },
+  {
+    "ticker": "B3",
+    "name": "비쓰리",
+    "exchange": "빗썸",
+    "entry_price": 0.7617,
+    "currency": "KRW",
+    "entry_time": "2026-09-14 00:00"
+  },
+  {
+    "ticker": "STEEM",
+    "name": "STEEM",
+    "exchange": "빗썸",
+    "entry_price": 89.5,
+    "currency": "KRW",
+    "entry_time": "2026-09-14 00:00"
+  },
+  {
+    "ticker": "BFC",
+    "name": "BFC",
+    "exchange": "빗썸",
+    "entry_price": 40.72,
+    "currency": "KRW",
+    "entry_time": "2026-09-14 00:00"
+  },
+  {
+    "ticker": "CAKE",
+    "name": "CAKE",
+    "exchange": "빗썸",
+    "entry_price": 2951.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-14 00:00"
+  },
+  {
+    "ticker": "FANC",
+    "name": "FANC",
+    "exchange": "빗썸",
+    "entry_price": 1.84,
+    "currency": "KRW",
+    "entry_time": "2026-09-14 00:00"
+  },
+  {
+    "ticker": "ARK",
+    "name": "ARK",
+    "exchange": "빗썸",
+    "entry_price": 206.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-14 00:00"
+  },
+  {
+    "ticker": "KAVA",
+    "name": "KAVA",
+    "exchange": "빗썸",
+    "entry_price": 94.73,
+    "currency": "KRW",
+    "entry_time": "2026-09-14 00:00"
+  },
+  {
+    "ticker": "LSK",
+    "name": "LSK",
+    "exchange": "빗썸",
+    "entry_price": 1185.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-14 00:00"
+  },
+  {
+    "ticker": "SC",
+    "name": "SC",
+    "exchange": "빗썸",
+    "entry_price": 1.204,
+    "currency": "KRW",
+    "entry_time": "2026-09-14 00:00"
+  },
+  {
     "ticker": "ARPA",
     "name": "ARPA",
     "exchange": "빗썸",
@@ -167,76 +255,5 @@
     "currency": "USDT",
     "entry_time": "2026-09-12 21:00",
     "signal": "golden_zone"
-  },
-  {
-    "ticker": "GLM",
-    "name": "골렘",
-    "exchange": "바이낸스",
-    "entry_price": 0.12209,
-    "currency": "USDT",
-    "entry_time": "2026-09-12 21:00",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "LINEA",
-    "name": "리네아",
-    "exchange": "바이낸스",
-    "entry_price": 0.002657,
-    "currency": "USDT",
-    "entry_time": "2026-09-12 21:00",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "BIGTIME",
-    "name": "빅타임",
-    "exchange": "바이낸스",
-    "entry_price": 0.007729,
-    "currency": "USDT",
-    "entry_time": "2026-09-12 17:00",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "CVC",
-    "name": "시빅",
-    "exchange": "바이낸스",
-    "entry_price": 0.03584,
-    "currency": "USDT",
-    "entry_time": "2026-09-12 11:00",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "ZORA",
-    "name": "조라",
-    "exchange": "바이낸스",
-    "entry_price": 0.008305,
-    "currency": "USDT",
-    "entry_time": "2026-09-11 23:00",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "BIOT",
-    "name": "BIOT",
-    "exchange": "빗썸",
-    "entry_price": 0.4584,
-    "currency": "KRW",
-    "entry_time": "2026-09-11 09:11",
-    "signal": "trend"
-  },
-  {
-    "ticker": "MET",
-    "name": "MET",
-    "exchange": "빗썸",
-    "entry_price": 294.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-11 09:11",
-    "signal": "trend"
-  },
-  {
-    "ticker": "UP2",
-    "name": "슈퍼폼",
-    "exchange": "업비트",
-    "entry_price": 99.6,
-    "currency": "KRW",
-    "entry_time": "2026-09-11 09:00"
   }
 ]
