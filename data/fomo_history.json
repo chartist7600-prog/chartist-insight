@@ -27,6 +27,105 @@
     "signal": "trend"
   },
   {
+    "ticker": "FIL",
+    "name": "파일코인",
+    "exchange": "바이낸스",
+    "entry_price": 0.8355,
+    "currency": "USDT",
+    "entry_time": "2026-09-13 20:00",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "BLUR",
+    "name": "블러",
+    "exchange": "바이낸스",
+    "entry_price": 0.01818,
+    "currency": "USDT",
+    "entry_time": "2026-09-13 10:00",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "PUNDIX",
+    "name": "펀디엑스",
+    "exchange": "바이낸스",
+    "entry_price": 0.11589,
+    "currency": "USDT",
+    "entry_time": "2026-09-13 10:00",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "AUCTION",
+    "name": "바운스토큰",
+    "exchange": "바이낸스",
+    "entry_price": 3.472,
+    "currency": "USDT",
+    "entry_time": "2026-09-13 09:00",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "GMT",
+    "name": "스테픈",
+    "exchange": "바이낸스",
+    "entry_price": 0.007861,
+    "currency": "USDT",
+    "entry_time": "2026-09-13 09:00",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "MANA",
+    "name": "디센트럴랜드",
+    "exchange": "바이낸스",
+    "entry_price": 0.07606,
+    "currency": "USDT",
+    "entry_time": "2026-09-13 09:00",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "VTHO",
+    "name": "비토르토큰",
+    "exchange": "바이낸스",
+    "entry_price": 0.0008037,
+    "currency": "USDT",
+    "entry_time": "2026-09-13 09:00",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "ZIL",
+    "name": "질리카",
+    "exchange": "바이낸스",
+    "entry_price": 0.003,
+    "currency": "USDT",
+    "entry_time": "2026-09-13 09:00",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "YGG",
+    "name": "일드길드게임즈",
+    "exchange": "바이낸스",
+    "entry_price": 0.02403,
+    "currency": "USDT",
+    "entry_time": "2026-09-13 05:00",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "ZETA",
+    "name": "제타체인",
+    "exchange": "바이낸스",
+    "entry_price": 0.03787,
+    "currency": "USDT",
+    "entry_time": "2026-09-13 05:00",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "COW",
+    "name": "카우프로토콜",
+    "exchange": "바이낸스",
+    "entry_price": 0.1383,
+    "currency": "USDT",
+    "entry_time": "2026-09-13 01:00",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "IQ",
     "name": "아이큐",
     "exchange": "빗썸",
@@ -59,6 +158,60 @@
     "currency": "KRW",
     "entry_time": "2026-09-12 21:05",
     "signal": "trend"
+  },
+  {
+    "ticker": "CELO",
+    "name": "셀로",
+    "exchange": "바이낸스",
+    "entry_price": 0.08228,
+    "currency": "USDT",
+    "entry_time": "2026-09-12 21:00",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "GLM",
+    "name": "골렘",
+    "exchange": "바이낸스",
+    "entry_price": 0.12209,
+    "currency": "USDT",
+    "entry_time": "2026-09-12 21:00",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "LINEA",
+    "name": "리네아",
+    "exchange": "바이낸스",
+    "entry_price": 0.002657,
+    "currency": "USDT",
+    "entry_time": "2026-09-12 21:00",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "BIGTIME",
+    "name": "빅타임",
+    "exchange": "바이낸스",
+    "entry_price": 0.007729,
+    "currency": "USDT",
+    "entry_time": "2026-09-12 17:00",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "CVC",
+    "name": "시빅",
+    "exchange": "바이낸스",
+    "entry_price": 0.03584,
+    "currency": "USDT",
+    "entry_time": "2026-09-12 11:00",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "ZORA",
+    "name": "조라",
+    "exchange": "바이낸스",
+    "entry_price": 0.008305,
+    "currency": "USDT",
+    "entry_time": "2026-09-11 23:00",
+    "signal": "golden_zone"
   },
   {
     "ticker": "BIOT",
