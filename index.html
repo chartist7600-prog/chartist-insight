@@ -3421,17 +3421,25 @@ function openVolumeExplainModal(){
 <script>
 document.addEventListener('DOMContentLoaded', function(){ if(typeof tgUpdateUI==='function') tgUpdateUI(); });
 function autoOpenZoneSearch(ticker){
-  openAltcoinSearchModal();
-  var input=document.getElementById('zoneSearchInput');
-  if(input) input.value=ticker;
   var tries=0;
   var iv=setInterval(function(){
     tries++;
     if(typeof zoneData!=='undefined' && zoneData){
-      searchZone(ticker);
       clearInterval(iv);
+      var coins=zoneData.coins||{};
+      if(coins.hasOwnProperty(ticker)){
+        openAltcoinSearchModal();
+        var input=document.getElementById('zoneSearchInput');
+        if(input) input.value=ticker;
+        searchZone(ticker);
+      }else{
+        // 235개 공통상장 밖 종목 - 탐색기에 없으므로 트레이딩뷰 차트로 폴백
+        window.open('https://kr.tradingview.com/chart/?symbol=BINANCE:'+ticker+'USDT.P&interval=60','_blank');
+      }
     } else if(tries>20){
       clearInterval(iv);
+      // zoneData 로드 자체가 안 된 경우도 안전하게 트레이딩뷰로 폴백
+      window.open('https://kr.tradingview.com/chart/?symbol=BINANCE:'+ticker+'USDT.P&interval=60','_blank');
     }
   },300);
 }
