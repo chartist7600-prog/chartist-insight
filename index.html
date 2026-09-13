@@ -1194,8 +1194,14 @@
       fetch('/data/altcoin_zone_status.json?t='+Date.now()).then(function(r){return r.json();}).then(function(d){
         var coins=d.coins||{};
         var s={};
+        var now=Date.now();
         Object.keys(coins).forEach(function(t){
-          if(coins[t].golden_zone===true)s[t]=true;
+          var c=coins[t];
+          if(c.golden_zone===true&&c.golden_zone_since){
+            var since=new Date(c.golden_zone_since.replace(' ','T')+':00+09:00');
+            var days=Math.floor((now-since.getTime())/86400000);
+            s[t]=days>=0?days:0;
+          }
         });
         _goldenZoneSet=s;
         if(window.loadCoinRank)window.loadCoinRank();
@@ -1239,19 +1245,20 @@
       var iconHtml=imgSrc?'<img src="'+imgSrc+'" alt="'+sym+'" style="width:36px;height:36px;border-radius:50%;object-fit:cover;">':'<span style="font-size:11px;font-weight:800;">'+ini+'</span>';
       var iconStyle=imgSrc?'':'background:linear-gradient(135deg,'+col+'cc,'+col+'44);border:1.5px solid '+col+'66;';
       var navDays=_navSignals.hasOwnProperty(sym)?_navSignals[sym]:null;
-      var isGolden=_goldenZoneSet.hasOwnProperty(sym);
+      var goldenDays=_goldenZoneSet.hasOwnProperty(sym)?_goldenZoneSet[sym]:null;
       var navTag='';
       var glowStyle='';
-      if(navDays!==null&&isGolden){
-        var dayLabel=navDays===0?'오늘':navDays+'일전';
+      if(navDays!==null&&goldenDays!==null){
+        var dayLabel=Math.min(navDays,goldenDays)===0?'오늘':Math.min(navDays,goldenDays)+'일전';
         navTag='<div style="display:inline-flex;align-items:center;gap:4px;background:linear-gradient(90deg,rgba(220,53,69,0.12),rgba(201,168,76,0.12));border:0.5px solid rgba(201,168,76,0.35);color:#C9A84C;font-size:10px;font-weight:600;padding:2px 7px;border-radius:4px;margin-top:5px;">🚀✨ '+dayLabel+' 알트코인 네비게이션+골든존 동시 포착</div>';
         glowStyle='background:rgba(201,168,76,0.08);animation:crkGoldGlow 2s ease-in-out infinite;';
       }else if(navDays!==null){
         var dayLabel=navDays===0?'오늘':navDays+'일전';
         navTag='<div style="display:inline-flex;align-items:center;gap:4px;background:rgba(220,53,69,0.12);border:0.5px solid rgba(220,53,69,0.35);color:#e05555;font-size:10px;font-weight:600;padding:2px 7px;border-radius:4px;margin-top:5px;">🚀 '+dayLabel+' 알트코인 네비게이션 포착</div>';
         glowStyle='background:rgba(220,53,69,0.06);animation:crkGoldGlow 2s ease-in-out infinite;';
-      }else if(isGolden){
-        navTag='<div style="display:inline-flex;align-items:center;gap:4px;background:rgba(201,168,76,0.12);border:0.5px solid rgba(201,168,76,0.35);color:#C9A84C;font-size:10px;font-weight:600;padding:2px 7px;border-radius:4px;margin-top:5px;">✨ 골든존</div>';
+      }else if(goldenDays!==null){
+        var dayLabel=goldenDays===0?'오늘':goldenDays+'일전';
+        navTag='<div style="display:inline-flex;align-items:center;gap:4px;background:rgba(201,168,76,0.12);border:0.5px solid rgba(201,168,76,0.35);color:#C9A84C;font-size:10px;font-weight:600;padding:2px 7px;border-radius:4px;margin-top:5px;">✨ '+dayLabel+' 골든존 포착</div>';
         glowStyle='background:rgba(201,168,76,0.06);animation:crkGoldGlow 2s ease-in-out infinite;';
       }
       var coinName=(window._coinNames&&window._coinNames[sym])?window._coinNames[sym]:'';
@@ -2853,9 +2860,6 @@ function loadFomoSection(){
     // golden (골든존)
     if(Array.isArray(d.golden)){d.golden.forEach(function(x){if(x.entry_time&&(now-new Date(x.entry_time.replace(' ','T')+':00+09:00'))<7*86400000){allItems.push({ticker:x.ticker||'',exchange:x.exchange||'바이낸스',entry_price:x.entry_price||0,currency:x.currency||'USDT',entry_time:x.entry_time||'',signal:'golden_zone'});}});}
     // 정렬: 각 종목 현재 등락률(entry_price 대비) 높은 순으로 보여주기 위해, 렌더링 단계에서 재정렬함 (renderFomo에서 처리)
-    // 티커 중복 제거 (같은 티커는 가장 최신 신호 하나만)
-    var seen={};
-    allItems=allItems.filter(function(x){if(!x.ticker||seen[x.ticker])return false;seen[x.ticker]=true;return true;});
     if(!allItems.length){document.getElementById("fomo-list").innerHTML='<div style="text-align:center;color:#555;padding:20px;font-size:12px;">신호 데이터 준비 중...</div>';return;}
     window._fomoItems=allItems;
     renderFomoWithLiveprices();
@@ -2878,6 +2882,20 @@ function renderFomoWithLiveprices(){
 function renderFomo(items,pm){
   // 수익률 계산 (currency별 key 사용)
   function getPrice(item){return pm[item.ticker+'_'+(item.currency||'KRW')]||0;}
+  function pctOf(item){
+    var cur=getPrice(item);
+    return item.entry_price>0&&cur>0?(cur-item.entry_price)/item.entry_price:-Infinity;
+  }
+  // 티커 중복 제거: 같은 티커에 여러 신호(mid/whale/ma/golden 등)가 있으면 수익률이 가장 높은 신호를 대표로 선택
+  var bestByTicker={};
+  items.forEach(function(x){
+    if(!x.ticker)return;
+    var p=pctOf(x);
+    if(!bestByTicker.hasOwnProperty(x.ticker)||p>pctOf(bestByTicker[x.ticker])){
+      bestByTicker[x.ticker]=x;
+    }
+  });
+  items=Object.keys(bestByTicker).map(function(t){return bestByTicker[t];});
   // 필터 없이 전체 표시, 수익률 높은 순 정렬
   items=items.slice().sort(function(a,b){
     var ca=getPrice(a),cb=getPrice(b);
