@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "PYTH",
+    "name": "피스네트워크",
+    "exchange": "바이낸스",
+    "entry_price": 0.05669,
+    "currency": "USDT",
+    "entry_time": "2026-09-14 05:00:12",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "XEC",
     "name": "이캐시",
     "exchange": "빗썸",
@@ -246,14 +255,5 @@
     "currency": "KRW",
     "entry_time": "2026-09-12 21:05",
     "signal": "trend"
-  },
-  {
-    "ticker": "CELO",
-    "name": "셀로",
-    "exchange": "바이낸스",
-    "entry_price": 0.08228,
-    "currency": "USDT",
-    "entry_time": "2026-09-12 21:00",
-    "signal": "golden_zone"
   }
 ]
