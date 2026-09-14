@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "A",
+    "name": "볼타",
+    "exchange": "바이낸스",
+    "entry_price": 0.08311,
+    "currency": "USDT",
+    "entry_time": "2026-09-14 13:00:08",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "ELF",
     "name": "엘프",
     "exchange": "업비트",
@@ -245,13 +254,5 @@
     "currency": "USDT",
     "entry_time": "2026-09-13 01:00",
     "signal": "golden_zone"
-  },
-  {
-    "ticker": "IQ",
-    "name": "아이큐",
-    "exchange": "빗썸",
-    "entry_price": 1.16,
-    "currency": "KRW",
-    "entry_time": "2026-09-13 00:00"
   }
 ]
