@@ -5416,5 +5416,17 @@
     "time": "2026-09-14 09:00",
     "price": 43.1,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_ZIL",
+    "time": "2026-09-15 00:00",
+    "price": 3.714,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_CAP",
+    "time": "2026-09-15 00:00",
+    "price": 87.97,
+    "sig_type": "trend"
   }
 ]

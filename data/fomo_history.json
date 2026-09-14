@@ -1,5 +1,13 @@
 [
   {
+    "ticker": "CAP",
+    "name": "캡",
+    "exchange": "빗썸",
+    "entry_price": 87.97,
+    "currency": "KRW",
+    "entry_time": "2026-09-15 00:00"
+  },
+  {
     "ticker": "XLM",
     "name": "스텔라루멘",
     "exchange": "바이낸스",
@@ -242,15 +250,6 @@
     "name": "비토르토큰",
     "exchange": "바이낸스",
     "entry_price": 0.0008037,
-    "currency": "USDT",
-    "entry_time": "2026-09-13 09:00",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "ZIL",
-    "name": "질리카",
-    "exchange": "바이낸스",
-    "entry_price": 0.003,
     "currency": "USDT",
     "entry_time": "2026-09-13 09:00",
     "signal": "golden_zone"
