@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "COW",
+    "name": "카우프로토콜",
+    "exchange": "바이낸스",
+    "entry_price": 0.1401,
+    "currency": "USDT",
+    "entry_time": "2026-09-14 16:00:08",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "NEAR",
     "name": "니어프로토콜",
     "exchange": "바이낸스",
@@ -242,15 +251,6 @@
     "name": "일드길드게임즈",
     "exchange": "바이낸스",
     "entry_price": 0.02403,
-    "currency": "USDT",
-    "entry_time": "2026-09-13 05:00",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "ZETA",
-    "name": "제타체인",
-    "exchange": "바이낸스",
-    "entry_price": 0.03787,
     "currency": "USDT",
     "entry_time": "2026-09-13 05:00",
     "signal": "golden_zone"
