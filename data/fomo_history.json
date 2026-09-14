@@ -1,5 +1,23 @@
 [
   {
+    "ticker": "OP",
+    "name": "옵티미즘",
+    "exchange": "바이낸스",
+    "entry_price": 0.10344,
+    "currency": "USDT",
+    "entry_time": "2026-09-15 05:00:10",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "UNI",
+    "name": "유니스왑",
+    "exchange": "바이낸스",
+    "entry_price": 6.687,
+    "currency": "USDT",
+    "entry_time": "2026-09-15 05:00:10",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "CAP",
     "name": "캡",
     "exchange": "빗썸",
@@ -232,24 +250,6 @@
     "name": "스테픈",
     "exchange": "바이낸스",
     "entry_price": 0.007861,
-    "currency": "USDT",
-    "entry_time": "2026-09-13 09:00",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "MANA",
-    "name": "디센트럴랜드",
-    "exchange": "바이낸스",
-    "entry_price": 0.07606,
-    "currency": "USDT",
-    "entry_time": "2026-09-13 09:00",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "VTHO",
-    "name": "비토르토큰",
-    "exchange": "바이낸스",
-    "entry_price": 0.0008037,
     "currency": "USDT",
     "entry_time": "2026-09-13 09:00",
     "signal": "golden_zone"
