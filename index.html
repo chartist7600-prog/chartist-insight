@@ -1255,11 +1255,11 @@
       }else if(navDays!==null){
         var dayLabel=navDays===0?'오늘':navDays+'일전';
         navTag='<div style="display:inline-flex;align-items:center;gap:4px;background:linear-gradient(90deg,rgba(220,53,69,0.12),rgba(201,168,76,0.12));border:0.5px solid rgba(201,168,76,0.35);color:#C9A84C;font-size:10px;font-weight:600;padding:2px 7px;border-radius:4px;margin-top:5px;">🚀 '+dayLabel+' 알트코인 네비게이션 포착</div>';
-        glowStyle='background:rgba(220,53,69,0.06);animation:crkGoldGlow 2s ease-in-out infinite;';
+        glowStyle='background:rgba(201,168,76,0.08);animation:crkGoldGlow 2s ease-in-out infinite;';
       }else if(goldenDays!==null){
         var dayLabel=goldenDays===0?'오늘':goldenDays+'일전';
         navTag='<div style="display:inline-flex;align-items:center;gap:4px;background:rgba(201,168,76,0.12);border:0.5px solid rgba(201,168,76,0.35);color:#C9A84C;font-size:10px;font-weight:600;padding:2px 7px;border-radius:4px;margin-top:5px;">✨ '+dayLabel+' 골든존 포착</div>';
-        glowStyle='background:rgba(201,168,76,0.06);animation:crkGoldGlow 2s ease-in-out infinite;';
+        glowStyle='background:rgba(201,168,76,0.08);animation:crkGoldGlow 2s ease-in-out infinite;';
       }
       var coinName=(window._coinNames&&window._coinNames[sym])?window._coinNames[sym]:'';
       var nameHtml=coinName?'<span style="font-size:10px;color:#999;font-weight:500;margin-left:6px;">'+coinName+'</span>':'';
