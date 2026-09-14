@@ -2922,7 +2922,8 @@ function renderFomo(items,pm){
     if(typeof days==="number"&&days>maxDays)maxDays=days;
     var blur=false;
     var liveName=(window._coinNames&&window._coinNames[item.ticker])||item.name||"";
-    html+='<div class="fomo-item'+(blur?' blurred':'')+'">'+'<div class="fomo-rank">'+(i+1)+'</div>'+'<div class="fomo-coin"><div class="fomo-coin-name">'+item.ticker+'<span style="font-size:11px;color:#999;font-weight:500;margin-left:6px;">'+liveName+'</span></div><div class="fomo-coin-meta">신호일: '+dt+'</div></div>'+'<div class="fomo-right"><div class="fomo-pct'+neg+'">'+pctStr+cursor+'</div><div class="fomo-days">'+days+'일 전</div></div>';
+    var daysLabel = (typeof days === "number" && days === 0) ? '오늘' : days+'일 전';
+    html+='<div class="fomo-item'+(blur?' blurred':'')+'">'+'<div class="fomo-rank">'+(i+1)+'</div>'+'<div class="fomo-coin"><div class="fomo-coin-name">'+item.ticker+'<span style="font-size:11px;color:#999;font-weight:500;margin-left:6px;">'+liveName+'</span></div><div class="fomo-coin-meta">신호일: '+dt+'</div></div>'+'<div class="fomo-right"><div class="fomo-pct'+neg+'">'+pctStr+cursor+'</div><div class="fomo-days">'+daysLabel+'</div></div>';
     
     html+='</div>';
   });
