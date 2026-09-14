@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "XLM",
+    "name": "스텔라루멘",
+    "exchange": "바이낸스",
+    "entry_price": 0.1891,
+    "currency": "USDT",
+    "entry_time": "2026-09-14 21:00:15",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "COW",
     "name": "카우프로토콜",
     "exchange": "바이낸스",
@@ -244,15 +253,6 @@
     "entry_price": 0.003,
     "currency": "USDT",
     "entry_time": "2026-09-13 09:00",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "YGG",
-    "name": "일드길드게임즈",
-    "exchange": "바이낸스",
-    "entry_price": 0.02403,
-    "currency": "USDT",
-    "entry_time": "2026-09-13 05:00",
     "signal": "golden_zone"
   }
 ]
