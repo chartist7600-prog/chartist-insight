@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "NEAR",
+    "name": "니어프로토콜",
+    "exchange": "바이낸스",
+    "entry_price": 2.391,
+    "currency": "USDT",
+    "entry_time": "2026-09-14 14:00:08",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "A",
     "name": "볼타",
     "exchange": "바이낸스",
@@ -244,15 +253,6 @@
     "entry_price": 0.03787,
     "currency": "USDT",
     "entry_time": "2026-09-13 05:00",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "COW",
-    "name": "카우프로토콜",
-    "exchange": "바이낸스",
-    "entry_price": 0.1383,
-    "currency": "USDT",
-    "entry_time": "2026-09-13 01:00",
     "signal": "golden_zone"
   }
 ]
