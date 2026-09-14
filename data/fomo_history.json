@@ -1,5 +1,29 @@
 [
   {
+    "ticker": "ELF",
+    "name": "엘프",
+    "exchange": "업비트",
+    "entry_price": 96.6,
+    "currency": "KRW",
+    "entry_time": "2026-09-14 09:00"
+  },
+  {
+    "ticker": "BIRB",
+    "name": "문버드",
+    "exchange": "업비트",
+    "entry_price": 95.9,
+    "currency": "KRW",
+    "entry_time": "2026-09-14 09:00"
+  },
+  {
+    "ticker": "CVC",
+    "name": "시빅",
+    "exchange": "업비트",
+    "entry_price": 43.1,
+    "currency": "KRW",
+    "entry_time": "2026-09-14 09:00"
+  },
+  {
     "ticker": "PYTH",
     "name": "피스네트워크",
     "exchange": "바이낸스",
@@ -229,31 +253,5 @@
     "entry_price": 1.16,
     "currency": "KRW",
     "entry_time": "2026-09-13 00:00"
-  },
-  {
-    "ticker": "CUDIS",
-    "name": "CUDIS",
-    "exchange": "빗썸",
-    "entry_price": 5.244,
-    "currency": "KRW",
-    "entry_time": "2026-09-13 00:00"
-  },
-  {
-    "ticker": "XPLA",
-    "name": "XPLA",
-    "exchange": "빗썸",
-    "entry_price": 9.722,
-    "currency": "KRW",
-    "entry_time": "2026-09-12 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "ALLO",
-    "name": "ALLO",
-    "exchange": "빗썸",
-    "entry_price": 335.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-12 21:05",
-    "signal": "trend"
   }
 ]
