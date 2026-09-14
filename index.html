@@ -992,8 +992,8 @@
   </div>
 </div>
 <div class="tab-nav-wrap"><div class="tab-nav">
-  <button class="tab-btn" id="tab-btn-btc" onclick="if(!tgUser){openLoginModal();}else if(!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{goToTab('btc',this);}">₿ 비트</button>
-  <button class="tab-btn" id="tab-btn-altcoin" onclick="if(!tgUser){openLoginModal();}else if(!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{goToTab('altcoin',this);}">📊 알트</button>
+  <button class="tab-btn" id="tab-btn-btc" onclick="if(!tgUser){openLoginModal();}else if(!tgUser.is_member){openMemberModal();}else{goToTab('btc',this);}">₿ 비트</button>
+  <button class="tab-btn" id="tab-btn-altcoin" onclick="if(!tgUser){openLoginModal();}else if(!tgUser.is_member){openMemberModal();}else{goToTab('altcoin',this);}">📊 알트</button>
   <button class="tab-btn" id="tab-btn-calc" onclick="goToTab('calc',this)">🧮 계산기</button>
   <button class="tab-btn" id="tab-btn-journal" onclick="goToTab('journal',this)" style="letter-spacing:-0.5px;">📒 매매일지</button>
 </div></div>
@@ -1069,7 +1069,7 @@
     <div class="fomo-subtitle">신호 발생 시점 대비 현재 수익률 · 실시간 업데이트</div>
     <div class="fomo-list" id="fomo-list"><div style="text-align:center;color:#555;padding:20px;font-size:12px;">로딩 중...</div></div>
     <div class="fomo-cta-row">
-      <button class="fomo-cta-btn" onclick="(function(){if(typeof tgUser!=='undefined'&&tgUser&&tgUser.is_member){goToTab('altcoin',document.getElementById('tab-btn-altcoin'));}else if(typeof tgUser!=='undefined'&&tgUser&&!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{openLoginModal();}})()">전체 신호 보기</button>
+      <button class="fomo-cta-btn" onclick="(function(){if(typeof tgUser!=='undefined'&&tgUser&&tgUser.is_member){goToTab('altcoin',document.getElementById('tab-btn-altcoin'));}else if(typeof tgUser!=='undefined'&&tgUser&&!tgUser.is_member){openMemberModal();}else{openLoginModal();}})()">전체 신호 보기</button>
     </div>
   </div>
 </section>
@@ -1120,7 +1120,7 @@
     <div class="service-group">
       <div class="service-group-label">🔒 멤버십 전용</div>
       <div class="service-cards">
-        <div class="service-card paid-card" onclick="(function(){if(!tgUser){openLoginModal();}else if(!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{goToTab('btc',document.getElementById('tab-btn-btc'));}})()">
+        <div class="service-card paid-card" onclick="(function(){if(!tgUser){openLoginModal();}else if(!tgUser.is_member){openMemberModal();}else{goToTab('btc',document.getElementById('tab-btn-btc'));}})()">
           <div class="service-card-icon">₿</div>
           <div class="service-card-body">
             <div class="service-card-title">비트코인</div>
@@ -1131,7 +1131,7 @@
           </div>
           <div class="service-card-badge paid">멤버십</div>
         </div>
-        <div class="service-card paid-card" onclick="(function(){if(!tgUser){openLoginModal();}else if(!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}else{goToTab('altcoin',document.getElementById('tab-btn-altcoin'));}})()">
+        <div class="service-card paid-card" onclick="(function(){if(!tgUser){openLoginModal();}else if(!tgUser.is_member){openMemberModal();}else{goToTab('altcoin',document.getElementById('tab-btn-altcoin'));}})()">
           <div class="service-card-icon">📊</div>
           <div class="service-card-body">
             <div class="service-card-title">알트코인</div>
@@ -2068,7 +2068,7 @@ function goSignalTab(){
   var tab=document.getElementById('signal-box-tab').getAttribute('data-tab');
   var btn=document.getElementById('tab-btn-'+tab);
   if(!tgUser){openLoginModal();}
-  else if(!tgUser.is_member){document.getElementById('member-modal').classList.add('show');}
+  else if(!tgUser.is_member){openMemberModal();}
   else{goToTab(tab,btn);}
 }
 
@@ -2607,6 +2607,13 @@ var TG_BOT_NAME = 'ChartMasterBot';
 var tgUser = null;
 
 function openLoginModal() { document.getElementById('login-modal').style.display='flex'; }
+function openMemberModal(desc) {
+  var descEl = document.querySelector('#member-modal .member-modal-desc');
+  if (descEl) {
+    descEl.innerHTML = desc || '차티스트 인사이트 멤버십 구독자만<br>이용할 수 있는 서비스입니다.<br><br>팬딩에서 멤버십 가입 후<br>텔레그램 채널에 입장하면<br>자동으로 접근이 허용됩니다.';
+  }
+  document.getElementById('member-modal').classList.add('show');
+}
 function closeLoginModal() { document.getElementById('login-modal').style.display='none'; }
 function tgLogin() {
   var returnUrl = encodeURIComponent('https://chartist-insight.com/');
@@ -2969,7 +2976,7 @@ function serviceNavClick(tab) {
     return;
   }
   if (tgUser && !tgUser.is_member && !freeTabs.includes(tab)) {
-    document.getElementById('member-modal').classList.add('show');
+    openMemberModal();
     return;
   }
   var btn = document.getElementById('tab-btn-' + tab);
@@ -3742,7 +3749,7 @@ async function savePushSettings(){
     selected = selected.filter(function(c){ return FREE_PUSH_CATEGORIES.indexOf(c) !== -1; });
     if (selected.length === 0) {
       hideSoundPopup({target:document.getElementById('sound-overlay')});
-      document.getElementById('member-modal').classList.add('show');
+      openMemberModal('놓치기 쉬운 알림, 편하게 받아보세요.<br>멤버십 가입 후 텔레그램 채널에 입장하면<br>이용하실 수 있습니다.');
       return;
     }
   }
