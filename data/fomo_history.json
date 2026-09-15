@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "ZETA",
+    "name": "제타체인",
+    "exchange": "바이낸스",
+    "entry_price": 0.03648,
+    "currency": "USDT",
+    "entry_time": "2026-09-15 10:00:13",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "OP",
     "name": "옵티미즘",
     "exchange": "바이낸스",
@@ -241,15 +250,6 @@
     "name": "바운스토큰",
     "exchange": "바이낸스",
     "entry_price": 3.472,
-    "currency": "USDT",
-    "entry_time": "2026-09-13 09:00",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "GMT",
-    "name": "스테픈",
-    "exchange": "바이낸스",
-    "entry_price": 0.007861,
     "currency": "USDT",
     "entry_time": "2026-09-13 09:00",
     "signal": "golden_zone"
