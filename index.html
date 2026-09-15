@@ -3200,11 +3200,13 @@ function toggleZoneTfFilter(tf, btn){
   searchZone(inputEl ? inputEl.value : '');
 }
 
-function zoneBadgeHtml(zone, isStrong){
+function zoneBadgeHtml(zone, isStrong, isCompletion){
   var showLightning = isStrong && zone==='buy';
   var strongCls = showLightning ? ' zone-strong' : '';
   var strongIcon = showLightning ? '⚡' : '';
-  if(zone==='buy') return '<span class="'+strongCls.trim()+'" style="background:#c0302a;color:#fff;padding:3px 8px;border-radius:6px;font-size:12px;display:inline-block;">'+strongIcon+'상승추세</span>';
+  var completionStyle = isCompletion ? 'border:2px solid #C9A84C;position:relative;' : '';
+  var completionLabel = isCompletion ? '<span style="position:absolute;top:-9px;right:-6px;background:#C9A84C;color:#2a1c00;font-size:9px;font-weight:700;border-radius:8px;padding:1px 5px;line-height:1.4;">완성</span>' : '';
+  if(zone==='buy') return '<span class="'+strongCls.trim()+'" style="background:#c0302a;color:#fff;padding:3px 8px;border-radius:6px;font-size:12px;display:inline-block;'+completionStyle+'">'+completionLabel+strongIcon+'상승추세</span>';
   if(zone==='sell') return '<span style="background:#1e50c8;color:#fff;padding:3px 8px;border-radius:6px;font-size:12px;display:inline-block;">하락추세</span>';
   return '<span style="background:#444;color:#aaa;padding:3px 8px;border-radius:6px;font-size:12px;">N/A</span>';
 }
@@ -3217,9 +3219,25 @@ function renderZoneResults(matches){
     return;
   }
   listEl.innerHTML=matches.map(function(item){
+    var completionTf=null;
+    if(item.data.golden_zone){
+      var latestTs=-1;
+      Object.keys(ZONE_TF_LABELS).forEach(function(tf){
+        var flipAt=item.data[tf+'_flip_at'];
+        if(!flipAt) return;
+        var ts=new Date(flipAt.replace(/(\d{2})\/(\d{2}) (\d{2}):(\d{2})/, function(m,mo,d,h,mi){
+          var y=new Date().getFullYear();
+          return y+'-'+mo+'-'+d+'T'+h+':'+mi+':00+09:00';
+        })).getTime();
+        if(!isNaN(ts) && ts>latestTs){ latestTs=ts; completionTf=tf; }
+      });
+    }
     var tfCells=Object.keys(ZONE_TF_LABELS).map(function(tf){
       var confirmedAt=item.data[tf+'_flip_at'];
-      return '<div style="text-align:center;flex:1;"><div style="color:#888;font-size:11px;margin-bottom:4px;">'+ZONE_TF_LABELS[tf]+'</div>'+zoneBadgeHtml(item.data[tf], item.data[tf+'_strong'])+(confirmedAt?'<div style="color:#999;font-size:11px;margin-top:2px;">'+confirmedAt+' 확정</div>':'')+'</div>';
+      var isCompletion=(tf===completionTf);
+      var confirmedColor=isCompletion?'#C9A84C':'#999';
+      var confirmedWeight=isCompletion?'font-weight:600;':'';
+      return '<div style="text-align:center;flex:1;"><div style="color:#888;font-size:11px;margin-bottom:4px;">'+ZONE_TF_LABELS[tf]+'</div>'+zoneBadgeHtml(item.data[tf], item.data[tf+'_strong'], isCompletion)+(confirmedAt?'<div style="color:'+confirmedColor+';font-size:11px;margin-top:2px;'+confirmedWeight+'">'+confirmedAt+' 확정</div>':'')+'</div>';
     }).join('');
     var goldenBadge = item.data.golden_zone ? '<div style="color:#C9A84C;font-size:12px;font-weight:700;margin-bottom:6px;">✨ 골든존</div>'+zoneSinceBadgeHtml(item.data.golden_zone_since) : '';
     var cardBorder = item.data.golden_zone ? 'border:1px solid #C9A84C;' : '';
