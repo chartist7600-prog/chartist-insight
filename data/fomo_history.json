@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "AWE",
+    "name": "에이더블유이",
+    "exchange": "바이낸스",
+    "entry_price": 0.06241,
+    "currency": "USDT",
+    "entry_time": "2026-09-15 17:00:11",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "VANA",
     "name": "바나",
     "exchange": "바이낸스",
@@ -243,15 +252,6 @@
     "entry_price": 0.8355,
     "currency": "USDT",
     "entry_time": "2026-09-13 20:00",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "BLUR",
-    "name": "블러",
-    "exchange": "바이낸스",
-    "entry_price": 0.01818,
-    "currency": "USDT",
-    "entry_time": "2026-09-13 10:00",
     "signal": "golden_zone"
   }
 ]
