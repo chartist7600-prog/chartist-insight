@@ -2865,8 +2865,8 @@ function loadFomoSection(){
     if(Array.isArray(d.whale)){d.whale.forEach(function(x){if(x.time&&(now-new Date(x.time.length===10?x.time+'T09:00:00+09:00':x.time.replace(' ','T')+':00+09:00'))<7*86400000){var parts=(x.key||'').split('_');allItems.push({ticker:parts[1]||'',exchange:parts[0]||'',entry_price:x.price||0,currency:(parts[0]||'')==='바이낸스'?'USDT':'KRW',entry_time:x.time||'',signal:'whale'});}});}
     // ma (이동평균)
     if(Array.isArray(d.ma)){d.ma.forEach(function(x){if(x.time&&(now-new Date(x.time.length===10?x.time+'T09:00:00+09:00':x.time.replace(' ','T')+':00+09:00'))<7*86400000){var parts=(x.key||'').split('_');allItems.push({ticker:parts[1]||'',exchange:parts[0]||'',entry_price:x.price||0,currency:(parts[0]||'')==='바이낸스'?'USDT':'KRW',entry_time:x.time||'',signal:'ma'});}});}
-    // golden (골든존)
-    if(Array.isArray(d.golden)){d.golden.forEach(function(x){if(x.entry_time&&(now-new Date(x.entry_time.replace(' ','T')+':00+09:00'))<7*86400000){allItems.push({ticker:x.ticker||'',exchange:x.exchange||'바이낸스',entry_price:x.entry_price||0,currency:x.currency||'USDT',entry_time:x.entry_time||'',signal:'golden_zone'});}});}
+    // golden (골든존) - 2026-09-15부터 mid/whale과 동일한 key/time/price 형식으로 저장되므로 동일 패턴으로 파싱
+    if(Array.isArray(d.golden)){d.golden.forEach(function(x){if(x.time&&(now-new Date(x.time.length===10?x.time+'T09:00:00+09:00':x.time.replace(' ','T')+':00+09:00'))<7*86400000){var parts=(x.key||'').split('_');allItems.push({ticker:parts[1]||'',exchange:parts[0]||'',entry_price:x.price||0,currency:(parts[0]||'')==='바이낸스'?'USDT':'KRW',entry_time:x.time||'',signal:'golden_zone'});}});}
     // 정렬: 각 종목 현재 등락률(entry_price 대비) 높은 순으로 보여주기 위해, 렌더링 단계에서 재정렬함 (renderFomo에서 처리)
     if(!allItems.length){document.getElementById("fomo-list").innerHTML='<div style="text-align:center;color:#555;padding:20px;font-size:12px;">신호 데이터 준비 중...</div>';return;}
     window._fomoItems=allItems;
