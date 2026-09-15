@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "VANA",
+    "name": "바나",
+    "exchange": "바이낸스",
+    "entry_price": 0.9899,
+    "currency": "USDT",
+    "entry_time": "2026-09-15 16:00:08",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "ZORA",
     "name": "조라",
     "exchange": "바이낸스",
@@ -241,15 +250,6 @@
     "name": "블러",
     "exchange": "바이낸스",
     "entry_price": 0.01818,
-    "currency": "USDT",
-    "entry_time": "2026-09-13 10:00",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "PUNDIX",
-    "name": "펀디엑스",
-    "exchange": "바이낸스",
-    "entry_price": 0.11589,
     "currency": "USDT",
     "entry_time": "2026-09-13 10:00",
     "signal": "golden_zone"
