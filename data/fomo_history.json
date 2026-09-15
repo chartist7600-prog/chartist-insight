@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "ZORA",
+    "name": "조라",
+    "exchange": "바이낸스",
+    "entry_price": 0.008217,
+    "currency": "USDT",
+    "entry_time": "2026-09-15 15:00:10",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "ZETA",
     "name": "제타체인",
     "exchange": "바이낸스",
@@ -243,15 +252,6 @@
     "entry_price": 0.11589,
     "currency": "USDT",
     "entry_time": "2026-09-13 10:00",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "AUCTION",
-    "name": "바운스토큰",
-    "exchange": "바이낸스",
-    "entry_price": 3.472,
-    "currency": "USDT",
-    "entry_time": "2026-09-13 09:00",
     "signal": "golden_zone"
   }
 ]
