@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "PUNDIX",
+    "name": "펀디엑스",
+    "exchange": "바이낸스",
+    "entry_price": 0.1202,
+    "currency": "USDT",
+    "entry_time": "2026-09-15 18:00:13",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "AWE",
     "name": "에이더블유이",
     "exchange": "바이낸스",
@@ -244,14 +253,5 @@
     "currency": "USDT",
     "entry_time": "2026-09-13 21:05",
     "signal": "trend"
-  },
-  {
-    "ticker": "FIL",
-    "name": "파일코인",
-    "exchange": "바이낸스",
-    "entry_price": 0.8355,
-    "currency": "USDT",
-    "entry_time": "2026-09-13 20:00",
-    "signal": "golden_zone"
   }
 ]
