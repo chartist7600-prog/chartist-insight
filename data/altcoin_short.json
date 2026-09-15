@@ -22,5 +22,11 @@
     "time": "2026-09-15 09:00",
     "price": 187.61,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_LM",
+    "time": "2026-09-15 21:00",
+    "price": 1.226,
+    "sig_type": "trend"
   }
 ]
