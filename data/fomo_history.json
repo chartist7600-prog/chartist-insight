@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "BLUR",
+    "name": "블러",
+    "exchange": "바이낸스",
+    "entry_price": 0.01691,
+    "currency": "USDT",
+    "entry_time": "2026-09-17 06:00:17",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "MAY",
     "name": "MAY",
     "exchange": "빗썸",
@@ -242,14 +251,5 @@
     "entry_price": 1.204,
     "currency": "KRW",
     "entry_time": "2026-09-14 00:00"
-  },
-  {
-    "ticker": "ARPA",
-    "name": "ARPA",
-    "exchange": "빗썸",
-    "entry_price": 13.39,
-    "currency": "KRW",
-    "entry_time": "2026-09-13 21:05",
-    "signal": "trend"
   }
 ]
