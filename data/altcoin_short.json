@@ -1,32 +1,8 @@
 [
   {
-    "key": "빗썸_CTK",
-    "time": "2026-09-15 09:00",
-    "price": 167.0,
-    "sig_type": "trend_strong"
-  },
-  {
-    "key": "빗썸_RON",
-    "time": "2026-09-15 09:00",
-    "price": 77.14,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_RONIN",
-    "time": "2026-09-15 09:00",
-    "price": 0.0573,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_COINB",
-    "time": "2026-09-15 09:00",
-    "price": 187.61,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_LM",
-    "time": "2026-09-15 21:00",
-    "price": 1.226,
+    "key": "바이낸스_SYN",
+    "time": "2026-09-16 09:00",
+    "price": 0.10013,
     "sig_type": "trend"
   }
 ]

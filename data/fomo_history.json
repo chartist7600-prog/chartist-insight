@@ -1,5 +1,13 @@
 [
   {
+    "ticker": "SYN",
+    "name": "SYN",
+    "exchange": "바이낸스",
+    "entry_price": 0.10013,
+    "currency": "USDT",
+    "entry_time": "2026-09-16 09:00"
+  },
+  {
     "ticker": "PUNDIX",
     "name": "펀디엑스",
     "exchange": "바이낸스",
@@ -242,15 +250,6 @@
     "exchange": "빗썸",
     "entry_price": 7.231,
     "currency": "KRW",
-    "entry_time": "2026-09-13 21:05",
-    "signal": "trend"
-  },
-  {
-    "ticker": "AVA",
-    "name": "AVA",
-    "exchange": "바이낸스",
-    "entry_price": 0.1961,
-    "currency": "USDT",
     "entry_time": "2026-09-13 21:05",
     "signal": "trend"
   }
