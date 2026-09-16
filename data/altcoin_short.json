@@ -4,5 +4,11 @@
     "time": "2026-09-16 09:00",
     "price": 0.10013,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_MAY",
+    "time": "2026-09-16 21:00",
+    "price": 7.836,
+    "sig_type": "trend"
   }
 ]
