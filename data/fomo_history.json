@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "MOODENG",
+    "name": "무뎅",
+    "exchange": "바이낸스",
+    "entry_price": 0.04097,
+    "currency": "USDT",
+    "entry_time": "2026-09-17 17:00:18",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "ONE",
     "name": "ONE",
     "exchange": "바이낸스",
@@ -241,14 +250,6 @@
     "name": "KAVA",
     "exchange": "빗썸",
     "entry_price": 94.73,
-    "currency": "KRW",
-    "entry_time": "2026-09-14 00:00"
-  },
-  {
-    "ticker": "LSK",
-    "name": "LSK",
-    "exchange": "빗썸",
-    "entry_price": 1185.0,
     "currency": "KRW",
     "entry_time": "2026-09-14 00:00"
   }
