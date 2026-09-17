@@ -3466,6 +3466,10 @@ function openVolumeExplainModal(){
 <script>
 document.addEventListener('DOMContentLoaded', function(){ if(typeof tgUpdateUI==='function') tgUpdateUI(); });
 function autoOpenZoneSearch(ticker){
+  // 2026-09-18: zoneData는 원래 openAltcoinSearchModal()을 통해서만 채워지는 순환 의존 구조였음
+  // (자동진입 경로는 openAltcoinSearchModal을 안 거치므로 zoneData가 영원히 null로 남아 타임아웃 -> 트레이딩뷰 폴백만 타던 버그)
+  // 여기서 직접 최초 1회 로드를 트리거해서 순환을 끊음
+  if(typeof zoneData==='undefined' || !zoneData){ loadZoneData(); }
   var tries=0;
   var iv=setInterval(function(){
     tries++;
