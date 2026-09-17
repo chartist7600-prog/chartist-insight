@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "ZIL",
+    "name": "질리카",
+    "exchange": "바이낸스",
+    "entry_price": 0.003002,
+    "currency": "USDT",
+    "entry_time": "2026-09-18 03:00:15",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "0G",
     "name": "제로지",
     "exchange": "바이낸스",
@@ -249,14 +258,6 @@
     "name": "이캐시",
     "exchange": "빗썸",
     "entry_price": 0.0104,
-    "currency": "KRW",
-    "entry_time": "2026-09-14 00:00"
-  },
-  {
-    "ticker": "AGLD",
-    "name": "어드벤처골드",
-    "exchange": "빗썸",
-    "entry_price": 244.0,
     "currency": "KRW",
     "entry_time": "2026-09-14 00:00"
   }
