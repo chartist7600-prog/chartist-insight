@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "FLOCK",
+    "name": "플록",
+    "exchange": "바이낸스",
+    "entry_price": 0.06807,
+    "currency": "USDT",
+    "entry_time": "2026-09-17 22:00:13",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "PROVE",
     "name": "서싱트",
     "exchange": "바이낸스",
@@ -243,14 +252,6 @@
     "name": "FANC",
     "exchange": "빗썸",
     "entry_price": 1.84,
-    "currency": "KRW",
-    "entry_time": "2026-09-14 00:00"
-  },
-  {
-    "ticker": "ARK",
-    "name": "ARK",
-    "exchange": "빗썸",
-    "entry_price": 206.0,
     "currency": "KRW",
     "entry_time": "2026-09-14 00:00"
   }
