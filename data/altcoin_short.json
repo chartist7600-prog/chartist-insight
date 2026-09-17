@@ -16,5 +16,23 @@
     "time": "2026-09-17 09:00",
     "price": 52.35,
     "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_GENIUS",
+    "time": "2026-09-17 21:00",
+    "price": 0.4167,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_SPCXB",
+    "time": "2026-09-17 21:00",
+    "price": 153.76,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_LITEB",
+    "time": "2026-09-17 21:00",
+    "price": 941.67,
+    "sig_type": "trend"
   }
 ]
