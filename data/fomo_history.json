@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "PROVE",
+    "name": "서싱트",
+    "exchange": "바이낸스",
+    "entry_price": 0.1895,
+    "currency": "USDT",
+    "entry_time": "2026-09-17 19:00:16",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "MOODENG",
     "name": "무뎅",
     "exchange": "바이낸스",
@@ -242,14 +251,6 @@
     "name": "ARK",
     "exchange": "빗썸",
     "entry_price": 206.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-14 00:00"
-  },
-  {
-    "ticker": "KAVA",
-    "name": "KAVA",
-    "exchange": "빗썸",
-    "entry_price": 94.73,
     "currency": "KRW",
     "entry_time": "2026-09-14 00:00"
   }
