@@ -1,5 +1,23 @@
 [
   {
+    "ticker": "JUP",
+    "name": "주피터",
+    "exchange": "바이낸스",
+    "entry_price": 0.2325,
+    "currency": "USDT",
+    "entry_time": "2026-09-18 05:00:20",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "PIEVERSE",
+    "name": "파이버스",
+    "exchange": "바이낸스",
+    "entry_price": 1.2651,
+    "currency": "USDT",
+    "entry_time": "2026-09-18 05:00:20",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "ZIL",
     "name": "질리카",
     "exchange": "바이낸스",
@@ -243,22 +261,5 @@
     "entry_price": 43.1,
     "currency": "KRW",
     "entry_time": "2026-09-14 09:00"
-  },
-  {
-    "ticker": "PYTH",
-    "name": "피스네트워크",
-    "exchange": "바이낸스",
-    "entry_price": 0.05669,
-    "currency": "USDT",
-    "entry_time": "2026-09-14 05:00:12",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "XEC",
-    "name": "이캐시",
-    "exchange": "빗썸",
-    "entry_price": 0.0104,
-    "currency": "KRW",
-    "entry_time": "2026-09-14 00:00"
   }
 ]
