@@ -1,5 +1,13 @@
 [
   {
+    "ticker": "SKY",
+    "name": "스카이프로토콜",
+    "exchange": "빗썸",
+    "entry_price": 95.05,
+    "currency": "KRW",
+    "entry_time": "2026-09-19 00:00"
+  },
+  {
     "ticker": "ME",
     "name": "매직에덴",
     "exchange": "바이낸스",
@@ -256,15 +264,6 @@
     "entry_price": 1.2651,
     "currency": "USDT",
     "entry_time": "2026-09-18 05:00:20",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "ZIL",
-    "name": "질리카",
-    "exchange": "바이낸스",
-    "entry_price": 0.003002,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 03:00:15",
     "signal": "golden_zone"
   }
 ]
