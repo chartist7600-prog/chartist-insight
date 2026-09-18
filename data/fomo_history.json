@@ -1,5 +1,30 @@
 [
   {
+    "ticker": "GRT",
+    "name": "더그래프",
+    "exchange": "바이낸스",
+    "entry_price": 0.01894,
+    "currency": "USDT",
+    "entry_time": "2026-09-18 09:00:21",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "GENIUS",
+    "name": "GENIUS",
+    "exchange": "바이낸스",
+    "entry_price": 0.3603,
+    "currency": "USDT",
+    "entry_time": "2026-09-18 09:00"
+  },
+  {
+    "ticker": "AVA",
+    "name": "AVA",
+    "exchange": "바이낸스",
+    "entry_price": 0.2636,
+    "currency": "USDT",
+    "entry_time": "2026-09-18 09:00"
+  },
+  {
     "ticker": "JUP",
     "name": "주피터",
     "exchange": "바이낸스",
@@ -237,29 +262,5 @@
     "currency": "USDT",
     "entry_time": "2026-09-14 13:00:08",
     "signal": "golden_zone"
-  },
-  {
-    "ticker": "ELF",
-    "name": "엘프",
-    "exchange": "업비트",
-    "entry_price": 96.6,
-    "currency": "KRW",
-    "entry_time": "2026-09-14 09:00"
-  },
-  {
-    "ticker": "BIRB",
-    "name": "문버드",
-    "exchange": "업비트",
-    "entry_price": 95.9,
-    "currency": "KRW",
-    "entry_time": "2026-09-14 09:00"
-  },
-  {
-    "ticker": "CVC",
-    "name": "시빅",
-    "exchange": "업비트",
-    "entry_price": 43.1,
-    "currency": "KRW",
-    "entry_time": "2026-09-14 09:00"
   }
 ]

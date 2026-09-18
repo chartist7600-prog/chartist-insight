@@ -1,38 +1,44 @@
 [
   {
-    "key": "바이낸스_ONE",
-    "time": "2026-09-17 09:00",
-    "price": 0.001084,
+    "key": "빗썸_AGI",
+    "time": "2026-09-18 09:00",
+    "price": 7.362,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_PLTRB",
-    "time": "2026-09-17 09:00",
-    "price": 175.37,
+    "key": "빗썸_HUMA",
+    "time": "2026-09-18 09:00",
+    "price": 33.81,
+    "sig_type": "trend_strong"
+  },
+  {
+    "key": "빗썸_ASTER",
+    "time": "2026-09-18 09:00",
+    "price": 1012.0,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_QNTB",
-    "time": "2026-09-17 09:00",
-    "price": 52.35,
+    "key": "빗썸_EDEN",
+    "time": "2026-09-18 09:00",
+    "price": 73.56,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_GENIUS",
-    "time": "2026-09-17 21:00",
-    "price": 0.4167,
+    "key": "바이낸스_ARMB",
+    "time": "2026-09-18 09:00",
+    "price": 265.42,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_SPCXB",
-    "time": "2026-09-17 21:00",
-    "price": 153.76,
+    "key": "바이낸스_RKLBB",
+    "time": "2026-09-18 09:00",
+    "price": 68.02,
     "sig_type": "trend"
   },
   {
-    "key": "바이낸스_LITEB",
-    "time": "2026-09-17 21:00",
-    "price": 941.67,
+    "key": "바이낸스_INTWB",
+    "time": "2026-09-18 09:00",
+    "price": 26.69,
     "sig_type": "trend"
   }
 ]
