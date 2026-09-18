@@ -1,5 +1,50 @@
 [
   {
+    "ticker": "BABY",
+    "name": "바빌론",
+    "exchange": "바이낸스",
+    "entry_price": 0.0116,
+    "currency": "USDT",
+    "entry_time": "2026-09-19 01:00:21",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "HYPER",
+    "name": "하이퍼레인",
+    "exchange": "바이낸스",
+    "entry_price": 0.07036,
+    "currency": "USDT",
+    "entry_time": "2026-09-19 01:00:21",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "NEWT",
+    "name": "뉴턴프로토콜",
+    "exchange": "바이낸스",
+    "entry_price": 0.04451,
+    "currency": "USDT",
+    "entry_time": "2026-09-19 01:00:21",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "ONT",
+    "name": "온톨로지",
+    "exchange": "바이낸스",
+    "entry_price": 0.05216,
+    "currency": "USDT",
+    "entry_time": "2026-09-19 01:00:21",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "VET",
+    "name": "비체인",
+    "exchange": "바이낸스",
+    "entry_price": 0.007791,
+    "currency": "USDT",
+    "entry_time": "2026-09-19 01:00:21",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "SKY",
     "name": "스카이프로토콜",
     "exchange": "빗썸",
@@ -221,49 +266,6 @@
     "entry_price": 0.05454,
     "currency": "USDT",
     "entry_time": "2026-09-18 10:00:18",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "GRT",
-    "name": "더그래프",
-    "exchange": "바이낸스",
-    "entry_price": 0.01894,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 09:00:21",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "GENIUS",
-    "name": "GENIUS",
-    "exchange": "바이낸스",
-    "entry_price": 0.3603,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 09:00"
-  },
-  {
-    "ticker": "AVA",
-    "name": "AVA",
-    "exchange": "바이낸스",
-    "entry_price": 0.2636,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 09:00"
-  },
-  {
-    "ticker": "JUP",
-    "name": "주피터",
-    "exchange": "바이낸스",
-    "entry_price": 0.2325,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 05:00:20",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "PIEVERSE",
-    "name": "파이버스",
-    "exchange": "바이낸스",
-    "entry_price": 1.2651,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 05:00:20",
     "signal": "golden_zone"
   }
 ]
