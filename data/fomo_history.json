@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "AZTEC",
+    "name": "아즈텍",
+    "exchange": "바이낸스",
+    "entry_price": 0.01429,
+    "currency": "USDT",
+    "entry_time": "2026-09-18 17:00:16",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "AWE",
     "name": "에이더블유이",
     "exchange": "바이낸스",
@@ -254,15 +263,6 @@
     "name": "카이버네트워크",
     "exchange": "바이낸스",
     "entry_price": 0.1335,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 01:00:14",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "ONDO",
-    "name": "온도파이낸스",
-    "exchange": "바이낸스",
-    "entry_price": 0.3729,
     "currency": "USDT",
     "entry_time": "2026-09-18 01:00:14",
     "signal": "golden_zone"
