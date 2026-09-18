@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "PUNDIX",
+    "name": "펀디엑스",
+    "exchange": "바이낸스",
+    "entry_price": 0.10909,
+    "currency": "USDT",
+    "entry_time": "2026-09-18 20:00:17",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "AZTEC",
     "name": "아즈텍",
     "exchange": "바이낸스",
@@ -254,15 +263,6 @@
     "name": "에어로드롬파이낸스",
     "exchange": "바이낸스",
     "entry_price": 0.5902,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 01:00:14",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "KNC",
-    "name": "카이버네트워크",
-    "exchange": "바이낸스",
-    "entry_price": 0.1335,
     "currency": "USDT",
     "entry_time": "2026-09-18 01:00:14",
     "signal": "golden_zone"
