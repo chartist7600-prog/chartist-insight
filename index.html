@@ -1970,8 +1970,23 @@ async function refreshPushSubStatus(){
       statusEl.textContent='알림을 받고 있습니다 ('+data.categories.length+'개 카테고리)';
       unsubBtn.style.display='';
     } else {
-      statusEl.textContent='아직 알림을 받고 있지 않습니다';
-      unsubBtn.style.display='none';
+      // 2026-09-18: 브라우저엔 유효한 구독 객체(sub)가 있는데 서버 DB에서만 빠진 경우
+      // (9/17 구독자 대량 유실 사고 복구용) - 조용히 자동 재등록 시도
+      var savedCats=null;
+      try{ savedCats=JSON.parse(localStorage.getItem('push_categories')||'null'); }catch(e2){}
+      var cats=(Array.isArray(savedCats)&&savedCats.length)?savedCats:PUSH_CATEGORIES.slice();
+      try{
+        await fetch('/push/subscribe',{
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify({subscription:sub, tg_id:(tgUser?(tgUser.user_id||tgUser.id):null), categories:cats})
+        });
+        statusEl.textContent='알림을 받고 있습니다 ('+cats.length+'개 카테고리)';
+        unsubBtn.style.display='';
+      }catch(e3){
+        statusEl.textContent='아직 알림을 받고 있지 않습니다';
+        unsubBtn.style.display='none';
+      }
     }
   }catch(e){
     statusEl.textContent='';
@@ -3532,6 +3547,37 @@ document.addEventListener('DOMContentLoaded', function(){
     var cleanTicker=searchTicker.toUpperCase().replace(/USDT$/,'');
     setTimeout(function(){ autoOpenZoneSearch(cleanTicker); }, 500);
   }
+});
+
+// 2026-09-18: 9/17 구독자 대량 유실 사고 복구용 - UI(알림설정 모달) 없이도
+// 페이지 로드 시마다 조용히 백그라운드에서 서버 구독 상태를 확인하고, 브라우저엔
+// 유효한 구독이 있는데 서버 DB에서만 빠진 경우 자동으로 재등록한다.
+document.addEventListener('DOMContentLoaded', function(){
+  setTimeout(async function(){
+    try{
+      if(!('serviceWorker' in navigator)||!('PushManager' in window))return;
+      const reg=await navigator.serviceWorker.ready;
+      const sub=await reg.pushManager.getSubscription();
+      if(!sub)return;
+      const res=await fetch('/push/status',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({subscription:sub})
+      });
+      const data=await res.json();
+      if(!(data.ok&&data.subscribed)){
+        var savedCats=null;
+        try{ savedCats=JSON.parse(localStorage.getItem('push_categories')||'null'); }catch(e2){}
+        var cats=(Array.isArray(savedCats)&&savedCats.length)?savedCats:PUSH_CATEGORIES.slice();
+        await fetch('/push/subscribe',{
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify({subscription:sub, tg_id:(tgUser?(tgUser.user_id||tgUser.id):null), categories:cats})
+        });
+        console.log('[push] 서버 DB 유실 감지, 자동 재등록 완료');
+      }
+    }catch(e){}
+  }, 2000);
 });
 if(document.readyState!=='loading'){ if(typeof tgUpdateUI==='function') tgUpdateUI(); }
 </script>
