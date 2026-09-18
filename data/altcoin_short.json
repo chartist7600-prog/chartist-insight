@@ -40,5 +40,53 @@
     "time": "2026-09-18 09:00",
     "price": 26.69,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_DYDX",
+    "time": "2026-09-18 21:00",
+    "price": 166.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SFP",
+    "time": "2026-09-18 21:00",
+    "price": 387.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_FET",
+    "time": "2026-09-18 21:00",
+    "price": 248.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_PNUT",
+    "time": "2026-09-18 21:00",
+    "price": 0.0503,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_VELODROME",
+    "time": "2026-09-18 21:00",
+    "price": 0.0265,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_NIGHT",
+    "time": "2026-09-18 21:00",
+    "price": 0.02376,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_QQQB",
+    "time": "2026-09-18 21:00",
+    "price": 719.75,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_AXTIB",
+    "time": "2026-09-18 21:00",
+    "price": 69.11,
+    "sig_type": "trend"
   }
 ]
