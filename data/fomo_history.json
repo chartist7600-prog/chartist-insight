@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "ELSA",
+    "name": "헤이엘사",
+    "exchange": "바이낸스",
+    "entry_price": 0.05454,
+    "currency": "USDT",
+    "entry_time": "2026-09-18 10:00:18",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "GRT",
     "name": "더그래프",
     "exchange": "바이낸스",
@@ -252,15 +261,6 @@
     "entry_price": 2.391,
     "currency": "USDT",
     "entry_time": "2026-09-14 14:00:08",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "A",
-    "name": "볼타",
-    "exchange": "바이낸스",
-    "entry_price": 0.08311,
-    "currency": "USDT",
-    "entry_time": "2026-09-14 13:00:08",
     "signal": "golden_zone"
   }
 ]
