@@ -1,5 +1,77 @@
 [
   {
+    "ticker": "EGLD",
+    "name": "멀티버스엑스",
+    "exchange": "빗썸",
+    "entry_price": 8230.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-20 00:00"
+  },
+  {
+    "ticker": "DYDX",
+    "name": "DYDX",
+    "exchange": "빗썸",
+    "entry_price": 171.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-20 00:00"
+  },
+  {
+    "ticker": "SUI",
+    "name": "수이",
+    "exchange": "빗썸",
+    "entry_price": 1156.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-20 00:00"
+  },
+  {
+    "ticker": "TAIKO",
+    "name": "타이코",
+    "exchange": "빗썸",
+    "entry_price": 119.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-20 00:00"
+  },
+  {
+    "ticker": "DEEP",
+    "name": "딥북",
+    "exchange": "빗썸",
+    "entry_price": 23.31,
+    "currency": "KRW",
+    "entry_time": "2026-09-20 00:00"
+  },
+  {
+    "ticker": "C",
+    "name": "C",
+    "exchange": "빗썸",
+    "entry_price": 92.81,
+    "currency": "KRW",
+    "entry_time": "2026-09-20 00:00"
+  },
+  {
+    "ticker": "COW",
+    "name": "카우프로토콜",
+    "exchange": "빗썸",
+    "entry_price": 210.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-20 00:00"
+  },
+  {
+    "ticker": "FLUID",
+    "name": "플루이드",
+    "exchange": "빗썸",
+    "entry_price": 1830.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-20 00:00"
+  },
+  {
+    "ticker": "CC",
+    "name": "캔톤",
+    "exchange": "빗썸",
+    "entry_price": 150.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-20 00:00"
+  },
+  {
     "ticker": "KAVA",
     "name": "카바",
     "exchange": "바이낸스",
@@ -178,87 +250,6 @@
     "name": "아발란체",
     "exchange": "바이낸스",
     "entry_price": 7.947,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 13:00:15",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "AVNT",
-    "name": "아반티스",
-    "exchange": "바이낸스",
-    "entry_price": 0.10149,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 13:00:15",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "CFX",
-    "name": "콘플럭스",
-    "exchange": "바이낸스",
-    "entry_price": 0.04749,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 13:00:15",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "CRV",
-    "name": "커브",
-    "exchange": "바이낸스",
-    "entry_price": 0.3416,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 13:00:15",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "ETC",
-    "name": "이더리움클래식",
-    "exchange": "바이낸스",
-    "entry_price": 7.867,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 13:00:15",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "ICP",
-    "name": "인터넷컴퓨터",
-    "exchange": "바이낸스",
-    "entry_price": 2.781,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 13:00:15",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "LINK",
-    "name": "체인링크",
-    "exchange": "바이낸스",
-    "entry_price": 11.757,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 13:00:15",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "LPT",
-    "name": "라이브피어",
-    "exchange": "바이낸스",
-    "entry_price": 1.432,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 13:00:15",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "MANA",
-    "name": "디센트럴랜드",
-    "exchange": "바이낸스",
-    "entry_price": 0.07671,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 13:00:15",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "NEO",
-    "name": "네오",
-    "exchange": "바이낸스",
-    "entry_price": 2.21,
     "currency": "USDT",
     "entry_time": "2026-09-18 13:00:15",
     "signal": "golden_zone"
