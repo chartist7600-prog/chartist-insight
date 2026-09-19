@@ -1,5 +1,45 @@
 [
   {
+    "ticker": "AGLD",
+    "name": "어드벤처골드",
+    "exchange": "업비트",
+    "entry_price": 252.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-19 09:00"
+  },
+  {
+    "ticker": "ARB",
+    "name": "아비트럼",
+    "exchange": "업비트",
+    "entry_price": 302.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-19 09:00"
+  },
+  {
+    "ticker": "GOOGLB",
+    "name": "GOOGLB",
+    "exchange": "바이낸스",
+    "entry_price": 350.7,
+    "currency": "USDT",
+    "entry_time": "2026-09-19 09:00"
+  },
+  {
+    "ticker": "SNXXB",
+    "name": "SNXXB",
+    "exchange": "바이낸스",
+    "entry_price": 18.05,
+    "currency": "USDT",
+    "entry_time": "2026-09-19 09:00"
+  },
+  {
+    "ticker": "ARMB",
+    "name": "ARMB",
+    "exchange": "바이낸스",
+    "entry_price": 275.14,
+    "currency": "USDT",
+    "entry_time": "2026-09-19 09:00"
+  },
+  {
     "ticker": "BABY",
     "name": "바빌론",
     "exchange": "바이낸스",
@@ -221,51 +261,6 @@
     "entry_price": 104.57,
     "currency": "USDT",
     "entry_time": "2026-09-18 13:00:15",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "TAO",
-    "name": "비트텐서",
-    "exchange": "바이낸스",
-    "entry_price": 239.9,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 13:00:15",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "TRUMP",
-    "name": "오피셜트럼프",
-    "exchange": "바이낸스",
-    "entry_price": 2.061,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 13:00:15",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "WCT",
-    "name": "월렛커넥트",
-    "exchange": "바이낸스",
-    "entry_price": 0.0372,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 13:00:15",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "XEC",
-    "name": "이캐시",
-    "exchange": "바이낸스",
-    "entry_price": 0.007601,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 13:00:15",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "ELSA",
-    "name": "헤이엘사",
-    "exchange": "바이낸스",
-    "entry_price": 0.05454,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 10:00:18",
     "signal": "golden_zone"
   }
 ]

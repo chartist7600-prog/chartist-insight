@@ -5428,5 +5428,17 @@
     "time": "2026-09-15 00:00",
     "price": 87.97,
     "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_SNXXB",
+    "time": "2026-09-19 09:00",
+    "price": 18.05,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_ARMB",
+    "time": "2026-09-19 09:00",
+    "price": 275.14,
+    "sig_type": "trend"
   }
 ]
