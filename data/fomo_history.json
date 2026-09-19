@@ -1,5 +1,23 @@
 [
   {
+    "ticker": "BIRB",
+    "name": "문버드",
+    "exchange": "바이낸스",
+    "entry_price": 0.0646,
+    "currency": "USDT",
+    "entry_time": "2026-09-19 13:00:15",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "CELO",
+    "name": "셀로",
+    "exchange": "바이낸스",
+    "entry_price": 0.08485,
+    "currency": "USDT",
+    "entry_time": "2026-09-19 13:00:15",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "AGLD",
     "name": "어드벤처골드",
     "exchange": "업비트",
@@ -241,24 +259,6 @@
     "name": "피스네트워크",
     "exchange": "바이낸스",
     "entry_price": 0.05946,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 13:00:15",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "SEI",
-    "name": "세이",
-    "exchange": "바이낸스",
-    "entry_price": 0.04615,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 13:00:15",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "SOL",
-    "name": "솔라나",
-    "exchange": "바이낸스",
-    "entry_price": 104.57,
     "currency": "USDT",
     "entry_time": "2026-09-18 13:00:15",
     "signal": "golden_zone"
