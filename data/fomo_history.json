@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "KAVA",
+    "name": "카바",
+    "exchange": "바이낸스",
+    "entry_price": 0.07072,
+    "currency": "USDT",
+    "entry_time": "2026-09-19 17:00:16",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "BIRB",
     "name": "문버드",
     "exchange": "바이낸스",
@@ -250,15 +259,6 @@
     "name": "네오",
     "exchange": "바이낸스",
     "entry_price": 2.21,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 13:00:15",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "PYTH",
-    "name": "피스네트워크",
-    "exchange": "바이낸스",
-    "entry_price": 0.05946,
     "currency": "USDT",
     "entry_time": "2026-09-18 13:00:15",
     "signal": "golden_zone"
