@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "FF",
+    "name": "팔콘파이낸스",
+    "exchange": "바이낸스",
+    "entry_price": 0.15099,
+    "currency": "USDT",
+    "entry_time": "2026-09-21 05:00:21",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "ETC",
     "name": "이더리움클래식",
     "exchange": "빗썸",
@@ -229,14 +238,6 @@
     "name": "멀티버스엑스",
     "exchange": "빗썸",
     "entry_price": 8230.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-20 00:00"
-  },
-  {
-    "ticker": "DYDX",
-    "name": "DYDX",
-    "exchange": "빗썸",
-    "entry_price": 171.0,
     "currency": "KRW",
     "entry_time": "2026-09-20 00:00"
   }
