@@ -5452,5 +5452,29 @@
     "time": "2026-09-20 09:00",
     "price": 0.0389,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_ETC",
+    "time": "2026-09-21 00:00",
+    "price": 11500.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_JOE",
+    "time": "2026-09-21 00:00",
+    "price": 47.17,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_MEV",
+    "time": "2026-09-21 00:00",
+    "price": 4.947,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_ADP",
+    "time": "2026-09-21 00:00",
+    "price": 0.9495,
+    "sig_type": "trend"
   }
 ]
