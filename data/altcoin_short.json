@@ -40,5 +40,47 @@
     "time": "2026-09-20 09:00",
     "price": 15.12,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_RLC",
+    "time": "2026-09-20 21:00",
+    "price": 424.0,
+    "sig_type": "trend_strong"
+  },
+  {
+    "key": "빗썸_OGN",
+    "time": "2026-09-20 21:00",
+    "price": 25.92,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_REQ",
+    "time": "2026-09-20 21:00",
+    "price": 74.92,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_MBX",
+    "time": "2026-09-20 21:00",
+    "price": 38.36,
+    "sig_type": "trend_strong"
+  },
+  {
+    "key": "빗썸_BANK",
+    "time": "2026-09-20 21:00",
+    "price": 51.41,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_BAR",
+    "time": "2026-09-20 21:00",
+    "price": 0.282,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_GUN",
+    "time": "2026-09-20 21:00",
+    "price": 0.00291,
+    "sig_type": "trend"
   }
 ]
