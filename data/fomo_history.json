@@ -1,5 +1,110 @@
 [
   {
+    "ticker": "CYBER",
+    "name": "사이버",
+    "exchange": "바이낸스",
+    "entry_price": 0.3284,
+    "currency": "USDT",
+    "entry_time": "2026-09-20 09:00:28",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "ESP",
+    "name": "에스프레소",
+    "exchange": "업비트",
+    "entry_price": 132.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-20 09:00"
+  },
+  {
+    "ticker": "SAFE",
+    "name": "세이프",
+    "exchange": "업비트",
+    "entry_price": 141.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-20 09:00"
+  },
+  {
+    "ticker": "TIA",
+    "name": "셀레스티아",
+    "exchange": "업비트",
+    "entry_price": 575.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-20 09:00"
+  },
+  {
+    "ticker": "IRYS",
+    "name": "아이리스",
+    "exchange": "업비트",
+    "entry_price": 21.3,
+    "currency": "KRW",
+    "entry_time": "2026-09-20 09:00"
+  },
+  {
+    "ticker": "MORPHO",
+    "name": "모포",
+    "exchange": "업비트",
+    "entry_price": 3543.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-20 09:00"
+  },
+  {
+    "ticker": "HOME",
+    "name": "디파이앱",
+    "exchange": "업비트",
+    "entry_price": 9.17,
+    "currency": "KRW",
+    "entry_time": "2026-09-20 09:00"
+  },
+  {
+    "ticker": "EPIC",
+    "name": "EPIC",
+    "exchange": "바이낸스",
+    "entry_price": 0.4648,
+    "currency": "USDT",
+    "entry_time": "2026-09-20 09:00"
+  },
+  {
+    "ticker": "PNUT",
+    "name": "PNUT",
+    "exchange": "바이낸스",
+    "entry_price": 0.0533,
+    "currency": "USDT",
+    "entry_time": "2026-09-20 09:00"
+  },
+  {
+    "ticker": "BANK",
+    "name": "BANK",
+    "exchange": "바이낸스",
+    "entry_price": 0.0389,
+    "currency": "USDT",
+    "entry_time": "2026-09-20 09:00"
+  },
+  {
+    "ticker": "CETUS",
+    "name": "CETUS",
+    "exchange": "바이낸스",
+    "entry_price": 0.02444,
+    "currency": "USDT",
+    "entry_time": "2026-09-20 09:00"
+  },
+  {
+    "ticker": "HEI",
+    "name": "HEI",
+    "exchange": "바이낸스",
+    "entry_price": 0.1621,
+    "currency": "USDT",
+    "entry_time": "2026-09-20 09:00"
+  },
+  {
+    "ticker": "JOE",
+    "name": "JOE",
+    "exchange": "바이낸스",
+    "entry_price": 0.0347,
+    "currency": "USDT",
+    "entry_time": "2026-09-20 09:00"
+  },
+  {
     "ticker": "EGLD",
     "name": "멀티버스엑스",
     "exchange": "빗썸",
@@ -137,121 +242,5 @@
     "entry_price": 275.14,
     "currency": "USDT",
     "entry_time": "2026-09-19 09:00"
-  },
-  {
-    "ticker": "BABY",
-    "name": "바빌론",
-    "exchange": "바이낸스",
-    "entry_price": 0.0116,
-    "currency": "USDT",
-    "entry_time": "2026-09-19 01:00:21",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "HYPER",
-    "name": "하이퍼레인",
-    "exchange": "바이낸스",
-    "entry_price": 0.07036,
-    "currency": "USDT",
-    "entry_time": "2026-09-19 01:00:21",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "NEWT",
-    "name": "뉴턴프로토콜",
-    "exchange": "바이낸스",
-    "entry_price": 0.04451,
-    "currency": "USDT",
-    "entry_time": "2026-09-19 01:00:21",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "ONT",
-    "name": "온톨로지",
-    "exchange": "바이낸스",
-    "entry_price": 0.05216,
-    "currency": "USDT",
-    "entry_time": "2026-09-19 01:00:21",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "VET",
-    "name": "비체인",
-    "exchange": "바이낸스",
-    "entry_price": 0.007791,
-    "currency": "USDT",
-    "entry_time": "2026-09-19 01:00:21",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "SKY",
-    "name": "스카이프로토콜",
-    "exchange": "빗썸",
-    "entry_price": 95.05,
-    "currency": "KRW",
-    "entry_time": "2026-09-19 00:00"
-  },
-  {
-    "ticker": "ME",
-    "name": "매직에덴",
-    "exchange": "바이낸스",
-    "entry_price": 0.06528,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 21:00:18",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "XTZ",
-    "name": "테조스",
-    "exchange": "바이낸스",
-    "entry_price": 0.2687,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 21:00:18",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "PUNDIX",
-    "name": "펀디엑스",
-    "exchange": "바이낸스",
-    "entry_price": 0.10909,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 20:00:17",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "AZTEC",
-    "name": "아즈텍",
-    "exchange": "바이낸스",
-    "entry_price": 0.01429,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 17:00:16",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "AWE",
-    "name": "에이더블유이",
-    "exchange": "바이낸스",
-    "entry_price": 0.06426,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 15:00:18",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "ATH",
-    "name": "에이셔",
-    "exchange": "바이낸스",
-    "entry_price": 0.004613,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 13:00:15",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "AVAX",
-    "name": "아발란체",
-    "exchange": "바이낸스",
-    "entry_price": 7.947,
-    "currency": "USDT",
-    "entry_time": "2026-09-18 13:00:15",
-    "signal": "golden_zone"
   }
 ]
