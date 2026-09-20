@@ -34,5 +34,11 @@
     "time": "2026-09-20 09:00",
     "price": 1888.0,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_COOKIE",
+    "time": "2026-09-20 09:00",
+    "price": 15.12,
+    "sig_type": "trend"
   }
 ]
