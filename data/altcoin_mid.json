@@ -5512,5 +5512,35 @@
     "time": "2026-09-21 09:00",
     "price": 0.307,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_CYBER",
+    "time": "2026-09-22 00:00",
+    "price": 441.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_CFG",
+    "time": "2026-09-22 00:00",
+    "price": 186.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_VERONA",
+    "time": "2026-09-22 00:00",
+    "price": 166.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_ACX",
+    "time": "2026-09-22 00:00",
+    "price": 67.46,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_OPG",
+    "time": "2026-09-22 00:00",
+    "price": 177.0,
+    "sig_type": "trend"
   }
 ]
