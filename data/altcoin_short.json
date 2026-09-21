@@ -40,5 +40,83 @@
     "time": "2026-09-21 09:00",
     "price": 434.8,
     "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_JUV",
+    "time": "2026-09-21 21:00",
+    "price": 0.313,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_QNT",
+    "time": "2026-09-21 21:00",
+    "price": 67.26,
+    "sig_type": "trend_strong"
+  },
+  {
+    "key": "바이낸스_JASMY",
+    "time": "2026-09-21 21:00",
+    "price": 0.00428,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_TNSR",
+    "time": "2026-09-21 21:00",
+    "price": 0.0378,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_LUMIA",
+    "time": "2026-09-21 21:00",
+    "price": 0.0845,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_AIXBT",
+    "time": "2026-09-21 21:00",
+    "price": 0.0222,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_BROCCOLI714",
+    "time": "2026-09-21 21:00",
+    "price": 0.02061,
+    "sig_type": "trend_strong"
+  },
+  {
+    "key": "바이낸스_RESOLV",
+    "time": "2026-09-21 21:00",
+    "price": 0.01845,
+    "sig_type": "trend_strong"
+  },
+  {
+    "key": "바이낸스_AIGENSYN",
+    "time": "2026-09-21 21:00",
+    "price": 0.02133,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_CRCLB",
+    "time": "2026-09-21 21:00",
+    "price": 97.11,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_CBRSB",
+    "time": "2026-09-21 21:00",
+    "price": 201.32,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_HOODB",
+    "time": "2026-09-21 21:00",
+    "price": 126.17,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_NOKB",
+    "time": "2026-09-21 21:00",
+    "price": 11.01,
+    "sig_type": "trend"
   }
 ]
