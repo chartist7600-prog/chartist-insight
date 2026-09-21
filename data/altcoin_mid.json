@@ -5476,5 +5476,41 @@
     "time": "2026-09-21 00:00",
     "price": 0.9495,
     "sig_type": "trend"
+  },
+  {
+    "key": "업비트_SEI",
+    "time": "2026-09-21 09:00",
+    "price": 73.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "업비트_CFG",
+    "time": "2026-09-21 09:00",
+    "price": 199.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "업비트_OPG",
+    "time": "2026-09-21 09:00",
+    "price": 159.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_ENSO",
+    "time": "2026-09-21 09:00",
+    "price": 1.003,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_SUN",
+    "time": "2026-09-21 09:00",
+    "price": 0.01715,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_MTL",
+    "time": "2026-09-21 09:00",
+    "price": 0.307,
+    "sig_type": "trend"
   }
 ]
