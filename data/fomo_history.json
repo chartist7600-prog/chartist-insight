@@ -1,5 +1,23 @@
 [
   {
+    "ticker": "FIL",
+    "name": "파일코인",
+    "exchange": "바이낸스",
+    "entry_price": 0.9875,
+    "currency": "USDT",
+    "entry_time": "2026-09-21 18:00:20",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "XEC",
+    "name": "이캐시",
+    "exchange": "바이낸스",
+    "entry_price": 0.008133,
+    "currency": "USDT",
+    "entry_time": "2026-09-21 18:00:20",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "CARV",
     "name": "카브",
     "exchange": "바이낸스",
@@ -227,21 +245,5 @@
     "currency": "USDT",
     "entry_time": "2026-09-21 05:00:21",
     "signal": "golden_zone"
-  },
-  {
-    "ticker": "ETC",
-    "name": "이더리움클래식",
-    "exchange": "빗썸",
-    "entry_price": 11500.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-21 00:00"
-  },
-  {
-    "ticker": "CELR",
-    "name": "CELR",
-    "exchange": "빗썸",
-    "entry_price": 5.795,
-    "currency": "KRW",
-    "entry_time": "2026-09-21 00:00"
   }
 ]
