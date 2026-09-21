@@ -1,86 +1,44 @@
 [
   {
-    "key": "빗썸_GMX",
-    "time": "2026-09-20 09:00",
-    "price": 10730.0,
+    "key": "바이낸스_FTT",
+    "time": "2026-09-21 09:00",
+    "price": 0.293,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_GTC",
-    "time": "2026-09-20 09:00",
-    "price": 115.0,
+    "key": "바이낸스_EUR",
+    "time": "2026-09-21 09:00",
+    "price": 1.1617,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_RON",
-    "time": "2026-09-20 09:00",
-    "price": 79.29,
+    "key": "바이낸스_LUNA",
+    "time": "2026-09-21 09:00",
+    "price": 0.0552,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_CORE",
-    "time": "2026-09-20 09:00",
-    "price": 31.66,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_BRETT",
-    "time": "2026-09-20 09:00",
-    "price": 7.204,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_GRAM",
-    "time": "2026-09-20 09:00",
-    "price": 1888.0,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_COOKIE",
-    "time": "2026-09-20 09:00",
-    "price": 15.12,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_RLC",
-    "time": "2026-09-20 21:00",
-    "price": 424.0,
+    "key": "바이낸스_LUNC",
+    "time": "2026-09-21 09:00",
+    "price": 5.449e-05,
     "sig_type": "trend_strong"
   },
   {
-    "key": "빗썸_OGN",
-    "time": "2026-09-20 21:00",
-    "price": 25.92,
+    "key": "바이낸스_HMSTR",
+    "time": "2026-09-21 09:00",
+    "price": 0.0001707,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_REQ",
-    "time": "2026-09-20 21:00",
-    "price": 74.92,
+    "key": "바이낸스_AVGOB",
+    "time": "2026-09-21 09:00",
+    "price": 358.45,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_MBX",
-    "time": "2026-09-20 21:00",
-    "price": 38.36,
-    "sig_type": "trend_strong"
-  },
-  {
-    "key": "빗썸_BANK",
-    "time": "2026-09-20 21:00",
-    "price": 51.41,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_BAR",
-    "time": "2026-09-20 21:00",
-    "price": 0.282,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_GUN",
-    "time": "2026-09-20 21:00",
-    "price": 0.00291,
+    "key": "바이낸스_TSMB",
+    "time": "2026-09-21 09:00",
+    "price": 434.8,
     "sig_type": "trend"
   }
 ]
