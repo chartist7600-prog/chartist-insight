@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "ENA",
+    "name": "에테나",
+    "exchange": "바이낸스",
+    "entry_price": 0.22759,
+    "currency": "USDT",
+    "entry_time": "2026-09-21 22:00:18",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "FIL",
     "name": "파일코인",
     "exchange": "바이낸스",
@@ -236,14 +245,5 @@
     "entry_price": 58.74,
     "currency": "USDT",
     "entry_time": "2026-09-21 09:00"
-  },
-  {
-    "ticker": "FF",
-    "name": "팔콘파이낸스",
-    "exchange": "바이낸스",
-    "entry_price": 0.15099,
-    "currency": "USDT",
-    "entry_time": "2026-09-21 05:00:21",
-    "signal": "golden_zone"
   }
 ]
