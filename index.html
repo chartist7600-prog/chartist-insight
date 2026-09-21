@@ -3295,7 +3295,14 @@ function parseHistPrice(v){
 }
 
 // 2026-09-21 신규: 기록탭 상단 고정 요약 박스용 - 단일 종목 현재가격 조회(거래소별 REST 직접 호출)
-function fetchSingleLivePrice(ticker, exchange, cb){
+// 2026-09-21: golden_zone_in/out, sell_zone_in, lightning_buy는 바이낸스 "선물" 1h_close 기준으로 알림가가
+// 저장되는데, 기존엔 바이낸스 "현물" API로 현재가를 조회해서 1000XEC 같은 1000-접두사 종목에서 최대 1000배
+// 오차가 나는 버그가 있었음(예: XEC 알림가 $0.008133 vs 현물조회 $0.0000085로 -99.98% 오표시).
+// 이런 이벤트 타입은 백엔드 /api/futures-price(정확한 선물 심볼 매핑 재사용)로 조회하도록 분리.
+// whale(고래봇)은 원래 현물 기준으로 알림가가 기록되므로 기존 현물 API 그대로 유지.
+var FUTURES_BASED_EVENT_TYPES = ['golden_zone_in', 'golden_zone_out', 'sell_zone_in', 'lightning_buy'];
+
+function fetchSingleLivePrice(ticker, exchange, eventType, cb){
   try{
     if(exchange==='업비트'){
       fetch('https://api.upbit.com/v1/ticker?markets=KRW-'+ticker)
@@ -3306,6 +3313,11 @@ function fetchSingleLivePrice(ticker, exchange, cb){
       fetch('https://api.bithumb.com/public/ticker/'+ticker+'_KRW')
         .then(function(r){ if(!r.ok) throw new Error('http'); return r.json(); })
         .then(function(d){ cb(d&&d.status==='0000'&&d.data?parseFloat(d.data.closing_price):null); })
+        .catch(function(){ cb(null); });
+    }else if(exchange==='바이낸스' && FUTURES_BASED_EVENT_TYPES.indexOf(eventType)!==-1){
+      fetch('/api/futures-price?ticker='+encodeURIComponent(ticker))
+        .then(function(r){ if(!r.ok) throw new Error('http'); return r.json(); })
+        .then(function(d){ cb(d&&d.price!==undefined&&d.price!==null?parseFloat(d.price):null); })
         .catch(function(){ cb(null); });
     }else if(exchange==='바이낸스'){
       fetch('https://api.binance.com/api/v3/ticker/price?symbol='+ticker+'USDT')
@@ -3353,7 +3365,7 @@ function showCoinHistory(ticker, nameKr){
           + '<div style="flex:1;"><div style="color:#888;font-size:10px;margin-bottom:2px;">상승률</div><span id="coinHistoryPinnedPct" class="ticker-change flat" style="font-size:13px;font-weight:600;min-width:auto;display:inline-block;">' + (latestExchange ? '조회 중...' : '—') + '</span></div>'
           + '</div>';
         if(latestExchange){
-          fetchSingleLivePrice(ticker, latestExchange, function(curPrice){
+          fetchSingleLivePrice(ticker, latestExchange, latest.type, function(curPrice){
             var curEl = document.getElementById('coinHistoryPinnedCur');
             var pctEl = document.getElementById('coinHistoryPinnedPct');
             if(curPrice===null||curPrice===undefined||isNaN(curPrice)){
