@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "AAVE",
+    "name": "에이브",
+    "exchange": "바이낸스",
+    "entry_price": 139.25,
+    "currency": "USDT",
+    "entry_time": "2026-09-21 10:00:18",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "MINA",
     "name": "미나",
     "exchange": "바이낸스",
@@ -230,14 +239,6 @@
     "name": "STEEM",
     "exchange": "빗썸",
     "entry_price": 89.5,
-    "currency": "KRW",
-    "entry_time": "2026-09-21 00:00"
-  },
-  {
-    "ticker": "CVC",
-    "name": "CVC",
-    "exchange": "빗썸",
-    "entry_price": 52.81,
     "currency": "KRW",
     "entry_time": "2026-09-21 00:00"
   }
