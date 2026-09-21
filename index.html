@@ -3136,6 +3136,7 @@ function serviceNavClick(tab) {
     <div style="text-align:center;">
       <div id="coinHistoryTitle" style="font-size:17px;font-weight:700;color:#fff;margin-bottom:4px;"></div>
       <div style="color:#888;font-size:12px;margin-bottom:14px;">최근 50건 이력</div>
+      <div id="coinHistoryPinned" style="display:none;text-align:left;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.3);border-radius:8px;padding:10px 12px;margin-bottom:12px;"></div>
       <div id="coinHistoryList" style="max-height:400px;overflow-y:auto;text-align:left;"></div>
     </div>
     <button class="member-modal-close" onclick="document.getElementById('coin-history-modal').classList.remove('show')">닫기</button>
@@ -3284,11 +3285,47 @@ var HISTORY_TYPE_MAP = {
   'lightning_buy': {icon:'⚡', color:'#e0c95c'}
 };
 
+// 2026-09-21 신규: 기록탭 가격 문자열(예: "5,420원", "$123.45 USDT") 및 순수 숫자를 모두 안전하게 파싱.
+// 기존 코드는 parseFloat(ev.price)를 그대로 써서 쉼표에서 끊겨(예: "5,420원" -> 5) 잘못 표시되는 버그가 있었음.
+function parseHistPrice(v){
+  if(v===undefined||v===null) return null;
+  if(typeof v==='number') return isNaN(v)?null:v;
+  var s=String(v).replace(/,/g,'').replace(/원|USDT|\$/g,'').trim();
+  var n=parseFloat(s);
+  return isNaN(n)?null:n;
+}
+
+// 2026-09-21 신규: 기록탭 상단 고정 요약 박스용 - 단일 종목 현재가격 조회(거래소별 REST 직접 호출)
+function fetchSingleLivePrice(ticker, exchange, cb){
+  try{
+    if(exchange==='업비트'){
+      fetch('https://api.upbit.com/v1/ticker?markets=KRW-'+ticker)
+        .then(function(r){ if(!r.ok) throw new Error('http'); return r.json(); })
+        .then(function(arr){ cb(Array.isArray(arr)&&arr[0]?arr[0].trade_price:null); })
+        .catch(function(){ cb(null); });
+    }else if(exchange==='빗썸'){
+      fetch('https://api.bithumb.com/public/ticker/'+ticker+'_KRW')
+        .then(function(r){ if(!r.ok) throw new Error('http'); return r.json(); })
+        .then(function(d){ cb(d&&d.status==='0000'&&d.data?parseFloat(d.data.closing_price):null); })
+        .catch(function(){ cb(null); });
+    }else if(exchange==='바이낸스'){
+      fetch('https://api.binance.com/api/v3/ticker/price?symbol='+ticker+'USDT')
+        .then(function(r){ if(!r.ok) throw new Error('http'); return r.json(); })
+        .then(function(d){ cb(d&&d.price?parseFloat(d.price):null); })
+        .catch(function(){ cb(null); });
+    }else{
+      cb(null);
+    }
+  }catch(e){ cb(null); }
+}
+
 function showCoinHistory(ticker, nameKr){
   var titleEl = document.getElementById('coinHistoryTitle');
   var listEl = document.getElementById('coinHistoryList');
+  var pinnedEl = document.getElementById('coinHistoryPinned');
   if(titleEl) titleEl.textContent = nameKr + ' (' + ticker + ')';
   if(listEl) listEl.innerHTML = '<div style="color:#888;text-align:center;padding:20px 0;">불러오는 중...</div>';
+  if(pinnedEl){ pinnedEl.style.display='none'; pinnedEl.innerHTML=''; }
   document.getElementById('coin-history-modal').classList.add('show');
 
   fetch('/data/coin_history/' + ticker + '.json')
@@ -3298,12 +3335,54 @@ function showCoinHistory(ticker, nameKr){
         listEl.innerHTML = '<div style="color:#888;text-align:center;padding:20px 0;">아직 기록이 없습니다</div>';
         return;
       }
+
+      // 2026-09-21 신규: 최신 이벤트(맨 앞, 이미 최신순 저장됨)를 상단에 고정 표시 - 알림가격/현재가격/상승률
+      var latest = events[0];
+      var latestMeta = HISTORY_TYPE_MAP[latest.type] || {icon:'•', color:'#999'};
+      var sigPrice = parseHistPrice(latest.price);
+      var latestExchange = latest.exchange || null;
+      if(pinnedEl && sigPrice !== null){
+        pinnedEl.style.display = '';
+        pinnedEl.innerHTML = '<div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;">'
+          + '<span style="font-size:15px;">' + latestMeta.icon + '</span>'
+          + '<span style="color:' + latestMeta.color + ';font-size:13px;font-weight:700;">' + (latest.label||latest.type) + '</span>'
+          + '<span style="color:#666;font-size:11px;margin-left:auto;">' + (latest.time||'') + '</span>'
+          + '</div>'
+          + '<div style="display:flex;justify-content:space-between;text-align:center;">'
+          + '<div style="flex:1;"><div style="color:#888;font-size:10px;margin-bottom:2px;">알림가격</div><div style="color:#fff;font-size:13px;font-weight:600;">' + fmtPrice(sigPrice, latestExchange||'바이낸스') + '</div></div>'
+          + '<div style="flex:1;"><div style="color:#888;font-size:10px;margin-bottom:2px;">현재가격</div><div id="coinHistoryPinnedCur" style="color:#fff;font-size:13px;font-weight:600;">' + (latestExchange ? '조회 중...' : '—') + '</div></div>'
+          + '<div style="flex:1;"><div style="color:#888;font-size:10px;margin-bottom:2px;">상승률</div><span id="coinHistoryPinnedPct" class="ticker-change flat" style="font-size:13px;font-weight:600;min-width:auto;display:inline-block;">' + (latestExchange ? '조회 중...' : '—') + '</span></div>'
+          + '</div>';
+        if(latestExchange){
+          fetchSingleLivePrice(ticker, latestExchange, function(curPrice){
+            var curEl = document.getElementById('coinHistoryPinnedCur');
+            var pctEl = document.getElementById('coinHistoryPinnedPct');
+            if(curPrice===null||curPrice===undefined||isNaN(curPrice)){
+              if(curEl) curEl.textContent = '—';
+              if(pctEl){ pctEl.textContent = '—'; pctEl.className='ticker-change flat'; }
+              return;
+            }
+            if(curEl) curEl.textContent = fmtPrice(curPrice, latestExchange);
+            var pct = (sigPrice>0) ? ((curPrice-sigPrice)/sigPrice*100) : null;
+            if(pctEl){
+              if(pct===null||isNaN(pct)){
+                pctEl.textContent='—'; pctEl.className='ticker-change flat';
+              }else{
+                var sign = pct>0?'+':'';
+                pctEl.textContent = sign+pct.toFixed(2)+'%';
+                pctEl.className = 'ticker-change ' + (pct>0?'up':(pct<0?'dn':'flat'));
+              }
+            }
+          });
+        }
+      }
+
       listEl.innerHTML = events.map(function(ev){
         var meta = HISTORY_TYPE_MAP[ev.type] || {icon:'•', color:'#999'};
         var priceHtml = '';
         if(ev.price !== undefined && ev.price !== null){
-          var p = (typeof ev.price === 'number') ? ev.price : parseFloat(ev.price);
-          var priceText = isNaN(p) ? String(ev.price) : (p >= 1 ? p.toLocaleString(undefined,{maximumFractionDigits:4}) : p.toPrecision(4));
+          var p = parseHistPrice(ev.price);
+          var priceText = (p===null) ? String(ev.price) : (p >= 1 ? p.toLocaleString(undefined,{maximumFractionDigits:4}) : p.toPrecision(4));
           // golden_zone_in/out, sell_zone_in은 항상 바이낸스 선물 1h_close 기준이라 달러 표기 고정
           var isUsdEvent = (ev.type === 'golden_zone_in' || ev.type === 'golden_zone_out' || ev.type === 'sell_zone_in');
           priceHtml = '<div style="color:#C9A84C;font-size:11px;margin-top:2px;word-break:break-all;">가격: ' + priceText + (isUsdEvent ? '달러' : '') + '</div>';

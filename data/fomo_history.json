@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "MOCA",
+    "name": "모카네트워크",
+    "exchange": "바이낸스",
+    "entry_price": 0.009842,
+    "currency": "USDT",
+    "entry_time": "2026-09-21 13:00:19",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "AAVE",
     "name": "에이브",
     "exchange": "바이낸스",
@@ -231,14 +240,6 @@
     "name": "ALLO",
     "exchange": "빗썸",
     "entry_price": 349.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-21 00:00"
-  },
-  {
-    "ticker": "STEEM",
-    "name": "STEEM",
-    "exchange": "빗썸",
-    "entry_price": 89.5,
     "currency": "KRW",
     "entry_time": "2026-09-21 00:00"
   }
