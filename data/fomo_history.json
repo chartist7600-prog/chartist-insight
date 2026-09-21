@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "CARV",
+    "name": "카브",
+    "exchange": "바이낸스",
+    "entry_price": 0.03874,
+    "currency": "USDT",
+    "entry_time": "2026-09-21 14:00:18",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "MOCA",
     "name": "모카네트워크",
     "exchange": "바이낸스",
@@ -232,14 +241,6 @@
     "name": "CELR",
     "exchange": "빗썸",
     "entry_price": 5.795,
-    "currency": "KRW",
-    "entry_time": "2026-09-21 00:00"
-  },
-  {
-    "ticker": "ALLO",
-    "name": "ALLO",
-    "exchange": "빗썸",
-    "entry_price": 349.0,
     "currency": "KRW",
     "entry_time": "2026-09-21 00:00"
   }
