@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "ELSA",
+    "name": "헤이엘사",
+    "exchange": "바이낸스",
+    "entry_price": 0.05552,
+    "currency": "USDT",
+    "entry_time": "2026-09-22 06:00:18",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "BCH",
     "name": "비트코인캐시",
     "exchange": "빗썸",
@@ -235,14 +244,6 @@
     "name": "주피터",
     "exchange": "업비트",
     "entry_price": 409.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-21 09:00"
-  },
-  {
-    "ticker": "G",
-    "name": "그래비티",
-    "exchange": "업비트",
-    "entry_price": 9.01,
     "currency": "KRW",
     "entry_time": "2026-09-21 09:00"
   }
