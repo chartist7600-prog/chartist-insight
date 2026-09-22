@@ -5542,5 +5542,71 @@
     "time": "2026-09-22 00:00",
     "price": 177.0,
     "sig_type": "trend"
+  },
+  {
+    "key": "업비트_PENGU",
+    "time": "2026-09-22 09:00",
+    "price": 11.8,
+    "sig_type": "trend"
+  },
+  {
+    "key": "업비트_HYPER",
+    "time": "2026-09-22 09:00",
+    "price": 102.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_AXTIB",
+    "time": "2026-09-22 09:00",
+    "price": 81.16,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_CRDOB",
+    "time": "2026-09-22 09:00",
+    "price": 188.9,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_SOXLB",
+    "time": "2026-09-22 09:00",
+    "price": 144.63,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_TQQQB",
+    "time": "2026-09-22 09:00",
+    "price": 79.43,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_BABAB",
+    "time": "2026-09-22 09:00",
+    "price": 116.43,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_STXB",
+    "time": "2026-09-22 09:00",
+    "price": 876.77,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_ALABB",
+    "time": "2026-09-22 09:00",
+    "price": 342.09,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_SMHB",
+    "time": "2026-09-22 09:00",
+    "price": 598.14,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_MUUB",
+    "time": "2026-09-22 09:00",
+    "price": 35.63,
+    "sig_type": "trend"
   }
 ]
