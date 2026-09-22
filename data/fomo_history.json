@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "ENA",
+    "name": "에테나",
+    "exchange": "바이낸스",
+    "entry_price": 0.21296,
+    "currency": "USDT",
+    "entry_time": "2026-09-22 11:00:18",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "PENGU",
     "name": "펏지펭귄",
     "exchange": "업비트",
@@ -229,14 +238,6 @@
     "name": "스테픈",
     "exchange": "빗썸",
     "entry_price": 11.17,
-    "currency": "KRW",
-    "entry_time": "2026-09-22 00:00"
-  },
-  {
-    "ticker": "APE",
-    "name": "APE",
-    "exchange": "빗썸",
-    "entry_price": 195.0,
     "currency": "KRW",
     "entry_time": "2026-09-22 00:00"
   }
