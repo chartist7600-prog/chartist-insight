@@ -1,5 +1,41 @@
 [
   {
+    "ticker": "AERO",
+    "name": "에어로드롬파이낸스",
+    "exchange": "바이낸스",
+    "entry_price": 0.7029,
+    "currency": "USDT",
+    "entry_time": "2026-09-24 23:05:03",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "ALGO",
+    "name": "알고랜드",
+    "exchange": "바이낸스",
+    "entry_price": 0.10912,
+    "currency": "USDT",
+    "entry_time": "2026-09-24 23:00:04",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "NXPC",
+    "name": "넥스페이스",
+    "exchange": "바이낸스",
+    "entry_price": 0.2532,
+    "currency": "USDT",
+    "entry_time": "2026-09-24 23:00:04",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "RENDER",
+    "name": "렌더토큰",
+    "exchange": "바이낸스",
+    "entry_price": 1.828,
+    "currency": "USDT",
+    "entry_time": "2026-09-24 23:00:04",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "MORPHO",
     "name": "모포",
     "exchange": "바이낸스",
@@ -215,38 +251,6 @@
     "name": "칼데라",
     "exchange": "업비트",
     "entry_price": 92.5,
-    "currency": "KRW",
-    "entry_time": "2026-09-22 09:00"
-  },
-  {
-    "ticker": "CC",
-    "name": "캔톤",
-    "exchange": "업비트",
-    "entry_price": 161.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-22 09:00"
-  },
-  {
-    "ticker": "VIRTUAL",
-    "name": "버추얼프로토콜",
-    "exchange": "업비트",
-    "entry_price": 989.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-22 09:00"
-  },
-  {
-    "ticker": "IN",
-    "name": "인피닛",
-    "exchange": "업비트",
-    "entry_price": 47.8,
-    "currency": "KRW",
-    "entry_time": "2026-09-22 09:00"
-  },
-  {
-    "ticker": "HYPER",
-    "name": "하이퍼레인",
-    "exchange": "업비트",
-    "entry_price": 102.0,
     "currency": "KRW",
     "entry_time": "2026-09-22 09:00"
   }
