@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "MORPHO",
+    "name": "모포",
+    "exchange": "바이낸스",
+    "entry_price": 2.6928,
+    "currency": "USDT",
+    "entry_time": "2026-09-24 16:00:04",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "CAP",
     "name": "캡",
     "exchange": "바이낸스",
@@ -238,14 +247,6 @@
     "name": "하이퍼레인",
     "exchange": "업비트",
     "entry_price": 102.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-22 09:00"
-  },
-  {
-    "ticker": "LINK",
-    "name": "체인링크",
-    "exchange": "업비트",
-    "entry_price": 17840.0,
     "currency": "KRW",
     "entry_time": "2026-09-22 09:00"
   }
