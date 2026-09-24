@@ -1,5 +1,39 @@
 [
   {
+    "ticker": "APT",
+    "name": "앱토스",
+    "exchange": "바이낸스",
+    "entry_price": 0.8151,
+    "currency": "USDT",
+    "entry_time": "2026-09-25 00:00:04",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "OP",
+    "name": "옵티미즘",
+    "exchange": "바이낸스",
+    "entry_price": 0.13194,
+    "currency": "USDT",
+    "entry_time": "2026-09-25 00:00:04",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "ERA",
+    "name": "칼데라",
+    "exchange": "빗썸",
+    "entry_price": 91.69,
+    "currency": "KRW",
+    "entry_time": "2026-09-25 00:00"
+  },
+  {
+    "ticker": "ZBT",
+    "name": "제로베이스",
+    "exchange": "빗썸",
+    "entry_price": 120.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-25 00:00"
+  },
+  {
     "ticker": "AERO",
     "name": "에어로드롬파이낸스",
     "exchange": "바이낸스",
@@ -220,38 +254,5 @@
     "entry_price": 92.85,
     "currency": "KRW",
     "entry_time": "2026-09-23 00:00"
-  },
-  {
-    "ticker": "MEGA",
-    "name": "메가이더",
-    "exchange": "빗썸",
-    "entry_price": 61.47,
-    "currency": "KRW",
-    "entry_time": "2026-09-23 00:00"
-  },
-  {
-    "ticker": "ENA",
-    "name": "에테나",
-    "exchange": "바이낸스",
-    "entry_price": 0.21296,
-    "currency": "USDT",
-    "entry_time": "2026-09-22 11:00:18",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "PENGU",
-    "name": "펏지펭귄",
-    "exchange": "업비트",
-    "entry_price": 11.8,
-    "currency": "KRW",
-    "entry_time": "2026-09-22 09:00"
-  },
-  {
-    "ticker": "ERA",
-    "name": "칼데라",
-    "exchange": "업비트",
-    "entry_price": 92.5,
-    "currency": "KRW",
-    "entry_time": "2026-09-22 09:00"
   }
 ]
