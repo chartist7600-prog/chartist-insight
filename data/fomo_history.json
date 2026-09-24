@@ -1,5 +1,68 @@
 [
   {
+    "ticker": "ASTR",
+    "name": "아스타",
+    "exchange": "바이낸스",
+    "entry_price": 0.007176,
+    "currency": "USDT",
+    "entry_time": "2026-09-25 02:00:03",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "BERA",
+    "name": "베라체인",
+    "exchange": "바이낸스",
+    "entry_price": 0.2296,
+    "currency": "USDT",
+    "entry_time": "2026-09-25 02:00:03",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "CYBER",
+    "name": "사이버",
+    "exchange": "바이낸스",
+    "entry_price": 0.3493,
+    "currency": "USDT",
+    "entry_time": "2026-09-25 02:00:03",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "IN",
+    "name": "인피닛",
+    "exchange": "바이낸스",
+    "entry_price": 0.0368,
+    "currency": "USDT",
+    "entry_time": "2026-09-25 02:00:03",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "MEW",
+    "name": "캣인어독스월드",
+    "exchange": "바이낸스",
+    "entry_price": 0.0005022,
+    "currency": "USDT",
+    "entry_time": "2026-09-25 02:00:03",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "NEAR",
+    "name": "니어프로토콜",
+    "exchange": "바이낸스",
+    "entry_price": 4.706,
+    "currency": "USDT",
+    "entry_time": "2026-09-25 02:00:03",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "XEC",
+    "name": "이캐시",
+    "exchange": "바이낸스",
+    "entry_price": 0.00915,
+    "currency": "USDT",
+    "entry_time": "2026-09-25 02:00:03",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "ADA",
     "name": "에이다",
     "exchange": "바이낸스",
@@ -202,65 +265,6 @@
     "entry_price": 0.05319,
     "currency": "USDT",
     "entry_time": "2026-09-24 09:00:05",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "BIO",
-    "name": "바이오프로토콜",
-    "exchange": "업비트",
-    "entry_price": 40.2,
-    "currency": "KRW",
-    "entry_time": "2026-09-24 09:00"
-  },
-  {
-    "ticker": "SLX",
-    "name": "솔스티스",
-    "exchange": "업비트",
-    "entry_price": 101.0,
-    "currency": "KRW",
-    "entry_time": "2026-09-24 09:00"
-  },
-  {
-    "ticker": "ZIL",
-    "name": "질리카",
-    "exchange": "바이낸스",
-    "entry_price": 0.003729,
-    "currency": "USDT",
-    "entry_time": "2026-09-24 00:00:03",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "MAGIC",
-    "name": "MAGIC",
-    "exchange": "빗썸",
-    "entry_price": 67.39,
-    "currency": "KRW",
-    "entry_time": "2026-09-24 00:00"
-  },
-  {
-    "ticker": "HOLO",
-    "name": "홀로월드에이아이",
-    "exchange": "빗썸",
-    "entry_price": 93.5,
-    "currency": "KRW",
-    "entry_time": "2026-09-24 00:00"
-  },
-  {
-    "ticker": "ATOM",
-    "name": "코스모스",
-    "exchange": "바이낸스",
-    "entry_price": 1.799,
-    "currency": "USDT",
-    "entry_time": "2026-09-23 23:00:03",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "ETHFI",
-    "name": "이더파이",
-    "exchange": "바이낸스",
-    "entry_price": 0.7268,
-    "currency": "USDT",
-    "entry_time": "2026-09-23 12:00:04",
     "signal": "golden_zone"
   }
 ]
