@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "MIRA",
+    "name": "미라네트워크",
+    "exchange": "바이낸스",
+    "entry_price": 0.05392,
+    "currency": "USDT",
+    "entry_time": "2026-09-25 03:00:04",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "ASTR",
     "name": "아스타",
     "exchange": "바이낸스",
@@ -256,15 +265,6 @@
     "entry_price": 2.6928,
     "currency": "USDT",
     "entry_time": "2026-09-24 16:00:04",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "CAP",
-    "name": "캡",
-    "exchange": "바이낸스",
-    "entry_price": 0.05319,
-    "currency": "USDT",
-    "entry_time": "2026-09-24 09:00:05",
     "signal": "golden_zone"
   }
 ]
