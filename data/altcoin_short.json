@@ -22,5 +22,17 @@
     "time": "2026-09-24 09:00",
     "price": 7.793,
     "sig_type": "trend_strong"
+  },
+  {
+    "key": "빗썸_SD",
+    "time": "2026-09-24 21:00",
+    "price": 176.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_UP",
+    "time": "2026-09-24 21:00",
+    "price": 99.0,
+    "sig_type": "trend"
   }
 ]
