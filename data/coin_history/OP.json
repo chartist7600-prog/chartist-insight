@@ -1,1 +1,1 @@
-[{"time":"2026-09-16 00:01","type":"golden_zone_out","label":"골든존 이탈","detail":"1D+4H+1H 동시 상승추세 이탈","price":0.09865},{"time":"2026-09-15 05:01","type":"golden_zone_in","label":"✨ 골든존 진입","detail":"1D+4H+1H 동시 상승추세 진입","price":0.10344}]
+[{"time":"2026-09-16 00:01","type":"golden_zone_out","label":"골든존 이탈","detail":"1D+4H+1H 동시 상승추세 이탈","price":0.09865,"exchange":"바이낸스"},{"time":"2026-09-15 05:01","type":"golden_zone_in","label":"골든존 진입","detail":"1D+4H+1H 동시 상승추세 진입","price":0.10344,"exchange":"바이낸스"}]

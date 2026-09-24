@@ -1686,7 +1686,7 @@ function renderBtcSignals(signals){
     var badgeCls=isLong?'signal-badge-long':'signal-badge-short';
     var badgeTxt=isLong?'🔴 LONG':'🔵 SHORT';
     var timeStr=(s.time||'').length>=16?s.time.substring(5,16):s.time||'—';
-    var tfDesc=(s.tf==='10M'||s.tf==='10m')?'10분봉 기준':(s.tf==='1H'||s.tf==='1h')?'1시간봉 기준':(s.tf||'');
+    var tfDesc=(s.tf==='15M'||s.tf==='15m')?'15분봉 기준':(s.tf==='60M'||s.tf==='1H'||s.tf==='1h')?'1시간봉 기준':(s.tf||'');
     var entryCls=isLong?'signal-entry long-color':'signal-entry short-color';
 
     var entryHtml=isUnlocked
@@ -3088,10 +3088,53 @@ function serviceNavClick(tab) {
       1. 검색창에 코인 이름을 입력하면 결과가 실시간으로 나옵니다.<br><br>
       2. 1시간·4시간·일봉 버튼을 각각 누르면 해당 시간대에서 <b style="color:#e05555;">상승추세</b>인 종목만 볼 수 있습니다.<br><br>
       3. <b style="color:#e05555;">⚡ 번개</b> : "추세전환 + 변동성 폭발 + 모멘텀"이 동시에 겹친 강한 신호입니다.<br><br>
-      4. <b style="color:#C9A84C;">✨ 골든존</b> : 일봉·4시간·1시간 상승추세가 동시에 겹친 구간으로, 골든존 필터를 누르면 최근 발생한 순서대로 정렬됩니다.<br><br>
+      4. <b style="color:#C9A84C;">✨ 골든존</b> : 일봉·4시간·1시간 상승추세가 동시에 겹친 구간으로, 골든존 필터를 누르면 최근 발생한 순서대로 정렬됩니다. <a href="javascript:void(0)" onclick="document.getElementById('golden-zone-guide-modal').classList.add('show')" style="color:#C9A84C;text-decoration:underline;">상세보기</a><br><br>
       5. 각 알트코인에서 표시된 시각은 해당 봉이 확정된 때입니다.
     </div>
     <button class="member-modal-close" onclick="document.getElementById('altcoin-search-guide-modal').classList.remove('show')">닫기</button>
+  </div>
+</div>
+
+<div class="member-modal-overlay" id="golden-zone-guide-modal" style="z-index:5200;background:rgba(0,0,0,0.7);" onclick="if(event.target===this)document.getElementById('golden-zone-guide-modal').classList.remove('show')">
+  <div class="member-modal-box" style="max-width:420px;text-align:left;max-height:80vh;overflow-y:auto;">
+    <div class="member-modal-icon" style="text-align:center;">✨</div>
+    <div class="member-modal-title" style="text-align:center;">골든존 보는 법</div>
+    <div class="member-modal-desc" style="text-align:left;">
+      <b style="color:#C9A84C;">1. 골든존이 뭔가요?</b><br>
+      트렌드헌터 현물지표의 일봉 + 4시간봉 + 1시간봉, 세 가지 시간대가 전부 동시에 상승추세일 때만 뜨는 표시입니다.<br>
+      짧은 흐름부터 긴 흐름까지 다 같은 방향을 보고 있다는 것이죠.<br><br>
+
+      <b style="color:#C9A84C;">2. 금색 테두리 "완성" 배지는 뭔가요?</b><br>
+      일봉·4시간·1시간이 상승추세로 바뀌는 시점은 보통 제각각입니다.<br>
+      그중 가장 마지막에 조건을 채워서 골든존을 완성시킨 시간대에 금색 테두리와 "완성" 배지가 붙습니다.<br>
+      즉, "얘 때문에 방금 막 골든존이 완성됐어요"를 알려주는 표시이죠.<br><br>
+
+      <b style="color:#C9A84C;">3. 골든존은 보통 어떤 순서로 완성되나요?</b><br>
+      일반적으로는 짧은 시간대가 먼저 반응하고, 긴 시간대가 늦게 따라옵니다.<br>
+      1시간봉 → 4시간봉 → 일봉 순으로 먼저 상승 전환되고, 일봉이 가장 늦게 따라와서 완성되는 경우가 흔합니다.<br>
+      (일봉이 상승세로 바뀌려면 며칠치 캔들이 쌓여야 하니, 제일 느릴 수밖에 없어요)<br><br>
+
+      <b style="color:#C9A84C;">4. 완성된 시간대별로 읽는 법</b><br>
+      📍 일봉이 마지막에 완성된 경우<br>
+      → 1시간·4시간은 이미 한참 전부터 상승세였고, 방금 일봉까지 따라잡으며 완성<br>
+      → 이미 단기적으로 어느 정도 오른 뒤일 가능성이 있는 상황<br><br>
+      📍 1시간봉이 마지막에 완성된 경우<br>
+      → 일봉·4시간은 이미 상승세였고(큰 그림은 원래 좋았음), 방금 1시간봉만 다시 상승 전환되며 완성<br>
+      → 좋은 큰 흐름 안에서 막 단기 진입 타이밍이 열린 상황에 가까움<br><br>
+
+      <b style="color:#C9A84C;">5. 예시로 보기</b><br>
+      <u>ATOM (코스모스)</u> — 일봉에 "완성" 배지<br>
+      - 1시간: 09/17에 이미 상승추세<br>
+      - 4시간: 09/18에 이미 상승추세<br>
+      - 일봉: 09/22 오늘 아침, 마지막으로 상승추세 전환 → 일봉이 완성<br><br>
+      <u>ARB (아비트럼)</u> — 1시간에 "완성" 배지<br>
+      - 4시간: 09/16에 이미 상승추세<br>
+      - 일봉: 09/19에 이미 상승추세<br>
+      - 1시간: 09/23 방금, 마지막으로 상승추세 전환 → 1시간이 완성<br><br>
+
+      <span style="color:#999;font-size:11px;">⚠️ 참고: "완성" 배지는 어느 시간대가 마지막으로 조건을 채웠는지 보여주는 표시일 뿐, 강도나 우열을 매기는 순위 기능은 아닙니다. 투자 판단은 항상 본인 책임하에 신중히 해주세요.</span>
+    </div>
+    <button class="member-modal-close" onclick="document.getElementById('golden-zone-guide-modal').classList.remove('show')">닫기</button>
   </div>
 </div>
 
@@ -3128,6 +3171,17 @@ function serviceNavClick(tab) {
       <div id="zoneGoldenCount" style="margin-bottom:14px;color:#C9A84C;font-size:13px;font-weight:600;text-align:center;display:none;"></div>
     </div>
     <button class="member-modal-close" onclick="document.getElementById('altcoin-search-modal').classList.remove('show')">닫기</button>
+  </div>
+</div>
+
+<div class="member-modal-overlay" id="combo-signal-modal" onclick="if(event.target===this)document.getElementById('combo-signal-modal').classList.remove('show')">
+  <div class="member-modal-box" style="max-width:380px;">
+    <div class="member-modal-icon">🔔</div>
+    <div class="member-modal-title">LONG Confirmed (1H)</div>
+    <div id="combo-signal-modal-body" style="text-align:left;margin-top:10px;">
+      <div style="text-align:center;color:#666;font-size:12px;padding:20px 0;">불러오는 중...</div>
+    </div>
+    <button class="member-modal-close" onclick="document.getElementById('combo-signal-modal').classList.remove('show')">닫기</button>
   </div>
 </div>
 
@@ -3641,11 +3695,50 @@ function onDemandZoneLookup(tickerRaw){
 document.addEventListener('DOMContentLoaded', function(){
   var params=new URLSearchParams(window.location.search);
   var searchTicker=params.get('search');
+  var isCombo=params.get('combo')==='1';
   if(searchTicker){
     var cleanTicker=searchTicker.toUpperCase().replace(/USDT$/,'');
-    setTimeout(function(){ autoOpenZoneSearch(cleanTicker); }, 500);
+    if(isCombo){
+      setTimeout(function(){ showComboSignalModal(cleanTicker); }, 300);
+    }else{
+      setTimeout(function(){ autoOpenZoneSearch(cleanTicker); }, 500);
+    }
   }
 });
+
+function showComboSignalModal(ticker){
+  if(!tgUser){ openLoginModal(); return; }
+  if(!tgUser.is_member){ openMemberModal(); return; }
+  fetch('/api/altcoin-zones').then(function(r){return r.json();}).then(function(data){
+    var entry=(data.coins||{})[ticker];
+    if(!entry || !entry.combo_confirmed || !entry.combo_entry){
+      alert('현재 유효한 컴보 신호가 없는 종목입니다.');
+      return;
+    }
+    var nameKr=entry.name_kr||ticker;
+    var entryPrice=entry.combo_entry;
+    var sl=entry.combo_sl;
+    var tps=entry.combo_tps||[];
+    var slPct=((sl-entryPrice)/entryPrice*100).toFixed(1);
+    var tpRows=tps.map(function(tp,i){
+      var pct=((tp-entryPrice)/entryPrice*100).toFixed(1);
+      return '<tr><td style="padding:4px 0;color:#888;">TP'+(i+1)+'</td><td style="padding:4px 0;text-align:right;">'+tp+'</td><td style="padding:4px 0;text-align:right;color:#3ecf8e;">(+'+pct+'%)</td></tr>';
+    }).join('');
+    var bodyHtml =
+      '<div style="text-align:center;color:#C9A84C;font-size:13px;margin-bottom:10px;">'+nameKr+' ('+entry.futures_symbol+'USDT.P)</div>'+
+      '<table style="width:100%;font-size:14px;">'+
+      '<tr><td style="padding:4px 0;color:#888;">Entry</td><td colspan="2" style="padding:4px 0;text-align:right;">'+entryPrice+'</td></tr>'+
+      '<tr><td style="padding:4px 0;color:#888;">SL</td><td colspan="2" style="padding:4px 0;text-align:right;color:#e05555;">'+sl+' ('+slPct+'%)</td></tr>'+
+      '<tr><td colspan="3" style="padding:6px 0;"></td></tr>'+
+      tpRows+
+      '</table>'+
+      '<div style="text-align:center;color:#666;font-size:11px;margin-top:10px;">Time : '+(entry.combo_confirmed_time||'')+'</div>';
+    var modalBody=document.getElementById('combo-signal-modal-body');
+    if(modalBody) modalBody.innerHTML=bodyHtml;
+    var modal=document.getElementById('combo-signal-modal');
+    if(modal) modal.classList.add('show');
+  }).catch(function(){ alert('신호 정보를 불러오지 못했습니다.'); });
+}
 
 // 2026-09-18: 9/17 구독자 대량 유실 사고 복구용 - UI(알림설정 모달) 없이도
 // 페이지 로드 시마다 조용히 백그라운드에서 서버 구독 상태를 확인하고, 브라우저엔
@@ -3863,7 +3956,7 @@ initNoticeBar();
     <div id="push-cat-list" style="display:flex;flex-direction:column;margin-bottom:14px;">
       <label class="push-cat-row"><input type="checkbox" id="pc-all" onchange="pushToggleAll(this)"><span>전체</span></label>
       <div style="height:1px;background:#242424;margin:6px 0;"></div>
-      <label class="push-cat-row" style="justify-content:space-between;"><span style="display:flex;align-items:center;gap:6px;"><input type="checkbox" class="push-cat-item" value="btc">💰 비트 롱/숏 (1H/10M)</span><span style="font-size:10px;color:#C9A84C;background:rgba(201,168,76,0.12);border:0.5px solid rgba(201,168,76,0.35);padding:1px 6px;border-radius:5px;">멤버십</span></label>
+      <label class="push-cat-row" style="justify-content:space-between;"><span style="display:flex;align-items:center;gap:6px;"><input type="checkbox" class="push-cat-item" value="btc">💰 비트 롱/숏 (1H/15M)</span><span style="font-size:10px;color:#C9A84C;background:rgba(201,168,76,0.12);border:0.5px solid rgba(201,168,76,0.35);padding:1px 6px;border-radius:5px;">멤버십</span></label>
       <label class="push-cat-row" style="justify-content:space-between;"><span style="display:flex;align-items:center;gap:6px;"><input type="checkbox" class="push-cat-item" value="alt_trend">📊 알트 추세전환 (1D)</span><span style="font-size:10px;color:#C9A84C;background:rgba(201,168,76,0.12);border:0.5px solid rgba(201,168,76,0.35);padding:1px 6px;border-radius:5px;">멤버십</span></label>
       <label class="push-cat-row" style="justify-content:space-between;"><span style="display:flex;align-items:center;gap:6px;"><input type="checkbox" class="push-cat-item" value="golden_zone">✨ 알트 골든존 (1D/4H/1H)</span><span style="font-size:10px;color:#C9A84C;background:rgba(201,168,76,0.12);border:0.5px solid rgba(201,168,76,0.35);padding:1px 6px;border-radius:5px;">멤버십</span></label>
       <label class="push-cat-row" style="justify-content:space-between;"><span style="display:flex;align-items:center;gap:6px;"><input type="checkbox" class="push-cat-item" value="alt_whale">🐋 알트 고래봇 (상시)</span><span style="font-size:10px;color:#C9A84C;background:rgba(201,168,76,0.12);border:0.5px solid rgba(201,168,76,0.35);padding:1px 6px;border-radius:5px;">멤버십</span></label>

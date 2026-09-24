@@ -1,134 +1,26 @@
 [
   {
-    "key": "빗썸_WOO",
-    "time": "2026-09-22 09:00",
-    "price": 16.81,
+    "key": "빗썸_LWP",
+    "time": "2026-09-24 09:00",
+    "price": 3.766,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_KAIA",
-    "time": "2026-09-22 09:00",
-    "price": 43.21,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_IOTX",
-    "time": "2026-09-22 09:00",
-    "price": 5.02,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_BICO",
-    "time": "2026-09-22 09:00",
-    "price": 30.52,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_BONK",
-    "time": "2026-09-22 09:00",
-    "price": 0.0046,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_POPCAT",
-    "time": "2026-09-22 09:00",
-    "price": 74.16,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_SAPIEN",
-    "time": "2026-09-22 09:00",
-    "price": 107.0,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_SPACE",
-    "time": "2026-09-22 09:00",
-    "price": 6.666,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_ASR",
-    "time": "2026-09-22 09:00",
-    "price": 0.872,
+    "key": "빗썸_ACE",
+    "time": "2026-09-24 09:00",
+    "price": 265.0,
     "sig_type": "trend_strong"
   },
   {
-    "key": "바이낸스_TKO",
-    "time": "2026-09-22 09:00",
-    "price": 0.0545,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_TLM",
-    "time": "2026-09-22 09:00",
-    "price": 0.001504,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_LAZIO",
-    "time": "2026-09-22 09:00",
-    "price": 0.393,
+    "key": "빗썸_PCI",
+    "time": "2026-09-24 09:00",
+    "price": 54.25,
     "sig_type": "trend_strong"
   },
   {
-    "key": "바이낸스_CITY",
-    "time": "2026-09-22 09:00",
-    "price": 0.372,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_XNO",
-    "time": "2026-09-22 09:00",
-    "price": 0.388,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_STO",
-    "time": "2026-09-22 09:00",
-    "price": 0.0418,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_OPN",
-    "time": "2026-09-22 09:00",
-    "price": 0.0519,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_EWYB",
-    "time": "2026-09-22 09:00",
-    "price": 189.72,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_GLWB",
-    "time": "2026-09-22 09:00",
-    "price": 161.57,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_SPYB",
-    "time": "2026-09-22 09:00",
-    "price": 773.71,
+    "key": "빗썸_BOB",
+    "time": "2026-09-24 09:00",
+    "price": 7.793,
     "sig_type": "trend_strong"
-  },
-  {
-    "key": "바이낸스_AAOIB",
-    "time": "2026-09-22 09:00",
-    "price": 111.3,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_AMATB",
-    "time": "2026-09-22 09:00",
-    "price": 466.31,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_AMZNB",
-    "time": "2026-09-22 09:00",
-    "price": 259.21,
-    "sig_type": "trend"
   }
 ]
