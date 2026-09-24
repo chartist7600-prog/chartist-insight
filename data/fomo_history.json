@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "ARK",
+    "name": "아크",
+    "exchange": "바이낸스",
+    "entry_price": 0.1868,
+    "currency": "USDT",
+    "entry_time": "2026-09-25 05:00:05",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "MIRA",
     "name": "미라네트워크",
     "exchange": "바이낸스",
@@ -256,15 +265,6 @@
     "entry_price": 1.828,
     "currency": "USDT",
     "entry_time": "2026-09-24 23:00:04",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "MORPHO",
-    "name": "모포",
-    "exchange": "바이낸스",
-    "entry_price": 2.6928,
-    "currency": "USDT",
-    "entry_time": "2026-09-24 16:00:04",
     "signal": "golden_zone"
   }
 ]
