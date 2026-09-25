@@ -1,5 +1,29 @@
 [
   {
+    "ticker": "2Z",
+    "name": "더블제로",
+    "exchange": "업비트",
+    "entry_price": 76.2,
+    "currency": "KRW",
+    "entry_time": "2026-09-25 09:00"
+  },
+  {
+    "ticker": "BB",
+    "name": "BB",
+    "exchange": "바이낸스",
+    "entry_price": 0.01052,
+    "currency": "USDT",
+    "entry_time": "2026-09-25 09:00"
+  },
+  {
+    "ticker": "RIF",
+    "name": "RIF",
+    "exchange": "바이낸스",
+    "entry_price": 0.0933,
+    "currency": "USDT",
+    "entry_time": "2026-09-25 09:00"
+  },
+  {
     "ticker": "TAO",
     "name": "비트텐서",
     "exchange": "바이낸스",
@@ -239,32 +263,5 @@
     "entry_price": 120.0,
     "currency": "KRW",
     "entry_time": "2026-09-25 00:00"
-  },
-  {
-    "ticker": "AERO",
-    "name": "에어로드롬파이낸스",
-    "exchange": "바이낸스",
-    "entry_price": 0.7029,
-    "currency": "USDT",
-    "entry_time": "2026-09-24 23:05:03",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "ALGO",
-    "name": "알고랜드",
-    "exchange": "바이낸스",
-    "entry_price": 0.10912,
-    "currency": "USDT",
-    "entry_time": "2026-09-24 23:00:04",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "NXPC",
-    "name": "넥스페이스",
-    "exchange": "바이낸스",
-    "entry_price": 0.2532,
-    "currency": "USDT",
-    "entry_time": "2026-09-24 23:00:04",
-    "signal": "golden_zone"
   }
 ]

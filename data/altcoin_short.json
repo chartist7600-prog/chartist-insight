@@ -1,38 +1,26 @@
 [
   {
-    "key": "빗썸_LWP",
-    "time": "2026-09-24 09:00",
-    "price": 3.766,
+    "key": "빗썸_BB",
+    "time": "2026-09-25 09:00",
+    "price": 15.07,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_ACE",
-    "time": "2026-09-24 09:00",
-    "price": 265.0,
-    "sig_type": "trend_strong"
-  },
-  {
-    "key": "빗썸_PCI",
-    "time": "2026-09-24 09:00",
-    "price": 54.25,
-    "sig_type": "trend_strong"
-  },
-  {
-    "key": "빗썸_BOB",
-    "time": "2026-09-24 09:00",
-    "price": 7.793,
-    "sig_type": "trend_strong"
-  },
-  {
-    "key": "빗썸_SD",
-    "time": "2026-09-24 21:00",
-    "price": 176.0,
+    "key": "빗썸_ROBO",
+    "time": "2026-09-25 09:00",
+    "price": 13.26,
     "sig_type": "trend"
   },
   {
-    "key": "빗썸_UP",
-    "time": "2026-09-24 21:00",
-    "price": 99.0,
+    "key": "바이낸스_NBISB",
+    "time": "2026-09-25 09:00",
+    "price": 242.3,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_CRWVB",
+    "time": "2026-09-25 09:00",
+    "price": 89.68,
     "sig_type": "trend"
   }
 ]
