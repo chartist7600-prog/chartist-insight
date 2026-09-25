@@ -1,5 +1,37 @@
 [
   {
+    "ticker": "YFI",
+    "name": "YFI",
+    "exchange": "빗썸",
+    "entry_price": 3210000.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-26 00:00"
+  },
+  {
+    "ticker": "VIRTUAL",
+    "name": "버추얼프로토콜",
+    "exchange": "빗썸",
+    "entry_price": 1057.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-26 00:00"
+  },
+  {
+    "ticker": "ZBT",
+    "name": "제로베이스",
+    "exchange": "빗썸",
+    "entry_price": 120.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-26 00:00"
+  },
+  {
+    "ticker": "GRVT",
+    "name": "그래비티토큰",
+    "exchange": "빗썸",
+    "entry_price": 281.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-26 00:00"
+  },
+  {
     "ticker": "CC",
     "name": "캔톤",
     "exchange": "바이낸스",
@@ -226,42 +258,6 @@
     "name": "콘플럭스",
     "exchange": "바이낸스",
     "entry_price": 0.05375,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 01:00:04",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "ENS",
-    "name": "이더리움네임서비스",
-    "exchange": "바이낸스",
-    "entry_price": 7.178,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 01:00:04",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "IOTA",
-    "name": "아이오타",
-    "exchange": "바이낸스",
-    "entry_price": 0.04793,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 01:00:04",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "LINEA",
-    "name": "리네아",
-    "exchange": "바이낸스",
-    "entry_price": 0.002844,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 01:00:04",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "MOODENG",
-    "name": "무뎅",
-    "exchange": "바이낸스",
-    "entry_price": 0.04726,
     "currency": "USDT",
     "entry_time": "2026-09-25 01:00:04",
     "signal": "golden_zone"

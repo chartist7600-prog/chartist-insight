@@ -5632,5 +5632,11 @@
     "time": "2026-09-25 09:00",
     "price": 0.0933,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_GRVT",
+    "time": "2026-09-26 00:00",
+    "price": 281.0,
+    "sig_type": "trend"
   }
 ]
