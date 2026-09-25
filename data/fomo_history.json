@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "LINK",
+    "name": "체인링크",
+    "exchange": "바이낸스",
+    "entry_price": 13.404,
+    "currency": "USDT",
+    "entry_time": "2026-09-25 13:00:04",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "2Z",
     "name": "더블제로",
     "exchange": "업비트",
@@ -253,14 +262,6 @@
     "name": "칼데라",
     "exchange": "빗썸",
     "entry_price": 91.69,
-    "currency": "KRW",
-    "entry_time": "2026-09-25 00:00"
-  },
-  {
-    "ticker": "ZBT",
-    "name": "제로베이스",
-    "exchange": "빗썸",
-    "entry_price": 120.0,
     "currency": "KRW",
     "entry_time": "2026-09-25 00:00"
   }
