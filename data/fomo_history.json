@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "AAVE",
+    "name": "에이브",
+    "exchange": "바이낸스",
+    "entry_price": 153.44,
+    "currency": "USDT",
+    "entry_time": "2026-09-26 05:00:04",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "YFI",
     "name": "YFI",
     "exchange": "빗썸",
@@ -249,15 +258,6 @@
     "name": "블러",
     "exchange": "바이낸스",
     "entry_price": 0.0201,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 01:00:04",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "CFX",
-    "name": "콘플럭스",
-    "exchange": "바이낸스",
-    "entry_price": 0.05375,
     "currency": "USDT",
     "entry_time": "2026-09-25 01:00:04",
     "signal": "golden_zone"
