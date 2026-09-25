@@ -1,5 +1,23 @@
 [
   {
+    "ticker": "AXS",
+    "name": "엑시인피니티",
+    "exchange": "바이낸스",
+    "entry_price": 1.1857,
+    "currency": "USDT",
+    "entry_time": "2026-09-25 17:00:04",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "SAND",
+    "name": "샌드박스",
+    "exchange": "바이낸스",
+    "entry_price": 0.04522,
+    "currency": "USDT",
+    "entry_time": "2026-09-25 17:00:04",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "LINK",
     "name": "체인링크",
     "exchange": "바이낸스",
@@ -247,22 +265,5 @@
     "currency": "USDT",
     "entry_time": "2026-09-25 00:00:04",
     "signal": "golden_zone"
-  },
-  {
-    "ticker": "OP",
-    "name": "옵티미즘",
-    "exchange": "바이낸스",
-    "entry_price": 0.13194,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 00:00:04",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "ERA",
-    "name": "칼데라",
-    "exchange": "빗썸",
-    "entry_price": 91.69,
-    "currency": "KRW",
-    "entry_time": "2026-09-25 00:00"
   }
 ]
