@@ -5644,5 +5644,23 @@
     "time": "2026-09-26 09:00",
     "price": 0.027,
     "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_LAYER",
+    "time": "2026-09-27 00:00",
+    "price": 110.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_SOON",
+    "time": "2026-09-27 00:00",
+    "price": 288.0,
+    "sig_type": "trend"
+  },
+  {
+    "key": "빗썸_AI",
+    "time": "2026-09-27 00:00",
+    "price": 29.89,
+    "sig_type": "trend"
   }
 ]

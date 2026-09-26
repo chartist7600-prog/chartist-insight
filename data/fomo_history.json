@@ -1,5 +1,62 @@
 [
   {
+    "ticker": "DOS",
+    "name": "댑오에스",
+    "exchange": "바이낸스",
+    "entry_price": 0.2301,
+    "currency": "USDT",
+    "entry_time": "2026-09-27 00:00:04",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "WOO",
+    "name": "WOO",
+    "exchange": "빗썸",
+    "entry_price": 17.38,
+    "currency": "KRW",
+    "entry_time": "2026-09-27 00:00"
+  },
+  {
+    "ticker": "WLD",
+    "name": "월드코인",
+    "exchange": "빗썸",
+    "entry_price": 688.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-27 00:00"
+  },
+  {
+    "ticker": "LAYER",
+    "name": "솔레이어",
+    "exchange": "빗썸",
+    "entry_price": 110.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-27 00:00"
+  },
+  {
+    "ticker": "SOON",
+    "name": "쑨",
+    "exchange": "빗썸",
+    "entry_price": 288.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-27 00:00"
+  },
+  {
+    "ticker": "HUMA",
+    "name": "HUMA",
+    "exchange": "빗썸",
+    "entry_price": 39.43,
+    "currency": "KRW",
+    "entry_time": "2026-09-27 00:00"
+  },
+  {
+    "ticker": "AI",
+    "name": "젠신",
+    "exchange": "빗썸",
+    "entry_price": 29.89,
+    "currency": "KRW",
+    "entry_time": "2026-09-27 00:00"
+  },
+  {
     "ticker": "MINA",
     "name": "미나",
     "exchange": "바이낸스",
@@ -195,66 +252,6 @@
     "entry_price": 0.04522,
     "currency": "USDT",
     "entry_time": "2026-09-25 17:00:04",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "LINK",
-    "name": "체인링크",
-    "exchange": "바이낸스",
-    "entry_price": 13.404,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 13:00:04",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "2Z",
-    "name": "더블제로",
-    "exchange": "업비트",
-    "entry_price": 76.2,
-    "currency": "KRW",
-    "entry_time": "2026-09-25 09:00"
-  },
-  {
-    "ticker": "BB",
-    "name": "BB",
-    "exchange": "바이낸스",
-    "entry_price": 0.01052,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 09:00"
-  },
-  {
-    "ticker": "RIF",
-    "name": "RIF",
-    "exchange": "바이낸스",
-    "entry_price": 0.0933,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 09:00"
-  },
-  {
-    "ticker": "TAO",
-    "name": "비트텐서",
-    "exchange": "바이낸스",
-    "entry_price": 299.47,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 06:00:03",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "ARK",
-    "name": "아크",
-    "exchange": "바이낸스",
-    "entry_price": 0.1868,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 05:00:05",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "MIRA",
-    "name": "미라네트워크",
-    "exchange": "바이낸스",
-    "entry_price": 0.05392,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 03:00:04",
     "signal": "golden_zone"
   }
 ]
