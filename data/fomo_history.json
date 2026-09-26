@@ -1,5 +1,23 @@
 [
   {
+    "ticker": "MINA",
+    "name": "미나",
+    "exchange": "바이낸스",
+    "entry_price": 0.14556,
+    "currency": "USDT",
+    "entry_time": "2026-09-26 21:00:04",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "WLFI",
+    "name": "월드리버티파이낸셜",
+    "exchange": "바이낸스",
+    "entry_price": 0.05834,
+    "currency": "USDT",
+    "entry_time": "2026-09-26 21:00:04",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "ANKR",
     "name": "앵커",
     "exchange": "바이낸스",
@@ -237,24 +255,6 @@
     "entry_price": 0.05392,
     "currency": "USDT",
     "entry_time": "2026-09-25 03:00:04",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "ASTR",
-    "name": "아스타",
-    "exchange": "바이낸스",
-    "entry_price": 0.007176,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 02:00:03",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "BERA",
-    "name": "베라체인",
-    "exchange": "바이낸스",
-    "entry_price": 0.2296,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 02:00:03",
     "signal": "golden_zone"
   }
 ]
