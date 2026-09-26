@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "ANKR",
+    "name": "앵커",
+    "exchange": "바이낸스",
+    "entry_price": 0.005196,
+    "currency": "USDT",
+    "entry_time": "2026-09-26 17:00:04",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "FLUID",
     "name": "플루이드",
     "exchange": "바이낸스",
@@ -244,15 +253,6 @@
     "name": "베라체인",
     "exchange": "바이낸스",
     "entry_price": 0.2296,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 02:00:03",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "CYBER",
-    "name": "사이버",
-    "exchange": "바이낸스",
-    "entry_price": 0.3493,
     "currency": "USDT",
     "entry_time": "2026-09-25 02:00:03",
     "signal": "golden_zone"
