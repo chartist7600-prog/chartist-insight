@@ -1,32 +1,8 @@
 [
   {
-    "key": "빗썸_BB",
-    "time": "2026-09-25 09:00",
-    "price": 15.07,
-    "sig_type": "trend"
-  },
-  {
-    "key": "빗썸_ROBO",
-    "time": "2026-09-25 09:00",
-    "price": 13.26,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_NBISB",
-    "time": "2026-09-25 09:00",
-    "price": 242.3,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_CRWVB",
-    "time": "2026-09-25 09:00",
-    "price": 89.68,
-    "sig_type": "trend"
-  },
-  {
-    "key": "바이낸스_GLMR",
-    "time": "2026-09-25 21:00",
-    "price": 0.007401,
+    "key": "바이낸스_PYPLB",
+    "time": "2026-09-26 09:00",
+    "price": 55.29,
     "sig_type": "trend"
   }
 ]

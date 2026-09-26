@@ -5638,5 +5638,11 @@
     "time": "2026-09-26 00:00",
     "price": 281.0,
     "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_PARTI",
+    "time": "2026-09-26 09:00",
+    "price": 0.027,
+    "sig_type": "trend"
   }
 ]

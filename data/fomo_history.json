@@ -1,5 +1,63 @@
 [
   {
+    "ticker": "FLUID",
+    "name": "플루이드",
+    "exchange": "바이낸스",
+    "entry_price": 1.457,
+    "currency": "USDT",
+    "entry_time": "2026-09-26 09:00:04",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "ID",
+    "name": "스페이스아이디",
+    "exchange": "바이낸스",
+    "entry_price": 0.03918,
+    "currency": "USDT",
+    "entry_time": "2026-09-26 09:00:04",
+    "signal": "golden_zone"
+  },
+  {
+    "ticker": "JTO",
+    "name": "지토",
+    "exchange": "업비트",
+    "entry_price": 775.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-26 09:00"
+  },
+  {
+    "ticker": "POL",
+    "name": "폴리곤에코시스템토큰",
+    "exchange": "업비트",
+    "entry_price": 157.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-26 09:00"
+  },
+  {
+    "ticker": "JASMY",
+    "name": "JASMY",
+    "exchange": "바이낸스",
+    "entry_price": 0.00471,
+    "currency": "USDT",
+    "entry_time": "2026-09-26 09:00"
+  },
+  {
+    "ticker": "PARTI",
+    "name": "PARTI",
+    "exchange": "바이낸스",
+    "entry_price": 0.027,
+    "currency": "USDT",
+    "entry_time": "2026-09-26 09:00"
+  },
+  {
+    "ticker": "LUMIA",
+    "name": "LUMIA",
+    "exchange": "바이낸스",
+    "entry_price": 0.0866,
+    "currency": "USDT",
+    "entry_time": "2026-09-26 09:00"
+  },
+  {
     "ticker": "AAVE",
     "name": "에이브",
     "exchange": "바이낸스",
@@ -197,69 +255,6 @@
     "entry_price": 0.3493,
     "currency": "USDT",
     "entry_time": "2026-09-25 02:00:03",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "IN",
-    "name": "인피닛",
-    "exchange": "바이낸스",
-    "entry_price": 0.0368,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 02:00:03",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "MEW",
-    "name": "캣인어독스월드",
-    "exchange": "바이낸스",
-    "entry_price": 0.0005022,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 02:00:03",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "NEAR",
-    "name": "니어프로토콜",
-    "exchange": "바이낸스",
-    "entry_price": 4.706,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 02:00:03",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "XEC",
-    "name": "이캐시",
-    "exchange": "바이낸스",
-    "entry_price": 0.00915,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 02:00:03",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "ADA",
-    "name": "에이다",
-    "exchange": "바이낸스",
-    "entry_price": 0.2491,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 01:00:04",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "BIGTIME",
-    "name": "빅타임",
-    "exchange": "바이낸스",
-    "entry_price": 0.008385,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 01:00:04",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "BLUR",
-    "name": "블러",
-    "exchange": "바이낸스",
-    "entry_price": 0.0201,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 01:00:04",
     "signal": "golden_zone"
   }
 ]
