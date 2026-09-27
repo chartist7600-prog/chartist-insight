@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "CAP",
+    "name": "캡",
+    "exchange": "바이낸스",
+    "entry_price": 0.05343,
+    "currency": "USDT",
+    "entry_time": "2026-09-28 04:00:03",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "ATOM",
     "name": "코스모스",
     "exchange": "빗썸",
@@ -232,13 +241,5 @@
     "currency": "USDT",
     "entry_time": "2026-09-27 17:00:04",
     "signal": "golden_zone"
-  },
-  {
-    "ticker": "QUID",
-    "name": "스퀴드",
-    "exchange": "업비트",
-    "entry_price": 98.7,
-    "currency": "KRW",
-    "entry_time": "2026-09-27 09:00"
   }
 ]
