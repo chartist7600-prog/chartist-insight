@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "VVV",
+    "name": "베니스토큰",
+    "exchange": "바이낸스",
+    "entry_price": 30.691,
+    "currency": "USDT",
+    "entry_time": "2026-09-27 17:00:04",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "QUID",
     "name": "스퀴드",
     "exchange": "업비트",
@@ -235,15 +244,6 @@
     "name": "캔톤",
     "exchange": "바이낸스",
     "entry_price": 0.12388,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 21:00:04",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "NEWT",
-    "name": "뉴턴프로토콜",
-    "exchange": "바이낸스",
-    "entry_price": 0.05066,
     "currency": "USDT",
     "entry_time": "2026-09-25 21:00:04",
     "signal": "golden_zone"
