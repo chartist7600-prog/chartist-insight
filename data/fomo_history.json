@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "META",
+    "name": "메타디움",
+    "exchange": "바이낸스",
+    "entry_price": 751.22,
+    "currency": "USDT",
+    "entry_time": "2026-09-27 18:00:05",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "VVV",
     "name": "베니스토큰",
     "exchange": "바이낸스",
@@ -238,14 +247,5 @@
     "entry_price": 281.0,
     "currency": "KRW",
     "entry_time": "2026-09-26 00:00"
-  },
-  {
-    "ticker": "CC",
-    "name": "캔톤",
-    "exchange": "바이낸스",
-    "entry_price": 0.12388,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 21:00:04",
-    "signal": "golden_zone"
   }
 ]
