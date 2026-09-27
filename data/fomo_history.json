@@ -1,5 +1,53 @@
 [
   {
+    "ticker": "QUID",
+    "name": "스퀴드",
+    "exchange": "업비트",
+    "entry_price": 98.7,
+    "currency": "KRW",
+    "entry_time": "2026-09-27 09:00"
+  },
+  {
+    "ticker": "EUL",
+    "name": "오일러",
+    "exchange": "업비트",
+    "entry_price": 2070.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-27 09:00"
+  },
+  {
+    "ticker": "ENSO",
+    "name": "엔소",
+    "exchange": "업비트",
+    "entry_price": 1428.0,
+    "currency": "KRW",
+    "entry_time": "2026-09-27 09:00"
+  },
+  {
+    "ticker": "DASH",
+    "name": "DASH",
+    "exchange": "바이낸스",
+    "entry_price": 71.84,
+    "currency": "USDT",
+    "entry_time": "2026-09-27 09:00"
+  },
+  {
+    "ticker": "MOVR",
+    "name": "MOVR",
+    "exchange": "바이낸스",
+    "entry_price": 1.016,
+    "currency": "USDT",
+    "entry_time": "2026-09-27 09:00"
+  },
+  {
+    "ticker": "TLM",
+    "name": "TLM",
+    "exchange": "바이낸스",
+    "entry_price": 0.001689,
+    "currency": "USDT",
+    "entry_time": "2026-09-27 09:00"
+  },
+  {
     "ticker": "DOS",
     "name": "댑오에스",
     "exchange": "바이낸스",
@@ -198,60 +246,6 @@
     "entry_price": 0.05066,
     "currency": "USDT",
     "entry_time": "2026-09-25 21:00:04",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "QTUM",
-    "name": "퀀텀",
-    "exchange": "바이낸스",
-    "entry_price": 1.0359,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 21:00:04",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "SPK",
-    "name": "스파크",
-    "exchange": "바이낸스",
-    "entry_price": 0.02242,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 21:00:04",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "UNI",
-    "name": "유니스왑",
-    "exchange": "바이낸스",
-    "entry_price": 9.751,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 21:00:04",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "XLM",
-    "name": "스텔라루멘",
-    "exchange": "바이낸스",
-    "entry_price": 0.22298,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 21:00:04",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "AXS",
-    "name": "엑시인피니티",
-    "exchange": "바이낸스",
-    "entry_price": 1.1857,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 17:00:04",
-    "signal": "golden_zone"
-  },
-  {
-    "ticker": "SAND",
-    "name": "샌드박스",
-    "exchange": "바이낸스",
-    "entry_price": 0.04522,
-    "currency": "USDT",
-    "entry_time": "2026-09-25 17:00:04",
     "signal": "golden_zone"
   }
 ]
