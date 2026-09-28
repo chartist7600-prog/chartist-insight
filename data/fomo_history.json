@@ -1,5 +1,13 @@
 [
   {
+    "ticker": "BIOT",
+    "name": "BIOT",
+    "exchange": "빗썸",
+    "entry_price": 0.5023,
+    "currency": "KRW",
+    "entry_time": "2026-09-29 00:00"
+  },
+  {
     "ticker": "CAP",
     "name": "캡",
     "exchange": "바이낸스",
@@ -230,14 +238,6 @@
     "name": "TFUEL",
     "exchange": "바이낸스",
     "entry_price": 0.01112,
-    "currency": "USDT",
-    "entry_time": "2026-09-28 09:00"
-  },
-  {
-    "ticker": "GAS",
-    "name": "GAS",
-    "exchange": "바이낸스",
-    "entry_price": 1.499,
     "currency": "USDT",
     "entry_time": "2026-09-28 09:00"
   }
