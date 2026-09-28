@@ -5686,5 +5686,65 @@
     "time": "2026-09-28 00:00",
     "price": 9520.0,
     "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_TAO",
+    "time": "2026-09-28 09:00",
+    "price": 319.8,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_IOST",
+    "time": "2026-09-28 09:00",
+    "price": 0.00098,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_ASTR",
+    "time": "2026-09-28 09:00",
+    "price": 0.007692,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_SENT",
+    "time": "2026-09-28 09:00",
+    "price": 0.02244,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_RENDER",
+    "time": "2026-09-28 09:00",
+    "price": 2.055,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_ONDO",
+    "time": "2026-09-28 09:00",
+    "price": 0.5877,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_GAS",
+    "time": "2026-09-28 09:00",
+    "price": 1.499,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_CKB",
+    "time": "2026-09-28 09:00",
+    "price": 0.00142,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_COMP",
+    "time": "2026-09-28 09:00",
+    "price": 24.47,
+    "sig_type": "trend"
+  },
+  {
+    "key": "바이낸스_XEC",
+    "time": "2026-09-28 09:00",
+    "price": 8.86e-06,
+    "sig_type": "trend"
   }
 ]
