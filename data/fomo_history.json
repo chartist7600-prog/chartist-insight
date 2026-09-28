@@ -1,5 +1,14 @@
 [
   {
+    "ticker": "CAP",
+    "name": "캡",
+    "exchange": "바이낸스",
+    "entry_price": 0.05424,
+    "currency": "USDT",
+    "entry_time": "2026-09-28 16:25:03",
+    "signal": "golden_zone"
+  },
+  {
     "ticker": "PUMP",
     "name": "펌프펀",
     "exchange": "바이낸스",
@@ -229,14 +238,6 @@
     "name": "GAS",
     "exchange": "바이낸스",
     "entry_price": 1.499,
-    "currency": "USDT",
-    "entry_time": "2026-09-28 09:00"
-  },
-  {
-    "ticker": "CKB",
-    "name": "CKB",
-    "exchange": "바이낸스",
-    "entry_price": 0.00142,
     "currency": "USDT",
     "entry_time": "2026-09-28 09:00"
   }
